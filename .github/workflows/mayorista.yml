@@ -1,0 +1,115 @@
+name: Mayorista Monitor
+
+on:
+  schedule:
+    - cron: '0 13,19 * * *'  # 10:00 y 16:00 Chile (UTC-3)
+
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Fuente de datos'
+        required: false
+        default: 'gsheet'
+        type: choice
+        options:
+          - 'gsheet'
+          - 'local'
+      skip_api:
+        description: 'Saltar consultas a la API (solo filtros XLSX)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      workers:
+        description: 'Cantidad de workers para consultas API'
+        required: false
+        default: '5'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  monitor-mayorista:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run mayorista monitor
+        run: |
+          EXTRA_ARGS=""
+          if [[ "${{ github.event.inputs.skip_api }}" == "true" ]]; then
+            EXTRA_ARGS="$EXTRA_ARGS --skip-api"
+          fi
+          python mayorista_monitor.py \
+            --source ${{ github.event.inputs.source || 'gsheet' }} \
+            --output-dir ./output \
+            --workers ${{ github.event.inputs.workers || '5' }} \
+            $EXTRA_ARGS
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: mayorista-results
+          path: output/
+          retention-days: 30
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: monitor-mayorista
+    if: always() && needs.monitor-mayorista.result == 'success'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+        continue-on-error: true
+
+      - name: Initialize gh-pages if needed
+        run: |
+          if [ ! -f index.html ]; then
+            git checkout --orphan gh-pages-temp || true
+            echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0;url=mayorista.html"><title>Mayorista Monitor</title></head><body><a href="mayorista.html">Ir al dashboard</a></body></html>' > index.html
+            git add index.html
+            git commit -m "Initialize gh-pages" || true
+          fi
+
+      - name: Download results
+        uses: actions/download-artifact@v4
+        with:
+          name: mayorista-results
+          path: ./new-results/
+        continue-on-error: true
+
+      - name: Merge results
+        run: |
+          if [ -d "./new-results" ]; then
+            find ./new-results -name "*.html" -exec cp {} ./ \; 2>/dev/null || true
+            find ./new-results -name "*.json" -exec cp {} ./ \; 2>/dev/null || true
+          fi
+          rm -rf ./new-results
+          echo "Final files:"
+          ls -la *.html *.json 2>/dev/null || echo "No files"
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Update mayorista dashboard - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push origin gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
