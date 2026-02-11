@@ -656,7 +656,7 @@ def generate_html_dashboard(
             flex-direction: column;
             gap: 0.5rem;
             max-width: 800px;
-            margin: 0 auto;
+            /*margin: 0 auto;*/
         }}
         .funnel-step {{
             display: flex;
@@ -839,6 +839,7 @@ def generate_html_dashboard(
         </header>
 
         <nav class="nav-links">
+            <!-- TODO: habilitar cuando esten listos los otros monitores
             <a href="index.html" class="nav-link">📦 Categorias</a>
             <a href="delivery.html" class="nav-link">🚚 Despacho Nacional</a>
             <a href="checkout.html" class="nav-link">🛒 Checkout</a>
@@ -846,6 +847,7 @@ def generate_html_dashboard(
             <a href="login.html" class="nav-link">🔐 Login</a>
             <a href="banners.html" class="nav-link">🎨 Banners</a>
             <a href="pagespeed.html" class="nav-link">⚡ PageSpeed</a>
+            -->
             <a href="mayorista.html" class="nav-link active">🏭 Mayorista</a>
         </nav>
 
@@ -897,7 +899,7 @@ def generate_html_dashboard(
 
         <!-- Funnel de elegibilidad -->
         <div class="funnel-section">
-            <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">Embudo de Elegibilidad</h2>
+            <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">Funnel de Elegibilidad de productos</h2>
             <div class="funnel-steps">
                 <div class="funnel-step">
                     <span class="funnel-label">Total en Price File</span>
