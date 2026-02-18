@@ -333,20 +333,25 @@ def check_products_batch(session: requests.Session, df_with_ids: pd.DataFrame, m
 # ==============================================================================
 
 def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Dict[str, Any]:
-    # Grupo A: Publicacion inmediata (PCF ID + mayorista=false + stock_pcf=0)
+    # Con ficha listos para publicar (PCF ID + mayorista=false + stock_pcf=0 + tiene ficha)
     publish_ready = []
-    # Grupo A2: Elegibles pero con ficha vacia (necesitan contenido)
+    # Producto sin ficha solicitada - id existe (mayorista=false + stock_pcf=0 + ficha vacia)
     missing_ficha = []
-    # Ya mayorista (excluidos)
+    # Publicados - ya mayorista en lista 1
     already_mayorista = []
     # Con stock PCF (excluidos)
     has_pcf_stock = []
+    # Requieren creacion (API 404 - id no existe en PCFactory)
+    need_creation = []
     # Errores API
     api_errors = []
 
     for item in api_results:
         if item["api_status"] == "error":
             api_errors.append(item)
+            continue
+        if item["api_status"] == "not_found":
+            need_creation.append(item)
             continue
         if item["mayorista"] is True:
             already_mayorista.append(item)
@@ -360,8 +365,7 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Di
         else:
             publish_ready.append(item)
 
-    # Grupo B: Requieren creacion (sin PCF ID)
-    need_creation = []
+    # Tambien requieren creacion: productos sin PCF ID en el price file
     for _, row in df_no_pcf_id.iterrows():
         need_creation.append({
             "pcf_id": None,
@@ -868,24 +872,24 @@ def generate_html_dashboard(
                 <div class="stat-label">Con Stock Ingram</div>
             </div>
             <div class="stat-card">
+                <div class="stat-value yellow">{len(already_mayorista)}</div>
+                <div class="stat-label">Publicados (Lista 1)</div>
+            </div>
+            <div class="stat-card">
                 <div class="stat-value green">{total_eligible}</div>
                 <div class="stat-label">Elegibles</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value green">{len(publish_ready)}</div>
-                <div class="stat-label">Publicacion Inmediata</div>
+                <div class="stat-label">Con Ficha Listos</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value yellow">{len(missing_ficha)}</div>
-                <div class="stat-label">Sin Ficha</div>
+                <div class="stat-label">Sin Ficha Solicitada</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value purple">{len(need_creation)}</div>
                 <div class="stat-label">Requieren Creacion</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value yellow">{len(already_mayorista)}</div>
-                <div class="stat-label">Ya Mayorista</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value red">{len(has_pcf_stock)}</div>
@@ -914,7 +918,11 @@ def generate_html_dashboard(
                     <div class="funnel-bar" style="width: {max(after_clearance / total * 100, 5) if total > 0 else 5}%; background: var(--accent-yellow);">{after_clearance}</div>
                 </div>
                 <div class="funnel-step">
-                    <span class="funnel-label">Sin Stock PCF + No Mayorista</span>
+                    <span class="funnel-label">Publicados (Lista 1)</span>
+                    <div class="funnel-bar" style="width: {max(len(already_mayorista) / total * 100, 5) if total > 0 else 5}%; background: var(--accent-purple);">{len(already_mayorista)}</div>
+                </div>
+                <div class="funnel-step">
+                    <span class="funnel-label">Elegibles (sin publicar)</span>
                     <div class="funnel-bar" style="width: {max(after_api_filters / total * 100, 5) if total > 0 else 5}%; background: var(--accent-green);">{after_api_filters}</div>
                 </div>
             </div>
@@ -922,19 +930,19 @@ def generate_html_dashboard(
 
         <!-- Tabs para las tablas -->
         <div class="tab-container">
-            <button class="tab-btn active" onclick="switchTab('publish')">✅ Publicacion Inmediata ({len(publish_ready)})</button>
-            <button class="tab-btn" onclick="switchTab('ficha')">📝 Sin Ficha ({len(missing_ficha)})</button>
+            <button class="tab-btn active" onclick="switchTab('publish')">✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
+            <button class="tab-btn" onclick="switchTab('ficha')">📝 Sin Ficha Solicitada ({len(missing_ficha)})</button>
             <button class="tab-btn" onclick="switchTab('creation')">🆕 Requieren Creacion ({len(need_creation)})</button>
-            <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Ya Mayorista ({len(already_mayorista)})</button>
+            <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
         </div>
 
-        <!-- Tabla: Publicacion Inmediata -->
+        <!-- Tabla: Con Ficha Listos para Publicar -->
         <div id="tab-publish" class="tab-content active">
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Publicacion Inmediata</h2>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Con Ficha Listos para Publicar</h2>
                         <span class="table-badge badge-green">{len(publish_ready)} productos listos</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-publish', this.value)">
@@ -960,13 +968,13 @@ def generate_html_dashboard(
             </div>
         </div>
 
-        <!-- Tabla: Sin Ficha -->
+        <!-- Tabla: Producto sin ficha solicitada -->
         <div id="tab-ficha" class="tab-content">
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Elegibles Sin Ficha (description vacia)</h2>
-                        <span class="table-badge badge-yellow">{len(missing_ficha)} productos necesitan contenido</span>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Producto Sin Ficha Solicitada (ID existe)</h2>
+                        <span class="table-badge badge-yellow">{len(missing_ficha)} productos necesitan ficha</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-ficha', this.value)">
                 </div>
@@ -996,8 +1004,8 @@ def generate_html_dashboard(
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Requieren Creacion en Sphinx</h2>
-                        <span class="table-badge badge-purple">{len(need_creation)} productos nuevos (2-5 dias)</span>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Requieren Creacion (ID no existe en PCFactory)</h2>
+                        <span class="table-badge badge-purple">{len(need_creation)} productos no encontrados</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-creation', this.value)">
                 </div>
@@ -1022,13 +1030,13 @@ def generate_html_dashboard(
             </div>
         </div>
 
-        <!-- Tabla: Ya Mayorista -->
+        <!-- Tabla: Publicados -->
         <div id="tab-mayorista" class="tab-content">
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Ya Publicados como Mayorista</h2>
-                        <span class="table-badge badge-yellow">{len(already_mayorista)} productos activos</span>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Publicados (Lista 1)</h2>
+                        <span class="table-badge badge-yellow">{len(already_mayorista)} productos publicados</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-mayorista', this.value)">
                 </div>
