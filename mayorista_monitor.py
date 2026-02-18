@@ -166,9 +166,13 @@ def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     has_pcf_id = eligible_xlsx[mask_valid_id].copy()
     no_pcf_id = eligible_xlsx[~mask_valid_id].copy()
 
+    sin_stock_df = df[df[COL_AVAILABLE_QTY].fillna(0) <= 0].copy()
+
     return {
         "total": total,
         "sin_stock_ingram": sin_stock,
+        "has_stock": has_stock,
+        "sin_stock_df": sin_stock_df,
         "clearance": len(clearance_products),
         "clearance_products": clearance_products,
         "eligible_xlsx": eligible_xlsx,
@@ -410,6 +414,10 @@ def generate_html_dashboard(
     has_pcf_stock = classification["has_pcf_stock"]
     api_errors = classification["api_errors"]
 
+    clearance_products = xlsx_stats.get("clearance_products", pd.DataFrame())
+    has_stock_df = xlsx_stats.get("has_stock", pd.DataFrame())
+    sin_stock_df = xlsx_stats.get("sin_stock_df", pd.DataFrame())
+
     total_eligible = len(publish_ready) + len(missing_ficha) + len(need_creation)
 
     # Status
@@ -500,6 +508,37 @@ def generate_html_dashboard(
             <td>{p["vendor_name"]}</td>
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{stock_display}</td>
+        </tr>'''
+
+    # Tabla CLEARANCE
+    clearance_rows = ""
+    if not clearance_products.empty:
+        for i, (_, row) in enumerate(clearance_products.iterrows(), 1):
+            pcf_id_val = row.get(COL_PCF_ID, "")
+            desc = str(row.get(COL_DESCRIPTION, ""))
+            clearance_rows += f'''<tr>
+            <td>{i}</td>
+            <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
+            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td>{row.get(COL_VENDOR_NAME, "")}</td>
+            <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
+            <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td>{row.get(COL_CATEGORY, "")}</td>
+        </tr>'''
+
+    # Tabla Sin Stock Ingram
+    sin_stock_rows = ""
+    if not sin_stock_df.empty:
+        for i, (_, row) in enumerate(sin_stock_df.iterrows(), 1):
+            desc = str(row.get(COL_DESCRIPTION, ""))
+            sin_stock_rows += f'''<tr>
+            <td>{i}</td>
+            <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
+            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td>{row.get(COL_VENDOR_NAME, "")}</td>
+            <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
+            <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
     html = f'''<!DOCTYPE html>
@@ -628,6 +667,7 @@ def generate_html_dashboard(
             transition: all 0.2s ease;
         }}
         .stat-card:hover {{ background: var(--bg-hover); transform: translateY(-2px); }}
+        .stat-card.clickable {{ cursor: pointer; }}
         .stat-value {{
             font-family: var(--font-mono);
             font-size: 2.25rem;
@@ -724,6 +764,7 @@ def generate_html_dashboard(
         .badge-yellow {{ background: rgba(245,158,11,0.15); color: var(--accent-yellow); }}
         .badge-red {{ background: rgba(239,68,68,0.15); color: var(--accent-red); }}
         .badge-blue {{ background: rgba(59,130,246,0.15); color: var(--accent-blue); }}
+        .badge-cyan {{ background: rgba(6,182,212,0.15); color: var(--accent-cyan); }}
         .search-input {{
             font-family: var(--font-mono);
             font-size: 0.85rem;
@@ -863,39 +904,39 @@ def generate_html_dashboard(
         </div>
 
         <div class="stats-grid">
-            <div class="stat-card">
+            <div class="stat-card clickable" onclick="switchTab('sinstock')">
                 <div class="stat-value blue">{total}</div>
                 <div class="stat-label">Total Productos</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card clickable" onclick="switchTab('constock')">
                 <div class="stat-value cyan">{with_stock}</div>
                 <div class="stat-label">Con Stock Ingram</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-value yellow">{len(already_mayorista)}</div>
+            <div class="stat-card clickable" onclick="switchTab('mayorista')">
+                <div class="stat-value green">{len(already_mayorista)}</div>
                 <div class="stat-label">Publicados (Lista 1)</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card clickable" onclick="switchTab('publish')">
                 <div class="stat-value green">{total_eligible}</div>
                 <div class="stat-label">Elegibles</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card clickable" onclick="switchTab('publish')">
                 <div class="stat-value green">{len(publish_ready)}</div>
                 <div class="stat-label">Con Ficha Listos</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card clickable" onclick="switchTab('ficha')">
                 <div class="stat-value yellow">{len(missing_ficha)}</div>
                 <div class="stat-label">Sin Ficha Solicitada</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card clickable" onclick="switchTab('creation')">
                 <div class="stat-value purple">{len(need_creation)}</div>
                 <div class="stat-label">Requieren Creacion</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card clickable" onclick="switchTab('pcfstock')">
                 <div class="stat-value red">{len(has_pcf_stock)}</div>
                 <div class="stat-label">Con Stock PCF</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-card clickable" onclick="switchTab('clearance')">
                 <div class="stat-value red">{clearance}</div>
                 <div class="stat-label">CLEARANCE</div>
             </div>
@@ -930,11 +971,14 @@ def generate_html_dashboard(
 
         <!-- Tabs para las tablas -->
         <div class="tab-container">
-            <button class="tab-btn active" onclick="switchTab('publish')">✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
-            <button class="tab-btn" onclick="switchTab('ficha')">📝 Sin Ficha Solicitada ({len(missing_ficha)})</button>
+            <button class="tab-btn active" onclick="switchTab('publish')">✅ Con Ficha Listos ({len(publish_ready)})</button>
+            <button class="tab-btn" onclick="switchTab('ficha')">📝 Sin Ficha ({len(missing_ficha)})</button>
             <button class="tab-btn" onclick="switchTab('creation')">🆕 Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
+            <button class="tab-btn" onclick="switchTab('clearance')">⚠️ CLEARANCE ({clearance})</button>
+            <button class="tab-btn" onclick="switchTab('constock')">📊 Con Stock Ingram ({with_stock})</button>
+            <button class="tab-btn" onclick="switchTab('sinstock')">🚫 Sin Stock ({sin_stock})</button>
         </div>
 
         <!-- Tabla: Con Ficha Listos para Publicar -->
@@ -1036,7 +1080,7 @@ def generate_html_dashboard(
                 <div class="table-header">
                     <div>
                         <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Publicados (Lista 1)</h2>
-                        <span class="table-badge badge-yellow">{len(already_mayorista)} productos publicados</span>
+                        <span class="table-badge badge-green">{len(already_mayorista)} productos publicados</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-mayorista', this.value)">
                 </div>
@@ -1090,6 +1134,115 @@ def generate_html_dashboard(
             </div>
         </div>
 
+        <!-- Tabla: CLEARANCE -->
+        <div id="tab-clearance" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">CLEARANCE (Excluidos)</h2>
+                        <span class="table-badge badge-red">{clearance} productos en liquidacion</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-clearance', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-clearance">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('table-clearance', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-clearance', 1, 'str')">Ingram Part</th>
+                                <th onclick="sortTable('table-clearance', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-clearance', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-clearance', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-clearance', 5, 'num')">Stock Ingram</th>
+                                <th onclick="sortTable('table-clearance', 6, 'str')">Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {clearance_rows if clearance_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla: Con Stock Ingram -->
+        <div id="tab-constock" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Con Stock en Ingram</h2>
+                        <span class="table-badge badge-blue">{with_stock} productos con stock</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-constock', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-constock">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('table-constock', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-constock', 1, 'str')">Ingram Part</th>
+                                <th onclick="sortTable('table-constock', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-constock', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-constock', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-constock', 5, 'num')">Stock</th>
+                                <th onclick="sortTable('table-constock', 6, 'str')">Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>'''
+
+    # Generar filas Con Stock Ingram
+    constock_rows = ""
+    if not has_stock_df.empty:
+        for i, (_, row) in enumerate(has_stock_df.iterrows(), 1):
+            desc = str(row.get(COL_DESCRIPTION, ""))
+            constock_rows += f'''<tr>
+            <td>{i}</td>
+            <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
+            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td>{row.get(COL_VENDOR_NAME, "")}</td>
+            <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
+            <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td>{row.get(COL_CATEGORY, "")}</td>
+        </tr>'''
+
+    html += f'''{constock_rows if constock_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla: Sin Stock Ingram -->
+        <div id="tab-sinstock" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Sin Stock en Ingram</h2>
+                        <span class="table-badge badge-red">{sin_stock} productos sin stock</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-sinstock', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-sinstock">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('table-sinstock', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-sinstock', 1, 'str')">Ingram Part</th>
+                                <th onclick="sortTable('table-sinstock', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-sinstock', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-sinstock', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-sinstock', 5, 'num')">Stock</th>
+                                <th onclick="sortTable('table-sinstock', 6, 'str')">Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {sin_stock_rows if sin_stock_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <footer class="footer">
             <p>Monitor Mayorista - Ingram Micro | Datos actualizados periodicamente</p>
             <p>Hecho con ❤️ por Ain Cortes Catoni</p>
@@ -1104,8 +1257,17 @@ def generate_html_dashboard(
         function switchTab(name) {{
             document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById('tab-' + name).classList.add('active');
-            event.target.classList.add('active');
+            const tabEl = document.getElementById('tab-' + name);
+            if (tabEl) tabEl.classList.add('active');
+            // Activar el boton del tab correspondiente
+            document.querySelectorAll('.tab-btn').forEach(btn => {{
+                if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes("'" + name + "'")) {{
+                    btn.classList.add('active');
+                }}
+            }});
+            // Scroll al area de tabs
+            const tabContainer = document.querySelector('.tab-container');
+            if (tabContainer) tabContainer.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
         }}
 
         // Table filtering
