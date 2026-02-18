@@ -517,11 +517,11 @@ def generate_html_dashboard(
     elegibles_rows = ""
     elegibles_all = []
     for p in publish_ready:
-        elegibles_all.append({**p, "_estado": "Con Ficha", "_estado_class": "badge-green"})
+        elegibles_all.append({**p, "_estado": "Con Ficha Listo", "_estado_class": "badge-green"})
     for p in missing_ficha:
-        elegibles_all.append({**p, "_estado": "Sin Ficha", "_estado_class": "badge-yellow"})
+        elegibles_all.append({**p, "_estado": "ID Existe Sin Ficha", "_estado_class": "badge-yellow"})
     for p in need_creation:
-        elegibles_all.append({**p, "_estado": "Requiere Creacion", "_estado_class": "badge-purple"})
+        elegibles_all.append({**p, "_estado": "ID No Existe", "_estado_class": "badge-purple"})
     for i, p in enumerate(sorted(elegibles_all, key=lambda x: x.get("vendor_name", "")), 1):
         pcf_id_val = p.get("pcf_id", "")
         if pcf_id_val:
@@ -1032,9 +1032,9 @@ def generate_html_dashboard(
         <!-- Tabs para las tablas -->
         <div class="tab-container">
             <button class="tab-btn" onclick="switchTab('elegibles')">🎯 Elegibles ({total_eligible})</button>
-            <button class="tab-btn active" onclick="switchTab('publish')">✅ Con Ficha Listos ({len(publish_ready)})</button>
-            <button class="tab-btn" onclick="switchTab('ficha')">📝 Sin Ficha ({len(missing_ficha)})</button>
-            <button class="tab-btn" onclick="switchTab('creation')">🆕 Requieren Creacion ({len(need_creation)})</button>
+            <button class="tab-btn active" onclick="switchTab('publish')">✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
+            <button class="tab-btn" onclick="switchTab('ficha')">📝 ID Existente Sin Ficha ({len(missing_ficha)})</button>
+            <button class="tab-btn" onclick="switchTab('creation')">🆕 ID No Existe y Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
             <button class="tab-btn" onclick="switchTab('sinclearance')">🔄 Sin Clearance ({after_clearance})</button>
