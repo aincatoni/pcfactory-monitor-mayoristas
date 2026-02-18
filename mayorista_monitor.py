@@ -458,7 +458,7 @@ def generate_html_dashboard(
             <td>{p["category"]}</td>
         </tr>'''
 
-    # Tabla Sin Ficha (elegibles pero sin contenido en description)
+    # Tabla ID Existente Sin Ficha Solicitada
     ficha_rows = ""
     for i, p in enumerate(sorted(missing_ficha, key=lambda x: x.get("vendor_name", "")), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
@@ -472,7 +472,7 @@ def generate_html_dashboard(
             <td>{p["category"]}</td>
         </tr>'''
 
-    # Tabla Requieren Creacion
+    # Tabla ID No Existe y Requieren Creacion
     creation_rows = ""
     for i, p in enumerate(sorted(need_creation, key=lambda x: x.get("vendor_name", "")), 1):
         creation_rows += f'''<tr>
