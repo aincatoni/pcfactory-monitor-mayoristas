@@ -401,7 +401,10 @@ def generate_html_dashboard(
     classification: Dict,
     price_file_name: str,
     timestamp: str,
+    df_original: pd.DataFrame = None,
 ) -> str:
+    if df_original is None:
+        df_original = pd.DataFrame()
     timestamp_display = format_chile_timestamp(timestamp)
 
     total = xlsx_stats["total"]
@@ -510,6 +513,48 @@ def generate_html_dashboard(
             <td class="num-cell">{stock_display}</td>
         </tr>'''
 
+    # Tabla Elegibles (union de publish_ready + missing_ficha + need_creation)
+    elegibles_rows = ""
+    elegibles_all = []
+    for p in publish_ready:
+        elegibles_all.append({**p, "_estado": "Con Ficha", "_estado_class": "badge-green"})
+    for p in missing_ficha:
+        elegibles_all.append({**p, "_estado": "Sin Ficha", "_estado_class": "badge-yellow"})
+    for p in need_creation:
+        elegibles_all.append({**p, "_estado": "Requiere Creacion", "_estado_class": "badge-purple"})
+    for i, p in enumerate(sorted(elegibles_all, key=lambda x: x.get("vendor_name", "")), 1):
+        pcf_id_val = p.get("pcf_id", "")
+        if pcf_id_val:
+            id_cell = f'<a href="https://www.pcfactory.cl/producto/{pcf_id_val}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{pcf_id_val}</a>'
+        else:
+            id_cell = '<span style="color: var(--text-muted);">—</span>'
+        desc = str(p.get("description", ""))
+        elegibles_rows += f'''<tr>
+            <td>{i}</td>
+            <td>{id_cell}</td>
+            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td>{p.get("vendor_name", "")}</td>
+            <td><code>{p.get("vendor_part", "")}</code></td>
+            <td class="num-cell">{p.get("available_qty", 0)}</td>
+            <td><span class="table-badge {p["_estado_class"]}">{p["_estado"]}</span></td>
+        </tr>'''
+
+    # Tabla Sin Clearance (eligible_xlsx = con stock y no clearance)
+    eligible_xlsx_df = xlsx_stats.get("eligible_xlsx", pd.DataFrame())
+    sin_clearance_rows = ""
+    if not eligible_xlsx_df.empty:
+        for i, (_, row) in enumerate(eligible_xlsx_df.iterrows(), 1):
+            desc = str(row.get(COL_DESCRIPTION, ""))
+            sin_clearance_rows += f'''<tr>
+            <td>{i}</td>
+            <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
+            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td>{row.get(COL_VENDOR_NAME, "")}</td>
+            <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
+            <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td>{row.get(COL_CATEGORY, "")}</td>
+        </tr>'''
+
     # Tabla CLEARANCE
     clearance_rows = ""
     if not clearance_products.empty:
@@ -523,6 +568,21 @@ def generate_html_dashboard(
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td>{row.get(COL_CATEGORY, "")}</td>
+        </tr>'''
+
+    # Tabla Total Productos (todos los del price file)
+    total_rows = ""
+    for i, (_, row) in enumerate(df_original.iterrows(), 1):
+        desc = str(row.get(COL_DESCRIPTION, ""))
+        qty = row.get(COL_AVAILABLE_QTY, 0)
+        total_rows += f'''<tr>
+            <td>{i}</td>
+            <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
+            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td>{row.get(COL_VENDOR_NAME, "")}</td>
+            <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
+            <td class="num-cell">{qty}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
@@ -904,7 +964,7 @@ def generate_html_dashboard(
         </div>
 
         <div class="stats-grid">
-            <div class="stat-card clickable" onclick="switchTab('sinstock')">
+            <div class="stat-card clickable" onclick="switchTab('total')">
                 <div class="stat-value blue">{total}</div>
                 <div class="stat-label">Total Productos</div>
             </div>
@@ -916,21 +976,21 @@ def generate_html_dashboard(
                 <div class="stat-value green">{len(already_mayorista)}</div>
                 <div class="stat-label">Publicados (Lista 1)</div>
             </div>
-            <div class="stat-card clickable" onclick="switchTab('publish')">
+            <div class="stat-card clickable" onclick="switchTab('elegibles')">
                 <div class="stat-value green">{total_eligible}</div>
                 <div class="stat-label">Elegibles</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('publish')">
                 <div class="stat-value green">{len(publish_ready)}</div>
-                <div class="stat-label">Con Ficha Listos</div>
+                <div class="stat-label">Con Ficha Listos para Publicar</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('ficha')">
                 <div class="stat-value yellow">{len(missing_ficha)}</div>
-                <div class="stat-label">Sin Ficha Solicitada</div>
+                <div class="stat-label">ID Existente Sin Ficha Solicitada</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('creation')">
                 <div class="stat-value purple">{len(need_creation)}</div>
-                <div class="stat-label">Requieren Creacion</div>
+                <div class="stat-label">ID No Existe y Requieren Creacion</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('pcfstock')">
                 <div class="stat-value red">{len(has_pcf_stock)}</div>
@@ -946,23 +1006,23 @@ def generate_html_dashboard(
         <div class="funnel-section">
             <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">Funnel de Elegibilidad de productos</h2>
             <div class="funnel-steps">
-                <div class="funnel-step">
+                <div class="funnel-step clickable" onclick="switchTab('total')" style="cursor:pointer;">
                     <span class="funnel-label">Total en Price File</span>
                     <div class="funnel-bar" style="width: 100%; background: var(--accent-blue);">{total}</div>
                 </div>
-                <div class="funnel-step">
+                <div class="funnel-step clickable" onclick="switchTab('constock')" style="cursor:pointer;">
                     <span class="funnel-label">Con Stock Ingram</span>
                     <div class="funnel-bar" style="width: {max(with_stock / total * 100, 5) if total > 0 else 5}%; background: var(--accent-cyan);">{with_stock}</div>
                 </div>
-                <div class="funnel-step">
+                <div class="funnel-step clickable" onclick="switchTab('sinclearance')" style="cursor:pointer;">
                     <span class="funnel-label">Sin CLEARANCE</span>
                     <div class="funnel-bar" style="width: {max(after_clearance / total * 100, 5) if total > 0 else 5}%; background: var(--accent-yellow);">{after_clearance}</div>
                 </div>
-                <div class="funnel-step">
+                <div class="funnel-step clickable" onclick="switchTab('mayorista')" style="cursor:pointer;">
                     <span class="funnel-label">Publicados (Lista 1)</span>
                     <div class="funnel-bar" style="width: {max(len(already_mayorista) / total * 100, 5) if total > 0 else 5}%; background: var(--accent-purple);">{len(already_mayorista)}</div>
                 </div>
-                <div class="funnel-step">
+                <div class="funnel-step clickable" onclick="switchTab('elegibles')" style="cursor:pointer;">
                     <span class="funnel-label">Elegibles (sin publicar)</span>
                     <div class="funnel-bar" style="width: {max(after_api_filters / total * 100, 5) if total > 0 else 5}%; background: var(--accent-green);">{after_api_filters}</div>
                 </div>
@@ -971,14 +1031,48 @@ def generate_html_dashboard(
 
         <!-- Tabs para las tablas -->
         <div class="tab-container">
+            <button class="tab-btn" onclick="switchTab('elegibles')">🎯 Elegibles ({total_eligible})</button>
             <button class="tab-btn active" onclick="switchTab('publish')">✅ Con Ficha Listos ({len(publish_ready)})</button>
             <button class="tab-btn" onclick="switchTab('ficha')">📝 Sin Ficha ({len(missing_ficha)})</button>
             <button class="tab-btn" onclick="switchTab('creation')">🆕 Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
+            <button class="tab-btn" onclick="switchTab('sinclearance')">🔄 Sin Clearance ({after_clearance})</button>
             <button class="tab-btn" onclick="switchTab('clearance')">⚠️ CLEARANCE ({clearance})</button>
             <button class="tab-btn" onclick="switchTab('constock')">📊 Con Stock Ingram ({with_stock})</button>
             <button class="tab-btn" onclick="switchTab('sinstock')">🚫 Sin Stock ({sin_stock})</button>
+            <button class="tab-btn" onclick="switchTab('total')">📋 Total ({total})</button>
+        </div>
+
+        <!-- Tabla: Elegibles -->
+        <div id="tab-elegibles" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Todos los Elegibles</h2>
+                        <span class="table-badge badge-green">{total_eligible} productos elegibles</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-elegibles', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-elegibles">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('table-elegibles', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-elegibles', 1, 'num')">PCF ID</th>
+                                <th onclick="sortTable('table-elegibles', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-elegibles', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-elegibles', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-elegibles', 5, 'num')">Stock Ingram</th>
+                                <th onclick="sortTable('table-elegibles', 6, 'str')">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {elegibles_rows if elegibles_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos elegibles</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <!-- Tabla: Con Ficha Listos para Publicar -->
@@ -1017,7 +1111,7 @@ def generate_html_dashboard(
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Producto Sin Ficha Solicitada (ID existe)</h2>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">ID Existente Sin Ficha Solicitada</h2>
                         <span class="table-badge badge-yellow">{len(missing_ficha)} productos necesitan ficha</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-ficha', this.value)">
@@ -1048,7 +1142,7 @@ def generate_html_dashboard(
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Requieren Creacion (ID no existe en PCFactory)</h2>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">ID No Existe y Requieren Creacion</h2>
                         <span class="table-badge badge-purple">{len(need_creation)} productos no encontrados</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-creation', this.value)">
@@ -1128,6 +1222,37 @@ def generate_html_dashboard(
                         </thead>
                         <tbody>
                             {pcf_stock_rows if pcf_stock_rows else '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla: Sin Clearance -->
+        <div id="tab-sinclearance" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Sin CLEARANCE (con stock, no liquidacion)</h2>
+                        <span class="table-badge badge-yellow">{after_clearance} productos</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-sinclearance', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-sinclearance">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('table-sinclearance', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-sinclearance', 1, 'str')">Ingram Part</th>
+                                <th onclick="sortTable('table-sinclearance', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-sinclearance', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-sinclearance', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-sinclearance', 5, 'num')">Stock Ingram</th>
+                                <th onclick="sortTable('table-sinclearance', 6, 'str')">Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {sin_clearance_rows if sin_clearance_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1237,6 +1362,37 @@ def generate_html_dashboard(
                         </thead>
                         <tbody>
                             {sin_stock_rows if sin_stock_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla: Total Productos -->
+        <div id="tab-total" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Total Productos en Price File</h2>
+                        <span class="table-badge badge-blue">{total} productos</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-total', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-total">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('table-total', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-total', 1, 'str')">Ingram Part</th>
+                                <th onclick="sortTable('table-total', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-total', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-total', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-total', 5, 'num')">Stock</th>
+                                <th onclick="sortTable('table-total', 6, 'str')">Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {total_rows if total_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1445,7 +1601,7 @@ def main():
 
     # 6. Generar dashboard HTML
     timestamp = datetime.now(timezone.utc).isoformat()
-    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp)
+    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df)
     html_path = output_dir / "mayorista.html"
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(html)
