@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PCFactory Mayorista Monitor (Ingram Micro)
-Lee el price file de Ingram, cruza con la API de productos PCFactory,
+pc Factory Mayorista Monitor (Ingram Micro)
+Lee el price file de Ingram, cruza con la API de productos pc Factory,
 y genera un dashboard HTML con los productos elegibles para publicar.
 """
 import glob
@@ -181,7 +181,7 @@ def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     }
 
 # ==============================================================================
-# CONSULTA API PCFACTORY
+# CONSULTA API pcFACTORY
 # ==============================================================================
 
 def is_description_empty(description: Any) -> bool:
@@ -612,7 +612,7 @@ def generate_html_dashboard(
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="300">
-    <title>PCFactory - Monitor Mayorista</title>
+    <title>pc Factory - Monitor Mayorista</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏭</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1000,7 +1000,7 @@ def generate_html_dashboard(
         <header class="header">
             <div class="logo">
                 <div class="logo-icon">
-                    <img src="https://assets-v3.pcfactory.cl/uploads/e964d6b9-e816-439f-8b97-ad2149772b7b/original/pcfactory-isotipo.svg" alt="PCFactory">
+                    <img src="https://assets-v3.pcfactory.cl/uploads/e964d6b9-e816-439f-8b97-ad2149772b7b/original/pcfactory-isotipo.svg" alt="pc Factory">
                 </div>
                 <div class="logo-text">
                     <h1>pc Factory Monitor</h1>
@@ -1509,7 +1509,7 @@ def generate_html_dashboard(
                         <span class="glosario-icon">🏭</span>
                         <span class="glosario-title">Publicados (Lista 1)</span>
                     </div>
-                    <p class="glosario-desc">Productos que ya están activos en PCFactory como mayoristas en Lista 1. No requieren ninguna acción — ya están funcionando en la web.</p>
+                    <p class="glosario-desc">Productos que ya están activos en pc Factory como mayoristas en Lista 1. No requieren ninguna acción — ya están funcionando en la web.</p>
                     <div class="glosario-criteria">
                         <span class="criteria-tag tag-purple">mayorista: true</span>
                         <span class="criteria-tag tag-purple">lista: "1"</span>
@@ -1574,7 +1574,7 @@ def generate_html_dashboard(
                         <span class="glosario-icon">🆕</span>
                         <span class="glosario-title">ID No Existe y Requieren Creación</span>
                     </div>
-                    <p class="glosario-desc">Productos cuyo ID no existe aún en PCFactory o que no tienen PCF ID asignado en el price file. Requieren creación del producto en el sistema (proceso de 2–5 días hábiles).</p>
+                    <p class="glosario-desc">Productos cuyo ID no existe aún en PCFactory o que no tienen PCF ID asignado en el price file. Requieren creación del producto en el sistema (proceso de x–x días hábiles).</p>
                     <div class="glosario-criteria">
                         <span class="criteria-tag tag-orange">API retorna 404</span>
                         <span class="criteria-tag tag-orange">o sin PCF ID en price file</span>

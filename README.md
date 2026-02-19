@@ -79,7 +79,7 @@ Productos elegibles que tienen PCF ID pero cuya ficha está vacía o sin conteni
 ---
 
 ### 🆕 ID No Existe y Requieren Creación
-Productos con stock en Ingram cuyo ID **no existe** en PCFactory o que directamente no tienen PCF ID asignado en el price file. Requieren creación del producto en el sistema (proceso de 2–5 días hábiles).
+Productos con stock en Ingram cuyo ID **no existe** en PCFactory o que directamente no tienen PCF ID asignado en el price file. Requieren creación del producto en el sistema (proceso de x–x días hábiles).
 
 > **Criterios (cualquiera de estos dos casos):**
 > - Tiene PCF ID en el price file pero la API retorna `404 Not Found`
