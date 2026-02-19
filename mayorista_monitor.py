@@ -229,6 +229,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
         if resp.ok:
             data = resp.json()
             mayorista = data.get("mayorista", False)
+            lista = str(data.get("lista", "0"))
             stock_data = data.get("stock", {})
             stock_aprox = parse_stock_aproximado(stock_data)
             nombre_pcf = data.get("nombre", "")
@@ -239,6 +240,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
             return {
                 "api_status": "ok",
                 "mayorista": mayorista,
+                "lista": lista,
                 "stock_pcf": stock_aprox,
                 "stock_raw": stock_data.get("aproximado", "0") if isinstance(stock_data, dict) else str(stock_data),
                 "nombre_pcf": nombre_pcf,
@@ -251,6 +253,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
             return {
                 "api_status": "not_found",
                 "mayorista": False,
+                "lista": "0",
                 "stock_pcf": 0,
                 "stock_raw": "0",
                 "nombre_pcf": "",
@@ -263,6 +266,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
             return {
                 "api_status": "error",
                 "mayorista": None,
+                "lista": None,
                 "stock_pcf": None,
                 "stock_raw": "",
                 "nombre_pcf": "",
@@ -275,6 +279,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
         return {
             "api_status": "error",
             "mayorista": None,
+            "lista": None,
             "stock_pcf": None,
             "stock_raw": "",
             "nombre_pcf": "",
@@ -312,7 +317,7 @@ def check_products_batch(session: requests.Session, df_with_ids: pd.DataFrame, m
                 api_result = future.result()
             except Exception as e:
                 api_result = {
-                    "api_status": "error", "mayorista": None,
+                    "api_status": "error", "mayorista": None, "lista": None,
                     "stock_pcf": None, "stock_raw": "", "nombre_pcf": "",
                     "precio_normal": 0, "precio_oferta": 0,
                     "ficha_vacia": None, "error": str(e),
@@ -357,7 +362,7 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Di
         if item["api_status"] == "not_found":
             need_creation.append(item)
             continue
-        if item["mayorista"] is True:
+        if item["mayorista"] is True and item.get("lista") == "1":
             already_mayorista.append(item)
             continue
         if item["stock_pcf"] is not None and item["stock_pcf"] > 0:
@@ -918,6 +923,67 @@ def generate_html_dashboard(
             color: var(--text-muted);
             font-size: 0.875rem;
         }}
+        /* Glosario */
+        .glosario-section {{
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }}
+        .glosario-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }}
+        .glosario-card {{
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }}
+        .glosario-header {{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }}
+        .glosario-icon {{
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }}
+        .glosario-title {{
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }}
+        .glosario-desc {{
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin: 0;
+        }}
+        .glosario-criteria {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: 0.25rem;
+        }}
+        .criteria-tag {{
+            font-size: 0.72rem;
+            padding: 0.2rem 0.55rem;
+            border-radius: 20px;
+            font-family: 'Courier New', monospace;
+            font-weight: 500;
+        }}
+        .tag-green  {{ background: rgba(0,200,120,0.15); color: var(--accent-green); border: 1px solid rgba(0,200,120,0.3); }}
+        .tag-blue   {{ background: rgba(59,130,246,0.15); color: var(--accent-blue);  border: 1px solid rgba(59,130,246,0.3); }}
+        .tag-orange {{ background: rgba(251,146,60,0.15); color: #fb923c;             border: 1px solid rgba(251,146,60,0.3); }}
+        .tag-purple {{ background: rgba(167,139,250,0.15); color: var(--accent-purple); border: 1px solid rgba(167,139,250,0.3); }}
+        .tag-neutral {{ background: rgba(148,163,184,0.15); color: var(--text-secondary); border: 1px solid rgba(148,163,184,0.3); }}
         @media (max-width: 768px) {{
             .container {{ padding: 1rem; }}
             .header {{ flex-direction: column; text-align: center; }}
@@ -925,6 +991,7 @@ def generate_html_dashboard(
             .stat-value {{ font-size: 1.5rem; }}
             .funnel-label {{ min-width: 120px; font-size: 0.75rem; }}
             .search-input {{ min-width: 100%; }}
+            .glosario-grid {{ grid-template-columns: 1fr; }}
         }}
     </style>
 </head>
@@ -1396,6 +1463,124 @@ def generate_html_dashboard(
                         </tbody>
                     </table>
                 </div>
+            </div>
+        </div>
+
+        <!-- GLOSARIO DE CLASIFICACIONES -->
+        <div class="glosario-section">
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">📖 Glosario de Clasificaciones</h2>
+            <div class="glosario-grid">
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">📋</span>
+                        <span class="glosario-title">Total Productos</span>
+                    </div>
+                    <p class="glosario-desc">Todos los productos presentes en el price file de Ingram Micro, sin ningún filtro aplicado. Es el universo completo de referencia.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-neutral">Price file completo</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">📊</span>
+                        <span class="glosario-title">Con Stock Ingram</span>
+                    </div>
+                    <p class="glosario-desc">Productos que Ingram tiene disponibles para despachar hoy. Son el subconjunto relevante para trabajar.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-blue">Available Quantity &gt; 0</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">⚠️</span>
+                        <span class="glosario-title">CLEARANCE</span>
+                    </div>
+                    <p class="glosario-desc">Productos en proceso de liquidación o descontinuación. Se excluyen del monitoreo porque no tiene sentido habilitarlos como mayorista.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-orange">Creation Reason = CLEARANCE</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">🏭</span>
+                        <span class="glosario-title">Publicados (Lista 1)</span>
+                    </div>
+                    <p class="glosario-desc">Productos que ya están activos en PCFactory como mayoristas en Lista 1. No requieren ninguna acción — ya están funcionando en la web.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-purple">mayorista: true</span>
+                        <span class="criteria-tag tag-purple">lista: "1"</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">📦</span>
+                        <span class="glosario-title">Con Stock PCF</span>
+                    </div>
+                    <p class="glosario-desc">Productos que PCFactory ya tiene en stock propio. Se excluyen porque PCFactory los puede vender directamente, sin necesidad de habilitarlos como mayorista.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-orange">stock.aproximado &gt; 0 en PCF</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">🎯</span>
+                        <span class="glosario-title">Elegibles</span>
+                    </div>
+                    <p class="glosario-desc">Total de productos que podrían publicarse o ya están en proceso. Es la suma de Con Ficha Listos + ID Existente Sin Ficha + ID No Existe y Requieren Creación.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-green">Con Stock Ingram</span>
+                        <span class="criteria-tag tag-green">Sin CLEARANCE</span>
+                        <span class="criteria-tag tag-green">No publicados</span>
+                        <span class="criteria-tag tag-green">Sin stock PCF</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">✅</span>
+                        <span class="glosario-title">Con Ficha Listos para Publicar</span>
+                    </div>
+                    <p class="glosario-desc">Productos listos para activarse en Lista 1 de forma inmediata. Tienen PCF ID, ficha completa, y no tienen stock propio en PCFactory.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-green">PCF ID en price file</span>
+                        <span class="criteria-tag tag-green">mayorista: false</span>
+                        <span class="criteria-tag tag-green">stock PCF = 0</span>
+                        <span class="criteria-tag tag-green">Ficha con contenido</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">📝</span>
+                        <span class="glosario-title">ID Existente Sin Ficha Solicitada</span>
+                    </div>
+                    <p class="glosario-desc">Productos elegibles cuya ficha está vacía o sin contenido real en PCFactory. No se pueden publicar hasta que el equipo de contenido complete la descripción.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-blue">PCF ID en price file</span>
+                        <span class="criteria-tag tag-blue">mayorista: false</span>
+                        <span class="criteria-tag tag-blue">stock PCF = 0</span>
+                        <span class="criteria-tag tag-orange">Ficha vacía o incompleta</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
+                        <span class="glosario-icon">🆕</span>
+                        <span class="glosario-title">ID No Existe y Requieren Creación</span>
+                    </div>
+                    <p class="glosario-desc">Productos cuyo ID no existe aún en PCFactory o que no tienen PCF ID asignado en el price file. Requieren creación del producto en el sistema (proceso de 2–5 días hábiles).</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-orange">API retorna 404</span>
+                        <span class="criteria-tag tag-orange">o sin PCF ID en price file</span>
+                    </div>
+                </div>
+
             </div>
         </div>
 
