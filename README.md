@@ -35,20 +35,20 @@ Productos que ya están activos en PCFactory como productos mayoristas (Lista 1)
 
 > **Criterio:** PCF ID existe en el price file + API retorna `mayorista: true` **y** `lista: "1"`
 >
-> Un producto con `mayorista: true` pero `lista: "0"` **no** se cuenta como publicado — queda en el grupo elegible que corresponda.
+> Un producto con `mayorista: true` pero `lista: "0"` **no** se cuenta como publicado — queda en el grupo potencial que corresponda.
 >
 > Estos productos ya están funcionando en la web. No requieren acción.
 
 ---
 
-### 🎯 Elegibles
+### 🎯 Potenciales
 Total de productos que podrían publicarse o ya están en proceso. Es la suma de los tres grupos siguientes:
 
 ```
-Elegibles = Con Ficha Listos + ID Existente Sin Ficha + ID No Existe y Requieren Creación
+Potenciales = Con Ficha Listos + ID Existente Sin Ficha + ID No Existe y Requieren Creación
 ```
 
-> **Criterio:** Tienen stock en Ingram + no son CLEARANCE + no están publicados como mayorista + no tienen stock propio en PCFactory
+> **Criterio:** Tienen stock en Ingram + no son CLEARANCE + si tienen PCF ID deben tener `lista: "0"` (no publicados) + no tienen stock propio en PCFactory
 
 ---
 
@@ -66,7 +66,7 @@ Productos que cumplen todos los requisitos para publicarse de forma **inmediata*
 ---
 
 ### 📝 ID Existente Sin Ficha Solicitada
-Productos elegibles que tienen PCF ID pero cuya ficha está vacía o sin contenido relevante en PCFactory. No se pueden publicar hasta que se complete la descripción del producto.
+Productos potenciales que tienen PCF ID pero cuya ficha está vacía o sin contenido relevante en PCFactory. No se pueden publicar hasta que se complete la descripción del producto.
 
 > **Criterios:**
 > - Tiene stock en Ingram
@@ -103,14 +103,14 @@ Productos marcados como liquidación en el price file de Ingram. Se excluyen del
 
 ## Funnel de Elegibilidad
 
-El funnel muestra el recorrido de los productos desde el total hasta los elegibles. Cada paso es clickeable y lleva a la lista correspondiente.
+El funnel muestra el recorrido de los productos desde el total hasta los potenciales. Cada paso es clickeable y lleva a la lista correspondiente.
 
 ```
 Total Productos
     └─ Con Stock Ingram          (filtro: Available Quantity > 0)
          └─ Sin CLEARANCE         (filtro: Creation Reason ≠ CLEARANCE)
               ├─ Publicados       (info: ya activos en Lista 1)
-              └─ Elegibles        (filtro: sin stock PCF + no mayorista)
+              └─ Potenciales      (filtro: lista "0" + sin stock PCF)
 ```
 
 ---

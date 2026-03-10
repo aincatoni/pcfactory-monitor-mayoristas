@@ -3,7 +3,7 @@
 """
 pc Factory Mayorista Monitor (Ingram Micro)
 Lee el price file de Ingram, cruza con la API de productos pc Factory,
-y genera un dashboard HTML con los productos elegibles para publicar.
+y genera un dashboard HTML con los productos potenciales para publicar.
 """
 import glob
 import json
@@ -31,6 +31,7 @@ PRICE_FILE_PATTERN = "CLPriceFile*.xlsx"
 # Google Sheets
 GOOGLE_SHEET_ID = "1mgGjhEmcE_c1q2xfJ4wgGpkcSD7A0jVCqD43h2382gc"
 GOOGLE_SHEET_CSV_URL = f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}/export?format=csv"
+SEGUIMIENTO_SHEET_ID = "15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM"
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6_1) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
@@ -96,6 +97,19 @@ def create_session() -> requests.Session:
 def polite_pause(min_s: float = 0.2, max_s: float = 0.5):
     time.sleep(random.uniform(min_s, max_s))
 
+def fetch_usd_clp() -> Optional[float]:
+    """Obtiene el dolar observado desde mindicador.cl (sin autenticacion)."""
+    try:
+        resp = requests.get("https://mindicador.cl/api/dolar", timeout=10)
+        resp.raise_for_status()
+        data = resp.json()
+        serie = data.get("serie", [])
+        if serie:
+            return float(serie[0]["valor"])
+    except Exception as e:
+        print(f"[!] No se pudo obtener tipo de cambio USD: {e}")
+    return None
+
 # ==============================================================================
 # LECTURA DEL PRICE FILE
 # ==============================================================================
@@ -131,6 +145,146 @@ def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = "0") -> pd.Dat
         print(f"[!] Error al leer Google Sheet: {e}")
         print(f"    Verifica que el sheet este compartido como 'Cualquiera con el enlace'")
         raise
+
+SOLOTODO_API = "https://api.solotodo.com"
+SOLOTODO_PCF_STORE_ID = 12
+
+def fetch_solotodo_prices(session: requests.Session, vendor_part: str) -> Dict[str, Any]:
+    """Busca un producto en SoloTodo por part number y retorna precios de PCFactory y mínimo mercado."""
+    empty = {"solotodo_id": None, "pcf_price": None, "min_price": None}
+    if not vendor_part or str(vendor_part).strip() in ("", "nan"):
+        return empty
+    try:
+        # 1. Buscar producto por part number
+        resp = session.get(
+            f"{SOLOTODO_API}/products/",
+            params={"part_number": str(vendor_part).strip(), "page_size": 1},
+            timeout=15,
+        )
+        if not resp.ok:
+            return empty
+        data = resp.json()
+        results = data.get("results", [])
+        if not results:
+            return empty
+        product_id = results[0]["id"]
+
+        # 2. Obtener todas las entidades (precios por tienda)
+        resp2 = session.get(
+            f"{SOLOTODO_API}/products/{product_id}/entities/",
+            timeout=15,
+        )
+        if not resp2.ok:
+            return {**empty, "solotodo_id": product_id}
+        raw = resp2.json()
+        entities = raw if isinstance(raw, list) else raw.get("results", [])
+
+        pcf_price = None
+        min_price = None
+
+        for ent in entities:
+            registry = ent.get("active_registry")
+            if not registry or not registry.get("is_available"):
+                continue
+            try:
+                offer = float(registry.get("offer_price") or registry.get("normal_price") or 0)
+            except (ValueError, TypeError):
+                continue
+            if offer <= 0:
+                continue
+            store_url = str(ent.get("store", ""))
+            if f"/stores/{SOLOTODO_PCF_STORE_ID}/" in store_url:
+                pcf_price = int(offer)
+            if min_price is None or offer < min_price:
+                min_price = int(offer)
+
+        return {
+            "solotodo_id": product_id,
+            "pcf_price": pcf_price,
+            "min_price": min_price,
+        }
+    except Exception:
+        return empty
+
+def enrich_with_solotodo(products: List[Dict], session: requests.Session, max_workers: int = 4) -> None:
+    """Agrega campos solotodo_* a cada producto in-place. Solo para listas con vendor_part."""
+    tasks = [(i, p) for i, p in enumerate(products) if p.get("vendor_part")]
+    if not tasks:
+        return
+    print(f"[*] Consultando SoloTodo para {len(tasks)} productos...")
+    completed = 0
+    with cf.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {
+            executor.submit(fetch_solotodo_prices, session, p["vendor_part"]): i
+            for i, p in tasks
+        }
+        for future in cf.as_completed(futures):
+            idx = futures[future]
+            completed += 1
+            if completed % 50 == 0 or completed == len(tasks):
+                print(f"    [{completed}/{len(tasks)}] SoloTodo consultados...")
+            try:
+                result = future.result()
+            except Exception:
+                result = {"solotodo_id": None, "pcf_price": None, "min_price": None}
+            products[idx].update(result)
+
+def read_seguimiento_sheet(sheet_id: str = SEGUIMIENTO_SHEET_ID) -> Dict[str, str]:
+    """
+    Lee el sheet de seguimiento de Fichas/OC y devuelve un dict de lookup.
+    Claves: str(pcf_id) y str(ingram_sku) → valor: status (OK, Pendiente, etc.)
+    """
+    import io
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid=0"
+    print(f"[*] Descargando sheet de seguimiento Fichas/OC...")
+    try:
+        session = requests.Session()
+        session.headers.update({"User-Agent": UA})
+        resp = session.get(url, timeout=30)
+        resp.raise_for_status()
+        df = pd.read_csv(io.StringIO(resp.text))
+        lookup: Dict[str, str] = {}
+        for _, row in df.iterrows():
+            status = str(row.get("Status", "")).strip()
+            if not status or status == "nan":
+                continue
+            # Indexar por PCF ID
+            pcf_id_raw = row.get("ID", "")
+            if pd.notna(pcf_id_raw):
+                try:
+                    lookup[str(int(float(pcf_id_raw)))] = status
+                except (ValueError, TypeError):
+                    pass
+            # Indexar por SKU Ingram (fallback)
+            sku_raw = row.get("SKU Ingram", "")
+            if pd.notna(sku_raw):
+                try:
+                    lookup[str(int(float(sku_raw)))] = status
+                except (ValueError, TypeError):
+                    pass
+        print(f"[+] Seguimiento cargado: {len(df)} entradas, {len(lookup)} claves indexadas")
+        return lookup
+    except Exception as e:
+        print(f"[!] No se pudo cargar el sheet de seguimiento: {e}")
+        return {}
+
+def get_seguimiento_status(lookup: Dict[str, str], pcf_id, ingram_part) -> str:
+    """Busca el status de seguimiento por PCF ID primero, luego por SKU Ingram."""
+    if pcf_id is not None:
+        try:
+            key = str(int(float(pcf_id)))
+            if key in lookup:
+                return lookup[key]
+        except (ValueError, TypeError):
+            pass
+    if ingram_part:
+        try:
+            key = str(int(float(str(ingram_part))))
+            if key in lookup:
+                return lookup[key]
+        except (ValueError, TypeError):
+            pass
+    return ""
 
 # ==============================================================================
 # FILTROS XLSX
@@ -171,7 +325,7 @@ def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     return {
         "total": total,
         "sin_stock_ingram": sin_stock,
-        "has_stock": has_stock,
+        "has_stock": eligible_xlsx,
         "sin_stock_df": sin_stock_df,
         "clearance": len(clearance_products),
         "clearance_products": clearance_products,
@@ -368,7 +522,7 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Di
         if item["stock_pcf"] is not None and item["stock_pcf"] > 0:
             has_pcf_stock.append(item)
             continue
-        # Producto elegible: verificar si tiene ficha
+        # Producto potencial: verificar si tiene ficha
         if item.get("ficha_vacia", False):
             missing_ficha.append(item)
         else:
@@ -398,6 +552,72 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Di
     }
 
 # ==============================================================================
+# EXPORTACION EXCEL
+# ==============================================================================
+
+def generate_excel_report(
+    classification: Dict,
+    usd_clp: Optional[float],
+    seguimiento: Optional[Dict[str, str]],
+    output_path: str,
+) -> None:
+    """Genera un .xlsx con los datos procesados en hojas separadas."""
+    _seg = seguimiento or {}
+
+    def clp_value(price):
+        if usd_clp is None:
+            return None
+        try:
+            return int((usd_clp + 5) * float(price))
+        except (ValueError, TypeError):
+            return None
+
+    def seg_status(pcf_id, ingram_part):
+        return get_seguimiento_status(_seg, pcf_id, ingram_part)
+
+    def build_rows(products, grupo):
+        rows = []
+        for p in products:
+            price = p.get("customer_price", 0)
+            rows.append({
+                "Grupo":         grupo,
+                "PCF ID":        p.get("pcf_id", ""),
+                "Ingram Part":   p.get("ingram_part", ""),
+                "Descripcion":   p.get("description", ""),
+                "Vendor":        p.get("vendor_name", ""),
+                "Part Number":   p.get("vendor_part", ""),
+                "Stock Ingram":  p.get("available_qty", 0),
+                "Costo USD":     price,
+                "Costo CLP":     clp_value(price),
+                "PCF SoloTodo":  p.get("pcf_price"),
+                "Min. Mercado":  p.get("min_price"),
+                "Ficha":         seg_status(p.get("pcf_id"), p.get("ingram_part")),
+                "Categoria":     p.get("category", ""),
+            })
+        return rows
+
+    publish_rows  = build_rows(classification.get("publish_ready", []),   "Con Ficha Listo")
+    ficha_rows    = build_rows(classification.get("missing_ficha", []),    "ID Existe Sin Ficha")
+    creation_rows = build_rows(classification.get("need_creation", []),    "ID No Existe")
+    mayorista_rows = build_rows(classification.get("already_mayorista", []), "Publicado Lista 1")
+
+    all_potenciales = publish_rows + ficha_rows + creation_rows
+
+    with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
+        if all_potenciales:
+            pd.DataFrame(all_potenciales).to_excel(writer, sheet_name="Potenciales", index=False)
+        if publish_rows:
+            pd.DataFrame(publish_rows).to_excel(writer, sheet_name="Con Ficha Listos", index=False)
+        if ficha_rows:
+            pd.DataFrame(ficha_rows).to_excel(writer, sheet_name="Sin Ficha", index=False)
+        if creation_rows:
+            pd.DataFrame(creation_rows).to_excel(writer, sheet_name="ID No Existe", index=False)
+        if mayorista_rows:
+            pd.DataFrame(mayorista_rows).to_excel(writer, sheet_name="Publicados", index=False)
+
+    print(f"[+] Excel generado: {output_path}")
+
+# ==============================================================================
 # GENERADOR DE DASHBOARD HTML
 # ==============================================================================
 
@@ -407,10 +627,55 @@ def generate_html_dashboard(
     price_file_name: str,
     timestamp: str,
     df_original: pd.DataFrame = None,
+    usd_clp: Optional[float] = None,
+    seguimiento: Optional[Dict[str, str]] = None,
 ) -> str:
     if df_original is None:
         df_original = pd.DataFrame()
     timestamp_display = format_chile_timestamp(timestamp)
+
+    def fmt_usd(price) -> str:
+        try:
+            return f"$ {float(price):,.2f}"
+        except (ValueError, TypeError):
+            return "—"
+
+    def fmt_clp(price) -> str:
+        if usd_clp is None:
+            return "—"
+        try:
+            clp = int((usd_clp + 5) * float(price))
+            return f"$ {clp:,}".replace(",", ".")
+        except (ValueError, TypeError):
+            return "—"
+
+    usd_info_html = (
+        f'<div class="file-info">💱 USD observado: <strong>${usd_clp:,.0f} CLP</strong> &nbsp;·&nbsp; Precio CLP = (USD observado + $5) × Costo</div>'
+        if usd_clp else ""
+    )
+
+    _seg = seguimiento or {}
+    _STATUS_BADGE = {
+        "OK":            ("badge-green",  "OK"),
+        "Pendiente":     ("badge-yellow", "Pendiente"),
+        "Ficha Básica":  ("badge-yellow", "Ficha Básica"),
+        "Ficha Antigua": ("badge-red",    "Ficha Antigua"),
+    }
+
+    def fmt_seguimiento(pcf_id, ingram_part) -> str:
+        status = get_seguimiento_status(_seg, pcf_id, ingram_part)
+        if not status:
+            return '<span style="color: var(--text-muted);">—</span>'
+        cls, label = _STATUS_BADGE.get(status, ("badge-blue", status))
+        return f'<span class="table-badge {cls}">{label}</span>'
+
+    def fmt_clp_price(price_clp) -> str:
+        if price_clp is None:
+            return '<span style="color: var(--text-muted);">—</span>'
+        try:
+            return f"$ {int(price_clp):,}".replace(",", ".")
+        except (ValueError, TypeError):
+            return '<span style="color: var(--text-muted);">—</span>'
 
     total = xlsx_stats["total"]
     sin_stock = xlsx_stats["sin_stock_ingram"]
@@ -426,26 +691,25 @@ def generate_html_dashboard(
     has_stock_df = xlsx_stats.get("has_stock", pd.DataFrame())
     sin_stock_df = xlsx_stats.get("sin_stock_df", pd.DataFrame())
 
-    total_eligible = len(publish_ready) + len(missing_ficha) + len(need_creation)
+    total_potencial = len(publish_ready) + len(missing_ficha) + len(need_creation)
 
     # Status
-    if total_eligible > 100:
+    if total_potencial > 100:
         status_class = "healthy"
-        status_text = f"{total_eligible} productos elegibles detectados"
+        status_text = f"{total_potencial} productos potenciales detectados"
         status_color = "#10b981"
-    elif total_eligible > 0:
+    elif total_potencial > 0:
         status_class = "warning"
-        status_text = f"{total_eligible} productos elegibles detectados"
+        status_text = f"{total_potencial} productos potenciales detectados"
         status_color = "#f59e0b"
     else:
         status_class = "critical"
-        status_text = "No se detectaron productos elegibles"
+        status_text = "No se detectaron productos potenciales"
         status_color = "#ef4444"
 
     # Funnel data
-    with_stock = total - sin_stock
-    after_clearance = with_stock - clearance
-    after_api_filters = total_eligible
+    with_stock = total - sin_stock - clearance  # stock > 0 y no CLEARANCE
+    after_api_filters = total_potencial
 
     # --- Tablas ---
 
@@ -460,6 +724,11 @@ def generate_html_dashboard(
             <td>{p["vendor_name"]}</td>
             <td><code>{p["vendor_part"]}</code></td>
             <td class="num-cell">{p["available_qty"]}</td>
+            <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td>{p["category"]}</td>
         </tr>'''
 
@@ -474,6 +743,11 @@ def generate_html_dashboard(
             <td>{p["vendor_name"]}</td>
             <td><code>{p["vendor_part"]}</code></td>
             <td class="num-cell">{p["available_qty"]}</td>
+            <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td>{p["category"]}</td>
         </tr>'''
 
@@ -487,6 +761,9 @@ def generate_html_dashboard(
             <td>{p["vendor_name"]}</td>
             <td><code>{p["vendor_part"]}</code></td>
             <td class="num-cell">{p["available_qty"]}</td>
+            <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
+            <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td>{p["category"]}</td>
         </tr>'''
 
@@ -502,6 +779,8 @@ def generate_html_dashboard(
             <td>{p["vendor_name"]}</td>
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{stock_display}</td>
+            <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
         </tr>'''
 
     # Tabla Con Stock PCF
@@ -516,31 +795,38 @@ def generate_html_dashboard(
             <td>{p["vendor_name"]}</td>
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{stock_display}</td>
+            <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
         </tr>'''
 
-    # Tabla Elegibles (union de publish_ready + missing_ficha + need_creation)
-    elegibles_rows = ""
-    elegibles_all = []
+    # Tabla Potenciales (union de publish_ready + missing_ficha + need_creation)
+    potenciales_rows = ""
+    potenciales_all = []
     for p in publish_ready:
-        elegibles_all.append({**p, "_estado": "Con Ficha Listo", "_estado_class": "badge-green"})
+        potenciales_all.append({**p, "_estado": "Con Ficha Listo", "_estado_class": "badge-green"})
     for p in missing_ficha:
-        elegibles_all.append({**p, "_estado": "ID Existe Sin Ficha", "_estado_class": "badge-yellow"})
+        potenciales_all.append({**p, "_estado": "ID Existe Sin Ficha", "_estado_class": "badge-yellow"})
     for p in need_creation:
-        elegibles_all.append({**p, "_estado": "ID No Existe", "_estado_class": "badge-purple"})
-    for i, p in enumerate(sorted(elegibles_all, key=lambda x: x.get("vendor_name", "")), 1):
+        potenciales_all.append({**p, "_estado": "ID No Existe", "_estado_class": "badge-purple"})
+    for i, p in enumerate(sorted(potenciales_all, key=lambda x: x.get("vendor_name", "")), 1):
         pcf_id_val = p.get("pcf_id", "")
         if pcf_id_val:
             id_cell = f'<a href="https://www.pcfactory.cl/producto/{pcf_id_val}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{pcf_id_val}</a>'
         else:
             id_cell = '<span style="color: var(--text-muted);">—</span>'
         desc = str(p.get("description", ""))
-        elegibles_rows += f'''<tr>
+        potenciales_rows += f'''<tr>
             <td>{i}</td>
             <td>{id_cell}</td>
             <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
             <td>{p.get("vendor_name", "")}</td>
             <td><code>{p.get("vendor_part", "")}</code></td>
             <td class="num-cell">{p.get("available_qty", 0)}</td>
+            <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td><span class="table-badge {p["_estado_class"]}">{p["_estado"]}</span></td>
         </tr>'''
 
@@ -557,6 +843,8 @@ def generate_html_dashboard(
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td class="num-cell">{fmt_usd(row.get(COL_CUSTOMER_PRICE, 0))}</td>
+            <td class="num-cell">{fmt_clp(row.get(COL_CUSTOMER_PRICE, 0))}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
@@ -573,6 +861,8 @@ def generate_html_dashboard(
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td class="num-cell">{fmt_usd(row.get(COL_CUSTOMER_PRICE, 0))}</td>
+            <td class="num-cell">{fmt_clp(row.get(COL_CUSTOMER_PRICE, 0))}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
@@ -588,6 +878,8 @@ def generate_html_dashboard(
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{qty}</td>
+            <td class="num-cell">{fmt_usd(row.get(COL_CUSTOMER_PRICE, 0))}</td>
+            <td class="num-cell">{fmt_clp(row.get(COL_CUSTOMER_PRICE, 0))}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
@@ -603,6 +895,8 @@ def generate_html_dashboard(
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td class="num-cell">{fmt_usd(row.get(COL_CUSTOMER_PRICE, 0))}</td>
+            <td class="num-cell">{fmt_clp(row.get(COL_CUSTOMER_PRICE, 0))}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
@@ -984,6 +1278,23 @@ def generate_html_dashboard(
         .tag-orange {{ background: rgba(251,146,60,0.15); color: #fb923c;             border: 1px solid rgba(251,146,60,0.3); }}
         .tag-purple {{ background: rgba(167,139,250,0.15); color: var(--accent-purple); border: 1px solid rgba(167,139,250,0.3); }}
         .tag-neutral {{ background: rgba(148,163,184,0.15); color: var(--text-secondary); border: 1px solid rgba(148,163,184,0.3); }}
+        .download-btn {{
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 1rem;
+            background: rgba(16,185,129,0.12);
+            color: var(--accent-green);
+            border: 1px solid rgba(16,185,129,0.35);
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-family: var(--font-sans);
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.15s;
+        }}
+        .download-btn:hover {{ background: rgba(16,185,129,0.22); }}
         @media (max-width: 768px) {{
             .container {{ padding: 1rem; }}
             .header {{ flex-direction: column; text-align: center; }}
@@ -1007,7 +1318,10 @@ def generate_html_dashboard(
                     <span>Mayorista - Ingram Micro</span>
                 </div>
             </div>
-            <div class="timestamp">{timestamp_display}</div>
+            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <div class="timestamp">{timestamp_display}</div>
+                <a href="mayorista-report.xlsx" download class="download-btn">⬇ Descargar Excel</a>
+            </div>
         </header>
 
         <nav class="nav-links">
@@ -1024,6 +1338,7 @@ def generate_html_dashboard(
         </nav>
 
         <div class="file-info">📄 Archivo: {price_file_name}</div>
+        {usd_info_html}
 
         <div class="status-banner {status_class}">
             <div class="status-indicator"></div>
@@ -1043,9 +1358,9 @@ def generate_html_dashboard(
                 <div class="stat-value green">{len(already_mayorista)}</div>
                 <div class="stat-label">Publicados (Lista 1)</div>
             </div>
-            <div class="stat-card clickable" onclick="switchTab('elegibles')">
-                <div class="stat-value green">{total_eligible}</div>
-                <div class="stat-label">Elegibles</div>
+            <div class="stat-card clickable" onclick="switchTab('potenciales')">
+                <div class="stat-value green">{total_potencial}</div>
+                <div class="stat-label">Potenciales</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('publish')">
                 <div class="stat-value green">{len(publish_ready)}</div>
@@ -1078,19 +1393,15 @@ def generate_html_dashboard(
                     <div class="funnel-bar" style="width: 100%; background: var(--accent-blue);">{total}</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('constock')" style="cursor:pointer;">
-                    <span class="funnel-label">Con Stock Ingram</span>
+                    <span class="funnel-label">Con Stock Ingram (sin CLEARANCE)</span>
                     <div class="funnel-bar" style="width: {max(with_stock / total * 100, 5) if total > 0 else 5}%; background: var(--accent-cyan);">{with_stock}</div>
-                </div>
-                <div class="funnel-step clickable" onclick="switchTab('sinclearance')" style="cursor:pointer;">
-                    <span class="funnel-label">Sin CLEARANCE</span>
-                    <div class="funnel-bar" style="width: {max(after_clearance / total * 100, 5) if total > 0 else 5}%; background: var(--accent-yellow);">{after_clearance}</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('mayorista')" style="cursor:pointer;">
                     <span class="funnel-label">Publicados (Lista 1)</span>
                     <div class="funnel-bar" style="width: {max(len(already_mayorista) / total * 100, 5) if total > 0 else 5}%; background: var(--accent-purple);">{len(already_mayorista)}</div>
                 </div>
-                <div class="funnel-step clickable" onclick="switchTab('elegibles')" style="cursor:pointer;">
-                    <span class="funnel-label">Elegibles (sin publicar)</span>
+                <div class="funnel-step clickable" onclick="switchTab('potenciales')" style="cursor:pointer;">
+                    <span class="funnel-label">Potenciales (sin publicar)</span>
                     <div class="funnel-bar" style="width: {max(after_api_filters / total * 100, 5) if total > 0 else 5}%; background: var(--accent-green);">{after_api_filters}</div>
                 </div>
             </div>
@@ -1098,44 +1409,49 @@ def generate_html_dashboard(
 
         <!-- Tabs para las tablas -->
         <div class="tab-container">
-            <button class="tab-btn" onclick="switchTab('elegibles')">🎯 Elegibles ({total_eligible})</button>
+            <button class="tab-btn" onclick="switchTab('potenciales')">🎯 Potenciales ({total_potencial})</button>
             <button class="tab-btn active" onclick="switchTab('publish')">✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
             <button class="tab-btn" onclick="switchTab('ficha')">📝 ID Existente Sin Ficha ({len(missing_ficha)})</button>
             <button class="tab-btn" onclick="switchTab('creation')">🆕 ID No Existe y Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
-            <button class="tab-btn" onclick="switchTab('sinclearance')">🔄 Sin Clearance ({after_clearance})</button>
+            <button class="tab-btn" onclick="switchTab('sinclearance')">🔄 Sin Clearance ({with_stock})</button>
             <button class="tab-btn" onclick="switchTab('clearance')">⚠️ CLEARANCE ({clearance})</button>
             <button class="tab-btn" onclick="switchTab('constock')">📊 Con Stock Ingram ({with_stock})</button>
             <button class="tab-btn" onclick="switchTab('sinstock')">🚫 Sin Stock ({sin_stock})</button>
             <button class="tab-btn" onclick="switchTab('total')">📋 Total ({total})</button>
         </div>
 
-        <!-- Tabla: Elegibles -->
-        <div id="tab-elegibles" class="tab-content">
+        <!-- Tabla: Potenciales -->
+        <div id="tab-potenciales" class="tab-content">
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Todos los Elegibles</h2>
-                        <span class="table-badge badge-green">{total_eligible} productos elegibles</span>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Todos los Potenciales</h2>
+                        <span class="table-badge badge-green">{total_potencial} productos potenciales</span>
                     </div>
-                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-elegibles', this.value)">
+                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-potenciales', this.value)">
                 </div>
                 <div class="table-container">
-                    <table id="table-elegibles">
+                    <table id="table-potenciales">
                         <thead>
                             <tr>
-                                <th onclick="sortTable('table-elegibles', 0, 'num')">#</th>
-                                <th onclick="sortTable('table-elegibles', 1, 'num')">PCF ID</th>
-                                <th onclick="sortTable('table-elegibles', 2, 'str')">Descripcion</th>
-                                <th onclick="sortTable('table-elegibles', 3, 'str')">Vendor</th>
-                                <th onclick="sortTable('table-elegibles', 4, 'str')">Part Number</th>
-                                <th onclick="sortTable('table-elegibles', 5, 'num')">Stock Ingram</th>
-                                <th onclick="sortTable('table-elegibles', 6, 'str')">Estado</th>
+                                <th onclick="sortTable('table-potenciales', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-potenciales', 1, 'num')">PCF ID</th>
+                                <th onclick="sortTable('table-potenciales', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-potenciales', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-potenciales', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-potenciales', 5, 'num')">Stock Ingram</th>
+                                <th onclick="sortTable('table-potenciales', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-potenciales', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-potenciales', 8, 'num')">PCF SoloTodo</th>
+                                <th onclick="sortTable('table-potenciales', 9, 'num')">Min. Mercado</th>
+                                <th onclick="sortTable('table-potenciales', 10, 'str')">Ficha</th>
+                                <th onclick="sortTable('table-potenciales', 11, 'str')">Estado</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {elegibles_rows if elegibles_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos elegibles</td></tr>'}
+                            {potenciales_rows if potenciales_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos potenciales</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1162,11 +1478,16 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-publish', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-publish', 4, 'str')">Part Number</th>
                                 <th onclick="sortTable('table-publish', 5, 'num')">Stock Ingram</th>
-                                <th onclick="sortTable('table-publish', 6, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-publish', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-publish', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-publish', 8, 'num')">PCF SoloTodo</th>
+                                <th onclick="sortTable('table-publish', 9, 'num')">Min. Mercado</th>
+                                <th onclick="sortTable('table-publish', 10, 'str')">Ficha</th>
+                                <th onclick="sortTable('table-publish', 11, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {publish_rows if publish_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {publish_rows if publish_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1193,11 +1514,16 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-ficha', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-ficha', 4, 'str')">Part Number</th>
                                 <th onclick="sortTable('table-ficha', 5, 'num')">Stock Ingram</th>
-                                <th onclick="sortTable('table-ficha', 6, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-ficha', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-ficha', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-ficha', 8, 'num')">PCF SoloTodo</th>
+                                <th onclick="sortTable('table-ficha', 9, 'num')">Min. Mercado</th>
+                                <th onclick="sortTable('table-ficha', 10, 'str')">Ficha</th>
+                                <th onclick="sortTable('table-ficha', 11, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {ficha_rows if ficha_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {ficha_rows if ficha_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1224,11 +1550,14 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-creation', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-creation', 4, 'str')">Part Number</th>
                                 <th onclick="sortTable('table-creation', 5, 'num')">Stock Ingram</th>
-                                <th onclick="sortTable('table-creation', 6, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-creation', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-creation', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-creation', 8, 'str')">Ficha</th>
+                                <th onclick="sortTable('table-creation', 9, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {creation_rows if creation_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {creation_rows if creation_rows else '<tr><td colspan="10" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1255,10 +1584,12 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-mayorista', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-mayorista', 4, 'num')">Stock Ingram</th>
                                 <th onclick="sortTable('table-mayorista', 5, 'num')">Stock PCF</th>
+                                <th onclick="sortTable('table-mayorista', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-mayorista', 7, 'num')">Costo CLP</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {mayorista_rows if mayorista_rows else '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {mayorista_rows if mayorista_rows else '<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1285,10 +1616,12 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-pcfstock', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-pcfstock', 4, 'num')">Stock Ingram</th>
                                 <th onclick="sortTable('table-pcfstock', 5, 'num')">Stock PCF</th>
+                                <th onclick="sortTable('table-pcfstock', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-pcfstock', 7, 'num')">Costo CLP</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {pcf_stock_rows if pcf_stock_rows else '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {pcf_stock_rows if pcf_stock_rows else '<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1301,7 +1634,7 @@ def generate_html_dashboard(
                 <div class="table-header">
                     <div>
                         <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Sin CLEARANCE (con stock, no liquidacion)</h2>
-                        <span class="table-badge badge-yellow">{after_clearance} productos</span>
+                        <span class="table-badge badge-yellow">{with_stock} productos</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-sinclearance', this.value)">
                 </div>
@@ -1315,11 +1648,13 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-sinclearance', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-sinclearance', 4, 'str')">Part Number</th>
                                 <th onclick="sortTable('table-sinclearance', 5, 'num')">Stock Ingram</th>
-                                <th onclick="sortTable('table-sinclearance', 6, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-sinclearance', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-sinclearance', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-sinclearance', 8, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {sin_clearance_rows if sin_clearance_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                            {sin_clearance_rows if sin_clearance_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1346,11 +1681,13 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-clearance', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-clearance', 4, 'str')">Part Number</th>
                                 <th onclick="sortTable('table-clearance', 5, 'num')">Stock Ingram</th>
-                                <th onclick="sortTable('table-clearance', 6, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-clearance', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-clearance', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-clearance', 8, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {clearance_rows if clearance_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {clearance_rows if clearance_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1377,7 +1714,9 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-constock', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-constock', 4, 'str')">Part Number</th>
                                 <th onclick="sortTable('table-constock', 5, 'num')">Stock</th>
-                                <th onclick="sortTable('table-constock', 6, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-constock', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-constock', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-constock', 8, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>'''
@@ -1394,10 +1733,12 @@ def generate_html_dashboard(
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
+            <td class="num-cell">{fmt_usd(row.get(COL_CUSTOMER_PRICE, 0))}</td>
+            <td class="num-cell">{fmt_clp(row.get(COL_CUSTOMER_PRICE, 0))}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
-    html += f'''{constock_rows if constock_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+    html += f'''{constock_rows if constock_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1424,11 +1765,13 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-sinstock', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-sinstock', 4, 'str')">Part Number</th>
                                 <th onclick="sortTable('table-sinstock', 5, 'num')">Stock</th>
-                                <th onclick="sortTable('table-sinstock', 6, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-sinstock', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-sinstock', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-sinstock', 8, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {sin_stock_rows if sin_stock_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                            {sin_stock_rows if sin_stock_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1455,11 +1798,13 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-total', 3, 'str')">Vendor</th>
                                 <th onclick="sortTable('table-total', 4, 'str')">Part Number</th>
                                 <th onclick="sortTable('table-total', 5, 'num')">Stock</th>
-                                <th onclick="sortTable('table-total', 6, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-total', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-total', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-total', 8, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {total_rows if total_rows else '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                            {total_rows if total_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1530,13 +1875,13 @@ def generate_html_dashboard(
                 <div class="glosario-card">
                     <div class="glosario-header">
                         <span class="glosario-icon">🎯</span>
-                        <span class="glosario-title">Elegibles</span>
+                        <span class="glosario-title">Potenciales</span>
                     </div>
-                    <p class="glosario-desc">Total de productos que podrían publicarse o ya están en proceso. Es la suma de Con Ficha Listos + ID Existente Sin Ficha + ID No Existe y Requieren Creación.</p>
+                    <p class="glosario-desc">Total de productos que podrían publicarse o ya están en proceso. Es la suma de Con Ficha Listos + ID Existente Sin Ficha + ID No Existe y Requieren Creación. Si tienen PCF ID, deben tener <code>lista: "0"</code> y sin stock en PCFactory.</p>
                     <div class="glosario-criteria">
                         <span class="criteria-tag tag-green">Con Stock Ingram</span>
                         <span class="criteria-tag tag-green">Sin CLEARANCE</span>
-                        <span class="criteria-tag tag-green">No publicados</span>
+                        <span class="criteria-tag tag-green">lista: "0" (no publicados)</span>
                         <span class="criteria-tag tag-green">Sin stock PCF</span>
                     </div>
                 </div>
@@ -1560,7 +1905,7 @@ def generate_html_dashboard(
                         <span class="glosario-icon">📝</span>
                         <span class="glosario-title">ID Existente Sin Ficha Solicitada</span>
                     </div>
-                    <p class="glosario-desc">Productos elegibles cuya ficha está vacía o sin contenido real en PCFactory. No se pueden publicar hasta que el equipo de contenido complete la descripción.</p>
+                    <p class="glosario-desc">Productos potenciales cuya ficha está vacía o sin contenido real en PCFactory. No se pueden publicar hasta que el equipo de contenido complete la descripción.</p>
                     <div class="glosario-criteria">
                         <span class="criteria-tag tag-blue">PCF ID en price file</span>
                         <span class="criteria-tag tag-blue">mayorista: false</span>
@@ -1675,6 +2020,8 @@ def main():
                        help="Workers para consultas API")
     parser.add_argument("--skip-api", action="store_true",
                        help="Saltar consultas a la API (solo filtros XLSX)")
+    parser.add_argument("--with-solotodo", action="store_true",
+                       help="Consultar precios en SoloTodo para productos potenciales")
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
@@ -1781,18 +2128,37 @@ def main():
     print(f"  Ya mayorista:          {len(classification['already_mayorista'])}")
     print(f"  Con stock PCF:         {len(classification['has_pcf_stock'])}")
     print(f"  Errores API:           {len(classification['api_errors'])}")
-    total_eligible = len(classification['publish_ready']) + len(classification.get('missing_ficha', [])) + len(classification['need_creation'])
-    print(f"  TOTAL ELEGIBLES:       {total_eligible}")
+    total_potencial = len(classification['publish_ready']) + len(classification.get('missing_ficha', [])) + len(classification['need_creation'])
+    print(f"  TOTAL POTENCIALES:     {total_potencial}")
+
+    # 5b. Enriquecer con SoloTodo (opcional)
+    if args.with_solotodo and not args.skip_api:
+        st_session = create_session()
+        actionable = classification["publish_ready"] + classification.get("missing_ficha", [])
+        enrich_with_solotodo(actionable, st_session, max_workers=4)
+    elif args.with_solotodo and args.skip_api:
+        print("\n[!] --with-solotodo ignorado porque --skip-api esta activo")
 
     # 6. Generar dashboard HTML
     timestamp = datetime.now(timezone.utc).isoformat()
-    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df)
+    print("\n[*] Obteniendo tipo de cambio USD...")
+    usd_clp = fetch_usd_clp()
+    if usd_clp:
+        print(f"[+] USD observado: ${usd_clp:,.0f} CLP")
+    else:
+        print("[!] No se pudo obtener el tipo de cambio, columna CLP mostrara '—'")
+    seguimiento = read_seguimiento_sheet()
+    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento)
     html_path = output_dir / "mayorista.html"
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"\n[+] Dashboard guardado: {html_path}")
 
-    # 7. Guardar JSON report
+    # 7. Generar Excel
+    excel_path = output_dir / "mayorista-report.xlsx"
+    generate_excel_report(classification, usd_clp, seguimiento, str(excel_path))
+
+    # 8. Guardar JSON report
     report = {
         "timestamp": timestamp,
         "price_file": price_file_name,
@@ -1806,7 +2172,7 @@ def main():
             "already_mayorista": len(classification["already_mayorista"]),
             "has_pcf_stock": len(classification["has_pcf_stock"]),
             "api_errors": len(classification["api_errors"]),
-            "total_eligible": total_eligible,
+            "total_potencial": total_potencial,
         },
         "publish_ready": classification["publish_ready"],
         "missing_ficha": classification.get("missing_ficha", []),
