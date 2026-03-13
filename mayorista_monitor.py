@@ -30,7 +30,8 @@ PRICE_FILE_PATTERN = "CLPriceFile*.xlsx"
 
 # Google Sheets
 GOOGLE_SHEET_ID = "1mgGjhEmcE_c1q2xfJ4wgGpkcSD7A0jVCqD43h2382gc"
-GOOGLE_SHEET_CSV_URL = f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}/export?format=csv"
+GOOGLE_SHEET_GID = "972610794"
+GOOGLE_SHEET_CSV_URL = f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}/export?format=csv&gid={GOOGLE_SHEET_GID}"
 SEGUIMIENTO_SHEET_ID = "15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM"
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6_1) AppleWebKit/537.36 "
@@ -126,7 +127,7 @@ def read_price_file(filepath: str) -> pd.DataFrame:
     print(f"    {len(df)} productos, {len(df.columns)} columnas")
     return df
 
-def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = "0") -> pd.DataFrame:
+def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = GOOGLE_SHEET_GID) -> pd.DataFrame:
     """Lee un Google Sheet publico usando el endpoint gviz (mas confiable)."""
     import io
     url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
@@ -1957,7 +1958,7 @@ def main():
                        help="Fuente de datos: 'gsheet' (Google Sheets) o 'local' (archivo XLSX)")
     parser.add_argument("--sheet-id", type=str, default=GOOGLE_SHEET_ID,
                        help="ID del Google Sheet (solo para --source gsheet)")
-    parser.add_argument("--gid", type=str, default="0",
+    parser.add_argument("--gid", type=str, default=GOOGLE_SHEET_GID,
                        help="ID de la hoja dentro del Google Sheet")
     parser.add_argument("--mayorista-dir", type=str, default=MAYORISTA_DIR,
                        help="Directorio con los price files (solo para --source local)")
