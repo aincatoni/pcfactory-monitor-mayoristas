@@ -37,16 +37,15 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6_1) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
 
 # Columnas clave del XLSX (por nombre, no por indice)
-COL_PCF_ID = "ID"
-COL_INGRAM_PART = "Ingram Part Number"
-COL_DESCRIPTION = "Ingram Part Description"
-COL_VENDOR_NAME = "Vendor Name"
-COL_VENDOR_PART = "Vendor Part Number"
-COL_CUSTOMER_PRICE = "Customer Price"
-COL_AVAILABLE_QTY = "Available Quantity"
-COL_CREATION_REASON = "Creation Reason Value"
-COL_CATEGORY = "Category Description"
-COL_SUBCATEGORY = "Sub Category Description"
+COL_PCF_ID = "ID PRODUCTO PCF"
+COL_INGRAM_PART = "SKU PRODUCTO"
+COL_DESCRIPTION = "NOMBRE"
+COL_VENDOR_NAME = "MARCA"
+COL_VENDOR_PART = "PARTNO"
+COL_CUSTOMER_PRICE = "COSTO"
+COL_AVAILABLE_QTY = "STOCK"
+COL_CATEGORY = "CATEGORIA"
+COL_SUBCATEGORY = "TIPO"
 
 # ==============================================================================
 # FUNCIONES DE FECHA/HORA CHILE
@@ -122,7 +121,7 @@ def find_latest_price_file(mayorista_dir: str) -> Optional[str]:
     return max(files, key=lambda f: Path(f).stat().st_mtime)
 
 def read_price_file(filepath: str) -> pd.DataFrame:
-    df = pd.read_excel(filepath)
+    df = pd.read_excel(filepath, header=3)
     print(f"[+] Price file cargado: {filepath}")
     print(f"    {len(df)} productos, {len(df.columns)} columnas")
     return df
@@ -297,10 +296,10 @@ def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     has_stock = df[df[COL_AVAILABLE_QTY].fillna(0) > 0].copy()
     sin_stock = total - len(has_stock)
 
-    # Filtro 2: No CLEARANCE
-    is_clearance = has_stock[COL_CREATION_REASON].str.contains('CLEARANCE', case=False, na=False)
-    clearance_products = has_stock[is_clearance].copy()
-    eligible_xlsx = has_stock[~is_clearance].copy()
+    # Filtro 2: No elegibles (BAD BOX / OPEN BOX en el nombre)
+    is_no_eligible = has_stock[COL_DESCRIPTION].astype(str).str.contains('BAD BOX|OPEN BOX', case=False, na=False)
+    no_eligible_df = has_stock[is_no_eligible].copy()
+    eligible_xlsx = has_stock[~is_no_eligible].copy()
 
     # Separar por si tienen PCF ID o no
     # El campo puede contener "Sin ID" u otros textos no numericos
@@ -325,10 +324,10 @@ def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     return {
         "total": total,
         "sin_stock_ingram": sin_stock,
+        "no_eligible": len(no_eligible_df),
+        "no_eligible_df": no_eligible_df,
         "has_stock": eligible_xlsx,
         "sin_stock_df": sin_stock_df,
-        "clearance": len(clearance_products),
-        "clearance_products": clearance_products,
         "eligible_xlsx": eligible_xlsx,
         "has_pcf_id": has_pcf_id,
         "no_pcf_id": no_pcf_id,
@@ -679,7 +678,6 @@ def generate_html_dashboard(
 
     total = xlsx_stats["total"]
     sin_stock = xlsx_stats["sin_stock_ingram"]
-    clearance = xlsx_stats["clearance"]
     publish_ready = classification["publish_ready"]
     missing_ficha = classification.get("missing_ficha", [])
     need_creation = classification["need_creation"]
@@ -687,7 +685,8 @@ def generate_html_dashboard(
     has_pcf_stock = classification["has_pcf_stock"]
     api_errors = classification["api_errors"]
 
-    clearance_products = xlsx_stats.get("clearance_products", pd.DataFrame())
+    no_eligible = xlsx_stats.get("no_eligible", 0)
+    no_eligible_df = xlsx_stats.get("no_eligible_df", pd.DataFrame())
     has_stock_df = xlsx_stats.get("has_stock", pd.DataFrame())
     sin_stock_df = xlsx_stats.get("sin_stock_df", pd.DataFrame())
 
@@ -708,7 +707,7 @@ def generate_html_dashboard(
         status_color = "#ef4444"
 
     # Funnel data
-    with_stock = total - sin_stock - clearance  # stock > 0 y no CLEARANCE
+    with_stock = total - sin_stock  # stock > 0
     after_api_filters = total_potencial
 
     # --- Tablas ---
@@ -830,31 +829,13 @@ def generate_html_dashboard(
             <td><span class="table-badge {p["_estado_class"]}">{p["_estado"]}</span></td>
         </tr>'''
 
-    # Tabla Sin Clearance (eligible_xlsx = con stock y no clearance)
-    eligible_xlsx_df = xlsx_stats.get("eligible_xlsx", pd.DataFrame())
-    sin_clearance_rows = ""
-    if not eligible_xlsx_df.empty:
-        for i, (_, row) in enumerate(eligible_xlsx_df.iterrows(), 1):
-            desc = str(row.get(COL_DESCRIPTION, ""))
-            sin_clearance_rows += f'''<tr>
-            <td>{i}</td>
-            <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
-            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
-            <td>{row.get(COL_VENDOR_NAME, "")}</td>
-            <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
-            <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
-            <td class="num-cell">{fmt_usd(row.get(COL_CUSTOMER_PRICE, 0))}</td>
-            <td class="num-cell">{fmt_clp(row.get(COL_CUSTOMER_PRICE, 0))}</td>
-            <td>{row.get(COL_CATEGORY, "")}</td>
-        </tr>'''
 
-    # Tabla CLEARANCE
-    clearance_rows = ""
-    if not clearance_products.empty:
-        for i, (_, row) in enumerate(clearance_products.iterrows(), 1):
-            pcf_id_val = row.get(COL_PCF_ID, "")
+    # Tabla No Elegibles (BAD BOX / OPEN BOX)
+    no_eligible_rows = ""
+    if not no_eligible_df.empty:
+        for i, (_, row) in enumerate(no_eligible_df.iterrows(), 1):
             desc = str(row.get(COL_DESCRIPTION, ""))
-            clearance_rows += f'''<tr>
+            no_eligible_rows += f'''<tr>
             <td>{i}</td>
             <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
             <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
@@ -1378,9 +1359,9 @@ def generate_html_dashboard(
                 <div class="stat-value red">{len(has_pcf_stock)}</div>
                 <div class="stat-label">Con Stock PCF</div>
             </div>
-            <div class="stat-card clickable" onclick="switchTab('clearance')">
-                <div class="stat-value red">{clearance}</div>
-                <div class="stat-label">CLEARANCE</div>
+            <div class="stat-card clickable" onclick="switchTab('noelegible')">
+                <div class="stat-value red">{no_eligible}</div>
+                <div class="stat-label">No Elegibles (Open/Bad Box)</div>
             </div>
         </div>
 
@@ -1393,7 +1374,7 @@ def generate_html_dashboard(
                     <div class="funnel-bar" style="width: 100%; background: var(--accent-blue);">{total}</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('constock')" style="cursor:pointer;">
-                    <span class="funnel-label">Con Stock Ingram (sin CLEARANCE)</span>
+                    <span class="funnel-label">Con Stock Ingram</span>
                     <div class="funnel-bar" style="width: {max(with_stock / total * 100, 5) if total > 0 else 5}%; background: var(--accent-cyan);">{with_stock}</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('mayorista')" style="cursor:pointer;">
@@ -1415,8 +1396,7 @@ def generate_html_dashboard(
             <button class="tab-btn" onclick="switchTab('creation')">🆕 ID No Existe y Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
-            <button class="tab-btn" onclick="switchTab('sinclearance')">🔄 Sin Clearance ({with_stock})</button>
-            <button class="tab-btn" onclick="switchTab('clearance')">⚠️ CLEARANCE ({clearance})</button>
+            <button class="tab-btn" onclick="switchTab('noelegible')">🚫 No Elegibles ({no_eligible})</button>
             <button class="tab-btn" onclick="switchTab('constock')">📊 Con Stock Ingram ({with_stock})</button>
             <button class="tab-btn" onclick="switchTab('sinstock')">🚫 Sin Stock ({sin_stock})</button>
             <button class="tab-btn" onclick="switchTab('total')">📋 Total ({total})</button>
@@ -1628,66 +1608,33 @@ def generate_html_dashboard(
             </div>
         </div>
 
-        <!-- Tabla: Sin Clearance -->
-        <div id="tab-sinclearance" class="tab-content">
+        <!-- Tabla: No Elegibles (BAD BOX / OPEN BOX) -->
+        <div id="tab-noelegible" class="tab-content">
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Sin CLEARANCE (con stock, no liquidacion)</h2>
-                        <span class="table-badge badge-yellow">{with_stock} productos</span>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Productos No Elegibles</h2>
+                        <span class="table-badge badge-red">{no_eligible} productos BAD BOX / OPEN BOX</span>
                     </div>
-                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-sinclearance', this.value)">
+                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-noelegible', this.value)">
                 </div>
                 <div class="table-container">
-                    <table id="table-sinclearance">
+                    <table id="table-noelegible">
                         <thead>
                             <tr>
-                                <th onclick="sortTable('table-sinclearance', 0, 'num')">#</th>
-                                <th onclick="sortTable('table-sinclearance', 1, 'str')">Ingram Part</th>
-                                <th onclick="sortTable('table-sinclearance', 2, 'str')">Descripcion</th>
-                                <th onclick="sortTable('table-sinclearance', 3, 'str')">Vendor</th>
-                                <th onclick="sortTable('table-sinclearance', 4, 'str')">Part Number</th>
-                                <th onclick="sortTable('table-sinclearance', 5, 'num')">Stock Ingram</th>
-                                <th onclick="sortTable('table-sinclearance', 6, 'num')">Costo USD</th>
-                                <th onclick="sortTable('table-sinclearance', 7, 'num')">Costo CLP</th>
-                                <th onclick="sortTable('table-sinclearance', 8, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-noelegible', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-noelegible', 1, 'str')">SKU Ingram</th>
+                                <th onclick="sortTable('table-noelegible', 2, 'str')">Nombre</th>
+                                <th onclick="sortTable('table-noelegible', 3, 'str')">Marca</th>
+                                <th onclick="sortTable('table-noelegible', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-noelegible', 5, 'num')">Stock Ingram</th>
+                                <th onclick="sortTable('table-noelegible', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-noelegible', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-noelegible', 8, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {sin_clearance_rows if sin_clearance_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tabla: CLEARANCE -->
-        <div id="tab-clearance" class="tab-content">
-            <div class="table-section">
-                <div class="table-header">
-                    <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">CLEARANCE (Excluidos)</h2>
-                        <span class="table-badge badge-red">{clearance} productos en liquidacion</span>
-                    </div>
-                    <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-clearance', this.value)">
-                </div>
-                <div class="table-container">
-                    <table id="table-clearance">
-                        <thead>
-                            <tr>
-                                <th onclick="sortTable('table-clearance', 0, 'num')">#</th>
-                                <th onclick="sortTable('table-clearance', 1, 'str')">Ingram Part</th>
-                                <th onclick="sortTable('table-clearance', 2, 'str')">Descripcion</th>
-                                <th onclick="sortTable('table-clearance', 3, 'str')">Vendor</th>
-                                <th onclick="sortTable('table-clearance', 4, 'str')">Part Number</th>
-                                <th onclick="sortTable('table-clearance', 5, 'num')">Stock Ingram</th>
-                                <th onclick="sortTable('table-clearance', 6, 'num')">Costo USD</th>
-                                <th onclick="sortTable('table-clearance', 7, 'num')">Costo CLP</th>
-                                <th onclick="sortTable('table-clearance', 8, 'str')">Categoria</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {clearance_rows if clearance_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {no_eligible_rows if no_eligible_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1840,17 +1787,6 @@ def generate_html_dashboard(
 
                 <div class="glosario-card">
                     <div class="glosario-header">
-                        <span class="glosario-icon">⚠️</span>
-                        <span class="glosario-title">CLEARANCE</span>
-                    </div>
-                    <p class="glosario-desc">Productos en proceso de liquidación o descontinuación. Se excluyen del monitoreo porque no tiene sentido habilitarlos como mayorista.</p>
-                    <div class="glosario-criteria">
-                        <span class="criteria-tag tag-orange">Creation Reason = CLEARANCE</span>
-                    </div>
-                </div>
-
-                <div class="glosario-card">
-                    <div class="glosario-header">
                         <span class="glosario-icon">🏭</span>
                         <span class="glosario-title">Publicados (Lista 1)</span>
                     </div>
@@ -1874,13 +1810,24 @@ def generate_html_dashboard(
 
                 <div class="glosario-card">
                     <div class="glosario-header">
+                        <span class="glosario-icon">🚫</span>
+                        <span class="glosario-title">No Elegibles</span>
+                    </div>
+                    <p class="glosario-desc">Productos que no son elegibles para el canal mayorista porque corresponden a unidades dañadas o reacondicionadas. Se identifican por el texto en el nombre del producto.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-red">NOMBRE contiene "BAD BOX"</span>
+                        <span class="criteria-tag tag-red">NOMBRE contiene "OPEN BOX"</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
                         <span class="glosario-icon">🎯</span>
                         <span class="glosario-title">Potenciales</span>
                     </div>
                     <p class="glosario-desc">Total de productos que podrían publicarse o ya están en proceso. Es la suma de Con Ficha Listos + ID Existente Sin Ficha + ID No Existe y Requieren Creación. Si tienen PCF ID, deben tener <code>lista: "0"</code> y sin stock en PCFactory.</p>
                     <div class="glosario-criteria">
                         <span class="criteria-tag tag-green">Con Stock Ingram</span>
-                        <span class="criteria-tag tag-green">Sin CLEARANCE</span>
                         <span class="criteria-tag tag-green">lista: "0" (no publicados)</span>
                         <span class="criteria-tag tag-green">Sin stock PCF</span>
                     </div>
@@ -2039,7 +1986,7 @@ def main():
             price_file_name = f"Google Sheet ({args.sheet_id[:8]}...)"
         except Exception:
             print(f"[!] No se pudo leer el Google Sheet")
-            empty_stats = {"total": 0, "sin_stock_ingram": 0, "clearance": 0}
+            empty_stats = {"total": 0, "sin_stock_ingram": 0}
             empty_class = {"publish_ready": [], "missing_ficha": [], "need_creation": [], "already_mayorista": [], "has_pcf_stock": [], "api_errors": []}
             ts = datetime.now(timezone.utc).isoformat()
             html = generate_html_dashboard(empty_stats, empty_class, "Error al leer Google Sheet", ts)
@@ -2053,7 +2000,7 @@ def main():
         price_file = find_latest_price_file(args.mayorista_dir)
         if not price_file:
             print(f"[!] No se encontro ningun price file en {args.mayorista_dir}/")
-            empty_stats = {"total": 0, "sin_stock_ingram": 0, "clearance": 0}
+            empty_stats = {"total": 0, "sin_stock_ingram": 0}
             empty_class = {"publish_ready": [], "missing_ficha": [], "need_creation": [], "already_mayorista": [], "has_pcf_stock": [], "api_errors": []}
             ts = datetime.now(timezone.utc).isoformat()
             html = generate_html_dashboard(empty_stats, empty_class, "No encontrado", ts)
@@ -2071,7 +2018,7 @@ def main():
     xlsx_stats = apply_xlsx_filters(df)
     print(f"    Total: {xlsx_stats['total']}")
     print(f"    Sin stock Ingram: {xlsx_stats['sin_stock_ingram']}")
-    print(f"    CLEARANCE: {xlsx_stats['clearance']}")
+    print(f"    No elegibles (BAD/OPEN BOX): {xlsx_stats['no_eligible']}")
     print(f"    Con PCF ID: {len(xlsx_stats['has_pcf_id'])}")
     print(f"    Sin PCF ID: {len(xlsx_stats['no_pcf_id'])}")
 
@@ -2165,7 +2112,6 @@ def main():
         "summary": {
             "total": xlsx_stats["total"],
             "con_stock_ingram": xlsx_stats["total"] - xlsx_stats["sin_stock_ingram"],
-            "clearance": xlsx_stats["clearance"],
             "publish_ready": len(classification["publish_ready"]),
             "missing_ficha": len(classification.get("missing_ficha", [])),
             "need_creation": len(classification["need_creation"]),
