@@ -673,8 +673,8 @@ def generate_html_dashboard(
         if isinstance(bucket, list):
             _all_classified.extend(bucket)
     solotodo_lookup: Dict[str, Dict] = {
-        p["vendor_part"]: {"pcf_price": p.get("pcf_price"), "min_price": p.get("min_price"), "mode_price": p.get("mode_price")}
-        for p in _all_classified if p.get("vendor_part") and (p.get("pcf_price") is not None or p.get("min_price") is not None)
+        p["vendor_part"]: {"pcf_price": p.get("pcf_price"), "min_price": p.get("min_price"), "mode_price": p.get("mode_price"), "solotodo_id": p.get("solotodo_id")}
+        for p in _all_classified if p.get("vendor_part") and (p.get("pcf_price") is not None or p.get("min_price") is not None or p.get("solotodo_id") is not None)
     }
 
     def fmt_usd(price) -> str:
