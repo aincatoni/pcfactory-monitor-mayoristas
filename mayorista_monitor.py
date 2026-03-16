@@ -627,17 +627,20 @@ def generate_excel_report(
         return rows
 
     publish_rows  = build_rows(classification.get("publish_ready", []),   "Con Ficha Listo")
-    ficha_rows    = build_rows(classification.get("missing_ficha", []),    "ID Existe Sin Ficha")
+    pending_rows  = build_rows(classification.get("pending_ficha", []),   "Ficha Solicitada")
+    ficha_rows    = build_rows(classification.get("missing_ficha", []),    "Sin Ficha Solicitada")
     creation_rows = build_rows(classification.get("need_creation", []),    "ID No Existe")
     mayorista_rows = build_rows(classification.get("already_mayorista", []), "Publicado Lista 1")
 
-    all_potenciales = publish_rows + ficha_rows + creation_rows
+    all_potenciales = publish_rows + pending_rows + ficha_rows + creation_rows
 
     with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
         if all_potenciales:
             pd.DataFrame(all_potenciales).to_excel(writer, sheet_name="Potenciales", index=False)
         if publish_rows:
             pd.DataFrame(publish_rows).to_excel(writer, sheet_name="Con Ficha Listos", index=False)
+        if pending_rows:
+            pd.DataFrame(pending_rows).to_excel(writer, sheet_name="Ficha Solicitada", index=False)
         if ficha_rows:
             pd.DataFrame(ficha_rows).to_excel(writer, sheet_name="Sin Ficha", index=False)
         if creation_rows:
