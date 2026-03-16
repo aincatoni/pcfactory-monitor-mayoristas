@@ -137,7 +137,7 @@ def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = GOOGLE_SHEET_G
         session.headers.update({"User-Agent": UA})
         resp = session.get(url, timeout=30)
         resp.raise_for_status()
-        df = pd.read_csv(io.StringIO(resp.text))
+        df = pd.read_csv(io.StringIO(resp.text), decimal=",", thousands=".")
         print(f"[+] Google Sheet cargado correctamente")
         print(f"    {len(df)} productos, {len(df.columns)} columnas")
         return df
@@ -150,8 +150,8 @@ SOLOTODO_API = "https://api.solotodo.com"
 SOLOTODO_PCF_STORE_ID = 12
 
 def fetch_solotodo_prices(session: requests.Session, vendor_part: str) -> Dict[str, Any]:
-    """Busca un producto en SoloTodo por part number y retorna precios de PCFactory y mínimo mercado."""
-    empty = {"solotodo_id": None, "pcf_price": None, "min_price": None}
+    """Busca un producto en SoloTodo por part number y retorna precios de PCFactory, mínimo mercado y moda."""
+    empty = {"solotodo_id": None, "pcf_price": None, "min_price": None, "mode_price": None}
     if not vendor_part or str(vendor_part).strip() in ("", "nan"):
         return empty
     try:
@@ -181,6 +181,7 @@ def fetch_solotodo_prices(session: requests.Session, vendor_part: str) -> Dict[s
 
         pcf_price = None
         min_price = None
+        all_prices = []
 
         for ent in entities:
             registry = ent.get("active_registry")
@@ -192,16 +193,29 @@ def fetch_solotodo_prices(session: requests.Session, vendor_part: str) -> Dict[s
                 continue
             if offer <= 0:
                 continue
+            price_int = int(offer)
+            all_prices.append(price_int)
             store_url = str(ent.get("store", ""))
             if f"/stores/{SOLOTODO_PCF_STORE_ID}/" in store_url:
-                pcf_price = int(offer)
-            if min_price is None or offer < min_price:
-                min_price = int(offer)
+                pcf_price = price_int
+            if min_price is None or price_int < min_price:
+                min_price = price_int
+
+        # Moda: precio más frecuente entre las tiendas (None si todos son únicos)
+        mode_price = None
+        if all_prices:
+            counts = {}
+            for p in all_prices:
+                counts[p] = counts.get(p, 0) + 1
+            max_count = max(counts.values())
+            if max_count > 1:
+                mode_price = max(p for p, c in counts.items() if c == max_count)
 
         return {
             "solotodo_id": product_id,
             "pcf_price": pcf_price,
             "min_price": min_price,
+            "mode_price": mode_price,
         }
     except Exception:
         return empty
@@ -226,7 +240,7 @@ def enrich_with_solotodo(products: List[Dict], session: requests.Session, max_wo
             try:
                 result = future.result()
             except Exception:
-                result = {"solotodo_id": None, "pcf_price": None, "min_price": None}
+                result = {"solotodo_id": None, "pcf_price": None, "min_price": None, "mode_price": None}
             products[idx].update(result)
 
 def read_seguimiento_sheet(sheet_id: str = SEGUIMIENTO_SHEET_ID) -> Dict[str, str]:
@@ -502,10 +516,13 @@ def check_products_batch(session: requests.Session, df_with_ids: pd.DataFrame, m
 # CLASIFICACION FINAL
 # ==============================================================================
 
-def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Dict[str, Any]:
+def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame, seguimiento: Dict = None) -> Dict[str, Any]:
+    seg = seguimiento or {}
     # Con ficha listos para publicar (PCF ID + mayorista=false + stock_pcf=0 + tiene ficha)
     publish_ready = []
-    # Producto sin ficha solicitada - id existe (mayorista=false + stock_pcf=0 + ficha vacia)
+    # Ficha vacía pero ya solicitada en seguimiento (esperando que PCF la publique)
+    pending_ficha = []
+    # Ficha vacía y no solicitada (acción requerida: pedir ficha)
     missing_ficha = []
     # Publicados - ya mayorista en lista 1
     already_mayorista = []
@@ -531,7 +548,11 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Di
             continue
         # Aquí solo llegan productos potenciales: lista "0", sin stock PCF
         if item.get("ficha_vacia", False):
-            missing_ficha.append(item)
+            status = get_seguimiento_status(seg, item.get("pcf_id"), item.get("ingram_part"))
+            if status:
+                pending_ficha.append(item)
+            else:
+                missing_ficha.append(item)
         else:
             publish_ready.append(item)
 
@@ -551,6 +572,7 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Di
 
     return {
         "publish_ready": publish_ready,
+        "pending_ficha": pending_ficha,
         "missing_ficha": missing_ficha,
         "need_creation": need_creation,
         "already_mayorista": already_mayorista,
@@ -598,6 +620,7 @@ def generate_excel_report(
                 "Costo CLP":     clp_value(price),
                 "PCF SoloTodo":  p.get("pcf_price"),
                 "Min. Mercado":  p.get("min_price"),
+                "Moda Mercado":  p.get("mode_price"),
                 "Estado Solicitud Ficha": seg_status(p.get("pcf_id"), p.get("ingram_part")),
                 "Categoria":     p.get("category", ""),
             })
@@ -640,6 +663,16 @@ def generate_html_dashboard(
     if df_original is None:
         df_original = pd.DataFrame()
     timestamp_display = format_chile_timestamp(timestamp)
+
+    # Lookup vendor_part -> SoloTodo data (from all enriched classified products)
+    _all_classified = []
+    for bucket in classification.values():
+        if isinstance(bucket, list):
+            _all_classified.extend(bucket)
+    solotodo_lookup: Dict[str, Dict] = {
+        p["vendor_part"]: {"pcf_price": p.get("pcf_price"), "min_price": p.get("min_price"), "mode_price": p.get("mode_price")}
+        for p in _all_classified if p.get("vendor_part") and (p.get("pcf_price") is not None or p.get("min_price") is not None)
+    }
 
     def fmt_usd(price) -> str:
         try:
@@ -687,6 +720,7 @@ def generate_html_dashboard(
     total = xlsx_stats["total"]
     sin_stock = xlsx_stats["sin_stock_ingram"]
     publish_ready = classification["publish_ready"]
+    pending_ficha = classification.get("pending_ficha", [])
     missing_ficha = classification.get("missing_ficha", [])
     need_creation = classification["need_creation"]
     already_mayorista = classification["already_mayorista"]
@@ -698,7 +732,7 @@ def generate_html_dashboard(
     has_stock_df = xlsx_stats.get("has_stock", pd.DataFrame())
     sin_stock_df = xlsx_stats.get("sin_stock_df", pd.DataFrame())
 
-    total_potencial = len(publish_ready) + len(missing_ficha) + len(need_creation)
+    total_potencial = len(publish_ready) + len(pending_ficha) + len(missing_ficha) + len(need_creation)
 
     # Status
     if total_potencial > 100:
@@ -746,6 +780,7 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td>{p["category"]}</td>
         </tr>'''
@@ -765,6 +800,27 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
+            <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
+            <td>{p["category"]}</td>
+        </tr>'''
+
+    # Tabla Ficha Solicitada - Esperando que PCF la publique
+    pending_rows = ""
+    for i, p in enumerate(sorted(pending_ficha, key=lambda x: x.get("vendor_name", "")), 1):
+        pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
+        pending_rows += f'''<tr>
+            <td>{i}</td>
+            <td>{pcf_link}</td>
+            <td class="desc-cell" title="{p["description"]}">{p["description"][:60]}{"..." if len(str(p["description"])) > 60 else ""}</td>
+            <td>{p["vendor_name"]}</td>
+            <td><code>{p["vendor_part"]}</code></td>
+            <td class="num-cell">{p["available_qty"]}</td>
+            <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td>{p["category"]}</td>
         </tr>'''
@@ -799,6 +855,9 @@ def generate_html_dashboard(
             <td class="num-cell">{stock_display}</td>
             <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
         </tr>'''
 
     def format_stock_detail(detail: dict) -> str:
@@ -832,8 +891,10 @@ def generate_html_dashboard(
     potenciales_all = []
     for p in publish_ready:
         potenciales_all.append({**p, "_estado": "Con Ficha Listo", "_estado_class": "badge-green"})
+    for p in pending_ficha:
+        potenciales_all.append({**p, "_estado": "Ficha Solicitada", "_estado_class": "badge-cyan"})
     for p in missing_ficha:
-        potenciales_all.append({**p, "_estado": "ID Existe Sin Ficha", "_estado_class": "badge-yellow"})
+        potenciales_all.append({**p, "_estado": "Sin Ficha Solicitada", "_estado_class": "badge-yellow"})
     for p in need_creation:
         potenciales_all.append({**p, "_estado": "ID No Existe", "_estado_class": "badge-purple"})
     for i, p in enumerate(sorted(potenciales_all, key=lambda x: x.get("vendor_name", "")), 1):
@@ -854,6 +915,7 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td><span class="table-badge {p["_estado_class"]}">{p["_estado"]}</span></td>
         </tr>'''
@@ -881,15 +943,20 @@ def generate_html_dashboard(
     for i, (_, row) in enumerate(df_original.iterrows(), 1):
         desc = str(row.get(COL_DESCRIPTION, ""))
         qty = row.get(COL_AVAILABLE_QTY, 0)
+        vpart = str(row.get(COL_VENDOR_PART, ""))
+        _st = solotodo_lookup.get(vpart, {})
         total_rows += f'''<tr>
             <td>{i}</td>
             <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
             <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
-            <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
+            <td><code>{vpart}</code></td>
             <td class="num-cell">{qty}</td>
             <td class="num-cell">{fmt_usd(row.get(COL_CUSTOMER_PRICE, 0))}</td>
             <td class="num-cell">{fmt_clp(row.get(COL_CUSTOMER_PRICE, 0))}</td>
+            <td class="num-cell">{fmt_clp_price(_st.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(_st.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(_st.get("mode_price"))}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
@@ -1379,7 +1446,7 @@ def generate_html_dashboard(
             <a href="banners.html" class="nav-link">🎨 Banners</a>
             <a href="pagespeed.html" class="nav-link">⚡ PageSpeed</a>
             -->
-            <a href="mayorista.html" class="nav-link active">🏭 Mayorista</a>
+            <a href="mayorista.html" class="nav-link active">🏭 Mayorista Ingram</a>
         </nav>
 
         <div class="file-info">📄 Archivo: {price_file_name}</div>
@@ -1399,6 +1466,14 @@ def generate_html_dashboard(
                 <div class="stat-value cyan">{with_stock}</div>
                 <div class="stat-label">Con Stock Ingram</div>
             </div>
+            <div class="stat-card clickable" onclick="switchTab('pcfstock')">
+                <div class="stat-value red">{len(has_pcf_stock)}</div>
+                <div class="stat-label">Con Stock PCF (de Ingram)</div>
+            </div>
+            <div class="stat-card clickable" onclick="switchTab('noelegible')">
+                <div class="stat-value red">{no_eligible}</div>
+                <div class="stat-label">No Elegibles (Open/Bad Box)</div>
+            </div>
             <div class="stat-card clickable" onclick="switchTab('mayorista')">
                 <div class="stat-value dark-green">{len(already_mayorista)}</div>
                 <div class="stat-label">Publicados</div>
@@ -1411,21 +1486,17 @@ def generate_html_dashboard(
                 <div class="stat-value green">{len(publish_ready)}</div>
                 <div class="stat-label">Con Ficha Listos para Publicar</div>
             </div>
+            <div class="stat-card clickable" onclick="switchTab('pending')">
+                <div class="stat-value cyan">{len(pending_ficha)}</div>
+                <div class="stat-label">Ficha Solicitada (esperando PCF)</div>
+            </div>
             <div class="stat-card clickable" onclick="switchTab('ficha')">
                 <div class="stat-value yellow">{len(missing_ficha)}</div>
-                <div class="stat-label">ID Existente Sin Ficha Solicitada</div>
+                <div class="stat-label">Sin Ficha Solicitada</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('creation')">
                 <div class="stat-value purple">{len(need_creation)}</div>
                 <div class="stat-label">ID No Existe y Requieren Creacion</div>
-            </div>
-            <div class="stat-card clickable" onclick="switchTab('pcfstock')">
-                <div class="stat-value red">{len(has_pcf_stock)}</div>
-                <div class="stat-label">Con Stock PCF (de Ingram)</div>
-            </div>
-            <div class="stat-card clickable" onclick="switchTab('noelegible')">
-                <div class="stat-value red">{no_eligible}</div>
-                <div class="stat-label">No Elegibles (Open/Bad Box)</div>
             </div>
         </div>
 
@@ -1453,8 +1524,12 @@ def generate_html_dashboard(
                     <span class="funnel-label">│ ├── Con Ficha Listos</span>
                     <div class="funnel-bar" style="width: {max(len(publish_ready) / total * 100, 2) if total > 0 else 2}%; background: #86efac; color: #000;">{len(publish_ready)}</div>
                 </div>
+                <div class="funnel-step funnel-sub clickable" onclick="switchTab('pending')" style="cursor:pointer;">
+                    <span class="funnel-label">│ ├── Ficha Solicitada</span>
+                    <div class="funnel-bar" style="width: {max(len(pending_ficha) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-cyan); color: #000;">{len(pending_ficha)}</div>
+                </div>
                 <div class="funnel-step funnel-sub clickable" onclick="switchTab('ficha')" style="cursor:pointer;">
-                    <span class="funnel-label">│ ├── Sin Ficha</span>
+                    <span class="funnel-label">│ ├── Sin Ficha Solicitada</span>
                     <div class="funnel-bar" style="width: {max(len(missing_ficha) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-yellow); color: #000;">{len(missing_ficha)}</div>
                 </div>
                 <div class="funnel-step funnel-sub clickable" onclick="switchTab('creation')" style="cursor:pointer;">
@@ -1476,9 +1551,10 @@ def generate_html_dashboard(
         <div class="tab-container">
             <span class="source-badge">📦 Ingram</span>
             <button class="tab-btn" onclick="switchTab('potenciales')">🎯 Potenciales ({total_potencial})</button>
-            <span class="tab-group-label">↑ Sub-grupos de Potenciales</span>
+
             <button class="tab-btn active" onclick="switchTab('publish')">↳ ✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
-            <button class="tab-btn" onclick="switchTab('ficha')">↳ 📝 ID Existente Sin Ficha ({len(missing_ficha)})</button>
+            <button class="tab-btn" onclick="switchTab('pending')">↳ ⏳ Ficha Solicitada ({len(pending_ficha)})</button>
+            <button class="tab-btn" onclick="switchTab('ficha')">↳ 📝 Sin Ficha Solicitada ({len(missing_ficha)})</button>
             <button class="tab-btn" onclick="switchTab('creation')">↳ 🆕 ID No Existe y Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
@@ -1512,8 +1588,9 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-potenciales', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-potenciales', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-potenciales', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-potenciales', 10, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-potenciales', 11, 'str')">Estado</th>
+                                <th onclick="sortTable('table-potenciales', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-potenciales', 11, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-potenciales', 12, 'str')">Estado</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1548,12 +1625,50 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-publish', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-publish', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-publish', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-publish', 10, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-publish', 11, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-publish', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-publish', 11, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-publish', 12, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
                             {publish_rows if publish_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla: Ficha Solicitada - Esperando que PCF publique -->
+        <div id="tab-pending" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Ficha Solicitada — Esperando publicación en PCFactory</h2>
+                        <span class="table-badge badge-cyan">{len(pending_ficha)} productos en espera</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-pending', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-pending">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('table-pending', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-pending', 1, 'num')">PCF ID</th>
+                                <th onclick="sortTable('table-pending', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-pending', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-pending', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-pending', 5, 'num')">Stock Ingram</th>
+                                <th onclick="sortTable('table-pending', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-pending', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-pending', 8, 'num')">PCF SoloTodo</th>
+                                <th onclick="sortTable('table-pending', 9, 'num')">Min. Mercado</th>
+                                <th onclick="sortTable('table-pending', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-pending', 11, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-pending', 12, 'str')">Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {pending_rows if pending_rows else '<tr><td colspan="13" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1565,7 +1680,7 @@ def generate_html_dashboard(
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">ID Existente Sin Ficha Solicitada</h2>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Sin Ficha Solicitada</h2>
                         <span class="table-badge badge-yellow">{len(missing_ficha)} productos necesitan ficha</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-ficha', this.value)">
@@ -1584,8 +1699,9 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-ficha', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-ficha', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-ficha', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-ficha', 10, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-ficha', 11, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-ficha', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-ficha', 11, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-ficha', 12, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1652,10 +1768,13 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-mayorista', 5, 'num')">Stock PCF</th>
                                 <th onclick="sortTable('table-mayorista', 6, 'num')">Costo USD</th>
                                 <th onclick="sortTable('table-mayorista', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-mayorista', 8, 'num')">PCF SoloTodo</th>
+                                <th onclick="sortTable('table-mayorista', 9, 'num')">Min. Mercado</th>
+                                <th onclick="sortTable('table-mayorista', 10, 'num')">Moda Mercado</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {mayorista_rows if mayorista_rows else '<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {mayorista_rows if mayorista_rows else '<tr><td colspan="11" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1834,11 +1953,14 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-total', 5, 'num')">Stock</th>
                                 <th onclick="sortTable('table-total', 6, 'num')">Costo USD</th>
                                 <th onclick="sortTable('table-total', 7, 'num')">Costo CLP</th>
-                                <th onclick="sortTable('table-total', 8, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-total', 8, 'num')">PCF SoloTodo</th>
+                                <th onclick="sortTable('table-total', 9, 'num')">Min. Mercado</th>
+                                <th onclick="sortTable('table-total', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-total', 11, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {total_rows if total_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                            {total_rows if total_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -2054,8 +2176,8 @@ def main():
                        help="Workers para consultas API")
     parser.add_argument("--skip-api", action="store_true",
                        help="Saltar consultas a la API (solo filtros XLSX)")
-    parser.add_argument("--with-solotodo", action="store_true",
-                       help="Consultar precios en SoloTodo para productos potenciales")
+    parser.add_argument("--no-solotodo", action="store_true",
+                       help="Omitir consulta de precios en SoloTodo")
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
@@ -2109,9 +2231,13 @@ def main():
     print(f"    Con PCF ID: {len(xlsx_stats['has_pcf_id'])}")
     print(f"    Sin PCF ID: {len(xlsx_stats['no_pcf_id'])}")
 
-    # 4. Consultar API
+    # 4. Cargar seguimiento (necesario antes de clasificar para separar pending_ficha)
+    seguimiento = read_seguimiento_sheet()
+
+    # 5. Consultar API
     classification = {
         "publish_ready": [],
+        "pending_ficha": [],
         "missing_ficha": [],
         "need_creation": [],
         "already_mayorista": [],
@@ -2122,7 +2248,7 @@ def main():
     if not args.skip_api and len(xlsx_stats["has_pcf_id"]) > 0:
         session = create_session()
         api_results = check_products_batch(session, xlsx_stats["has_pcf_id"], args.workers)
-        classification = classify_products(api_results, xlsx_stats["no_pcf_id"])
+        classification = classify_products(api_results, xlsx_stats["no_pcf_id"], seguimiento)
     else:
         if args.skip_api:
             print("\n[*] API omitida (--skip-api)")
@@ -2152,26 +2278,29 @@ def main():
                 "subcategory": row.get(COL_SUBCATEGORY, ""),
             })
 
-    # 5. Resumen
+    # 6. Resumen
     print(f"\n{'=' * 60}")
     print("RESULTADOS")
     print(f"{'=' * 60}")
     print(f"  Publicacion inmediata: {len(classification['publish_ready'])}")
-    print(f"  Sin ficha:             {len(classification.get('missing_ficha', []))}")
+    print(f"  Ficha solicitada (esperando PCF): {len(classification.get('pending_ficha', []))}")
+    print(f"  Sin ficha (no solicitada): {len(classification.get('missing_ficha', []))}")
     print(f"  Requieren creacion:    {len(classification['need_creation'])}")
     print(f"  Ya mayorista:          {len(classification['already_mayorista'])}")
     print(f"  Con stock PCF:         {len(classification['has_pcf_stock'])}")
     print(f"  Errores API:           {len(classification['api_errors'])}")
-    total_potencial = len(classification['publish_ready']) + len(classification.get('missing_ficha', [])) + len(classification['need_creation'])
+    total_potencial = (len(classification['publish_ready']) + len(classification.get('pending_ficha', []))
+                       + len(classification.get('missing_ficha', [])) + len(classification['need_creation']))
     print(f"  TOTAL POTENCIALES:     {total_potencial}")
 
-    # 5b. Enriquecer con SoloTodo (opcional)
-    if args.with_solotodo and not args.skip_api:
+    # 6b. Enriquecer con SoloTodo (por defecto, omitir con --no-solotodo)
+    if not args.no_solotodo and not args.skip_api:
         st_session = create_session()
-        actionable = classification["publish_ready"] + classification.get("missing_ficha", [])
+        actionable = (classification["publish_ready"] + classification.get("pending_ficha", [])
+                      + classification.get("missing_ficha", []) + classification["already_mayorista"])
         enrich_with_solotodo(actionable, st_session, max_workers=4)
-    elif args.with_solotodo and args.skip_api:
-        print("\n[!] --with-solotodo ignorado porque --skip-api esta activo")
+    elif args.skip_api:
+        print("\n[!] SoloTodo omitido porque --skip-api esta activo")
 
     # 6. Generar dashboard HTML
     timestamp = datetime.now(timezone.utc).isoformat()
@@ -2181,7 +2310,6 @@ def main():
         print(f"[+] USD observado: ${usd_clp:,.0f} CLP")
     else:
         print("[!] No se pudo obtener el tipo de cambio, columna CLP mostrara '—'")
-    seguimiento = read_seguimiento_sheet()
     html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento)
     html_path = output_dir / "mayorista.html"
     with open(html_path, "w", encoding="utf-8") as f:
