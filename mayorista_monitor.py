@@ -720,6 +720,12 @@ def generate_html_dashboard(
         except (ValueError, TypeError):
             return '<span style="color: var(--text-muted);">—</span>'
 
+    def fmt_solotodo_link(solotodo_id) -> str:
+        if solotodo_id is None:
+            return '<span style="color: var(--text-muted);">—</span>'
+        url = f"https://www.solotodo.cl/products/{solotodo_id}"
+        return f'<a href="{url}" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a>'
+
     total = xlsx_stats["total"]
     sin_stock = xlsx_stats["sin_stock_ingram"]
     publish_ready = classification["publish_ready"]
@@ -784,6 +790,7 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
+            <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td>{p["category"]}</td>
         </tr>'''
@@ -804,6 +811,7 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
+            <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td>{p["category"]}</td>
         </tr>'''
@@ -824,6 +832,7 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
+            <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td>{p["category"]}</td>
         </tr>'''
@@ -861,6 +870,7 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
+            <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
         </tr>'''
 
     def format_stock_detail(detail: dict) -> str:
@@ -919,6 +929,7 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
+            <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
             <td><span class="table-badge {p["_estado_class"]}">{p["_estado"]}</span></td>
         </tr>'''
@@ -960,6 +971,7 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp_price(_st.get("pcf_price"))}</td>
             <td class="num-cell">{fmt_clp_price(_st.get("min_price"))}</td>
             <td class="num-cell">{fmt_clp_price(_st.get("mode_price"))}</td>
+            <td class="num-cell">{fmt_solotodo_link(_st.get("solotodo_id"))}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
         </tr>'''
 
@@ -1592,8 +1604,9 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-potenciales', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-potenciales', 9, 'num')">Min. Mercado</th>
                                 <th onclick="sortTable('table-potenciales', 10, 'num')">Moda Mercado</th>
-                                <th onclick="sortTable('table-potenciales', 11, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-potenciales', 12, 'str')">Estado</th>
+                                <th>SoloTodo</th>
+                                <th onclick="sortTable('table-potenciales', 12, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-potenciales', 13, 'str')">Estado</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1629,8 +1642,9 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-publish', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-publish', 9, 'num')">Min. Mercado</th>
                                 <th onclick="sortTable('table-publish', 10, 'num')">Moda Mercado</th>
-                                <th onclick="sortTable('table-publish', 11, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-publish', 12, 'str')">Categoria</th>
+                                <th>SoloTodo</th>
+                                <th onclick="sortTable('table-publish', 12, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-publish', 13, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1666,8 +1680,9 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-pending', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-pending', 9, 'num')">Min. Mercado</th>
                                 <th onclick="sortTable('table-pending', 10, 'num')">Moda Mercado</th>
-                                <th onclick="sortTable('table-pending', 11, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-pending', 12, 'str')">Categoria</th>
+                                <th>SoloTodo</th>
+                                <th onclick="sortTable('table-pending', 12, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-pending', 13, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1703,8 +1718,9 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-ficha', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-ficha', 9, 'num')">Min. Mercado</th>
                                 <th onclick="sortTable('table-ficha', 10, 'num')">Moda Mercado</th>
-                                <th onclick="sortTable('table-ficha', 11, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-ficha', 12, 'str')">Categoria</th>
+                                <th>SoloTodo</th>
+                                <th onclick="sortTable('table-ficha', 12, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-ficha', 13, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1774,10 +1790,11 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-mayorista', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-mayorista', 9, 'num')">Min. Mercado</th>
                                 <th onclick="sortTable('table-mayorista', 10, 'num')">Moda Mercado</th>
+                                <th>SoloTodo</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {mayorista_rows if mayorista_rows else '<tr><td colspan="11" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {mayorista_rows if mayorista_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1959,11 +1976,12 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-total', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-total', 9, 'num')">Min. Mercado</th>
                                 <th onclick="sortTable('table-total', 10, 'num')">Moda Mercado</th>
-                                <th onclick="sortTable('table-total', 11, 'str')">Categoria</th>
+                                <th>SoloTodo</th>
+                                <th onclick="sortTable('table-total', 12, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {total_rows if total_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                            {total_rows if total_rows else '<tr><td colspan="13" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
