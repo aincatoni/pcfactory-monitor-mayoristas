@@ -775,7 +775,7 @@ def generate_html_dashboard(
         publish_rows += f'''<tr>
             <td>{i}</td>
             <td>{pcf_link}</td>
-            <td class="desc-cell" title="{p["description"]}">{p["description"][:60]}{"..." if len(str(p["description"])) > 60 else ""}</td>
+            <td class="desc-cell" title="{p["description"]}">{p["description"][:35]}{"..." if len(str(p["description"])) > 35 else ""}</td>
             <td>{p["vendor_name"]}</td>
             <td><code>{p["vendor_part"]}</code></td>
             <td class="num-cell">{p["available_qty"]}</td>
@@ -795,7 +795,7 @@ def generate_html_dashboard(
         ficha_rows += f'''<tr>
             <td>{i}</td>
             <td>{pcf_link}</td>
-            <td class="desc-cell" title="{p["description"]}">{p["description"][:60]}{"..." if len(str(p["description"])) > 60 else ""}</td>
+            <td class="desc-cell" title="{p["description"]}">{p["description"][:35]}{"..." if len(str(p["description"])) > 35 else ""}</td>
             <td>{p["vendor_name"]}</td>
             <td><code>{p["vendor_part"]}</code></td>
             <td class="num-cell">{p["available_qty"]}</td>
@@ -815,7 +815,7 @@ def generate_html_dashboard(
         pending_rows += f'''<tr>
             <td>{i}</td>
             <td>{pcf_link}</td>
-            <td class="desc-cell" title="{p["description"]}">{p["description"][:60]}{"..." if len(str(p["description"])) > 60 else ""}</td>
+            <td class="desc-cell" title="{p["description"]}">{p["description"][:35]}{"..." if len(str(p["description"])) > 35 else ""}</td>
             <td>{p["vendor_name"]}</td>
             <td><code>{p["vendor_part"]}</code></td>
             <td class="num-cell">{p["available_qty"]}</td>
@@ -834,7 +834,7 @@ def generate_html_dashboard(
         creation_rows += f'''<tr>
             <td>{i}</td>
             <td><code>{p["ingram_part"]}</code></td>
-            <td class="desc-cell" title="{p["description"]}">{p["description"][:60]}{"..." if len(str(p["description"])) > 60 else ""}</td>
+            <td class="desc-cell" title="{p["description"]}">{p["description"][:35]}{"..." if len(str(p["description"])) > 35 else ""}</td>
             <td>{p["vendor_name"]}</td>
             <td><code>{p["vendor_part"]}</code></td>
             <td class="num-cell">{p["available_qty"]}</td>
@@ -852,7 +852,7 @@ def generate_html_dashboard(
         mayorista_rows += f'''<tr>
             <td>{i}</td>
             <td>{pcf_link}</td>
-            <td class="desc-cell" title="{p["description"]}">{p["description"][:60]}{"..." if len(str(p["description"])) > 60 else ""}</td>
+            <td class="desc-cell" title="{p["description"]}">{p["description"][:35]}{"..." if len(str(p["description"])) > 35 else ""}</td>
             <td>{p["vendor_name"]}</td>
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{stock_display}</td>
@@ -880,7 +880,7 @@ def generate_html_dashboard(
         pcf_stock_rows += f'''<tr>
             <td>{i}</td>
             <td>{pcf_link}</td>
-            <td class="desc-cell" title="{p["description"]}">{p["description"][:60]}{"..." if len(str(p["description"])) > 60 else ""}</td>
+            <td class="desc-cell" title="{p["description"]}">{p["description"][:35]}{"..." if len(str(p["description"])) > 35 else ""}</td>
             <td>{p["vendor_name"]}</td>
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{stock_display}</td>
@@ -910,7 +910,7 @@ def generate_html_dashboard(
         potenciales_rows += f'''<tr>
             <td>{i}</td>
             <td>{id_cell}</td>
-            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td class="desc-cell" title="{desc}">{desc[:35]}{"..." if len(desc) > 35 else ""}</td>
             <td>{p.get("vendor_name", "")}</td>
             <td><code>{p.get("vendor_part", "")}</code></td>
             <td class="num-cell">{p.get("available_qty", 0)}</td>
@@ -932,7 +932,7 @@ def generate_html_dashboard(
             no_eligible_rows += f'''<tr>
             <td>{i}</td>
             <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
-            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td class="desc-cell" title="{desc}">{desc[:35]}{"..." if len(desc) > 35 else ""}</td>
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
@@ -951,7 +951,7 @@ def generate_html_dashboard(
         total_rows += f'''<tr>
             <td>{i}</td>
             <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
-            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td class="desc-cell" title="{desc}">{desc[:35]}{"..." if len(desc) > 35 else ""}</td>
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{vpart}</code></td>
             <td class="num-cell">{qty}</td>
@@ -971,7 +971,7 @@ def generate_html_dashboard(
             sin_stock_rows += f'''<tr>
             <td>{i}</td>
             <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
-            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td class="desc-cell" title="{desc}">{desc[:35]}{"..." if len(desc) > 35 else ""}</td>
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
@@ -1269,7 +1269,7 @@ def generate_html_dashboard(
             border-radius: 4px;
         }}
         .desc-cell {{
-            max-width: 300px;
+            max-width: 200px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -1885,7 +1885,7 @@ def generate_html_dashboard(
             constock_rows += f'''<tr>
             <td>{i}</td>
             <td><code>{row.get(COL_INGRAM_PART, "")}</code></td>
-            <td class="desc-cell" title="{desc}">{desc[:60]}{"..." if len(desc) > 60 else ""}</td>
+            <td class="desc-cell" title="{desc}">{desc[:35]}{"..." if len(desc) > 35 else ""}</td>
             <td>{row.get(COL_VENDOR_NAME, "")}</td>
             <td><code>{row.get(COL_VENDOR_PART, "")}</code></td>
             <td class="num-cell">{row.get(COL_AVAILABLE_QTY, 0)}</td>
@@ -2300,7 +2300,8 @@ def main():
     if not args.no_solotodo and not args.skip_api:
         st_session = create_session()
         actionable = (classification["publish_ready"] + classification.get("pending_ficha", [])
-                      + classification.get("missing_ficha", []) + classification["already_mayorista"])
+                      + classification.get("missing_ficha", []) + classification["already_mayorista"]
+                      + classification["need_creation"] + classification["has_pcf_stock"])
         enrich_with_solotodo(actionable, st_session, max_workers=4)
     elif args.skip_api:
         print("\n[!] SoloTodo omitido porque --skip-api esta activo")
