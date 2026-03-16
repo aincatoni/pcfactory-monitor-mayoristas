@@ -391,6 +391,9 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
             precio_oferta = data.get("precioOferta", 0)
             description_pcf = data.get("descripcion", "")
             ficha_vacia = is_description_empty(description_pcf)
+            stock_detail = {}
+            if isinstance(stock_data, dict):
+                stock_detail = {k: v for k, v in stock_data.items() if k != "aproximado"}
             return {
                 "api_status": "ok",
                 "mayorista": mayorista,
@@ -401,6 +404,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
                 "precio_normal": precio_normal,
                 "precio_oferta": precio_oferta,
                 "ficha_vacia": ficha_vacia,
+                "stock_detail": stock_detail,
                 "error": "",
             }
         elif resp.status_code == 404:
@@ -414,6 +418,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
                 "precio_normal": 0,
                 "precio_oferta": 0,
                 "ficha_vacia": True,
+                "stock_detail": {},
                 "error": "",
             }
         else:
@@ -427,6 +432,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
                 "precio_normal": 0,
                 "precio_oferta": 0,
                 "ficha_vacia": None,
+                "stock_detail": {},
                 "error": f"HTTP {resp.status_code}",
             }
     except requests.RequestException as e:
@@ -440,6 +446,7 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
             "precio_normal": 0,
             "precio_oferta": 0,
             "ficha_vacia": None,
+            "stock_detail": {},
             "error": str(e),
         }
 
@@ -474,7 +481,7 @@ def check_products_batch(session: requests.Session, df_with_ids: pd.DataFrame, m
                     "api_status": "error", "mayorista": None, "lista": None,
                     "stock_pcf": None, "stock_raw": "", "nombre_pcf": "",
                     "precio_normal": 0, "precio_oferta": 0,
-                    "ficha_vacia": None, "error": str(e),
+                    "ficha_vacia": None, "stock_detail": {}, "error": str(e),
                 }
             results.append({
                 "pcf_id": pid,
@@ -522,7 +529,7 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame) -> Di
         if item["stock_pcf"] is not None and item["stock_pcf"] > 0:
             has_pcf_stock.append(item)
             continue
-        # Producto potencial: verificar si tiene ficha
+        # Aquí solo llegan productos potenciales: lista "0", sin stock PCF
         if item.get("ficha_vacia", False):
             missing_ficha.append(item)
         else:
@@ -591,7 +598,7 @@ def generate_excel_report(
                 "Costo CLP":     clp_value(price),
                 "PCF SoloTodo":  p.get("pcf_price"),
                 "Min. Mercado":  p.get("min_price"),
-                "Ficha":         seg_status(p.get("pcf_id"), p.get("ingram_part")),
+                "Estado Solicitud Ficha": seg_status(p.get("pcf_id"), p.get("ingram_part")),
                 "Categoria":     p.get("category", ""),
             })
         return rows
@@ -665,7 +672,7 @@ def generate_html_dashboard(
     def fmt_seguimiento(pcf_id, ingram_part) -> str:
         status = get_seguimiento_status(_seg, pcf_id, ingram_part)
         if not status:
-            return '<span style="color: var(--text-muted);">—</span>'
+            return '<span style="color: var(--text-muted);">No Solicitada</span>'
         cls, label = _STATUS_BADGE.get(status, ("badge-blue", status))
         return f'<span class="table-badge {cls}">{label}</span>'
 
@@ -710,6 +717,17 @@ def generate_html_dashboard(
     # Funnel data
     with_stock = total - sin_stock  # stock > 0
     after_api_filters = total_potencial
+
+    # Verificación de coherencia del funnel
+    with_stock_check = (
+        len(already_mayorista) +
+        total_potencial +
+        len(has_pcf_stock) +
+        no_eligible +
+        len(api_errors)
+    )
+    if with_stock != with_stock_check:
+        print(f"[!] AVISO funnel: with_stock={with_stock} vs suma={with_stock_check} (diff={with_stock - with_stock_check})")
 
     # --- Tablas ---
 
@@ -783,6 +801,15 @@ def generate_html_dashboard(
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
         </tr>'''
 
+    def format_stock_detail(detail: dict) -> str:
+        if not detail:
+            return "—"
+        parts = []
+        for key, val in detail.items():
+            if val and str(val) not in ("0", "false", "False", ""):
+                parts.append(f"{key}: {val}")
+        return " | ".join(parts) if parts else "—"
+
     # Tabla Con Stock PCF
     pcf_stock_rows = ""
     for i, p in enumerate(sorted(has_pcf_stock, key=lambda x: x.get("vendor_name", "")), 1):
@@ -797,6 +824,7 @@ def generate_html_dashboard(
             <td class="num-cell">{stock_display}</td>
             <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
+            <td class="desc-cell">{format_stock_detail(p.get("stock_detail", {}))}</td>
         </tr>'''
 
     # Tabla Potenciales (union de publish_ready + missing_ficha + need_creation)
@@ -1015,6 +1043,7 @@ def generate_html_dashboard(
             font-weight: 700;
         }}
         .stat-value.green {{ color: var(--accent-green); }}
+        .stat-value.dark-green {{ color: #16a34a; }}
         .stat-value.red {{ color: var(--accent-red); }}
         .stat-value.blue {{ color: var(--accent-blue); }}
         .stat-value.yellow {{ color: var(--accent-yellow); }}
@@ -1050,6 +1079,18 @@ def generate_html_dashboard(
             padding: 0.75rem 1rem;
             border-radius: 8px;
             background: var(--bg-secondary);
+        }}
+        .funnel-step.funnel-sub {{
+            margin-left: 2rem;
+            opacity: 0.9;
+        }}
+        .funnel-step.funnel-sub .funnel-bar {{
+            height: 24px;
+            font-size: 0.78rem;
+        }}
+        .funnel-step.funnel-sub .funnel-label {{
+            font-size: 0.78rem;
+            min-width: 180px;
         }}
         .funnel-bar {{
             height: 32px;
@@ -1193,6 +1234,28 @@ def generate_html_dashboard(
         .tab-btn.active {{ background: var(--accent-blue); color: #000; border-color: var(--accent-blue); font-weight: 500; }}
         .tab-content {{ display: none; }}
         .tab-content.active {{ display: block; }}
+        .tab-group-label {{
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            padding: 0 0.5rem;
+            align-self: center;
+            white-space: nowrap;
+        }}
+        .source-badge {{
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.75rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            cursor: default;
+            align-self: center;
+        }}
         .footer {{
             text-align: center;
             padding: 2rem;
@@ -1337,8 +1400,8 @@ def generate_html_dashboard(
                 <div class="stat-label">Con Stock Ingram</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('mayorista')">
-                <div class="stat-value green">{len(already_mayorista)}</div>
-                <div class="stat-label">Publicados (Lista 1)</div>
+                <div class="stat-value dark-green">{len(already_mayorista)}</div>
+                <div class="stat-label">Publicados</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('potenciales')">
                 <div class="stat-value green">{total_potencial}</div>
@@ -1358,7 +1421,7 @@ def generate_html_dashboard(
             </div>
             <div class="stat-card clickable" onclick="switchTab('pcfstock')">
                 <div class="stat-value red">{len(has_pcf_stock)}</div>
-                <div class="stat-label">Con Stock PCF</div>
+                <div class="stat-label">Con Stock PCF (de Ingram)</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('noelegible')">
                 <div class="stat-value red">{no_eligible}</div>
@@ -1379,22 +1442,44 @@ def generate_html_dashboard(
                     <div class="funnel-bar" style="width: {max(with_stock / total * 100, 5) if total > 0 else 5}%; background: var(--accent-cyan);">{with_stock}</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('mayorista')" style="cursor:pointer;">
-                    <span class="funnel-label">Publicados (Lista 1)</span>
-                    <div class="funnel-bar" style="width: {max(len(already_mayorista) / total * 100, 5) if total > 0 else 5}%; background: var(--accent-purple);">{len(already_mayorista)}</div>
+                    <span class="funnel-label">├── Publicados</span>
+                    <div class="funnel-bar" style="width: {max(len(already_mayorista) / total * 100, 5) if total > 0 else 5}%; background: #16a34a;">{len(already_mayorista)}</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('potenciales')" style="cursor:pointer;">
-                    <span class="funnel-label">Potenciales (sin publicar)</span>
+                    <span class="funnel-label">├── Potenciales (total)</span>
                     <div class="funnel-bar" style="width: {max(after_api_filters / total * 100, 5) if total > 0 else 5}%; background: var(--accent-green);">{after_api_filters}</div>
+                </div>
+                <div class="funnel-step funnel-sub clickable" onclick="switchTab('publish')" style="cursor:pointer;">
+                    <span class="funnel-label">│ ├── Con Ficha Listos</span>
+                    <div class="funnel-bar" style="width: {max(len(publish_ready) / total * 100, 2) if total > 0 else 2}%; background: #86efac; color: #000;">{len(publish_ready)}</div>
+                </div>
+                <div class="funnel-step funnel-sub clickable" onclick="switchTab('ficha')" style="cursor:pointer;">
+                    <span class="funnel-label">│ ├── Sin Ficha</span>
+                    <div class="funnel-bar" style="width: {max(len(missing_ficha) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-yellow); color: #000;">{len(missing_ficha)}</div>
+                </div>
+                <div class="funnel-step funnel-sub clickable" onclick="switchTab('creation')" style="cursor:pointer;">
+                    <span class="funnel-label">│ └── Requieren Creación</span>
+                    <div class="funnel-bar" style="width: {max(len(need_creation) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-purple); color: #fff;">{len(need_creation)}</div>
+                </div>
+                <div class="funnel-step clickable" onclick="switchTab('pcfstock')" style="cursor:pointer;">
+                    <span class="funnel-label">├── Con Stock PCF</span>
+                    <div class="funnel-bar" style="width: {max(len(has_pcf_stock) / total * 100, 5) if total > 0 else 5}%; background: #fb923c; color: #000;">{len(has_pcf_stock)}</div>
+                </div>
+                <div class="funnel-step clickable" onclick="switchTab('noelegible')" style="cursor:pointer;">
+                    <span class="funnel-label">└── No Elegibles</span>
+                    <div class="funnel-bar" style="width: {max(no_eligible / total * 100, 5) if total > 0 else 5}%; background: var(--accent-red);">{no_eligible}</div>
                 </div>
             </div>
         </div>
 
         <!-- Tabs para las tablas -->
         <div class="tab-container">
+            <span class="source-badge">📦 Ingram</span>
             <button class="tab-btn" onclick="switchTab('potenciales')">🎯 Potenciales ({total_potencial})</button>
-            <button class="tab-btn active" onclick="switchTab('publish')">✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
-            <button class="tab-btn" onclick="switchTab('ficha')">📝 ID Existente Sin Ficha ({len(missing_ficha)})</button>
-            <button class="tab-btn" onclick="switchTab('creation')">🆕 ID No Existe y Requieren Creacion ({len(need_creation)})</button>
+            <span class="tab-group-label">↑ Sub-grupos de Potenciales</span>
+            <button class="tab-btn active" onclick="switchTab('publish')">↳ ✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
+            <button class="tab-btn" onclick="switchTab('ficha')">↳ 📝 ID Existente Sin Ficha ({len(missing_ficha)})</button>
+            <button class="tab-btn" onclick="switchTab('creation')">↳ 🆕 ID No Existe y Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
             <button class="tab-btn" onclick="switchTab('noelegible')">🚫 No Elegibles ({no_eligible})</button>
@@ -1427,7 +1512,7 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-potenciales', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-potenciales', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-potenciales', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-potenciales', 10, 'str')">Ficha</th>
+                                <th onclick="sortTable('table-potenciales', 10, 'str')">Solicitud Ficha</th>
                                 <th onclick="sortTable('table-potenciales', 11, 'str')">Estado</th>
                             </tr>
                         </thead>
@@ -1463,7 +1548,7 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-publish', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-publish', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-publish', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-publish', 10, 'str')">Ficha</th>
+                                <th onclick="sortTable('table-publish', 10, 'str')">Solicitud Ficha</th>
                                 <th onclick="sortTable('table-publish', 11, 'str')">Categoria</th>
                             </tr>
                         </thead>
@@ -1499,7 +1584,7 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-ficha', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-ficha', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-ficha', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-ficha', 10, 'str')">Ficha</th>
+                                <th onclick="sortTable('table-ficha', 10, 'str')">Solicitud Ficha</th>
                                 <th onclick="sortTable('table-ficha', 11, 'str')">Categoria</th>
                             </tr>
                         </thead>
@@ -1533,7 +1618,7 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-creation', 5, 'num')">Stock Ingram</th>
                                 <th onclick="sortTable('table-creation', 6, 'num')">Costo USD</th>
                                 <th onclick="sortTable('table-creation', 7, 'num')">Costo CLP</th>
-                                <th onclick="sortTable('table-creation', 8, 'str')">Ficha</th>
+                                <th onclick="sortTable('table-creation', 8, 'str')">Solicitud Ficha</th>
                                 <th onclick="sortTable('table-creation', 9, 'str')">Categoria</th>
                             </tr>
                         </thead>
@@ -1550,7 +1635,7 @@ def generate_html_dashboard(
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Publicados (Lista 1)</h2>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Publicados</h2>
                         <span class="table-badge badge-green">{len(already_mayorista)} productos publicados</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-mayorista', this.value)">
@@ -1582,7 +1667,7 @@ def generate_html_dashboard(
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Excluidos: Con Stock Propio en PCF</h2>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Excluidos: Con Stock en PCFactory (tienen stock Ingram)</h2>
                         <span class="table-badge badge-red">{len(has_pcf_stock)} productos excluidos</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-pcfstock', this.value)">
@@ -1599,10 +1684,11 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-pcfstock', 5, 'num')">Stock PCF</th>
                                 <th onclick="sortTable('table-pcfstock', 6, 'num')">Costo USD</th>
                                 <th onclick="sortTable('table-pcfstock', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-pcfstock', 8, 'str')">Ubicación Stock</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {pcf_stock_rows if pcf_stock_rows else '<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {pcf_stock_rows if pcf_stock_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1789,7 +1875,7 @@ def generate_html_dashboard(
                 <div class="glosario-card">
                     <div class="glosario-header">
                         <span class="glosario-icon">🏭</span>
-                        <span class="glosario-title">Publicados (Lista 1)</span>
+                        <span class="glosario-title">Publicados</span>
                     </div>
                     <p class="glosario-desc">Productos que ya están activos en pc Factory como mayoristas en Lista 1. No requieren ninguna acción — ya están funcionando en la web.</p>
                     <div class="glosario-criteria">
