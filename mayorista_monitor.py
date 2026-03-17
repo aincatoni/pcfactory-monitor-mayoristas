@@ -47,6 +47,7 @@ COL_CUSTOMER_PRICE = "COSTO"
 COL_AVAILABLE_QTY = "STOCK"
 COL_CATEGORY = "CATEGORIA"
 COL_SUBCATEGORY = "TIPO"
+COL_EAN = "EAN/UPC CODE"
 
 # ==============================================================================
 # FUNCIONES DE FECHA/HORA CHILE
@@ -303,6 +304,77 @@ def get_seguimiento_status(lookup: Dict[str, str], pcf_id, ingram_part) -> str:
 # ==============================================================================
 # FILTROS XLSX
 # ==============================================================================
+
+# ==============================================================================
+# CRUCE CON CATALOGO PCF
+# ==============================================================================
+
+def load_pcf_catalog(filepath: str) -> pd.DataFrame:
+    """Carga el catálogo interno de PCFactory (XLS exportado del ERP, header en fila 6)."""
+    df = pd.read_excel(filepath, header=5)
+    df.columns = df.columns.str.strip()
+    print(f"[+] Catálogo PCF cargado: {filepath}")
+    print(f"    {len(df)} productos, {len(df.columns)} columnas")
+    return df
+
+
+def enrich_with_pcf_catalog(df_no_pcf: pd.DataFrame, catalog_df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    Busca IDs PCF para los productos sin mapear usando PARTNO y EAN/UPC CODE.
+    Solo usa matches no ambiguos (PARTNO o GTIN únicos en el catálogo).
+    Retorna (df_con_ids_nuevos, df_aun_sin_id).
+    """
+    df = df_no_pcf.copy()
+
+    cat = catalog_df.copy()
+    cat['_partno_norm'] = cat['PARTNO'].astype(str).str.strip().str.upper()
+    cat['_gtin_norm'] = cat['GTIN'].astype(str).str.strip().str.replace('.0', '', regex=False)
+
+    df['_partno_norm'] = df[COL_VENDOR_PART].astype(str).str.strip().str.upper()
+    df['_ean_norm'] = df[COL_EAN].astype(str).str.strip().str.replace('.0', '', regex=False)
+
+    # Match 1: PARTNO único en catálogo
+    partno_counts = cat['_partno_norm'].value_counts()
+    partno_unique_set = set(partno_counts[partno_counts == 1].index) - {'NAN', ''}
+    cat_by_partno = (
+        cat[cat['_partno_norm'].isin(partno_unique_set)][['CODIGO', '_partno_norm']]
+        .drop_duplicates('_partno_norm')
+    )
+    matched_partno = df.merge(cat_by_partno, on='_partno_norm', how='inner')
+    matched_partno = matched_partno.copy()
+    matched_partno[COL_PCF_ID] = matched_partno['CODIGO']
+
+    unmatched = df[~df[COL_INGRAM_PART].isin(matched_partno[COL_INGRAM_PART])].copy()
+
+    # Match 2: EAN/UPC único en catálogo
+    gtin_counts = cat['_gtin_norm'].value_counts()
+    gtin_unique_set = set(gtin_counts[gtin_counts == 1].index) - {'nan', ''}
+    cat_by_gtin = (
+        cat[cat['_gtin_norm'].isin(gtin_unique_set)][['CODIGO', '_gtin_norm']]
+        .drop_duplicates('_gtin_norm')
+    )
+    has_ean = unmatched[unmatched['_ean_norm'].isin(gtin_unique_set)]
+    matched_ean = has_ean.merge(cat_by_gtin, left_on='_ean_norm', right_on='_gtin_norm', how='inner')
+    matched_ean = matched_ean.copy()
+    matched_ean[COL_PCF_ID] = matched_ean['CODIGO']
+
+    still_unmatched = unmatched[~unmatched[COL_INGRAM_PART].isin(matched_ean[COL_INGRAM_PART])].copy()
+
+    # Limpiar columnas temporales
+    tmp_cols = ['_partno_norm', '_ean_norm', '_gtin_norm', 'CODIGO']
+    for col in tmp_cols:
+        for frame in [matched_partno, matched_ean, still_unmatched]:
+            if col in frame.columns:
+                frame.drop(columns=[col], inplace=True, errors='ignore')
+
+    n_partno = len(matched_partno)
+    n_ean = len(matched_ean)
+    print(f"[+] Cruce catálogo PCF: {n_partno} matches por PARTNO, {n_ean} por EAN/UPC")
+    print(f"    {len(still_unmatched)} productos sin mapear (no existen en catálogo PCF)")
+
+    all_matched = pd.concat([matched_partno, matched_ean], ignore_index=True)
+    return all_matched, still_unmatched
+
 
 def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     total = len(df)
@@ -2199,6 +2271,10 @@ def main():
                        help="Saltar consultas a la API (solo filtros XLSX)")
     parser.add_argument("--no-solotodo", action="store_true",
                        help="Omitir consulta de precios en SoloTodo")
+    parser.add_argument("--pcf-catalog", type=str, default=None,
+                       help="Ruta al XLS del catálogo interno PCFactory para cruce de IDs faltantes")
+    parser.add_argument("--ingram-file", type=str, default=None,
+                       help="Ruta directa al XLSX de Ingram (alternativa a --source local con patrón fijo)")
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
@@ -2209,7 +2285,11 @@ def main():
     print("=" * 60)
 
     # 1. Obtener datos segun la fuente
-    if args.source == "gsheet":
+    if args.ingram_file:
+        print(f"[*] Fuente: Archivo directo ({args.ingram_file})")
+        price_file_name = Path(args.ingram_file).name
+        df = read_price_file(args.ingram_file)
+    elif args.source == "gsheet":
         print(f"[*] Fuente: Google Sheets (ID: {args.sheet_id})")
         try:
             df = read_google_sheet(args.sheet_id, args.gid)
@@ -2251,6 +2331,16 @@ def main():
     print(f"    No elegibles (BAD/OPEN BOX): {xlsx_stats['no_eligible']}")
     print(f"    Con PCF ID: {len(xlsx_stats['has_pcf_id'])}")
     print(f"    Sin PCF ID: {len(xlsx_stats['no_pcf_id'])}")
+
+    # 3b. Enriquecer con catálogo PCF (si se provee --pcf-catalog)
+    if args.pcf_catalog and len(xlsx_stats["no_pcf_id"]) > 0:
+        print(f"\n[*] Cruzando con catálogo PCF: {args.pcf_catalog}")
+        catalog_df = load_pcf_catalog(args.pcf_catalog)
+        new_matched, still_no_pcf = enrich_with_pcf_catalog(xlsx_stats["no_pcf_id"], catalog_df)
+        xlsx_stats["has_pcf_id"] = pd.concat([xlsx_stats["has_pcf_id"], new_matched], ignore_index=True)
+        xlsx_stats["no_pcf_id"] = still_no_pcf
+        print(f"    Con PCF ID (actualizado): {len(xlsx_stats['has_pcf_id'])}")
+        print(f"    Sin PCF ID (actualizado): {len(xlsx_stats['no_pcf_id'])}")
 
     # 4. Cargar seguimiento (necesario antes de clasificar para separar pending_ficha)
     seguimiento = read_seguimiento_sheet()
