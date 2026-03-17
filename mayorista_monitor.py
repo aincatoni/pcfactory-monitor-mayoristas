@@ -713,20 +713,20 @@ def generate_excel_report(
         for p in products:
             price = p.get("customer_price", 0)
             rows.append({
-                "Grupo":         grupo,
-                "PCF ID":        p.get("pcf_id", ""),
-                "Ingram Part":   p.get("ingram_part", ""),
-                "Descripcion":   p.get("description", ""),
-                "Vendor":        p.get("vendor_name", ""),
-                "Part Number":   p.get("vendor_part", ""),
-                "Stock Ingram":  p.get("available_qty", 0),
-                "Costo USD":     price,
-                "Costo CLP":     clp_value(price),
-                "PCF SoloTodo":  p.get("pcf_price"),
-                "Min. Mercado":  p.get("min_price"),
-                "Moda Mercado":  p.get("mode_price"),
-                "Estado Solicitud Ficha": seg_status(p.get("pcf_id"), p.get("ingram_part")),
-                "Categoria":     p.get("category", ""),
+                "Estado":            grupo,
+                "PCF ID":            p.get("pcf_id", ""),
+                "Ingram Part":       p.get("ingram_part", ""),
+                "Descripcion":       p.get("description", ""),
+                "Vendor":            p.get("vendor_name", ""),
+                "Part Number":       p.get("vendor_part", ""),
+                "Stock Ingram":      p.get("available_qty", 0),
+                "Costo USD":         price,
+                "Costo CLP":         clp_value(price),
+                "PCF SoloTodo":      p.get("pcf_price"),
+                "Min. Mercado":      p.get("min_price"),
+                "Moda Mercado":      p.get("mode_price"),
+                "Solicitud Ficha":   seg_status(p.get("pcf_id"), p.get("ingram_part")),
+                "Categoria":         p.get("category", ""),
             })
         return rows
 
