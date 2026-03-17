@@ -1533,7 +1533,7 @@ def generate_html_dashboard(
             <a href="banners.html" class="nav-link">🎨 Banners</a>
             <a href="pagespeed.html" class="nav-link">⚡ PageSpeed</a>
             -->
-            <a href="mayorista.html" class="nav-link active">🏭 Mayorista Ingram</a>
+            <a href="mayorista.html" class="nav-link active">🏭 Ingram</a>
         </nav>
 
         <div class="file-info">📄 Archivo: {price_file_name}</div>
