@@ -100,16 +100,28 @@ def polite_pause(min_s: float = 0.2, max_s: float = 0.5):
     time.sleep(random.uniform(min_s, max_s))
 
 def fetch_usd_clp() -> Optional[float]:
-    """Obtiene el dolar observado desde mindicador.cl (sin autenticacion)."""
+    """Obtiene el dolar observado. Intenta mindicador.cl, con fallback a exchangerate-api.com."""
+    # Fuente 1: mindicador.cl
     try:
-        resp = requests.get("https://mindicador.cl/api/dolar", timeout=10)
+        resp = requests.get("https://mindicador.cl/api/dolar", timeout=10, verify=True)
         resp.raise_for_status()
-        data = resp.json()
-        serie = data.get("serie", [])
+        serie = resp.json().get("serie", [])
         if serie:
             return float(serie[0]["valor"])
     except Exception as e:
-        print(f"[!] No se pudo obtener tipo de cambio USD: {e}")
+        print(f"[!] No se pudo obtener tipo de cambio USD (mindicador.cl): {e}")
+
+    # Fuente 2: exchangerate-api.com (sin autenticacion, limite generoso)
+    try:
+        resp = requests.get("https://open.er-api.com/v6/latest/USD", timeout=10)
+        resp.raise_for_status()
+        clp = resp.json().get("rates", {}).get("CLP")
+        if clp:
+            print(f"[+] Tipo de cambio obtenido desde exchangerate-api.com")
+            return float(clp)
+    except Exception as e:
+        print(f"[!] No se pudo obtener tipo de cambio USD (exchangerate-api.com): {e}")
+
     return None
 
 # ==============================================================================
