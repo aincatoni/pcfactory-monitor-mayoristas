@@ -30,7 +30,8 @@ PRICE_FILE_PATTERN = "CLPriceFile*.xlsx"
 
 # Google Sheets
 GOOGLE_SHEET_ID = "1mgGjhEmcE_c1q2xfJ4wgGpkcSD7A0jVCqD43h2382gc"
-GOOGLE_SHEET_GID = "972610794"
+GOOGLE_SHEET_GID = "1606322296"          # pestaña: Todos los Productos Mayorista
+PCF_CATALOG_GID  = "98635074"            # pestaña: Catalogo PCF
 GOOGLE_SHEET_CSV_URL = f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}/export?format=csv&gid={GOOGLE_SHEET_GID}"
 SEGUIMIENTO_SHEET_ID = "15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM"
 
@@ -146,6 +147,25 @@ def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = GOOGLE_SHEET_G
         print(f"[!] Error al leer Google Sheet: {e}")
         print(f"    Verifica que el sheet este compartido como 'Cualquiera con el enlace'")
         raise
+
+def read_pcf_catalog_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = PCF_CATALOG_GID) -> pd.DataFrame:
+    """Lee la pestaña Catalogo PCF desde Google Sheets."""
+    import io
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
+    print(f"[*] Descargando Catalogo PCF desde Google Sheets...")
+    try:
+        session = requests.Session()
+        session.headers.update({"User-Agent": UA})
+        resp = session.get(url, timeout=60)
+        resp.raise_for_status()
+        df = pd.read_csv(io.StringIO(resp.text))
+        df.columns = df.columns.str.strip()
+        print(f"[+] Catalogo PCF cargado: {len(df)} productos, {len(df.columns)} columnas")
+        return df
+    except Exception as e:
+        print(f"[!] Error al leer Catalogo PCF: {e}")
+        raise
+
 
 SOLOTODO_API = "https://api.solotodo.com"
 SOLOTODO_PCF_STORE_ID = 12
@@ -2332,10 +2352,13 @@ def main():
     print(f"    Con PCF ID: {len(xlsx_stats['has_pcf_id'])}")
     print(f"    Sin PCF ID: {len(xlsx_stats['no_pcf_id'])}")
 
-    # 3b. Enriquecer con catálogo PCF (si se provee --pcf-catalog)
-    if args.pcf_catalog and len(xlsx_stats["no_pcf_id"]) > 0:
-        print(f"\n[*] Cruzando con catálogo PCF: {args.pcf_catalog}")
-        catalog_df = load_pcf_catalog(args.pcf_catalog)
+    # 3b. Enriquecer con catálogo PCF (local vía --pcf-catalog o desde Google Sheets)
+    if len(xlsx_stats["no_pcf_id"]) > 0:
+        if args.pcf_catalog:
+            print(f"\n[*] Cruzando con catálogo PCF (local): {args.pcf_catalog}")
+            catalog_df = load_pcf_catalog(args.pcf_catalog)
+        else:
+            catalog_df = read_pcf_catalog_sheet()
         new_matched, still_no_pcf = enrich_with_pcf_catalog(xlsx_stats["no_pcf_id"], catalog_df)
         xlsx_stats["has_pcf_id"] = pd.concat([xlsx_stats["has_pcf_id"], new_matched], ignore_index=True)
         xlsx_stats["no_pcf_id"] = still_no_pcf
