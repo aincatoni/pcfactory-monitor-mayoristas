@@ -653,7 +653,10 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame, segui
         # Aquí solo llegan productos potenciales: lista "0", sin stock PCF
         if item.get("ficha_vacia", False):
             status = get_seguimiento_status(seg, item.get("pcf_id"), item.get("ingram_part"))
-            if status:
+            # "OK" en seguimiento significa que la ficha ya fue completada; si la API
+            # aún la muestra vacía, se trata como sin ficha para que no quede "atascada"
+            # en Ficha Solicitada con un badge verde que confunde.
+            if status and status.upper() != "OK":
                 pending_ficha.append(item)
             else:
                 missing_ficha.append(item)
@@ -2183,10 +2186,23 @@ def generate_html_dashboard(
 
                 <div class="glosario-card">
                     <div class="glosario-header">
+                        <span class="glosario-icon">⏳</span>
+                        <span class="glosario-title">Ficha Solicitada</span>
+                    </div>
+                    <p class="glosario-desc">Productos cuya ficha ya fue solicitada al equipo de eCommerce y está pendiente de publicación. El estado proviene del sheet de seguimiento (Pendiente, Ficha Básica, Ficha Antigua).</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-blue">PCF ID en price file</span>
+                        <span class="criteria-tag tag-orange">Ficha vacía en API</span>
+                        <span class="criteria-tag tag-cyan">Con registro en seguimiento</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
                         <span class="glosario-icon">📝</span>
                         <span class="glosario-title">ID Existente Sin Ficha Solicitada</span>
                     </div>
-                    <p class="glosario-desc">Productos potenciales cuya ficha está vacía o sin contenido real en PCFactory. No se pueden publicar hasta que el equipo de contenido complete la descripción.</p>
+                    <p class="glosario-desc">Productos potenciales cuya ficha está vacía o sin contenido real en el eCommerce. No se pueden publicar hasta que el equipo de contenido complete la descripción.</p>
                     <div class="glosario-criteria">
                         <span class="criteria-tag tag-blue">PCF ID en price file</span>
                         <span class="criteria-tag tag-blue">mayorista: false</span>
