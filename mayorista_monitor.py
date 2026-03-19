@@ -144,7 +144,7 @@ def read_price_file(filepath: str) -> pd.DataFrame:
 def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = GOOGLE_SHEET_GID) -> pd.DataFrame:
     """Lee un Google Sheet publico usando el endpoint gviz (mas confiable)."""
     import io
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet=Todos%20los%20Productos%20Mayorista"
     print(f"[*] Descargando Google Sheet...")
     try:
         session = requests.Session()
@@ -163,7 +163,7 @@ def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = GOOGLE_SHEET_G
 def read_pcf_catalog_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = PCF_CATALOG_GID) -> pd.DataFrame:
     """Lee la pestaña Catalogo PCF desde Google Sheets."""
     import io
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet=sphinx"
     print(f"[*] Descargando Catalogo PCF desde Google Sheets...")
     try:
         session = requests.Session()
