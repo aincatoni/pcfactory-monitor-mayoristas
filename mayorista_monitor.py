@@ -624,8 +624,10 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame, segui
     seg = seguimiento or {}
     # Con ficha listos para publicar (PCF ID + mayorista=false + stock_pcf=0 + tiene ficha)
     publish_ready = []
-    # Ficha vacía pero ya solicitada en seguimiento (esperando que PCF la publique)
+    # Ficha vacía pero ya solicitada en seguimiento (esperando que eCommerce la publique)
     pending_ficha = []
+    # Seguimiento dice "OK" pero la API aún muestra ficha vacía (posible desincronización)
+    ficha_ok = []
     # Ficha vacía y no solicitada (acción requerida: pedir ficha)
     missing_ficha = []
     # Publicados - ya mayorista en lista 1
@@ -653,13 +655,12 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame, segui
         # Aquí solo llegan productos potenciales: lista "0", sin stock PCF
         if item.get("ficha_vacia", False):
             status = get_seguimiento_status(seg, item.get("pcf_id"), item.get("ingram_part"))
-            # "OK" en seguimiento significa que la ficha ya fue completada; si la API
-            # aún la muestra vacía, se trata como sin ficha para que no quede "atascada"
-            # en Ficha Solicitada con un badge verde que confunde.
-            if status and status.upper() != "OK":
-                pending_ficha.append(item)
+            if status and status.upper() == "OK":
+                ficha_ok.append(item)       # OK en seguimiento pero API aún la muestra vacía
+            elif status:
+                pending_ficha.append(item)  # Pendiente / Ficha Básica / Ficha Antigua
             else:
-                missing_ficha.append(item)
+                missing_ficha.append(item)  # Sin registro en seguimiento
         else:
             publish_ready.append(item)
 
@@ -680,6 +681,7 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame, segui
     return {
         "publish_ready": publish_ready,
         "pending_ficha": pending_ficha,
+        "ficha_ok": ficha_ok,
         "missing_ficha": missing_ficha,
         "need_creation": need_creation,
         "already_mayorista": already_mayorista,
@@ -735,11 +737,12 @@ def generate_excel_report(
 
     publish_rows  = build_rows(classification.get("publish_ready", []),   "Con Ficha Listo")
     pending_rows  = build_rows(classification.get("pending_ficha", []),   "Ficha Solicitada")
+    ficha_ok_rows = build_rows(classification.get("ficha_ok", []),         "Ficha OK (API desactualizada)")
     ficha_rows    = build_rows(classification.get("missing_ficha", []),    "Sin Ficha Solicitada")
     creation_rows = build_rows(classification.get("need_creation", []),    "ID No Existe")
     mayorista_rows = build_rows(classification.get("already_mayorista", []), "Publicado Lista 1")
 
-    all_potenciales = publish_rows + pending_rows + ficha_rows + creation_rows
+    all_potenciales = publish_rows + pending_rows + ficha_ok_rows + ficha_rows + creation_rows
 
     with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
         if all_potenciales:
@@ -748,6 +751,8 @@ def generate_excel_report(
             pd.DataFrame(publish_rows).to_excel(writer, sheet_name="Con Ficha Listos", index=False)
         if pending_rows:
             pd.DataFrame(pending_rows).to_excel(writer, sheet_name="Ficha Solicitada", index=False)
+        if ficha_ok_rows:
+            pd.DataFrame(ficha_ok_rows).to_excel(writer, sheet_name="Ficha OK API Desact", index=False)
         if ficha_rows:
             pd.DataFrame(ficha_rows).to_excel(writer, sheet_name="Sin Ficha", index=False)
         if creation_rows:
@@ -837,6 +842,7 @@ def generate_html_dashboard(
     sin_stock = xlsx_stats["sin_stock_ingram"]
     publish_ready = classification["publish_ready"]
     pending_ficha = classification.get("pending_ficha", [])
+    ficha_ok      = classification.get("ficha_ok", [])
     missing_ficha = classification.get("missing_ficha", [])
     need_creation = classification["need_creation"]
     already_mayorista = classification["already_mayorista"]
@@ -848,7 +854,7 @@ def generate_html_dashboard(
     has_stock_df = xlsx_stats.get("has_stock", pd.DataFrame())
     sin_stock_df = xlsx_stats.get("sin_stock_df", pd.DataFrame())
 
-    total_potencial = len(publish_ready) + len(pending_ficha) + len(missing_ficha) + len(need_creation)
+    total_potencial = len(publish_ready) + len(pending_ficha) + len(ficha_ok) + len(missing_ficha) + len(need_creation)
 
     # Status
     if total_potencial > 100:
@@ -907,6 +913,27 @@ def generate_html_dashboard(
     for i, p in enumerate(sorted(missing_ficha, key=lambda x: x.get("vendor_name", "")), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
         ficha_rows += f'''<tr>
+            <td>{i}</td>
+            <td>{pcf_link}</td>
+            <td class="desc-cell" title="{p["description"]}">{p["description"][:35]}{"..." if len(str(p["description"])) > 35 else ""}</td>
+            <td>{p["vendor_name"]}</td>
+            <td><code>{p["vendor_part"]}</code></td>
+            <td class="num-cell">{p["available_qty"]}</td>
+            <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
+            <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
+            <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
+            <td>{p["category"]}</td>
+        </tr>'''
+
+    # Tabla Ficha OK en seguimiento pero API aún muestra vacía
+    fichaok_rows = ""
+    for i, p in enumerate(sorted(ficha_ok, key=lambda x: x.get("vendor_name", "")), 1):
+        pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
+        fichaok_rows += f'''<tr>
             <td>{i}</td>
             <td>{pcf_link}</td>
             <td class="desc-cell" title="{p["description"]}">{p["description"][:35]}{"..." if len(str(p["description"])) > 35 else ""}</td>
@@ -1013,6 +1040,8 @@ def generate_html_dashboard(
         potenciales_all.append({**p, "_estado": "Con Ficha Listo", "_estado_class": "badge-green"})
     for p in pending_ficha:
         potenciales_all.append({**p, "_estado": "Ficha Solicitada", "_estado_class": "badge-cyan"})
+    for p in ficha_ok:
+        potenciales_all.append({**p, "_estado": "Ficha OK (API desact.)", "_estado_class": "badge-blue"})
     for p in missing_ficha:
         potenciales_all.append({**p, "_estado": "Sin Ficha Solicitada", "_estado_class": "badge-yellow"})
     for p in need_creation:
@@ -1612,6 +1641,10 @@ def generate_html_dashboard(
                 <div class="stat-value cyan">{len(pending_ficha)}</div>
                 <div class="stat-label">Ficha Solicitada (esperando eCommerce)</div>
             </div>
+            <div class="stat-card clickable" onclick="switchTab('fichaok')">
+                <div class="stat-value blue">{len(ficha_ok)}</div>
+                <div class="stat-label">Ficha OK — API desactualizada</div>
+            </div>
             <div class="stat-card clickable" onclick="switchTab('ficha')">
                 <div class="stat-value yellow">{len(missing_ficha)}</div>
                 <div class="stat-label">Sin Ficha Solicitada</div>
@@ -1650,6 +1683,10 @@ def generate_html_dashboard(
                     <span class="funnel-label">│ ├── Ficha Solicitada</span>
                     <div class="funnel-bar" style="width: {max(len(pending_ficha) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-cyan); color: #000;">{len(pending_ficha)}</div>
                 </div>
+                <div class="funnel-step funnel-sub clickable" onclick="switchTab('fichaok')" style="cursor:pointer;">
+                    <span class="funnel-label">│ ├── Ficha OK (API desact.)</span>
+                    <div class="funnel-bar" style="width: {max(len(ficha_ok) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-blue); color: #fff;">{len(ficha_ok)}</div>
+                </div>
                 <div class="funnel-step funnel-sub clickable" onclick="switchTab('ficha')" style="cursor:pointer;">
                     <span class="funnel-label">│ ├── Sin Ficha Solicitada</span>
                     <div class="funnel-bar" style="width: {max(len(missing_ficha) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-yellow); color: #000;">{len(missing_ficha)}</div>
@@ -1676,6 +1713,7 @@ def generate_html_dashboard(
 
             <button class="tab-btn active" onclick="switchTab('publish')">↳ ✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
             <button class="tab-btn" onclick="switchTab('pending')">↳ ⏳ Ficha Solicitada ({len(pending_ficha)})</button>
+            <button class="tab-btn" onclick="switchTab('fichaok')">↳ ✅ Ficha OK — API desact. ({len(ficha_ok)})</button>
             <button class="tab-btn" onclick="switchTab('ficha')">↳ 📝 Sin Ficha Solicitada ({len(missing_ficha)})</button>
             <button class="tab-btn" onclick="switchTab('creation')">↳ 🆕 ID No Existe y Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
@@ -1794,6 +1832,44 @@ def generate_html_dashboard(
                         </thead>
                         <tbody>
                             {pending_rows if pending_rows else '<tr><td colspan="13" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla: Ficha OK en seguimiento pero API aún muestra vacía -->
+        <div id="tab-fichaok" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Ficha OK — API desactualizada</h2>
+                        <span class="table-badge badge-blue">{len(ficha_ok)} productos</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-fichaok', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-fichaok">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('table-fichaok', 0, 'num')">#</th>
+                                <th onclick="sortTable('table-fichaok', 1, 'num')">PCF ID</th>
+                                <th onclick="sortTable('table-fichaok', 2, 'str')">Descripcion</th>
+                                <th onclick="sortTable('table-fichaok', 3, 'str')">Vendor</th>
+                                <th onclick="sortTable('table-fichaok', 4, 'str')">Part Number</th>
+                                <th onclick="sortTable('table-fichaok', 5, 'num')">Stock Ingram</th>
+                                <th onclick="sortTable('table-fichaok', 6, 'num')">Costo USD</th>
+                                <th onclick="sortTable('table-fichaok', 7, 'num')">Costo CLP</th>
+                                <th onclick="sortTable('table-fichaok', 8, 'num')">PCF SoloTodo</th>
+                                <th onclick="sortTable('table-fichaok', 9, 'num')">Min. Mercado</th>
+                                <th onclick="sortTable('table-fichaok', 10, 'num')">Moda Mercado</th>
+                                <th>SoloTodo</th>
+                                <th onclick="sortTable('table-fichaok', 12, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-fichaok', 13, 'str')">Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {fichaok_rows if fichaok_rows else '<tr><td colspan="14" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -2199,6 +2275,19 @@ def generate_html_dashboard(
 
                 <div class="glosario-card">
                     <div class="glosario-header">
+                        <span class="glosario-icon">✅</span>
+                        <span class="glosario-title">Ficha OK — API desactualizada</span>
+                    </div>
+                    <p class="glosario-desc">Seguimiento marca la ficha como OK pero la API del eCommerce aún la muestra vacía. Posible retraso de caché o indexación. Verificar manualmente si el producto ya puede publicarse.</p>
+                    <div class="glosario-criteria">
+                        <span class="criteria-tag tag-blue">PCF ID en price file</span>
+                        <span class="criteria-tag tag-orange">Ficha vacía en API</span>
+                        <span class="criteria-tag tag-green">Seguimiento: OK</span>
+                    </div>
+                </div>
+
+                <div class="glosario-card">
+                    <div class="glosario-header">
                         <span class="glosario-icon">📝</span>
                         <span class="glosario-title">ID Existente Sin Ficha Solicitada</span>
                     </div>
@@ -2446,21 +2535,24 @@ def main():
     print(f"{'=' * 60}")
     print(f"  Publicacion inmediata: {len(classification['publish_ready'])}")
     print(f"  Ficha solicitada (esperando eCommerce): {len(classification.get('pending_ficha', []))}")
+    print(f"  Ficha OK (API desactualizada):          {len(classification.get('ficha_ok', []))}")
     print(f"  Sin ficha (no solicitada): {len(classification.get('missing_ficha', []))}")
     print(f"  Requieren creacion:    {len(classification['need_creation'])}")
     print(f"  Ya mayorista:          {len(classification['already_mayorista'])}")
     print(f"  Con stock PCF:         {len(classification['has_pcf_stock'])}")
     print(f"  Errores API:           {len(classification['api_errors'])}")
     total_potencial = (len(classification['publish_ready']) + len(classification.get('pending_ficha', []))
-                       + len(classification.get('missing_ficha', [])) + len(classification['need_creation']))
+                       + len(classification.get('ficha_ok', [])) + len(classification.get('missing_ficha', []))
+                       + len(classification['need_creation']))
     print(f"  TOTAL POTENCIALES:     {total_potencial}")
 
     # 6b. Enriquecer con SoloTodo (por defecto, omitir con --no-solotodo)
     if not args.no_solotodo and not args.skip_api:
         st_session = create_session()
         actionable = (classification["publish_ready"] + classification.get("pending_ficha", [])
-                      + classification.get("missing_ficha", []) + classification["already_mayorista"]
-                      + classification["need_creation"] + classification["has_pcf_stock"])
+                      + classification.get("ficha_ok", []) + classification.get("missing_ficha", [])
+                      + classification["already_mayorista"] + classification["need_creation"]
+                      + classification["has_pcf_stock"])
         enrich_with_solotodo(actionable, st_session, max_workers=4)
     elif args.skip_api:
         print("\n[!] SoloTodo omitido porque --skip-api esta activo")
