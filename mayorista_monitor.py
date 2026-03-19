@@ -920,7 +920,7 @@ def generate_html_dashboard(
             <td>{p["category"]}</td>
         </tr>'''
 
-    # Tabla Ficha Solicitada - Esperando que PCF la publique
+    # Tabla Ficha Solicitada - Esperando que eCommerce la publique
     pending_rows = ""
     for i, p in enumerate(sorted(pending_ficha, key=lambda x: x.get("vendor_name", "")), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
@@ -1607,7 +1607,7 @@ def generate_html_dashboard(
             </div>
             <div class="stat-card clickable" onclick="switchTab('pending')">
                 <div class="stat-value cyan">{len(pending_ficha)}</div>
-                <div class="stat-label">Ficha Solicitada (esperando PCF)</div>
+                <div class="stat-label">Ficha Solicitada (esperando eCommerce)</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('ficha')">
                 <div class="stat-value yellow">{len(missing_ficha)}</div>
@@ -1759,12 +1759,12 @@ def generate_html_dashboard(
             </div>
         </div>
 
-        <!-- Tabla: Ficha Solicitada - Esperando que PCF publique -->
+        <!-- Tabla: Ficha Solicitada - Esperando que eCommerce publique -->
         <div id="tab-pending" class="tab-content">
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Ficha Solicitada — Esperando publicación en PCFactory</h2>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Ficha Solicitada — Esperando publicación en eCommerce</h2>
                         <span class="table-badge badge-cyan">{len(pending_ficha)} productos en espera</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-pending', this.value)">
@@ -2429,7 +2429,7 @@ def main():
     print("RESULTADOS")
     print(f"{'=' * 60}")
     print(f"  Publicacion inmediata: {len(classification['publish_ready'])}")
-    print(f"  Ficha solicitada (esperando PCF): {len(classification.get('pending_ficha', []))}")
+    print(f"  Ficha solicitada (esperando eCommerce): {len(classification.get('pending_ficha', []))}")
     print(f"  Sin ficha (no solicitada): {len(classification.get('missing_ficha', []))}")
     print(f"  Requieren creacion:    {len(classification['need_creation'])}")
     print(f"  Ya mayorista:          {len(classification['already_mayorista'])}")
