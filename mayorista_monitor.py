@@ -820,12 +820,14 @@ def generate_html_dashboard(
         "Ficha Antigua": ("badge-red",    "Ficha Antigua"),
     }
 
+    _SEGUIMIENTO_URL = f"https://docs.google.com/spreadsheets/d/{SEGUIMIENTO_SHEET_ID}"
+
     def fmt_seguimiento(pcf_id, ingram_part) -> str:
         status = get_seguimiento_status(_seg, pcf_id, ingram_part)
         if not status:
             return '<span style="color: var(--text-muted);">No Solicitada</span>'
         cls, label = _STATUS_BADGE.get(status, ("badge-blue", status))
-        return f'<span class="table-badge {cls}">{label}</span>'
+        return f'<a href="{_SEGUIMIENTO_URL}" target="_blank" style="text-decoration:none;"><span class="table-badge {cls}">{label} ↗</span></a>'
 
     def fmt_clp_price(price_clp) -> str:
         if price_clp is None:
