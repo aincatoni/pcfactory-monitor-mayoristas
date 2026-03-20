@@ -740,7 +740,7 @@ def generate_excel_report(
 
     publish_rows  = build_rows(classification.get("publish_ready", []),   "Con Ficha Listo")
     pending_rows  = build_rows(classification.get("pending_ficha", []),   "Ficha Solicitada")
-    ficha_ok_rows = build_rows(classification.get("ficha_ok", []),         "Ficha OK en seguimiento pero sin contenido")
+    ficha_ok_rows = build_rows(classification.get("ficha_ok", []),         "Ficha necesita revisión")
     ficha_rows    = build_rows(classification.get("missing_ficha", []),    "Sin Ficha Solicitada")
     creation_rows = build_rows(classification.get("need_creation", []),    "ID No Existe")
     mayorista_rows = build_rows(classification.get("already_mayorista", []), "Publicado Lista 1")
@@ -755,7 +755,7 @@ def generate_excel_report(
         if pending_rows:
             pd.DataFrame(pending_rows).to_excel(writer, sheet_name="Ficha Solicitada", index=False)
         if ficha_ok_rows:
-            pd.DataFrame(ficha_ok_rows).to_excel(writer, sheet_name="Ficha OK sin contenido", index=False)
+            pd.DataFrame(ficha_ok_rows).to_excel(writer, sheet_name="Ficha necesita revisión", index=False)
         if ficha_rows:
             pd.DataFrame(ficha_rows).to_excel(writer, sheet_name="Sin Ficha", index=False)
         if creation_rows:
@@ -932,7 +932,7 @@ def generate_html_dashboard(
             <td>{p["category"]}</td>
         </tr>'''
 
-    # Tabla Ficha OK en seguimiento pero sin contenido
+    # Tabla Ficha necesita revisión
     fichaok_rows = ""
     for i, p in enumerate(sorted(ficha_ok, key=lambda x: x.get("vendor_name", "")), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
@@ -1044,7 +1044,7 @@ def generate_html_dashboard(
     for p in pending_ficha:
         potenciales_all.append({**p, "_estado": "Ficha Solicitada", "_estado_class": "badge-cyan"})
     for p in ficha_ok:
-        potenciales_all.append({**p, "_estado": "Ficha OK sin contenido", "_estado_class": "badge-blue"})
+        potenciales_all.append({**p, "_estado": "Ficha necesita revisión", "_estado_class": "badge-blue"})
     for p in missing_ficha:
         potenciales_all.append({**p, "_estado": "Sin Ficha Solicitada", "_estado_class": "badge-yellow"})
     for p in need_creation:
@@ -1646,7 +1646,7 @@ def generate_html_dashboard(
             </div>
             <div class="stat-card clickable" onclick="switchTab('fichaok')">
                 <div class="stat-value blue">{len(ficha_ok)}</div>
-                <div class="stat-label">Ficha OK en seguimiento pero sin contenido</div>
+                <div class="stat-label">Ficha necesita revisión</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('ficha')">
                 <div class="stat-value yellow">{len(missing_ficha)}</div>
@@ -1687,7 +1687,7 @@ def generate_html_dashboard(
                     <div class="funnel-bar" style="width: {max(len(pending_ficha) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-cyan); color: #000;">{len(pending_ficha)}</div>
                 </div>
                 <div class="funnel-step funnel-sub clickable" onclick="switchTab('fichaok')" style="cursor:pointer;">
-                    <span class="funnel-label">│ ├── Ficha OK sin contenido</span>
+                    <span class="funnel-label">│ ├── Ficha necesita revisión</span>
                     <div class="funnel-bar" style="width: {max(len(ficha_ok) / total * 100, 2) if total > 0 else 2}%; background: var(--accent-blue); color: #fff;">{len(ficha_ok)}</div>
                 </div>
                 <div class="funnel-step funnel-sub clickable" onclick="switchTab('ficha')" style="cursor:pointer;">
@@ -1716,7 +1716,7 @@ def generate_html_dashboard(
 
             <button class="tab-btn active" onclick="switchTab('publish')">↳ ✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
             <button class="tab-btn" onclick="switchTab('pending')">↳ ⏳ Ficha Solicitada ({len(pending_ficha)})</button>
-            <button class="tab-btn" onclick="switchTab('fichaok')">↳ ✅ Ficha OK sin contenido ({len(ficha_ok)})</button>
+            <button class="tab-btn" onclick="switchTab('fichaok')">↳ ✅ Ficha necesita revisión ({len(ficha_ok)})</button>
             <button class="tab-btn" onclick="switchTab('ficha')">↳ 📝 Sin Ficha Solicitada ({len(missing_ficha)})</button>
             <button class="tab-btn" onclick="switchTab('creation')">↳ 🆕 ID No Existe y Requieren Creacion ({len(need_creation)})</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
@@ -1841,12 +1841,12 @@ def generate_html_dashboard(
             </div>
         </div>
 
-        <!-- Tabla: Ficha OK en seguimiento pero sin contenido -->
+        <!-- Tabla: Ficha necesita revisión -->
         <div id="tab-fichaok" class="tab-content">
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Ficha OK en seguimiento pero sin contenido</h2>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Ficha necesita revisión</h2>
                         <span class="table-badge badge-blue">{len(ficha_ok)} productos</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-fichaok', this.value)">
@@ -2279,7 +2279,7 @@ def generate_html_dashboard(
                 <div class="glosario-card">
                     <div class="glosario-header">
                         <span class="glosario-icon">✅</span>
-                        <span class="glosario-title">Ficha OK en seguimiento pero sin contenido</span>
+                        <span class="glosario-title">Ficha necesita revisión</span>
                     </div>
                     <p class="glosario-desc">Seguimiento marca la ficha como OK pero la API del eCommerce aún la muestra vacía. Posible retraso de caché o indexación. Verificar manualmente si el producto ya puede publicarse.</p>
                     <div class="glosario-criteria">
@@ -2538,7 +2538,7 @@ def main():
     print(f"{'=' * 60}")
     print(f"  Publicacion inmediata: {len(classification['publish_ready'])}")
     print(f"  Ficha solicitada (esperando eCommerce): {len(classification.get('pending_ficha', []))}")
-    print(f"  Ficha OK en seguimiento pero sin contenido:          {len(classification.get('ficha_ok', []))}")
+    print(f"  Ficha necesita revisión:          {len(classification.get('ficha_ok', []))}")
     print(f"  Sin ficha (no solicitada): {len(classification.get('missing_ficha', []))}")
     print(f"  Requieren creacion:    {len(classification['need_creation'])}")
     print(f"  Ya mayorista:          {len(classification['already_mayorista'])}")
