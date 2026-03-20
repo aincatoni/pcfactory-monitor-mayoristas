@@ -1435,8 +1435,24 @@ def generate_html_dashboard(
             color: var(--text-muted);
             margin-bottom: 0.5rem;
         }}
+        .tab-section-header {{
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }}
+        .tab-section-title {{
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }}
         .tab-container {{
             display: flex;
+            flex-wrap: wrap;
             gap: 0.5rem;
             margin-bottom: 1rem;
         }}
@@ -1710,8 +1726,11 @@ def generate_html_dashboard(
         </div>
 
         <!-- Tabs para las tablas -->
-        <div class="tab-container">
+        <div class="tab-section-header">
             <span class="source-badge">📦 Ingram</span>
+            <span class="tab-section-title">Selecciona una categoría</span>
+        </div>
+        <div class="tab-container">
             <button class="tab-btn" onclick="switchTab('potenciales')">🎯 Potenciales ({total_potencial})</button>
 
             <button class="tab-btn active" onclick="switchTab('publish')">↳ ✅ Con Ficha Listos para Publicar ({len(publish_ready)})</button>
