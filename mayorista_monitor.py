@@ -508,7 +508,10 @@ def check_product_api(session: requests.Session, pcf_id: int) -> Dict[str, Any]:
             precio_normal = data.get("precioNormal", 0)
             precio_oferta = data.get("precioOferta", 0)
             description_pcf = data.get("descripcion", "")
-            ficha_vacia = is_description_empty(description_pcf)
+            marca_id = data.get("marca", {}).get("id")
+            # HP (id 73) usa contenido indexado por la marca; no se requiere descripcion propia
+            HP_MARCA_ID = 73
+            ficha_vacia = False if marca_id == HP_MARCA_ID else is_description_empty(description_pcf)
             stock_detail = {}
             if isinstance(stock_data, dict):
                 stock_detail = {k: v for k, v in stock_data.items() if k != "aproximado"}
