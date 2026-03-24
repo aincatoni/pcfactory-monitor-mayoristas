@@ -184,7 +184,7 @@ SOLOTODO_PCF_STORE_ID = 12
 
 def fetch_solotodo_prices(session: requests.Session, vendor_part: str) -> Dict[str, Any]:
     """Busca un producto en SoloTodo por part number y retorna precios de PCFactory, mínimo mercado y moda."""
-    empty = {"solotodo_id": None, "pcf_price": None, "min_price": None, "mode_price": None}
+    empty = {"solotodo_id": None, "pcf_price": None, "min_price": None, "mode_price": None, "mean_price": None}
     if not vendor_part or str(vendor_part).strip() in ("", "nan"):
         return empty
     try:
@@ -244,11 +244,15 @@ def fetch_solotodo_prices(session: requests.Session, vendor_part: str) -> Dict[s
             if max_count > 1:
                 mode_price = max(p for p, c in counts.items() if c == max_count)
 
+        # Media: promedio de precios disponibles
+        mean_price = int(sum(all_prices) / len(all_prices)) if all_prices else None
+
         return {
             "solotodo_id": product_id,
             "pcf_price": pcf_price,
             "min_price": min_price,
             "mode_price": mode_price,
+            "mean_price": mean_price,
         }
     except Exception:
         return empty
@@ -273,7 +277,7 @@ def enrich_with_solotodo(products: List[Dict], session: requests.Session, max_wo
             try:
                 result = future.result()
             except Exception:
-                result = {"solotodo_id": None, "pcf_price": None, "min_price": None, "mode_price": None}
+                result = {"solotodo_id": None, "pcf_price": None, "min_price": None, "mode_price": None, "mean_price": None}
             products[idx].update(result)
 
 def read_seguimiento_sheet(sheet_id: str = SEGUIMIENTO_SHEET_ID) -> Dict[str, str]:
@@ -732,6 +736,7 @@ def generate_excel_report(
                 "Costo CLP":         clp_value(price),
                 "PCF SoloTodo":      p.get("pcf_price"),
                 "Min. Mercado":      p.get("min_price"),
+                "Media Mercado":     p.get("mean_price"),
                 "Moda Mercado":      p.get("mode_price"),
                 "Solicitud Ficha":   seg_status(p.get("pcf_id"), p.get("ingram_part")),
                 "Categoria":         p.get("category", ""),
@@ -788,7 +793,7 @@ def generate_html_dashboard(
         if isinstance(bucket, list):
             _all_classified.extend(bucket)
     solotodo_lookup: Dict[str, Dict] = {
-        p["vendor_part"]: {"pcf_price": p.get("pcf_price"), "min_price": p.get("min_price"), "mode_price": p.get("mode_price"), "solotodo_id": p.get("solotodo_id")}
+        p["vendor_part"]: {"pcf_price": p.get("pcf_price"), "min_price": p.get("min_price"), "mean_price": p.get("mean_price"), "mode_price": p.get("mode_price"), "solotodo_id": p.get("solotodo_id")}
         for p in _all_classified if p.get("vendor_part") and (p.get("pcf_price") is not None or p.get("min_price") is not None or p.get("solotodo_id") is not None)
     }
 
@@ -834,6 +839,25 @@ def generate_html_dashboard(
             return '<span style="color: var(--text-muted);">—</span>'
         try:
             return f"$ {int(price_clp):,}".replace(",", ".")
+        except (ValueError, TypeError):
+            return '<span style="color: var(--text-muted);">—</span>'
+
+    def fmt_pcf_price_colored(pcf_price, mode_price) -> str:
+        if pcf_price is None:
+            return '<span style="color: var(--text-muted);">—</span>'
+        try:
+            val = int(pcf_price)
+            formatted = f"$ {val:,}".replace(",", ".")
+            if mode_price is None:
+                return formatted
+            mode_val = int(mode_price)
+            if val > mode_val:
+                color = "#ef4444"   # rojo — sobre la moda
+            elif val == mode_val:
+                color = "#eab308"   # amarillo — en la moda
+            else:
+                color = "#22c55e"   # verde — bajo la moda
+            return f'<span style="color: {color}; font-weight: 600;">{formatted}</span>'
         except (ValueError, TypeError):
             return '<span style="color: var(--text-muted);">—</span>'
 
@@ -905,8 +929,9 @@ def generate_html_dashboard(
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
-            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_pcf_price_colored(p.get("pcf_price"), p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mean_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
@@ -926,8 +951,9 @@ def generate_html_dashboard(
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
-            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_pcf_price_colored(p.get("pcf_price"), p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mean_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
@@ -947,8 +973,9 @@ def generate_html_dashboard(
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
-            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_pcf_price_colored(p.get("pcf_price"), p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mean_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
@@ -968,8 +995,9 @@ def generate_html_dashboard(
             <td class="num-cell">{p["available_qty"]}</td>
             <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
-            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_pcf_price_colored(p.get("pcf_price"), p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mean_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
@@ -1006,8 +1034,9 @@ def generate_html_dashboard(
             <td class="num-cell">{stock_display}</td>
             <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
-            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_pcf_price_colored(p.get("pcf_price"), p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mean_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
         </tr>'''
@@ -1067,8 +1096,9 @@ def generate_html_dashboard(
             <td class="num-cell">{p.get("available_qty", 0)}</td>
             <td class="num-cell">{fmt_usd(p.get("customer_price", 0))}</td>
             <td class="num-cell">{fmt_clp(p.get("customer_price", 0))}</td>
-            <td class="num-cell">{fmt_clp_price(p.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_pcf_price_colored(p.get("pcf_price"), p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(p.get("mean_price"))}</td>
             <td class="num-cell">{fmt_clp_price(p.get("mode_price"))}</td>
             <td class="num-cell">{fmt_solotodo_link(p.get("solotodo_id"))}</td>
             <td>{fmt_seguimiento(p.get("pcf_id"), p.get("ingram_part"))}</td>
@@ -1109,8 +1139,9 @@ def generate_html_dashboard(
             <td class="num-cell">{qty}</td>
             <td class="num-cell">{fmt_usd(row.get(COL_CUSTOMER_PRICE, 0))}</td>
             <td class="num-cell">{fmt_clp(row.get(COL_CUSTOMER_PRICE, 0))}</td>
-            <td class="num-cell">{fmt_clp_price(_st.get("pcf_price"))}</td>
+            <td class="num-cell">{fmt_pcf_price_colored(_st.get("pcf_price"), _st.get("mode_price"))}</td>
             <td class="num-cell">{fmt_clp_price(_st.get("min_price"))}</td>
+            <td class="num-cell">{fmt_clp_price(_st.get("mean_price"))}</td>
             <td class="num-cell">{fmt_clp_price(_st.get("mode_price"))}</td>
             <td class="num-cell">{fmt_solotodo_link(_st.get("solotodo_id"))}</td>
             <td>{row.get(COL_CATEGORY, "")}</td>
@@ -1772,14 +1803,15 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-potenciales', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-potenciales', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-potenciales', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-potenciales', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-potenciales', 10, 'num')">Media Mercado</th>
+                                <th onclick="sortTable('table-potenciales', 11, 'num')">Moda Mercado</th>
                                 <th>SoloTodo</th>
-                                <th onclick="sortTable('table-potenciales', 12, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-potenciales', 13, 'str')">Estado</th>
+                                <th onclick="sortTable('table-potenciales', 13, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-potenciales', 14, 'str')">Estado</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {potenciales_rows if potenciales_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos potenciales</td></tr>'}
+                            {potenciales_rows if potenciales_rows else '<tr><td colspan="15" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos potenciales</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1810,14 +1842,15 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-publish', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-publish', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-publish', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-publish', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-publish', 10, 'num')">Media Mercado</th>
+                                <th onclick="sortTable('table-publish', 11, 'num')">Moda Mercado</th>
                                 <th>SoloTodo</th>
-                                <th onclick="sortTable('table-publish', 12, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-publish', 13, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-publish', 13, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-publish', 14, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {publish_rows if publish_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {publish_rows if publish_rows else '<tr><td colspan="15" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1848,14 +1881,15 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-pending', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-pending', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-pending', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-pending', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-pending', 10, 'num')">Media Mercado</th>
+                                <th onclick="sortTable('table-pending', 11, 'num')">Moda Mercado</th>
                                 <th>SoloTodo</th>
-                                <th onclick="sortTable('table-pending', 12, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-pending', 13, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-pending', 13, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-pending', 14, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {pending_rows if pending_rows else '<tr><td colspan="13" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {pending_rows if pending_rows else '<tr><td colspan="15" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1886,14 +1920,15 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-fichaok', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-fichaok', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-fichaok', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-fichaok', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-fichaok', 10, 'num')">Media Mercado</th>
+                                <th onclick="sortTable('table-fichaok', 11, 'num')">Moda Mercado</th>
                                 <th>SoloTodo</th>
-                                <th onclick="sortTable('table-fichaok', 12, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-fichaok', 13, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-fichaok', 13, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-fichaok', 14, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {fichaok_rows if fichaok_rows else '<tr><td colspan="14" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {fichaok_rows if fichaok_rows else '<tr><td colspan="15" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1924,14 +1959,15 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-ficha', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-ficha', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-ficha', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-ficha', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-ficha', 10, 'num')">Media Mercado</th>
+                                <th onclick="sortTable('table-ficha', 11, 'num')">Moda Mercado</th>
                                 <th>SoloTodo</th>
-                                <th onclick="sortTable('table-ficha', 12, 'str')">Solicitud Ficha</th>
-                                <th onclick="sortTable('table-ficha', 13, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-ficha', 13, 'str')">Solicitud Ficha</th>
+                                <th onclick="sortTable('table-ficha', 14, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {ficha_rows if ficha_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {ficha_rows if ficha_rows else '<tr><td colspan="15" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -1996,12 +2032,13 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-mayorista', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-mayorista', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-mayorista', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-mayorista', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-mayorista', 10, 'num')">Media Mercado</th>
+                                <th onclick="sortTable('table-mayorista', 11, 'num')">Moda Mercado</th>
                                 <th>SoloTodo</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {mayorista_rows if mayorista_rows else '<tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
+                            {mayorista_rows if mayorista_rows else '<tr><td colspan="13" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>'}
                         </tbody>
                     </table>
                 </div>
@@ -2182,13 +2219,14 @@ def generate_html_dashboard(
                                 <th onclick="sortTable('table-total', 7, 'num')">Costo CLP</th>
                                 <th onclick="sortTable('table-total', 8, 'num')">PCF SoloTodo</th>
                                 <th onclick="sortTable('table-total', 9, 'num')">Min. Mercado</th>
-                                <th onclick="sortTable('table-total', 10, 'num')">Moda Mercado</th>
+                                <th onclick="sortTable('table-total', 10, 'num')">Media Mercado</th>
+                                <th onclick="sortTable('table-total', 11, 'num')">Moda Mercado</th>
                                 <th>SoloTodo</th>
-                                <th onclick="sortTable('table-total', 12, 'str')">Categoria</th>
+                                <th onclick="sortTable('table-total', 13, 'str')">Categoria</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {total_rows if total_rows else '<tr><td colspan="13" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
+                            {total_rows if total_rows else '<tr><td colspan="14" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos</td></tr>'}
                         </tbody>
                     </table>
                 </div>
