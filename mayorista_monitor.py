@@ -419,12 +419,12 @@ def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     has_stock = df[df[COL_AVAILABLE_QTY].fillna(0) > 0].copy()
     sin_stock = total - len(has_stock)
 
-    # Filtro 2: No elegibles (BAD BOX / OPEN BOX / CAJA DAÑADA / CAJA ABIERTA en el nombre)
+    # Filtro 2: No elegibles (BAD BOX / OPEN BOX / CAJA DAÑADA / CAJA ABIERTA / CAJA DETERIORADA en el nombre)
     import unicodedata
     def _normalize(s):
         return unicodedata.normalize('NFD', str(s)).encode('ascii', 'ignore').decode('ascii').upper()
     desc_norm = has_stock[COL_DESCRIPTION].apply(_normalize)
-    is_no_eligible = desc_norm.str.contains('BAD BOX|OPEN BOX|CAJA DANADA|CAJA ABIERTA', na=False)
+    is_no_eligible = desc_norm.str.contains('BAD BOX|OPEN BOX|CAJA DANADA|CAJA ABIERTA|CAJA DETERIORADA', na=False)
     no_eligible_df = has_stock[is_no_eligible].copy()
     eligible_xlsx = has_stock[~is_no_eligible].copy()
 
@@ -2088,7 +2088,7 @@ def generate_html_dashboard(
                 <div class="table-header">
                     <div>
                         <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Productos No Elegibles</h2>
-                        <span class="table-badge badge-red">{no_eligible} productos BAD BOX / OPEN BOX / CAJA DAÑADA / CAJA ABIERTA</span>
+                        <span class="table-badge badge-red">{no_eligible} productos BAD BOX / OPEN BOX / CAJA DAÑADA / CAJA ABIERTA / CAJA DETERIORADA</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-noelegible', this.value)">
                 </div>
@@ -2298,6 +2298,7 @@ def generate_html_dashboard(
                         <span class="criteria-tag tag-red">NOMBRE contiene "OPEN BOX"</span>
                         <span class="criteria-tag tag-red">NOMBRE contiene "CAJA DAÑADA"</span>
                         <span class="criteria-tag tag-red">NOMBRE contiene "CAJA ABIERTA"</span>
+                        <span class="criteria-tag tag-red">NOMBRE contiene "CAJA DETERIORADA"</span>
                     </div>
                 </div>
 
@@ -2533,7 +2534,7 @@ def main():
     xlsx_stats = apply_xlsx_filters(df)
     print(f"    Total: {xlsx_stats['total']}")
     print(f"    Sin stock Ingram: {xlsx_stats['sin_stock_ingram']}")
-    print(f"    No elegibles (BAD/OPEN BOX/CAJA DAÑADA/CAJA ABIERTA): {xlsx_stats['no_eligible']}")
+    print(f"    No elegibles (BAD/OPEN BOX/CAJA DAÑADA/CAJA ABIERTA/CAJA DETERIORADA): {xlsx_stats['no_eligible']}")
     print(f"    Con PCF ID: {len(xlsx_stats['has_pcf_id'])}")
     print(f"    Sin PCF ID: {len(xlsx_stats['no_pcf_id'])}")
 
