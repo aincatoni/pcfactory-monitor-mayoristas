@@ -299,18 +299,18 @@ def read_seguimiento_sheet(sheet_id: str = SEGUIMIENTO_SHEET_ID) -> Dict[str, st
             status = str(row.get("Status", "")).strip()
             if not status or status == "nan":
                 continue
-            # Indexar por PCF ID
+            # Indexar por PCF ID (prefijo "pcf:" para evitar colisiones con SKU Ingram)
             pcf_id_raw = row.get("ID", "")
             if pd.notna(pcf_id_raw):
                 try:
-                    lookup[str(int(float(pcf_id_raw)))] = status
+                    lookup[f"pcf:{int(float(pcf_id_raw))}"] = status
                 except (ValueError, TypeError):
                     pass
-            # Indexar por SKU Ingram (fallback)
+            # Indexar por SKU Ingram (prefijo "sku:" para evitar colisiones con PCF ID)
             sku_raw = row.get("SKU Ingram", "")
             if pd.notna(sku_raw):
                 try:
-                    lookup[str(int(float(sku_raw)))] = status
+                    lookup[f"sku:{int(float(sku_raw))}"] = status
                 except (ValueError, TypeError):
                     pass
         print(f"[+] Seguimiento cargado: {len(df)} entradas, {len(lookup)} claves indexadas")
@@ -323,14 +323,14 @@ def get_seguimiento_status(lookup: Dict[str, str], pcf_id, ingram_part) -> str:
     """Busca el status de seguimiento por PCF ID primero, luego por SKU Ingram."""
     if pcf_id is not None:
         try:
-            key = str(int(float(pcf_id)))
+            key = f"pcf:{int(float(pcf_id))}"
             if key in lookup:
                 return lookup[key]
         except (ValueError, TypeError):
             pass
     if ingram_part:
         try:
-            key = str(int(float(str(ingram_part))))
+            key = f"sku:{int(float(str(ingram_part)))}"
             if key in lookup:
                 return lookup[key]
         except (ValueError, TypeError):
