@@ -14,6 +14,7 @@ import concurrent.futures as cf
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
@@ -54,12 +55,17 @@ COL_EAN = "EAN/UPC CODE"
 # FUNCIONES DE FECHA/HORA CHILE
 # ==============================================================================
 
+try:
+    CHILE_TZ = ZoneInfo("America/Santiago")
+except Exception:
+    # Fallback defensivo si zoneinfo no esta disponible en el entorno.
+    CHILE_TZ = timezone(timedelta(hours=-3))
+
+
 def utc_to_chile(dt_utc):
     if dt_utc.tzinfo is None:
         dt_utc = dt_utc.replace(tzinfo=timezone.utc)
-    chile_offset = timedelta(hours=-3)
-    chile_tz = timezone(chile_offset)
-    return dt_utc.astimezone(chile_tz)
+    return dt_utc.astimezone(CHILE_TZ)
 
 def format_chile_timestamp(iso_timestamp):
     try:
