@@ -48,14 +48,28 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run mayorista monitor
+      - name: Run mayorista monitor (Ingram)
         run: |
           EXTRA_ARGS=""
           if [[ "${{ github.event.inputs.skip_api }}" == "true" ]]; then
             EXTRA_ARGS="$EXTRA_ARGS --skip-api"
           fi
           python mayorista_monitor.py \
+            --mayorista ingram \
             --source ${{ github.event.inputs.source || 'gsheet' }} \
+            --output-dir ./output \
+            --workers ${{ github.event.inputs.workers || '5' }} \
+            $EXTRA_ARGS
+
+      - name: Run mayorista monitor (Intcomex)
+        run: |
+          EXTRA_ARGS=""
+          if [[ "${{ github.event.inputs.skip_api }}" == "true" ]]; then
+            EXTRA_ARGS="$EXTRA_ARGS --skip-api"
+          fi
+          python mayorista_monitor.py \
+            --mayorista intcomex \
+            --source gsheet \
             --output-dir ./output \
             --workers ${{ github.event.inputs.workers || '5' }} \
             $EXTRA_ARGS
@@ -88,7 +102,7 @@ jobs:
           else
             git checkout --orphan gh-pages
             git rm -rf . || true
-            echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0;url=mayorista.html"><title>Mayorista Monitor</title></head><body><a href="mayorista.html">Ir al dashboard</a></body></html>' > index.html
+            echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Mayorista Monitor - PCFactory</title><style>body{font-family:sans-serif;background:#0a0a0f;color:#f4f4f5;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem}a{color:#3b82f6;text-decoration:none;font-size:1.2rem;padding:1rem 2rem;border:1px solid #27272a;background:#1a1a24;border-radius:8px;transition:all .2s}a:hover{background:#22222e}</style></head><body><h1>pc Factory Monitor</h1><nav><a href="mayorista.html">🏭 Ingram Micro</a><a href="intcomex.html">📦 Intcomex</a></nav></body></html>' > index.html
             git add index.html
             git commit -m "Initialize gh-pages"
           fi
@@ -107,10 +121,11 @@ jobs:
             find ./new-results -name "*.json" -exec cp {} ./ \; 2>/dev/null || true
             find ./new-results -name "*.xlsx" -exec cp {} ./ \; 2>/dev/null || true
             find ./new-results -name "mayorista-*.csv" -exec cp {} ./ \; 2>/dev/null || true
+            find ./new-results -name "intcomex-*.csv" -exec cp {} ./ \; 2>/dev/null || true
           fi
           rm -rf ./new-results
           echo "Final files:"
-          ls -la *.html *.json *.xlsx mayorista-*.csv 2>/dev/null || echo "No files"
+          ls -la *.html *.json *.xlsx mayorista-*.csv intcomex-*.csv 2>/dev/null || echo "No files"
 
       - name: Commit and push
         run: |

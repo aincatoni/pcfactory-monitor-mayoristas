@@ -30,9 +30,14 @@ PRODUCT_API_BASE = "https://api.pcfactory.cl/pcfactory-services-catalogo/v1/cata
 MAYORISTA_DIR = "mayorista"
 PRICE_FILE_PATTERN = "CLPriceFile*.xlsx"
 
+INTCOMEX_DIR = "intcomex"
+INTCOMEX_FILE_PATTERN = "*.xlsx"
+INTCOMEX_DEFAULT_FILE = "2026-04-29_Todos los Productos Mayorista.xlsx"
+
 # Google Sheets
 GOOGLE_SHEET_ID = "1mgGjhEmcE_c1q2xfJ4wgGpkcSD7A0jVCqD43h2382gc"
-GOOGLE_SHEET_GID = "1606322296"          # pestaña: Todos los Productos Mayorista
+GOOGLE_SHEET_GID = "1606322296"          # pestaña: Todos los Productos Mayorista (Ingram)
+INTCOMEX_SHEET_GID = "420799319"         # pestaña: Intcomex
 PCF_CATALOG_GID  = "98635074"            # pestaña: Catalogo PCF
 GOOGLE_SHEET_CSV_URL = f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}/export?format=csv&gid={GOOGLE_SHEET_GID}"
 SEGUIMIENTO_SHEET_ID = "15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM"
@@ -142,17 +147,20 @@ def find_latest_price_file(mayorista_dir: str) -> Optional[str]:
         return None
     return max(files, key=lambda f: Path(f).stat().st_mtime)
 
-def read_price_file(filepath: str) -> pd.DataFrame:
-    df = pd.read_excel(filepath, header=3)
+def read_price_file(filepath: str, header: int = 3) -> pd.DataFrame:
+    df = pd.read_excel(filepath, header=header)
     print(f"[+] Price file cargado: {filepath}")
     print(f"    {len(df)} productos, {len(df.columns)} columnas")
     return df
 
+def read_intcomex_file(filepath: str) -> pd.DataFrame:
+    return read_price_file(filepath, header=0)
+
 def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = GOOGLE_SHEET_GID) -> pd.DataFrame:
-    """Lee un Google Sheet publico usando el endpoint gviz (mas confiable)."""
+    """Lee un Google Sheet público usando el endpoint gviz (más confiable)."""
     import io
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet=Todos%20los%20Productos%20Mayorista"
-    print(f"[*] Descargando Google Sheet...")
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
+    print(f"[*] Descargando Google Sheet (gid={gid})...")
     try:
         session = requests.Session()
         session.headers.update({"User-Agent": UA})
@@ -799,6 +807,8 @@ def generate_html_dashboard(
     usd_clp: Optional[float] = None,
     seguimiento: Optional[Dict[str, str]] = None,
     price_file_url: str = None,
+    mayorista_name: str = "Ingram",
+    mayorista_prefix: str = "mayorista",
 ) -> str:
     if df_original is None:
         df_original = pd.DataFrame()
@@ -1653,14 +1663,14 @@ def generate_html_dashboard(
                 </div>
                 <div class="logo-text">
                     <h1>pc Factory Monitor</h1>
-                    <span>Mayorista - Ingram Micro</span>
+                    <span>Mayorista - {mayorista_name}</span>
                 </div>
             </div>
             <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
                 <div class="timestamp">{timestamp_display}</div>
-                <a href="mayorista-report.xlsx" target="_blank" class="download-btn">⬇ Descargar Excel</a>
-                <a href="mayorista-publish_ready.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV Publicados</a>
-                <a href="mayorista-need_creation.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV por Crear</a>
+                <a href="{mayorista_prefix}-report.xlsx" target="_blank" class="download-btn">⬇ Descargar Excel</a>
+                <a href="{mayorista_prefix}-publish_ready.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV Publicados</a>
+                <a href="{mayorista_prefix}-need_creation.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV por Crear</a>
             </div>
         </header>
 
@@ -1674,7 +1684,8 @@ def generate_html_dashboard(
             <a href="banners.html" class="nav-link">🎨 Banners</a>
             <a href="pagespeed.html" class="nav-link">⚡ PageSpeed</a>
             -->
-            <a href="mayorista.html" class="nav-link active">🏭 Ingram</a>
+            <a href="mayorista.html" class="nav-link {'active' if mayorista_prefix == 'mayorista' else ''}">🏭 Ingram</a>
+            <a href="intcomex.html" class="nav-link {'active' if mayorista_prefix == 'intcomex' else ''}">📦 Intcomex</a>
         </nav>
 
         <div class="file-info">📄 Archivo: <span id="file-url">{price_file_name_display}</span></div>
@@ -2482,7 +2493,10 @@ def generate_html_dashboard(
 # ==============================================================================
 
 def main():
-    parser = argparse.ArgumentParser(description="PCFactory Mayorista Monitor - Ingram Micro")
+    parser = argparse.ArgumentParser(description="PCFactory Mayorista Monitor - Ingram Micro / Intcomex")
+    parser.add_argument("--mayorista", type=str, default="ingram",
+                       choices=["ingram", "intcomex"],
+                       help="Mayorista a procesar: 'ingram' o 'intcomex'")
     parser.add_argument("--source", type=str, default="gsheet",
                        choices=["gsheet", "local"],
                        help="Fuente de datos: 'gsheet' (Google Sheets) o 'local' (archivo XLSX)")
@@ -2504,25 +2518,67 @@ def main():
                        help="Ruta al XLS del catálogo interno PCFactory para cruce de IDs faltantes")
     parser.add_argument("--ingram-file", type=str, default=None,
                        help="Ruta directa al XLSX de Ingram (alternativa a --source local con patrón fijo)")
+    parser.add_argument("--intcomex-file", type=str, default=None,
+                       help="Ruta directa al XLSX de Intcomex (alternativa a --source local con patrón fijo)")
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    mayorista_display = "Ingram Micro" if args.mayorista == "ingram" else "Intcomex"
     print("=" * 60)
-    print("PCFactory Mayorista Monitor - Ingram Micro")
+    print(f"PCFactory Mayorista Monitor - {mayorista_display}")
     print("=" * 60)
+
+    output_file_prefix = "mayorista" if args.mayorista == "ingram" else args.mayorista
 
     # 1. Obtener datos segun la fuente
     price_file_url = None
-    if args.ingram_file:
+
+    if args.mayorista == "intcomex":
+        if args.intcomex_file:
+            print(f"[*] Fuente: Archivo directo Intcomex ({args.intcomex_file})")
+            price_file_name = Path(args.intcomex_file).name
+            df = read_intcomex_file(args.intcomex_file)
+        elif args.source == "gsheet":
+            gid = INTCOMEX_SHEET_GID
+            print(f"[*] Fuente: Google Sheets - Intcomex (ID: {args.sheet_id}, GID: {gid})")
+            try:
+                df = read_google_sheet(args.sheet_id, gid)
+                price_file_name = f"Google Sheet Intcomex ({args.sheet_id[:8]}...)"
+                price_file_url = f"https://docs.google.com/spreadsheets/d/{args.sheet_id}/export?format=xlsx&gid={gid}"
+            except Exception:
+                print(f"[!] No se pudo leer el Google Sheet de Intcomex")
+                empty_stats = {"total": 0, "sin_stock_ingram": 0}
+                empty_class = {"publish_ready": [], "missing_ficha": [], "need_creation": [], "already_mayorista": [], "has_pcf_stock": [], "api_errors": []}
+                ts = datetime.now(timezone.utc).isoformat()
+                html = generate_html_dashboard(empty_stats, empty_class, "Error al leer Google Sheet", ts, mayorista_name=mayorista_display, mayorista_prefix=output_file_prefix)
+                html_path = output_dir / f"{output_file_prefix}.html"
+                with open(html_path, "w", encoding="utf-8") as f:
+                    f.write(html)
+                print(f"[+] Dashboard vacio guardado: {html_path}")
+                return
+        elif args.source == "local":
+            intcomex_dir = Path(args.mayorista_dir).parent / INTCOMEX_DIR
+            default_file = intcomex_dir / INTCOMEX_DEFAULT_FILE
+            if default_file.exists():
+                print(f"[*] Fuente: Archivo local Intcomex ({default_file})")
+                price_file_name = default_file.name
+                df = read_intcomex_file(str(default_file))
+            else:
+                print(f"[!] No se encontró archivo de Intcomex en {intcomex_dir}")
+                print(f"    Ejecuta con: python mayorista_monitor.py --mayorista intcomex --intcomex-file 'bases/2026-04-29_Todos los Productos Mayorista.xlsx'")
+                return
+    elif args.ingram_file:
         print(f"[*] Fuente: Archivo directo ({args.ingram_file})")
         price_file_name = Path(args.ingram_file).name
         df = read_price_file(args.ingram_file)
     elif args.source == "gsheet":
-        print(f"[*] Fuente: Google Sheets (ID: {args.sheet_id})")
+        gid = INTCOMEX_SHEET_GID if args.mayorista == "intcomex" else args.gid
+        sheet_name = "Intcomex" if args.mayorista == "intcomex" else "Ingram"
+        print(f"[*] Fuente: Google Sheets - {sheet_name} (ID: {args.sheet_id}, GID: {gid})")
         try:
-            df = read_google_sheet(args.sheet_id, args.gid)
+            df = read_google_sheet(args.sheet_id, gid)
             price_file_name = f"Google Sheet ({args.sheet_id[:8]}...)"
             price_file_url = f"https://docs.google.com/spreadsheets/d/{args.sheet_id}/export?format=xlsx"
         except Exception:
@@ -2530,22 +2586,29 @@ def main():
             empty_stats = {"total": 0, "sin_stock_ingram": 0}
             empty_class = {"publish_ready": [], "missing_ficha": [], "need_creation": [], "already_mayorista": [], "has_pcf_stock": [], "api_errors": []}
             ts = datetime.now(timezone.utc).isoformat()
-            html = generate_html_dashboard(empty_stats, empty_class, "Error al leer Google Sheet", ts)
-            html_path = output_dir / "mayorista.html"
+            html = generate_html_dashboard(empty_stats, empty_class, "Error al leer Google Sheet", ts, mayorista_name=mayorista_display, mayorista_prefix=output_file_prefix)
+            html_path = output_dir / f"{output_file_prefix}.html"
             with open(html_path, "w", encoding="utf-8") as f:
                 f.write(html)
             print(f"[+] Dashboard vacio guardado: {html_path}")
             return
     else:
-        print(f"[*] Fuente: Archivo local ({args.mayorista_dir}/)")
-        price_file = find_latest_price_file(args.mayorista_dir)
+        if args.mayorista == "intcomex":
+            print(f"[*] Fuente: Archivo local Intcomex ({INTCOMEX_DIR}/)")
+            intcomex_dir = Path(args.mayorista_dir).parent / INTCOMEX_DIR
+            price_files = glob.glob(str(intcomex_dir / INTCOMEX_FILE_PATTERN))
+            price_file = max(price_files, key=lambda f: Path(f).stat().st_mtime) if price_files else None
+        else:
+            print(f"[*] Fuente: Archivo local ({args.mayorista_dir}/)")
+            price_file = find_latest_price_file(args.mayorista_dir)
+
         if not price_file:
-            print(f"[!] No se encontro ningun price file en {args.mayorista_dir}/")
+            print(f"[!] No se encontro ningun price file")
             empty_stats = {"total": 0, "sin_stock_ingram": 0}
             empty_class = {"publish_ready": [], "missing_ficha": [], "need_creation": [], "already_mayorista": [], "has_pcf_stock": [], "api_errors": []}
             ts = datetime.now(timezone.utc).isoformat()
-            html = generate_html_dashboard(empty_stats, empty_class, "No encontrado", ts)
-            html_path = output_dir / "mayorista.html"
+            html = generate_html_dashboard(empty_stats, empty_class, "No encontrado", ts, mayorista_name=mayorista_display, mayorista_prefix=output_file_prefix)
+            html_path = output_dir / f"{output_file_prefix}.html"
             with open(html_path, "w", encoding="utf-8") as f:
                 f.write(html)
             print(f"[+] Dashboard vacio guardado: {html_path}")
@@ -2659,12 +2722,18 @@ def main():
         print(f"[+] USD observado: ${usd_clp:,.0f} CLP")
     else:
         print("[!] No se pudo obtener el tipo de cambio, columna CLP mostrara '—'")
-    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento, price_file_url=price_file_url)
+    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento, price_file_url=price_file_url, mayorista_name=mayorista_display, mayorista_prefix=output_file_prefix)
+
+    # 7. Guardar HTML
+    html_path = output_dir / f"{output_file_prefix}.html"
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"[+] Dashboard HTML guardado: {html_path}")
 
     # 8. Guardar CSVs por categoria para IMPORTDATA (Google Sheets)
     for cat, prods in classification.items():
         if isinstance(prods, list) and prods:
-            csv_filename = f"mayorista-{cat}.csv"
+            csv_filename = f"{output_file_prefix}-{cat}.csv"
             csv_path = output_dir / csv_filename
             fieldnames = list(prods[0].keys())
             with open(csv_path, "w", newline="", encoding="utf-8") as f:
@@ -2695,7 +2764,7 @@ def main():
         "has_pcf_stock": classification["has_pcf_stock"],
         "api_errors": classification["api_errors"],
     }
-    json_path = output_dir / "mayorista-report.json"
+    json_path = output_dir / f"{output_file_prefix}-report.json"
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2, default=str)
     print(f"[+] JSON guardado: {json_path}")
