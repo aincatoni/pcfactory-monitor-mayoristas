@@ -796,10 +796,17 @@ def generate_html_dashboard(
     df_original: pd.DataFrame = None,
     usd_clp: Optional[float] = None,
     seguimiento: Optional[Dict[str, str]] = None,
+    price_file_url: str = None,
 ) -> str:
     if df_original is None:
         df_original = pd.DataFrame()
     timestamp_display = format_chile_timestamp(timestamp)
+
+    # Construir el nombre a mostrar con URL si está disponible
+    if price_file_url:
+        price_file_name_display = f'<a href="{price_file_url}" target="_blank" style="color:#2563eb;text-decoration:underline;">{price_file_name}</a>'
+    else:
+        price_file_name_display = price_file_name
 
     # Lookup vendor_part -> SoloTodo data (from all enriched classified products)
     _all_classified = []
@@ -1649,7 +1656,8 @@ def generate_html_dashboard(
             </div>
             <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
                 <div class="timestamp">{timestamp_display}</div>
-                <a href="mayorista-report.xlsx" download class="download-btn">⬇ Descargar Excel</a>
+                <a href="mayorista-report.xlsx" target="_blank" class="download-btn">⬇ Descargar Excel</a>
+                <a href="mayorista-categories.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV IMPORTDATA</a>
             </div>
         </header>
 
@@ -1666,7 +1674,7 @@ def generate_html_dashboard(
             <a href="mayorista.html" class="nav-link active">🏭 Ingram</a>
         </nav>
 
-        <div class="file-info">📄 Archivo: {price_file_name}</div>
+        <div class="file-info">📄 Archivo: <span id="file-url">{price_file_name_display}</span></div>
         {usd_info_html}
 
         <div class="status-banner {status_class}">
@@ -2503,6 +2511,7 @@ def main():
     print("=" * 60)
 
     # 1. Obtener datos segun la fuente
+    price_file_url = None
     if args.ingram_file:
         print(f"[*] Fuente: Archivo directo ({args.ingram_file})")
         price_file_name = Path(args.ingram_file).name
@@ -2512,6 +2521,7 @@ def main():
         try:
             df = read_google_sheet(args.sheet_id, args.gid)
             price_file_name = f"Google Sheet ({args.sheet_id[:8]}...)"
+            price_file_url = f"https://docs.google.com/spreadsheets/d/{args.sheet_id}/export?format=xlsx"
         except Exception:
             print(f"[!] No se pudo leer el Google Sheet")
             empty_stats = {"total": 0, "sin_stock_ingram": 0}
@@ -2646,17 +2656,25 @@ def main():
         print(f"[+] USD observado: ${usd_clp:,.0f} CLP")
     else:
         print("[!] No se pudo obtener el tipo de cambio, columna CLP mostrara '—'")
-    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento)
-    html_path = output_dir / "mayorista.html"
-    with open(html_path, "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"\n[+] Dashboard guardado: {html_path}")
+html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento, price_file_url=price_file_url)
 
-    # 7. Generar Excel
-    excel_path = output_dir / "mayorista-report.xlsx"
-    generate_excel_report(classification, usd_clp, seguimiento, str(excel_path))
+    # 8. Guardar CSV para IMPORTDATA (Google Sheets)
+    csv_path = output_dir / "mayorista-categories.csv"
+    all_products = []
+    for cat, prods in classification.items():
+        if isinstance(prods, list):
+            for p in prods:
+                all_products.append({**p, "categoria": cat})
+    if all_products:
+        import csv
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            fieldnames = list(all_products[0].keys())
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(all_products)
+        print(f"[+] CSV para IMPORTDATA guardado: {csv_path}")
 
-    # 8. Guardar JSON report
+    # 9. Guardar JSON report
     report = {
         "timestamp": timestamp,
         "price_file": price_file_name,
