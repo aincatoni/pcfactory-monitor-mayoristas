@@ -746,6 +746,7 @@ def generate_excel_report(
                 "Vendor":            p.get("vendor_name", ""),
                 "Part Number":       p.get("vendor_part", ""),
                 "Stock Ingram":      p.get("available_qty", 0),
+                "Stock PCF":        p.get("stock_pcf", ""),
                 "Costo USD":         price,
                 "Costo CLP":         clp_value(price),
                 "PCF SoloTodo":      p.get("pcf_price"),
