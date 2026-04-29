@@ -2654,7 +2654,7 @@ def main():
     usd_clp = fetch_usd_clp()
     if usd_clp:
         print(f"[+] USD observado: ${usd_clp:,.0f} CLP")
-else:
+    else:
         print("[!] No se pudo obtener el tipo de cambio, columna CLP mostrara '—'")
     html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento, price_file_url=price_file_url)
 
