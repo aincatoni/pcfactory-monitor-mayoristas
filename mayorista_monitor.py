@@ -7,6 +7,7 @@ y genera un dashboard HTML con los productos potenciales para publicar.
 """
 import glob
 import json
+import csv
 import time
 import random
 import argparse
@@ -1658,7 +1659,8 @@ def generate_html_dashboard(
             <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
                 <div class="timestamp">{timestamp_display}</div>
                 <a href="mayorista-report.xlsx" target="_blank" class="download-btn">⬇ Descargar Excel</a>
-                <a href="mayorista-categories.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV IMPORTDATA</a>
+                <a href="mayorista-publish_ready.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV Publicados</a>
+                <a href="mayorista-need_creation.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV por Crear</a>
             </div>
         </header>
 
@@ -2659,21 +2661,17 @@ def main():
         print("[!] No se pudo obtener el tipo de cambio, columna CLP mostrara '—'")
     html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento, price_file_url=price_file_url)
 
-    # 8. Guardar CSV para IMPORTDATA (Google Sheets)
-    csv_path = output_dir / "mayorista-categories.csv"
-    all_products = []
+    # 8. Guardar CSVs por categoria para IMPORTDATA (Google Sheets)
     for cat, prods in classification.items():
-        if isinstance(prods, list):
-            for p in prods:
-                all_products.append({**p, "categoria": cat})
-    if all_products:
-        import csv
-        with open(csv_path, "w", newline="", encoding="utf-8") as f:
-            fieldnames = list(all_products[0].keys())
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(all_products)
-        print(f"[+] CSV para IMPORTDATA guardado: {csv_path}")
+        if isinstance(prods, list) and prods:
+            csv_filename = f"mayorista-{cat}.csv"
+            csv_path = output_dir / csv_filename
+            fieldnames = list(prods[0].keys())
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerows(prods)
+            print(f"[+] CSV guardado: {csv_path}")
 
     # 9. Guardar JSON report
     report = {

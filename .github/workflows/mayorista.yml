@@ -106,11 +106,11 @@ jobs:
             find ./new-results -name "*.html" -exec cp {} ./ \; 2>/dev/null || true
             find ./new-results -name "*.json" -exec cp {} ./ \; 2>/dev/null || true
             find ./new-results -name "*.xlsx" -exec cp {} ./ \; 2>/dev/null || true
-            find ./new-results -name "*.csv" -exec cp {} ./ \; 2>/dev/null || true
+            find ./new-results -name "mayorista-*.csv" -exec cp {} ./ \; 2>/dev/null || true
           fi
           rm -rf ./new-results
           echo "Final files:"
-          ls -la *.html *.json *.xlsx *.csv 2>/dev/null || echo "No files"
+          ls -la *.html *.json *.xlsx mayorista-*.csv 2>/dev/null || echo "No files"
 
       - name: Commit and push
         run: |
