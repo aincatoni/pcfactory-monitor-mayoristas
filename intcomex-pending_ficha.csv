@@ -1,7 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-54588,AS209EPS29,Epson WorkForce - Ink cartridge - C5310/90& C5810/90,nan,T11A220-AL,49.4,20.0,nan,Physical,ok,False,0,0,0,Bolsa de Tinta Epson T11A220-AL Cyan,0,0,True,{},,259981,,53585,,59371
-54589,AS209EPS30,Epson WorkForce - Ink cartridge - C5310/90 & C5810/90,nan,T11A320-AL,49.4,20.0,nan,Physical,ok,False,0,0,0,Bolsa de Tinta Epson T11A320-AL Magenta,0,0,True,{},,259980,,53585,,59588
-54590,AS209EPS31,"Epson WorkForce - Ink cartridge - C5310/90 & C5810/90,",nan,T11A420-AL,49.4,20.0,nan,Physical,ok,False,0,0,0,Bolsa de Tinta Epson T11A420-AL Amarilla,0,0,True,{},,259977,,53585,,59648
-51061,AT152BRO07,Brother - TN3619XL - Toner cartridge,nan,TN3619XL,187.3,20.0,nan,Physical,ok,False,0,0,0,Toner Original Brother TN-3619XL Negro,0,0,True,{},,259761,,208646,,221916
-51059,AT152BRO05,Brother - TN3609XXL - Toner cartridge - Black,nan,TN3609XXL,119.8,20.0,nan,Physical,ok,False,0,0,0,Toner Original Brother TN-3609XXL Negro,0,0,True,{},,260399,,133264,,146763
 56190,UI714APC42,APC Easy UPS BV BV650I-MS - UPS - CA 230 V - 375 vatios - 650 VA - conectores de salida: 4,nan,BV650I-MS,92.5,20.0,nan,Physical,ok,False,0,0,0,BACK UPS BV 650VA AVR UNIVERSAL OUT 230V,0,0,True,{},,79205,,75690,,98315

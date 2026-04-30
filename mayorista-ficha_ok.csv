@@ -1,0 +1,2 @@
+pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
+54590,5868805,BAG T11A420-AL YELLOW WF-C5890 5K PAG,Epson,T11A420-AL,49.13,473,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Bolsa de Tinta Epson T11A420-AL Amarilla,0,0,True,{},,259977,,53585,,59648

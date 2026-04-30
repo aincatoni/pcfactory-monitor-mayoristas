@@ -554,9 +554,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,215.63,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4802909,Easy PDU Basic Zero U 11 kW 230V (36) C1,Apc,EPDU1216B,415.01,1,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
 ,4811047,CABEZAL DE IMPRESION PF-10,Canon,0861C003,505.63,4,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,
-,4822193,Pro Fit Ergo Wired Mouse,Kensington,K75403EU,18.96,14,Dispositivos de Entrada,Mouse,85974,,20804,24990,24346
+,4822193,Pro Fit Ergo Wired Mouse,Kensington,K75403EU,18.96,14,Dispositivos de Entrada,Mouse,85974,,20804,24990,24536
 ,4827711,SERVER RACK CABINET 42U,Startech.Com,RK4236BKB,2118.5,2,Protección Eléctrica y Racks,Racks,,,,,
-,4830594,PRO FIT ERGONOMIC WIRELESS MOUSE - BLACK,Kensington,K75404WW,26.17,34,Dispositivos de Entrada,Mouse,86252,,28970,,32123
+,4830594,PRO FIT ERGONOMIC WIRELESS MOUSE - BLACK,Kensington,K75404WW,26.17,34,Dispositivos de Entrada,Mouse,86252,,28970,,31605
 ,4834958,WF-78xx / ET-58xx /ET-166xx / L65xx / L1,Epson,C12C934591,19.38,86,Suministros y Medios,Suministros Láser,,,,,
 ,4844000,RIPS3 PRINTER STAND,Epson,C12C934321,299.48,3,Impresoras,Muebles para Impresora/Plotter,,,,,
 ,4844094,Tambor HP 332A Blk Laser Imaging,Hp,W1332A,143.57,24,Suministros y Medios,Suministros Inyección de Tinta,,,,,
@@ -670,7 +670,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5464389,6FT USB C CABLE 5GBPS 100W 5A PD,Startech.Com,USB315CCV2M,25.39,17,Cables,Cables y Adaptadores USB,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,140.89,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.29,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,24952
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.29,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,24588
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,30.11,51,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,19.14,40,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5480826,Ecotank L6490,Epson,C11CJ88303,377.31,37,Impresoras,Multifuncionales Inkjet,133356,,409900,,438092
@@ -803,7 +803,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5915079,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,156.25,61,Suministros y Medios,Suministros Inyección de Tinta,259861,,174685,,194154
 ,5915080,Tinta HP DesignJet Plotter 300-ml Magent,Hp,676M7A,156.35,46,Suministros y Medios,Suministros Inyección de Tinta,262912,,174795,,197933
 ,5915081,Tinta HP DesignJet Plotter 300-ml Amaril,Hp,676M8A,156.33,63,Suministros y Medios,Suministros Inyección de Tinta,259860,,174773,,196342
-,5916016,PROFIT ERGO TB450 TRACKBALL F PROFIT ERG,Kensington,K72194WW,29.45,2,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",237677,39990,33800,,37119
+,5916016,PROFIT ERGO TB450 TRACKBALL F PROFIT ERG,Kensington,K72194WW,29.45,2,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",237677,39990,33800,,37984
 ,5916062,BLACK SCAN HH490-R1 USB KIT W STAND 1D P,Honeywell,HH490-R1-1USB-1-N,137.87,11,Cámaras y Escáners,Escáners Manuales,,,,,
 ,5916676,AC POWER SUPPLY 12V 30W 1 35 X 3 5MM VI,Honeywell,3011-8248-001,51.27,7,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
 ,5923756,POLY STUDIO X70 OPTIONAL TABLE STAND,Poly,875L3AA,107.0,4,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
@@ -859,7 +859,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6218458,HPE ULTRIUM UNIVERSAL CLEANING CARTRIDGE,Hewlett Packard Enterprise,C7978A,40.2,2,Suministros y Medios,Cintas de Almacenamiento,,,,,
 ,6219531,T12C120-AL TINTA EPSON WF-M5399,Epson,T12C120-AL,127.08,55,Suministros y Medios,Suministros Inyección de Tinta,270675,,143500,,153068
 ,6221089,CR1100CKA-GJ0250 N4500 64G 4G 11 CHROME,Asus,90NX03V1-M008J0,287.11,1,Computadores Servidores y Notebooks,Chromebooks & Netbooks,359933,,331900,,331900
-,6221521,MOUSE INALAMBRICO MY430 RECARGABLE K7550,Kensington,K75507WW,21.58,61,Dispositivos de Entrada,Mouse,244433,27990,24486,27990,26526
+,6221521,MOUSE INALAMBRICO MY430 RECARGABLE K7550,Kensington,K75507WW,21.58,61,Dispositivos de Entrada,Mouse,244433,27990,24486,27990,27106
 ,6227909,ULTRACHROME HD FOTO NG CART INK 700 ML,Epson,T55K100,202.31,4,Suministros y Medios,Suministros Inyección de Tinta,259919,,,,
 ,6227946,ULTRACHROME HDX NARANJA CART INK 700 ML,Epson,T55KA00,202.31,1,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,6227947,ULTRACHROME HDX VIOLETA CART INK 700 ML,Epson,T55KD00,202.31,1,Suministros y Medios,Suministros Inyección de Tinta,266745,,218870,,218870
@@ -876,7 +876,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6258779,TONER TN860 RENDIMIENTO HASTA 1200 PG,Brother,TN860,40.7,12,Suministros y Medios,Suministros Láser,260272,,44500,,50660
 ,6261795,CABLE - CISCO USB CONSOLE CABLE 460KBPS,Startech.Com,ICUSBROLLOVR,29.73,5,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,6262636,EDA10A QUAD BATTERY CHARGER KIT,Honeywell,EDA10A-QBC-1,297.76,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
-,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.8,87,Suministros y Medios,Suministros Inyección de Tinta,259799,,33724,41990,39616
+,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.8,87,Suministros y Medios,Suministros Inyección de Tinta,259799,,33724,41990,39610
 ,6264460,IMPRESORA INALAMBRICA 3 EN 1 MAXIFY GX30,Canon,5777C005,213.71,3,Impresoras,Multifuncionales Inkjet,225935,,240524,269990,272623
 ,6269896,ASUS VIGOUR BACKPACK,Asus,90XB08T0-BBP000,35.64,34,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.66,200,Comunicaciones,Cintillos telefónicos,256210,,20490,24990,23683
@@ -996,13 +996,13 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6708602,245 G10 R3 7330U 8GB 512GB 14IN FREE,Hp,BM4G5AT#ABM,347.22,137,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6708603,240R G10 I5 120U RAM 8GB 512GB 14IN FREE,Hp,C78E4AT#ABM,510.16,112,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6709514,SanDisk Ultra Dual Drive Go USB Type-C 6,Sandisk,SDCZ530-064G-G46,18.79,100,Dispositivos de Almacenamiento,Pendrives y Unidades Flash Portables,382083,,21500,,24049
-,6709553,TUF GAMING B860-PLUS WIFI,Asus,90MB1JL0-M0EAY0,213.36,63,Componentes de Sistema,Tarjetas Madre Intel,277396,,239233,,258783
+,6709553,TUF GAMING B860-PLUS WIFI,Asus,90MB1JL0-M0EAY0,213.36,63,Componentes de Sistema,Tarjetas Madre Intel,277396,,239233,,259857
 ,6709675,DB SATELLITE PRO C40-K - I7 16G 512 14IN,Dynabook,PSY25U-0P800Q,756.98,20,Computadores Servidores y Notebooks,Notebooks,366596,,873990,,874990
 ,6709677,DYNABOOK TECRA A40-M - U7 32GB 1TB 14IN,Dynabook,PNM11U-1WY00D,1013.0,6,Computadores Servidores y Notebooks,Notebooks,366595,,1149990,,1176323
 ,6709678,DB SATELLITE PRO C50-K - I5 8G 512 156,Dynabook,PSY29U-4UT002,612.26,2,Computadores Servidores y Notebooks,Notebooks,366594,,706990,,720490
 ,6711084,400 QUIET PINK WIRELESS MOUSE,Hp,AZ7B5AA#ABA,16.89,1982,Dispositivos de Entrada,Mouse,,,,,
 ,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,13.32,2236,Suministros y Medios,Suministros Inyección de Tinta,384467,,15713,,19111
-,6711403,HP 668 NEGRO ORIGINAL INK ADVANTAGE CART,Hp,7FP37VL,14.61,1940,Suministros y Medios,Suministros Inyección de Tinta,384466,,17246,21990,21887
+,6711403,HP 668 NEGRO ORIGINAL INK ADVANTAGE CART,Hp,7FP37VL,14.61,1940,Suministros y Medios,Suministros Inyección de Tinta,384466,,17246,21990,21904
 ,6711945,400 QUIET MAPLE WIRELESS MOUSE US,Hp,AZ7B6AA#ABA,16.89,995,Dispositivos de Entrada,Mouse,,,,,
 ,6711946,400 QUIET PUP WRLS MSE,Hp,AZ7B7AA#ABA,16.89,1513,Dispositivos de Entrada,Mouse,,,,,
 ,6714692,POWER INJECTOR 802.3BT 5G MGIG ETHERNET,Cisco,AIR-PWRINJ7=,340.34,5,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
@@ -1039,7 +1039,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6782253,HP OMEN 27 FHD 180 HZ,Hp,AV4K1AA#AKH,188.95,150,Pantallas,Monitores LCD/LED,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,116.18,10,Pantallas,Monitores LCD/LED,,,,,
 ,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,183.43,50,Pantallas,Monitores LCD/LED,379960,,191990,,217049
-,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1146.4,9,Pantallas,Monitores LCD/LED,318326,,1249990,1299990,1349455
+,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1146.4,9,Pantallas,Monitores LCD/LED,318326,,1249990,1299990,1353952
 ,6783839,TM-T20IVL-002 USB +ETHERNET,Epson,C31CL45002,133.54,80,Impresoras,Impresoras de Recibos Térmicas,,,,,
 ,6784033,HPE ANW 6000 24G CL4 4F 370W Sw,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,,,,,
 ,6788478,TOWER P3 G2 U9 285 VPRO 16GB 1TB W11P,Lenovo,30HT00AQCL,2677.0,4,Computadores Servidores y Notebooks,Workstations,,,,,
@@ -1048,9 +1048,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6796981,MBP 14 SB/15C/16C GPU/24GB/1T-NEGRO ESPA,Apple,MGDR4CI/A,2285.7,17,Computadores Servidores y Notebooks,Notebooks,383729,,2459990,2499990,2524379
 ,6797725,MBN 13 SLV/8GB/512GB-SILVER,Apple,MHFC4CI/A,685.71,96,Computadores Servidores y Notebooks,Notebooks,383743,,749990,749990,758870
 ,6797726,MBN 13 CIT/8GB/256GB-CITRUS,Apple,MHFD4CI/A,594.27,2,Computadores Servidores y Notebooks,Notebooks,383744,,619990,649990,654816
-,6797728,MBN 13 BLS/8GB/256GB-BLUSH,Apple,MHFH4CI/A,594.27,50,Computadores Servidores y Notebooks,Notebooks,383748,,649990,649990,652316
+,6797728,MBN 13 BLS/8GB/256GB-BLUSH,Apple,MHFH4CI/A,594.27,50,Computadores Servidores y Notebooks,Notebooks,383748,,649990,649990,652648
 ,6797729,MBN 13 IND/8GB/512GB-INDIGO,Apple,MHFG4CI/A,685.71,44,Computadores Servidores y Notebooks,Notebooks,383749,,742844,749990,749753
-,6797730,MBN 13 BLS/8GB/512GB-BLUSH,Apple,MHFJ4CI/A,685.71,39,Computadores Servidores y Notebooks,Notebooks,383750,,710378,749990,745778
+,6797730,MBN 13 BLS/8GB/512GB-BLUSH,Apple,MHFJ4CI/A,685.71,39,Computadores Servidores y Notebooks,Notebooks,383750,,742844,749990,749712
 ,6801387,MONITOR BENQ EX271 27IN IPS 1920X1080,Benq,9H.LNALA.TBA,206.21,15,Pantallas,Monitores LCD/LED,,,,,
 ,6801388,MONITOR BENQ PD2706U 27IN IPS/ANTI REFEL,Benq,9H.LLJLB.VBA,460.82,5,Pantallas,Monitores LCD/LED,,,,,
 ,6801389,MONITOR BENQ 31.5IN PD3205U 4K,Benq,9H.LKGLA.RBA,632.48,10,Pantallas,Monitores LCD/LED,,,,,
