@@ -670,7 +670,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5464389,6FT USB C CABLE 5GBPS 100W 5A PD,Startech.Com,USB315CCV2M,25.39,17,Cables,Cables y Adaptadores USB,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,140.89,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.29,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,20576,26990,24795
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.29,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,20576,26990,25474
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,30.11,51,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,19.14,40,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5480826,Ecotank L6490,Epson,C11CJ88303,377.31,37,Impresoras,Multifuncionales Inkjet,133356,,409900,,445978
@@ -1057,7 +1057,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,412.7,22,Pantallas,Monitores LCD/LED,366630,,479990,,500243
 ,6805280,ThinkStation P2 TWR I714700 16G x1 W11P,Lenovo,30FS000PLM,1807.4,16,Computadores Servidores y Notebooks,Workstations,,,,,
 ,6805407,NB TP E16 G3 CORE5 16G 512G 11P,Lenovo,21TF0065CL,919.63,22,Computadores Servidores y Notebooks,Notebooks,356048,,971990,,1016226
-,6805639,NB TP ThinkPad X9-15 G1 U7 32G 1T 11P,Lenovo,21Q6004KCL,1828.6,15,Computadores Servidores y Notebooks,Notebooks,267399,,1659991,,1975245
+,6805639,NB TP ThinkPad X9-15 G1 U7 32G 1T 11P,Lenovo,21Q6004KCL,1828.6,15,Computadores Servidores y Notebooks,Notebooks,267399,,1659991,,1916194
 ,6805740,NB TP L14 G6 U7 16G 512G 11P,Lenovo,21S60043CL,1275.8,15,Computadores Servidores y Notebooks,Notebooks,384235,,1299992,,1398347
 ,6805741,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58R00,786.74,3,Computadores Servidores y Notebooks,Notebooks,388682,,889511,,901646
 ,6805744,ThinkStation P2 TWR I914900K 32G x1 W11P,Lenovo,30FS000NLM,2445.3,4,Computadores Servidores y Notebooks,Workstations,,,,,
