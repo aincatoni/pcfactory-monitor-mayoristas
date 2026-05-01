@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56190,UI714APC42,APC Easy UPS BV BV650I-MS - UPS - CA 230 V - 375 vatios - 650 VA - conectores de salida: 4,nan,BV650I-MS,92.5,20.0,nan,Physical,ok,False,0,0,0,BACK UPS BV 650VA AVR UNIVERSAL OUT 230V,0,0,True,{},,79205,,75690,,98315
+56190,UI714APC42,APC Easy UPS BV BV650I-MS - UPS - CA 230 V - 375 vatios - 650 VA - conectores de salida: 4,nan,BV650I-MS,92.5,20.0,nan,Physical,ok,False,0,0,0,BACK UPS BV 650VA AVR UNIVERSAL OUT 230V,0,0,True,{},,79205,,75690,,96013
