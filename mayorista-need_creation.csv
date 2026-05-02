@@ -670,7 +670,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5464389,6FT USB C CABLE 5GBPS 100W 5A PD,Startech.Com,USB315CCV2M,25.39,17,Cables,Cables y Adaptadores USB,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,140.89,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.29,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,21994,26990,25679
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.29,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,21994,26990,25854
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,30.11,51,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,19.14,40,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5480826,Ecotank L6490,Epson,C11CJ88303,377.31,37,Impresoras,Multifuncionales Inkjet,133356,,409900,,453753
@@ -1039,7 +1039,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6782253,HP OMEN 27 FHD 180 HZ,Hp,AV4K1AA#AKH,188.95,150,Pantallas,Monitores LCD/LED,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,116.18,10,Pantallas,Monitores LCD/LED,,,,,
 ,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,183.43,50,Pantallas,Monitores LCD/LED,379960,,191990,,218430
-,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1146.4,9,Pantallas,Monitores LCD/LED,318326,,1249990,1299990,1355668
+,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1146.4,9,Pantallas,Monitores LCD/LED,318326,,1249990,1299990,1346388
 ,6783839,TM-T20IVL-002 USB +ETHERNET,Epson,C31CL45002,133.54,80,Impresoras,Impresoras de Recibos Térmicas,,,,,
 ,6784033,HPE ANW 6000 24G CL4 4F 370W Sw,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,,,,,
 ,6788478,TOWER P3 G2 U9 285 VPRO 16GB 1TB W11P,Lenovo,30HT00AQCL,2677.0,4,Computadores Servidores y Notebooks,Workstations,,,,,
@@ -1058,7 +1058,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6805280,ThinkStation P2 TWR I714700 16G x1 W11P,Lenovo,30FS000PLM,1807.4,16,Computadores Servidores y Notebooks,Workstations,,,,,
 ,6805407,NB TP E16 G3 CORE5 16G 512G 11P,Lenovo,21TF0065CL,919.63,22,Computadores Servidores y Notebooks,Notebooks,356048,,971990,,1016979
 ,6805639,NB TP ThinkPad X9-15 G1 U7 32G 1T 11P,Lenovo,21Q6004KCL,1828.6,15,Computadores Servidores y Notebooks,Notebooks,267399,,1659991,,1917087
-,6805740,NB TP L14 G6 U7 16G 512G 11P,Lenovo,21S60043CL,1275.8,15,Computadores Servidores y Notebooks,Notebooks,384235,,1299992,,1416220
+,6805740,NB TP L14 G6 U7 16G 512G 11P,Lenovo,21S60043CL,1275.8,15,Computadores Servidores y Notebooks,Notebooks,384235,,1299992,,1398974
 ,6805741,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58R00,786.74,3,Computadores Servidores y Notebooks,Notebooks,388682,,891464,,903907
 ,6805744,ThinkStation P2 TWR I914900K 32G x1 W11P,Lenovo,30FS000NLM,2445.3,4,Computadores Servidores y Notebooks,Workstations,,,,,
 ,6805746,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58V00,883.48,43,Computadores Servidores y Notebooks,Notebooks,388677,,985033,,1006183
