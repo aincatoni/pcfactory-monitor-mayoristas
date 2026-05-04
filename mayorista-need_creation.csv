@@ -574,7 +574,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4936512,10ft 14AWG Computer Power Cord NEMA 5-15,Startech.Com,PXT515191410,25.1,7,Cables,Cables de Poder,,,,,
 ,4936537,USB Secure Charge Cable 1m (USB-C to USB,Startech.Com,USBSCHAC1M,8.56,8,Cables,Cables y Adaptadores USB,,,,,
 ,4944984,USB-C to Dual HDMI 1.4 Video Adapter,Kensington,K38286WW,34.4,3,Cables,Cables y Adaptadores de Audio + Video,,,,,
-,4944993,SureTrack Dual Wireless Mouse - Grey,Kensington,K75351WW,9.98,209,Dispositivos de Entrada,Mouse,85978,,12392,,13782
+,4944993,SureTrack Dual Wireless Mouse - Grey,Kensington,K75351WW,9.98,209,Dispositivos de Entrada,Mouse,85978,,12392,,14129
 ,4944994,SureTrack Dual Wireless Mouse - Red,Kensington,K75352WW,10.08,63,Dispositivos de Entrada,Mouse,86747,,11314,,14115
 ,4958281,POWER INJECTOR 802.3AT FOR AIRONET ACCES,Cisco,AIR-PWRINJ6=,137.04,3,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
 ,4967016,"Catalyst 9200L 48-port PoE+, 4 x 1G, Ne",Cisco,C9200L-48P-4G-E,4455.8,2,Dispositivos de Red,Switches Estaqueables,381042,,,,
@@ -883,7 +883,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6278446,KTG SIMPLY PORTABLE LITE BACKPCK 16# BLA,Kensington,K60389WW,13.05,67,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
 ,6278447,KTG SIMPLY PORTABLE LITE BACKPCK 14 BLA,Kensington,K60399WW,12.4,3,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
 ,6279771,INTEL XEON SILVER 4514Y 2G 16C/32T 16GT,Dell,338-CPCL,1832.9,1,Componentes de Sistema,Procesadores Intel,,,,,
-,6279966,E1404FA-NK178W r5-7520U 8 512 UMA 14IN,Asus,90NB0ZS2-M00TF0,480.45,169,Computadores Servidores y Notebooks,Notebooks,265687,,384900,499990,508929
+,6279966,E1404FA-NK178W r5-7520U 8 512 UMA 14IN,Asus,90NB0ZS2-M00TF0,480.45,169,Computadores Servidores y Notebooks,Notebooks,265687,,384900,499990,509043
 ,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,99.54,2,Suministros y Medios,Suministros Inyección de Tinta,262151,,110114,,112504
 ,6281645,TONER CONTRACTUAL ALTA CAPACIDAD AZUL,Hp,W2151XC,110.31,44,Suministros y Medios,Suministros Láser,,,,,
 ,6281646,TONER CONTRACTUAL ALTA CAPACIDAD AMARILL,Hp,W2152XC,110.31,44,Suministros y Medios,Suministros Láser,,,,,
@@ -901,7 +901,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6340674,MONITOR QHD S5 PRO 27IN 527PQ,Hp,9D9S0UT,214.38,92,Pantallas,Monitores LCD/LED,385011,,266104,,286853
 ,6340678,MONITOR FULL HD S3 PRO 21.45IN 322PE,Hp,AK2F1UT,69.36,115,Pantallas,Monitores LCD/LED,354900,89990,76229,,82913
 ,6340820,SSD WDS100T3X0G-00CHY0 1TB M.2,Western Digital,WDS100T3X0G-00CHY0,348.29,19,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),,,,,
-,6343100,265KF CORE ULTRA 7 PROCESSOR,Intel,BX80768265KF,271.63,4,Componentes de Sistema,Procesadores Intel,259003,,298069,,365920
+,6343100,265KF CORE ULTRA 7 PROCESSOR,Intel,BX80768265KF,271.63,4,Componentes de Sistema,Procesadores Intel,259003,,298069,,363184
 ,6359565,BAHIA DE INTERCAMBIO EN CALIENTE PARA DI,Startech.Com,HSB1SATSASBA,36.4,10,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
 ,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,142.65,42,Dispositivos de Entrada,Teclados,269661,,156280,,163132
 ,6363055,MAGIC KEYBOARD TOUCH ID NUM KEY WH-USA,Apple,MXK73LL/A,172.91,1,Dispositivos de Entrada,Teclados,,,,,
@@ -928,7 +928,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6506861,ROG STRIX B850-F GAMING WIFI,Asus,90MB1J70-M0AAY0,299.19,13,Componentes de Sistema,Tarjetas Madre AMD,,,,,
 ,6513333,APPLE ADAPTADOR-CHL 20W USB C,Apple,MD3J4CI/A,16.66,227,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
 ,6517345,WIN SVR 2025 ESSENTIALS ROK 10C ML,Lenovo,7S1S000XWW,543.85,2,Software,SW Sistemas Operativos Windows,,,,,
-,6546285,ViewBoard 34 serie touchscreen 86 UHD An,Viewsonic,IFP8634,1319.6,18,Pantallas,Pantallas Comerciales Táctiles LCD/LED,385769,,1479900,,1523863
+,6546285,ViewBoard 34 serie touchscreen 86 UHD An,Viewsonic,IFP8634,1319.6,18,Pantallas,Pantallas Comerciales Táctiles LCD/LED,385769,,1479900,,1516978
 ,6546306,DUAL-RTX3050-O6G//RTX3050 DVI HDMI DP 6G,Asus,90YV0K60-M0AA00,230.89,176,Componentes de Sistema,Tarjetas Gráficas nVidia,238236,,209990,,246032
 ,6567828,ALLOY RISE TECLADO GAMER 75,Hp,7G7A4AA#ABM,121.78,24,Comunicaciones,Teclados área de Movilidad,,,,,
 ,6567829,ALLOY RISE TECLADO GAMER,Hp,7G7A3AA#ABM,109.9,133,Comunicaciones,Teclados área de Movilidad,,,,,
@@ -978,7 +978,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6658474,HP ProStudio 4 AiO G1i U7265 16GB/1TB PC,Hp,C24V8LS#ABM,774.05,31,Computadores Servidores y Notebooks,Computadores con Monitor integrado,,,,,
 ,6662176,KIT CABEZALES DE IMPRESION CH-11R + CH-1,Canon,4650C004,49.05,34,Suministros y Medios,Cartuchos de Limpieza,270654,,58990,,59490
 ,6662177,IMPRESORA MULTIFUNCIONAL DE O DE TINTA P,Canon,2313C005,114.95,141,Impresoras,Multifuncionales Inkjet,,,,,
-,6671131,IDEATAB PLUS 12.1IN 2K MTK D6400 8G 256G,Lenovo,ZAG70652CL,281.34,4,Computadores Servidores y Notebooks,Tablets y Tablet PCs,375091,,312974,,331984
+,6671131,IDEATAB PLUS 12.1IN 2K MTK D6400 8G 256G,Lenovo,ZAG70652CL,281.34,4,Computadores Servidores y Notebooks,Tablets y Tablet PCs,375091,,312974,,344962
 ,6674344,13K EXTRA HIGH CAP T13K200 CYAN INK PACK,Epson,T13K200,274.55,2,Suministros y Medios,Suministros Inyección de Tinta,280449,,305500,,309698
 ,6677791,48PORT POE+4 X 1G DNA E 3YR,Cisco,C9200L-48P-4G-E + C9200L-DNA-E-48-3Y,5281.5,2,Dispositivos de Red,Switches Estaqueables,,,,,
 ,6677792,24PORT POE+ 4 X 1G DNA E 3YR,Cisco,C9200L-24P-4G-E + C9200L-DNA-E-24-3Y,2668.0,3,Comunicaciones,Dispositivos de Línea Compartida,,,,,
@@ -1017,7 +1017,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6753716,PC14250-CU7-16GB-512GB WIN+MOUSE MS3320W,Dell,2HWN3-MS3320W-DG-R,1407.7,100,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6758411,AMD RYZEN 7 9850X3D 8 CORE PROCESSOR,Amd,100-100001973WOF,517.02,28,Componentes de Sistema,Procesadores AMD,382839,,549900,549900,591454
 ,6759901,MAG COREFROZR AA13,Msi,306-7ZWHA11-L80,16.03,44,Computadores Servidores y Notebooks,Componentes Terminales,,,,,
-,6761911,DELL PRO 14 14255 RYZEN5 PRO 230 16GB 51,Dell,6F1NR,705.49,187,Computadores Servidores y Notebooks,Notebooks,379344,,795195,,830707
+,6761911,DELL PRO 14 14255 RYZEN5 PRO 230 16GB 51,Dell,6F1NR,705.49,187,Computadores Servidores y Notebooks,Notebooks,379344,,794900,,824739
 ,6763955,SR630 V4 2.5IN 1.2TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01770,305.0,10,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),,,,,
 ,6763956,SR630 V4 6515P 16C 32GB 2.5IN 940 8I 9X5,Lenovo,7DG9100JLA,5790.0,8,Computadores Servidores y Notebooks,Servidores en Rack,,,,,
 ,6763957,SR630 V4 2.5IN 2.4TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01771,547.0,10,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),389808,,620162,,626576
@@ -1038,7 +1038,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6782248,HP 400 QUIET BLUE WIRELESS MOUSE US,Hp,AZ7B4AA#ABA,16.89,594,Dispositivos de Entrada,Mouse,,,,,
 ,6782253,HP OMEN 27 FHD 180 HZ,Hp,AV4K1AA#AKH,188.95,150,Pantallas,Monitores LCD/LED,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,116.18,10,Pantallas,Monitores LCD/LED,,,,,
-,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,183.43,50,Pantallas,Monitores LCD/LED,379960,,191990,,220826
+,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,183.43,50,Pantallas,Monitores LCD/LED,379960,,191990,,217492
 ,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1146.4,9,Pantallas,Monitores LCD/LED,318326,,1249990,1299990,1346261
 ,6783839,TM-T20IVL-002 USB +ETHERNET,Epson,C31CL45002,133.54,80,Impresoras,Impresoras de Recibos Térmicas,,,,,
 ,6784033,HPE ANW 6000 24G CL4 4F 370W Sw,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,,,,,
@@ -1047,23 +1047,23 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6789829,IMPRESORA PIXMA G4180,Canon,6704C005,194.66,10,Suministros y Medios,Suministros Láser,278097,,219990,,221490
 ,6796981,MBP 14 SB/15C/16C GPU/24GB/1T-NEGRO ESPA,Apple,MGDR4CI/A,2285.7,17,Computadores Servidores y Notebooks,Notebooks,383729,,2459990,2499990,2527951
 ,6797725,MBN 13 SLV/8GB/512GB-SILVER,Apple,MHFC4CI/A,685.71,96,Computadores Servidores y Notebooks,Notebooks,383743,,739328,749990,755511
-,6797726,MBN 13 CIT/8GB/256GB-CITRUS,Apple,MHFD4CI/A,594.27,2,Computadores Servidores y Notebooks,Notebooks,383744,,619990,649990,654176
-,6797728,MBN 13 BLS/8GB/256GB-BLUSH,Apple,MHFH4CI/A,594.27,50,Computadores Servidores y Notebooks,Notebooks,383748,,649990,649990,654176
+,6797726,MBN 13 CIT/8GB/256GB-CITRUS,Apple,MHFD4CI/A,594.27,2,Computadores Servidores y Notebooks,Notebooks,383744,,619990,649990,653711
+,6797728,MBN 13 BLS/8GB/256GB-BLUSH,Apple,MHFH4CI/A,594.27,50,Computadores Servidores y Notebooks,Notebooks,383748,,649990,649990,653339
 ,6797729,MBN 13 IND/8GB/512GB-INDIGO,Apple,MHFG4CI/A,685.71,44,Computadores Servidores y Notebooks,Notebooks,383749,,739328,749990,749238
-,6797730,MBN 13 BLS/8GB/512GB-BLUSH,Apple,MHFJ4CI/A,685.71,39,Computadores Servidores y Notebooks,Notebooks,383750,,742844,749990,749712
+,6797730,MBN 13 BLS/8GB/512GB-BLUSH,Apple,MHFJ4CI/A,685.71,39,Computadores Servidores y Notebooks,Notebooks,383750,,742844,749990,749740
 ,6801387,MONITOR BENQ EX271 27IN IPS 1920X1080,Benq,9H.LNALA.TBA,206.21,15,Pantallas,Monitores LCD/LED,,,,,
 ,6801388,MONITOR BENQ PD2706U 27IN IPS/ANTI REFEL,Benq,9H.LLJLB.VBA,460.82,5,Pantallas,Monitores LCD/LED,,,,,
 ,6801389,MONITOR BENQ 31.5IN PD3205U 4K,Benq,9H.LKGLA.RBA,632.48,10,Pantallas,Monitores LCD/LED,,,,,
 ,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,412.7,22,Pantallas,Monitores LCD/LED,366630,,479990,,499844
 ,6805280,ThinkStation P2 TWR I714700 16G x1 W11P,Lenovo,30FS000PLM,1807.4,16,Computadores Servidores y Notebooks,Workstations,,,,,
-,6805407,NB TP E16 G3 CORE5 16G 512G 11P,Lenovo,21TF0065CL,919.63,22,Computadores Servidores y Notebooks,Notebooks,356048,,971990,,1016979
-,6805639,NB TP ThinkPad X9-15 G1 U7 32G 1T 11P,Lenovo,21Q6004KCL,1828.6,15,Computadores Servidores y Notebooks,Notebooks,267399,,1659991,,1917687
-,6805740,NB TP L14 G6 U7 16G 512G 11P,Lenovo,21S60043CL,1275.8,15,Computadores Servidores y Notebooks,Notebooks,384235,,1299992,,1399374
-,6805741,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58R00,786.74,3,Computadores Servidores y Notebooks,Notebooks,388682,,891464,,904240
+,6805407,NB TP E16 G3 CORE5 16G 512G 11P,Lenovo,21TF0065CL,919.63,22,Computadores Servidores y Notebooks,Notebooks,356048,,971990,,1024209
+,6805639,NB TP ThinkPad X9-15 G1 U7 32G 1T 11P,Lenovo,21Q6004KCL,1828.6,15,Computadores Servidores y Notebooks,Notebooks,267399,,1659991,,1941389
+,6805740,NB TP L14 G6 U7 16G 512G 11P,Lenovo,21S60043CL,1275.8,15,Computadores Servidores y Notebooks,Notebooks,384235,,1299992,,1407795
+,6805741,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58R00,786.74,3,Computadores Servidores y Notebooks,Notebooks,388682,,891464,,905655
 ,6805744,ThinkStation P2 TWR I914900K 32G x1 W11P,Lenovo,30FS000NLM,2445.3,4,Computadores Servidores y Notebooks,Workstations,,,,,
-,6805746,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58V00,883.48,43,Computadores Servidores y Notebooks,Notebooks,388677,,985033,,1006517
-,6805748,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58X00,880.68,36,Computadores Servidores y Notebooks,Notebooks,390022,,976738,,998187
-,6805751,NB WS P1 G7 ULT7 1T 11P RTX2000Ada,Lenovo,21KV003PCL,2657.9,7,Computadores Servidores y Notebooks,nan,292901,,2559990,,2816915
+,6805746,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58V00,883.48,43,Computadores Servidores y Notebooks,Notebooks,388677,,985033,,1006112
+,6805748,NB TP L14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21H6S58X00,880.68,36,Computadores Servidores y Notebooks,Notebooks,390022,,974500,,992265
+,6805751,NB WS P1 G7 ULT7 1T 11P RTX2000Ada,Lenovo,21KV003PCL,2657.9,7,Computadores Servidores y Notebooks,nan,292901,,2559990,,2846199
 ,6811414,IMPRESORA MULTIFINCIONAL PIXMA G2170,Canon,5804C004,147.58,100,Impresoras,Impresoras de Inyección de Tinta,,,,,
 ,6811853,TECLADO INALA KB435 COMP EQ RECAR K75409,Kensington,K75409ES,22.95,20,Dispositivos de Entrada,Teclados,,,,,
 ,6811854,COMBO TECLADO ALAMBRIC KM100 EQ K75452ES,Kensington,K75452ES,15.07,14,Dispositivos de Entrada,Combos Teclado/Mouse,361359,,17900,,20032
