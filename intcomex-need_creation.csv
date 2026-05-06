@@ -482,7 +482,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AN013KNS79,Kensington - Notebook sleeve - 12in K60393WW,nan,K60393WW,10.3,12.0,nan,Physical,,,,,
 ,AN013KNS84,Kensington - Monitor stand - Extra-Wide Steel,nan,K58305AU,12.4,20.0,nan,Physical,,,,,
 ,AN013KNS86,"Kensington - Ultra-Slim Aluminum - Monitor stand - Supports monitor screen sizes up to 34""",nan,K58304AU,26.2,10.0,nan,Physical,,,,,
-,AN013KNS92,Kensington - Nano Security Slot Adapter,nan,K65029,9.3,20.0,nan,Physical,,,,,
 ,AN015KNS41,"Kensington Contour 2.0 Pro - Mochila para transporte de portátil - 17""",nan,K60381WW,49.4,10.0,nan,Physical,,,,,
 ,AN100PGL01,"Primus Gaming - Notebook carrying backpack - 17"" - 100% polyester - black and purple",nan,PGB-300BK,35.1,7.0,nan,Physical,,,,,
 ,AN100XTK03,"Xtech - Carrying backpack - 15.6"" - Nylon - Black - Acc Pocket",nan,XTB-210,10.3,20.0,nan,Physical,,,,,
@@ -871,8 +870,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,DH966SEA95,Seagate Expansion - Disco duro externo - 20 TB - USB 3.0 - Negro,nan,STKP20000400,549.8,2.0,nan,Physical,263870,,628600,,628600
 ,DH966SEA96,Seagate Expansion - Disco duro externo - 24 TB - USB 3.0 - Negro,nan,STKP24000400,626.4,9.0,nan,Physical,259112,,687470,,708090
 ,DH966SEA98,"Seagate SkyHawk AI - Disk drive - 24 TB - 3.5""",nan,ST24000VE002,759.0,3.0,nan,Physical,353198,,845980,,887553
-,DH966WDC60,"Western Digital WD Purple - Hard drive - Internal hard drive - 4 TB - 3.5"" - 5400 rpm - SATA",nan,WD44PURZ,122.1,1.0,nan,Physical,373756,,133458,,144577
-,DH966WDC66,"Western Digital WD Red Plus - Hard drive - Internal hard drive - 4 TB - 3.5"" - 5400 rpm",nan,WD40EFZZ,116.6,20.0,nan,Physical,382217,,159990,,174826
 ,DH968SEA14,"Seagate Barracuda ST8000DM004 - Disco duro - 8 TB - interno - 3.5"" - SATA 6Gb/s - búfer: 256 MB",nan,ST8000DM004,269.6,9.0,nan,Physical,48178,,285590,285590,313146
 ,DT501HPS93,"HPE Ultrium RW Data Cartridge - LTO Ultrium 6 6.25 TB - púrpura - para StoreEver 6250, LTO-6, MSL2024, MSL4048, MSL8096; StoreEver 1/8 G2",nan,C7976A,41.7,20.0,nan,Physical,,,,,
 ,DT502HPS69,HPE Ultrium RW Data Cartridge - LTO Ultrium 7 - 6 TB / 15 TB - azul pizarra,nan,C7977A,69.5,20.0,nan,Physical,,,,,
@@ -1166,7 +1163,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ES600UBQ38,"Ubiquiti UniFi Switch USW-PRO-48-POE - Conmutador - Gestionado - 48 x 10/100/1000 (40 PoE+, 8 PoE++) + 4 x 10Gb Ethernet SFP+ - montaje en rack - PoE++ (600 W) - CA 120/230 V / DC 11,5/52 V",nan,USW-PRO-48-POE,1035.8,16.0,nan,Physical,378918,,1155647,,1303081
 ,ES600UBQ40,Ubiquiti UniFi Switch USW Flex Mini - Conmutador - inteligente - 4 x 10/100/1000 + 1 x 10/100/1000 (PoE+) - sobremesa - PoE+,nan,USW-FLEX-MINI,29.5,20.0,nan,Physical,378943,,,,
 ,ES600UBQ41,"Ubiquiti UniFi Switch USW-48-POE - Conmutador - Gestionado - 48 x 10/100/1000 (32 PoE+) + 4 x Gigabit SFP - montaje en rack, sobremesa - PoE+ (195 W)",nan,USW-48-POE,563.9,17.0,nan,Physical,378935,,626498,,679583
-,ES600UBQ95,"Ubiquiti UniFi Switch Lite USW-Lite-16-POE - Conmutador - Gestionado - 16 x 10/100/1000 (8 PoE+) - sobremesa, montaje en pared - PoE+ (45 W)",nan,USW-LITE-16-POE,194.6,4.0,nan,Physical,378973,,250990,,264796
+,ES600UBQ95,"Ubiquiti UniFi Switch Lite USW-Lite-16-POE - Conmutador - Gestionado - 16 x 10/100/1000 (8 PoE+) - sobremesa, montaje en pared - PoE+ (45 W)",nan,USW-LITE-16-POE,194.6,4.0,nan,Physical,378973,,250990,,262072
 ,ES600UBQ97,"Ubiquiti UniFi Switch USW-24 - Conmutador - Gestionado - 24 x 10/100/1000 + 2 x Gigabit SFP - montaje en rack, sobremesa",nan,USW-24,217.2,20.0,nan,Physical,376367,,435327,,435327
 ,ES601UBQ01,Ubiquiti - Switch - 48 - USW-PRO-48,nan,USW-PRO-48,583.4,1.0,nan,Physical,378918,,1155647,,1303081
 ,ES601UBQ05,Ubiquiti - Switch - 48 - USW-PRO-MAX-48-POE,nan,USW-PRO-MAX-48-POE,1257.6,3.0,nan,Physical,378913,,1349990,,1453278
@@ -1213,7 +1210,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID001RZR44,Razer DeathAdder Essential - Ratón - ergonómico - diestro - óptico - 5 botones - cableado - USB,nan,RZ01-03850200-R3M1,24.9,5.0,nan,Physical,97646,,19990,,25507
 ,ID001RZR45,"Razer DeathAdder V2 X HyperSpeed - Ratón - ergonómico - diestro - óptico - 7 botones - inalámbrico - 2.4 GHz, Bluetooth - receptor inalámbrico USB",nan,RZ01-04130100-R3U1,51.2,20.0,nan,Physical,,,,,
 ,ID001RZR46,Razer - Keyboard - Wired - Ornata V3 X Low Prof,nan,RZ03-04471100-R311,36.5,20.0,nan,Physical,187108,,33900,42990,43027
-,ID001RZR48,Razer - Keyboard - Wired - Huntsman Mini 60%Mec,nan,RZ03-03392900-R311,89.5,20.0,nan,Physical,157686,,92990,92990,100523
 ,ID001RZR72,"Razer DeathAdder V3 Pro - Ratón - ergonómico - diestro - óptico - 5 botones - inalámbrico - USB, Bluetooth - blanco",nan,RZ01-04630200-R3U1,128.0,3.0,nan,Physical,152865,,125900,,157945
 ,ID001RZR74,Razer - Keyboard - Huntsman Mini,nan,RZ03-03392100-R311,119.5,10.0,nan,Physical,387609,,123900,,132328
 ,ID001RZR82,"Razer Naga V2 HyperSpeed - Ratón - ergonómico - ratón gaming para MMO - diestro - óptico - 19 botones - inalámbrico - Bluetooth, 2.4 GHz - receptor inalámbrico USB",nan,RZ01-03600100-R3U1,85.6,20.0,nan,Physical,205951,,84512,,96092
@@ -1649,7 +1645,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MT863SAM59,"Samsung - 75"" - 3840 x 2160 - USB / HDMI - BT/RJ45/USB/ Stereo Mini Jack/",nan,LH75QBCEBGCXGO,1249.2,1.0,nan,Physical,243575,,1249994,,1358880
 ,NT025HPQ26,"HP - Notebook - 16"" - Intel Core Ultra 5 125U - 16 GB - 1 TB",nan,A27NTLT#ABM,817.6,20.0,nan,Physical,,,,,
 ,NT025HPQ85,"HP ZBook Power G11 - Notebook - 16"" - Intel Core Ultra 7 155H - 32 GB - 1 TB - Windows 11 Pro - 1-year warranty",nan,A59H0LA#ABM,1713.7,1.0,nan,Physical,,,,,
-,NT029HPQ59,"HP EliteBook X G1a - Notebook - 14"" - AMD Ryzen AI 7 Pro 360 / 5 GHz - 32 GB - DDR5 SDRAM - 1 TB SSD - AMD Radeon 880M - Windows 11 Pro - 1-year warranty",nan,B8JS5AT#ABM,1636.5,6.0,nan,Physical,,,,,
 ,NT029HPQ63,"HP 255R G10 - Notebook - 15.6"" - AMD Ryzen 3 7335U / 4.3 GHz - 8 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics - Windows 11 Home - 1-year warranty",nan,C7GP0AT#ABM,465.7,20.0,nan,Physical,,,,,
 ,NT029HPQ64,"HP 250R G10 - Notebook - 15.6"" - intel core7-14700 / 5.4 GHz - DDR5 SDRAM - 8 GB - 512 GB SSD - Integrated graphics - Windows 11 Home - 1-year warranty",nan,BQ3S2LS#ABM,796.4,20.0,nan,Physical,,,,,
 ,NT029HPQ65,"HP 245 G10 - Notebook - 14"" - AMD Ryzen 5 7530U / 4.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics - Windows 11 Pro - 1-year warranty",nan,A1KF1LA#ABM,605.0,20.0,nan,Physical,,,,,
@@ -1674,7 +1669,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,NT088DEL11,"Dell Pro Plus 14 - Notebook - 14"" - 1920 x 1200 LED - Intel Core Ultra 7 255U / 3.8 GHz - 32 GB - DDR5 SDRAM - 1 TB SSD - None - Integrated graphics - Windows 11 Pro 64-bit Edition - Silver - Spanish (Latin American) - 3-year warranty with product registr",nan,PB14250_U7LNL321TBWPS_3W,1623.6,19.0,nan,Physical,354618,,1536990,,2162027
 ,NT088DEL12,"Dell Pro Plus 14 2in1 - Ultrabook - 14"" - 1920 x 1200 - Intel 268V - Core Ultra 7 / 3.7 GHz - DDR5 SDRAM - 1 TB SSD - Integrated graphics - Windows 11 Pro 64-bit Edition - Silver - Spanish (Latin American) - ProSupport 3 Años",nan,U7LNL321TBWPS_3PSXCTO2N1,1891.9,9.0,nan,Physical,354636,,2012900,,2182570
 ,NT088DEL14,"Dell Pro 14 - Notebook - 14"" - 1920 x 1080 LED - Intel Core Ultra 7 255U / 3.8 GHz - 32 GB - DDR5 SDRAM - 1 TB SSD - None - Integrated graphics - Windows 11 Pro 64-bit Edition - Silver - Spanish (Latin American) - 3-year warranty with product registration",nan,PC14250_U7ARL321TBWPS_3W,1381.9,20.0,nan,Physical,354637,,1853990,,1978799
-,NT089DEL78,"Dell Pro - Notebook - 14"" - Intel Core Ultra 5 235U / 4.9 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - None - Integrated Intel Graphics - Windows 11 Pro - Silver - Spanish - 3-year warranty",nan,Y5C5C,1021.9,20.0,nan,Physical,333213,,965990,,1308610
 ,NT103ASU56,"ASUS - Notebook - 14"" - Intel Core Ultra 7 258V - 32 GB - 1 TB SSD - Windows 11 Pro - 1-year warranty",nan,90NX0861-M008D0,1272.73,20.0,nan,Physical,262944,1459990,1199584,,1390093
 ,NT104ASU08,"ASUS B3405CCA-LY0731X - Notebook - 14"" - Intel Core Ultra 7 255H / 5.0 GHz - 16 GB - DDR5 SDRAM - 512 GB - Intel Graphics - Windows 11 Pro",nan,90NX08L1-M00U20,944.04,20.0,nan,Physical,355158,,989990,,1091947
 ,NT104ASU14,"ASUS - Notebook - 14"" - 1920 x 1200 - AMD Ryzen 7 350 / 5.0 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - AMD Radeon",nan,90NX0971-M00H10,956.69,20.0,nan,Physical,357068,,1064340,,1113630
@@ -1795,7 +1789,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,NW608UBQ24,Ubiquiti - Switch - USW-Pro-Max-16 - 16 ports - 12 Gigabit Ethernet - 2 ports SFP+,nan,USW-PRO-MAX-16,268.1,7.0,nan,Physical,379109,,420294,,446415
 ,NW608UBQ25,Ubiquiti - Switch - 16 - USW-Pro-Max-16-PoE A 16-port L,nan,USW-PRO-MAX-16-POE,377.2,13.0,nan,Physical,379109,,420294,,446415
 ,NW608UBQ28,Ubiquiti - Gateway - EFG 25G with 500+ UniFi device,nan,EFG,1445.5,1.0,nan,Physical,368676,,1589670,,1699549
-,NW690UBQ04,Ubiquiti - Switch - 5 - USW-Flex-2.5G-5 5-port 2.5G sw,nan,USW-FLEX-2.5G-5,49.7,15.0,nan,Physical,378941,,54558,,60222
+,NW690UBQ04,Ubiquiti - Switch - 5 - USW-Flex-2.5G-5 5-port 2.5G sw,nan,USW-FLEX-2.5G-5,49.7,15.0,nan,Physical,378941,,54558,,61033
 ,NW690UBQ06,Ubiquiti - Switch - 8 - USW-Flex-2.5G-8,nan,USW-FLEX-2.5G-8,152.4,7.0,nan,Physical,378948,,,,
 ,NW690UBQ08,Ubiquiti - Switch - 24 - USW-Pro-HD-24-PoE,nan,USW-PRO-HD-24-POE,952.9,1.0,nan,Physical,379351,,,,
 ,NW690UBQ09,Ubiquiti - Switch - 48 - ECS-48-PoE,nan,ECS-48-POE,2985.9,2.0,nan,Physical,379113,,3283681,,3517945
@@ -1835,11 +1829,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,PC718HPQ66,"HP ProOne 440 G9 - All-in-one - Intel Core i7 I7-13700 / 5.2 GHz - DDR5 SDRAM - 512 GB HDD - 23.8"" - Intel UHD Graphics 770 - Windows 11 Pro",nan,9P1N3LA#ABM,1068.7,2.0,nan,Physical,,,,,
 ,PC718HPQ68,"HP Pro All-in-One Studio 4 G1 - All-in-one - Intel Core Ultra 5 235 / 5.0 GHz - DDR5 SDRAM - 1 TB HDD - 23.8"" - Intel UHD Graphics - Windows 11 Pro",nan,C85VTLA#ABM,1096.9,20.0,nan,Physical,,,,,
 ,PC718HPQ69,"HP ProOne 240 G10 - All-in-one - Intel Core Ultra 5 125U / 4.3 GHz - DDR5 SDRAM - 512 GB HDD - 23.8"" - Intel UHD Graphics - Windows 11 Pro",nan,CQ1V4LT#ABM,768.6,20.0,nan,Physical,,,,,
-,PC718HPQ70,"HP ProOne 240 G10 - All-in-one - Intel Core Ultra 5 125U / 4.3 GHz - DDR5 SDRAM - 512 GB HDD - 23.8"" - Intel UHD Graphics - Windows 11 Pro - C3XB1LT#ABM",nan,C3XB1LT#ABM,817.4,20.0,nan,Physical,,,,,
 ,PC967LEN95,Lenovo ThinkStation P2 Tower Gen 2 - All-in-one - Intel Core Ultra 7 265 Vpro / 4.5 GHz - DDR5 SDRAM - 1 TB Hard Drive Capacity - NVIDIA RTX A1000 - Windows 11 Pro - Spanish,nan,30JR000XCL,1962.0,20.0,nan,Physical,,,,,
 ,PC968DEL35,Dell Pro Slim - Intel Core i7 14700 / 5.3 GHz - DDR5 SDRAM - 512 GB Hard Drive Capacity - Integrated graphics - Windows 11 Pro - Spanish,nan,1N5GV,1032.1,20.0,nan,Physical,,,,,
 ,PC968DEL36,Dell Pro Slim - Intel Core Ultra 5 235 vPro / 5.0 GHz - DDR5 SDRAM - 512 GB Hard Drive Capacity - Integrated graphics - Windows 11 Pro - Spanish,nan,GFCMC,814.0,8.0,nan,Physical,,,,,
-,PC969LEN25,Lenovo ThinkCentre - Tower - Intel Core Ultra 7 265 vPro / 4.5 GHz - DDR5 SDRAM - 1 TB Hard Drive Capacity - DVD±RW - NVIDIA RTX A1000 - Windows 11 Pro - Spanish,nan,30HT00ANCL,2123.5,10.0,nan,Physical,,,,,
 ,PC969LEN26,Lenovo ThinkCentre - Tower - Intel Core Ultra 9 285 vPro / 4.5 GHz - DDR5 SDRAM - 1 TB Hard Drive Capacity - DVD±RW - NVIDIA RTX 2000 - Windows 11 Pro - Spanish,nan,30HT00BCCL,2634.4,3.0,nan,Physical,,,,,
 ,PC969LEN27,Lenovo ThinkCentre - Tower - Intel Core Ultra 7 265 vPro / 4.5 GHz - DDR5 SDRAM - 1 TB Hard Drive Capacity - DVD±RW - NVIDIA RTX 2000 - Windows 11 Pro - Spanish,nan,30HT00BDCL,2416.2,3.0,nan,Physical,,,,,
 ,PT031HEW51,HP Smart Tank 580 - Impresora / Escáner / Copiadora - Wi-Fi / USB - Incluye insumos en cajas - imprime 6000 páginas color / 12000 blanco y negro,nan,1F3Y2A#AKH,135.9,20.0,nan,Physical,,,,,
@@ -1858,7 +1850,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,PT337EPS01,Epson L6490 - Copier / Printer / Scanner / Fax - Ink-jet - Color - USB 3.0,nan,C11CJ88303,370.01,5.0,nan,Physical,133356,,427900,,452122
 ,PT337EPS04,Epson T3170 - capacidad: 1 roll - Wi-Fi,nan,C11CF11201,676.2,3.0,nan,Physical,58765,,639990,,771619
 ,PT337EPS10,Epson T5470M - Plotter - Wi-Fi,nan,C11CH65201,4101.4,1.0,nan,Physical,93950,,4372106,,4689078
-,PT337EPS26,Epson WorkForce Pro C5890 - Printer Latin,nan,C11CK23301,443.4,7.0,nan,Physical,238844,549990,493500,,547600
 ,PT337EPS55,Epson EcoTank L3560 - Printer / Scanner - Ink-jet - Color - USB / Wi-Fi - A4 (210 x 297 mm) ,nan,C11CK58302,204.2,20.0,nan,Physical,223197,,178900,229990,220421
 ,PT338EPS31,Epson WorkForce - EM-C800,nan,C11CK19301,562.2,2.0,nan,Physical,280296,,602643,,662339
 ,PT653HEW95,HP M501DN - hasta 45 ppm (mono) - capacidad: 550 sheets - USB 2.0 / LAN - Automatic Duplexing,nan,J8H61A#AKV,316.4,14.0,nan,Physical,,,,,
@@ -1877,8 +1868,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,TA105SAM76,"Samsung Galaxy - Tab S10+ - 12.4"" - AirOS - None - Gray - 12gb 256GB - Power Adapter Not Included",nan,SM-X820NZADCHO,1473.2,6.0,nan,Physical,255690,,899990,1299990,1271282
 ,UI150FOR49,Forza - UPS - Línea interactiva - 600 vatios - 1000 VA - CA 220 V,nan,HT-1002LCD-C,84.6,19.0,nan,Physical,79309,,91990,,97720
 ,UI150FOR55,Forza NT Series - UPS - Line interactive - 250 Watt - 500 VA - AC 220 V - 4-Italian RJ11,nan,NT-512C,36.0,20.0,nan,Physical,180112,,34690,,37172
-,UI150FOR62,Forza - UPS - Line interactive - 900 Watt - 1800 VA - AC 220 V - Chile,nan,NT-1802PRO-C,128.1,20.0,nan,Physical,383761,,146822,,150533
-,UI150FOR63,Forza - UPS - Line interactive - 1200 Watt - 2400 VA - AC 220 V - Chile,nan,NT-2402PRO-C,147.2,20.0,nan,Physical,383762,,169040,,173410
 ,UI231FOR24,Forza SL Series - UPS - Line interactive - 360 Watt - 600 VA - AC 220 V - 4-Italian 1-IEC RJ45,nan,SL-612UL-C,62.5,20.0,nan,Physical,180084,,65590,,71372
 ,UI331FOR24,Forza SL Series - UPS - Line interactive - 600 Watt - 1000 VA - AC 220 V - 4-Italian 1-IEC RJ45,nan,SL-1022UL-C,111.7,20.0,nan,Physical,180081,,117990,,130524
 ,UI714APC48,APC Easy UPS SRV SRV10KI - UPS - CA 230 V - 10 kW - 10000 VA - USB,nan,SRV10KI,4914.8,9.0,nan,Physical,66118,,2500822,,3642535
