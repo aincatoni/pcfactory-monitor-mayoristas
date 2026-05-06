@@ -446,7 +446,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AM160XTK17,Xtech - Chair exec XTF-MC117,nan,XTF-MC117,55.0,2.0,nan,Physical,124202,,59584,,59584
 ,AM160XTK26,Xtech - Disney XTF-DC001MM,nan,XTF-DC001MM,31.2,20.0,nan,Physical,,,,,
 ,AM160XTK30,Xtech - Chair Exec Black XTF-OC412,nan,XTF-OC412,85.9,1.0,nan,Physical,,,,,
-,AM160XTK32,Xtech - Chair Exec Black XTF-OC414,nan,XTF-OC414,114.1,8.0,nan,Physical,243803,,126200,,126200
+,AM160XTK32,Xtech - Chair Exec Black XTF-OC414,nan,XTF-OC414,114.1,8.0,nan,Physical,243803,,126200,,134236
 ,AN000ASU10,ASUS - Carrying backpack - AP2600 Bag - Premium,nan,90XB08T0-BBP000,35.6,20.0,nan,Physical,,,,,
 ,AN000GEN47,StarTech.com Cable de 2m Universal de Seguridad para Ordenadores Portátiles - para K-Slot - Ranura Nano - Cuneiforme (Wedge) - con Llave - Cable Antirrobo de Acero con Llave (LTULOCKKEY) - Bloqueo de cable de seguridad - 2.03 m - Conforme a la TAA,nan,LTULOCKKEY,41.4,20.0,nan,Physical,,,,,
 ,AN000GEN48,StarTech.com Cable de 2m con Candado de Seguridad de Combinación - con 4 Dígitos - Cable Antirrobo para K-Slot de Seguridad para Ordenadores Portátiles o Monitores - Cable de Acero Recubierto de Vinilo (LTLOCK4D) - Bloqueo de cable de seguridad - 2 m,nan,LTLOCK4D,22.2,20.0,nan,Physical,,,,,
@@ -1437,7 +1437,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM000MOT65,Motorola - Headphones - Para Cellular phone - Wireless,nan,79MOTANCBK,112.2,7.0,nan,Physical,,,,,
 ,MM000MOT89,Motorola - Headphones - Moto Buds Loop Trekking Green,nan,PG38C07164,110.5,17.0,nan,Physical,253450,,59900,,63390
 ,MM000MOT91,Motorola - Earphone - Wireless - Moto Buds Loop Ice Melt Swaro,nan,PG38C07760,107.5,9.0,nan,Physical,361257,,88432,,131211
-,MM000MOT94,Motorola - Headphones - Wireless - buds 2 Blue Jewel,nan,PG38C07953,31.3,20.0,nan,Physical,366659,,33800,,34965
+,MM000MOT94,Motorola - Headphones - Wireless - buds 2 Blue Jewel,nan,PG38C07953,31.3,20.0,nan,Physical,366659,,33800,,36640
 ,MM000MOT95,Motorola - Headphones - Wireless - buds 2 Posy Green,nan,PG38C07954,32.1,20.0,nan,Physical,366658,,33800,,36640
 ,MM000MOT96,Motorola Moto - Speaker - Carbon - PG38C07844,nan,PG38C07844,143.6,7.0,nan,Physical,,,,,
 ,MM000RZR73,"Razer BlackShark V2 X - Auricular - tamaño completo - cableado - conector de 3,5 mm - aislamiento de ruido",nan,RZ04-03240100-R3U1,38.1,20.0,nan,Physical,90153,44990,37980,44990,46560
@@ -1445,7 +1445,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM000TPL42,TP-Link Tapo C125 - Network surveillance camera,nan,TAPO C125,31.5,20.0,nan,Physical,,,,,
 ,MM001DEL30,Dell Pro Plus - EB525 - Wireless headset system - Para Computer / Para Cellular phone / Para Portable electronics / Para Professional audio / Para TV / Para Virtual reality system / Para Phone - Wireless - In-ear,nan,520-BBNF,185.2,20.0,nan,Physical,362716,,208900,,218489
 ,MM001JAB16,"Jabra Evolve2 85 MS Stereo - Auricular - tamaño completo - Bluetooth - inalámbrico, cableado - cancelación de sonido activo - conector de 3,5 mm - aislamiento de ruido - negro - Certificado para Equipos de Microsoft",nan,28599-999-899,399.8,16.0,nan,Physical,111389,,423168,,446041
-,MM001LOG01,Logitech Zone - 300 - Headphones - Wireless - 981-001411,nan,981-001411,55.2,8.0,nan,Physical,245323,,61990,,73328
+,MM001LOG01,Logitech Zone - 300 - Headphones - Wireless - 981-001411,nan,981-001411,55.2,8.0,nan,Physical,245323,,61990,,73374
 ,MM001LOG02,Logitech Zone - 300 - Headphones - Wireless - 981-001416,nan,981-001416,48.8,4.0,nan,Physical,245322,,44990,,77009
 ,MM001RZR29,"Razer BlackShark V2 X - Auricular - 7.1 canales - tamaño completo - cableado - conector de 3,5 mm - aislamiento de ruido - blanco - certificado Discord",nan,RZ04-03240700-R3U1,37.8,20.0,nan,Physical,134297,,34990,37990,42319
 ,MM001RZR69,Razer Barracuda - Headset - Para Game console - Wireless - Multi-platform Gaming and Mob,nan,RZ04-03790100-R3U1,136.5,4.0,nan,Physical,153694,,137890,,141125
@@ -1493,7 +1493,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM111KLX69,Klip Xtreme - KCH-510 - Headset - Para Conference / Para Home audio - Wired - Stereo -console cmd.,nan,KCH-510,12.0,20.0,nan,Physical,187834,,14499,,16247
 ,MM111KLX70,Klip Xtreme - KCH-905 - Headset - Para Conference / Para Home audio - Wireless - Charging Base,nan,KCH-905,32.1,20.0,nan,Physical,198923,,35732,,42291
 ,MM111KLX75,Klip Xtreme - KNH-750GR - Headphones - Para Home audio - Wireless - ANC - 44Hr - Gray,nan,KNH-750GR,46.6,12.0,nan,Physical,232352,,52154,,57881
-,MM111KLX76,Klip Xtreme - KNH-750BL - Headphones - Para Home audio - Wireless - ANC - 44Hr - Blue,nan,KNH-750BL,47.9,19.0,nan,Physical,232351,,53120,,58297
+,MM111KLX76,Klip Xtreme - KNH-750BL - Headphones - Para Home audio - Wireless - ANC - 44Hr - Blue,nan,KNH-750BL,47.9,19.0,nan,Physical,232351,,53120,,59467
 ,MM111KLX83,Klip Xtreme - KWH-010BK - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Black - BT,nan,KWH-010BK,10.8,20.0,nan,Physical,261033,,9990,,14265
 ,MM111KLX84,Klip Xtreme - KWH-010BL - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Blue - BT,nan,KWH-010BL,10.9,20.0,nan,Physical,259363,,8688,,10446
 ,MM111KLX85,Klip Xtreme - KWH-010GR - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Gray - BT,nan,KWH-010GR,10.8,20.0,nan,Physical,259364,,11864,,15492
