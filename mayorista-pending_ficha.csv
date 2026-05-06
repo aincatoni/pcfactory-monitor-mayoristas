@@ -1,7 +1,5 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56190,4213424,BACK UPS BV 650VA AVR UNIVERSAL OUT 230V,Apc,BV650I-MS,95.8,10,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,BACK UPS BV 650VA AVR UNIVERSAL OUT 230V,0,0,True,{},,79205,,76790,,98289
-56189,5604494,APC EASY UPS ON-LINE SRV RM 2000VA 1800W,Apc,SRV2KRIRK-E,744.26,3,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC EASY UPS ON-LINE SRV RM 2000VA 1800W,0,0,True,{},,363653,,804668,,843538
 56165,6696507,PRIME H610M-F D4,Asus,90MB1H70-M0EAY0,63.3,405,Componentes de Sistema,Tarjetas Madre Intel,ok,False,0,0,0,PRIME H610M-F D4 R2.0//LGA1700 H610 USB 5GBPS MB PRIME H610M-F D4 R2.0,0,0,True,{},,,,,,
 56167,6709549,PRIME B860M-K,Asus,90MB1JT0-MVAAY0,115.79,12,Componentes de Sistema,Tarjetas Madre Intel,ok,False,0,0,0,PRIME B860M-K,0,0,True,{},,,,,,
-56374,6750451,MasterLiquid Core Nex 240 ARGB,Cooler Master,MLX-D24M-A18PA-R1,54.73,194,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi,ok,False,0,0,0,MasterLiquid Core Nex 240 ARGB,0,0,True,{},,386785,,62780,,66167
+56374,6750451,MasterLiquid Core Nex 240 ARGB,Cooler Master,MLX-D24M-A18PA-R1,54.73,194,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi,ok,False,0,0,0,MasterLiquid Core Nex 240 ARGB,0,0,True,{},,386785,,62780,,66097
 56171,6785172,TURBO-AI-PRO-R9700-32G,Asus,90YV0MN0-M0AA00,1650.4,2,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,False,0,0,0,TURBO-AI-PRO-R9700-32G,0,0,True,{},,,,,,
