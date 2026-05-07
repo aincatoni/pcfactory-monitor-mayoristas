@@ -1,3 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56188,3417087,APC Smart-UPS SRT 192V 8kVA and 10kVA Ba,Apc,SRT192BP2,1882.6,5,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC Smart-UPS SRT 192V 8kVA and 10kVA Ba,0,0,True,{},,,,,,
-56375,6750452,Hyper 212 3DHP BLACK ARGB,Cooler Master,MAY-T2HP-217PA-R1,27.36,121,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi,ok,False,0,0,0,Hyper 212 3DHP BLACK ARGB,0,0,True,{},,387404,,31764,,34307
+56438,6797726,MBN 13 CIT/8GB/256GB-CITRUS,Apple,MHFD4CI/A,587.09,41,Computadores Servidores y Notebooks,Notebooks,ok,False,0,0,0,Apple MacBook Neo (Early 2026 / Apple Silicon A18 5-Core GPU / 8 GB / 256 GB SSD / Citrus) [MHFD4CI/A],0,0,True,{},,383744,,619990,649990,652371
