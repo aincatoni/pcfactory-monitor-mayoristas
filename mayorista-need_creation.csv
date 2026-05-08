@@ -138,7 +138,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2334859,Cable Adaptador MOLEX a SATA,Startech.Com,SATAPOWADPL,4.36,1,Cables,Cables de Poder,,,,,
 ,2358711,CINTA TZES141,Brother,TZE-S141,14.16,6,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,2372313,Cable Divisor SATA a 2x SATA,Startech.Com,PYO2LSATA,4.46,12,Cables,Cables de Poder,,,,,
-,2374377,USB 3.0 to Ethernet Adapter - White,Startech.Com,USB31000SW,26.01,1,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,382419,,31990,,32015
+,2374377,USB 3.0 to Ethernet Adapter - White,Startech.Com,USB31000SW,26.01,1,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,382419,,31990,,32193
 ,2408520,15M USB 2.0 ACTIVE EXTENSION CABLE - M F,Startech.Com,USB2AAEXT15M,68.06,5,Cables,Cables y Adaptadores USB,,,,,
 ,2410879,Cable 20m Activo USB A a B,Startech.Com,USB2HAB65AC,55.8,7,Cables,Cables y Adaptadores USB,,,,,
 ,2430227,TAMBOR DR221CL,Brother,DR-221CL,118.31,4,Suministros y Medios,Etiquetas y Aplicadores,,,,,
@@ -210,10 +210,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2771218,Soporte Articulado 2 Monitores,Startech.Com,ARMDUAL,164.55,3,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,2775196,Rack Abierto de 4 Columnas 25U,Startech.Com,4POSTRACK25U,382.99,5,Protección Eléctrica y Racks,Estructuras de Rack,,,,,
 ,2775780,CINTA TZE161,Brother,TZE-161,19.76,1,Suministros y Medios,Etiquetas y Aplicadores,,,,,
-,2784058,2 Port Gigabit PCI Express Network Card,Startech.Com,ST1000SPEXD4,93.8,5,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,387823,,94990,,104166
+,2784058,2 Port Gigabit PCI Express Network Card,Startech.Com,ST1000SPEXD4,93.8,5,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,387823,,94990,,107477
 ,2784143,USB 3.0 to HDMI Video Graphics Adapter,Startech.Com,USB32HDPRO,90.74,5,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,2797032,TAMBOR DR311CL,Brother,DR311CL,138.57,2,Suministros y Medios,Suministros Láser,,,,,
-,2797132,CLI-8 BK,Canon,0620B035,7.77,1,Suministros y Medios,Suministros Inyección de Tinta,260201,,9273,,10276
+,2797132,CLI-8 BK,Canon,0620B035,7.77,1,Suministros y Medios,Suministros Inyección de Tinta,260201,,7950,,9811
 ,2838815,CAJA MANTENIMIENTO C12C890501,Epson,C12C890501,39.39,2,Impresoras,Upgrades de Impresora,,,,,
 ,2841267,HLL2360DW IMPRESORA LASER B/N,Brother,HLL2360DW,178.28,19,Impresoras,Impresoras Láser/LED monocromáticas,18360,,159900,,203618
 ,2851973,M.2 NGFF SSD to 2.5in SATA III Adapter,Startech.Com,SAT2M2NGFF25,26.48,1,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
@@ -1035,7 +1035,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,107.65,1150,Pantallas,Monitores LCD/LED,,,,,
 ,6783352,IDEAPAD R5 5625U 8GB 512SSD 15.6IN W11H,Lenovo,82XM010XCL,508.94,500,Computadores Servidores y Notebooks,Notebooks,355673,,,,
 ,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,185.6,50,Pantallas,Monitores LCD/LED,379960,,200990,209990,211392
-,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1160.0,9,Pantallas,Monitores LCD/LED,318326,,1280272,1499990,1394133
+,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1160.0,9,Pantallas,Monitores LCD/LED,318326,,1280272,1499990,1360800
 ,6783839,TM-T20IVL-002 USB +ETHERNET,Epson,C31CL45002,134.45,80,Impresoras,Impresoras de Recibos Térmicas,,,,,
 ,6784033,HPE ANW 6000 24G CL4 4F 370W Sw,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,,,,,
 ,6784291,PRIME X870-P WIFI,Asus,90MB1IS0-MVAAY0,235.98,35,Componentes de Sistema,Tarjetas Madre AMD,,,,,
@@ -1056,7 +1056,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6801388,MONITOR BENQ PD2706U 27IN IPS/ANTI REFEL,Benq,9H.LLJLB.VBA,460.82,5,Pantallas,Monitores LCD/LED,364181,,500135,,549267
 ,6801389,MONITOR BENQ 31.5IN PD3205U 4K,Benq,9H.LKGLA.RBA,632.48,10,Pantallas,Monitores LCD/LED,,,,,
 ,6801814,Laser projector WXGA (1280x800) 4500,Viewsonic,LS630W-2,639.95,51,Dispositivos Audio/Video,Proyectores LCD,,,,,
-,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,417.61,22,Pantallas,Monitores LCD/LED,366630,,470432,,516574
+,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,417.61,22,Pantallas,Monitores LCD/LED,366630,,470432,,489074
 ,6805742,NB TP T14 AMD G4 R5_PRO 32G 512G 11P,Lenovo,21K4S4EU00,1275.8,59,Computadores Servidores y Notebooks,Notebooks,391088,,1426900,,1442445
 ,6805744,ThinkStation P2 TWR I914900K 32G x1 W11P,Lenovo,30FS000NLM,2458.2,4,Computadores Servidores y Notebooks,Workstations,,,,,
 ,6805752,NB TP T14 AMD G4 R7_PRO 16G 512G 11P,Lenovo,21K4S4ET00,1175.7,1,Computadores Servidores y Notebooks,Notebooks,,,,,
