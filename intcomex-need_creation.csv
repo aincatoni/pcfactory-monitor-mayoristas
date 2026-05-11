@@ -3,7 +3,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100002342,"Zebra - Cable USB - 24 pines USB-C (M) a USB (M) - 1 m - para Zebra EC50, EC55, MC2200, MC27, TC21, TC26",nan,CBL-TC5X-USBC2A-01,9.2,15.0,nan,Physical,,,,,
 ,100015470,Axis D2110-VE Security Radar - Sensor de movimiento - cableado - blanco,nan,01564-001,1911.6,5.0,nan,Physical,,,,,
 ,100015865,Kingston FURY Impact - DDR4 - módulo - 32 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL20 - 1.2 V - sin búfer - no ECC - negro,nan,KF432S20IB/32,287.3,20.0,nan,Physical,125634,,229898,,296505
-,100016091,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C18BB/32,323.5,20.0,nan,Physical,126356,,350390,,383283
+,100016091,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C18BB/32,323.5,20.0,nan,Physical,126356,,350390,,383391
 ,100016376,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,nan,KF556C40BB-8,135.6,20.0,nan,Physical,140024,,133900,,149643
 ,100016408,HyperX - Keyboard - Alloy Core RGB MERCO,nan,4P4F5AI#AC8,39.9,20.0,nan,Physical,,,,,
 ,100016410,HyperX - Keyboard - ABS HX Red MERCO,nan,4P4F6AI#AC8,116.3,20.0,nan,Physical,,,,,
@@ -21,31 +21,31 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100017715,"Poly Voyager 4320-M - Auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-A a través de adaptador Bluetooth - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",nan,77Y98AA,145.1,14.0,nan,Physical,134238,,136621,209990,155119
 ,100017825,HP Expansion Microphone Cable Extender Pack - Cable alargador de micrófono,nan,875M4AA,79.1,5.0,nan,Physical,,,,,
 ,100017860,Kingston FURY Beast RGB - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.35 V - sin búfer - no ECC - negro,nan,KF432C16BB2A/32,301.2,20.0,nan,Physical,219778,,192990,,312189
-,100017861,Kingston FURY Beast RGB - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL17 - 1.35 V - sin búfer - no ECC,nan,KF436C17BB2A/8,91.2,20.0,nan,Physical,219779,,72990,,103590
+,100017861,Kingston FURY Beast RGB - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL17 - 1.35 V - sin búfer - no ECC,nan,KF436C17BB2A/8,91.2,20.0,nan,Physical,219779,,72990,,103616
 ,100017868,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",nan,77Z30AA,144.8,20.0,nan,Physical,367034,,146822,,157951
 ,100017964,"Zebra - Empuñadura tipo pistola - para Zebra TC22, TC27",nan,TRG-TC2L-SNP1-01,94.5,20.0,nan,Physical,,,,,
-,100018026,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL16 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C16RB2/8,90.5,20.0,nan,Physical,224563,,102004,,110709
-,100018028,Kingston FURY Renegade RGB - DDR4 - módulo - 32 GB: 1 x 32 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL18 - 1.2 V - sin búfer - no ECC - negro,nan,KF436C18RB2A/32,324.8,20.0,nan,Physical,227668,,349000,,389101
+,100018026,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL16 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C16RB2/8,90.5,20.0,nan,Physical,224563,,102004,,110742
+,100018028,Kingston FURY Renegade RGB - DDR4 - módulo - 32 GB: 1 x 32 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL18 - 1.2 V - sin búfer - no ECC - negro,nan,KF436C18RB2A/32,324.8,20.0,nan,Physical,227668,,349000,,389220
 ,100018090,HP - Kit de montaje (montaje VESA) - para sistema de videoconferencia,nan,875R9AA,150.5,13.0,nan,Physical,,,,,
 ,100018123,Kingston FURY Renegade - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/32,296.3,10.0,nan,Physical,223067,,310000,,361801
-,100018124,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/8,84.8,20.0,nan,Physical,223068,,93864,,104829
+,100018124,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/8,84.8,20.0,nan,Physical,223068,,93864,,104852
 ,100018181,Kingston FURY Beast - DDR5 - módulo - 16 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-16,226.9,20.0,nan,Physical,206512,,219000,,255228
-,100018182,Kingston FURY Beast - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-32,412.3,20.0,nan,Physical,206513,,457990,,467305
+,100018182,Kingston FURY Beast - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-32,412.3,20.0,nan,Physical,206513,,457990,,467475
 ,100018183,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-8,122.0,20.0,nan,Physical,202125,,149585,,154518
-,100018190,Kingston FURY Beast RGB - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC,nan,KF556C36BBEA-32,411.3,20.0,nan,Physical,276769,,457176,,486002
+,100018190,Kingston FURY Beast RGB - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC,nan,KF556C36BBEA-32,411.3,20.0,nan,Physical,276769,,457176,,486157
 ,100018191,Kingston FURY Beast RGB - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBEA-8,141.8,20.0,nan,Physical,257310,,147286,,155848
-,100018310,Kingston FURY Renegade RGB - DDR5 - módulo - 48 GB - DIMM de 288 contactos - 6000 MT/s / PC5-48000 - CL32 - 1.35 V - sin búfer - on-die ECC - negro y plata,nan,KF560C32RSA-48,606.9,9.0,nan,Physical,229844,,639900,,702016
+,100018310,Kingston FURY Renegade RGB - DDR5 - módulo - 48 GB - DIMM de 288 contactos - 6000 MT/s / PC5-48000 - CL32 - 1.35 V - sin búfer - on-die ECC - negro y plata,nan,KF560C32RSA-48,606.9,9.0,nan,Physical,229844,,639900,,702243
 ,100018341,POLY - Video Conf Collab - Studio X52 4K Wireless Pres Sy,nan,8D8K2AA#ABM,3100.6,1.0,nan,Physical,,,,,
 ,100018387,HyperX Clutch - Gaming Controller,nan,7D6H2AA,38.6,20.0,nan,Physical,,,,,
 ,100018414,POLY - Video conferencing kit - Table Expansion Microphone,nan,875M6AA,180.6,7.0,nan,Physical,,,,,
 ,100018483,Kingston Fury - DDR5 SDRAM - 6000 MHz - Registered - ECC - Renegade Pro,nan,KF560R32RBE-32,554.4,8.0,nan,Physical,386203,,,,
-,100018518,Kingston Fury - DDR5 SDRAM - 24GB 7200MT/s DDR5 CL38 DIMM,nan,KF572C38RSA-24,370.0,3.0,nan,Physical,237011,,349990,,414572
-,100018522,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,nan,KF560C32RS-48,632.2,16.0,nan,Physical,238358,,683387,,721389
+,100018518,Kingston Fury - DDR5 SDRAM - 24GB 7200MT/s DDR5 CL38 DIMM,nan,KF572C38RSA-24,370.0,3.0,nan,Physical,237011,,349990,,414697
+,100018522,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,nan,KF560C32RS-48,632.2,16.0,nan,Physical,238358,,683387,,721639
 ,100018690,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,43.3,20.0,nan,Physical,255320,,41162,,46548
-,100018931,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,633.1,1.0,nan,Physical,245321,,469984,,833525
+,100018931,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,633.1,1.0,nan,Physical,245321,,469984,,833845
 ,100019048,Hanwha - Camera cap adapter - SBP-120HMW,nan,SBP-120HMW,32.4,9.0,nan,Physical,,,,,
 ,100019199,Jabra Evolve 65 TE - Wireless Stereo Headset (Microsoft Teams) - USB-A Bluetooth adapter,nan,6699-833-309,178.5,20.0,nan,Physical,258188,,192990,,211759
-,100019219,Kingston Fury - DDR5 SDRAM - DIMM 288-pin - 6400 MHz - CL32 - Generic - ECC - Dimm,nan,KF564C32BBE-16,227.2,20.0,nan,Physical,255262,,238617,,279106
+,100019219,Kingston Fury - DDR5 SDRAM - DIMM 288-pin - 6400 MHz - CL32 - Generic - ECC - Dimm,nan,KF564C32BBE-16,227.2,20.0,nan,Physical,255262,,238617,,279181
 ,100019299,Logitech - Meetup 2 - 960-001693,nan,960-001693,1041.1,6.0,nan,Physical,,,,,
 ,100019598,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black EXPO  DDR5 CL30,nan,KF560C30BBE-32,442.0,20.0,nan,Physical,272325,,481058,,494622
 ,100019600,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,nan,KF564C32BBEA-16,232.2,20.0,nan,Physical,354697,,246511,,278533
@@ -131,7 +131,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020462,Soundcraft - Audio system - 5085984US,nan,5085984US,213.1,7.0,nan,Physical,,,,,
 ,100020468,Epson - Receipt printer - Monochrome - Direct thermal - TM-T20IV-SP-022 USB+ETH+SRL AC,nan,C31CL47022,155.7,10.0,nan,Physical,,,,,
 ,100020554,Epson - Receipt printer - Monochrome - Direct thermal - USB - TM-T20IVL-002,nan,C31CL45002,135.6,20.0,nan,Physical,,,,,
-,100020558,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black,nan,KF560C36BBE2-32,450.7,20.0,nan,Physical,375308,,449995,,513536
+,100020558,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black,nan,KF560C36BBE2-32,450.7,20.0,nan,Physical,375308,,449995,,513700
 ,100020581,Kingston Fury - DDR5 SDRAM - 48GB 8400MT/s CL40 CUDIMM (Kit,nan,KF584CU40RSAK2-48,649.1,3.0,nan,Physical,358116,,701688,,767689
 ,100020715,"JBL EON718S 18"" POWERED SUBWOOFER",nan,JBL-EON718SD-EK,1434.1,7.0,nan,Physical,,,,,
 ,100020875,JBL Pro - Speaker - EON715-EK,nan,JBL EON715-EK,771.2,20.0,nan,Physical,,,,,
@@ -441,7 +441,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AM160GEN46,Manager Chair w/Arm Rest (Torin) - Black,nan,QZY-2501,75.6,20.0,nan,Physical,,,,,
 ,AM160GEN76,Computer Chair w/ Arm Rest (Black),nan,QZY-H4 BLACK,35.1,4.0,nan,Physical,,,,,
 ,AM160GEN97,Manager chair Black (Toulouse) Xtech QZY-0939 ,nan,QZY-0939,69.4,15.0,nan,Physical,,,,,
-,AM160PGL29,Primus Gaming - R2D2 edition chair,nan,PCH-S104DR,159.5,8.0,nan,Physical,367062,,172980,,182214
+,AM160PGL29,Primus Gaming - R2D2 edition chair,nan,PCH-S104DR,159.5,8.0,nan,Physical,367062,,172980,,183178
 ,AM160PGL30,Primus Gaming - Boba Fett chair,nan,PCH-S104BF,160.7,9.0,nan,Physical,367061,,173218,,182334
 ,AM160XTK17,Xtech - Chair exec XTF-MC117,nan,XTF-MC117,55.0,2.0,nan,Physical,124202,,59584,,59584
 ,AM160XTK26,Xtech - Disney XTF-DC001MM,nan,XTF-DC001MM,31.2,20.0,nan,Physical,,,,,
@@ -583,12 +583,12 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AS101EPS80,"Epson SJIC35P-M - Magenta - original - cartucho de tinta - para ColorWorks CW-C6000A, CW-C6000P, CW-C6500A, CW-C6500P",nan,C13T44B320,39.0,3.0,nan,Physical,261676,,,,
 ,AS101EPS81,"Epson SJIC35P-Y - Amarillo - original - cartucho de tinta - para ColorWorks CW-C6000A, CW-C6000P, CW-C6500A, CW-C6500P",nan,C13T44B420,39.0,3.0,nan,Physical,261675,,,,
 ,AS101EPS82,"Epson SJIC35P-C - Cián - original - cartucho de tinta - para ColorWorks CW-C6000A, CW-C6000P, CW-C6500A, CW-C6500P",nan,C13T44B220,39.0,3.0,nan,Physical,261674,,,,
-,AS102EPS55,"Epson T05A - Gran capacidad - negro - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A100,68.6,15.0,nan,Physical,259993,,76304,,82387
+,AS102EPS55,"Epson T05A - Gran capacidad - negro - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A100,68.6,15.0,nan,Physical,259993,,76304,,82417
 ,AS102EPS56,"Epson T05A - Gran capacidad - cián - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A200,118.8,5.0,nan,Physical,259986,,121910,,137004
 ,AS102EPS57,"Epson T05A3 - Gran capacidad - magenta - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A300,118.8,2.0,nan,Physical,259984,,138990,,147502
 ,AS102EPS58,"Epson T05A4 - Gran capacidad - amarillo - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A400,118.8,5.0,nan,Physical,259987,,121910,,138718
 ,AS102EPS82,Epson - C9345 - Ink maintenance box,nan,C12C934591,19.6,14.0,nan,Physical,,,,,
-,AS103EPS09,"Epson T664 - Paquete de 3 - 70 ml - amarillo, cián, magenta - original - recarga de tinta - para Epson L120, L1300, L310, L380, L395, L495; EcoTank L310, L575",nan,T664520-3P,20.2,20.0,nan,Physical,259808,,19990,26990,26134
+,AS103EPS09,"Epson T664 - Paquete de 3 - 70 ml - amarillo, cián, magenta - original - recarga de tinta - para Epson L120, L1300, L310, L380, L395, L495; EcoTank L310, L575",nan,T664520-3P,20.2,20.0,nan,Physical,259808,,19990,26990,25997
 ,AS103EPS11,Epson - T544120-2 - Ink tank - Black - Pack  L1110 L3110 L3,nan,T544120-2P,14.0,20.0,nan,Physical,259693,,15590,19990,18720
 ,AS103EPS12,Epson - T544520-3 - Ink tank - Color - Pack L1110 L3110 L31,nan,T544520-3P,20.2,20.0,nan,Physical,259904,,21809,30990,26074
 ,AS103EPS33,"Epson SJIC41P-MK - Negro mate - original - blíster con alarmas de RF/acústica - cartucho de tinta - para ColorWorks CW-C4000, CW-C4000E (MK)",nan,C13T52L520,25.3,3.0,nan,Physical,360978,,28004,,30251
@@ -612,34 +612,34 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AT000KYX39,"Kyocera TK 8517M - Magenta - original - cartucho de tóner - para TASKalfa 5052ci, 5053ci, 6052ci, 6053ci",nan,1T02NDBUS0,105.9,2.0,nan,Physical,270760,,114911,,131847
 ,AT000KYX40,"Kyocera TK 8517C - Cián - original - cartucho de tóner - para TASKalfa 5052ci, 5053ci, 6052ci, 6053ci",nan,1T02NDCUS0,105.9,2.0,nan,Physical,266803,,114911,,131930
 ,AT000KYX64,"Kyocera TK 5242C - Cián - original - cartucho de tóner - para ECOSYS M5526cdn, M5526cdw, P5026cdn, P5026cdw, P5026CDW/KL3",nan,1T02R7CUS0,71.5,1.0,nan,Physical,260435,,77621,,83129
-,AT000KYX65,Kyocera - Toner cartridge - 5242M - 1T02R7BUS0,nan,1T02R7BUS0,72.2,1.0,nan,Physical,260432,,78408,87279,84661
+,AT000KYX65,Kyocera - Toner cartridge - 5242M - 1T02R7BUS0,nan,1T02R7BUS0,72.2,1.0,nan,Physical,260432,,78408,87279,84699
 ,AT000KYX66,"Kyocera TK 5242Y - Amarillo - original - cartucho de tóner - para ECOSYS M5526cdn, M5526cdw, P5026cdn, P5026cdw, P5026CDW/KL3",nan,1T02R7AUS0,72.2,1.0,nan,Physical,260433,,78408,,83786
-,AT001BRO03,"Brother TN650 - Alto rendimiento - negro - original - cartucho de tóner - para Brother DCP-8080, DCP-8085, HL-5340, HL-5350, HL-5370, MFC-8480, MFC-8680, MFC-8890",nan,TN650,97.4,6.0,nan,Physical,259753,,105069,,115506
-,AT100BRO11,"Brother TN315M - Alto rendimiento - magenta - original - cartucho de tóner - para Brother HL-4150CDN, HL-4570CDW, HL-4570CDWT, MFC-9460CDN, MFC-9560CDW, MFC-9970CDW",nan,TN315M,96.5,4.0,nan,Physical,259709,,104059,,112720
+,AT001BRO03,"Brother TN650 - Alto rendimiento - negro - original - cartucho de tóner - para Brother DCP-8080, DCP-8085, HL-5340, HL-5350, HL-5370, MFC-8480, MFC-8680, MFC-8890",nan,TN650,97.4,6.0,nan,Physical,259753,,105069,,115514
+,AT100BRO11,"Brother TN315M - Alto rendimiento - magenta - original - cartucho de tóner - para Brother HL-4150CDN, HL-4570CDW, HL-4570CDWT, MFC-9460CDN, MFC-9560CDW, MFC-9970CDW",nan,TN315M,96.5,4.0,nan,Physical,259709,,104059,,112753
 ,AT100BRO12,"Brother TN315Y - Alto rendimiento - amarillo - original - cartucho de tóner - para Brother HL-4150CDN, HL-4570CDW, HL-4570CDWT, MFC-9460CDN, MFC-9560CDW, MFC-9970CDW",nan,TN315Y,96.5,4.0,nan,Physical,259710,,95410,,111569
-,AT151BRO68,Brother TN - TN416C - Toner cartridge - Cyan,nan,TN416C,146.7,6.0,nan,Physical,259716,,158235,179990,173683
-,AT151BRO70,Brother TN - TN416Y - Toner cartridge - Yellow,nan,TN416Y,146.7,20.0,nan,Physical,259718,,158235,179990,173683
-,AT151BRO74,Brother TN - TN419Y - Toner cartridge - Yellow,nan,TN419Y,163.8,20.0,nan,Physical,259703,,135230,199990,188257
+,AT151BRO68,Brother TN - TN416C - Toner cartridge - Cyan,nan,TN416C,146.7,6.0,nan,Physical,259716,,158235,179990,173721
+,AT151BRO70,Brother TN - TN416Y - Toner cartridge - Yellow,nan,TN416Y,146.7,20.0,nan,Physical,259718,,158235,179990,173721
+,AT151BRO74,Brother TN - TN419Y - Toner cartridge - Yellow,nan,TN419Y,163.8,20.0,nan,Physical,259703,,135230,199990,188294
 ,AT152BRO12,Brother - TN-219XLBK - Toner cartridge - Black,nan,TN219XLBK,69.8,20.0,nan,Physical,376179,,388650,,388650
 ,AT152BRO13,Brother - TN-219XLC - Toner cartridge - Cyan,nan,TN219XLC,76.1,20.0,nan,Physical,259724,,86291,,102770
 ,AT152BRO14,Brother - TN-219XLM - Toner cartridge - Magenta,nan,TN219XLM,76.1,20.0,nan,Physical,259725,,86291,,102650
-,AT217HEW24,"HP 78A - Negro - original - LaserJet - cartucho de tóner (CE278A) - para LaserJet Pro M1536dnf, P1566, P1606DN",nan,CE278A,85.8,20.0,nan,Physical,260019,,14990,,94043
-,AT217HEW40,"HP 80X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (CF280X) - para LaserJet Pro 400 M401, MFP M425",nan,CF280X,199.0,2.0,nan,Physical,260114,,179900,,226479
+,AT217HEW24,"HP 78A - Negro - original - LaserJet - cartucho de tóner (CE278A) - para LaserJet Pro M1536dnf, P1566, P1606DN",nan,CE278A,85.8,20.0,nan,Physical,260019,,14990,,94066
+,AT217HEW40,"HP 80X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (CF280X) - para LaserJet Pro 400 M401, MFP M425",nan,CF280X,199.0,2.0,nan,Physical,260114,,179900,,226568
 ,AT217HEW76,"HP 05X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (CE505X) - para LaserJet P2055, P2055d, P2055dn, P2055x",nan,CE505X,198.2,8.0,nan,Physical,260299,,115000,,203989
-,AT217HEW91,"HP 312X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (CF380X) - para Color LaserJet Pro MFP M476dn, MFP M476dw, MFP M476nw",nan,CF380X,136.8,1.0,nan,Physical,260028,,139990,,156322
+,AT217HEW91,"HP 312X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (CF380X) - para Color LaserJet Pro MFP M476dn, MFP M476dw, MFP M476nw",nan,CF380X,136.8,1.0,nan,Physical,260028,,139990,,156422
 ,AT218HEW69,Cartucho de Tóner HP 508X - Cian,nan,CF361X,324.9,1.0,nan,Physical,263412,,361274,,387098
 ,AT219HEW48,"HP 19A - Negro - original - kit de tambor - para LaserJet Pro M102, M104, MFP M130, MFP M132",nan,CF219A,85.5,20.0,nan,Physical,261294,,86900,,86900
 ,AT222HEW01,"HP 230A - Negro - original - LaserJet - cartucho de tóner (W2300A) - para Color LaserJet Pro 4201, 4203, MFP 4301, MFP 4303",nan,W2300A,96.7,1.0,nan,Physical,260217,,95624,,107614
-,AT222HEW76,"HP 206A - Cián - original - LaserJet - cartucho de tóner (W2111A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2111A,91.3,1.0,nan,Physical,260122,,89730,,97753
-,AT222HEW77,"HP 206A - Amarillo - original - LaserJet - cartucho de tóner (W2112A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2112A,90.6,20.0,nan,Physical,260080,,89730,,98116
+,AT222HEW76,"HP 206A - Cián - original - LaserJet - cartucho de tóner (W2111A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2111A,91.3,1.0,nan,Physical,260122,,89730,,97778
+,AT222HEW77,"HP 206A - Amarillo - original - LaserJet - cartucho de tóner (W2112A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2112A,90.6,20.0,nan,Physical,260080,,89730,,98142
 ,AT222HEW78,"HP 206A - Magenta - original - LaserJet - cartucho de tóner (W2113A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2113A,90.8,20.0,nan,Physical,260108,,88862,,100446
 ,AT222HEW83,"HP 215A - Negro - original - LaserJet - cartucho de tóner (W2310A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2310A,59.4,10.0,nan,Physical,260085,,58916,,62599
 ,AT222HEW84,"HP 215A - Cián - original - LaserJet - cartucho de tóner (W2311A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2311A,64.4,13.0,nan,Physical,260215,,63746,,68005
 ,AT222HEW86,"HP 215A - Magenta - original - LaserJet - cartucho de tóner (W2313A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2313A,85.5,10.0,nan,Physical,260107,,63746,,68268
-,AT223HEW35,"HP 147A - Negro - original - LaserJet - cartucho de tóner (W1470A) - para LaserJet Enterprise MFP M634; LaserJet Enterprise Flow MFP M634, MFP M635, MFP M636",nan,W1470A,184.5,20.0,nan,Physical,260134,,199905,,221451
-,AT223HEW54,HP 151X Black Original LaserJet Toner Cartridge,nan,W1510X,261.0,20.0,nan,Physical,260341,,260798,272900,276204
+,AT223HEW35,"HP 147A - Negro - original - LaserJet - cartucho de tóner (W1470A) - para LaserJet Enterprise MFP M634; LaserJet Enterprise Flow MFP M634, MFP M635, MFP M636",nan,W1470A,184.5,20.0,nan,Physical,260134,,199905,,221518
+,AT223HEW54,HP 151X Black Original LaserJet Toner Cartridge,nan,W1510X,261.0,20.0,nan,Physical,260341,,252990,272900,274094
 ,AT223HEW55,"HP 154A - Rendimiento medio - negro - original - recarga de tóner - para LaserJet Tank MFP 1602w, MFP 1604w, MFP 2602dn, MFP 2604sdw, MFP 2606dn, MFP 2606sdw",nan,W1540A,10.4,20.0,nan,Physical,260326,,11173,,13001
-,AT223HEW60,"HP 145X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (W1450X) - para LaserJet Pro 3001, 3002, 3003, MFP 3101, MFP 3102, MFP 3103, MFP 3104, MFP3102",nan,W1450X,115.0,20.0,nan,Physical,260322,,114864,,127990
+,AT223HEW60,"HP 145X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (W1450X) - para LaserJet Pro 3001, 3002, 3003, MFP 3101, MFP 3102, MFP 3103, MFP 3104, MFP3102",nan,W1450X,115.0,20.0,nan,Physical,260322,,114864,,128019
 ,AU130FOR63,Forza - Power distribution unit - Rack-mountable - AC 200/240 V - 10 Tomas de Corriente - 8-C13 2-C19 1U SPD Metered,nan,FPD-1012M1U,147.6,20.0,nan,Physical,,,,,
 ,AU130FOR64,Forza - Power distribution unit - Rack-mountable - AC 200/240 V - 30 Tomas de Corriente - 6-C19 24-C13 0U SPD Metered,nan,FPD-3012M0U,352.2,20.0,nan,Physical,,,,,
 ,AU202APC70,Schneider - Adaptador de administración remota - Gigabit Ethernet,nan,AP9544,114.4,20.0,nan,Physical,,,,,
@@ -775,20 +775,20 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CH132KNG13,Kingston DataTraveler 70 - Unidad flash USB - 128 GB - USB-C 3.2 Gen 1,nan,DT70/128GB,10.1,20.0,nan,Physical,102298,13990,11126,13990,13502
 ,CH164KVR49,"Kingston ValueRAM - DDR4 - módulo - 16 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL22 - 1.2 V - sin búfer - no ECC - para Intel Next Unit of Computing 12 Pro Kit - NUC12WSHi3, 12 Pro Kit - NUC12WSKi5",nan,KVR32S22S8/16,148.0,20.0,nan,Physical,92626,,128060,,156954
 ,CH164KVR54,Kingston - DDR4 - módulo - 32 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL22 - 1.2 V - sin búfer - no ECC,nan,KCP432SD8/32,295.6,20.0,nan,Physical,108013,,209900,,286511
-,CH164KVR70,Kingston - DDR4 SDRAM - 32 GB - 3200 MHz,nan,KCP432ND8/32,295.6,20.0,nan,Physical,148831,,330144,,353974
+,CH164KVR70,Kingston - DDR4 SDRAM - 32 GB - 3200 MHz,nan,KCP432ND8/32,295.6,20.0,nan,Physical,148831,,330144,,354074
 ,CH164KVR78,Kingston - DDR5 SDRAM - DIMM 288-pin - 4800 MHz - PC5-38400 - CL40 - Generic - ECC - 16 GB,nan,KTH-PL548S8-16G,300.0,1.0,nan,Physical,227962,,163600,,320933
 ,CH205SDK39,SanDisk - Flash memory card - microSD - 256GB - 880/650MB/sRPD2,nan,SDSQXFN-256G-GN4NN,88.9,4.0,nan,Physical,358707,,104995,119990,136241
 ,CH256SDK32,SanDisk Extreme Pro - Tarjeta de memoria flash - 256 GB - Video Class V30 / UHS-I U3 / Class10 - SDXC UHS-I,nan,SDSDXXD-256G-GN4IN,54.4,20.0,nan,Physical,155560,,64990,,75990
 ,CH320SDK31,SanDisk Extreme - Tarjeta de memoria flash (adaptador microSDHC a SD Incluido) - 32 GB - A1 / Video Class V30 / UHS-I U3 - microSDHC UHS-I,nan,SDSQXAF-032G-GN6AA,21.1,20.0,nan,Physical,36691,26990,22909,,25963
-,CH402KVR56,Kingston ValueRam - DDR4 SDRAM - 8 GB - 3200 MHz - CL22 - Unbuffered - Non-ECC,nan,KVR32S22S8/8,81.4,20.0,nan,Physical,114413,,64990,64990,76216
+,CH402KVR56,Kingston ValueRam - DDR4 SDRAM - 8 GB - 3200 MHz - CL22 - Unbuffered - Non-ECC,nan,KVR32S22S8/8,81.4,20.0,nan,Physical,114413,,64990,64990,76235
 ,CH402KVR65,Kingston ValueRam - DDR3 SDRAM - 8 GB - 1600 MHz - Unbuffered - Non-ECC,nan,KVR16LN11/8WP,39.3,20.0,nan,Physical,129571,,45110,,48197
 ,CH402KVR76,Kingston ValueRAM - DDR4 - módulo - 16 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL22 - 1.2 V - sin búfer - no ECC,nan,KVR32N22D8/16,148.0,20.0,nan,Physical,122399,,117900,,171261
 ,CH411KNG19,Kingston DataTraveler Kyson - Unidad flash USB - 64 GB - USB 3.2 Gen 1,nan,DTKN/64GB,13.4,20.0,nan,Physical,90774,,13752,,15411
 ,CH411KNG20,Kingston DataTraveler Kyson - Unidad flash USB - 128 GB - USB 3.2 Gen 1,nan,DTKN/128GB,16.4,20.0,nan,Physical,95122,,17900,,20048
 ,CH411KNG21,Kingston DataTraveler Kyson - Unidad flash USB - 256 GB - USB 3.2 Gen 1,nan,DTKN/256GB,39.9,20.0,nan,Physical,95121,,34990,,41526
-,CH411KNG39,Kingston DataTraveler Exodia M - Unidad flash USB - 256 GB - USB 3.2 Gen 1,nan,DTXM/256GB,23.0,20.0,nan,Physical,146299,,23977,29990,26603
+,CH411KNG39,Kingston DataTraveler Exodia M - Unidad flash USB - 256 GB - USB 3.2 Gen 1,nan,DTXM/256GB,23.0,20.0,nan,Physical,146299,,23977,29990,26610
 ,CH411KNG61,Kingston DataTraveler 70 - Unidad flash USB - 256 GB - USB-C 3.2 Gen 1,nan,DT70/256GB,22.9,6.0,nan,Physical,265718,,25106,,27311
-,CH411KNG62,Kingston - USB flash drive - 64 GB - USB 3.2 Gen 1 - NEON (PINK),nan,KC-U2L64-7LN,6.5,20.0,nan,Physical,214766,,7000,8990,8744
+,CH411KNG62,Kingston - USB flash drive - 64 GB - USB 3.2 Gen 1 - NEON (PINK),nan,KC-U2L64-7LN,6.5,20.0,nan,Physical,214766,,7090,8990,8754
 ,CH411KNG63,Kingston - USB flash drive - 64 GB - USB 3.2 Gen 1 - NEON Aqua Blue,nan,KC-U2L64-7LB,6.3,20.0,nan,Physical,216379,,6990,,8006
 ,CH411KNG64,Kingston - USB flash drive - 64 GB - USB 3.2 Gen 1 - NEON Purple,nan,KC-U2L64-7LP,6.3,20.0,nan,Physical,216877,,7200,9990,8341
 ,CH411KNG90,Kingston - USB flash drive - USB 3.2 Gen 1 - Exodia S Black Yellow,nan,DTXS/512GB,43.6,20.0,nan,Physical,278113,,36490,,41540
@@ -797,9 +797,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CH512SDK04,SanDisk Extreme Pro - Tarjeta de memoria flash - 512 GB - Video Class V30 / UHS-I U3 / Class10 - SDXC UHS-I,nan,SDSDXXD-512G-GN4IN,119.2,7.0,nan,Physical,153151,,118286,,132768
 ,CH515KNG62,"Kingston - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 2666 MHz / PC4-21300 - CL19 - 1.2 V - registrado - ECC - para Dell PowerEdge C4140, C6420, FC430, FC830, M830, MX740, MX840; Precision 5820, 7820, 7920",nan,KTD-PE426/32G,440.3,2.0,nan,Physical,76187,,289408,,459265
 ,CH516KNG37,Kingston - DDR4 - módulo - 16 GB - DIMM de 288 contactos - 3200 MHz / PC4-25600 - CL22 - 1.2 V - sin búfer - ECC,nan,KTD-PE432E/16G,226.9,2.0,nan,Physical,227575,,245302,,245302
-,CH516KNG41,Kingston - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MHz - CL22 - 1.2 V - sin búfer - ECC - para HP Z2 G5,nan,KTH-PL432E/32G,326.6,1.0,nan,Physical,107051,,371689,,399709
+,CH516KNG41,Kingston - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MHz - CL22 - 1.2 V - sin búfer - ECC - para HP Z2 G5,nan,KTH-PL432E/32G,326.6,1.0,nan,Physical,107051,,371689,,399909
 ,CH516KNG43,Kingston - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MHz / PC4-25600 - CL22 - 1.2 V - registrado - ECC,nan,KTD-PE432D8/32G,370.3,2.0,nan,Physical,,,,,
-,CH516KNG49,Kingston - DDR5 - módulo - 8 GB - SO DIMM de 262 contactos - 5600 MHz / PC5-44800 - CL46 - 1.1 V - sin búfer - ECC,nan,KCP556SS6-8,132.4,20.0,nan,Physical,257312,,109900,,144664
+,CH516KNG49,Kingston - DDR5 - módulo - 8 GB - SO DIMM de 262 contactos - 5600 MHz / PC5-44800 - CL46 - 1.1 V - sin búfer - ECC,nan,KCP556SS6-8,132.4,20.0,nan,Physical,257312,,109900,,144700
 ,CH516KNG79,Kingston - DDR5 SDRAM - 5600 MHz - Unbuffered - Non-ECC - 16GB DDR5 5600MT/s Module,nan,KCP556US8-16,208.4,20.0,nan,Physical,262911,,301690,,301690
 ,CH516KNG80,Kingston - DDR5 SDRAM - 5600 MHz - 32GB DDR5 5600MT/s Module,nan,KCP556UD8-32,411.2,20.0,nan,Physical,265496,,388322,,411819
 ,CH516KNG82,Kingston - DDR5 SDRAM - 4800 MHz - ECC Module,nan,KTD-PE548E-32G,569.7,3.0,nan,Physical,257315,,678184,,716322
@@ -808,13 +808,13 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CH804KNG38,Kingston High Endurance - Tarjeta de memoria flash - 256 GB - A1 / UHS-I U1 / Class10 - microSDXC UHS-I U1,nan,SDCE/256GB,50.2,2.0,nan,Physical,212787,,70866,,70866
 ,CH804KNG70,Kingston - Flash memory card - microSDHC - 1TB microSDXC Canvas Select Pl,nan,SDCS3/1TB,107.9,10.0,nan,Physical,279985,,104990,,122847
 ,CP225ITL00,Intel - Core Ultra 5 225 - 4.9 GHz - 10-core - LGA1851,nan,BX80768225,180.5,19.0,nan,Physical,266046,,188900,,218562
-,CP225ITL01,Intel - Core Ultra 5 225F - 4.9 GHz - 10-core - LGA1851,nan,BX80768225F,162.9,20.0,nan,Physical,266048,,174890,174890,198103
+,CP225ITL01,Intel - Core Ultra 5 225F - 4.9 GHz - 10-core - LGA1851,nan,BX80768225F,162.9,20.0,nan,Physical,266048,,174890,174890,198144
 ,CP265ITL00,Intel - Core Ultra 7 265 - 5.3 GHz - 20-core - LGA1851,nan,BX80768265,371.6,13.0,nan,Physical,269563,,371438,,419687
-,CP265ITL02,Intel - Core Ultra 7 265KF - 3.9 GHz - 20-core - LGA1851,nan,BX80768265KF,283.5,15.0,nan,Physical,259003,,310752,329990,368425
+,CP265ITL02,Intel - Core Ultra 7 265KF - 3.9 GHz - 20-core - LGA1851,nan,BX80768265KF,283.5,15.0,nan,Physical,259003,,310752,329990,368492
 ,CP265ITL03,Intel - Core Ultra 7 265F - 5.3 GHz - 20-core - LGA1851,nan,BX80768265F,353.3,15.0,nan,Physical,269564,,398051,,411927
 ,CP949ITL00,Intel Core i9 i9-14900 - 2 GHz - 24 núcleos - 32 hilos - 36 MB caché - FCLGA1700 Socket - Caja,nan,BX8071514900,630.4,14.0,nan,Physical,239611,,686948,,722899
 ,CP949ITL03,Intel Core i9 i9-14900F - 2 GHz - 24 núcleos - 32 hilos - 36 MB caché - FCLGA1700 Socket - Caja,nan,BX8071514900F,601.5,15.0,nan,Physical,241987,,669408,,704780
-,CP992AMD32,AMD - Ryzen 7 8700G - 5.1 GHz - 8-core - Socket AM5,nan,100-100001236SBX,236.9,20.0,nan,Physical,232388,,244900,355758,291578
+,CP992AMD32,AMD - Ryzen 7 8700G - 5.1 GHz - 8-core - Socket AM5,nan,100-100001236SBX,236.9,20.0,nan,Physical,232388,,244900,355758,290516
 ,CS000ASU21,ASUS - Power supply - ROG-THOR-1200P3-GAMING,nan,90YE00V2-B0AA00,421.8,19.0,nan,Physical,,,,,
 ,CS000ASU22,ASUS - Power supply - ROG-STRIX-1000P-GAMING,nan,90YE00W1-B0AA00,203.7,20.0,nan,Physical,,,,,
 ,CS000ASU23,ASUS - Power supply - TUF-GAMING-850G 90YE00S2-B0AA0,nan,90YE00S2-B0AA00,118.0,20.0,nan,Physical,,,,,
@@ -824,7 +824,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CS000GNC25,PCTronix - Power supply - Semi M Bronze CSK750H,nan,CSK750H,83.0,19.0,nan,Physical,,,,,
 ,CS000GNC26,PCTronix - Power supply - HCG-1000 PRO Platinium,nan,HCG-1000,224.0,15.0,nan,Physical,,,,,
 ,CS000GNC27,PCTronix - Power supply - ATX PRO-M-850W-FM GOLD 80 PLUS,nan,PRO-M-850W,91.6,20.0,nan,Physical,,,,,
-,CS002COR08,Corsair Memory - Desktop - Gabinete 4000D Frame ATX Panel,nan,CC-9011290-WW,74.2,20.0,nan,Physical,268766,,75980,,81420
+,CS002COR08,Corsair Memory - Desktop - Gabinete 4000D Frame ATX Panel,nan,CC-9011290-WW,74.2,20.0,nan,Physical,268766,,75980,,81445
 ,CS101MSI09,MSI - Power supply - MAG 850GL PCIE5 blanco,nan,824142330258,84.0,20.0,nan,Physical,,,,,
 ,CS511XTK06,Xtech - Desktop - Micro ATX - All black - pc case 600W ps logo,nan,XTQ-100,28.4,20.0,nan,Physical,,,,,
 ,CS512GNC12,Xtech XTQ-209 - Torre - ATX 600 vatios - negro - USB/Audio,nan,XTQ-209,28.9,20.0,nan,Physical,,,,,
@@ -832,19 +832,19 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CS512GNC40,PCTronix - Slim Tower - S609  2USB 3.0,nan,S609,35.8,20.0,nan,Physical,,,,,
 ,CS513GNC05,Xtech - Desktop - All black - ATX - pc case 600W ps,nan,XTQ-200,29.6,20.0,nan,Physical,,,,,
 ,CS513XTK11,Xtech - Desktop - ATX - Black and red - 600W PS XTQ-214,nan,XTQ-214,30.5,20.0,nan,Physical,,,,,
-,CS515XTK04,Xtech Gaming Series PHOBOS - Mid tower - ATX - panel lateral con ventana (cristal templado) - sin fuente de alimentación (ATX) - negro - USB/Audio,nan,XT-GMR4,38.5,7.0,nan,Physical,130010,,37201,,44518
+,CS515XTK04,Xtech Gaming Series PHOBOS - Mid tower - ATX - panel lateral con ventana (cristal templado) - sin fuente de alimentación (ATX) - negro - USB/Audio,nan,XT-GMR4,38.5,7.0,nan,Physical,130010,,37201,,44543
 ,CS850XTK08,Xtech P4 - Fuente de alimentación (interna) - CA 110 V - 700 vatios - Estados Unidos,nan,LLK - CS850XTK08,20.2,20.0,nan,Physical,,,,,
 ,CS850XTK09,Xtech - Power supply - Internal - 500 Watt - Xtech ATX Power Supply 500W (20+4pin) w/2 SATA,nan,PSU-230W,10.8,20.0,nan,Physical,,,,,
 ,CS850XTK11,Xtech - Power supply - Internal - 600 Watt - (20+4pin) w/2 SATA,nan,PS-10-300W XTECH,15.4,20.0,nan,Physical,,,,,
 ,CS892HPS47,"HPE Standard - Kit de ventilador del sistema - para ProLiant DL360 Gen10, DL365 Gen10",nan,P37861-B21,110.7,1.0,nan,Physical,,,,,
 ,CS892HPS53,"HPE Standard Heat Sink Kit - Disipador térmico - para ProLiant DL380 Gen10 Plus, DL380 Gen10 Plus Network Choice",nan,P37034-B21,44.2,3.0,nan,Physical,,,,,
 ,DH002LEN74,"Lenovo - Internal hard drive - 960 GB - 2.5"" - Solid state / hard drive - 4XB7A90874",nan,4XB7A90874,1272.3,18.0,nan,Physical,273468,,885900,,1255673
-,DH100KNG68,Kingston - Internal hard drive - 1000 GB - M.2 2230 - Solid state drive,nan,SNV3SM3/1T0,201.4,20.0,nan,Physical,279706,,190690,,223816
+,DH100KNG68,Kingston - Internal hard drive - 1000 GB - M.2 2230 - Solid state drive,nan,SNV3SM3/1T0,201.4,20.0,nan,Physical,279706,,129900,,215279
 ,DH101WDC22,Western Digital WD Blue SN5100 - Internal hard drive - 1 TB - M.2 - Solid state drive,nan,WDS100T5B0E,165.8,20.0,nan,Physical,382017,184990,179418,,206713
 ,DH102KNG01,"Kingston - 1024 GB - 2.5"" - Solid state drive",nan,SKC600/1024G,251.1,20.0,nan,Physical,69857,,197307,,217672
 ,DH120KNG74,Kingston FURY - Internal hard drive - 4 TB - Solid state drive,nan,SFYR2S/4T0,683.7,18.0,nan,Physical,273935,,749480,,808063
 ,DH187HPS14,"HPE Mission Critical - Disco duro - 1.2 TB - hot-swap - 2.5"" SFF - SAS 12Gb/s - 10000 rpm - con HPE Basic Carrier",nan,P28586-B21,434.6,15.0,nan,Physical,149787,,359990,,483465
-,DH200KNG07,Kingston XS2000 - SSD - 1 TB - externo (portátil) - USB 3.2 Gen 2x2 (USB-C conector),nan,SXS2000/1000G,159.7,10.0,nan,Physical,121623,,243157,,270630
+,DH200KNG07,Kingston XS2000 - SSD - 1 TB - externo (portátil) - USB 3.2 Gen 2x2 (USB-C conector),nan,SXS2000/1000G,159.7,10.0,nan,Physical,121623,,243157,,270699
 ,DH200KNG14,Kingston - External hard drive - Solid state drive ,nan,SXS1000R/2000G,332.4,20.0,nan,Physical,252288,,239900,239900,283549
 ,DH200KNG16,Kingston - Internal hard drive - 2000 GB - M.2 2230 - Solid state drive,nan,SNV3SM3/2T0,228.9,20.0,nan,Physical,279707,,208883,,251668
 ,DH200KNG18,Kingston - External hard drive,nan,SPSD/1TB,200.0,9.0,nan,Physical,365575,,138000,,209673
@@ -856,12 +856,12 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,DH512KNG03,"Kingston KC600 - SSD - cifrado - 512 GB - interno - 2.5"" - SATA 6Gb/s - AES de 256 bits - TCG Opal Encryption, Self-Encrypting Drive (SED)",nan,SKC600/512G,147.4,20.0,nan,Physical,68883,,118950,,132882
 ,DH702DEL25,"Dell - Kit del cliente - SSD - 480 GB - 2.5"" (en transportador de 3,5"") - SATA 6Gb/s",nan,345-BEBH,375.3,8.0,nan,Physical,158002,,499168,,533489
 ,DH703DEL24,"Dell - Hard drive - Internal hard drive - 3.84 TB - 2.5"" - SATA",nan,345-BDRO,1199.0,16.0,nan,Physical,377904,,1292605,,1425695
-,DH768KNG05,"Kingston DC600M - SSD - Mixed Use - 7.68 TB - interno - 2.5"" - SATA 6Gb/s",nan,SEDC600M/7680G,2819.6,9.0,nan,Physical,213905,,3057528,,3214740
+,DH768KNG05,"Kingston DC600M - SSD - Mixed Use - 7.68 TB - interno - 2.5"" - SATA 6Gb/s",nan,SEDC600M/7680G,2819.6,9.0,nan,Physical,213905,,3057528,,3215532
 ,DH963SEA69,Seagate Expansion STKP10000400 - Disco duro - 10 TB - externo (sobremesa) - USB 3.0 - negro - con Seagate Rescue Data Recovery,nan,STKP10000400,338.5,7.0,nan,Physical,184502,,373980,,414453
 ,DH963WDC63,"WD Blue WD20EZBX - Disco duro - 2 TB - interno - 3.5"" - SATA 6Gb/s - 7200 rpm - búfer: 256 MB",nan,WD20EZBX,78.1,20.0,nan,Physical,208855,,97247,,97247
 ,DH963WDC80,"WD Red WD20EFPX - Disco duro - 2 TB - interno - 3.5"" - SATA 6Gb/s - 5400 rpm - búfer: 64 MB",nan,WD20EFPX,99.9,20.0,nan,Physical,222286,,102891,,110116
 ,DH964WDC76,"Western Digital WD Purple - Hard drive - Internal hard drive - 10 TB - 3.5"" - 7200 rpm",nan,WD102PURP,327.2,20.0,nan,Physical,263108,,396990,,396990
-,DH966SEA53,"Seagate SkyHawk ST2000VX017 - Disco duro - 2 TB - interno - 3.5"" - SATA 6Gb/s - búfer: 256 MB - con Recuperación de datos Seagate Rescue de 3 años",nan,ST2000VX017,88.0,15.0,nan,Physical,205920,,78710,,110557
+,DH966SEA53,"Seagate SkyHawk ST2000VX017 - Disco duro - 2 TB - interno - 3.5"" - SATA 6Gb/s - búfer: 256 MB - con Recuperación de datos Seagate Rescue de 3 años",nan,ST2000VX017,88.0,15.0,nan,Physical,205920,,78710,,110599
 ,DH966SEA68,"Seagate Barracuda ST1000DM014 - Disco duro - 1 TB - interno - 3.5"" - SATA 6Gb/s - 7200 rpm - búfer: 256 MB",nan,ST1000DM014,77.2,20.0,nan,Physical,211134,,79943,,81921
 ,DH966SEA91,"Seagate SkyHawk - Hard drive - Internal hard drive - 4 TB - 3.5"" - 5400 rpm - SCSI",nan,ST4000VX016,141.5,9.0,nan,Physical,248653,,155806,,166892
 ,DH966SEA95,Seagate Expansion - Disco duro externo - 20 TB - USB 3.0 - Negro,nan,STKP20000400,549.8,2.0,nan,Physical,263870,,609980,,647820
@@ -1159,7 +1159,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ES600UBQ37,"Ubiquiti UniFi Switch USW-Pro-24-POE - Conmutador - Gestionado - 24 x 10/100/1000 (16 PoE+, 8 PoE++) + 2 x 10 Gigabit SFP+ (enlace de subida) - sobremesa, montaje en rack - PoE++ (400 W)",nan,USW-PRO-24-POE,659.5,19.0,nan,Physical,378938,,720477,,774415
 ,ES600UBQ38,"Ubiquiti UniFi Switch USW-PRO-48-POE - Conmutador - Gestionado - 48 x 10/100/1000 (40 PoE+, 8 PoE++) + 4 x 10Gb Ethernet SFP+ - montaje en rack - PoE++ (600 W) - CA 120/230 V / DC 11,5/52 V",nan,USW-PRO-48-POE,1035.8,16.0,nan,Physical,378918,,1132913,,1282646
 ,ES600UBQ40,Ubiquiti UniFi Switch USW Flex Mini - Conmutador - inteligente - 4 x 10/100/1000 + 1 x 10/100/1000 (PoE+) - sobremesa - PoE+,nan,USW-FLEX-MINI,29.5,20.0,nan,Physical,378943,,,,
-,ES600UBQ41,"Ubiquiti UniFi Switch USW-48-POE - Conmutador - Gestionado - 48 x 10/100/1000 (32 PoE+) + 4 x Gigabit SFP - montaje en rack, sobremesa - PoE+ (195 W)",nan,USW-48-POE,563.9,17.0,nan,Physical,378935,,614174,,668762
+,ES600UBQ41,"Ubiquiti UniFi Switch USW-48-POE - Conmutador - Gestionado - 48 x 10/100/1000 (32 PoE+) + 4 x Gigabit SFP - montaje en rack, sobremesa - PoE+ (195 W)",nan,USW-48-POE,563.9,17.0,nan,Physical,378935,,614174,,668971
 ,ES600UBQ95,"Ubiquiti UniFi Switch Lite USW-Lite-16-POE - Conmutador - Gestionado - 16 x 10/100/1000 (8 PoE+) - sobremesa, montaje en pared - PoE+ (45 W)",nan,USW-LITE-16-POE,194.6,4.0,nan,Physical,378973,,250990,,261694
 ,ES600UBQ97,"Ubiquiti UniFi Switch USW-24 - Conmutador - Gestionado - 24 x 10/100/1000 + 2 x Gigabit SFP - montaje en rack, sobremesa",nan,USW-24,217.2,20.0,nan,Physical,376367,,435327,,435327
 ,ES601UBQ01,Ubiquiti - Switch - 48 - USW-PRO-48,nan,USW-PRO-48,583.4,1.0,nan,Physical,378918,,1132913,,1282646
@@ -1274,25 +1274,25 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID014KNS42,Kensington Pro Fit Retractable Mobile - Ratón - óptico - 3 botones - cableado - USB - negro,nan,K72339EU,9.6,1.0,nan,Physical,46113,,10290,,11286
 ,ID014KNS45,Kensington EQ - Mouse - USB-A - Wired - Black,nan,K72480WW,7.0,20.0,nan,Physical,266817,,7499,9650,8653
 ,ID014KNS46,Kensington Pro Fit Ergo TB450 - Trackball Mouse - Bluetooth - Wireless,nan,K72194,31.4,6.0,nan,Physical,237677,39990,33800,,37819
-,ID014KNS52,Kensington - Mouse - Wireless - K79810,nan,K79810,22.5,5.0,nan,Physical,227685,,24750,,31484
-,ID014KNS53,Kensington MY430 EQ - Mouse - USB / USB-A - Wireless - Black,nan,K75507WW,22.7,9.0,nan,Physical,244433,27990,24500,27990,27166
+,ID014KNS52,Kensington - Mouse - Wireless - K79810,nan,K79810,22.5,5.0,nan,Physical,227685,,24750,,31475
+,ID014KNS53,Kensington MY430 EQ - Mouse - USB / USB-A - Wireless - Black,nan,K75507WW,22.7,9.0,nan,Physical,244433,27990,24500,27990,27156
 ,ID014KNS56,Kensington Orbit Fusion K72363WW - Mouse - USB - Wireless - Black,nan,K72363WW,55.1,4.0,nan,Physical,153330,,60848,,66602
 ,ID014KNS90,Kensington - Mouse - Wireless - EQ Recargable BT,nan,K75304,12.2,20.0,nan,Physical,361362,,19960,,19960
 ,ID014KNS91,Kensington - Mouse - Wireless - Ergonomic Vertical mouse,nan,K75575,11.7,20.0,nan,Physical,126956,,14038,,15319
-,ID016KNS17,Kensington - Mouse - USB - Wired - K72369,nan,K72369,8.9,3.0,nan,Physical,39394,,9647,,11386
-,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9984,13690,13410
+,ID016KNS17,Kensington - Mouse - USB - Wired - K72369,nan,K72369,8.9,3.0,nan,Physical,39394,,9647,10500,11379
+,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9984,13690,13416
 ,ID022KNS40,Kensington - Mouse - USB - Black,nan,K75403,20.0,3.0,nan,Physical,85974,,20597,21990,24439
 ,ID022KNS43,"Kensington SureTrack - Ratón - óptico - 4 botones - inalámbrico - 2.4 GHz, Bluetooth 5.0 LE, Bluetooth 3.0 - receptor inalámbrico USB - gris",nan,K75351WW,10.6,1.0,nan,Physical,85978,,12353,,14039
-,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,7900,9990,10967
-,ID023LOG10,Logitech M190 - Ratón - óptico - 3 botones - inalámbrico - receptor inalámbrico USB - rojo,nan,910-005904,9.8,7.0,nan,Physical,86548,,10336,,13548
-,ID023LOG52,"Logitech Signature M650 - Ratón - manos pequeñas - diestro y zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006251,29.1,20.0,nan,Physical,132346,,38630,,40288
-,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,37144,,38567
+,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,7900,9990,10963
+,ID023LOG10,Logitech M190 - Ratón - óptico - 3 botones - inalámbrico - receptor inalámbrico USB - rojo,nan,910-005904,9.8,7.0,nan,Physical,86548,,10336,,13651
+,ID023LOG52,"Logitech Signature M650 - Ratón - manos pequeñas - diestro y zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006251,29.1,20.0,nan,Physical,132346,,32990,,39297
+,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,37144,,39341
 ,ID023LOG80,Logitech G G502 X - Ratón - óptico - 8 botones - cableado - USB - blanco,nan,910-006145,71.6,20.0,nan,Physical,153269,,64980,64990,84105
 ,ID024LOG08,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - grafito,nan,910-006932,73.1,20.0,nan,Physical,220143,,63990,63990,75597
 ,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,67190,,86016
-,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,14990,14990,19865
+,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,14990,14990,19302
 ,ID024LOG27,Logitech - G309 - Mouse - Black,nan,910-007198,44.3,20.0,nan,Physical,254110,,39990,89990,64522
-,ID024LOG28,Logitech - G309 - Mouse - white,nan,910-007206,57.1,11.0,nan,Physical,254109,,51990,79990,74377
+,ID024LOG28,Logitech - G309 - Mouse - white,nan,910-007206,57.1,11.0,nan,Physical,254109,,51990,79990,74393
 ,ID024LOG35,Logitech - Pro 2 - Mouse - Wireless - Gamer,nan,910-007301,105.3,8.0,nan,Physical,264873,,96470,,113408
 ,ID024LOG36,Logitech - Pro 2 - Mouse - Wireless - Pink,nan,910-007308,94.4,20.0,nan,Physical,265854,,99712,,116621
 ,ID024LOG37,Logitech - Mouse - Wireless - Black - G Pro,nan,910-007294,105.9,12.0,nan,Physical,270837,,74990,,98177
@@ -1308,17 +1308,17 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID211KLX34,Klip Xtreme KCK-251S DeskMate - Juego de teclado y ratón - USB - español,nan,KCK-251S,8.2,20.0,nan,Physical,46882,,8399,,10418
 ,ID211KLX35,Klip Xtreme - Keyboard - Wired - Spanish - USB - Black - Multimedia keys,nan,KKM-252S,8.4,20.0,nan,Physical,117253,,8900,12490,10845
 ,ID211KLX36,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz - All black - Ergonomic,nan,KBK-530S,26.7,20.0,nan,Physical,210911,,27689,,31154
-,ID211KLX38,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz / Bluetooth 5.0 - Gray / Black - Dual Connection / Touchpad,nan,KCK-550S,16.5,20.0,nan,Physical,259359,,17898,,22695
+,ID211KLX38,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz / Bluetooth 5.0 - Gray / Black - Dual Connection / Touchpad,nan,KCK-550S,16.5,20.0,nan,Physical,259359,,17898,,22706
 ,ID211KLX43,Klip Xtreme - Keyboard and Touchpad - Spanish - Wireless - Bluetooth 5.0 - Black - KCK-650S-BK,nan,KCK-650S-BK,27.8,20.0,nan,Physical,277786,,21562,,24711
 ,ID211KLX46,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Dual Dongle,nan,KMW-550,9.7,20.0,nan,Physical,387476,,12970,,13158
 ,ID211KLX47,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth - Wireless - Trimode,nan,KMW-775,11.4,20.0,nan,Physical,387480,,15970,,16124
 ,ID222XTK03,Xtech - Keyboard - Wired - Spanish - USB - Black - XTK-160S,nan,XTK-160S,4.3,20.0,nan,Physical,45887,,4645,,6046
 ,ID222XTK33,Xtech - Keyboard - Wired - Spanish - USB - Black - Standard XTK-092S,nan,XTK-092S,4.1,20.0,nan,Physical,81786,,4566,,5733
 ,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,95981,95990,107169
-,ID223LOG87,Logitech MX Keys Mini - eclado - Inalámbrico - Español - Bluetooth 5.0 / Bluetooth / 2.4 GHz / USB-C - Ergonomic Design - Rosa,nan,920-010478,100.2,1.0,nan,Physical,132329,,82353,82990,99816
+,ID223LOG87,Logitech MX Keys Mini - eclado - Inalámbrico - Español - Bluetooth 5.0 / Bluetooth / 2.4 GHz / USB-C - Ergonomic Design - Rosa,nan,920-010478,100.2,1.0,nan,Physical,132329,,82353,82990,96205
 ,ID223XTK03,Xtech CHEVALIER XTK-505S - Teclado - retroiluminación - USB - QWERTY - español,nan,XTK-505S,9.6,8.0,nan,Physical,131737,,10776,,13109
 ,ID223XTK06,"Xtech - Keyboard, mouse and mouse pad - Wired - Spanish - USB - Black - Gaming XTK-535S",nan,XTK-535S,16.5,20.0,nan,Physical,153550,,18594,,21786
-,ID224LOG02,Logitech Master Series MX Mechanical Mini - Teclado - retroiluminación - inalámbrico - Bluetooth LE - QWERTY - español - interruptor: táctil silencioso - grafito,nan,920-010846,147.7,2.0,nan,Physical,147315,,149472,,185871
+,ID224LOG02,Logitech Master Series MX Mechanical Mini - Teclado - retroiluminación - inalámbrico - Bluetooth LE - QWERTY - español - interruptor: táctil silencioso - grafito,nan,920-010846,147.7,2.0,nan,Physical,147315,,149472,,185921
 ,ID224LOG32,"Logitech G PRO X TKL LIGHTSPEED Wireless Gaming Keyboard, Tactile Switches (GX Brown), Magenta - Teclado - retroiluminación - inalámbrico - 2.4 GHz, Bluetooth - QWERTY - EE. UU. - interruptor: GX Brown Tactile - magenta",nan,920-012154,169.0,3.0,nan,Physical,220222,,179900,,236449
 ,ID224LOG36,Logitech - Keyboard - Español - Graphite - 920-012278,nan,920-012278,59.3,2.0,nan,Physical,229814,,60920,,69832
 ,ID224LOG37,Logitech - Keyboard - Wave keys - Spanish - Off white,nan,920-012279,55.1,20.0,nan,Physical,231032,,57890,,65494
@@ -1331,7 +1331,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID224LOG55,Logitech G515 TKL - Keyboard - White  ,nan,920-012869,97.4,11.0,nan,Physical,263772,,86900,87990,107424
 ,ID224LOG56,Logitech PRO X TKL RAPID - Keyboard - Wired - USB-C - Black,nan,920-013131,169.0,2.0,nan,Physical,268566,,168990,,196130
 ,ID224LOG61,Logitech - Keypad - POWERPLAY 2 MousePad Wireless,nan,947-000002,131.0,3.0,nan,Physical,,,,,
-,ID224LOG65,Logitech - MK250 Compact Bluetooth Wireless Combo - Spanish - Graphite,nan,920-013513,25.7,20.0,nan,Physical,358403,,23712,33990,28820
+,ID224LOG65,Logitech - MK250 Compact Bluetooth Wireless Combo - Spanish - Graphite,nan,920-013513,25.7,20.0,nan,Physical,358403,,23712,33990,29761
 ,ID225XTK22,"Xtech - MM Keyboard wls, mouse wls, mouse pad XL and USB 3.0 Hub Kit - Spanish - Wireless / Wired - 2.4 GHz / USB - Black - XTK-320S",nan,XTK-320S,23.2,20.0,nan,Physical,358936,,20990,,21599
 ,ID225XTK24,Xtech - Keyboard and mouse set - Wired - Spanish - USB - Black - Multimedia XTK-302S,nan,XTK-302S,7.6,20.0,nan,Physical,388114,,10616,,10803
 ,ID225XTK25,Xtech - Keyboard and mouse set - Wireless - Spanish - USB - Black - 2.4 GHz - Black XTK-311S,nan,XTK-311S,10.7,20.0,nan,Physical,384507,,14990,,16112
@@ -1442,8 +1442,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM000TPL42,TP-Link Tapo C125 - Network surveillance camera,nan,TAPO C125,31.5,20.0,nan,Physical,,,,,
 ,MM001DEL30,Dell Pro Plus - EB525 - Wireless headset system - Para Computer / Para Cellular phone / Para Portable electronics / Para Professional audio / Para TV / Para Virtual reality system / Para Phone - Wireless - In-ear,nan,520-BBNF,185.2,20.0,nan,Physical,362716,,206714,,214977
 ,MM001JAB16,"Jabra Evolve2 85 MS Stereo - Auricular - tamaño completo - Bluetooth - inalámbrico, cableado - cancelación de sonido activo - conector de 3,5 mm - aislamiento de ruido - negro - Certificado para Equipos de Microsoft",nan,28599-999-899,399.8,16.0,nan,Physical,111389,,417088,,440013
-,MM001LOG01,Logitech Zone - 300 - Headphones - Wireless - 981-001411,nan,981-001411,55.2,8.0,nan,Physical,245323,,61990,,73328
-,MM001LOG02,Logitech Zone - 300 - Headphones - Wireless - 981-001416,nan,981-001416,48.8,4.0,nan,Physical,245322,,49856,,73220
+,MM001LOG01,Logitech Zone - 300 - Headphones - Wireless - 981-001411,nan,981-001411,55.2,8.0,nan,Physical,245323,,61990,,68927
+,MM001LOG02,Logitech Zone - 300 - Headphones - Wireless - 981-001416,nan,981-001416,48.8,4.0,nan,Physical,245322,,49856,,73239
 ,MM001RZR29,"Razer BlackShark V2 X - Auricular - 7.1 canales - tamaño completo - cableado - conector de 3,5 mm - aislamiento de ruido - blanco - certificado Discord",nan,RZ04-03240700-R3U1,37.8,20.0,nan,Physical,134297,,34990,37990,42030
 ,MM001RZR69,Razer Barracuda - Headset - Para Game console - Wireless - Multi-platform Gaming and Mob,nan,RZ04-03790100-R3U1,136.5,4.0,nan,Physical,153694,,137890,,141125
 ,MM001RZR83,Razer BlackShark - Headset - Wireless - V2 Pro (2023) - NASA Packaging,nan,RZ04-04530100-R3U1,161.9,20.0,nan,Physical,219616,,152980,,179567
@@ -1504,19 +1504,19 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM111KLX95,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC Gray,nan,KTE-755GR,14.8,20.0,nan,Physical,308595,,14980,,16349
 ,MM111KLX96,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC White,nan,KTE-755WH,14.8,20.0,nan,Physical,308594,,14980,,16349
 ,MM111KLX97,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 26Hrs Hybdrid ANC Black,nan,KTE-850BK,22.6,20.0,nan,Physical,358375,,21980,,25775
-,MM112KLX02,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Black,nan,KTE-015BK,13.0,20.0,nan,Physical,358382,,16990,16990,17312
+,MM112KLX02,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Black,nan,KTE-015BK,13.0,20.0,nan,Physical,358382,,14990,16990,16538
 ,MM112KLX03,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX White,nan,KTE-015WH,13.5,18.0,nan,Physical,358381,,12970,,14357
-,MM112KLX04,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Gray,nan,KTE-015GR,12.9,20.0,nan,Physical,358376,,16980,16990,17084
+,MM112KLX04,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Gray,nan,KTE-015GR,12.9,20.0,nan,Physical,358376,,14990,16990,16665
 ,MM112KLX05,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Purple,nan,KTE-015PR,13.0,20.0,nan,Physical,358383,,16990,16990,17312
 ,MM112KLX06,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 15Hrs Display Black,nan,KTE-800BK,17.6,20.0,nan,Physical,384651,,22980,,23692
 ,MM120LEN16,Lenovo - Headphones - Wired - VoIP Headset (Teams),nan,4XD1M45626,52.1,20.0,nan,Physical,264238,,60848,,64628
-,MM121LOG30,"Logitech G PRO X 2 LIGHTSPEED Wireless Gaming Headset, Magenta - Auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - conector de 3,5 mm - aislamiento de ruido",nan,981-001274,280.9,1.0,nan,Physical,220007,,216990,216990,297183
+,MM121LOG30,"Logitech G PRO X 2 LIGHTSPEED Wireless Gaming Headset, Magenta - Auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - conector de 3,5 mm - aislamiento de ruido",nan,981-001274,280.9,1.0,nan,Physical,220007,,216990,216990,297269
 ,MM121LOG31,Logitech Astro A50 X - Headset - Wireless - Black,nan,939-002126,385.6,8.0,nan,Physical,245554,,369900,,414562
 ,MM121LOG32,Logitech Astro A50 X- Headset - Wireless - White,nan,939-002132,378.0,3.0,nan,Physical,245555,,368990,369990,436213
 ,MM121LOG36,Logitech ASTRO Gaming - A50 - Headset - Para Computer / Para Game console - Wireless - Blanco,nan,939-002229,303.5,5.0,nan,Physical,268572,,394990,,394990
 ,MM121LOG37,Logitech - G522 - Headphones - Wireless - with LightSync RGB,nan,981-001543,265.2,20.0,nan,Physical,355810,,154990,159990,172852
-,MM121LOG41,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Graphite Limited,nan,981-001504,149.1,20.0,nan,Physical,383165,,175990,209990,219363
-,MM121LOG42,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Off-White Limited,nan,981-001596,149.0,20.0,nan,Physical,384947,,175990,,224784
+,MM121LOG41,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Graphite Limited,nan,981-001504,149.1,20.0,nan,Physical,383165,,175990,209990,219155
+,MM121LOG42,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Off-White Limited,nan,981-001596,149.0,20.0,nan,Physical,384947,,175990,,223568
 ,MM121LOG43,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Rose Limited,nan,981-001597,149.0,20.0,nan,Physical,384946,,175990,,223568
 ,MM220KLX86,Klip Xtreme KSB-001 - Barra de sonido - Negro - 100W - 2.0ch,nan,KSB-001,43.6,18.0,nan,Physical,,,,,
 ,MM221KLX04,Klip Xtreme KSB-00A - Sound bar - Black - 2.0ch 60W BT HDMI-OPT-RCA,nan,KSB-00A,39.5,20.0,nan,Physical,,,,,
@@ -1541,8 +1541,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM221XTK29,Xtech XTH-614 - Headphones with microphone - Para Portable electronics / Para Cellular phone / Para Home audio - Wireless - Aurax,nan,XTH-614,7.0,3.0,nan,Physical,255698,,7867,,8963
 ,MM221XTK40,"Xtech - Webcam - color - 1280 x 720 - 720p - audio - USB 2.0 - MJPEG, H.264, YUY2",nan,XTW-720,11.1,20.0,nan,Physical,,,,,
 ,MM221XTK41,Xtech - XTW-480 - Web camera - USB - 640x480P - Micrófono Integrado,nan,XTW-480,9.3,20.0,nan,Physical,,,,,
-,MM221XTK53,Xtech XTH-D701ST-YL - True wireless earphones - Wireless - earbuds Disney Stich Yellow,nan,XTH-D701ST-YL,12.7,20.0,nan,Physical,277937,,7147,,7568
-,MM221XTK54,Xtech XTH-D701ST-BL - True wireless earphones - Wireless - earbuds Disney Stich Blue,nan,XTH-D701ST-BL,12.6,20.0,nan,Physical,277934,,6887,,6938
+,MM221XTK53,Xtech XTH-D701ST-YL - True wireless earphones - Wireless - earbuds Disney Stich Yellow,nan,XTH-D701ST-YL,12.7,20.0,nan,Physical,277937,,7147,,11709
+,MM221XTK54,Xtech XTH-D701ST-BL - True wireless earphones - Wireless - earbuds Disney Stich Blue,nan,XTH-D701ST-BL,12.6,20.0,nan,Physical,277934,,6887,,11289
 ,MM221XTK98,Xtech - Microphone - Home audio / Conference - Bi-directional - Wireless - w/receiver XTS-690,nan,XTS-690,21.2,20.0,nan,Physical,,,,,
 ,MM222XTK02,Xtech XTS-605 - Speakers - Black - Allman BT 3W TWS IPX7,nan,XTS-605,7.9,20.0,nan,Physical,,,,,
 ,MM222XTK94,Xtech XTS-617 - Speakers - Black - w/ lights BT 5W TWS,nan,XTS-617,12.8,20.0,nan,Physical,,,,,
@@ -1596,8 +1596,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM907JBL07,JBL TUNE Flex - 2 - Auriculares internos - Inalámbrico - Turquesa,nan,JBLTFLEX2TQEAM,66.9,20.0,nan,Physical,361354,,73990,,80274
 ,MM907JBL21,JBL Wave - Beam 2 - Auriculares inalámbricos - Inalámbrico - Azul,nan,JBLWBEAM2BLU,44.5,20.0,nan,Physical,280141,,49256,,52114
 ,MM907JBL56,JBL Tune Flex 2 Ghost Headphones TWS Purple,nan,JBLTFLEX2GMAEAM,70.6,20.0,nan,Physical,280710,,74372,,79032
-,MM907JBL58,JBL TUNE - Headphones - 520 C Non-TWS White,nan,JBLT520CWHTAM,25.6,20.0,nan,Physical,280205,,22490,29990,27364
-,MM907JBL59,JBL TUNE - Headphones - 520 C Non-TWS Blue,nan,JBLT520CBLUAM,26.3,20.0,nan,Physical,280206,,24990,29990,29263
+,MM907JBL58,JBL TUNE - Headphones - 520 C Non-TWS White,nan,JBLT520CWHTAM,25.6,20.0,nan,Physical,280205,,22490,29990,27627
+,MM907JBL59,JBL TUNE - Headphones - 520 C Non-TWS Blue,nan,JBLT520CBLUAM,26.3,20.0,nan,Physical,280206,,22990,,28388
 ,MM907JBL60,JBL TUNE - Headphones - 520 C Non-TWS Purple,nan,JBLT520CPURAM,26.3,20.0,nan,Physical,280709,,22990,29990,29310
 ,MM914JBL02,JBL - Altavoz - Rojo - Flip 7 Altavoz Bluetooth,nan,JBLFLIP7REDAM,101.0,20.0,nan,Physical,,,,,
 ,MM914JBL11,JBL - Headphones - Tour One M3 TWS Ch,nan,JBLTOURONEM3LTTAM,232.7,20.0,nan,Physical,362806,,189990,229990,245242
@@ -1607,7 +1607,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM915JBL46,JBL - TWS - Headphones - Open Ear - Blue,nan,JBLSENSELITEBLUAM,74.8,20.0,nan,Physical,,,,,
 ,MM915JBL47,Jbl Tws Sense Lite Purple- tecn JBL Opensound,nan,JBLSENSELITEPURAM,74.8,20.0,nan,Physical,367067,,74990,,96441
 ,MM915JBL48,Jbl Tws Sense Lite White tecn- JBL Opensoun,nan,JBLSENSELITEWHTAM,78.7,20.0,nan,Physical,358934,,73710,129990,98960
-,MM930JBL65,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLBLUAM,97.8,20.0,nan,Physical,366542,,101420,129990,120115
+,MM930JBL65,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLBLUAM,97.8,20.0,nan,Physical,366542,,101420,129990,120656
 ,MM930JBL66,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLCOPAM,146.0,20.0,nan,Physical,381899,,124990,,127256
 ,MM931JBL57,JBL - Headphones - Headphones Endurance Pace Blac,nan,JBLENDUPACEBLKLAM,50.1,20.0,nan,Physical,360458,,54990,,60389
 ,MM931JBL59,JBL - Headphones - Endurance Pace Purple,nan,JBLENDUPACEPURAM,48.7,20.0,nan,Physical,361975,,56900,,62870
@@ -1616,11 +1616,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM931JBL63,JBL - Headphones - Headphones Endurance Run 3 Bl,nan,JBLENDURRUN3BTBLAM,26.3,20.0,nan,Physical,362511,,27990,,33439
 ,MM931JBL65,JBL - Headphones - Endurance Run 3 Blue,nan,JBLENDURRUN3BTBAM,26.0,20.0,nan,Physical,367057,,27038,,36479
 ,MM931JBL66,JBL - Headphones - Endurance Run 3 Purple,nan,JBLENDURRUN3BTPAM,27.4,20.0,nan,Physical,362513,,29936,39990,35471
-,MM931JBL75,JBL - Headphones - Tour One M3 Smart Tx -Mocha,nan,JBLTOM3AVILTTAM,488.0,20.0,nan,Physical,367891,,249990,,504449
-,MM931JBL81,JBL - Headphones - Endurance Run 3 White,nan,JBLENDURRUN3BTWAM,26.2,20.0,nan,Physical,362512,,29936,,36954
+,MM931JBL75,JBL - Headphones - Tour One M3 Smart Tx -Mocha,nan,JBLTOM3AVILTTAM,488.0,20.0,nan,Physical,367891,,249990,399990,492843
+,MM931JBL81,JBL - Headphones - Endurance Run 3 White,nan,JBLENDURRUN3BTWAM,26.2,20.0,nan,Physical,362512,,29936,,37460
 ,MT000HIK03,"Hikvision DS-MP1301 - LCD monitor - 7"" - 800 x 480 - TFT - IP54",nan,DS-MP1301,182.4,20.0,nan,Physical,,,,,
 ,MT001ASU81,"ASUS VA27AQ - LED-backlit LCD monitor - 27"" - HDMI / VGA - Black",nan,VA27AQ,126.7,20.0,nan,Physical,,,,,
-,MT001HIK31,"Hikvision DS-D5032F3-1V0S - 32"" - 1920 x 1080 - FHD - VA - VGA / HDMI - Black - with Speaker",nan,DS-D5032F3-1V0S,156.5,20.0,nan,Physical,255621,,158709,,170559
+,MT001HIK31,"Hikvision DS-D5032F3-1V0S - 32"" - 1920 x 1080 - FHD - VA - VGA / HDMI - Black - with Speaker",nan,DS-D5032F3-1V0S,156.5,20.0,nan,Physical,255621,,158709,,170625
 ,MT001HIK36,"Hikvision - E-LED - 23.8"" - 1920 x 1080 - VA - HDMI / VGA",nan,DS-D5024F2-AV2,83.5,20.0,nan,Physical,,,,,
 ,MT001HIK51,"Hikvision - 43"" - D-LED HD",nan,DS-D5043F3-1V0S,246.3,20.0,nan,Physical,,,,,
 ,MT001HIK52,"Hikvision - 27"" - 1920 x 1080 - 8 bit LVDS FHD",nan,DS-D5027F3-2P2,117.6,2.0,nan,Physical,,,,,
@@ -1673,7 +1673,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,NT104ASU28,"ASUS - Notebook - 14"" - Intel Core 5 210H / 2.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics",nan,90NX0811-M087C0,762.4,20.0,nan,Physical,385683,,842900,,872777
 ,NT104ASU29,"ASUS - Notebook - 15.6"" - Intel Core 5 210H / 2.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics",nan,90NX0801-M07VY0,743.6,20.0,nan,Physical,385685,,822641,,857043
 ,NT104ASU30,"ASUS - Notebook - 14"" - Intel Core 5 210H / 2.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics - P1403CVA-S61407X",nan,90NX0871-M01LL0,697.9,20.0,nan,Physical,385794,,889504,,918162
-,NT104ASU34,"ASUS Asus W7606WM-RJ101X - Notebook - 16"" - AMD Ryzen 9 HX 370 / 5.10 GHz - 32 GB - DDR5 SDRAM - 1 TB - NVIDIA GeForce RTX 5060 L - Windows 11 Pro",nan,90NB15L1-M006L0,2275.39,2.0,nan,Physical,385147,,2475758,,2549242
+,NT104ASU34,"ASUS Asus W7606WM-RJ101X - Notebook - 16"" - AMD Ryzen 9 HX 370 / 5.10 GHz - 32 GB - DDR5 SDRAM - 1 TB - NVIDIA GeForce RTX 5060 L - Windows 11 Pro",nan,90NB15L1-M006L0,2275.39,2.0,nan,Physical,385147,,2475758,,2551668
 ,NW000ACT04,"ScreenBeam 960 Wireless Display Receiver with ScreenBeam CMS - Alargador de vídeo/audio inalámbrico - receptor - 802.11a, 802.11b/g/n, Wi-Fi 5",nan,SBWD960A-INT,424.6,3.0,nan,Physical,,,,,
 ,NW000ACT12,ScreenBeam USB Pro Switch - Interruptor para compartir periférico USB - 4 x SuperSpeed USB 3.0 - sobremesa,nan,SBUSBSW4,86.5,1.0,nan,Physical,,,,,
 ,NW000FLK11,FOLKSAFE FS-HDP4100C - Amplificador de vídeo - hasta 440 m,nan,FS-HDP4100C,1.7,20.0,nan,Physical,,,,,
@@ -1733,9 +1733,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,NW002TPL36,"TP-Link MC110CS - Conversor de soportes de fibra - 100Mb LAN - 10Base-T, 100Base-FX, 100Base-TX - RJ-45 / modo sencillo SC - hasta 20 km - 1310 nm",nan,MC110CS,17.5,2.0,nan,Physical,,,,,
 ,NW002TPL43,"Mercusys MW306R V1 - Enrutador inalámbrico conmutador de 3 puertos - Wi-Fi - 2,4 GHz",nan,MW306R,8.8,4.0,nan,Physical,369346,,12990,,12990
 ,NW003HIK02,Hikvision Pro Series DS-3E1326P-EI - Conmutador - inteligente - 24 x 10/100 (24 PoE) + 2 x combo Gigabit - sobremesa - PoE (370 W),nan,DS-3E1326P-EI,178.4,20.0,nan,Physical,384151,,192825,,205071
-,NW003HIK05,Hikvision Pro Series DS-3T0506HP-E/HS - Conmutador - sin gestionar - 3 x 10/100/1000 (PoE) + 1 x 10/100/1000 (Hi-PoE) + 2 x Gigabit SFP - sobremesa - High PoE / PoE - DC power,nan,DS-3T0506HP-E/HS,74.9,20.0,nan,Physical,384185,,80718,,87248
+,NW003HIK05,Hikvision Pro Series DS-3T0506HP-E/HS - Conmutador - sin gestionar - 3 x 10/100/1000 (PoE) + 1 x 10/100/1000 (Hi-PoE) + 2 x Gigabit SFP - sobremesa - High PoE / PoE - DC power,nan,DS-3T0506HP-E/HS,74.9,20.0,nan,Physical,384185,,80718,,87590
 ,NW003HIK17,Hikvision Smart Managed Series DS-3E1526P-SI - Conmutador - inteligente - 24 x 10/100/1000 (PoE+) + 2 x Gigabit SFP - sobremesa - PoE+ (370 W),nan,DS-3E1526P-SI,331.2,6.0,nan,Physical,384941,,290623,,317784
-,NW003HIK50,Hikvision - Switch - Ethernet - 4 - Fast Ethernet - Smart POE,nan,DS-3E1105P-EI/M,24.8,20.0,nan,Physical,380642,,26383,,28139
+,NW003HIK50,Hikvision - Switch - Ethernet - 4 - Fast Ethernet - Smart POE,nan,DS-3E1105P-EI/M,24.8,20.0,nan,Physical,380642,,26383,,28314
 ,NW003HIK51,Hikvision - Switch - Ethernet - 8 - Fast Ethernet - Smart POE,nan,DS-3E1309P-EI/M,41.4,20.0,nan,Physical,380637,,44610,,48125
 ,NW003HIK81,Hikvision - Wireless access point - Wi-Fi 6 1800M Celling,nan,DS-3WAP622G-SI(O-STD),97.6,20.0,nan,Physical,,,,,
 ,NW003HIK97,Hikvision - Switch - Fast Ethernet - 4,nan,DS-3E1106HP-EI,39.8,9.0,nan,Physical,380652,,42885,,45710
@@ -1805,7 +1805,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,PC001ASU46,ASUS - Desktop - Intel Core Ultra 5 225 / 3.3 GHz - DDR5 SDRAM - 512 GB Hard Drive Capacity - Intel UHD Graphics - Windows 11 Pro,nan,90PF05E1-M001H0,853.42,20.0,nan,Physical,,,,,
 ,PC001ASU62,ASUS - Intel Core i5 13420H / 2.1 GHz - DDR5 SDRAM - 512GB  Hard Drive Capacity - NVIDIA GeForce RTX 5060TI,nan,90PF05H2-M01HH0,1242.2,8.0,nan,Physical,,,,,
 ,PC001ASU67,ASUS 90PT03W6-M023C0 - All-in-one - Intel core 5 210H / 4.8 GHz - DDR5 SDRAM - 512 GB HDD - Intel Graphics - Windows 11 Pro,nan,90PT03W6-M023C0,1021.0,8.0,nan,Physical,369202,,1088564,,1128685
-,PC001ASU78,ASUS - Intel Core 5 210H / 2.5 GHz - DDR5 SDRAM - Integrated graphics - P470VAT-BPF190X,nan,90PT03W6-M02X40,1038.2,20.0,nan,Physical,384487,,1101407,,1146047
+,PC001ASU78,ASUS - Intel Core 5 210H / 2.5 GHz - DDR5 SDRAM - Integrated graphics - P470VAT-BPF190X,nan,90PT03W6-M02X40,1038.2,20.0,nan,Physical,384487,,1101407,,1142875
 ,PC001ASU79,ASUS - Intel Core 7 240H / 2.5 GHz - DDR5 SDRAM - Integrated graphics,nan,90PT03X6-M06CM0,926.7,3.0,nan,Physical,384493,,988034,,1010375
 ,PC001ASU80,ASUS - Intel Core 7 240H / 2.5 GHz - DDR5 SDRAM - Integrated graphics - P470VAT-BPF189X,nan,90PT03W6-M02X30,1150.8,20.0,nan,Physical,383164,,1226940,,1278539
 ,PC001ASU81,ASUS - Intel Core 5 210H / 2.5 GHz - DDR5 SDRAM - 512 GB Hard Drive Capacity - Integrated graphics,nan,90PF05A1-M00MU0,602.71,7.0,nan,Physical,,,,,
@@ -1840,12 +1840,12 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,PT101BRO47,Brother PT-E310BTVP - Label printer - Bluetooth / USB-C,nan,PT-E310BTVP,161.1,3.0,nan,Physical,,,,,
 ,PT314HEW07,"HP Smart Tank 530 - Impresora multifunción - color - chorro de tinta - Legal (216 x 356 mm) (original) - A4/Legal (material) - hasta 10 ppm (copiando) - hasta 11 ppm (impresión) - 100 hojas - USB 2.0, Wi-Fi(n), Bluetooth",nan,4SB24A#AKH,159.3,20.0,nan,Physical,,,,,
 ,PT314HEW38,HP - Workgroup printer - OfficeJet Pro 9730 A3,nan,537P5C#AKH,281.8,20.0,nan,Physical,,,,,
-,PT335EPS82,"Epson FX 890II - Impresora - monocromo - matriz de puntos - Rollo (21,6 cm), 254 mm (anchura), 257 x 363 mm - 240 x 144 ppp - 9 espiga - hasta 738 caracteres/segundo - paralelo, USB 2.0",nan,C11CF37201,408.7,4.0,nan,Physical,44284,,444475,,471819
+,PT335EPS82,"Epson FX 890II - Impresora - monocromo - matriz de puntos - Rollo (21,6 cm), 254 mm (anchura), 257 x 363 mm - 240 x 144 ppp - 9 espiga - hasta 738 caracteres/segundo - paralelo, USB 2.0",nan,C11CF37201,408.7,4.0,nan,Physical,44284,,444475,,471619
 ,PT336EPS34,Epson M2170 - Workgroup printer - Scanner / Printer / Copier - Ink-jet - Monocromática - USB 2.0 / Wi-Fi - A4 (210 x 297 mm) / A6 (105 x 148 mm) - Automatic Duplexing,nan,C11CH43303,353.3,3.0,nan,Physical,82666,,380438,,408114
 ,PT336EPS36,Epson M3180 - Workgroup printer - Printer / Copier / Scanner / Fax,nan,C11CG93303,420.1,1.0,nan,Physical,72602,,449900,,475045
 ,PT336EPS96,Epson SureColor T3170M - Personal printer - hasta 2.14 ppm (color) - Wi-Fi,nan,C11CJ36201,1636.3,1.0,nan,Physical,113193,,1678070,,1791420
-,PT337EPS01,Epson L6490 - Copier / Printer / Scanner / Fax - Ink-jet - Color - USB 3.0,nan,C11CJ88303,370.01,5.0,nan,Physical,133356,,409900,,440562
-,PT337EPS04,Epson T3170 - capacidad: 1 roll - Wi-Fi,nan,C11CF11201,676.2,3.0,nan,Physical,58765,,639990,,755623
+,PT337EPS01,Epson L6490 - Copier / Printer / Scanner / Fax - Ink-jet - Color - USB 3.0,nan,C11CJ88303,370.01,5.0,nan,Physical,133356,,409900,,440669
+,PT337EPS04,Epson T3170 - capacidad: 1 roll - Wi-Fi,nan,C11CF11201,676.2,3.0,nan,Physical,58765,,639990,,755780
 ,PT337EPS10,Epson T5470M - Plotter - Wi-Fi,nan,C11CH65201,4101.4,1.0,nan,Physical,93950,,4416758,,4825049
 ,PT337EPS55,Epson EcoTank L3560 - Printer / Scanner - Ink-jet - Color - USB / Wi-Fi - A4 (210 x 297 mm) ,nan,C11CK58302,204.2,20.0,nan,Physical,223197,,178900,229990,220858
 ,PT338EPS31,Epson WorkForce - EM-C800,nan,C11CK19301,562.2,2.0,nan,Physical,280296,,617455,,664793
@@ -1866,11 +1866,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,UI150FOR49,Forza - UPS - Línea interactiva - 600 vatios - 1000 VA - CA 220 V,nan,HT-1002LCD-C,84.6,19.0,nan,Physical,79309,,91990,,97720
 ,UI150FOR55,Forza NT Series - UPS - Line interactive - 250 Watt - 500 VA - AC 220 V - 4-Italian RJ11,nan,NT-512C,36.0,20.0,nan,Physical,180112,,34690,,40258
 ,UI231FOR24,Forza SL Series - UPS - Line interactive - 360 Watt - 600 VA - AC 220 V - 4-Italian 1-IEC RJ45,nan,SL-612UL-C,62.5,20.0,nan,Physical,180084,,65590,,70697
-,UI331FOR24,Forza SL Series - UPS - Line interactive - 600 Watt - 1000 VA - AC 220 V - 4-Italian 1-IEC RJ45,nan,SL-1022UL-C,111.7,20.0,nan,Physical,180081,,113990,,128631
-,UI714APC48,APC Easy UPS SRV SRV10KI - UPS - CA 230 V - 10 kW - 10000 VA - USB,nan,SRV10KI,4914.8,9.0,nan,Physical,66118,,2500822,,3581799
+,UI331FOR24,Forza SL Series - UPS - Line interactive - 600 Watt - 1000 VA - AC 220 V - 4-Italian 1-IEC RJ45,nan,SL-1022UL-C,111.7,20.0,nan,Physical,180081,,113990,,128508
+,UI714APC48,APC Easy UPS SRV SRV10KI - UPS - CA 230 V - 10 kW - 10000 VA - USB,nan,SRV10KI,4914.8,9.0,nan,Physical,66118,,2500822,,3583808
 ,UI714APC93,APC - External battery pack - 1000 VA - SRV1KIL,nan,SRV1KIL,533.7,1.0,nan,Physical,79313,,594080,,625120
 ,UI714APC96,APC SRV3KIL - External battery pack - On-line - 230 Watt - 3000 VA - AC 220/240 V - Run Time (Up To): 4 hours,nan,SRV3KIL,1049.3,1.0,nan,Physical,79314,,1156900,,1156900
-,UI716APC28,"APC Smart-UPS SMT 2200VA LCD RM with SmartConnect - UPS (montaje en bastidor) - CA 230 V - 1980 vatios - 2200 VA - RS-232, USB - conectores de salida: 9 - 2U - para P/N: AR3003, AR3003SP, AR3006, AR3006SP, AR3103, AR3103SP, AR3106, AR3106SP, AR9300SP",nan,SMT2200RMI2UC,1026.7,1.0,nan,Physical,115593,,1109788,,1204846
+,UI716APC28,"APC Smart-UPS SMT 2200VA LCD RM with SmartConnect - UPS (montaje en bastidor) - CA 230 V - 1980 vatios - 2200 VA - RS-232, USB - conectores de salida: 9 - 2U - para P/N: AR3003, AR3003SP, AR3006, AR3006SP, AR3103, AR3103SP, AR3106, AR3106SP, AR9300SP",nan,SMT2200RMI2UC,1026.7,1.0,nan,Physical,115593,,1109788,,1205256
 ,UI716APC54,"APC Smart-UPS 1000VA LCD RM - UPS (montaje en bastidor) - CA 220/230/240 V - 700 vatios - 1000 VA - Ethernet 10/100, RS-232, USB - conectores de salida: 4 - 2U - negro - con APC SmartConnect - para P/N: AR4018SPX432, AR4024SP, AR4024SPX429, AR4024SPX431, ",nan,SMT1000RMI2UC,649.5,2.0,nan,Physical,116345,,702074,,759406
 ,UI717APC12,APC Easy UPS 700VA - UPS,nan,BVG700I-MSX,51.7,14.0,nan,Physical,361104,,55900,55900,57395
 ,UI717APC14,APC Easy UPS 1600VA - UPS,nan,BVG1600I-MSX,100.6,20.0,nan,Physical,363510,,110114,,113554
@@ -1884,7 +1884,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,UI774FOR58,Forza - UPS Rack Mounting Kit - Rail 2U 1100mm 80kg - Altura máxima 89mm  - Ancho máximo 444mm  - Profundidad máxima 1130mm - gris,nan,FDC-RK1102U,55.6,14.0,nan,Physical,,,,,
 ,UI774FOR59,Forza - UPS -  FDC-RK0903U - Rack Mounting Kit  - Profundidad ajustable de 533 a 904mm - Estructura de acero capaz de soportar unidades de protección eléctrica equipos - Para ispositivos de red de hasta 444mm de ancho y peso de 120KG como má­ximo,nan,FDC-RK0903U,69.0,4.0,nan,Physical,,,,,
 ,UI774FOR65,Forza - Bypass switch - On-line - 100-240 V - for 6K/10K UPS,nan,FDC-BS10KMR,247.9,4.0,nan,Physical,,,,,
-,UI775FOR31,Forza Zeus2 Series 3-Phase Tower - UPS - On-line - 10000 Watt - AC 360/380/400/415 V - PF1 LCD Tower 20-Bat,nan,FTP-310K,3109.9,4.0,nan,Physical,383954,,3256376,,3555621
+,UI775FOR31,Forza Zeus2 Series 3-Phase Tower - UPS - On-line - 10000 Watt - AC 360/380/400/415 V - PF1 LCD Tower 20-Bat,nan,FTP-310K,3109.9,4.0,nan,Physical,383954,,3256376,,3558896
 ,UI775FOR33,Forza Zeus2 Series 3-Phase Tower - UPS - On-line - 20000 Watt - AC 380/400/415 V - PF1 LCD Tower 380/400V 32-Bat,nan,FTP-320K,3516.2,2.0,nan,Physical,381970,,3770288,,4089406
 ,UI775FOR35,Forza Zeus2 Series 3-Phase Tower - UPS - On-line - 40000 Watt - AC 380/400/415 V - PF1 LCD Tower 380/400V 64-Bat,nan,FTP-340K,10647.0,2.0,nan,Physical,378380,,4193660,,11801293
 ,UI775FOR49,Forza - UPS - Line interactive - 900 Watt - 1000 VA - AC 220 V - Rack IEC,nan,FDC-1022R-I,289.0,20.0,nan,Physical,368615,,317990,,344102
@@ -1894,7 +1894,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,UR100FOR51,Forza - Voltage Protector - AC 220 V - 2 Tomas de Corriente - Chile Italian Out,nan,FVP-1202B-C,11.0,20.0,nan,Physical,,,,,
 ,UR100FOR70,Forza FVP-6630B Zion - Wall mountable - AC 220 V - 1 Tomas de Corriente - 6600 VA - TB 30A 880J 48K BTU Timer WH,nan,FVP-6630B,6.6,14.0,nan,Physical,,,,,
 ,VC407ASU46,ASUS - TUF-RX6900XT-O16G-GAMING - PCI Express 4.0 - AMD - AMD Radeon RX 6900 XT - GDDR6 SDRAM - HDMI / DisplayPort,nan,TUF-RX9060XT-O16G-GAMING,625.7,4.0,nan,Physical,277374,,681900,,708423
-,VC407ASU58,ASUS - DUAL-RX9060XT-16G - PCI Express 5.0 - AMD - AMD Radeon RX 9060 XT - DisplayPort / HDMI,nan,DUAL-RX9060XT-16G,569.4,20.0,nan,Physical,355722,569990,499900,,566742
+,VC407ASU58,ASUS - DUAL-RX9060XT-16G - PCI Express 5.0 - AMD - AMD Radeon RX 9060 XT - DisplayPort / HDMI,nan,DUAL-RX9060XT-16G,569.4,20.0,nan,Physical,355722,569990,499900,,565353
 ,VC407ASU62,ASUS - PCI Express 5.0 - NVIDIA - NVIDIA GeForce RTX 5060 Ti,nan,90YV0NQ0-M0AA00,650.7,20.0,nan,Physical,,,,,
 ,VC420PNY78,PNY - VCNRTX5000ADA-PB - PCI Express 4.0 x16 - NVIDIA - NVIDIA RTX A5000 ADA - GDDR6 SDRAM - DisplayPort,nan,VCNRTX5000ADA-PB,4889.5,1.0,nan,Physical,252478,,5879777,,5879777
 ,VC420PNY82,PNY - VCNRTXA400ATX-PB - PCI Express 4.0 - NVIDIA - NVIDIA RTX A4000 - GDDR5 SDRAM - Mini DisplayPort,nan,VCNRTXA400ATX-PB,201.9,17.0,nan,Physical,257534,,212186,,216692
