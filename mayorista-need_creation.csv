@@ -183,8 +183,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2590168,M.2 NGFF SSD to SATA Adapter Converter,Startech.Com,SAT32M225,21.38,2,Dispositivos de Almacenamiento,Hardware de montaje de Discos,,,,,
 ,2634114,Acoplador Keystone Cat6 RJ45,Startech.Com,C6KEYCOUPLWH,8.2,6,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,2634459,Cable 3m Cat6 Snagless Naranja,Startech.Com,N6PATC3MOR,5.54,6,Cables,Cables y Adaptadores Fibra Optica,,,,,
-,2637678,TINTA PFI-107 MAGENTA 130ML,Canon,6707B001,66.88,8,Suministros y Medios,Suministros Inyección de Tinta,259962,,76304,,81475
-,2637679,TINTA PFI-107 AMARILLO 130ML,Canon,6708B001,66.88,5,Suministros y Medios,Suministros Inyección de Tinta,259966,,76304,,81911
+,2637678,TINTA PFI-107 MAGENTA 130ML,Canon,6707B001,66.88,8,Suministros y Medios,Suministros Inyección de Tinta,259962,,76304,,81807
+,2637679,TINTA PFI-107 AMARILLO 130ML,Canon,6708B001,66.88,5,Suministros y Medios,Suministros Inyección de Tinta,259966,,76304,,82285
 ,2637704,TINTA C13S020563 NEGRO 480Â PAG,Epson,C13S020563,55.64,1,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,278491,,62780,,66034
 ,2637706,TINTA C13S020565 MAGENTA 430Â PAG,Epson,C13S020565,19.68,8,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,278492,,23466,,25425
 ,2637707,TINTA C13S020566 AMARILLO 430Â PAG,Epson,C13S020566,19.68,14,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,280122,,23466,,25425
@@ -470,10 +470,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4306810,HP x1000 WIRED,Hp,4QM14AA,4.58,2204,Dispositivos de Entrada,Mouse,64348,,5990,,5990
 ,4308743,APC Smart-UPS 2200VA LCD RM 2U 230V with,Apc,SMT2200RMI2UC,1283.5,4,Protección Eléctrica y Racks,UPS,115593,,1114737,,1226459
 ,4329047,Maintenance Cassette MC-31,Canon,1156C005,69.6,6,Impresoras,Upgrades de Impresora,,,,,
-,4329049,TINTA PFI-120 NEGRO - 130 ML,Canon,2885C001,69.58,22,Suministros y Medios,Suministros Inyección de Tinta,260163,,80990,,84777
-,4329050,TINTA PFI-120 CIAN - 130 ML,Canon,2886C001,68.98,11,Suministros y Medios,Suministros Inyección de Tinta,260161,,79990,,85808
-,4329051,TINTA PFI-120 MAGENTA - 130 ML,Canon,2887C001,68.63,24,Suministros y Medios,Suministros Inyección de Tinta,260158,,79990,,83833
-,4329052,TINTA PFI-120 AMARILLO - 130 ML,Canon,2888C001,68.6,36,Suministros y Medios,Suministros Inyección de Tinta,260159,,79990,,83886
+,4329049,TINTA PFI-120 NEGRO - 130 ML,Canon,2885C001,69.58,22,Suministros y Medios,Suministros Inyección de Tinta,260163,,80990,,85049
+,4329050,TINTA PFI-120 CIAN - 130 ML,Canon,2886C001,68.98,11,Suministros y Medios,Suministros Inyección de Tinta,260161,,79990,,86057
+,4329051,TINTA PFI-120 MAGENTA - 130 ML,Canon,2887C001,68.63,24,Suministros y Medios,Suministros Inyección de Tinta,260158,,79990,,84105
+,4329052,TINTA PFI-120 AMARILLO - 130 ML,Canon,2888C001,68.6,36,Suministros y Medios,Suministros Inyección de Tinta,260159,,79990,,84157
 ,4329054,TINTA PFI-320 NEGRO - 300 ML,Canon,2890C001,115.77,17,Suministros y Medios,Suministros Inyección de Tinta,259800,,129990,,143654
 ,4329065,TINTA PFI-320 CIAN - 300 ML,Canon,2891C001,115.48,6,Suministros y Medios,Suministros Inyección de Tinta,259803,,129990,,143487
 ,4329066,TINTA PFI-320 MAGENTA - 300 ML,Canon,2892C001,115.97,13,Suministros y Medios,Suministros Inyección de Tinta,259805,,129990,134990,144175
@@ -688,7 +688,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5569239,USED PAVILION X360 I3-1125G4 8GB256GB 14,Hp,4E8P3LA,505.57,1,Computadores Servidores y Notebooks,Notebooks,119109,,,,
 ,5569241,USED 15-CW1501LA R3-3300U 8GB1TB W10H,Hp,4N8Y8LA,545.67,1,Computadores Servidores y Notebooks,Notebooks,122540,,,,
 ,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,118.97,120,Suministros y Medios,Suministros Láser,260106,,114944,,139720
-,5576934,HP 151X Black Original LaserJet Toner IS,Hp,W1510X,242.09,86,Suministros y Medios,Suministros Láser,260341,,252990,,275175
+,5576934,HP 151X Black Original LaserJet Toner IS,Hp,W1510X,242.09,86,Suministros y Medios,Suministros Láser,260341,,252990,,275819
 ,5577005,HP 154A Black Org LaserJet Tank Rld Kit,Hp,W1540A,10.84,17,Suministros y Medios,Suministros Láser,260326,,11260,,12972
 ,5577006,HP 154X HY Blk Org LaserJetTank Rld Kit,Hp,W1540X,16.24,194,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18014,,20589
 ,5582999,Toner HP Samsung CLT-M603L Magenta,Hp,SV402A,119.34,7,Suministros y Medios,Suministros Láser,270629,,105350,,127083
@@ -728,7 +728,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5666055,Network Management Card for Easy UPS,Apc,AP9544,130.1,13,Protección Eléctrica y Racks,Administración UPS,,,,,
 ,5666466,LA TC15 KIT LA TC15 KIT FOR LATAM CHARG,Zebra,KT-TC15-ROLATAM,526.08,7,Componentes de Sistema,Opciones BTO para Notebooks,,,,,
 ,5668074,MD120U4 USB4/THUNDERBOLT 4 PORTABLE DOCK,Kensington,K32850WW,154.07,1,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
-,5686037,PFI 050 C,Canon,5699C001,54.03,26,Suministros y Medios,Suministros para Plotters,259979,,59346,,68705
+,5686037,PFI 050 C,Canon,5699C001,54.03,26,Suministros y Medios,Suministros para Plotters,259979,,59346,64990,66504
 ,5690099,HPE DL36X G10+ 2SFF SAS/SATA TM CBL KIT,Hewlett Packard Enterprise,P55883-B21,152.1,5,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5690925,6in Hook and Loop Cable Ties 50pk,Startech.Com,B506I-HOOK-LOOP-TIES,12.83,5,Cables,Administración para Cables,,,,,
 ,5694677,QUICKSCAN I QD2220 KIT LINEAR IMAGER (KI,Datalogic,QD2220-BKK1S,46.9,48,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
@@ -794,10 +794,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5909613,Ink Tank 130 ml PFI-121 Magenta,Canon,6267C001,67.02,5,Suministros y Medios,Suministros para Plotters,260348,,73612,,76301
 ,5909614,TINTA 55ML PFI-031 MAGENTA,Canon,6265C001,37.44,5,Suministros y Medios,Suministros para Plotters,260925,,41125,,52701
 ,5909615,Tanque de tinta 300 ml PFI-321 Magenta,Canon,6269C001,114.08,6,Suministros y Medios,Suministros para Plotters,278672,,130990,,130990
-,5915075,Tinta HP DesignJet Plotter 300-ml Negro,Hp,498N8A,156.55,32,Suministros y Medios,Suministros Inyección de Tinta,261554,,173669,,195885
-,5915079,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,156.25,52,Suministros y Medios,Suministros Inyección de Tinta,259861,,173343,,192215
-,5915080,Tinta HP DesignJet Plotter 300-ml Magent,Hp,676M7A,156.35,37,Suministros y Medios,Suministros Inyección de Tinta,262912,,173452,,195468
-,5915081,Tinta HP DesignJet Plotter 300-ml Amaril,Hp,676M8A,156.43,109,Suministros y Medios,Suministros Inyección de Tinta,259860,,173549,,196469
+,5915075,Tinta HP DesignJet Plotter 300-ml Negro,Hp,498N8A,156.55,32,Suministros y Medios,Suministros Inyección de Tinta,261554,,173669,,194295
+,5915079,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,156.25,52,Suministros y Medios,Suministros Inyección de Tinta,259861,,173343,179990,191275
+,5915080,Tinta HP DesignJet Plotter 300-ml Magent,Hp,676M7A,156.35,37,Suministros y Medios,Suministros Inyección de Tinta,262912,,173452,179990,194061
+,5915081,Tinta HP DesignJet Plotter 300-ml Amaril,Hp,676M8A,156.43,109,Suministros y Medios,Suministros Inyección de Tinta,259860,,173549,,194821
 ,5916016,PROFIT ERGO TB450 TRACKBALL F PROFIT ERG,Kensington,K72194WW,29.45,1,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",237677,39990,33800,,37482
 ,5916062,BLACK SCAN HH490-R1 USB KIT W STAND 1D P,Honeywell,HH490-R1-1USB-1-N,107.88,10,Cámaras y Escáners,Escáners Manuales,,,,,
 ,5916676,AC POWER SUPPLY 12V 30W 1 35 X 3 5MM VI,Honeywell,3011-8248-001,51.27,7,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
@@ -942,7 +942,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6584214,Bolsa de Tintas Epson 13K Extra Alta EM-,Epson,T13K400,274.55,2,Suministros y Medios,Suministros Inyección de Tinta,280450,,304900,,316191
 ,6584653,VOYAGER 4320 UC V4320-M C USB-A WW,Hp,77Y98AA,145.09,5,Dispositivos Audio/Video,Combos Micrófono+Cintillo/audífono p/PCs,134238,,136961,209990,155207
 ,6585367,MOCHILA PRELUDE PRO 15.6IN,Hp,4Z513AA,17.8,3,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
-,6592677,PRIME-RX9070XT-O16G,Asus,90YV0L71-M0AA00,712.12,170,Componentes de Sistema,Tarjetas Gráficas nVidia,276343,,769950,856990,837713
+,6592677,PRIME-RX9070XT-O16G,Asus,90YV0L71-M0AA00,712.12,170,Componentes de Sistema,Tarjetas Gráficas nVidia,276343,,769950,856990,836504
 ,6594812,SOPORTE DE PARED PARA BARRA BARCO CLICKS,Barco,R8788066K,75.88,2,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
 ,6604484,ULTRACHROME HD YELLOW CART 350 ML P6000/,Epson,T54X400,129.53,1,Suministros y Medios,Suministros Inyección de Tinta,392173,,160500,,160500
 ,6604485,ULTRACHROME HD CYAN CART 350 ML P6000/70,Epson,T54X200,129.53,1,Suministros y Medios,Suministros Inyección de Tinta,373653,,,,
@@ -1065,7 +1065,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6801388,MONITOR BENQ PD2706U 27IN IPS/ANTI REFEL,Benq,9H.LLJLB.VBA,460.82,4,Pantallas,Monitores LCD/LED,364181,,500689,,545244
 ,6801389,MONITOR BENQ 31.5IN PD3205U 4K,Benq,9H.LKGLA.RBA,632.48,10,Pantallas,Monitores LCD/LED,,,,,
 ,6801814,Laser projector WXGA (1280x800) 4500,Viewsonic,LS630W-2,639.95,51,Dispositivos Audio/Video,Proyectores LCD,,,,,
-,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,414.82,22,Pantallas,Monitores LCD/LED,366630,,470432,,489655
+,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,414.82,22,Pantallas,Monitores LCD/LED,366630,,470432,,489128
 ,6804992,USED PROBOOK 440 G10 I7-1355U 14 32GB 51,Hp,A1NB5LS,1239.0,1,Computadores Servidores y Notebooks,Notebooks,271775,,,,
 ,6805742,NB TP T14 AMD G4 R5_PRO 32G 512G 11P,Lenovo,21K4S4EU00,1275.8,59,Computadores Servidores y Notebooks,Notebooks,391088,,1439900,,1454445
 ,6805744,ThinkStation P2 TWR I914900K 32G x1 W11P,Lenovo,30FS000NLM,2458.2,4,Computadores Servidores y Notebooks,Workstations,,,,,
