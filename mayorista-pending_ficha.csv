@@ -1,3 +1,3 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
 56494,5505998,"Scanner ADS4900W Wifi, Velocidad 60 ppm",Brother,ADS4900W,628.77,11,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,False,0,0,0,Escaner ADS4900W Dúplex,0,0,True,{},,,,,,
-56495,6765567,MAXIFY GX6110,Canon,6882C004,358.82,59,Impresoras,Multifuncionales Inkjet,ok,False,0,0,0,Multifuncional Tinta Continua Maxify GX-6110 WiFi / Ethernet ,0,0,True,{},,375189,,389990,439990,418075
+56495,6765567,MAXIFY GX6110,Canon,6882C004,358.82,59,Impresoras,Multifuncionales Inkjet,ok,False,0,0,0,Multifuncional Tinta Continua Maxify GX-6110 WiFi / Ethernet ,0,0,True,{},,375189,,389990,439990,417116
