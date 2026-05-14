@@ -896,7 +896,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,EC004HIK22,Hikvision - Face recognition terminal - Value Series 2,nan,DS-K1T321MFWX,59.7,20.0,nan,Physical,,,,,
 ,EC004HIK23,Hikvision - Tag reader,nan,DS-TRD900-7(O-NEU),129.0,2.0,nan,Physical,,,,,
 ,EC004HIK57,Hikvision DS-K7PEB - Caja de apertura de puerta de emergencia - verde,nan,DS-K7PEB/GREEN,8.7,20.0,nan,Physical,,,,,
-,EC004HIK74,Hikvision - Bracket for DS-K4H255S - is used for fixed lock,nan,DS-K4H255-LZ,6.5,10.0,nan,Physical,,,,,
 ,EC004HIK90,Hikvision DS-K7P07 - Push button - Exit & Emergency,nan,DS-K7P07,9.7,20.0,nan,Physical,,,,,
 ,EC004HIK93,Hikvision - Door station - Video intercom system - Facial Recognition,nan,DS-KD9633-WBE6,555.4,4.0,nan,Physical,,,,,
 ,EC005HIK13,Hikvision - Video intercom system - Indoor / Outdoor - DS-KH6350-WTE1,nan,DS-KH6350-WTE1,77.6,20.0,nan,Physical,,,,,
@@ -1569,7 +1568,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM722LOG23,"Logitech BRIO 300 - Webcam - color - 2 MP - 1920 x 1080 - 720p, 1080p - audio - USB-C",nan,960-001446,59.7,16.0,nan,Physical,,,,,
 ,MM722LOG29,Logitech BRIO - Pro 705 - Webcam - 960-001529,nan,960-001529,164.4,19.0,nan,Physical,,,,,
 ,MM722LOG30,Logitech BRIO - Webcam - 960-001723,nan,960-001723,149.5,9.0,nan,Physical,,,,,
-,MM726EPS22,Epson PowerLite L210W - Proyector 3LCD - 4500 lúmenes (blanco) - 4500 lúmenes (color) - IEE 802.11a/b/g/n/ac inalámbrico/LAN/Miracast - con 3 años de Epson Road Service Program,nan,V11HA70020,1798.2,5.0,nan,Physical,272195,,1915019,,2064368
 ,MM726EPS23,Epson PowerLite L210SF - Proyector 3LCD - 4000 lúmenes (blanco) - 4000 lúmenes (color) - Full HD (1920 x 1080) - 1080p - IEE 802.11a/b/g/n/ac inalámbrico/LAN/Miracast - con 3 años de Epson Road Service Program,nan,V11HA75020,1924.4,1.0,nan,Physical,271090,,,,
 ,MM726EPS38,Epson EpiqVision - Mini EF-21 - FHD - 1920 x 1080 - Portátil - blanco,nan,V11HB35020,442.25,3.0,nan,Physical,272828,,929990,,929990
 ,MM726EPS39,Epson EpiqVision - Portable - Mini EF-21R - FHD - 1920x1080 - Pink,nan,V11HB35220,442.25,1.0,nan,Physical,276525,,,,
