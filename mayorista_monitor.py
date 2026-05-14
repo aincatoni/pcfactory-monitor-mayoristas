@@ -435,13 +435,13 @@ def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     sin_stock = total - len(has_stock)
 
     # Filtro 2: No elegibles (BAD BOX / OPEN BOX / CAJA DAÑADA / CAJA ABIERTA /
-    # CAJA DETERIORADA / REF / REFURBISHED en el nombre)
+    # CAJA DETERIORADA / REF / REFURBISHED / USADO / USED en el nombre)
     import unicodedata
     def _normalize(s):
         return unicodedata.normalize('NFD', str(s)).encode('ascii', 'ignore').decode('ascii').upper()
     desc_norm = has_stock[COL_DESCRIPTION].apply(_normalize)
     is_no_eligible = desc_norm.str.contains(
-        r'BAD BOX|OPEN BOX|CAJA DANADA|CAJA ABIERTA|CAJA DETERIORADA|\bREF\b|REFURBISHED',
+        r'BAD BOX|OPEN BOX|CAJA DANADA|CAJA ABIERTA|CAJA DETERIORADA|\bREF\b|REFURBISHED|\bUSADO\b|\bUSED\b',
         na=False,
     )
     no_eligible_df = has_stock[is_no_eligible].copy()
@@ -1139,7 +1139,7 @@ def generate_html_dashboard(
         </tr>'''
 
 
-    # Tabla No Elegibles (BAD BOX / OPEN BOX / CAJA / REF)
+    # Tabla No Elegibles (BAD BOX / OPEN BOX / CAJA / REF / USADO / USED)
     no_eligible_rows = ""
     if not no_eligible_df.empty:
         for i, (_, row) in enumerate(no_eligible_df.iterrows(), 1):
@@ -1711,7 +1711,7 @@ def generate_html_dashboard(
             </div>
             <div class="stat-card clickable" onclick="switchTab('noelegible')">
                 <div class="stat-value red">{no_eligible}</div>
-                <div class="stat-label">No Elegibles (Open/Bad Box / Caja / Refurbished)</div>
+                <div class="stat-label">No Elegibles (Open/Bad Box / Caja / Refurbished / Usado)</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('mayorista')">
                 <div class="stat-value dark-green">{len(already_mayorista)}</div>
@@ -2114,13 +2114,13 @@ def generate_html_dashboard(
             </div>
         </div>
 
-        <!-- Tabla: No Elegibles (BAD BOX / OPEN BOX / CAJA / REF) -->
+        <!-- Tabla: No Elegibles (BAD BOX / OPEN BOX / CAJA / REF / USADO / USED) -->
         <div id="tab-noelegible" class="tab-content">
             <div class="table-section">
                 <div class="table-header">
                     <div>
                         <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Productos No Elegibles</h2>
-                        <span class="table-badge badge-red">{no_eligible} productos BAD BOX / OPEN BOX / CAJA DAÑADA / CAJA ABIERTA / CAJA DETERIORADA / REF / REFURBISHED</span>
+                        <span class="table-badge badge-red">{no_eligible} productos BAD BOX / OPEN BOX / CAJA DAÑADA / CAJA ABIERTA / CAJA DETERIORADA / REF / REFURBISHED / USADO / USED</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-noelegible', this.value)">
                 </div>
@@ -2333,6 +2333,8 @@ def generate_html_dashboard(
                         <span class="criteria-tag tag-red">NOMBRE contiene "CAJA DETERIORADA"</span>
                         <span class="criteria-tag tag-red">NOMBRE contiene "REF"</span>
                         <span class="criteria-tag tag-red">NOMBRE contiene "REFURBISHED"</span>
+                        <span class="criteria-tag tag-red">NOMBRE contiene "USADO"</span>
+                        <span class="criteria-tag tag-red">NOMBRE contiene "USED"</span>
                     </div>
                 </div>
 
@@ -2622,7 +2624,7 @@ def main():
     xlsx_stats = apply_xlsx_filters(df)
     print(f"    Total: {xlsx_stats['total']}")
     print(f"    Sin stock Ingram: {xlsx_stats['sin_stock_ingram']}")
-    print(f"    No elegibles (BAD/OPEN BOX/CAJA DAÑADA/CAJA ABIERTA/CAJA DETERIORADA/REF/REFURBISHED): {xlsx_stats['no_eligible']}")
+    print(f"    No elegibles (BAD/OPEN BOX/CAJA DAÑADA/CAJA ABIERTA/CAJA DETERIORADA/REF/REFURBISHED/USADO/USED): {xlsx_stats['no_eligible']}")
     print(f"    Con PCF ID: {len(xlsx_stats['has_pcf_id'])}")
     print(f"    Sin PCF ID: {len(xlsx_stats['no_pcf_id'])}")
 
