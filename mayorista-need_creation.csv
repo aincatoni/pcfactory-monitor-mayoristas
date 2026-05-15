@@ -281,7 +281,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.11,11,Suministros y Medios,Suministros Inyección de Tinta,259845,,202850,,223357
 ,3153355,Cable USB-C 1m USB 2.0 USB C,Startech.Com,USB2CC1M,9.95,1,Cables,Cables y Adaptadores USB,,,,,
 ,3237739,Soporte de Dos Monitores,Startech.Com,ARMDUAL30,338.08,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
-,3237741,Adaptador Red Gigabit USB-C Plateado,Startech.Com,US1GC30A,35.3,5,Cables,Cables y Adaptadores USB,,,,,
+,3237741,Adaptador Red Gigabit USB-C Plateado,Startech.Com,US1GC30A,35.3,5,Cables,Cables y Adaptadores USB,392711,,41718,,41718
 ,3254166,CARTUCHO DE TINTA HP981Y PAGEWIDE NEGRO,Hp,L0R16A,169.35,2,Suministros y Medios,Suministros Inyección de Tinta,260515,,196990,,205175
 ,3271322,TINTA C33S020636 CIAN,Epson,C33S020636,132.77,1,Suministros y Medios,Suministros Fax/Fotocopiadoras,270610,,,,
 ,3271323,TINTA C33S020637 MAGENTA,Epson,C33S020637,132.77,2,Suministros y Medios,Suministros Fax/Fotocopiadoras,273246,,,,
@@ -479,7 +479,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4417719,Dock Station USB-C 4K HDMI VGA GbE,Startech.Com,DKT30CHVCM,62.04,3,Cables,Cables y Adaptadores USB,,,,,
 ,4444307,DRUM GPR-53,Canon,8528B004,155.61,7,Suministros y Medios,Suministros Láser,,,,,
 ,4465492,TONER HP SAMSUNG MLT-D111L NEGRO,Hp,SU802A,63.16,45,Suministros y Medios,Suministros Láser,267370,,74037,,78803
-,4465494,TONER HP SAMSUNG MLT-D116L NEGRO,Hp,SU832A,83.37,4,Suministros y Medios,Suministros Láser,264732,,101536,,101536
+,4465494,TONER HP SAMSUNG MLT-D116L NEGRO,Hp,SU832A,83.37,4,Suministros y Medios,Suministros Láser,264732,,101536,,103118
 ,4478080,HDMI over CAT6 Extender Kit CAT5/6,Startech.Com,ST121HD20V,167.31,4,Dispositivos de Entrada/Salida,Conmutadores y Extensores Serial/Paralel,,,,,
 ,4478872,TONER HP SAMSUNG MLT-D104S NEGRO,Hp,SU750A,65.81,5,Suministros y Medios,Suministros Láser,265979,,75049,,78829
 ,4489570,Thrustmaster T3PA 3 Pedals add-on,Thrustmaster,4060056,165.62,106,Video Juegos y Consolas,Volantes,,,,,
