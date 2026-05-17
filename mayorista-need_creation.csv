@@ -774,9 +774,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5937830,PC42E-T USB Ethernet 200dpi Black 1 and,Honeywell,PC42E-TB02200,170.0,25,Impresoras,Impresoras de Etiquetas Código de Barras,,,,,
 ,5941501,CABLE DE EXTENSION DE 3M,Startech.Com,H1415-10F-POWER-CORD,22.49,17,Cables,Cables de Poder,,,,,
 ,5943025,HPE ML110 GEN11 LFF PCIE CBL KIT,Hewlett Packard Enterprise,P53484-B21,77.6,1,Computadores Servidores y Notebooks,Componentes Blade,,,,,
-,5978369,ECOTANK L3560 MULTIFUNCTIONAL PRINTER,Epson,C11CK58302,207.85,96,Impresoras,Impresoras de Inyección de Tinta,223197,,178900,229990,223356
+,5978369,ECOTANK L3560 MULTIFUNCTIONAL PRINTER,Epson,C11CK58302,207.85,96,Impresoras,Impresoras de Inyección de Tinta,223197,,178900,229990,222294
 ,5984204,POLY TC8 TOUCH CONTROLLER US,Poly,875J0AA#ABA,573.72,1,Comunicaciones,Equipamiento de Conferencia Web,,,,,
-,5999349,PIXMA G4170 BLACK WIFI USB ADF FAX,Canon,5807C005,177.46,40,Impresoras,Impresoras de Inyección de Tinta,224614,,189990,239990,211448
+,5999349,PIXMA G4170 BLACK WIFI USB ADF FAX,Canon,5807C005,177.46,40,Impresoras,Impresoras de Inyección de Tinta,224614,,179990,239990,207516
 ,6076847,2.5IN 2.4TB 10K SAS 12GB HS 512E HDD V2,Lenovo,4XB7A83970,904.0,1,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),249456,,1015900,,1023945
 ,6077317,HPE NW ION AP (RW) AP22D,Hewlett Packard Enterprise,S1U76A,113.53,4,Dispositivos de Red,Access Points (AP) inalámbricos,386767,,,,
 ,6086945,LA XNO C6083 LA XNO C6083R 2MP IR BULLET,Hanwha Techwin,XNO-C6083R,736.82,2,Seguridad Física,Cámaras de Vigilancia en Red,375270,,823988,,823988
@@ -785,7 +785,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6119109,GPR 58 DRUM UNIT MAGENTA,Canon,2188C003,242.13,7,Suministros y Medios,Suministros Láser,,,,,
 ,6119110,GPR 58 DRUM UNIT YELLOW,Canon,2189C003,234.2,2,Suministros y Medios,Suministros Láser,,,,,
 ,6119453,High Performance Fan 16G,Dell,121-BBBS,31.17,1,Componentes de Sistema,Componentes de Gabinete,,,,,
-,6121030,L3560 RETAIL,Epson,C11CK58302,199.54,25,Impresoras,Impresoras de Inyección de Tinta,223197,,178900,229990,223356
+,6121030,L3560 RETAIL,Epson,C11CK58302,199.54,25,Impresoras,Impresoras de Inyección de Tinta,223197,,178900,229990,222294
 ,6123818,T01C100 NEGRO WF-C579R 10.000 PAG,Epson,T01C100,36.3,25,Suministros y Medios,Suministros Inyección de Tinta,278792,,47890,,47890
 ,6123822,T01D100 NEGRO WF-C579R 50.000 PAG,Epson,T01D100,172.13,2,Suministros y Medios,Suministros Inyección de Tinta,259970,,148900,,189760
 ,6123823,T01D200 CYAN WF-C579R 20.000 PAG,Epson,T01D200,133.8,4,Suministros y Medios,Suministros Inyección de Tinta,259967,,148754,,155433
