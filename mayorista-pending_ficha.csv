@@ -1,3 +1,6 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56494,5505998,"Scanner ADS4900W Wifi, Velocidad 60 ppm",Brother,ADS4900W,628.77,11,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,False,0,0,0,Escaner ADS4900W Dúplex,0,0,True,{},,,,,,
-56495,6765567,MAXIFY GX6110,Canon,6882C004,358.82,59,Impresoras,Multifuncionales Inkjet,ok,False,0,0,0,Multifuncional Tinta Continua Maxify GX-6110 WiFi / Ethernet ,0,0,True,{},,375189,,389990,439990,417116
+56633,4967016,"Catalyst 9200L 48-port PoE+, 4 x 1G, Ne",Cisco,C9200L-48P-4G-E,4841.3,7,Dispositivos de Red,Switches Estaqueables,ok,False,0,0,0,Switch Cisco Catalyst C9200L 48 Puertos PoE 10/100/1000 Mbps,0,0,True,{},,381042,,,,
+56632,4958281,POWER INJECTOR 802.3AT FOR AIRONET ACCES,Cisco,AIR-PWRINJ6=,137.04,3,Dispositivos de Red,Cables y Componentes inalámbricos,ok,False,0,0,0,Cisco PoE Inyector para Access Point,0,0,True,{},,,,,,
+56634,5189738,1000BASE SX SFP TRANSCEIVER MODULE MMF 8,Cisco,GLC-SX-MMD=,405.55,10,Dispositivos de Red,Transceivers,ok,False,0,0,0,Cisco 1000BASE-SX SFP Módulo Transceptor,0,0,True,{},,,,,,
+56635,5500687,MERAKI MR44 WIFI 6 INDOOR,Cisco,MR44-HW,1286.9,6,Dispositivos de Red,Access Points (AP) inalámbricos,ok,False,0,0,0,Access Point Cisco Meraki MR44 Wifi 6 Interior PoE 5GHz,0,0,True,{},,385644,,1441262,,1443581
+56636,5558960,1000BASE LX LH SFP TRANSCEIVER MODULE MM,Cisco,GLC-LH-SMD=,807.05,3,Dispositivos de Red,Transceivers,ok,False,0,0,0,Cisco GLC-LH-SMD SFP Transceptor Óptico,0,0,True,{},,,,,,
