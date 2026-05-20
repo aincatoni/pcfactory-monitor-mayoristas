@@ -41,6 +41,10 @@ INTCOMEX_SHEET_GID = "420799319"         # pestaña: Intcomex
 PCF_CATALOG_GID  = "98635074"            # pestaña: Catalogo PCF
 GOOGLE_SHEET_CSV_URL = f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}/export?format=csv&gid={GOOGLE_SHEET_GID}"
 SEGUIMIENTO_SHEET_ID = "15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM"
+SEGUIMIENTO_SHEET_NAMES = {
+    "ingram": "Ingram",
+    "intcomex": "Intcomex",
+}
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6_1) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
@@ -295,14 +299,18 @@ def enrich_with_solotodo(products: List[Dict], session: requests.Session, max_wo
                 result = {"solotodo_id": None, "pcf_price": None, "min_price": None, "mode_price": None, "mean_price": None}
             products[idx].update(result)
 
-def read_seguimiento_sheet(sheet_id: str = SEGUIMIENTO_SHEET_ID) -> Dict[str, str]:
+def read_seguimiento_sheet(
+    sheet_id: str = SEGUIMIENTO_SHEET_ID,
+    mayorista: str = "ingram",
+) -> Dict[str, str]:
     """
     Lee el sheet de seguimiento de Fichas/OC y devuelve un dict de lookup.
     Claves: str(pcf_id) y str(ingram_sku) → valor: status (OK, Pendiente, etc.)
     """
     import io
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid=0"
-    print(f"[*] Descargando sheet de seguimiento Fichas/OC...")
+    worksheet_name = SEGUIMIENTO_SHEET_NAMES.get(mayorista, SEGUIMIENTO_SHEET_NAMES["ingram"])
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={worksheet_name}"
+    print(f"[*] Descargando sheet de seguimiento Fichas/OC ({worksheet_name})...")
     try:
         session = requests.Session()
         session.headers.update({"User-Agent": UA})
@@ -2642,7 +2650,7 @@ def main():
         print(f"    Sin PCF ID (actualizado): {len(xlsx_stats['no_pcf_id'])}")
 
     # 4. Cargar seguimiento (necesario antes de clasificar para separar pending_ficha)
-    seguimiento = read_seguimiento_sheet()
+    seguimiento = read_seguimiento_sheet(mayorista=args.mayorista)
 
     # 5. Consultar API
     classification = {
