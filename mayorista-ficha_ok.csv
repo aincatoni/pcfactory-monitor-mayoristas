@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56636,5558960,1000BASE LX LH SFP TRANSCEIVER MODULE MM,Cisco,GLC-LH-SMD=,807.05,3,Dispositivos de Red,Transceivers,ok,False,0,0,0,Cisco GLC-LH-SMD SFP Transceptor Óptico,0,0,True,{},,,,,,
+56525,6709514,SanDisk Ultra Dual Drive Go USB Type-C 6,Sandisk,SDCZ530-064G-G46,21.38,100,Dispositivos de Almacenamiento,Pendrives y Unidades Flash Portables,ok,False,0,0,0,Pendrive Extreme Fit 64 GB USB-C,0,0,True,{},,382083,,24485,,26387
