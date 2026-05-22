@@ -10,9 +10,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100016773,Zebra Handheld TC15 Kit for LATAM TC15,nan,KT-TC15-ROLATAM,483.5,20.0,nan,Physical,,,,,
 ,100016892,ZEBRA ZD411 Direct Thermal Printer  203 dpi USB USB Host Modular Connectivity Slot BTLE5 US Cord Swiss Font EZPL ,nan,ZD4A022-D01M00EZ,249.5,20.0,nan,Physical,,,,,
 ,100017171,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,58.6,3.0,nan,Physical,155925,,78236,,80893
-,100017173,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - blanco",nan,939-001986,209.0,3.0,nan,Physical,157245,,223003,,254810
+,100017173,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - blanco",nan,939-001986,209.0,3.0,nan,Physical,157245,,223003,,261264
 ,100017174,"ASTRO Gaming A30 - Auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - blanco",nan,939-001993,170.0,3.0,nan,Physical,157247,,203620,,221061
-,100017175,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - marino",nan,939-002000,209.0,2.0,nan,Physical,157248,,233702,,258726
+,100017175,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - marino",nan,939-002000,209.0,2.0,nan,Physical,157248,,233702,,266978
 ,100017225,Kingston Fury - DDR4 SDRAM - Unbuffered - Non-ECC,nan,KF432C16BB/32GB,288.5,20.0,nan,Physical,,,,,
 ,100017407,Zebra - Portable Barcode Printer - Direct thermal - Wi-Fi / Bluetooth 4.0 - ZQ630 Plus English fonts Dual,nan,ZQ63-AUWAL04-00,1432.3,8.0,nan,Physical,,,,,
 ,100017420,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",nan,ET45CA-101D1B0-A6,819.5,5.0,nan,Physical,,,,,
@@ -198,7 +198,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AB005XTK38,Xtech - Video adapter - 19 pin HDMI Type A - VGA - Black - XTC-384,nan,XTC-384,2.9,20.0,nan,Physical,,,,,
 ,AB005XTK39,Xtech - DisplayPort cable - DisplayPort male - 1.83 m - All black - XTC-379,nan,XTC-379,4.8,20.0,nan,Physical,,,,,
 ,AB005XTK40,Xtech - Video / audio cable - HDMI - Male to Male Swivel 6f XTC-607,nan,XTC-607,3.9,20.0,nan,Physical,,,,,
-,AB126GEN01,"StarTech.com Adaptador USB a Ethernet, USB 3.0 a Ethernet Gigabit de 10/100/1000 para Portátiles, con Cable Incorporado de 30cm, Adaptador USB a RJ45, Adaptador NIC, Adaptador de Red USB (USB31000S2) - Adaptador de red - USB 3.2 Gen 1 - Gigabit Ethernet ",nan,USB31000S2,49.8,20.0,nan,Physical,382317,,32500,,58310
+,AB126GEN01,"StarTech.com Adaptador USB a Ethernet, USB 3.0 a Ethernet Gigabit de 10/100/1000 para Portátiles, con Cable Incorporado de 30cm, Adaptador USB a RJ45, Adaptador NIC, Adaptador de Red USB (USB31000S2) - Adaptador de red - USB 3.2 Gen 1 - Gigabit Ethernet ",nan,USB31000S2,49.8,20.0,nan,Physical,382317,,32500,,55424
 ,AB126GEN28,StarTech.com - Lock Cable - Cerradura de cable para comput,nan,LTLOCKKEY,25.9,20.0,nan,Physical,,,,,
 ,AB141BLK65,Belkin Ultra High Speed - Cable HDMI - HDMI macho a HDMI macho - 2 m - blindado de dos capas - negro,nan,AV10175DS2M-BLK,38.7,6.0,nan,Physical,,,,,
 ,AB230GEN13,ADAPT AMER/NACIONAL 3P SOLO HP,nan,ADAPT HP,0.0,20.0,nan,Physical,,,,,
@@ -578,7 +578,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AS102EPS82,Epson - C9345 - Ink maintenance box,nan,C12C934591,19.6,14.0,nan,Physical,,,,,
 ,AS103EPS09,"Epson T664 - Paquete de 3 - 70 ml - amarillo, cián, magenta - original - recarga de tinta - para Epson L120, L1300, L310, L380, L395, L495; EcoTank L310, L575",nan,T664520-3P,20.2,20.0,nan,Physical,259808,,19990,26990,25354
 ,AS103EPS11,Epson - T544120-2 - Ink tank - Black - Pack  L1110 L3110 L3,nan,T544120-2P,14.0,20.0,nan,Physical,259693,,15590,19990,18523
-,AS103EPS12,Epson - T544520-3 - Ink tank - Color - Pack L1110 L3110 L31,nan,T544520-3P,20.2,20.0,nan,Physical,259904,,21714,,26323
+,AS103EPS12,Epson - T544520-3 - Ink tank - Color - Pack L1110 L3110 L31,nan,T544520-3P,20.2,20.0,nan,Physical,259904,,21714,30990,26906
 ,AS103EPS33,"Epson SJIC41P-MK - Negro mate - original - blíster con alarmas de RF/acústica - cartucho de tinta - para ColorWorks CW-C4000, CW-C4000E (MK)",nan,C13T52L520,25.3,3.0,nan,Physical,360978,,28004,,29684
 ,AS151BRO91,"Brother LC402M - Magenta - original - cartucho de tinta - para Brother MFC-J5340DW, MFC-J6540DW, MFC-J6940DW",nan,LC402MS,15.8,20.0,nan,Physical,259708,,17526,,20403
 ,AS155BRO01,Tambor Brother DR1060 Negro,nan,DR1060,35.5,20.0,nan,Physical,,,,,
@@ -605,8 +605,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AT001BRO03,"Brother TN650 - Alto rendimiento - negro - original - cartucho de tóner - para Brother DCP-8080, DCP-8085, HL-5340, HL-5350, HL-5370, MFC-8480, MFC-8680, MFC-8890",nan,TN650,97.4,6.0,nan,Physical,259753,,104604,,115296
 ,AT100BRO11,"Brother TN315M - Alto rendimiento - magenta - original - cartucho de tóner - para Brother HL-4150CDN, HL-4570CDW, HL-4570CDWT, MFC-9460CDN, MFC-9560CDW, MFC-9970CDW",nan,TN315M,96.5,4.0,nan,Physical,259709,,103596,,112674
 ,AT100BRO12,"Brother TN315Y - Alto rendimiento - amarillo - original - cartucho de tóner - para Brother HL-4150CDN, HL-4570CDW, HL-4570CDWT, MFC-9460CDN, MFC-9560CDW, MFC-9970CDW",nan,TN315Y,96.5,4.0,nan,Physical,259710,,103596,,112319
-,AT151BRO68,Brother TN - TN416C - Toner cartridge - Cyan,nan,TN416C,146.7,6.0,nan,Physical,259716,,157525,,170878
-,AT151BRO70,Brother TN - TN416Y - Toner cartridge - Yellow,nan,TN416Y,146.7,20.0,nan,Physical,259718,,157525,,170280
+,AT151BRO68,Brother TN - TN416C - Toner cartridge - Cyan,nan,TN416C,146.7,6.0,nan,Physical,259716,,157525,,171698
+,AT151BRO70,Brother TN - TN416Y - Toner cartridge - Yellow,nan,TN416Y,146.7,20.0,nan,Physical,259718,,157525,,171194
 ,AT151BRO74,Brother TN - TN419Y - Toner cartridge - Yellow,nan,TN419Y,163.8,20.0,nan,Physical,259703,,164900,,189063
 ,AT152BRO12,Brother - TN-219XLBK - Toner cartridge - Black,nan,TN219XLBK,69.8,20.0,nan,Physical,376179,,388650,,388650
 ,AT152BRO13,Brother - TN-219XLC - Toner cartridge - Cyan,nan,TN219XLC,76.1,20.0,nan,Physical,259724,,86291,,104370
@@ -619,7 +619,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AT219HEW48,"HP 19A - Negro - original - kit de tambor - para LaserJet Pro M102, M104, MFP M130, MFP M132",nan,CF219A,85.5,20.0,nan,Physical,261294,,86900,,96690
 ,AT222HEW01,"HP 230A - Negro - original - LaserJet - cartucho de tóner (W2300A) - para Color LaserJet Pro 4201, 4203, MFP 4301, MFP 4303",nan,W2300A,96.7,1.0,nan,Physical,260217,,99047,,107936
 ,AT222HEW76,"HP 206A - Cián - original - LaserJet - cartucho de tóner (W2111A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2111A,91.3,1.0,nan,Physical,260122,,91169,,99025
-,AT222HEW77,"HP 206A - Amarillo - original - LaserJet - cartucho de tóner (W2112A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2112A,90.6,20.0,nan,Physical,260080,,91103,,98178
+,AT222HEW77,"HP 206A - Amarillo - original - LaserJet - cartucho de tóner (W2112A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2112A,90.6,20.0,nan,Physical,260080,,91103,,98965
 ,AT222HEW78,"HP 206A - Magenta - original - LaserJet - cartucho de tóner (W2113A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2113A,90.8,20.0,nan,Physical,260108,,91247,,98528
 ,AT222HEW83,"HP 215A - Negro - original - LaserJet - cartucho de tóner (W2310A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2310A,59.4,10.0,nan,Physical,260085,,59882,,64262
 ,AT222HEW84,"HP 215A - Cián - original - LaserJet - cartucho de tóner (W2311A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2311A,64.4,13.0,nan,Physical,260215,,64712,,69260
@@ -760,14 +760,14 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CH064SDK50,SanDisk Extreme Pro - Tarjeta de memoria flash - 64 GB - Video Class V30 / UHS-I U3 / Class10 - SDXC UHS-I,nan,SDSDXXU-064G-GN4IN,27.1,20.0,nan,Physical,156911,,30582,,33927
 ,CH128SDK70,SanDisk Ultra Fit - Unidad flash USB - 128 GB - USB 3.1,nan,SDCZ430-128G-G46,21.2,20.0,nan,Physical,44257,,21990,,26676
 ,CH128SDK71,SanDisk - Flash memory card - SC QD111 UHS-I 128GB MicroSD 1,nan,SDSDQAS4-128G-BP,25.2,20.0,nan,Physical,,,,,
-,CH132KNG13,Kingston DataTraveler 70 - Unidad flash USB - 128 GB - USB-C 3.2 Gen 1,nan,DT70/128GB,10.1,20.0,nan,Physical,102298,13990,11336,13990,13576
+,CH132KNG13,Kingston DataTraveler 70 - Unidad flash USB - 128 GB - USB-C 3.2 Gen 1,nan,DT70/128GB,10.1,20.0,nan,Physical,102298,13990,11336,13990,13727
 ,CH164KVR49,"Kingston ValueRAM - DDR4 - módulo - 16 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL22 - 1.2 V - sin búfer - no ECC - para Intel Next Unit of Computing 12 Pro Kit - NUC12WSHi3, 12 Pro Kit - NUC12WSKi5",nan,KVR32S22S8/16,148.0,20.0,nan,Physical,92626,,119090,138900,142508
 ,CH164KVR54,Kingston - DDR4 - módulo - 32 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL22 - 1.2 V - sin búfer - no ECC,nan,KCP432SD8/32,295.6,20.0,nan,Physical,108013,,219900,,279277
 ,CH164KVR70,Kingston - DDR4 SDRAM - 32 GB - 3200 MHz,nan,KCP432ND8/32,295.6,20.0,nan,Physical,148831,,317376,,351264
 ,CH164KVR78,Kingston - DDR5 SDRAM - DIMM 288-pin - 4800 MHz - PC5-38400 - CL40 - Generic - ECC - 16 GB,nan,KTH-PL548S8-16G,300.0,1.0,nan,Physical,227962,,163600,,322069
 ,CH205SDK39,SanDisk - Flash memory card - microSD - 256GB - 880/650MB/sRPD2,nan,SDSQXFN-256G-GN4NN,88.9,4.0,nan,Physical,358707,,119990,,159990
 ,CH256SDK32,SanDisk Extreme Pro - Tarjeta de memoria flash - 256 GB - Video Class V30 / UHS-I U3 / Class10 - SDXC UHS-I,nan,SDSDXXD-256G-GN4IN,54.4,20.0,nan,Physical,155560,,82990,,97490
-,CH320SDK31,SanDisk Extreme - Tarjeta de memoria flash (adaptador microSDHC a SD Incluido) - 32 GB - A1 / Video Class V30 / UHS-I U3 - microSDHC UHS-I,nan,SDSQXAF-032G-GN6AA,21.1,20.0,nan,Physical,36691,26990,26990,,26990
+,CH320SDK31,SanDisk Extreme - Tarjeta de memoria flash (adaptador microSDHC a SD Incluido) - 32 GB - A1 / Video Class V30 / UHS-I U3 - microSDHC UHS-I,nan,SDSQXAF-032G-GN6AA,21.1,20.0,nan,Physical,36691,26990,26990,,27490
 ,CH402KVR56,Kingston ValueRam - DDR4 SDRAM - 8 GB - 3200 MHz - CL22 - Unbuffered - Non-ECC,nan,KVR32S22S8/8,81.4,20.0,nan,Physical,114413,,64990,,82177
 ,CH402KVR65,Kingston ValueRam - DDR3 SDRAM - 8 GB - 1600 MHz - Unbuffered - Non-ECC,nan,KVR16LN11/8WP,39.3,20.0,nan,Physical,129571,,45110,,48970
 ,CH402KVR76,Kingston ValueRAM - DDR4 - módulo - 16 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL22 - 1.2 V - sin búfer - no ECC,nan,KVR32N22D8/16,148.0,20.0,nan,Physical,122399,,124995,,176349
@@ -1184,7 +1184,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,HM350XIA14,"Xiaomi Mi Smart LED Plafón 450mm 45 W Wi-Fi IEEE 802.11 b/g/n 2,4 GHz",nan,27853,72.9,2.0,nan,Physical,,,,,
 ,ID000ASU54,ASUS - Keyboard and mouse set - U2000,nan,90-XB1000KM001M0,15.6,20.0,nan,Physical,382074,,17900,,19457
 ,ID000LOG57,Logitech Wireless Presenter R400 - Control remoto para presentaciones - RF,nan,910-001354,24.0,5.0,nan,Physical,,,,,
-,ID000LOG63,Logitech - Keyboard and mouse set - Wireless - Graphite - MK370 Combo for Business Span,nan,920-012063,41.3,20.0,nan,Physical,222165,,44989,,53464
+,ID000LOG63,Logitech - Keyboard and mouse set - Wireless - Graphite - MK370 Combo for Business Span,nan,920-012063,41.3,20.0,nan,Physical,222165,,44989,,50212
 ,ID000PGL19,Primus Gaming - Keyboard - Wired - Spanish - USB - Ball 91T PKS-093S,nan,PKS-093S,28.0,20.0,nan,Physical,252904,,30960,37990,35190
 ,ID001HPQ85,HP - Mouse - Wired - 265A9UT#ABA,nan,265A9UT#ABA,7.6,20.0,nan,Physical,,,,,
 ,ID001HPQ90,HP - Keyboard and mouse set - Spanish - Wired,nan,AX2Y7AA#ABM,16.2,20.0,nan,Physical,,,,,
@@ -1200,9 +1200,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID001RZR87,"Razer Basilisk V3 pro - Ratón - ergonómico - diestro - óptico - 11 botones - cableado, inalámbrico - Bluetooth, 2.4 GHz - receptor inalámbrico USB - blanco",nan,RZ01-04620200-R3U1,157.9,3.0,nan,Physical,,,,,
 ,ID001RZR90,"Razer Basilisk V3 X HyperSpeed - Ratón - ergonómico - diestro - óptico - 7 botones - inalámbrico - Bluetooth, 2.4 GHz - receptor inalámbrico USB",nan,RZ01-04870100-R3U1,68.2,16.0,nan,Physical,212519,,65900,,74816
 ,ID002DEL59,Dell - Keyboard and mouse set - Spanish - Wired - KM300C,nan,KM300C-LTN,13.6,20.0,nan,Physical,,,,,
-,ID002RZR98,Razer - Keyboard - Huntsman V3 X Tenkeyless Optic,nan,RZ03-05021700-R311,102.4,20.0,nan,Physical,252265,,102980,109990,116743
+,ID002RZR98,Razer - Keyboard - Huntsman V3 X Tenkeyless Optic,nan,RZ03-05021700-R311,102.4,20.0,nan,Physical,252265,,102980,109990,117571
 ,ID002WAC82,"Wacom One by Wacom - Digitalizador - diestro y zurdo - 15.2 x 9.5 cm - electromagnético - cableado - USB - negro, rojo",nan,CTL472K1A,29.9,20.0,nan,Physical,,,,,
-,ID003KNS27,"Kensington - Teclado - inalámbrico - Bluetooth, 2.4 GHz - negro",nan,K75502,20.7,20.0,nan,Physical,112914,24990,16500,24708,24180
+,ID003KNS27,"Kensington - Teclado - inalámbrico - Bluetooth, 2.4 GHz - negro",nan,K75502,20.7,20.0,nan,Physical,112914,24990,16500,24708,23104
 ,ID003RZR05,Razer Viper - Mouse - Wireless - Esports Gaming,nan,RZ01-05120100-R3U1,136.5,20.0,nan,Physical,241532,,135900,159990,148685
 ,ID003RZR06,Razer Viper - Mouse - Wireless - Esports Gaming White,nan,RZ01-05120200-R3U1,136.5,20.0,nan,Physical,241533,,130900,139990,150472
 ,ID003RZR31,Razer - BlackWidow V4 X - Mechanical G,nan,RZ03-04704100-R3M1,145.1,13.0,nan,Physical,277312,,75990,79990,111348
@@ -1215,37 +1215,37 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID003WAC30,"Wacom - Cintiq 16"" -  Brazil /Argentin",nan,DTK168K0A1,764.4,3.0,nan,Physical,,,,,
 ,ID010KLX61,Klip Xtreme Klever KMW-340 - Ratón - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - negro,nan,KMW-340BK,5.8,20.0,nan,Physical,28986,,4900,,6017
 ,ID010KLX62,Klip Xtreme KMW-340 - Ratón - diestro - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - azul,nan,KMW-340BL,5.7,20.0,nan,Physical,262895,,4713,,6451
-,ID010KLX63,Klip Xtreme - Mouse - Wireless - 2.4 GHz - Red - Nano - 6-button Opt,nan,KMW-340RD,5.6,20.0,nan,Physical,37034,,4165,5990,5875
-,ID010KLX70,Klip Xtreme - Mouse - Wired - USB - Gray - 1600dpi,nan,KMO-111,4.5,20.0,nan,Physical,28999,,3946,,4922
+,ID010KLX63,Klip Xtreme - Mouse - Wireless - 2.4 GHz - Red - Nano - 6-button Opt,nan,KMW-340RD,5.6,20.0,nan,Physical,37034,,4165,5990,5880
+,ID010KLX70,Klip Xtreme - Mouse - Wired - USB - Gray - 1600dpi,nan,KMO-111,4.5,20.0,nan,Physical,28999,,3946,,5145
 ,ID011KLX01,Klip Xtreme KMW-330 Vector - Ratón - ergonómico - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - negro,nan,KMW-330BK,5.2,20.0,nan,Physical,40402,,6752,,6871
-,ID011KLX02,Klip Xtreme KMW-330 Vector - Ratón - ergonómico - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - azul,nan,KMW-330BL,5.3,20.0,nan,Physical,40404,,6370,,7496
-,ID011KLX03,Klip Xtreme KMW-330 Vector - Ratón - ergonómico - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,KMW-330RD,5.2,20.0,nan,Physical,40403,,5634,,7238
+,ID011KLX02,Klip Xtreme KMW-330 Vector - Ratón - ergonómico - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - azul,nan,KMW-330BL,5.3,20.0,nan,Physical,40404,,6370,,7464
+,ID011KLX03,Klip Xtreme KMW-330 Vector - Ratón - ergonómico - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,KMW-330RD,5.2,20.0,nan,Physical,40403,,5634,,7181
 ,ID011KLX04,Klip Xtreme GhosTouch KMW-400 - Ratón - ergonómico - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - azul,nan,KMW-400BL,6.2,15.0,nan,Physical,40396,,,,
-,ID011KLX06,Klip Xtreme EverRest - Ratón vertical - ergonómico - diestro - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB,nan,KMW-390,11.3,20.0,nan,Physical,46112,,12518,19990,15732
-,ID011KLX14,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - Ergonomic,nan,KMW-500BK,9.2,20.0,nan,Physical,76834,,10084,,12050
+,ID011KLX06,Klip Xtreme EverRest - Ratón vertical - ergonómico - diestro - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB,nan,KMW-390,11.3,20.0,nan,Physical,46112,,12518,19990,15664
+,ID011KLX14,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - Ergonomic,nan,KMW-500BK,9.2,20.0,nan,Physical,76834,,10084,,12042
 ,ID011KLX16,Klip Xtreme Krown KMO-506 - Ratón vertical - ergonómico - diestro - óptico - 6 botones - cableado - USB,nan,KMO-506,8.9,20.0,nan,Physical,101549,,,,
 ,ID011KLX17,Klip Xtreme Lightflex KMW-375 - Ratón - ergonómico - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - negro,nan,KMW-375BK,8.6,20.0,nan,Physical,90876,,,,
-,ID011KLX18,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Gray - Foldable - 1000dpi,nan,KMW-375GR,8.9,20.0,nan,Physical,90877,,7900,,9494
-,ID011KLX21,Klip Xtreme - Mouse - Bluetooth 5.0 - Wireless - Black/gray - 3-buttons up 1600dpi,nan,KMB-001GR,7.5,20.0,nan,Physical,136052,,8500,,10094
-,ID011KLX22,Klip Xtreme Arrow BT KMB-251BK - Ratón - diestro y zurdo - óptico - 4 botones - inalámbrico - Bluetooth 5.1 - negro,nan,KMB-251BK,8.2,7.0,nan,Physical,144342,,9500,9500,10958
+,ID011KLX18,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Gray - Foldable - 1000dpi,nan,KMW-375GR,8.9,20.0,nan,Physical,90877,,7900,,9472
+,ID011KLX21,Klip Xtreme - Mouse - Bluetooth 5.0 - Wireless - Black/gray - 3-buttons up 1600dpi,nan,KMB-001GR,7.5,20.0,nan,Physical,136052,,8500,,10024
+,ID011KLX22,Klip Xtreme Arrow BT KMB-251BK - Ratón - diestro y zurdo - óptico - 4 botones - inalámbrico - Bluetooth 5.1 - negro,nan,KMB-251BK,8.2,7.0,nan,Physical,144342,,9500,9500,10883
 ,ID011KLX23,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth 5.0 - Wireless - Black - Dual mode Black,nan,KMB-501BK,9.1,20.0,nan,Physical,228757,,10500,14990,12631
 ,ID011KLX24,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth 5.0 - Wireless - Cool white - Dual mode White,nan,KMB-501WH,9.3,2.0,nan,Physical,228756,,14990,14990,14990
 ,ID011KLX25,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - KMW-410BK,nan,KMW-410BK,5.2,20.0,nan,Physical,240905,,7990,,7990
-,ID011KLX26,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - Slim,nan,KMW-415BK,6.0,16.0,nan,Physical,240908,,6900,,8338
-,ID011KLX27,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Pink - Slim,nan,KMW-415PK,5.6,20.0,nan,Physical,240907,,6500,,7703
+,ID011KLX26,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - Slim,nan,KMW-415BK,6.0,16.0,nan,Physical,240908,,6900,,8283
+,ID011KLX27,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Pink - Slim,nan,KMW-415PK,5.6,20.0,nan,Physical,240907,,6500,,7696
 ,ID011PGL14,Primus Gaming - Mouse - 2.4 GHz / USB 2.0 - Wireless,nan,PMO-W203,20.6,20.0,nan,Physical,270899,,23980,,26114
 ,ID011PGL15,Primus Gaming - Keyboard - Wired - Spanish - USB 2.0 - Ergonomic Design - Black & white,nan,PKS-060G-S,22.7,20.0,nan,Physical,271552,,23990,25990,27426
 ,ID011PGL16,Primus Gaming - Keyboard - Wired - Spanish - USB 2.0 - Ergonomic Design - Black/white,nan,PKS-060W-S,22.7,20.0,nan,Physical,278030,,24790,24970,27649
 ,ID011PGL17,Primus Gaming - Keyboard - Wired - English - USB 2.0 - Ergonomic Design - Black,nan,PKS-040E,19.9,20.0,nan,Physical,358697,,22480,,24654
 ,ID011PGL23,Primus Gaming - PMO-S204DR - Mouse - 2.4 GHz / Bluetooth / USB 2.0 - Wired / Wireless,nan,PMO-S204DR,19.4,20.0,nan,Physical,361073,,18990,21990,22391
 ,ID011PGL24,Primus Gaming - PMO-S205BF - Mouse - 2.4 GHz / Bluetooth / USB 2.0 - Wired / Wireless,nan,PMO-S205BF,19.4,20.0,nan,Physical,361075,,18990,,24181
-,ID011XTK03,XTech XTM-175  - Ratón - USB - Cableado - Negro - Optico,nan,XTM-175,2.5,20.0,nan,Physical,28982,,2850,,3487
-,ID011XTK06,Xtech - Mouse - Wired - USB - Black - 3D optical,nan,XTM-195,1.6,20.0,nan,Physical,31275,,1798,2000,2368
-,ID011XTK09,Xtech - Optical mouse - USB - Wired - 1000 DPI - (XTM-165),nan,XTM-165,2.1,20.0,nan,Physical,41267,,2357,,3336
+,ID011XTK03,XTech XTM-175  - Ratón - USB - Cableado - Negro - Optico,nan,XTM-175,2.5,20.0,nan,Physical,28982,,2850,,3439
+,ID011XTK06,Xtech - Mouse - Wired - USB - Black - 3D optical,nan,XTM-195,1.6,20.0,nan,Physical,31275,,1798,2000,2292
+,ID011XTK09,Xtech - Optical mouse - USB - Wired - 1000 DPI - (XTM-165),nan,XTM-165,2.1,20.0,nan,Physical,41267,,2357,,3277
 ,ID011XTK11,"Mouse para Gaming Xtech XTM-610 Lethal Haze - Resolución ajustable de hasta 3200 ppp - Luces LED de 4 colores - Cable sin enredos - para juegos 3D de 6 botones - Sensor: Óptico - Botones: 6 - Iluminado: Sí - Longitud del cable: 5,2 pies, trenzado",nan,XTM-610,8.2,19.0,nan,Physical,,,,,
-,ID011XTK13,Xtech - Mouse - 2.4 GHz - Wireless - All black - 1600 dpi XTM-310BK,nan,XTM-310BK,3.9,20.0,nan,Physical,60943,,3738,,4416
+,ID011XTK13,Xtech - Mouse - 2.4 GHz - Wireless - All black - 1600 dpi XTM-310BK,nan,XTM-310BK,3.9,20.0,nan,Physical,60943,,3738,,4369
 ,ID011XTK18,Xtech - Mouse - USB - Wired - All black - 3D 3-button XTM-205 - 1000dpi,nan,XTM-205,2.2,20.0,nan,Physical,110350,,,,
-,ID011XTK20,Xtech - XTM-315GY - Mouse - 2.4 GHz - Wireless - Aluminum gray - 4-button 1600dpi,nan,XTM-315GY,4.1,20.0,nan,Physical,131507,,4691,,5615
+,ID011XTK20,Xtech - XTM-315GY - Mouse - 2.4 GHz - Wireless - Aluminum gray - 4-button 1600dpi,nan,XTM-315GY,4.1,20.0,nan,Physical,131507,,4691,,5470
 ,ID011XTK28,Xtech - XTM-M520SM - Mouse - USB - Wired - black  and red - Gaming Spider-Man,nan,XTM-M520SM,9.6,20.0,nan,Physical,270904,,8990,,9456
 ,ID011XTK29,Xtech - XTM-M520SM - Mouse - USB - Wired - Gaming,nan,XTM-M520SG,9.7,20.0,nan,Physical,270905,,6990,,6990
 ,ID011XTK35,Xtech - XTM-D340MM - Mouse - 2.4 GHz - Wireless - Aqua - Disney Minnie Mouse,nan,XTM-D340MM,6.5,20.0,nan,Physical,270901,,3508,,4249
@@ -1261,15 +1261,15 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID014KNS52,Kensington - Mouse - Wireless - K79810,nan,K79810,22.5,5.0,nan,Physical,227685,,29995,,31633
 ,ID014KNS56,Kensington Orbit Fusion K72363WW - Mouse - USB - Wireless - Black,nan,K72363WW,55.1,4.0,nan,Physical,153330,,60341,,66145
 ,ID016KNS17,Kensington - Mouse - USB - Wired - K72369,nan,K72369,8.9,3.0,nan,Physical,39394,,6100,,8776
-,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9984,14990,13727
+,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9984,14990,13724
 ,ID022KNS40,Kensington - Mouse - USB - Black,nan,K75403,20.0,3.0,nan,Physical,85974,,19680,21990,23728
-,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,6990,10990,10337
+,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,6990,10990,9928
 ,ID023LOG10,Logitech M190 - Ratón - óptico - 3 botones - inalámbrico - receptor inalámbrico USB - rojo,nan,910-005904,9.8,7.0,nan,Physical,86548,,9990,14210,13840
 ,ID023LOG52,"Logitech Signature M650 - Ratón - manos pequeñas - diestro y zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006251,29.1,20.0,nan,Physical,132346,,32990,,43490
 ,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,40686,,40686
 ,ID023LOG80,Logitech G G502 X - Ratón - óptico - 8 botones - cableado - USB - blanco,nan,910-006145,71.6,20.0,nan,Physical,153269,,64980,64990,83188
 ,ID024LOG08,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - grafito,nan,910-006932,73.1,20.0,nan,Physical,220143,,62900,94990,74928
-,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,67190,96990,84234
+,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,67190,96990,85310
 ,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,14990,14990,19412
 ,ID024LOG27,Logitech - G309 - Mouse - Black,nan,910-007198,44.3,20.0,nan,Physical,254110,,39990,89990,62947
 ,ID024LOG28,Logitech - G309 - Mouse - white,nan,910-007206,57.1,11.0,nan,Physical,254109,,51990,,73484
@@ -1279,24 +1279,24 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID024LOG59,Logitech - Mouse - Gamer G PRO X Superlight 2C Bl,nan,910-007537,129.9,20.0,nan,Physical,362605,,118990,,147125
 ,ID024LOG60,Logitech - Mouse - Gamer G PRO X Superlight 2C R,nan,910-007544,129.9,20.0,nan,Physical,362604,,115900,,163478
 ,ID150KNS33,Kensington - Keyboard and mouse set - COMBO TECLADO INALAM ERG RECAR,nan,K75492ES,48.3,20.0,nan,Physical,384165,,54086,,58379
-,ID211KLX10,Klip Xtreme KKS-050S - Teclado - USB - español - negro azabache,nan,KKS-050S,5.4,20.0,nan,Physical,71941,,6193,,7850
-,ID211KLX28,Klip Xtreme - Keyboard and mouse set - Spanish - Wireless - 2.4 GHz - Black and gray,nan,KBK-520,19.9,20.0,nan,Physical,153354,,22197,,26629
+,ID211KLX10,Klip Xtreme KKS-050S - Teclado - USB - español - negro azabache,nan,KKS-050S,5.4,20.0,nan,Physical,71941,,6193,,7858
+,ID211KLX28,Klip Xtreme - Keyboard and mouse set - Spanish - Wireless - 2.4 GHz - Black and gray,nan,KBK-520,19.9,20.0,nan,Physical,153354,,22197,,26480
 ,ID211KLX31,Klip Xtreme KCK-265S - Juego de teclado y ratón - inalámbrico - 2.4 GHz - impermeable,nan,KCK-265S,13.3,20.0,nan,Physical,,,,,
-,ID211KLX34,Klip Xtreme KCK-251S DeskMate - Juego de teclado y ratón - USB - español,nan,KCK-251S,8.2,20.0,nan,Physical,46882,,8539,,10336
-,ID211KLX35,Klip Xtreme - Keyboard - Wired - Spanish - USB - Black - Multimedia keys,nan,KKM-252S,8.4,20.0,nan,Physical,117253,,9054,,10639
-,ID211KLX36,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz - All black - Ergonomic,nan,KBK-530S,26.7,20.0,nan,Physical,210911,,28149,,31417
+,ID211KLX34,Klip Xtreme KCK-251S DeskMate - Juego de teclado y ratón - USB - español,nan,KCK-251S,8.2,20.0,nan,Physical,46882,,8539,,10228
+,ID211KLX35,Klip Xtreme - Keyboard - Wired - Spanish - USB - Black - Multimedia keys,nan,KKM-252S,8.4,20.0,nan,Physical,117253,,9054,,10540
+,ID211KLX36,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz - All black - Ergonomic,nan,KBK-530S,26.7,20.0,nan,Physical,210911,,28149,,30971
 ,ID211KLX38,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz / Bluetooth 5.0 - Gray / Black - Dual Connection / Touchpad,nan,KCK-550S,16.5,20.0,nan,Physical,259359,,18189,,21438
 ,ID211KLX43,Klip Xtreme - Keyboard and Touchpad - Spanish - Wireless - Bluetooth 5.0 - Black - KCK-650S-BK,nan,KCK-650S-BK,27.8,20.0,nan,Physical,277786,,21923,,25450
 ,ID211KLX46,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Dual Dongle,nan,KMW-550,9.7,20.0,nan,Physical,387476,,13980,,14150
 ,ID211KLX47,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth - Wireless - Trimode,nan,KMW-775,11.4,20.0,nan,Physical,387480,,15970,,16124
-,ID222XTK03,Xtech - Keyboard - Wired - Spanish - USB - Black - XTK-160S,nan,XTK-160S,4.3,20.0,nan,Physical,45887,,4987,,6163
-,ID222XTK33,Xtech - Keyboard - Wired - Spanish - USB - Black - Standard XTK-092S,nan,XTK-092S,4.1,20.0,nan,Physical,81786,,4922,,6303
-,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,95981,95981,104315
+,ID222XTK03,Xtech - Keyboard - Wired - Spanish - USB - Black - XTK-160S,nan,XTK-160S,4.3,20.0,nan,Physical,45887,,4987,,6111
+,ID222XTK33,Xtech - Keyboard - Wired - Spanish - USB - Black - Standard XTK-092S,nan,XTK-092S,4.1,20.0,nan,Physical,81786,,4922,,6250
+,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,95981,95981,107168
 ,ID223LOG87,Logitech MX Keys Mini - eclado - Inalámbrico - Español - Bluetooth 5.0 / Bluetooth / 2.4 GHz / USB-C - Ergonomic Design - Rosa,nan,920-010478,100.2,1.0,nan,Physical,132329,,82353,99990,92950
 ,ID223XTK03,Xtech CHEVALIER XTK-505S - Teclado - retroiluminación - USB - QWERTY - español,nan,XTK-505S,9.6,8.0,nan,Physical,131737,,,,
-,ID223XTK06,"Xtech - Keyboard, mouse and mouse pad - Wired - Spanish - USB - Black - Gaming XTK-535S",nan,XTK-535S,16.5,20.0,nan,Physical,153550,,18908,,21877
+,ID223XTK06,"Xtech - Keyboard, mouse and mouse pad - Wired - Spanish - USB - Black - Gaming XTK-535S",nan,XTK-535S,16.5,20.0,nan,Physical,153550,,18908,,21540
 ,ID224LOG02,Logitech Master Series MX Mechanical Mini - Teclado - retroiluminación - inalámbrico - Bluetooth LE - QWERTY - español - interruptor: táctil silencioso - grafito,nan,920-010846,147.7,2.0,nan,Physical,147315,,149472,,189513
-,ID224LOG32,"Logitech G PRO X TKL LIGHTSPEED Wireless Gaming Keyboard, Tactile Switches (GX Brown), Magenta - Teclado - retroiluminación - inalámbrico - 2.4 GHz, Bluetooth - QWERTY - EE. UU. - interruptor: GX Brown Tactile - magenta",nan,920-012154,169.0,3.0,nan,Physical,220222,,165900,,262061
+,ID224LOG32,"Logitech G PRO X TKL LIGHTSPEED Wireless Gaming Keyboard, Tactile Switches (GX Brown), Magenta - Teclado - retroiluminación - inalámbrico - 2.4 GHz, Bluetooth - QWERTY - EE. UU. - interruptor: GX Brown Tactile - magenta",nan,920-012154,169.0,3.0,nan,Physical,220222,,165900,,261132
 ,ID224LOG36,Logitech - Keyboard - Español - Graphite - 920-012278,nan,920-012278,59.3,2.0,nan,Physical,229814,,60920,,66307
 ,ID224LOG37,Logitech - Keyboard - Wave keys - Spanish - Off white,nan,920-012279,55.1,20.0,nan,Physical,231032,,57890,,60215
 ,ID224LOG38,Logitech - Keyboard - Wave keys - Spanish - Graphite ,nan,920-012325,61.3,20.0,nan,Physical,238831,,56990,,68627
@@ -1306,9 +1306,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID224LOG52,Logitech - Keyboard - Black - G915 X Lightspeed,nan,920-012715,199.5,8.0,nan,Physical,258194,,180490,,211907
 ,ID224LOG53,Logitech - Keyboard - White - G915 X Lightspeed,nan,920-012732,197.4,4.0,nan,Physical,258193,,179990,,243804
 ,ID224LOG55,Logitech G515 TKL - Keyboard - White  ,nan,920-012869,97.4,11.0,nan,Physical,263772,,86900,87990,107357
-,ID224LOG56,Logitech PRO X TKL RAPID - Keyboard - Wired - USB-C - Black,nan,920-013131,169.0,2.0,nan,Physical,268566,,164990,164990,183130
+,ID224LOG56,Logitech PRO X TKL RAPID - Keyboard - Wired - USB-C - Black,nan,920-013131,169.0,2.0,nan,Physical,268566,,164990,164990,189273
 ,ID224LOG61,Logitech - Keypad - POWERPLAY 2 MousePad Wireless,nan,947-000002,131.0,3.0,nan,Physical,,,,,
-,ID224LOG65,Logitech - MK250 Compact Bluetooth Wireless Combo - Spanish - Graphite,nan,920-013513,25.7,20.0,nan,Physical,358403,,23990,24990,29480
+,ID224LOG65,Logitech - MK250 Compact Bluetooth Wireless Combo - Spanish - Graphite,nan,920-013513,25.7,20.0,nan,Physical,358403,,23990,33990,29781
 ,ID225XTK22,"Xtech - MM Keyboard wls, mouse wls, mouse pad XL and USB 3.0 Hub Kit - Spanish - Wireless / Wired - 2.4 GHz / USB - Black - XTK-320S",nan,XTK-320S,23.2,20.0,nan,Physical,358936,,20990,,22082
 ,ID225XTK24,Xtech - Keyboard and mouse set - Wired - Spanish - USB - Black - Multimedia XTK-302S,nan,XTK-302S,7.6,20.0,nan,Physical,388114,,10990,,11286
 ,ID225XTK25,Xtech - Keyboard and mouse set - Wireless - Spanish - USB - Black - 2.4 GHz - Black XTK-311S,nan,XTK-311S,10.7,20.0,nan,Physical,384507,,13990,,15456
@@ -1395,7 +1395,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM000EPS38,Epson PowerLite - L790U - V11HB28021,nan,V11HB28021,3845.4,2.0,nan,Physical,384652,,4160000,,4366002
 ,MM000EUF02,Eufy - C33,nan,T85L0111,124.7,20.0,nan,Physical,,,,,
 ,MM000EUF04,Eufy - Indoor Cam E30 - White,nan,T8417321,58.2,20.0,nan,Physical,366859,,77990,,77990
-,MM000EUF05,Eufy - Security Indoor Cam S350 - Whi,nan,T8416321,101.3,20.0,nan,Physical,364877,,,,
+,MM000EUF05,Eufy - Security Indoor Cam S350 - Whi,nan,T8416321,101.3,20.0,nan,Physical,364877,,99990,,99990
 ,MM000EUF06,Eufy - S220 Solar solocam - White,nan,T8134321,70.1,20.0,nan,Physical,366834,,,,
 ,MM000EUF21,Eufy SmartTrack Link For Android,nan,T87B4011,11.0,20.0,nan,Physical,,,,,
 ,MM000HIK22,Hikvision facial detector - Vandal-proof,nan,DS-KV9503-WBE1,155.2,20.0,nan,Physical,,,,,
@@ -1457,15 +1457,15 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM108KLX02,Klip Xtreme - KWC-500 - Web camera - USB - 1920 x 1080 - Micrófono Integrado - Full HD - HD MIC,nan,KWC-500,22.0,20.0,nan,Physical,,,,,
 ,MM108KLX03,Klip Xtreme - Web camera - USB - 2560 x 1440 - 2K QHD,nan,KWC-750,26.6,20.0,nan,Physical,,,,,
 ,MM108KLX04,Klip Xtreme - Web camera - USB - 3840 x 2160 - 4K IA tracking - Gesture,nan,KWC-950,140.1,20.0,nan,Physical,,,,,
-,MM111KLX34,Klip Xtreme - KWH-750CO - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Coral color,nan,KWH-750CO,30.4,3.0,nan,Physical,187805,,33213,,36993
-,MM111KLX35,Klip Xtreme - KWH-750BL - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Blue color,nan,KWH-750BL,29.1,7.0,nan,Physical,187804,,31854,,35513
-,MM111KLX36,Klip Xtreme - KWH-750GR - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Gray color,nan,KWH-750GR,30.4,20.0,nan,Physical,187802,,25106,,27179
-,MM111KLX47,Klip Xtreme - KTE-500BK - Earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - TWS 108Hr Negros,nan,KTE-500BK,27.6,14.0,nan,Physical,145695,,23567,,27024
-,MM111KLX50,Klip Xtreme - KTE-750WH - True wireless earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - ANC - 26hrs - Blanco,nan,KTE-750WH,17.5,20.0,nan,Physical,152014,,18995,,22285
-,MM111KLX69,Klip Xtreme - KCH-510 - Headset - Para Conference / Para Home audio - Wired - Stereo -console cmd.,nan,KCH-510,12.0,20.0,nan,Physical,187834,,14468,14468,15594
-,MM111KLX70,Klip Xtreme - KCH-905 - Headset - Para Conference / Para Home audio - Wireless - Charging Base,nan,KCH-905,32.1,20.0,nan,Physical,198923,,35732,,39779
-,MM111KLX75,Klip Xtreme - KNH-750GR - Headphones - Para Home audio - Wireless - ANC - 44Hr - Gray,nan,KNH-750GR,46.6,12.0,nan,Physical,232352,,51830,,56209
-,MM111KLX76,Klip Xtreme - KNH-750BL - Headphones - Para Home audio - Wireless - ANC - 44Hr - Blue,nan,KNH-750BL,47.9,19.0,nan,Physical,232351,,53120,,57833
+,MM111KLX34,Klip Xtreme - KWH-750CO - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Coral color,nan,KWH-750CO,30.4,3.0,nan,Physical,187805,,33213,,36470
+,MM111KLX35,Klip Xtreme - KWH-750BL - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Blue color,nan,KWH-750BL,29.1,7.0,nan,Physical,187804,,31854,,34933
+,MM111KLX36,Klip Xtreme - KWH-750GR - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Gray color,nan,KWH-750GR,30.4,20.0,nan,Physical,187802,,25106,,28391
+,MM111KLX47,Klip Xtreme - KTE-500BK - Earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - TWS 108Hr Negros,nan,KTE-500BK,27.6,14.0,nan,Physical,145695,,23567,,27902
+,MM111KLX50,Klip Xtreme - KTE-750WH - True wireless earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - ANC - 26hrs - Blanco,nan,KTE-750WH,17.5,20.0,nan,Physical,152014,,18995,,22928
+,MM111KLX69,Klip Xtreme - KCH-510 - Headset - Para Conference / Para Home audio - Wired - Stereo -console cmd.,nan,KCH-510,12.0,20.0,nan,Physical,187834,,14468,14468,15483
+,MM111KLX70,Klip Xtreme - KCH-905 - Headset - Para Conference / Para Home audio - Wireless - Charging Base,nan,KCH-905,32.1,20.0,nan,Physical,198923,,35732,,39089
+,MM111KLX75,Klip Xtreme - KNH-750GR - Headphones - Para Home audio - Wireless - ANC - 44Hr - Gray,nan,KNH-750GR,46.6,12.0,nan,Physical,232352,,51830,,55343
+,MM111KLX76,Klip Xtreme - KNH-750BL - Headphones - Para Home audio - Wireless - ANC - 44Hr - Blue,nan,KNH-750BL,47.9,19.0,nan,Physical,232351,,53120,,56818
 ,MM111KLX83,Klip Xtreme - KWH-010BK - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Black - BT,nan,KWH-010BK,10.8,20.0,nan,Physical,261033,,9990,,13915
 ,MM111KLX84,Klip Xtreme - KWH-010BL - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Blue - BT,nan,KWH-010BL,10.9,20.0,nan,Physical,259363,,8659,,10440
 ,MM111KLX85,Klip Xtreme - KWH-010GR - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Gray - BT,nan,KWH-010GR,10.8,20.0,nan,Physical,259364,,11827,,15276
@@ -1475,18 +1475,18 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM111KLX91,Klip Xtreme - Headset - Para Conference / Para Home audio - Wireless - Open ear - Microphone,nan,KOE-750BK,23.9,20.0,nan,Physical,358385,,23980,,25002
 ,MM111KLX92,Klip Xtreme - True wireless earphones - Para Phone / Para Cellular phone / Para Tablet - Wireless - Open ear - TWS,nan,KOE-250BK,22.2,20.0,nan,Physical,358325,,20980,,21714
 ,MM111KLX93,Klip Xtreme - Headphones - Para Phone / Para Cellular phone / Para Tablet - Wireless - Bone Conduction,nan,KBC-500,22.2,2.0,nan,Physical,358380,,27990,,29470
-,MM111KLX94,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC Black,nan,KTE-755BK,14.6,20.0,nan,Physical,308591,,18990,,19845
+,MM111KLX94,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC Black,nan,KTE-755BK,14.6,20.0,nan,Physical,308591,,18990,,19879
 ,MM111KLX95,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC Gray,nan,KTE-755GR,14.8,20.0,nan,Physical,308595,,14980,,15460
-,MM111KLX96,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC White,nan,KTE-755WH,14.8,20.0,nan,Physical,308594,,14980,,15460
+,MM111KLX96,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC White,nan,KTE-755WH,14.8,20.0,nan,Physical,308594,,14980,,16590
 ,MM111KLX97,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 26Hrs Hybdrid ANC Black,nan,KTE-850BK,22.6,20.0,nan,Physical,358375,,21980,,22703
-,MM112KLX02,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Black,nan,KTE-015BK,13.0,20.0,nan,Physical,358382,,14990,14990,16698
-,MM112KLX03,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX White,nan,KTE-015WH,13.5,18.0,nan,Physical,358381,,12990,,13530
-,MM112KLX04,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Gray,nan,KTE-015GR,12.9,20.0,nan,Physical,358376,,14990,,16826
-,MM112KLX05,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Purple,nan,KTE-015PR,13.0,20.0,nan,Physical,358383,,16990,,17838
+,MM112KLX02,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Black,nan,KTE-015BK,13.0,20.0,nan,Physical,358382,,14990,16990,16747
+,MM112KLX03,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX White,nan,KTE-015WH,13.5,18.0,nan,Physical,358381,,12990,,14395
+,MM112KLX04,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Gray,nan,KTE-015GR,12.9,20.0,nan,Physical,358376,,14990,16990,16858
+,MM112KLX05,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Purple,nan,KTE-015PR,13.0,20.0,nan,Physical,358383,,16990,16990,17626
 ,MM112KLX06,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 15Hrs Display Black,nan,KTE-800BK,17.6,20.0,nan,Physical,384651,,22990,,24025
 ,MM120LEN16,Lenovo - Headphones - Wired - VoIP Headset (Teams),nan,4XD1M45626,52.1,20.0,nan,Physical,264238,,61814,,65379
 ,MM121LOG30,"Logitech G PRO X 2 LIGHTSPEED Wireless Gaming Headset, Magenta - Auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - conector de 3,5 mm - aislamiento de ruido",nan,981-001274,280.9,1.0,nan,Physical,220007,,216990,,256933
-,MM121LOG32,Logitech Astro A50 X- Headset - Wireless - White,nan,939-002132,378.0,3.0,nan,Physical,245555,,359900,369990,436792
+,MM121LOG32,Logitech Astro A50 X- Headset - Wireless - White,nan,939-002132,378.0,3.0,nan,Physical,245555,,359900,369990,440719
 ,MM121LOG36,Logitech ASTRO Gaming - A50 - Headset - Para Computer / Para Game console - Wireless - Blanco,nan,939-002229,303.5,5.0,nan,Physical,268572,,339403,,339403
 ,MM121LOG41,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Graphite Limited,nan,981-001504,149.1,20.0,nan,Physical,383165,,179990,,227158
 ,MM121LOG42,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Off-White Limited,nan,981-001596,149.0,20.0,nan,Physical,384947,,179990,,226990
@@ -1566,28 +1566,28 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM906JBL93,JBL - Altavoz - Negro - Barra de luz para fiestas - Partybox Ac,nan,JBLPLSTICKAM,85.8,6.0,nan,Physical,,,,,
 ,MM907HNK65,Harman Kardon - Speaker - Grey - Onyx studio 9 Speaker Bluetoot,nan,HKOS9GRYAM,191.7,1.0,nan,Physical,,,,,
 ,MM907JBL07,JBL TUNE Flex - 2 - Auriculares internos - Inalámbrico - Turquesa,nan,JBLTFLEX2TQEAM,66.9,20.0,nan,Physical,361354,,74990,,82280
-,MM907JBL21,JBL Wave - Beam 2 - Auriculares inalámbricos - Inalámbrico - Azul,nan,JBLWBEAM2BLU,44.5,20.0,nan,Physical,280141,,49990,,52243
+,MM907JBL21,JBL Wave - Beam 2 - Auriculares inalámbricos - Inalámbrico - Azul,nan,JBLWBEAM2BLU,44.5,20.0,nan,Physical,280141,,49990,,52174
 ,MM907JBL56,JBL Tune Flex 2 Ghost Headphones TWS Purple,nan,JBLTFLEX2GMAEAM,70.6,20.0,nan,Physical,280710,,75338,,81500
 ,MM907JBL58,JBL TUNE - Headphones - 520 C Non-TWS White,nan,JBLT520CWHTAM,25.6,20.0,nan,Physical,280205,,21990,24990,28148
 ,MM907JBL59,JBL TUNE - Headphones - 520 C Non-TWS Blue,nan,JBLT520CBLUAM,26.3,20.0,nan,Physical,280206,,24990,24990,29154
 ,MM907JBL60,JBL TUNE - Headphones - 520 C Non-TWS Purple,nan,JBLT520CPURAM,26.3,20.0,nan,Physical,280709,,24990,29990,29858
 ,MM914JBL02,JBL - Altavoz - Rojo - Flip 7 Altavoz Bluetooth,nan,JBLFLIP7REDAM,101.0,20.0,nan,Physical,,,,,
-,MM914JBL11,JBL - Headphones - Tour One M3 TWS Ch,nan,JBLTOURONEM3LTTAM,232.7,20.0,nan,Physical,362806,,189990,,253988
+,MM914JBL11,JBL - Headphones - Tour One M3 TWS Ch,nan,JBLTOURONEM3LTTAM,232.7,20.0,nan,Physical,362806,,189990,229990,251322
 ,MM915JBL43,JBL Tws Sense Lite Beige- tecn JBL Opensound,nan,JBLSENSELITEBEGAM,74.8,20.0,nan,Physical,,,,,
 ,MM915JBL44,Jbl Tws Sense Lite Black- tecn JBL Opensound,nan,JBLSENSELITEBLKAM,74.8,6.0,nan,Physical,358378,,74990,,114065
 ,MM915JBL45,JBL Partybox Encore Essential 2 Party Speaker Black,nan,JBLPBENCOREESS2AM,218.2,20.0,nan,Physical,,,,,
 ,MM915JBL46,JBL - TWS - Headphones - Open Ear - Blue,nan,JBLSENSELITEBLUAM,74.8,20.0,nan,Physical,,,,,
 ,MM915JBL47,Jbl Tws Sense Lite Purple- tecn JBL Opensound,nan,JBLSENSELITEPURAM,74.8,20.0,nan,Physical,367067,,74990,129990,96577
-,MM915JBL48,Jbl Tws Sense Lite White tecn- JBL Opensoun,nan,JBLSENSELITEWHTAM,78.7,20.0,nan,Physical,358934,,73710,129990,97281
-,MM930JBL65,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLBLUAM,97.8,20.0,nan,Physical,366542,,104318,,123675
+,MM915JBL48,Jbl Tws Sense Lite White tecn- JBL Opensoun,nan,JBLSENSELITEWHTAM,78.7,20.0,nan,Physical,358934,,73710,129990,96668
+,MM930JBL65,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLBLUAM,97.8,20.0,nan,Physical,366542,,104318,129990,124249
 ,MM930JBL66,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLCOPAM,146.0,20.0,nan,Physical,381899,,124990,,127256
 ,MM931JBL57,JBL - Headphones - Headphones Endurance Pace Blac,nan,JBLENDUPACEBLKLAM,50.1,20.0,nan,Physical,360458,,54990,,62178
 ,MM931JBL59,JBL - Headphones - Endurance Pace Purple,nan,JBLENDUPACEPURAM,48.7,20.0,nan,Physical,361975,,56900,,62738
 ,MM931JBL60,JBL - Headphones - Endurance Pace White,nan,JBLENDUPACEWHTAM,49.7,20.0,nan,Physical,360244,,54223,79990,63425
 ,MM931JBL62,JBL - Headphones - TWS Endurance Peak 4 White,nan,JBLENDUPEAK4WHTAM,95.5,20.0,nan,Physical,361361,,104990,,113196
 ,MM931JBL63,JBL - Headphones - Headphones Endurance Run 3 Bl,nan,JBLENDURRUN3BTBLAM,26.3,20.0,nan,Physical,362511,,27990,,32990
-,MM931JBL65,JBL - Headphones - Endurance Run 3 Blue,nan,JBLENDURRUN3BTBAM,26.0,20.0,nan,Physical,367057,,28004,,32138
-,MM931JBL66,JBL - Headphones - Endurance Run 3 Purple,nan,JBLENDURRUN3BTPAM,27.4,20.0,nan,Physical,362513,,30900,,34282
+,MM931JBL65,JBL - Headphones - Endurance Run 3 Blue,nan,JBLENDURRUN3BTBAM,26.0,20.0,nan,Physical,367057,,28004,,33508
+,MM931JBL66,JBL - Headphones - Endurance Run 3 Purple,nan,JBLENDURRUN3BTPAM,27.4,20.0,nan,Physical,362513,,30900,,34954
 ,MM931JBL75,JBL - Headphones - Tour One M3 Smart Tx -Mocha,nan,JBLTOM3AVILTTAM,488.0,20.0,nan,Physical,367891,,249990,,513406
 ,MM931JBL81,JBL - Headphones - Endurance Run 3 White,nan,JBLENDURRUN3BTWAM,26.2,20.0,nan,Physical,362512,,30900,,33170
 ,MT000HIK03,"Hikvision DS-MP1301 - LCD monitor - 7"" - 800 x 480 - TFT - IP54",nan,DS-MP1301,182.4,20.0,nan,Physical,,,,,
@@ -1763,7 +1763,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,NW690UBQ09,Ubiquiti - Switch - 48 - ECS-48-PoE,nan,ECS-48-POE,2985.9,2.0,nan,Physical,379113,,3272910,,3477546
 ,NW690UBQ10,Ubiquiti - Switch - 24 - ECS-24-PoE,nan,ECS-24-POE,2114.4,2.0,nan,Physical,379102,,2317608,,2445860
 ,NW690UBQ11,Ubiquiti - Switch - 24 - USW-Pro-HD-24,nan,USW-PRO-HD-24,588.1,4.0,nan,Physical,379351,,1160900,,1160900
-,NW690UBQ12,Ubiquiti - Switch - 48 - USW-Pro-XG-48-PoE,nan,USW-PRO-XG-48-POE,2355.4,1.0,nan,Physical,378937,,2603568,,2719262
+,NW690UBQ12,Ubiquiti - Switch - 48 - USW-Pro-XG-48-PoE,nan,USW-PRO-XG-48-POE,2355.4,1.0,nan,Physical,378937,,2603568,,2750042
 ,NW690UBQ13,Ubiquiti - Switch - 24 - USW-Pro-XG-24-PoE,nan,USW-PRO-XG-24-POE,1717.9,2.0,nan,Physical,378915,,1883014,,1969549
 ,NW690UBQ14,Ubiquiti - Switch - 32 - USW-Pro-XG-Aggregation,nan,USW-PRO-XG-AGGREGATION,2418.5,2.0,nan,Physical,383172,,2650942,,2772115
 ,NW690UBQ15,Ubiquiti - Switch - 10 - USW-Pro-XG-10-PoE,nan,USW-PRO-XG-10-POE,697.4,6.0,nan,Physical,378928,,764355,,802618
