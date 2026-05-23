@@ -574,7 +574,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AS102EPS55,"Epson T05A - Gran capacidad - negro - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A100,68.6,15.0,nan,Physical,259993,,76304,,82882
 ,AS102EPS56,"Epson T05A - Gran capacidad - cián - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A200,118.8,5.0,nan,Physical,259986,,121910,,136877
 ,AS102EPS57,"Epson T05A3 - Gran capacidad - magenta - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A300,118.8,2.0,nan,Physical,259984,,130291,133500,139666
-,AS102EPS58,"Epson T05A4 - Gran capacidad - amarillo - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A400,118.8,5.0,nan,Physical,259987,,121910,133500,137395
+,AS102EPS58,"Epson T05A4 - Gran capacidad - amarillo - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A400,118.8,5.0,nan,Physical,259987,,121910,133500,136595
 ,AS102EPS82,Epson - C9345 - Ink maintenance box,nan,C12C934591,19.6,14.0,nan,Physical,,,,,
 ,AS103EPS09,"Epson T664 - Paquete de 3 - 70 ml - amarillo, cián, magenta - original - recarga de tinta - para Epson L120, L1300, L310, L380, L395, L495; EcoTank L310, L575",nan,T664520-3P,20.2,20.0,nan,Physical,259808,,19990,26990,25285
 ,AS103EPS11,Epson - T544120-2 - Ink tank - Black - Pack  L1110 L3110 L3,nan,T544120-2P,14.0,20.0,nan,Physical,259693,,15590,19990,18240
@@ -760,7 +760,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CH064SDK50,SanDisk Extreme Pro - Tarjeta de memoria flash - 64 GB - Video Class V30 / UHS-I U3 / Class10 - SDXC UHS-I,nan,SDSDXXU-064G-GN4IN,27.1,20.0,nan,Physical,156911,,30582,,33838
 ,CH128SDK70,SanDisk Ultra Fit - Unidad flash USB - 128 GB - USB 3.1,nan,SDCZ430-128G-G46,21.2,20.0,nan,Physical,44257,,21990,,26579
 ,CH128SDK71,SanDisk - Flash memory card - SC QD111 UHS-I 128GB MicroSD 1,nan,SDSDQAS4-128G-BP,25.2,20.0,nan,Physical,,,,,
-,CH132KNG13,Kingston DataTraveler 70 - Unidad flash USB - 128 GB - USB-C 3.2 Gen 1,nan,DT70/128GB,10.1,20.0,nan,Physical,102298,13990,11213,13990,13540
+,CH132KNG13,Kingston DataTraveler 70 - Unidad flash USB - 128 GB - USB-C 3.2 Gen 1,nan,DT70/128GB,10.1,20.0,nan,Physical,102298,13990,11213,13990,13511
 ,CH164KVR49,"Kingston ValueRAM - DDR4 - módulo - 16 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL22 - 1.2 V - sin búfer - no ECC - para Intel Next Unit of Computing 12 Pro Kit - NUC12WSHi3, 12 Pro Kit - NUC12WSKi5",nan,KVR32S22S8/16,148.0,20.0,nan,Physical,92626,,119090,138900,142185
 ,CH164KVR54,Kingston - DDR4 - módulo - 32 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL22 - 1.2 V - sin búfer - no ECC,nan,KCP432SD8/32,295.6,20.0,nan,Physical,108013,,219900,,278472
 ,CH164KVR70,Kingston - DDR4 SDRAM - 32 GB - 3200 MHz,nan,KCP432ND8/32,295.6,20.0,nan,Physical,148831,,317376,,350073
@@ -1228,7 +1228,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID011KLX18,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Gray - Foldable - 1000dpi,nan,KMW-375GR,8.9,20.0,nan,Physical,90877,,7900,,9452
 ,ID011KLX21,Klip Xtreme - Mouse - Bluetooth 5.0 - Wireless - Black/gray - 3-buttons up 1600dpi,nan,KMB-001GR,7.5,20.0,nan,Physical,136052,,8500,,9985
 ,ID011KLX22,Klip Xtreme Arrow BT KMB-251BK - Ratón - diestro y zurdo - óptico - 4 botones - inalámbrico - Bluetooth 5.1 - negro,nan,KMB-251BK,8.2,7.0,nan,Physical,144342,,9500,9500,10780
-,ID011KLX23,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth 5.0 - Wireless - Black - Dual mode Black,nan,KMB-501BK,9.1,20.0,nan,Physical,228757,,10500,14990,12595
+,ID011KLX23,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth 5.0 - Wireless - Black - Dual mode Black,nan,KMB-501BK,9.1,20.0,nan,Physical,228757,,10500,,12495
 ,ID011KLX24,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth 5.0 - Wireless - Cool white - Dual mode White,nan,KMB-501WH,9.3,2.0,nan,Physical,228756,,13990,,14490
 ,ID011KLX25,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - KMW-410BK,nan,KMW-410BK,5.2,20.0,nan,Physical,240905,,7990,,7990
 ,ID011KLX26,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - Slim,nan,KMW-415BK,6.0,16.0,nan,Physical,240908,,6900,,8270
@@ -1263,14 +1263,14 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID016KNS17,Kensington - Mouse - USB - Wired - K72369,nan,K72369,8.9,3.0,nan,Physical,39394,,6335,,9322
 ,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9984,9990,13493
 ,ID022KNS40,Kensington - Mouse - USB - Black,nan,K75403,20.0,3.0,nan,Physical,85974,,19645,21990,23674
-,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,6990,10990,9709
-,ID023LOG10,Logitech M190 - Ratón - óptico - 3 botones - inalámbrico - receptor inalámbrico USB - rojo,nan,910-005904,9.8,7.0,nan,Physical,86548,,9990,,13621
+,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,6990,9990,9496
+,ID023LOG10,Logitech M190 - Ratón - óptico - 3 botones - inalámbrico - receptor inalámbrico USB - rojo,nan,910-005904,9.8,7.0,nan,Physical,86548,,9990,,13796
 ,ID023LOG52,"Logitech Signature M650 - Ratón - manos pequeñas - diestro y zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006251,29.1,20.0,nan,Physical,132346,,32990,,43490
 ,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,,,
 ,ID023LOG80,Logitech G G502 X - Ratón - óptico - 8 botones - cableado - USB - blanco,nan,910-006145,71.6,20.0,nan,Physical,153269,,64980,64990,83202
 ,ID024LOG08,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - grafito,nan,910-006932,73.1,20.0,nan,Physical,220143,,62900,63990,75071
-,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,67190,,82590
-,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,14990,14990,19412
+,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,67190,96990,84234
+,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,14990,14990,18847
 ,ID024LOG27,Logitech - G309 - Mouse - Black,nan,910-007198,44.3,20.0,nan,Physical,254110,,39990,48990,63203
 ,ID024LOG28,Logitech - G309 - Mouse - white,nan,910-007206,57.1,11.0,nan,Physical,254109,,51990,,73082
 ,ID024LOG35,Logitech - Pro 2 - Mouse - Wireless - Gamer,nan,910-007301,105.3,8.0,nan,Physical,264873,,96370,,115034
@@ -1291,7 +1291,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID211KLX47,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth - Wireless - Trimode,nan,KMW-775,11.4,20.0,nan,Physical,387480,,15970,,16124
 ,ID222XTK03,Xtech - Keyboard - Wired - Spanish - USB - Black - XTK-160S,nan,XTK-160S,4.3,20.0,nan,Physical,45887,,4987,,6076
 ,ID222XTK33,Xtech - Keyboard - Wired - Spanish - USB - Black - Standard XTK-092S,nan,XTK-092S,4.1,20.0,nan,Physical,81786,,4922,,6236
-,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,95981,95981,104946
+,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,95981,95981,106850
 ,ID223LOG87,Logitech MX Keys Mini - eclado - Inalámbrico - Español - Bluetooth 5.0 / Bluetooth / 2.4 GHz / USB-C - Ergonomic Design - Rosa,nan,920-010478,100.2,1.0,nan,Physical,132329,,82353,82990,98705
 ,ID223XTK03,Xtech CHEVALIER XTK-505S - Teclado - retroiluminación - USB - QWERTY - español,nan,XTK-505S,9.6,8.0,nan,Physical,131737,,,,
 ,ID223XTK06,"Xtech - Keyboard, mouse and mouse pad - Wired - Spanish - USB - Black - Gaming XTK-535S",nan,XTK-535S,16.5,20.0,nan,Physical,153550,,18908,,21510
@@ -1569,7 +1569,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM907JBL21,JBL Wave - Beam 2 - Auriculares inalámbricos - Inalámbrico - Azul,nan,JBLWBEAM2BLU,44.5,20.0,nan,Physical,280141,,49990,,52100
 ,MM907JBL56,JBL Tune Flex 2 Ghost Headphones TWS Purple,nan,JBLTFLEX2GMAEAM,70.6,20.0,nan,Physical,280710,,75338,79990,81187
 ,MM907JBL58,JBL TUNE - Headphones - 520 C Non-TWS White,nan,JBLT520CWHTAM,25.6,20.0,nan,Physical,280205,,21990,24990,28113
-,MM907JBL59,JBL TUNE - Headphones - 520 C Non-TWS Blue,nan,JBLT520CBLUAM,26.3,20.0,nan,Physical,280206,,24990,24990,29023
+,MM907JBL59,JBL TUNE - Headphones - 520 C Non-TWS Blue,nan,JBLT520CBLUAM,26.3,20.0,nan,Physical,280206,,24990,24990,29137
 ,MM907JBL60,JBL TUNE - Headphones - 520 C Non-TWS Purple,nan,JBLT520CPURAM,26.3,20.0,nan,Physical,280709,,24990,29990,29726
 ,MM914JBL02,JBL - Altavoz - Rojo - Flip 7 Altavoz Bluetooth,nan,JBLFLIP7REDAM,101.0,20.0,nan,Physical,,,,,
 ,MM914JBL11,JBL - Headphones - Tour One M3 TWS Ch,nan,JBLTOURONEM3LTTAM,232.7,20.0,nan,Physical,362806,,189990,229990,250770
