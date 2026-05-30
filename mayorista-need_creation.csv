@@ -531,9 +531,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729987,TONER HP 215A AMARILLO 850 PAG,Hp,W2312A,59.76,18,Suministros y Medios,Suministros Láser,259886,,64522,,69905
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,65,Suministros y Medios,Suministros Láser,260107,,64555,,69045
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.28,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,206,Suministros y Medios,Suministros Láser,260121,,77270,,84213
+,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,206,Suministros y Medios,Suministros Láser,260121,,77270,,84911
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,156,Suministros y Medios,Suministros Láser,260122,,89680,,97960
-,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,152,Suministros y Medios,Suministros Láser,260080,,89625,,98104
+,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,152,Suministros y Medios,Suministros Láser,260080,,89625,109990,98847
 ,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,69,Suministros y Medios,Suministros Láser,260108,,89756,,99118
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,213.73,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4802909,Easy PDU Basic Zero U 11 kW 230V (36) C1,Apc,EPDU1216B,299.24,1,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
@@ -559,7 +559,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4944984,USB-C to Dual HDMI 1.4 Video Adapter,Kensington,K38286WW,34.09,3,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,4970942,Bluetooth Silent Mouse w/o battery,Lenovo,4Y50X88823,27.87,1,Dispositivos de Entrada,Mouse,116333,,,,
 ,4985291,PEDANT WALL MOUNT ADAPTER,Avigilon,IRPTZ-MNT-WALL1,81.18,1,Seguridad de Redes,Accesorios y Cmpnts de Seguridad de Red,,,,,
-,4989598,CAJA DAÃ#ADA TÃ#NER HP 206A NEGRO 1350 P,Hp,W2110A,71.19,1,Suministros y Medios,Suministros Láser,260121,,77270,,84213
+,4989598,CAJA DAÃ#ADA TÃ#NER HP 206A NEGRO 1350 P,Hp,W2110A,71.19,1,Suministros y Medios,Suministros Láser,260121,,77270,,84911
 ,5003511,Security Slot Adapt Kit Ultrabook K64995,Kensington,K64995,9.68,45,Seguridad Física,Dispositivos Anti-Robo,,,,,
 ,5012008,HP 728 Cartucho Matte Black 130-ml,Hp,3WX25A,95.74,20,Suministros y Medios,Suministros Inyección de Tinta,259851,,106100,,119643
 ,5012063,TONER HP 212A NEGRO LJ,Hp,W2120A,183.04,13,Suministros y Medios,Suministros Láser,260283,,197614,,215327
@@ -639,7 +639,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5464389,6FT USB C CABLE 5GBPS 100W 5A PD,Startech.Com,USB315CCV2M,25.16,11,Cables,Cables y Adaptadores USB,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,139.64,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.11,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25021
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.11,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25380
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,29.84,39,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.96,40,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5493083,THINKSYSTEM SR630 V2 SR645 STANDARD FAN,Lenovo,4F17A14488,78.15,22,Componentes de Sistema,Componentes de Gabinete,,,,,
@@ -692,7 +692,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5666055,Network Management Card for Easy UPS,Apc,AP9544,130.1,13,Protección Eléctrica y Racks,Administración UPS,,,,,
 ,5666466,LA TC15 KIT LA TC15 KIT FOR LATAM CHARG,Zebra,KT-TC15-ROLATAM,526.08,3,Componentes de Sistema,Opciones BTO para Notebooks,,,,,
 ,5668074,MD120U4 USB4/THUNDERBOLT 4 PORTABLE DOCK,Kensington,K32850WW,152.72,1,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
-,5686037,PFI 050 C,Canon,5699C001,53.56,24,Suministros y Medios,Suministros para Plotters,259979,,59638,64990,67954
+,5686037,PFI 050 C,Canon,5699C001,53.56,24,Suministros y Medios,Suministros para Plotters,259979,,59638,64990,66751
 ,5690099,HPE DL36X G10+ 2SFF SAS/SATA TM CBL KIT,Hewlett Packard Enterprise,P55883-B21,152.1,5,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5690925,6in Hook and Loop Cable Ties 50pk,Startech.Com,B506I-HOOK-LOOP-TIES,12.71,5,Cables,Administración para Cables,,,,,
 ,5692500,CARTUCHO DE MANTENIMIENTO MAXIFY MC-G03,Canon,5794C001,12.18,7,Suministros y Medios,Suministros Inyección de Tinta,,,,,
@@ -965,7 +965,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6782253,HP OMEN 27 FHD 180 HZ,Hp,AV4K1AA#AKH,209.97,691,Pantallas,Monitores LCD/LED,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,105.99,898,Pantallas,Monitores LCD/LED,,,,,
 ,6783354,AIO 3R7 7735HS 16GB512GBSSD 24IN W11H,Lenovo,F0HR00BVCL,758.67,184,Computadores Servidores y Notebooks,Computadores con Monitor integrado,392866,,827900,,840945
-,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,182.74,45,Pantallas,Monitores LCD/LED,379960,,199990,249990,219258
+,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,182.74,45,Pantallas,Monitores LCD/LED,379960,,199990,249990,221622
 ,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1142.1,9,Pantallas,Monitores LCD/LED,318326,,1149990,1149990,1253816
 ,6783839,TM-T20IVL-002 USB +ETHERNET,Epson,C31CL45002,132.36,80,Impresoras,Impresoras de Recibos Térmicas,,,,,
 ,6784033,ANW 6000 24G CL4 4F 370W -STOCK,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,,,,,
