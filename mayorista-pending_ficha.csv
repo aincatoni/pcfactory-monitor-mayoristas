@@ -1,7 +1,7 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56539,5511193,APC Easy UPS On-Line SRV 2000VA 1800W 23,Apc,SRV2KI-E,708.25,30,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC Easy UPS On-Line SRV 2000VA 1800W 23,0,0,True,{},,380125,,657836,,708698
-56538,5528470,APC EASY UPS ON-LINE SRV 1000VA 900W 230,Apc,SRV1KI-E,380.78,46,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC EASY UPS ON-LINE SRV 1000VA 900W 230,0,0,True,{},,368978,,418500,418500,449397
-56536,6629496,APC EASY UPS 2200VA,Apc,BVG2200I-MSX,126.02,11,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC EASY UPS 2200VA,0,0,True,{},,363229,,128896,,133786
+56539,5511193,APC Easy UPS On-Line SRV 2000VA 1800W 23,Apc,SRV2KI-E,708.25,30,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC Easy UPS On-Line SRV 2000VA 1800W 23,0,0,True,{},,380125,,657836,,704481
+56538,5528470,APC EASY UPS ON-LINE SRV 1000VA 900W 230,Apc,SRV1KI-E,380.78,46,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC EASY UPS ON-LINE SRV 1000VA 900W 230,0,0,True,{},,368978,,418500,418500,445854
+56536,6629496,APC EASY UPS 2200VA,Apc,BVG2200I-MSX,126.02,11,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC EASY UPS 2200VA,0,0,True,{},,363229,,129990,,135163
 56535,6629493,APC EASY UPS 1600VA,Apc,BVG1600I-MSX,105.48,2,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC EASY UPS 1600VA,0,0,True,{},,363510,,99990,,104715
-56537,6629495,APC EASY UPS 700VA,Apc,BVG700I-MSX,52.53,30,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC EASY UPS 700VA,0,0,True,{},,361104,,52896,,55946
-56534,6709553,TUF GAMING B860-PLUS WIFI,Asus,90MB1JL0-M0EAY0,206.55,55,Componentes de Sistema,Tarjetas Madre Intel,ok,False,0,0,0,Placa madre Intel TUF GAMING B860-PLUS WIFI,0,0,True,{},,277396,,234021,,256334
+56537,6629495,APC EASY UPS 700VA,Apc,BVG700I-MSX,52.53,30,Protección Eléctrica y Racks,UPS,ok,False,0,0,0,APC EASY UPS 700VA,0,0,True,{},,361104,,52896,,55465
+56534,6709553,TUF GAMING B860-PLUS WIFI,Asus,90MB1JL0-M0EAY0,206.55,55,Componentes de Sistema,Tarjetas Madre Intel,ok,False,0,0,0,Placa madre Intel TUF GAMING B860-PLUS WIFI,0,0,True,{},,277396,,234538,,254267
