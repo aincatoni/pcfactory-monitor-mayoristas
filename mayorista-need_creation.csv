@@ -1,7 +1,7 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,1000329,RACK PDU BASIC ZERO U 16A,Apc,AP9572,84.98,3,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
 ,1000405,TEMPERATURE + HUMIDITY SENSOR,Apc,AP9335TH,174.76,1,Electrodomésticos y Hogar,Sensores de Automatización de Hogar,,,,,
-,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,197.14,98,Suministros y Medios,Suministros Láser,260299,,137890,,212010
+,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,197.14,98,Suministros y Medios,Suministros Láser,260299,,137890,,206841
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,278.31,39,Suministros y Medios,Suministros Láser,260104,,194900,,284699
 ,1084313,TINTA HP 72 CABEZAL MAGENTA Y CIAN,Hp,C9383A,102.93,3,Suministros y Medios,Suministros Inyección de Tinta,260600,,122490,,127168
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,46,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,
@@ -531,7 +531,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729987,TONER HP 215A AMARILLO 850 PAG,Hp,W2312A,59.76,18,Suministros y Medios,Suministros Láser,259886,,64572,68000,70125
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,65,Suministros y Medios,Suministros Láser,260107,,64626,,69241
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.28,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,206,Suministros y Medios,Suministros Láser,260121,,77500,,83306
+,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,206,Suministros y Medios,Suministros Láser,260121,,77500,,84128
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,156,Suministros y Medios,Suministros Láser,260122,,89779,,97780
 ,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,152,Suministros y Medios,Suministros Láser,260080,,89725,109990,97477
 ,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,69,Suministros y Medios,Suministros Láser,260108,,89855,,98274
@@ -559,7 +559,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4944984,USB-C to Dual HDMI 1.4 Video Adapter,Kensington,K38286WW,34.09,3,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,4970942,Bluetooth Silent Mouse w/o battery,Lenovo,4Y50X88823,27.87,1,Dispositivos de Entrada,Mouse,116333,,,,
 ,4985291,PEDANT WALL MOUNT ADAPTER,Avigilon,IRPTZ-MNT-WALL1,81.18,1,Seguridad de Redes,Accesorios y Cmpnts de Seguridad de Red,,,,,
-,4989598,CAJA DAÃ#ADA TÃ#NER HP 206A NEGRO 1350 P,Hp,W2110A,71.19,1,Suministros y Medios,Suministros Láser,260121,,77500,,83306
+,4989598,CAJA DAÃ#ADA TÃ#NER HP 206A NEGRO 1350 P,Hp,W2110A,71.19,1,Suministros y Medios,Suministros Láser,260121,,77500,,84128
 ,5003511,Security Slot Adapt Kit Ultrabook K64995,Kensington,K64995,9.68,45,Seguridad Física,Dispositivos Anti-Robo,,,,,
 ,5012008,HP 728 Cartucho Matte Black 130-ml,Hp,3WX25A,95.74,20,Suministros y Medios,Suministros Inyección de Tinta,259851,,106218,,129902
 ,5012063,TONER HP 212A NEGRO LJ,Hp,W2120A,183.04,13,Suministros y Medios,Suministros Láser,260283,,197833,212990,214643
@@ -639,7 +639,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5464389,6FT USB C CABLE 5GBPS 100W 5A PD,Startech.Com,USB315CCV2M,25.16,11,Cables,Cables y Adaptadores USB,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,139.64,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.11,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25402
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.11,268,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25147
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,29.84,39,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.96,40,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5493083,THINKSYSTEM SR630 V2 SR645 STANDARD FAN,Lenovo,4F17A14488,78.15,22,Componentes de Sistema,Componentes de Gabinete,,,,,
@@ -827,7 +827,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6264460,IMPRESORA INALAMBRICA 3 EN 1 MAXIFY GX30,Canon,5777C005,211.82,2,Impresoras,Multifuncionales Inkjet,225935,,266729,269990,277337
 ,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,486.57,1,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.51,190,Comunicaciones,Cintillos telefónicos,256210,,23680,,24155
-,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.55,24,Suministros y Medios,Suministros Inyección de Tinta,262183,,107216,,115762
+,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.55,24,Suministros y Medios,Suministros Inyección de Tinta,262183,,107216,,121366
 ,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,99.55,24,Suministros y Medios,Suministros Inyección de Tinta,262152,,107216,,112793
 ,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,85.81,24,Suministros y Medios,Suministros Inyección de Tinta,262283,,97990,,104503
 ,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,99.55,26,Suministros y Medios,Suministros Inyección de Tinta,262151,,109148,,114337
@@ -850,7 +850,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6363055,MAGIC KEYBOARD TOUCH ID NUM KEY WH-USA,Apple,MXK73LL/A,171.39,1,Dispositivos de Entrada,Teclados,,,,,
 ,6370905,KIT USB SR HONEYWELL XENON ULTRA 1960G 1,Honeywell,1960GSR-2USB-N,273.62,2,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
 ,6376006,Color LaserJet 550-sheet Media Tray,Hp,6QN57A,331.27,7,Impresoras,"Bandejas, Cajones y Alimentadores Sobre",,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,161.87,26,Impresoras,Multifuncionales Inkjet,258026,,134990,169990,169674
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,161.87,26,Impresoras,Multifuncionales Inkjet,258026,,134990,169990,167926
 ,6379937,MULTIFUNCIONAL DCP-T730DW,Brother,DCPT730DW,196.54,5,Impresoras,Multifuncionales Inkjet,257978,169990,169990,199990,204548
 ,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,130.99,25,Impresoras,Multifuncionales Inkjet,259353,,98990,109990,131907
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,269.94,4,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
