@@ -518,11 +518,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4634002,SFP+ - HP J9151E Compatible,Startech.Com,J9151E-ST,178.64,17,Dispositivos de Red,Transceivers,,,,,
 ,4634847,Lenovo 15.6-inch Laptop Casual Backpack,Lenovo,4X40T84058,9.74,70,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
 ,4637480,Aruba 6300M 24SFP+ 4SFP56 Swch,Hewlett Packard Enterprise,JL658A,11388.0,2,Dispositivos de Red,Switches Estaqueables,389546,,22023900,,23938890
-,4638872,TINTA PFI-030 NEGRO MATE - 55 ML,Canon,3488C001,37.75,29,Suministros y Medios,Suministros para Plotters,260709,,43460,,49955
+,4638872,TINTA PFI-030 NEGRO MATE - 55 ML,Canon,3488C001,37.75,29,Suministros y Medios,Suministros para Plotters,260709,,43460,,50304
 ,4638873,TINTA PFI-030 NEGRO - 55 ML,Canon,3489C001,37.12,9,Suministros y Medios,Suministros para Plotters,263951,,58840,,64415
 ,4638874,TINTA PFI-030 CIAN- 55 ML,Canon,3490C001,37.75,7,Suministros y Medios,Suministros para Plotters,260315,,44935,,50631
 ,4638905,TINTA PFI-030 MAGENTA- 55 ML,Canon,3491C001,38.38,23,Suministros y Medios,Suministros para Plotters,260316,,43776,,55163
-,4638906,TINTA PFI-030 YELLOW- 55 ML,Canon,3492C001,37.45,18,Suministros y Medios,Suministros para Plotters,260314,,42560,,49941
+,4638906,TINTA PFI-030 YELLOW- 55 ML,Canon,3492C001,37.45,18,Suministros y Medios,Suministros para Plotters,260314,,43460,,50864
 ,4649269,KTG SMARTFIT EASY RISER 2.0 LARGE - BLK,Kensington,K50422WW,18.14,49,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,4694492,UPS Network Management Card 3,Apc,AP9640,300.18,17,Protección Eléctrica y Racks,Administración UPS,,,,,
 ,4694493,UPS Network Management Card 3 with Envir,Apc,AP9641,496.2,8,Protección Eléctrica y Racks,Administración UPS,,,,,
@@ -692,7 +692,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5666055,Network Management Card for Easy UPS,Apc,AP9544,130.1,13,Protección Eléctrica y Racks,Administración UPS,,,,,
 ,5666466,LA TC15 KIT LA TC15 KIT FOR LATAM CHARG,Zebra,KT-TC15-ROLATAM,526.08,3,Componentes de Sistema,Opciones BTO para Notebooks,,,,,
 ,5668074,MD120U4 USB4/THUNDERBOLT 4 PORTABLE DOCK,Kensington,K32850WW,152.72,1,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
-,5686037,PFI 050 C,Canon,5699C001,53.56,24,Suministros y Medios,Suministros para Plotters,259979,,64677,64990,70413
+,5686037,PFI 050 C,Canon,5699C001,53.56,24,Suministros y Medios,Suministros para Plotters,259979,,64677,64990,69455
 ,5690099,HPE DL36X G10+ 2SFF SAS/SATA TM CBL KIT,Hewlett Packard Enterprise,P55883-B21,152.1,5,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5690925,6in Hook and Loop Cable Ties 50pk,Startech.Com,B506I-HOOK-LOOP-TIES,12.71,5,Cables,Administración para Cables,,,,,
 ,5692500,CARTUCHO DE MANTENIMIENTO MAXIFY MC-G03,Canon,5794C001,12.18,7,Suministros y Medios,Suministros Inyección de Tinta,,,,,
@@ -818,7 +818,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6255343,KIT DE MANTENCION C12C937201 AM-C400/AM-,Epson,C12C937201,43.43,26,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,6255344,CASSETTE DOBLE OPCIONAL-P2/LM4DC1,Epson,C12C937461,419.44,2,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,6255596,XENON ULTRA STAND GRAY 22CM 9PULG HEIGHT,Honeywell,STND-22F00-016-6,20.5,3,Productos POS/AIDC/Código de Barras,Accesorios para Escáners Código de Barra,,,,,
-,6258779,TONER TN860 RENDIMIENTO HASTA 1200 PG,Brother,TN860,40.35,4,Suministros y Medios,Suministros Láser,260272,,46400,,52753
+,6258779,TONER TN860 RENDIMIENTO HASTA 1200 PG,Brother,TN860,40.35,4,Suministros y Medios,Suministros Láser,260272,,46400,,52993
 ,6260920,CLICKSHARE CONFERENCE CX-30 SET GEN II,Barco,R9861613NAB2,1950.1,2,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,6261795,CABLE - CISCO USB CONSOLE CABLE 460KBPS,Startech.Com,ICUSBROLLOVR,29.46,5,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,6262636,EDA10A QUAD BATTERY CHARGER KIT,Honeywell,EDA10A-QBC-1,297.76,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
@@ -850,9 +850,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6363055,MAGIC KEYBOARD TOUCH ID NUM KEY WH-USA,Apple,MXK73LL/A,171.39,1,Dispositivos de Entrada,Teclados,,,,,
 ,6370905,KIT USB SR HONEYWELL XENON ULTRA 1960G 1,Honeywell,1960GSR-2USB-N,273.62,2,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
 ,6376006,Color LaserJet 550-sheet Media Tray,Hp,6QN57A,331.27,7,Impresoras,"Bandejas, Cajones y Alimentadores Sobre",,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,161.87,26,Impresoras,Multifuncionales Inkjet,258026,,134990,169990,170793
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,161.87,26,Impresoras,Multifuncionales Inkjet,258026,,134990,169990,172618
 ,6379937,MULTIFUNCIONAL DCP-T730DW,Brother,DCPT730DW,196.54,5,Impresoras,Multifuncionales Inkjet,257978,169990,169990,189990,208213
-,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,130.99,25,Impresoras,Multifuncionales Inkjet,259353,,98990,109990,134865
+,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,130.99,25,Impresoras,Multifuncionales Inkjet,259353,,98990,109990,136287
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,269.94,4,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,6392007,HPE STORAGE LTO-8 ULTRIUM RACK MOUNT TAP,Hewlett Packard Enterprise,P77033-B25,4706.7,1,Dispositivos de Almacenamiento,Unidades de Cinta y Arreglos,,,,,
 ,6398211,USB-C TO MAGSAFE 3 CABLE (2M)-AME,Apple,MW613AM/A,49.69,88,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
