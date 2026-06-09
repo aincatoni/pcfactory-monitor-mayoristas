@@ -6,7 +6,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,278.31,39,Suministros y Medios,Suministros Láser,260104,,194900,,292461
 ,1084313,TINTA HP 72 CABEZAL MAGENTA Y CIAN,Hp,C9383A,102.93,1,Suministros y Medios,Suministros Inyección de Tinta,260600,,117340,,124928
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,51,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,
-,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,86.2,822,Suministros y Medios,Suministros Láser,260019,,14990,,97005
+,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,86.2,822,Suministros y Medios,Suministros Láser,260019,,14990,,96770
 ,1188579,CARTUCHO DE TINTA LC1100 NEGRO,Brother,LC-1100BK,20.15,9,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,1188584,ETIQUETA DK1201,Brother,DK1201,7.81,144,Componentes de Sistema,Componentes de Gabinete,,,,,
 ,1188585,ETIQUETA DK1202,Brother,DK-1202,13.45,265,Suministros y Medios,Etiquetas y Aplicadores,,,,,
@@ -790,7 +790,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6255596,XENON ULTRA STAND GRAY 22CM 9PULG HEIGHT,Honeywell,STND-22F00-016-6,16.6,3,Productos POS/AIDC/Código de Barras,Accesorios para Escáners Código de Barra,,,,,
 ,6260920,CLICKSHARE CONFERENCE CX-30 SET GEN II,Barco,R9861613NAB2,1950.1,2,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,6262636,EDA10A QUAD BATTERY CHARGER KIT,Honeywell,EDA10A-QBC-1,297.76,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
-,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.92,42,Suministros y Medios,Suministros Inyección de Tinta,259799,,34524,41990,40488
+,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.92,42,Suministros y Medios,Suministros Inyección de Tinta,259799,,34524,41990,40614
 ,6264460,IMPRESORA INALAMBRICA 3 EN 1 MAXIFY GX30,Canon,5777C005,207.92,1,Impresoras,Multifuncionales Inkjet,225935,,240524,319990,287911
 ,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,477.62,1,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.2,193,Comunicaciones,Cintillos telefónicos,256210,,20490,,23666

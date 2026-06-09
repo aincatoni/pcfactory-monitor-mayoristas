@@ -9,10 +9,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100016684,Newland - 4-Slot Charger for M,nan,NLS-CD6550-4C,126.0,1.0,nan,Physical,,,,,
 ,100016773,Zebra Handheld TC15 Kit for LATAM TC15,nan,KT-TC15-ROLATAM,483.5,20.0,nan,Physical,,,,,
 ,100016892,ZEBRA ZD411 Direct Thermal Printer  203 dpi USB USB Host Modular Connectivity Slot BTLE5 US Cord Swiss Font EZPL ,nan,ZD4A022-D01M00EZ,249.5,20.0,nan,Physical,,,,,
-,100017171,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,58.6,3.0,nan,Physical,155925,,69990,69990,74990
-,100017173,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - blanco",nan,939-001986,209.0,3.0,nan,Physical,157245,,219990,,241253
+,100017171,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,58.6,3.0,nan,Physical,155925,,69990,69990,71306
+,100017173,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - blanco",nan,939-001986,209.0,3.0,nan,Physical,157245,,219990,,253595
 ,100017174,"ASTRO Gaming A30 - Auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - blanco",nan,939-001993,170.0,3.0,nan,Physical,157247,,203620,,220108
-,100017175,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - marino",nan,939-002000,209.0,2.0,nan,Physical,157248,,233702,,268698
+,100017175,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - marino",nan,939-002000,209.0,2.0,nan,Physical,157248,,233702,,262346
 ,100017225,Kingston Fury - DDR4 SDRAM - Unbuffered - Non-ECC,nan,KF432C16BB/32GB,288.5,20.0,nan,Physical,,,,,
 ,100017407,Zebra - Portable Barcode Printer - Direct thermal - Wi-Fi / Bluetooth 4.0 - ZQ630 Plus English fonts Dual,nan,ZQ63-AUWAL04-00,1432.3,8.0,nan,Physical,,,,,
 ,100017420,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",nan,ET45CA-101D1B0-A6,819.5,5.0,nan,Physical,393830,,969152,,969152
@@ -585,7 +585,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AS204EPS75,"Epson T8248 - 350 ml - negro mate - original - cartucho de tinta - para SureColor SC-P6000, SC-P7000, SC-P7000V, SC-P8000, SC-P9000, SC-P9000V",nan,T824800,136.0,1.0,nan,Physical,277870,,172650,,175310
 ,AS206EPS74,"Epson T8241 - 350 ml - Photo Negro - original - cartucho de tinta - para SureColor SC-P6000, SC-P7000, SC-P7000V, SC-P8000, SC-P9000, SC-P9000V",nan,T824100,147.6,1.0,nan,Physical,259926,,154694,,163720
 ,AS218HEW98,HP 508X - Alto rendimiento - magenta - original - LaserJet - cartucho de tóner (CF363X) - para LaserJet Enterprise MFP M577; LaserJet Enterprise Flow MFP M577,nan,CF363X,324.9,2.0,nan,Physical,263414,,366104,,396630
-,AS222HEW76,HP - Ink Bottle - Black / Cyan / Magenta / Yellow - Combo 4PACK,nan,9F3N4AL,31.3,20.0,nan,Physical,259799,,34524,41990,40488
+,AS222HEW76,HP - Ink Bottle - Black / Cyan / Magenta / Yellow - Combo 4PACK,nan,9F3N4AL,31.3,20.0,nan,Physical,259799,,34524,41990,40614
 ,AT000KYX07,"Kyocera TK 8527K - Negro - original - caja - cartucho de tóner - para TASKalfa 3552ci, 3553ci, 4052ci, 4053ci",nan,1T02RM0US0,64.7,1.0,nan,Physical,266813,,68778,,72070
 ,AT000KYX08,"Kyocera TK 8527M - Magenta - original - caja - cartucho de tóner - para TASKalfa 3552ci, 3553ci, 4052ci, 4053ci",nan,1T02RMBUS1,80.5,3.0,nan,Physical,266812,,85585,,93456
 ,AT000KYX10,"Kyocera TK 8527C - Cián - original - caja - cartucho de tóner - para TASKalfa 3552ci, 3553ci, 4052ci, 4053ci",nan,1T02RMCUS1,80.5,3.0,nan,Physical,266811,,85585,,93456
@@ -724,7 +724,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CE107MOT54,Motorola G24 - Smartphone - Android - Sky blue,nan,PB1B0013CL,179.5,1.0,nan,Physical,235227,,149990,,149990
 ,CE108MOT20,Motorola Edge 50 Fusion - Smartphone - Android - 256 GB - Touch - PB1W0019CL,nan,PB1W0019CL,251.2,3.0,nan,Physical,245985,,277089,,295421
 ,CE108MOT91,Motorola Edge 50 Ultra - Smartphone - Android - Peach - Touch,nan,PB0Y0047CL,684.9,4.0,nan,Physical,249181,,755712,899990,837762
-,CE109MOT11,Motorola Edge 50 - Smartphone - Android - Gray - Touch,nan,PB2T0002CL,380.5,5.0,nan,Physical,256786,,199990,,382593
+,CE109MOT11,Motorola Edge 50 - Smartphone - Android - Gray - Touch,nan,PB2T0002CL,380.5,5.0,nan,Physical,256786,,199990,499990,393265
 ,CE109MOT12,Motorola Edge 50 - Smartphone - Android - Peach - Touch,nan,PB2T0003CL,380.5,2.0,nan,Physical,,,,,
 ,CE109MOT22,Motorola G35 - Smartphone - Android - Black - Touch,nan,PB3G0015CL,129.4,1.0,nan,Physical,256681,,110000,134900,133643
 ,CE109MOT78,Motorola Razr 50 Ultra - Smartphone - cosmic,nan,PB1T0127CL,882.2,20.0,nan,Physical,,,,,
@@ -741,7 +741,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CE110MOT87,Motorola Moto G06 - Cellular phone - Orange - PB970036CL,nan,PB970036CL,99.7,20.0,nan,Physical,,,,,
 ,CE110MOT88,Motorola Edge 60 Fusion - Smartphone - Android - Brown - Touch,nan,PB7D0046CL,254.7,20.0,nan,Physical,,,,,
 ,CE111MOT06,Motorola Moto G06 - Smartphone - Brown,nan,PB970101CL,94.3,20.0,nan,Physical,,,,,
-,CE111MOT09,Motorola Edge 70 - Smartphone - Android - Touch - PBBB0042CL,nan,PBBB0042CL,428.5,20.0,nan,Physical,385083,,199990,499990,410352
+,CE111MOT09,Motorola Edge 70 - Smartphone - Android - Touch - PBBB0042CL,nan,PBBB0042CL,428.5,20.0,nan,Physical,385083,,199990,499990,411343
 ,CE111MOT10,Motorola Edge 70 - Smartphone - Android - Touch - PBBB0041CL,nan,PBBB0041CL,428.5,20.0,nan,Physical,,,,,
 ,CE111MOT13,Motorola Edge 70 - Smartphone - Android - Touch - PBA60016CL,nan,PBA60016CL,531.2,20.0,nan,Physical,,,,,
 ,CE111MOT14,Motorola Edge 70 - Smartphone - Android - Touch - PBA60018CL,nan,PBA60018CL,618.3,20.0,nan,Physical,,,,,
@@ -773,7 +773,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CH411KNG21,Kingston DataTraveler Kyson - Unidad flash USB - 256 GB - USB 3.2 Gen 1,nan,DTKN/256GB,39.9,20.0,nan,Physical,95121,,39500,,42336
 ,CH411KNG39,Kingston DataTraveler Exodia M - Unidad flash USB - 256 GB - USB 3.2 Gen 1,nan,DTXM/256GB,23.0,20.0,nan,Physical,146299,,24430,,26764
 ,CH411KNG61,Kingston DataTraveler 70 - Unidad flash USB - 256 GB - USB-C 3.2 Gen 1,nan,DT70/256GB,22.9,6.0,nan,Physical,265718,,26072,,27505
-,CH411KNG62,Kingston - USB flash drive - 64 GB - USB 3.2 Gen 1 - NEON (PINK),nan,KC-U2L64-7LN,6.5,20.0,nan,Physical,214766,,7200,8990,8366
+,CH411KNG62,Kingston - USB flash drive - 64 GB - USB 3.2 Gen 1 - NEON (PINK),nan,KC-U2L64-7LN,6.5,20.0,nan,Physical,214766,,7200,8990,8545
 ,CH411KNG63,Kingston - USB flash drive - 64 GB - USB 3.2 Gen 1 - NEON Aqua Blue,nan,KC-U2L64-7LB,6.3,20.0,nan,Physical,216379,,6500,,8351
 ,CH411KNG64,Kingston - USB flash drive - 64 GB - USB 3.2 Gen 1 - NEON Purple,nan,KC-U2L64-7LP,6.3,20.0,nan,Physical,393082,,9300,,9300
 ,CH411KNG90,Kingston - USB flash drive - USB 3.2 Gen 1 - Exodia S Black Yellow,nan,DTXS/512GB,43.6,20.0,nan,Physical,278113,,38963,,46917
@@ -792,10 +792,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CH516KNG99,Kingston - DDR5 SDRAM - 48GB DDR5 5600MT/s Module,nan,KCP556UD8-48,660.9,20.0,nan,Physical,354692,,652391,,702106
 ,CH804KNG38,Kingston High Endurance - Tarjeta de memoria flash - 256 GB - A1 / UHS-I U1 / Class10 - microSDXC UHS-I U1,nan,SDCE/256GB,50.2,2.0,nan,Physical,212787,,72681,,89549
 ,CH804KNG70,Kingston - Flash memory card - microSDHC - 1TB microSDXC Canvas Select Pl,nan,SDCS3/1TB,107.9,10.0,nan,Physical,279985,,118500,,134976
-,CP225ITL00,Intel - Core Ultra 5 225 - 4.9 GHz - 10-core - LGA1851,nan,BX80768225,180.5,19.0,nan,Physical,266046,,188900,,218111
-,CP225ITL01,Intel - Core Ultra 5 225F - 4.9 GHz - 10-core - LGA1851,nan,BX80768225F,162.9,20.0,nan,Physical,266048,,174880,174880,198714
+,CP225ITL00,Intel - Core Ultra 5 225 - 4.9 GHz - 10-core - LGA1851,nan,BX80768225,180.5,19.0,nan,Physical,266046,,188900,,217883
+,CP225ITL01,Intel - Core Ultra 5 225F - 4.9 GHz - 10-core - LGA1851,nan,BX80768225F,162.9,20.0,nan,Physical,266048,,174496,174880,198586
 ,CP265ITL00,Intel - Core Ultra 7 265 - 5.3 GHz - 20-core - LGA1851,nan,BX80768265,371.6,13.0,nan,Physical,269563,,419520,,464224
-,CP265ITL02,Intel - Core Ultra 7 265KF - 3.9 GHz - 20-core - LGA1851,nan,BX80768265KF,283.5,15.0,nan,Physical,259003,,309414,,364292
+,CP265ITL02,Intel - Core Ultra 7 265KF - 3.9 GHz - 20-core - LGA1851,nan,BX80768265KF,283.5,15.0,nan,Physical,259003,,309414,,367534
 ,CP265ITL03,Intel - Core Ultra 7 265F - 5.3 GHz - 20-core - LGA1851,nan,BX80768265F,353.3,15.0,nan,Physical,269564,,397990,,427788
 ,CP949ITL00,Intel Core i9 i9-14900 - 2 GHz - 24 núcleos - 32 hilos - 36 MB caché - FCLGA1700 Socket - Caja,nan,BX8071514900,630.4,14.0,nan,Physical,239611,,678030,,728576
 ,CP949ITL03,Intel Core i9 i9-14900F - 2 GHz - 24 núcleos - 32 hilos - 36 MB caché - FCLGA1700 Socket - Caja,nan,BX8071514900F,601.5,15.0,nan,Physical,241987,,667584,,711524
@@ -847,7 +847,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,DH964WDC76,"Western Digital WD Purple - Hard drive - Internal hard drive - 10 TB - 3.5"" - 7200 rpm",nan,WD102PURP,327.2,20.0,nan,Physical,263108,,415275,,435280
 ,DH966SEA53,"Seagate SkyHawk ST2000VX017 - Disco duro - 2 TB - interno - 3.5"" - SATA 6Gb/s - búfer: 256 MB - con Recuperación de datos Seagate Rescue de 3 años",nan,ST2000VX017,88.0,15.0,nan,Physical,205920,,106400,106400,114959
 ,DH966SEA68,"Seagate Barracuda ST1000DM014 - Disco duro - 1 TB - interno - 3.5"" - SATA 6Gb/s - 7200 rpm - búfer: 256 MB",nan,ST1000DM014,77.2,20.0,nan,Physical,211134,,79959,,86595
-,DH966SEA91,"Seagate SkyHawk - Hard drive - Internal hard drive - 4 TB - 3.5"" - 5400 rpm - SCSI",nan,ST4000VX016,141.5,9.0,nan,Physical,248653,,183598,,203671
+,DH966SEA91,"Seagate SkyHawk - Hard drive - Internal hard drive - 4 TB - 3.5"" - 5400 rpm - SCSI",nan,ST4000VX016,141.5,9.0,nan,Physical,248653,,183598,,201846
 ,DH966SEA95,Seagate Expansion - Disco duro externo - 20 TB - USB 3.0 - Negro,nan,STKP20000400,549.8,2.0,nan,Physical,263870,,626470,,626470
 ,DH966SEA96,Seagate Expansion - Disco duro externo - 24 TB - USB 3.0 - Negro,nan,STKP24000400,626.4,9.0,nan,Physical,259112,,687470,,687470
 ,DH966SEA98,"Seagate SkyHawk AI - Disk drive - 24 TB - 3.5""",nan,ST24000VE002,759.0,3.0,nan,Physical,353198,,689334,,732232
@@ -1257,17 +1257,17 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID014KNS52,Kensington - Mouse - Wireless - K79810,nan,K79810,22.5,5.0,nan,Physical,227685,,29995,,32314
 ,ID014KNS56,Kensington Orbit Fusion K72363WW - Mouse - USB - Wireless - Black,nan,K72363WW,55.1,4.0,nan,Physical,153330,,61814,,64011
 ,ID016KNS17,Kensington - Mouse - USB - Wired - K72369,nan,K72369,8.9,3.0,nan,Physical,39394,,7335,9650,9612
-,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9980,9990,12824
+,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9980,9990,12554
 ,ID022KNS40,Kensington - Mouse - USB - Black,nan,K75403,20.0,3.0,nan,Physical,85974,,21285,21990,24754
 ,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,7,7990,10425
 ,ID023LOG10,Logitech M190 - Ratón - óptico - 3 botones - inalámbrico - receptor inalámbrico USB - rojo,nan,910-005904,9.8,7.0,nan,Physical,86548,,9728,,13798
 ,ID023LOG52,"Logitech Signature M650 - Ratón - manos pequeñas - diestro y zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006251,29.1,20.0,nan,Physical,132346,,29792,36490,39572
-,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,36490,,40836
+,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,36490,,40692
 ,ID023LOG80,Logitech G G502 X - Ratón - óptico - 8 botones - cableado - USB - blanco,nan,910-006145,71.6,20.0,nan,Physical,153269,,62990,79990,84434
 ,ID024LOG08,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - grafito,nan,910-006932,73.1,20.0,nan,Physical,220143,,63990,63990,79323
-,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,75392,87990,96792
-,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,14990,,22113
-,ID024LOG27,Logitech - G309 - Mouse - Black,nan,910-007198,44.3,20.0,nan,Physical,254110,,39990,89990,64658
+,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,75392,87990,96101
+,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,14990,,21776
+,ID024LOG27,Logitech - G309 - Mouse - Black,nan,910-007198,44.3,20.0,nan,Physical,254110,,39990,89990,64211
 ,ID024LOG28,Logitech - G309 - Mouse - white,nan,910-007206,57.1,11.0,nan,Physical,254109,,54990,,76143
 ,ID024LOG35,Logitech - Pro 2 - Mouse - Wireless - Gamer,nan,910-007301,105.3,8.0,nan,Physical,264873,,94890,,119796
 ,ID024LOG36,Logitech - Pro 2 - Mouse - Wireless - Pink,nan,910-007308,94.4,20.0,nan,Physical,265854,,94990,94990,116788
@@ -1280,17 +1280,17 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID211KLX31,Klip Xtreme KCK-265S - Juego de teclado y ratón - inalámbrico - 2.4 GHz - impermeable,nan,KCK-265S,13.3,20.0,nan,Physical,,,,,
 ,ID211KLX34,Klip Xtreme KCK-251S DeskMate - Juego de teclado y ratón - USB - español,nan,KCK-251S,8.2,20.0,nan,Physical,46882,,8968,,11070
 ,ID211KLX35,Klip Xtreme - Keyboard - Wired - Spanish - USB - Black - Multimedia keys,nan,KKM-252S,8.4,20.0,nan,Physical,117253,,9333,12990,11325
-,ID211KLX36,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz - All black - Ergonomic,nan,KBK-530S,26.7,20.0,nan,Physical,210911,,28396,,31702
+,ID211KLX36,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz - All black - Ergonomic,nan,KBK-530S,26.7,20.0,nan,Physical,210911,,28396,,31833
 ,ID211KLX38,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz / Bluetooth 5.0 - Gray / Black - Dual Connection / Touchpad,nan,KCK-550S,16.5,20.0,nan,Physical,259359,,18355,,21963
 ,ID211KLX43,Klip Xtreme - Keyboard and Touchpad - Spanish - Wireless - Bluetooth 5.0 - Black - KCK-650S-BK,nan,KCK-650S-BK,27.8,20.0,nan,Physical,277786,,22115,,25549
 ,ID211KLX46,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Dual Dongle,nan,KMW-550,9.7,20.0,nan,Physical,387476,,11990,,13412
 ,ID211KLX47,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth - Wireless - Trimode,nan,KMW-775,11.4,20.0,nan,Physical,387480,,14120,,15623
 ,ID222XTK03,Xtech - Keyboard - Wired - Spanish - USB - Black - XTK-160S,nan,XTK-160S,4.3,20.0,nan,Physical,45887,,4898,,6440
 ,ID222XTK33,Xtech - Keyboard - Wired - Spanish - USB - Black - Standard XTK-092S,nan,XTK-092S,4.1,20.0,nan,Physical,81786,,4744,,6104
-,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,109990,109990,129057
+,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,109990,109990,128197
 ,ID223LOG87,Logitech MX Keys Mini - eclado - Inalámbrico - Español - Bluetooth 5.0 / Bluetooth / 2.4 GHz / USB-C - Ergonomic Design - Rosa,nan,920-010478,100.2,1.0,nan,Physical,132329,,74990,82990,117465
 ,ID223XTK03,Xtech CHEVALIER XTK-505S - Teclado - retroiluminación - USB - QWERTY - español,nan,XTK-505S,9.6,8.0,nan,Physical,131737,,,,
-,ID223XTK06,"Xtech - Keyboard, mouse and mouse pad - Wired - Spanish - USB - Black - Gaming XTK-535S",nan,XTK-535S,16.5,20.0,nan,Physical,153550,,19074,,22089
+,ID223XTK06,"Xtech - Keyboard, mouse and mouse pad - Wired - Spanish - USB - Black - Gaming XTK-535S",nan,XTK-535S,16.5,20.0,nan,Physical,153550,,19074,,22204
 ,ID224LOG02,Logitech Master Series MX Mechanical Mini - Teclado - retroiluminación - inalámbrico - Bluetooth LE - QWERTY - español - interruptor: táctil silencioso - grafito,nan,920-010846,147.7,2.0,nan,Physical,147315,,146302,169990,186153
 ,ID224LOG32,"Logitech G PRO X TKL LIGHTSPEED Wireless Gaming Keyboard, Tactile Switches (GX Brown), Magenta - Teclado - retroiluminación - inalámbrico - 2.4 GHz, Bluetooth - QWERTY - EE. UU. - interruptor: GX Brown Tactile - magenta",nan,920-012154,169.0,3.0,nan,Physical,220222,,197600,257940,264856
 ,ID224LOG36,Logitech - Keyboard - Español - Graphite - 920-012278,nan,920-012278,59.3,2.0,nan,Physical,229814,,60920,,68492
@@ -1400,7 +1400,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM000JAB66,Jabra Evolve2 75 - Auricular - en oreja - Bluetooth - inalámbrico - cancelación de sonido activo - USB-A - aislamiento de ruido - negro - Certificado para Equipos de Microsoft,nan,27599-999-999,310.8,7.0,nan,Physical,231034,,,,
 ,MM000JAB79,Jabra Evolve2 75 - Auricular - en oreja - Bluetooth - inalámbrico - cancelación de sonido activo - USB-C - aislamiento de ruido - negro - Certificado para Equipos de Microsoft,nan,27599-999-899,334.1,12.0,nan,Physical,157251,,,,
 ,MM000LEN39,Lenovo Earbuds - Earphones - Para Portable electronics / Para Game console / Para Computer / Para Cellular phone - Wireless,nan,GXD1Q65146,16.4,20.0,nan,Physical,357222,,17990,,20274
-,MM000LOG77,Logitech Zone Vibe 100 - Auricular - tamaño completo - Bluetooth - inalámbrico - rosa,nan,981-001223,107.1,4.0,nan,Physical,153264,,123600,,145586
+,MM000LOG77,Logitech Zone Vibe 100 - Auricular - tamaño completo - Bluetooth - inalámbrico - rosa,nan,981-001223,107.1,4.0,nan,Physical,153264,,123600,,146329
 ,MM000MOT25,Motorola - Headset - Para Cellular phone - Wired - azul,nan,79MOTE2BLU,4.8,9.0,nan,Physical,,,,,
 ,MM000MOT44,Motorola - EARBUDS 2-S - Headphones - Para Cellular phone - Wired - rojo,nan,79MOTE2RED,4.8,20.0,nan,Physical,,,,,
 ,MM000MOT65,Motorola - Headphones - Para Cellular phone - Wireless,nan,79MOTANCBK,112.2,7.0,nan,Physical,,,,,
@@ -1414,9 +1414,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM000TPL42,TP-Link Tapo C125 - Network surveillance camera,nan,TAPO C125,31.5,20.0,nan,Physical,,,,,
 ,MM001DEL30,Dell Pro Plus - EB525 - Wireless headset system - Para Computer / Para Cellular phone / Para Portable electronics / Para Professional audio / Para TV / Para Virtual reality system / Para Phone - Wireless - In-ear,nan,520-BBNF,185.2,20.0,nan,Physical,362716,,208900,,222652
 ,MM001JAB16,"Jabra Evolve2 85 MS Stereo - Auricular - tamaño completo - Bluetooth - inalámbrico, cableado - cancelación de sonido activo - conector de 3,5 mm - aislamiento de ruido - negro - Certificado para Equipos de Microsoft",nan,28599-999-899,399.8,16.0,nan,Physical,111389,,424064,,447740
-,MM001LOG01,Logitech Zone - 300 - Headphones - Wireless - 981-001411,nan,981-001411,55.2,8.0,nan,Physical,245323,,67803,,80804
-,MM001LOG02,Logitech Zone - 300 - Headphones - Wireless - 981-001416,nan,981-001416,48.8,4.0,nan,Physical,245322,,49856,72990,76520
-,MM001RZR29,"Razer BlackShark V2 X - Auricular - 7.1 canales - tamaño completo - cableado - conector de 3,5 mm - aislamiento de ruido - blanco - certificado Discord",nan,RZ04-03240700-R3U1,37.8,20.0,nan,Physical,134297,,37696,46990,42592
+,MM001LOG01,Logitech Zone - 300 - Headphones - Wireless - 981-001411,nan,981-001411,55.2,8.0,nan,Physical,245323,,67803,,81548
+,MM001LOG02,Logitech Zone - 300 - Headphones - Wireless - 981-001416,nan,981-001416,48.8,4.0,nan,Physical,245322,,49856,72990,76604
+,MM001RZR29,"Razer BlackShark V2 X - Auricular - 7.1 canales - tamaño completo - cableado - conector de 3,5 mm - aislamiento de ruido - blanco - certificado Discord",nan,RZ04-03240700-R3U1,37.8,20.0,nan,Physical,134297,,37696,46990,42978
 ,MM001RZR69,Razer Barracuda - Headset - Para Game console - Wireless - Multi-platform Gaming and Mob,nan,RZ04-03790100-R3U1,136.5,4.0,nan,Physical,153694,,136080,,145390
 ,MM001RZR84,"Razer BlackShark V2 PRO - Auricular - 7.1 canales - tamaño completo - Bluetooth/radiofrecuencia de 2,4 GHz - inalámbrico - aislamiento de ruido - negro",nan,RZ04-04530200-R3U1,153.6,8.0,nan,Physical,219617,,162990,,185168
 ,MM001RZR89,"Razer BlackShark V2 HyperSpeed - Auricular - tamaño completo - Bluetooth/radiofrecuencia de 2,4 GHz - inalámbrico, cableado - USB - aislamiento de ruido",nan,RZ04-04960100-R3U1,123.0,20.0,nan,Physical,228328,,129504,,139101
@@ -1458,9 +1458,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM111KLX36,Klip Xtreme - KWH-750GR - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Gray color,nan,KWH-750GR,30.4,20.0,nan,Physical,187802,,25500,39990,29732
 ,MM111KLX47,Klip Xtreme - KTE-500BK - Earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - TWS 108Hr Negros,nan,KTE-500BK,27.6,14.0,nan,Physical,145695,,23774,36990,29055
 ,MM111KLX50,Klip Xtreme - KTE-750WH - True wireless earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - ANC - 26hrs - Blanco,nan,KTE-750WH,17.5,20.0,nan,Physical,152014,,18995,30990,23678
-,MM111KLX69,Klip Xtreme - KCH-510 - Headset - Para Conference / Para Home audio - Wired - Stereo -console cmd.,nan,KCH-510,12.0,20.0,nan,Physical,187834,,14379,,16123
+,MM111KLX69,Klip Xtreme - KCH-510 - Headset - Para Conference / Para Home audio - Wired - Stereo -console cmd.,nan,KCH-510,12.0,20.0,nan,Physical,187834,,14379,,16201
 ,MM111KLX70,Klip Xtreme - KCH-905 - Headset - Para Conference / Para Home audio - Wireless - Charging Base,nan,KCH-905,32.1,20.0,nan,Physical,198923,,35732,,42448
-,MM111KLX75,Klip Xtreme - KNH-750GR - Headphones - Para Home audio - Wireless - ANC - 44Hr - Gray,nan,KNH-750GR,46.6,12.0,nan,Physical,232352,,52154,,57977
+,MM111KLX75,Klip Xtreme - KNH-750GR - Headphones - Para Home audio - Wireless - ANC - 44Hr - Gray,nan,KNH-750GR,46.6,12.0,nan,Physical,232352,,52154,69990,58978
 ,MM111KLX76,Klip Xtreme - KNH-750BL - Headphones - Para Home audio - Wireless - ANC - 44Hr - Blue,nan,KNH-750BL,47.9,19.0,nan,Physical,232351,,53120,69990,60555
 ,MM111KLX83,Klip Xtreme - KWH-010BK - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Black - BT,nan,KWH-010BK,10.8,20.0,nan,Physical,261033,,9990,,15715
 ,MM111KLX84,Klip Xtreme - KWH-010BL - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Blue - BT,nan,KWH-010BL,10.9,20.0,nan,Physical,259363,,12990,,12990
@@ -1470,22 +1470,22 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM111KLX90,Klip Xtreme - KNH-300WH - Headphones - Para Home audio - Wireless - ANC - 32Hr - White,nan,KNH-300WH,19.6,6.0,nan,Physical,270544,,,,
 ,MM111KLX91,Klip Xtreme - Headset - Para Conference / Para Home audio - Wireless - Open ear - Microphone,nan,KOE-750BK,23.9,20.0,nan,Physical,358385,,22840,,24477
 ,MM111KLX92,Klip Xtreme - True wireless earphones - Para Phone / Para Cellular phone / Para Tablet - Wireless - Open ear - TWS,nan,KOE-250BK,22.2,20.0,nan,Physical,358325,,21130,,25625
-,MM111KLX93,Klip Xtreme - Headphones - Para Phone / Para Cellular phone / Para Tablet - Wireless - Bone Conduction,nan,KBC-500,22.2,2.0,nan,Physical,358380,,27550,,29140
+,MM111KLX93,Klip Xtreme - Headphones - Para Phone / Para Cellular phone / Para Tablet - Wireless - Bone Conduction,nan,KBC-500,22.2,2.0,nan,Physical,358380,,27550,,30110
 ,MM111KLX94,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC Black,nan,KTE-755BK,14.6,20.0,nan,Physical,308591,,17950,18990,19296
 ,MM111KLX95,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC Gray,nan,KTE-755GR,14.8,20.0,nan,Physical,308595,,13580,,15790
 ,MM111KLX96,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 22Hrs ANC White,nan,KTE-755WH,14.8,20.0,nan,Physical,308594,,13580,18990,16323
 ,MM111KLX97,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 26Hrs Hybdrid ANC Black,nan,KTE-850BK,22.6,20.0,nan,Physical,358375,,20980,34990,26705
-,MM112KLX02,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Black,nan,KTE-015BK,13.0,20.0,nan,Physical,358382,,14990,16990,16687
+,MM112KLX02,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Black,nan,KTE-015BK,13.0,20.0,nan,Physical,358382,,14990,16990,16725
 ,MM112KLX03,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX White,nan,KTE-015WH,13.5,18.0,nan,Physical,358381,,13320,16990,15154
 ,MM112KLX04,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Gray,nan,KTE-015GR,12.9,20.0,nan,Physical,358376,,14990,16990,16740
 ,MM112KLX05,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 17Hrs IPX Purple,nan,KTE-015PR,13.0,20.0,nan,Physical,358383,,16050,16990,17304
 ,MM112KLX06,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 15Hrs Display Black,nan,KTE-800BK,17.6,20.0,nan,Physical,384651,,21610,,23421
 ,MM120LEN16,Lenovo - Headphones - Wired - VoIP Headset (Teams),nan,4XD1M45626,52.1,20.0,nan,Physical,264238,,50222,,53206
 ,MM121LOG30,"Logitech G PRO X 2 LIGHTSPEED Wireless Gaming Headset, Magenta - Auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - conector de 3,5 mm - aislamiento de ruido",nan,981-001274,280.9,1.0,nan,Physical,220007,,229824,,274187
-,MM121LOG32,Logitech Astro A50 X- Headset - Wireless - White,nan,939-002132,378.0,3.0,nan,Physical,245555,,369990,,467663
+,MM121LOG32,Logitech Astro A50 X- Headset - Wireless - White,nan,939-002132,378.0,3.0,nan,Physical,245555,,369990,,467688
 ,MM121LOG36,Logitech ASTRO Gaming - A50 - Headset - Para Computer / Para Game console - Wireless - Blanco,nan,939-002229,303.5,5.0,nan,Physical,268572,,379990,,408626
 ,MM121LOG41,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Graphite Limited,nan,981-001504,149.1,20.0,nan,Physical,383165,,189990,189990,220528
-,MM121LOG42,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Off-White Limited,nan,981-001596,149.0,20.0,nan,Physical,384947,,189990,189990,223556
+,MM121LOG42,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Off-White Limited,nan,981-001596,149.0,20.0,nan,Physical,384947,,189990,189990,222882
 ,MM121LOG43,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Rose Limited,nan,981-001597,149.0,20.0,nan,Physical,384946,,189990,189990,222882
 ,MM220KLX86,Klip Xtreme KSB-001 - Barra de sonido - Negro - 100W - 2.0ch,nan,KSB-001,43.6,18.0,nan,Physical,,,,,
 ,MM221KLX04,Klip Xtreme KSB-00A - Sound bar - Black - 2.0ch 60W BT HDMI-OPT-RCA,nan,KSB-00A,39.5,20.0,nan,Physical,,,,,
@@ -1500,7 +1500,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM221PGL61,Primus Gaming - Microphone set - Computer - Wired - Includes arm stand,nan,PMI-150KT,48.6,20.0,nan,Physical,,,,,
 ,MM221PGL63,Primus Gaming - Includes remote,nan,PLI-100ML,28.3,20.0,nan,Physical,,,,,
 ,MM221PGL64,Primus Gaming - PWH-300 - True wireless earphones - Para Cellular phone / Para Computer / Para Game console / Para Portable electronics - Wireless,nan,PWH-300BK,22.8,20.0,nan,Physical,277377,,23980,29990,27369
-,MM221PGL65,Primus Gaming - PBH-S380BF - Wireless headset system - Para Computer / Para Cellular phone / Para Game console / Para Phone / Para Tablet - Wireless,nan,PBH-S380BF,32.2,20.0,nan,Physical,361043,,34883,,37470
+,MM221PGL65,Primus Gaming - PBH-S380BF - Wireless headset system - Para Computer / Para Cellular phone / Para Game console / Para Phone / Para Tablet - Wireless,nan,PBH-S380BF,32.2,20.0,nan,Physical,361043,,34883,,38426
 ,MM221PGL66,Primus Gaming - PWH-S250R2 - True wireless earphones - Para Cellular phone / Para Computer / Para Game console / Para Tablet - Wireless,nan,PWH-S250R2,18.8,20.0,nan,Physical,361069,,19990,,24245
 ,MM221PGL67,Primus Gaming - PWH-S250B8 - True wireless earphones - Para Cellular phone / Para Computer / Para Game console / Para Tablet - Wireless,nan,PWH-S250B8,18.8,20.0,nan,Physical,361081,,19990,,24134
 ,MM221XTK08,Xtech XTS-110 - Altavoces - para PC - 6 vatios (Total),nan,XTS-110,5.1,20.0,nan,Physical,,,,,
@@ -1543,7 +1543,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM722LOG23,"Logitech BRIO 300 - Webcam - color - 2 MP - 1920 x 1080 - 720p, 1080p - audio - USB-C",nan,960-001446,59.7,16.0,nan,Physical,,,,,
 ,MM722LOG29,Logitech BRIO - Pro 705 - Webcam - 960-001529,nan,960-001529,164.4,19.0,nan,Physical,,,,,
 ,MM722LOG30,Logitech BRIO - Webcam - 960-001723,nan,960-001723,149.5,9.0,nan,Physical,,,,,
-,MM726EPS23,Epson PowerLite L210SF - Proyector 3LCD - 4000 lúmenes (blanco) - 4000 lúmenes (color) - Full HD (1920 x 1080) - 1080p - IEE 802.11a/b/g/n/ac inalámbrico/LAN/Miracast - con 3 años de Epson Road Service Program,nan,V11HA75020,1924.4,1.0,nan,Physical,271090,,2153500,,2256879
+,MM726EPS23,Epson PowerLite L210SF - Proyector 3LCD - 4000 lúmenes (blanco) - 4000 lúmenes (color) - Full HD (1920 x 1080) - 1080p - IEE 802.11a/b/g/n/ac inalámbrico/LAN/Miracast - con 3 años de Epson Road Service Program,nan,V11HA75020,1924.4,1.0,nan,Physical,271090,,2153500,,2253029
 ,MM726EPS38,Epson EpiqVision - Mini EF-21 - FHD - 1920 x 1080 - Portátil - blanco,nan,V11HB35020,442.25,3.0,nan,Physical,272828,,,,
 ,MM726EPS39,Epson EpiqVision - Portable - Mini EF-21R - FHD - 1920x1080 - Pink,nan,V11HB35220,442.25,1.0,nan,Physical,276525,,,,
 ,MM726EPS45,Epson - PowerLite L895E - Portable - Proyector Laser,nan,V11HB24121,5042.0,1.0,nan,Physical,389534,,,,
@@ -1551,7 +1551,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM726EPS56,Epson - Portable - Proyector  Lifestudio EF-30,nan,V11HC43921,490.34,2.0,nan,Physical,387048,,569990,,634165
 ,MM726EPS58,Epson - Portable - Proyector Lifestudio Pop Verd,nan,V11HB72321,525.42,2.0,nan,Physical,387474,,610990,,684023
 ,MM726EPS59,Epson - Portable - Proyector Lifestudio Pop Rosa,nan,V11HB72221,525.42,2.0,nan,Physical,387472,,610990,,683015
-,MM900AKG96,AKG N9 Hybrid - Auriculares con diadema - Non-TWS - Negro,nan,AKGN9HYBRIDBLKAM,263.7,5.0,nan,Physical,263948,,280130,,298434
+,MM900AKG96,AKG N9 Hybrid - Auriculares con diadema - Non-TWS - Negro,nan,AKGN9HYBRIDBLKAM,263.7,5.0,nan,Physical,263948,,280130,,315360
 ,MM900AKG97,AKG - Headphones - AKGN5HYBRIDBLKAM - Black,nan,AKGN5HYBRIDBLKAM,190.2,14.0,nan,Physical,,,,,
 ,MM901HNK01,Harman Kardon Aura Studio 5 - Speaker - Black - HKAURAS5BLKCA,nan,HKAURAS5BLKCA,209.8,20.0,nan,Physical,,,,,
 ,MM903JBL93,"JBL Bar 500 - Sistema de barra de sonido - para teatro en casa - canal 5.1 - inalámbrico - Bluetooth, Wi-Fi 6 - controlado por aplicación - negro",nan,JBLBAR500PROBLKAM,328.0,2.0,nan,Physical,,,,,
@@ -1568,14 +1568,14 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM907JBL59,JBL TUNE - Headphones - 520 C Non-TWS Blue,nan,JBLT520CBLUAM,26.3,20.0,nan,Physical,280206,,17990,,29333
 ,MM907JBL60,JBL TUNE - Headphones - 520 C Non-TWS Purple,nan,JBLT520CPURAM,26.3,20.0,nan,Physical,280709,,19990,29990,30306
 ,MM914JBL02,JBL - Altavoz - Rojo - Flip 7 Altavoz Bluetooth,nan,JBLFLIP7REDAM,101.0,20.0,nan,Physical,,,,,
-,MM914JBL11,JBL - Headphones - Tour One M3 TWS Ch,nan,JBLTOURONEM3LTTAM,232.7,20.0,nan,Physical,362806,,249990,,274685
+,MM914JBL11,JBL - Headphones - Tour One M3 TWS Ch,nan,JBLTOURONEM3LTTAM,232.7,20.0,nan,Physical,362806,,219990,,268608
 ,MM915JBL43,JBL Tws Sense Lite Beige- tecn JBL Opensound,nan,JBLSENSELITEBEGAM,74.8,20.0,nan,Physical,,,,,
 ,MM915JBL44,Jbl Tws Sense Lite Black- tecn JBL Opensound,nan,JBLSENSELITEBLKAM,74.8,6.0,nan,Physical,358378,,79990,99990,100764
 ,MM915JBL45,JBL Partybox Encore Essential 2 Party Speaker Black,nan,JBLPBENCOREESS2AM,218.2,20.0,nan,Physical,,,,,
 ,MM915JBL46,JBL - TWS - Headphones - Open Ear - Blue,nan,JBLSENSELITEBLUAM,74.8,20.0,nan,Physical,,,,,
 ,MM915JBL47,Jbl Tws Sense Lite Purple- tecn JBL Opensound,nan,JBLSENSELITEPURAM,74.8,20.0,nan,Physical,367067,,79990,99990,97444
 ,MM915JBL48,Jbl Tws Sense Lite White tecn- JBL Opensoun,nan,JBLSENSELITEWHTAM,78.7,20.0,nan,Physical,358934,,67803,129990,101450
-,MM930JBL65,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLBLUAM,97.8,20.0,nan,Physical,366542,,104318,,122441
+,MM930JBL65,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLBLUAM,97.8,20.0,nan,Physical,366542,,104318,,123196
 ,MM930JBL66,Jbl - Tws - Ear Cuff -Soundgear Clips - Copper-Tecn JBL Opensound,nan,JBLSNDGEARCLCOPAM,146.0,20.0,nan,Physical,381899,,109990,,109990
 ,MM931JBL57,JBL - Headphones - Headphones Endurance Pace Blac,nan,JBLENDUPACEBLKLAM,50.1,20.0,nan,Physical,360458,,56984,59990,66280
 ,MM931JBL59,JBL - Headphones - Endurance Pace Purple,nan,JBLENDUPACEPURAM,48.7,20.0,nan,Physical,361975,,54900,59990,60823
@@ -1709,7 +1709,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,NW004TPL37,TP-Link - Router - Wireless - Mercusys Halo H80C AX3000 Whol,nan,HALO H80X(3-PACK),101.2,7.0,nan,Physical,,,,,
 ,NW005TPL12,TP-Link - Router - Halo AC1900 Home Mesh Wi-Fi Sy,nan,HALO H50G(3-PACK),69.4,4.0,nan,Physical,,,,,
 ,NW005TPL34,TP-Link - Mercusys 6-Port 10/100Mbps Des,nan,MS106LP,14.0,20.0,nan,Physical,378607,,,,
-,NW005TPL96,TP-Link - Switch - Conmutador de escritorio de 6,nan,LS106P,19.8,10.0,nan,Physical,378642,,23387,,26454
+,NW005TPL96,TP-Link - Switch - Conmutador de escritorio de 6,nan,LS106P,19.8,10.0,nan,Physical,378642,,23387,,26404
 ,NW011LEN28,Lenovo - Server - Rack-mountable - AMD EPYC 4124P - 2 TB Hard Drive Capacity,nan,7DH4A00GLA,2187.0,20.0,nan,Physical,,,,,
 ,NW012LEN56,Lenovo - Server - 1 Intel Xeon 6353P - TS SR250 V3,nan,7DCLA04TLA,4291.7,3.0,nan,Physical,,,,,
 ,NW022CIS22,"Cisco Business 110 Series 110-16T - Conmutador - sin gestionar - 16 x 10/100/1000 - sobremesa, montaje en rack, montaje en pared",nan,CBS110-16T-NA,160.02,1.0,nan,Physical,380811,,,,
