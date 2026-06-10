@@ -321,7 +321,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3431678,AP-220-MNT-W1W White AP Basic Flat Surf,Hewlett Packard Enterprise,JW047A,12.64,6,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
 ,3440544,"Cable 1,8m de Red at6 UTP RJ45 ETL Negro",Startech.Com,C6PATCH6BK,4.34,4,Cables,Cables y Adaptadores Twisted Pair,,,,,
 ,3519262,TONER GPR 53 MAGENTA REND 19000 PAG,Canon,8526B003,89.96,4,Suministros y Medios,Suministros Láser,259877,,105284,,117957
-,3519263,TONER GPR 53 AMARILLO REND 19000 PAG,Canon,8527B003,94.11,2,Suministros y Medios,Suministros Láser,259878,,105990,,119653
+,3519263,TONER GPR 53 AMARILLO REND 19000 PAG,Canon,8527B003,94.11,2,Suministros y Medios,Suministros Láser,259878,,105990,,119774
 ,3536176,4 Port USB C Hub - USB 3.0 Laptop Hub,Startech.Com,HB30C4AB,32.26,20,Dispositivos de Red,ROMs de Inicio y Brackets,,,,,
 ,3536177,Cable de Red 10m purpura Cat6 sin Enganc,Startech.Com,N6PATC10MPL,11.15,4,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,3536178,Cable de Red 1m PÃºrpura Cat6,Startech.Com,N6PATC1MPL,3.93,3,Cables,Cables y Adaptadores Fibra Optica,,,,,
@@ -376,7 +376,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3707870,BANDEJA ADICIONAL 550 HOJAS X3 PARA M63X,Hp,J8J93A,1012.7,5,Impresoras,"Bandejas, Cajones y Alimentadores Sobre",,,,,
 ,3709970,HPE 500W FS PLAT HOT PLUG POWER SUPPLY K,Hewlett Packard Enterprise,865408-B21,564.5,11,Servicios y Garantías,Servicios de Soporte,,,,,
 ,3713079,TONER TN416C CIAN,Brother,TN416C,143.41,4,Suministros y Medios,Suministros Láser,259716,,158385,,173794
-,3713080,TONER TN416M MAGENTA,Brother,TN416M,143.41,4,Suministros y Medios,Suministros Láser,259717,,158385,185440,172837
+,3713080,TONER TN416M MAGENTA,Brother,TN416M,143.41,4,Suministros y Medios,Suministros Láser,259717,,158385,,172873
 ,3713081,TONER TN416Y AMARILLO,Brother,TN416Y,143.41,5,Suministros y Medios,Suministros Láser,259718,,158385,185440,174059
 ,3713085,TONER TN419Y AMARILLO,Brother,TN419Y,159.33,179,Suministros y Medios,Suministros Láser,259703,,164900,,189995
 ,3724469,"POWER ADAPTER,12V 7A, WITHOUT POWER CORD",Honeywell,50121667-001,70.0,9,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
@@ -443,7 +443,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4329047,Maintenance Cassette MC-31,Canon,1156C005,67.72,6,Impresoras,Upgrades de Impresora,,,,,
 ,4329048,TINTA PFI-120 NEGRO MATE - 130 ML,Canon,2884C001,65.82,22,Suministros y Medios,Suministros Inyección de Tinta,259806,,78515,,89020
 ,4329049,TINTA PFI-120 NEGRO - 130 ML,Canon,2885C001,67.7,13,Suministros y Medios,Suministros Inyección de Tinta,260163,,80744,,84649
-,4329050,TINTA PFI-120 CIAN - 130 ML,Canon,2886C001,67.12,3,Suministros y Medios,Suministros Inyección de Tinta,260161,,79988,,84937
+,4329050,TINTA PFI-120 CIAN - 130 ML,Canon,2886C001,67.12,3,Suministros y Medios,Suministros Inyección de Tinta,260161,,79988,,84781
 ,4329051,TINTA PFI-120 MAGENTA - 130 ML,Canon,2887C001,66.78,21,Suministros y Medios,Suministros Inyección de Tinta,260158,,79615,79990,83872
 ,4329052,TINTA PFI-120 AMARILLO - 130 ML,Canon,2888C001,66.74,32,Suministros y Medios,Suministros Inyección de Tinta,260159,,79601,79990,83733
 ,4329054,TINTA PFI-320 NEGRO - 300 ML,Canon,2890C001,112.65,12,Suministros y Medios,Suministros Inyección de Tinta,259800,,129990,133990,143219
@@ -549,10 +549,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5012609,Streaming 12 LED Ring Light,Vivitar,VIVRL1263KIT-NOC-STK-4,14.48,148,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
 ,5012610,8 inch ring light,Vivitar,VIVRL8KIT-NOC-STK-12,6.88,480,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
 ,5012611,TRIPOD W/PHONE ADAPTER,Vivitar,VIVTR124-NOC-STK-48,2.76,5,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
-,5017192,SanDisk Ultra microSDHC 32 GB UHS-I,Sandisk,SDSQUNR-032G-GN3MA,8.88,2720,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,91369,,8988,12990,10841
+,5017192,SanDisk Ultra microSDHC 32 GB UHS-I,Sandisk,SDSQUNR-032G-GN3MA,8.88,2720,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,91369,,8988,12990,10928
 ,5017795,HPE MSA 14.4T SAS 10K SFF M2 6PK HDD BDL,Hewlett Packard Enterprise,R0Q67A,6126.4,1,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),121619,,7143560,,7273350
 ,5035725,DISCO EXTERNO ADVANCE BLANCO 1TB,Toshiba,HDTCA10XW3AA,68.14,21,Dispositivos de Almacenamiento,Discos Duros USB,92128,,76900,99990,86248
-,5035727,DISCO EXTERNO ADVANCE ROJO 2TB,Toshiba,HDTCA20XR3AA,89.18,20,Dispositivos de Almacenamiento,Discos Duros USB,92133,,89990,,104497
+,5035727,DISCO EXTERNO ADVANCE ROJO 2TB,Toshiba,HDTCA20XR3AA,89.18,20,Dispositivos de Almacenamiento,Discos Duros USB,92133,,89984,,103965
 ,5035731,DISCO EXTERNO ADVANCE BLANCO 4TB,Toshiba,HDTCA40XW3CA,134.17,19,Dispositivos de Almacenamiento,Discos Duros USB,92127,,151500,,161197
 ,5035732,DISCO EXTERNO CANVIO GAMING 1TB,Toshiba,HDTX110XK3AA,69.09,59,Dispositivos de Almacenamiento,Discos Duros USB,92134,,80168,84990,87007
 ,5035733,DISCO EXTERNO CANVIO FLEX 1TB,Toshiba,HDTX110XSCAA,69.09,15,Dispositivos de Almacenamiento,Discos Duros USB,92675,,80168,84990,95025
@@ -622,7 +622,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5458801,PL240 FLUX,Cooler Master,MLY-D24M-A23PZ-R1,88.45,1,Componentes de Sistema,Componentes de Gabinete,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,137.07,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.74,246,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25626
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.74,246,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25183
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,29.29,9,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.61,31,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5493083,THINKSYSTEM SR630 V2 SR645 STANDARD FAN,Lenovo,4F17A14488,78.15,22,Componentes de Sistema,Componentes de Gabinete,,,,,
@@ -676,7 +676,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5641072,PTD410,Brother,PTD410,52.93,2,Impresoras,Impresoras de Etiquetas Hogar/Oficina,,,,,
 ,5645511,HP LASERJET DEPARTMENT STAND,Hp,6GW53A,213.54,21,Impresoras,Muebles para Impresora/Plotter,,,,,
 ,5666055,Network Management Card for Easy UPS,Apc,AP9544,130.11,10,Protección Eléctrica y Racks,Administración UPS,,,,,
-,5686037,PFI 050 C,Canon,5699C001,52.83,43,Suministros y Medios,Suministros para Plotters,259979,,64980,64990,68998
+,5686037,PFI 050 C,Canon,5699C001,52.83,43,Suministros y Medios,Suministros para Plotters,259979,,64980,64990,69997
 ,5686040,MAINTENANCE CARTRIDGE MC-32,Canon,1156C009,49.68,16,Suministros y Medios,Suministros para Plotters,,,,,
 ,5690099,HPE DL36X G10+ 2SFF SAS/SATA TM CBL KIT,Hewlett Packard Enterprise,P55883-B21,152.1,5,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5690925,6in Hook and Loop Cable Ties 50pk,Startech.Com,B506I-HOOK-LOOP-TIES,12.48,4,Cables,Administración para Cables,,,,,
@@ -716,7 +716,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5750916,ULTRACHROME XD3 YELLOW CART 700ML,Epson,T50L420,232.94,3,Suministros y Medios,Suministros Inyección de Tinta,259954,,262197,,278521
 ,5753871,4K 60Hz HDMI over Fiber Extender Kit,Startech.Com,ST121HD20FXA2,720.14,1,Dispositivos de Entrada/Salida,Conmutadores y Extensores Serial/Paralel,,,,,
 ,5753872,16-Port Industrial USB 3.0 Hub/Switch,Startech.Com,5G16AINDS-USB-A-HUB,346.29,2,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
-,5785893,POWERLITE L210SF PROJECTOR,Epson,V11HA75020,1876.3,3,Dispositivos Audio/Video,Proyectores LCD,271090,,2074265,,2220741
+,5785893,POWERLITE L210SF PROJECTOR,Epson,V11HA75020,1876.3,3,Dispositivos Audio/Video,Proyectores LCD,271090,,2074265,,2213476
 ,5825211,LA CX 50 GEN2 SET,Poly,R9861622NAB2,2776.1,1,Comunicaciones,Teléfonos IP Inalámbricos,,,,,
 ,5862228,DRAM DDR4 U-DIMM 16GB 3200 SINGLE TRAY C,Adata Technology,AD4U320016G22-SGN,168.84,200,Componentes de Sistema,Memoria Genérica,109547,,125570,,175664
 ,5862576,EDA52 EDA56 Wi-Fi 6 EDA57 Quad battery c,Honeywell,EDA52-QBC-1,156.01,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
@@ -790,7 +790,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6255596,XENON ULTRA STAND GRAY 22CM 9PULG HEIGHT,Honeywell,STND-22F00-016-6,16.6,3,Productos POS/AIDC/Código de Barras,Accesorios para Escáners Código de Barra,,,,,
 ,6260920,CLICKSHARE CONFERENCE CX-30 SET GEN II,Barco,R9861613NAB2,1950.1,2,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,6262636,EDA10A QUAD BATTERY CHARGER KIT,Honeywell,EDA10A-QBC-1,297.76,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
-,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.92,42,Suministros y Medios,Suministros Inyección de Tinta,259799,,34524,41990,40438
+,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.92,42,Suministros y Medios,Suministros Inyección de Tinta,259799,,34524,41990,40566
 ,6264460,IMPRESORA INALAMBRICA 3 EN 1 MAXIFY GX30,Canon,5777C005,207.92,1,Impresoras,Multifuncionales Inkjet,225935,,240524,319990,288056
 ,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,477.62,1,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.2,193,Comunicaciones,Cintillos telefónicos,256210,,20490,24990,23886
@@ -917,7 +917,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6752196,RT-AC1200-V,Asus,90IG0550-BA1400,28.63,59,Dispositivos de Red,Routers y Gateways inalámbricos,,,,,
 ,6753134,HPE PROLIANT MICROSERVER GEN11 1P 6325P,Hewlett Packard Enterprise,P86708-DM5,2922.3,24,Computadores Servidores y Notebooks,Servidores Tower,,,,,
 ,6756030,DELL MOBILE WIRELESS MOUSE MS3320W,Dell,MS3320W-MGN-R,19.64,98,Dispositivos de Entrada,Mouse,,,,,
-,6761182,W7606WMRJ101X R9HX370 16IN T 1T 32G W11,Asus,90NB15L1-M006L0,2368.7,18,Computadores Servidores y Notebooks,Notebooks,385147,,2631000,,2943384
+,6761182,W7606WMRJ101X R9HX370 16IN T 1T 32G W11,Asus,90NB15L1-M006L0,2368.7,18,Computadores Servidores y Notebooks,Notebooks,385147,,2631000,,2926099
 ,6761183,B1503CVAS76946X 5-210 15.6 512G 16G W11P,Asus,90NX0801-M07VY0,782.06,35,Computadores Servidores y Notebooks,Notebooks,385685,,891900,,897945
 ,6763955,SR630 V4 2.5IN 1.2TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01770,305.0,6,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),393541,,340552,,349271
 ,6763957,SR630 V4 2.5IN 2.4TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01771,547.0,6,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),389808,,610761,,626375
@@ -938,8 +938,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6784291,PRIME X870-P WIFI,Asus,90MB1IS0-MVAAY0,235.98,34,Componentes de Sistema,Tarjetas Madre AMD,,,,,
 ,6785165,B850M AYW GAMING WIFI,Asus,90MB1LW0-M0EAY0,149.01,44,Componentes de Sistema,Tarjetas Madre AMD,385180,,171036,,181837
 ,6785174,ROG Ryujin III 360 ARGB Extreme BK,Asus,90RC0131-M0AAY0,340.15,36,Componentes de Sistema,Componentes de Tarjetas Madre,265633,,375500,,410638
-,6788480,THINKPAD T14 G6 U7 258V 32GB 512GB W11P,Lenovo,21QH0013CL,1432.0,152,Computadores Servidores y Notebooks,Notebooks,,,,,
-,6788484,THINKPAD T14 G6 R5 AI PRO340 16 512 W11P,Lenovo,21QK001HCL,1256.4,90,Computadores Servidores y Notebooks,Notebooks,,,,,
+,6788480,THINKPAD T14 G6 U7 258V 32GB 512GB W11P,Lenovo,21QH0013CL,1432.0,152,Computadores Servidores y Notebooks,Notebooks,395772,,1669900,,1866025
+,6788484,THINKPAD T14 G6 R5 AI PRO340 16 512 W11P,Lenovo,21QK001HCL,1256.4,90,Computadores Servidores y Notebooks,Notebooks,395767,,1479900,,1644532
 ,6789262,THINKPAD USB 3.0 TO ETHERNET ADAPTER,Lenovo,4X90S91830,12.77,93,Cables,Cables y Adaptadores USB,392114,,16800,,16800
 ,6789829,IMPRESORA PIXMA G4180,Canon,6704C005,181.56,4,Suministros y Medios,Suministros Láser,278097,,209990,,235214
 ,6789835,P500SV03100U0030 3-100U 256G 8G 9L W11P,Asus,90PF05A1-M00MV0,434.87,27,Computadores Servidores y Notebooks,Computadores Desktop,,,,,
