@@ -405,7 +405,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4050452,TINTA HP 730 130 ML MAGENTA,Hp,P2V63A,81.0,7,Suministros y Medios,Suministros Inyección de Tinta,260799,,95500,,102626
 ,4050453,TINTA HP 730 130 ML AMARILLO,Hp,P2V64A,81.0,6,Suministros y Medios,Suministros Inyección de Tinta,263739,,95500,98990,105068
 ,4050454,TINTA HP 730 130 ML MATE NEGRO,Hp,P2V65A,80.99,8,Suministros y Medios,Suministros Inyección de Tinta,261556,,95500,98990,101985
-,4050455,TINTA HP 730 130 ML GRIS,Hp,P2V66A,81.0,2,Suministros y Medios,Suministros Inyección de Tinta,264504,,92053,,101301
+,4050455,TINTA HP 730 130 ML GRIS,Hp,P2V66A,81.0,2,Suministros y Medios,Suministros Inyección de Tinta,264504,,92053,,100249
 ,4050456,TINTA HP 730 130 ML FOTO NEGRO,Hp,P2V67A,81.0,3,Suministros y Medios,Suministros Inyección de Tinta,260798,,92053,,103410
 ,4064633,ENCOREPRO HW540,Poly,88828-01,68.3,2,Dispositivos Audio/Video,Cintillos y Audífonos para PCs,48934,,176990,,176990
 ,4085812,Cable 1m USB-C a HDMI 4K60 Negro,Startech.Com,CDP2HD1MBNL,32.57,7,Cables,Cables y Adaptadores de Audio + Video,,,,,
@@ -495,10 +495,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4634002,SFP+ - HP J9151E Compatible,Startech.Com,J9151E-ST,175.35,17,Dispositivos de Red,Transceivers,,,,,
 ,4634847,Lenovo 15.6-inch Laptop Casual Backpack,Lenovo,4X40T84058,9.58,18,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
 ,4637480,Aruba 6300M 24SFP+ 4SFP56 Swch,Hewlett Packard Enterprise,JL658A,19637.0,2,Dispositivos de Red,Switches Estaqueables,389546,,22167900,,23682333
-,4638872,TINTA PFI-030 NEGRO MATE - 55 ML,Canon,3488C001,37.05,5,Suministros y Medios,Suministros para Plotters,260709,,43460,,49257
+,4638872,TINTA PFI-030 NEGRO MATE - 55 ML,Canon,3488C001,37.05,5,Suministros y Medios,Suministros para Plotters,260709,,43460,,49529
 ,4638874,TINTA PFI-030 CIAN- 55 ML,Canon,3490C001,36.7,15,Suministros y Medios,Suministros para Plotters,260315,,44887,,49777
 ,4638905,TINTA PFI-030 MAGENTA- 55 ML,Canon,3491C001,37.67,14,Suministros y Medios,Suministros para Plotters,260316,,43776,,55217
-,4638906,TINTA PFI-030 YELLOW- 55 ML,Canon,3492C001,36.73,5,Suministros y Medios,Suministros para Plotters,260314,,42560,,49376
+,4638906,TINTA PFI-030 YELLOW- 55 ML,Canon,3492C001,36.73,5,Suministros y Medios,Suministros para Plotters,260314,,43460,,50350
 ,4649269,KTG SMARTFIT EASY RISER 2.0 LARGE - BLK,Kensington,K50422WW,17.8,48,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,4694492,UPS Network Management Card 3,Apc,AP9640,300.18,12,Protección Eléctrica y Racks,Administración UPS,,,,,
 ,4694493,UPS Network Management Card 3 with Envir,Apc,AP9641,496.2,6,Protección Eléctrica y Racks,Administración UPS,,,,,
@@ -508,7 +508,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,59,Suministros y Medios,Suministros Láser,260107,,66199,,70660
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.03,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,197,Suministros y Medios,Suministros Láser,260121,,79202,,86383
-,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,91964,,99924
+,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,91964,,100643
 ,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,89993,109990,99850
 ,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,62,Suministros y Medios,Suministros Láser,260108,,92042,,100684
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,209.79,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
@@ -542,7 +542,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4988586,HP 712 3-Pack Tinta 29-ml Cian,Hp,3ED77A,49.89,1,Suministros y Medios,Suministros Inyección de Tinta,259783,,66990,,70227
 ,5003511,Security Slot Adapt Kit Ultrabook K64995,Kensington,K64995,9.51,45,Seguridad Física,Dispositivos Anti-Robo,,,,,
 ,5012008,HP 728 Cartucho Matte Black 130-ml,Hp,3WX25A,95.74,11,Suministros y Medios,Suministros Inyección de Tinta,259851,,108803,,133181
-,5012063,TONER HP 212A NEGRO LJ,Hp,W2120A,183.04,8,Suministros y Medios,Suministros Láser,260283,,202648,,219146
+,5012063,TONER HP 212A NEGRO LJ,Hp,W2120A,183.04,8,Suministros y Medios,Suministros Láser,260283,,202648,,219319
 ,5012066,TONER HP 212A CYAN LASERJET,Hp,W2121A,226.88,34,Suministros y Medios,Suministros Láser,260130,,225990,,263266
 ,5012069,Toner HP 212A Amarillo LaserJet,Hp,W2122A,225.78,24,Suministros y Medios,Suministros Láser,260168,,249971,,269171
 ,5012072,Toner HP 212A Magenta LaserJet,Hp,W2123A,226.87,35,Suministros y Medios,Suministros Láser,260133,,249990,,267544
@@ -622,7 +622,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5458801,PL240 FLUX,Cooler Master,MLY-D24M-A23PZ-R1,88.45,1,Componentes de Sistema,Componentes de Gabinete,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,137.07,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.74,246,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25179
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.74,246,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25623
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,29.29,9,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.61,31,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5493083,THINKSYSTEM SR630 V2 SR645 STANDARD FAN,Lenovo,4F17A14488,78.15,22,Componentes de Sistema,Componentes de Gabinete,,,,,
@@ -663,7 +663,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5617653,ADAPTER SSD EXTERNAL CRUCIAL,Crucial,CTUSBCFUSBAMAD,4.38,10,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),,,,,
 ,5619260,HDMI to DisplayPort Adapter HDMI 4K60Hz,Startech.Com,128-HDMI-DISPLAYPORT,52.21,5,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,5620592,CV5000DP USB-C TO DISPLAYPORT1.4 ADAPTER,Kensington,K34680WW,17.35,46,Cables,Cables y Adaptadores de Video,,,,,
-,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,162,Suministros y Medios,Suministros Láser,260006,,74502,,83286
+,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,162,Suministros y Medios,Suministros Láser,260006,,74502,,83715
 ,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,106.63,71,Suministros y Medios,Suministros Láser,260322,,118052,,129178
 ,5629797,TONER T04 Amarillo,Canon,2977C001,347.75,2,Suministros y Medios,Suministros Láser,355986,,409990,,409990
 ,5629798,TONER T04 Magenta,Canon,2978C001,347.75,2,Suministros y Medios,Suministros Láser,355985,,409990,,409990
@@ -694,7 +694,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5723329,HP 230X Blk LaserJet Toner Cartridge,Hp,W2300X,171.82,68,Suministros y Medios,Suministros Láser,260152,,177900,,202348
 ,5723330,HP 230A Cyn LaserJet Toner Cartridge,Hp,W2301A,108.8,63,Suministros y Medios,Suministros Láser,260912,,118808,,126853
 ,5723331,HP 230X Cyn LaserJet Toner Cartridge,Hp,W2301X,210.68,79,Suministros y Medios,Suministros Láser,260132,,232500,,247461
-,5723332,HP 230A Ylw LaserJet Toner Cartridge,Hp,W2302A,108.62,6,Suministros y Medios,Suministros Láser,260216,,120255,,137833
+,5723332,HP 230A Ylw LaserJet Toner Cartridge,Hp,W2302A,108.62,6,Suministros y Medios,Suministros Láser,260216,,120255,,137876
 ,5723333,HP 230X Ylw LaserJet Toner Cartridge,Hp,W2302X,210.95,51,Suministros y Medios,Suministros Láser,260131,,227500,,241293
 ,5723355,HP 230X Mgn LaserJet Toner Cartridge,Hp,W2303X,210.75,93,Suministros y Medios,Suministros Láser,260156,,227411,,239971
 ,5735143,CABEZAL DE IMPRESION PF-08,Canon,5706C003,193.27,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
@@ -931,7 +931,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6782248,HP 400 QUIET BLUE WIRELESS MOUSE US,Hp,AZ7B4AA#ABA,16.89,554,Dispositivos de Entrada,Mouse,,,,,
 ,6782253,HP OMEN 27 FHD 180 HZ,Hp,AV4K1AA#AKH,206.11,691,Pantallas,Monitores LCD/LED,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,104.03,395,Pantallas,Monitores LCD/LED,,,,,
-,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,168.28,37,Pantallas,Monitores LCD/LED,379960,,195776,249990,222374
+,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,168.28,37,Pantallas,Monitores LCD/LED,379960,,195990,249990,223242
 ,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1021.2,8,Pantallas,Monitores LCD/LED,318326,,1199880,,1229889
 ,6783839,TM-T20IVL-002 USB +ETHERNET,Epson,C31CL45002,129.94,62,Impresoras,Impresoras de Recibos Térmicas,,,,,
 ,6784033,ANW 6000 24G CL4 4F 370W -STOCK,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,,,,,
