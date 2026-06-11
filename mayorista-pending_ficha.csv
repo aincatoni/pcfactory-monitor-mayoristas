@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56562,5785892,"Proyector Laser L210W WXGA, 4500 lumen",Epson,V11HA70020,1739.4,1,Dispositivos Audio/Video,Proyectores LCD,ok,False,0,0,0,Proyector Láser Inalámbrico PowerLite L210W 4500 Lúmenes WXGA 3LCD,0,0,True,{},,272195,,489990,,1833487
+56562,5785892,"Proyector Laser L210W WXGA, 4500 lumen",Epson,V11HA70020,1739.4,1,Dispositivos Audio/Video,Proyectores LCD,ok,False,0,0,0,Proyector Láser Inalámbrico PowerLite L210W 4500 Lúmenes WXGA 3LCD,0,0,True,{},,272195,,469990,,1834160
