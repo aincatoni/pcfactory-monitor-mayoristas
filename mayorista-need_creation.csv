@@ -509,7 +509,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.03,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,197,Suministros y Medios,Suministros Láser,260121,,78236,,85904
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,91269,,100099
-,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,91213,96990,99225
+,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,91213,109990,99898
 ,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,62,Suministros y Medios,Suministros Láser,260108,,91346,96990,100243
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,209.79,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4798868,DS640 ESCANER PORTATIL,Brother,DS640,133.08,10,Cámaras y Escáners,Escáners para el Hogar/Oficina,,,,,
@@ -553,7 +553,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5017795,HPE MSA 14.4T SAS 10K SFF M2 6PK HDD BDL,Hewlett Packard Enterprise,R0Q67A,6126.4,1,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),121619,,7066280,,7194650
 ,5035725,DISCO EXTERNO ADVANCE BLANCO 1TB,Toshiba,HDTCA10XW3AA,68.14,21,Dispositivos de Almacenamiento,Discos Duros USB,92128,,78236,99990,86207
 ,5035727,DISCO EXTERNO ADVANCE ROJO 2TB,Toshiba,HDTCA20XR3AA,89.18,20,Dispositivos de Almacenamiento,Discos Duros USB,92133,,89984,,104110
-,5035731,DISCO EXTERNO ADVANCE BLANCO 4TB,Toshiba,HDTCA40XW3CA,134.17,19,Dispositivos de Almacenamiento,Discos Duros USB,92127,,153584,,161090
+,5035731,DISCO EXTERNO ADVANCE BLANCO 4TB,Toshiba,HDTCA40XW3CA,134.17,19,Dispositivos de Almacenamiento,Discos Duros USB,92127,,153584,,156366
 ,5035732,DISCO EXTERNO CANVIO GAMING 1TB,Toshiba,HDTX110XK3AA,69.09,59,Dispositivos de Almacenamiento,Discos Duros USB,92134,,79202,,86614
 ,5035733,DISCO EXTERNO CANVIO FLEX 1TB,Toshiba,HDTX110XSCAA,69.09,15,Dispositivos de Almacenamiento,Discos Duros USB,92675,,79202,,94632
 ,5038427,TONER GPR 58 BLACK REND 23000 PAG,Canon,2182C003,55.6,2,Suministros y Medios,Suministros Láser,259876,,62990,,73363
@@ -622,7 +622,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5458801,PL240 FLUX,Cooler Master,MLY-D24M-A23PZ-R1,88.45,1,Componentes de Sistema,Componentes de Gabinete,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,137.07,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.74,246,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25598
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.74,246,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25153
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,29.29,9,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.61,31,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5493083,THINKSYSTEM SR630 V2 SR645 STANDARD FAN,Lenovo,4F17A14488,78.15,22,Componentes de Sistema,Componentes de Gabinete,,,,,
@@ -885,7 +885,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6665124,CHROMEBOOK 500E G4 N100 8GB 64GB CRM,Lenovo,82W5S01J00,444.25,2,Computadores Servidores y Notebooks,Chromebooks & Netbooks,,,,,
 ,6670260,PROYECTOR POWERLITE L790U,Epson,V11HB28021,3824.3,2,Dispositivos Audio/Video,Proyectores LCD,384652,,4160000,,4361950
 ,6671012,R9-7900 5.40GHZ 12 CORE SKT AM5 76MB 65W,Amd,100-100000590WOF,348.03,18,Componentes de Sistema,Procesadores AMD,,,,,
-,6671131,IDEATAB PLUS 12.1IN 2K MTK D6400 8G 256G,Lenovo,ZAG70652CL,311.28,699,Computadores Servidores y Notebooks,Tablets y Tablet PCs,375091,,347579,,360114
+,6671131,IDEATAB PLUS 12.1IN 2K MTK D6400 8G 256G,Lenovo,ZAG70652CL,311.28,699,Computadores Servidores y Notebooks,Tablets y Tablet PCs,375091,,347579,,360156
 ,6674886,CINTA LAMINADA NEGRO SOBRE PLATA 24MM,Brother,TZESM951,17.78,32,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,6675645,A-DATA XPG Mars 980 Pro 2 TB (SMAR-980P-,Adata Technology,SMAR-980P-2TCI,476.13,4,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),278331,,511900,,529154
 ,6677791,48PORT POE+4 X 1G DNA E 3YR,Cisco,C9200L-48P-4G-E + C9200L-DNA-E-48-3Y,5667.0,7,Dispositivos de Red,Switches Estaqueables,,,,,
