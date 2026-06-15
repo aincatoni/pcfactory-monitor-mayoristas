@@ -29,7 +29,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018123,Kingston FURY Renegade - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/32,296.3,10.0,nan,Physical,223067,,310000,,353118
 ,100018124,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/8,84.8,20.0,nan,Physical,223068,,89984,,101066
 ,100018181,Kingston FURY Beast - DDR5 - módulo - 16 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-16,226.9,20.0,nan,Physical,206512,,229990,,273032
-,100018182,Kingston FURY Beast - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-32,412.3,20.0,nan,Physical,206513,,447990,,513252
+,100018182,Kingston FURY Beast - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-32,412.3,20.0,nan,Physical,206513,,447990,,520875
 ,100018183,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-8,122.0,20.0,nan,Physical,202125,,145856,,169385
 ,100018190,Kingston FURY Beast RGB - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC,nan,KF556C36BBEA-32,411.3,20.0,nan,Physical,276769,,500337,,525675
 ,100018191,Kingston FURY Beast RGB - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBEA-8,141.8,20.0,nan,Physical,257310,,149536,,173587
@@ -40,7 +40,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018483,Kingston Fury - DDR5 SDRAM - 6000 MHz - Registered - ECC - Renegade Pro,nan,KF560R32RBE-32,554.4,8.0,nan,Physical,386203,,,,
 ,100018518,Kingston Fury - DDR5 SDRAM - 24GB 7200MT/s DDR5 CL38 DIMM,nan,KF572C38RSA-24,370.0,3.0,nan,Physical,237011,,409990,,409990
 ,100018522,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,nan,KF560C32RS-48,632.2,16.0,nan,Physical,238358,,700006,729990,730119
-,100018690,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,43.3,20.0,nan,Physical,255320,,40990,,43631
+,100018690,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,43.3,20.0,nan,Physical,255320,,40990,,43509
 ,100018931,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,633.1,1.0,nan,Physical,245321,,699900,,850517
 ,100019048,Hanwha - Camera cap adapter - SBP-120HMW,nan,SBP-120HMW,32.4,9.0,nan,Physical,,,,,
 ,100019199,Jabra Evolve 65 TE - Wireless Stereo Headset (Microsoft Teams) - USB-A Bluetooth adapter,nan,6699-833-309,178.5,20.0,nan,Physical,258188,,111990,,148067
@@ -571,9 +571,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AS102EPS55,"Epson T05A - Gran capacidad - negro - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A100,68.6,15.0,nan,Physical,259993,,76484,,83393
 ,AS102EPS56,"Epson T05A - Gran capacidad - cián - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A200,118.8,5.0,nan,Physical,259986,,121910,,134506
 ,AS102EPS57,"Epson T05A3 - Gran capacidad - magenta - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A300,118.8,2.0,nan,Physical,259984,,131849,,139366
-,AS102EPS58,"Epson T05A4 - Gran capacidad - amarillo - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A400,118.8,5.0,nan,Physical,259987,,121910,,135037
+,AS102EPS58,"Epson T05A4 - Gran capacidad - amarillo - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A400,118.8,5.0,nan,Physical,259987,,121910,,136283
 ,AS102EPS82,Epson - C9345 - Ink maintenance box,nan,C12C934591,19.6,14.0,nan,Physical,,,,,
-,AS103EPS09,"Epson T664 - Paquete de 3 - 70 ml - amarillo, cián, magenta - original - recarga de tinta - para Epson L120, L1300, L310, L380, L395, L495; EcoTank L310, L575",nan,T664520-3P,20.2,20.0,nan,Physical,259808,,19990,26990,25658
+,AS103EPS09,"Epson T664 - Paquete de 3 - 70 ml - amarillo, cián, magenta - original - recarga de tinta - para Epson L120, L1300, L310, L380, L395, L495; EcoTank L310, L575",nan,T664520-3P,20.2,20.0,nan,Physical,259808,,19990,26990,25194
 ,AS103EPS11,Epson - T544120-2 - Ink tank - Black - Pack  L1110 L3110 L3,nan,T544120-2P,14.0,20.0,nan,Physical,259693,,15590,19990,18523
 ,AS103EPS12,Epson - T544520-3 - Ink tank - Color - Pack L1110 L3110 L31,nan,T544520-3P,20.2,20.0,nan,Physical,259904,,21826,30990,26193
 ,AS103EPS33,"Epson SJIC41P-MK - Negro mate - original - blíster con alarmas de RF/acústica - cartucho de tinta - para ColorWorks CW-C4000, CW-C4000E (MK)",nan,C13T52L520,25.3,3.0,nan,Physical,360978,,28004,,29213
@@ -585,7 +585,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AS204EPS75,"Epson T8248 - 350 ml - negro mate - original - cartucho de tinta - para SureColor SC-P6000, SC-P7000, SC-P7000V, SC-P8000, SC-P9000, SC-P9000V",nan,T824800,136.0,1.0,nan,Physical,277870,,158939,,162444
 ,AS206EPS74,"Epson T8241 - 350 ml - Photo Negro - original - cartucho de tinta - para SureColor SC-P6000, SC-P7000, SC-P7000V, SC-P8000, SC-P9000, SC-P9000V",nan,T824100,147.6,1.0,nan,Physical,259926,,154526,,161365
 ,AS218HEW98,HP 508X - Alto rendimiento - magenta - original - LaserJet - cartucho de tóner (CF363X) - para LaserJet Enterprise MFP M577; LaserJet Enterprise Flow MFP M577,nan,CF363X,324.9,2.0,nan,Physical,263414,,362240,,391696
-,AS222HEW76,HP - Ink Bottle - Black / Cyan / Magenta / Yellow - Combo 4PACK,nan,9F3N4AL,31.3,20.0,nan,Physical,259799,,33595,41990,39860
+,AS222HEW76,HP - Ink Bottle - Black / Cyan / Magenta / Yellow - Combo 4PACK,nan,9F3N4AL,31.3,20.0,nan,Physical,259799,,33595,41990,39666
 ,AT000KYX07,"Kyocera TK 8527K - Negro - original - caja - cartucho de tóner - para TASKalfa 3552ci, 3553ci, 4052ci, 4053ci",nan,1T02RM0US0,64.7,1.0,nan,Physical,266813,,68703,,72118
 ,AT000KYX08,"Kyocera TK 8527M - Magenta - original - caja - cartucho de tóner - para TASKalfa 3552ci, 3553ci, 4052ci, 4053ci",nan,1T02RMBUS1,80.5,3.0,nan,Physical,266812,,85492,,92285
 ,AT000KYX10,"Kyocera TK 8527C - Cián - original - caja - cartucho de tóner - para TASKalfa 3552ci, 3553ci, 4052ci, 4053ci",nan,1T02RMCUS1,80.5,3.0,nan,Physical,266811,,85492,,92285
@@ -615,7 +615,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AT218HEW69,Cartucho de Tóner HP 508X - Cian,nan,CF361X,324.9,1.0,nan,Physical,263412,,362240,,385321
 ,AT219HEW48,"HP 19A - Negro - original - kit de tambor - para LaserJet Pro M102, M104, MFP M130, MFP M132",nan,CF219A,85.5,20.0,nan,Physical,261294,,86900,,94874
 ,AT222HEW01,"HP 230A - Negro - original - LaserJet - cartucho de tóner (W2300A) - para Color LaserJet Pro 4201, 4203, MFP 4301, MFP 4303",nan,W2300A,96.7,1.0,nan,Physical,260217,,97537,,108310
-,AT222HEW76,"HP 206A - Cián - original - LaserJet - cartucho de tóner (W2111A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2111A,91.3,1.0,nan,Physical,260122,,89779,,98697
+,AT222HEW76,"HP 206A - Cián - original - LaserJet - cartucho de tóner (W2111A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2111A,91.3,1.0,nan,Physical,260122,,89779,,99638
 ,AT222HEW77,"HP 206A - Amarillo - original - LaserJet - cartucho de tóner (W2112A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2112A,90.6,20.0,nan,Physical,260080,,89725,109990,99559
 ,AT222HEW78,"HP 206A - Magenta - original - LaserJet - cartucho de tóner (W2113A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2113A,90.8,20.0,nan,Physical,260108,,89855,96990,99868
 ,AT222HEW83,"HP 215A - Negro - original - LaserJet - cartucho de tóner (W2310A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2310A,59.4,10.0,nan,Physical,260085,,59987,,65371
@@ -624,7 +624,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AT223HEW35,"HP 147A - Negro - original - LaserJet - cartucho de tóner (W1470A) - para LaserJet Enterprise MFP M634; LaserJet Enterprise Flow MFP M634, MFP M635, MFP M636",nan,W1470A,184.5,20.0,nan,Physical,260134,,200586,,221892
 ,AT223HEW54,HP 151X Black Original LaserJet Toner Cartridge,nan,W1510X,261.0,20.0,nan,Physical,260341,,261014,,282313
 ,AT223HEW55,"HP 154A - Rendimiento medio - negro - original - recarga de tóner - para LaserJet Tank MFP 1602w, MFP 1604w, MFP 2602dn, MFP 2604sdw, MFP 2606dn, MFP 2606sdw",nan,W1540A,10.4,20.0,nan,Physical,260326,,11443,,12967
-,AT223HEW60,"HP 145X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (W1450X) - para LaserJet Pro 3001, 3002, 3003, MFP 3101, MFP 3102, MFP 3103, MFP 3104, MFP3102",nan,W1450X,115.0,20.0,nan,Physical,260322,,115247,,127351
+,AT223HEW60,"HP 145X - Alto rendimiento - negro - original - LaserJet - cartucho de tóner (W1450X) - para LaserJet Pro 3001, 3002, 3003, MFP 3101, MFP 3102, MFP 3103, MFP 3104, MFP3102",nan,W1450X,115.0,20.0,nan,Physical,260322,,115247,,127872
 ,AU130FOR63,Forza - Power distribution unit - Rack-mountable - AC 200/240 V - 10 Tomas de Corriente - 8-C13 2-C19 1U SPD Metered,nan,FPD-1012M1U,147.6,20.0,nan,Physical,,,,,
 ,AU130FOR64,Forza - Power distribution unit - Rack-mountable - AC 200/240 V - 30 Tomas de Corriente - 6-C19 24-C13 0U SPD Metered,nan,FPD-3012M0U,352.2,20.0,nan,Physical,,,,,
 ,AU202APC70,Schneider - Adaptador de administración remota - Gigabit Ethernet,nan,AP9544,114.4,20.0,nan,Physical,,,,,
@@ -723,7 +723,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CE103HOR46,Honor 400 - Smartphone - Midnight black,nan,5109BUQW,426.8,20.0,nan,Physical,,,,,
 ,CE107MOT54,Motorola G24 - Smartphone - Android - Sky blue,nan,PB1B0013CL,179.5,1.0,nan,Physical,235227,,,,
 ,CE108MOT20,Motorola Edge 50 Fusion - Smartphone - Android - 256 GB - Touch - PB1W0019CL,nan,PB1W0019CL,251.2,3.0,nan,Physical,245985,,276788,,294678
-,CE108MOT91,Motorola Edge 50 Ultra - Smartphone - Android - Peach - Touch,nan,PB0Y0047CL,684.9,4.0,nan,Physical,249181,,629990,899990,804870
+,CE108MOT91,Motorola Edge 50 Ultra - Smartphone - Android - Peach - Touch,nan,PB0Y0047CL,684.9,4.0,nan,Physical,249181,,629990,899990,802559
 ,CE109MOT11,Motorola Edge 50 - Smartphone - Android - Gray - Touch,nan,PB2T0002CL,380.5,5.0,nan,Physical,256786,,209990,499990,419414
 ,CE109MOT12,Motorola Edge 50 - Smartphone - Android - Peach - Touch,nan,PB2T0003CL,380.5,2.0,nan,Physical,,,,,
 ,CE109MOT22,Motorola G35 - Smartphone - Android - Black - Touch,nan,PB3G0015CL,129.4,1.0,nan,Physical,256681,,110000,122900,124702
@@ -753,7 +753,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,CE507XIA52,Xiaomi 17 Ultra - Smartphone - Android - Starlit Green - Touch,nan,72993,1471.0,14.0,nan,Physical,,,,,
 ,CE507XIA53,Xiaomi 17 Ultra - Smartphone - Android - Black - Touch,nan,72995,1471.1,20.0,nan,Physical,,,,,
 ,CE507XIA56,Xiaomi Redmi A7 Pro - Smartphone - Mist Blue - Touch - 74455,nan,74455,126.6,20.0,nan,Physical,,,,,
-,CH032SDK85,SanDisk Ultra - Tarjeta de memoria flash (adaptador microSDHC a SD Incluido) - 32 GB - Class 10 - microSDHC UHS-I,nan,SDSQUNR-032G-GN3MA,8.2,20.0,nan,Physical,91369,,8892,12990,11189
+,CH032SDK85,SanDisk Ultra - Tarjeta de memoria flash (adaptador microSDHC a SD Incluido) - 32 GB - Class 10 - microSDHC UHS-I,nan,SDSQUNR-032G-GN3MA,8.2,20.0,nan,Physical,91369,,8892,12990,11432
 ,CH064SDK50,SanDisk Extreme Pro - Tarjeta de memoria flash - 64 GB - Video Class V30 / UHS-I U3 / Class10 - SDXC UHS-I,nan,SDSDXXU-064G-GN4IN,27.1,20.0,nan,Physical,156911,,29837,,33431
 ,CH128SDK70,SanDisk Ultra Fit - Unidad flash USB - 128 GB - USB 3.1,nan,SDCZ430-128G-G46,21.2,20.0,nan,Physical,44257,,21990,32990,27230
 ,CH128SDK71,SanDisk - Flash memory card - SC QD111 UHS-I 128GB MicroSD 1,nan,SDSDQAS4-128G-BP,25.2,20.0,nan,Physical,,,,,
@@ -1102,7 +1102,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ES224HIK74,Hikvision - 6 MP Smart Hybrid Light with C,nan,DS-2CD2667G3-LIZSY,222.3,18.0,nan,Physical,382028,,236660,,243951
 ,ES224HIK75,Hikvision - Surveillance camera - Indoor / Outdoor - Domo de Red bi-espectro termic,nan,HM-TD4137-50/WY,4160.4,1.0,nan,Physical,388678,,4680250,,4705620
 ,ES225HIK58,Hikvision - Surveillance camera - DS-2DE2A404IWG1-E,nan,DS-2DE2A404IWG1-E,133.5,15.0,nan,Physical,386782,,,,
-,ES300UBQ18,Ubiquiti Cloud Key SSD Minio servidor Unifi Controller - Material de la carcasa: Aluminio anodizado Hardware – Procesador: Chip basado en Arm® Cortex-A53® de ocho núcleos - Interfaz de gestión: Ethernet Bluetooth Interfaz de red (1) puerto GbE RJ45 ,nan,UCK-G2-SSD,235.1,12.0,nan,Physical,375265,,262484,,277636
+,ES300UBQ18,Ubiquiti Cloud Key SSD Minio servidor Unifi Controller - Material de la carcasa: Aluminio anodizado Hardware – Procesador: Chip basado en Arm® Cortex-A53® de ocho núcleos - Interfaz de gestión: Ethernet Bluetooth Interfaz de red (1) puerto GbE RJ45 ,nan,UCK-G2-SSD,235.1,12.0,nan,Physical,375265,,262484,,295876
 ,ES302HIK35,Hikvision - Standalone DVR - 8 Video Channels - 1080p 1U H.265 AcuSense DVR,nan,IDS-7208HQHI-M1/XT,61.7,20.0,nan,Physical,,,,,
 ,ES302HIK36,Hikvision IDS-7216HQHI-M1/XT DVR AcuSense 16 canales 1080p 1U H.265 - HDTVI/AHD/CVI/CVBS/IP - 1 disco duro SATA hasta 10TB - H.265 Pro+/H.265 Pro/H.265/H.264+/H.264 - Hasta 24 cámaras de red (6MP) pueden conectarse - Soporta Tecnología de Detección de ,nan,IDS-7216HQHI-M1/XT,110.0,20.0,nan,Physical,,,,,
 ,ES302HIK37,Hikvision IDS-7232HQHI-M2/XT DVR AcuSense de 32 canales 3K 1U H.265 - HDTVI/AHD/CVI/CVBS/IP - 2 discos duros SATA hasta 12TB - H.265 Pro+/H.265 Pro/H.265/H.264+/H.264 - Se pueden conectar hasta 40 cámaras de red (6MP) - Soporte para tecnología de detecc,nan,IDS-7232HQHI-M2/XT,216.0,20.0,nan,Physical,,,,,
@@ -1180,7 +1180,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,HM350XIA14,"Xiaomi Mi Smart LED Plafón 450mm 45 W Wi-Fi IEEE 802.11 b/g/n 2,4 GHz",nan,27853,72.9,2.0,nan,Physical,,,,,
 ,ID000ASU54,ASUS - Keyboard and mouse set - U2000,nan,90-XB1000KM001M0,15.6,20.0,nan,Physical,382074,,18500,,19816
 ,ID000LOG57,Logitech Wireless Presenter R400 - Control remoto para presentaciones - RF,nan,910-001354,24.0,5.0,nan,Physical,,,,,
-,ID000LOG63,Logitech - Keyboard and mouse set - Wireless - Graphite - MK370 Combo for Business Span,nan,920-012063,41.3,20.0,nan,Physical,222165,,44517,55990,53524
+,ID000LOG63,Logitech - Keyboard and mouse set - Wireless - Graphite - MK370 Combo for Business Span,nan,920-012063,41.3,20.0,nan,Physical,222165,,44517,55990,52796
 ,ID000PGL19,Primus Gaming - Keyboard - Wired - Spanish - USB - Ball 91T PKS-093S,nan,PKS-093S,28.0,20.0,nan,Physical,252904,,28990,37990,34584
 ,ID001HPQ85,HP - Mouse - Wired - 265A9UT#ABA,nan,265A9UT#ABA,7.6,20.0,nan,Physical,,,,,
 ,ID001HPQ90,HP - Keyboard and mouse set - Spanish - Wired,nan,AX2Y7AA#ABM,16.2,20.0,nan,Physical,,,,,
@@ -1217,25 +1217,25 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID011KLX02,Klip Xtreme KMW-330 Vector - Ratón - ergonómico - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - azul,nan,KMW-330BL,5.3,20.0,nan,Physical,40404,,6019,,7613
 ,ID011KLX03,Klip Xtreme KMW-330 Vector - Ratón - ergonómico - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,KMW-330RD,5.2,20.0,nan,Physical,40403,,5677,8990,7410
 ,ID011KLX04,Klip Xtreme GhosTouch KMW-400 - Ratón - ergonómico - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - azul,nan,KMW-400BL,6.2,15.0,nan,Physical,40396,,,,
-,ID011KLX06,Klip Xtreme EverRest - Ratón vertical - ergonómico - diestro - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB,nan,KMW-390,11.3,20.0,nan,Physical,46112,,12614,,14969
+,ID011KLX06,Klip Xtreme EverRest - Ratón vertical - ergonómico - diestro - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB,nan,KMW-390,11.3,20.0,nan,Physical,46112,,12614,,14785
 ,ID011KLX14,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - Ergonomic,nan,KMW-500BK,9.2,20.0,nan,Physical,76834,,10173,13990,12368
 ,ID011KLX16,Klip Xtreme Krown KMO-506 - Ratón vertical - ergonómico - diestro - óptico - 6 botones - cableado - USB,nan,KMO-506,8.9,20.0,nan,Physical,101549,,9742,,11976
 ,ID011KLX17,Klip Xtreme Lightflex KMW-375 - Ratón - ergonómico - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - negro,nan,KMW-375BK,8.6,20.0,nan,Physical,90876,,7400,,8926
-,ID011KLX18,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Gray - Foldable - 1000dpi,nan,KMW-375GR,8.9,20.0,nan,Physical,90877,,8203,,9563
+,ID011KLX18,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Gray - Foldable - 1000dpi,nan,KMW-375GR,8.9,20.0,nan,Physical,90877,,8203,,9874
 ,ID011KLX21,Klip Xtreme - Mouse - Bluetooth 5.0 - Wireless - Black/gray - 3-buttons up 1600dpi,nan,KMB-001GR,7.5,20.0,nan,Physical,136052,,10616,,13188
-,ID011KLX22,Klip Xtreme Arrow BT KMB-251BK - Ratón - diestro y zurdo - óptico - 4 botones - inalámbrico - Bluetooth 5.1 - negro,nan,KMB-251BK,8.2,7.0,nan,Physical,144342,,9291,9500,11037
+,ID011KLX22,Klip Xtreme Arrow BT KMB-251BK - Ratón - diestro y zurdo - óptico - 4 botones - inalámbrico - Bluetooth 5.1 - negro,nan,KMB-251BK,8.2,7.0,nan,Physical,144342,,9291,9500,10942
 ,ID011KLX23,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth 5.0 - Wireless - Black - Dual mode Black,nan,KMB-501BK,9.1,20.0,nan,Physical,228757,,10368,,12259
 ,ID011KLX24,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth 5.0 - Wireless - Cool white - Dual mode White,nan,KMB-501WH,9.3,2.0,nan,Physical,228756,,10368,,12363
 ,ID011KLX25,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - KMW-410BK,nan,KMW-410BK,5.2,20.0,nan,Physical,240905,,7990,,7990
 ,ID011KLX26,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Black - Slim,nan,KMW-415BK,6.0,16.0,nan,Physical,240908,,5990,,7166
 ,ID011KLX27,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Pink - Slim,nan,KMW-415PK,5.6,20.0,nan,Physical,240907,,6415,,7662
-,ID011PGL14,Primus Gaming - Mouse - 2.4 GHz / USB 2.0 - Wireless,nan,PMO-W203,20.6,20.0,nan,Physical,270899,,23980,,26625
+,ID011PGL14,Primus Gaming - Mouse - 2.4 GHz / USB 2.0 - Wireless,nan,PMO-W203,20.6,20.0,nan,Physical,270899,,23980,,25858
 ,ID011PGL15,Primus Gaming - Keyboard - Wired - Spanish - USB 2.0 - Ergonomic Design - Black & white,nan,PKS-060G-S,22.7,20.0,nan,Physical,271552,,24990,,29842
 ,ID011PGL16,Primus Gaming - Keyboard - Wired - Spanish - USB 2.0 - Ergonomic Design - Black/white,nan,PKS-060W-S,22.7,20.0,nan,Physical,278030,,24790,,28912
 ,ID011PGL17,Primus Gaming - Keyboard - Wired - English - USB 2.0 - Ergonomic Design - Black,nan,PKS-040E,19.9,20.0,nan,Physical,358697,,22480,,25310
-,ID011PGL23,Primus Gaming - PMO-S204DR - Mouse - 2.4 GHz / Bluetooth / USB 2.0 - Wired / Wireless,nan,PMO-S204DR,19.4,20.0,nan,Physical,361073,,15990,,24419
+,ID011PGL23,Primus Gaming - PMO-S204DR - Mouse - 2.4 GHz / Bluetooth / USB 2.0 - Wired / Wireless,nan,PMO-S204DR,19.4,20.0,nan,Physical,361073,,14990,,24277
 ,ID011PGL24,Primus Gaming - PMO-S205BF - Mouse - 2.4 GHz / Bluetooth / USB 2.0 - Wired / Wireless,nan,PMO-S205BF,19.4,20.0,nan,Physical,361075,,18990,,24803
-,ID011XTK03,XTech XTM-175  - Ratón - USB - Cableado - Negro - Optico,nan,XTM-175,2.5,20.0,nan,Physical,28982,,2938,,3583
+,ID011XTK03,XTech XTM-175  - Ratón - USB - Cableado - Negro - Optico,nan,XTM-175,2.5,20.0,nan,Physical,28982,,2938,,3575
 ,ID011XTK06,Xtech - Mouse - Wired - USB - Black - 3D optical,nan,XTM-195,1.6,20.0,nan,Physical,31275,,1845,,2464
 ,ID011XTK09,Xtech - Optical mouse - USB - Wired - 1000 DPI - (XTM-165),nan,XTM-165,2.1,20.0,nan,Physical,41267,,2408,,3363
 ,ID011XTK11,"Mouse para Gaming Xtech XTM-610 Lethal Haze - Resolución ajustable de hasta 3200 ppp - Luces LED de 4 colores - Cable sin enredos - para juegos 3D de 6 botones - Sensor: Óptico - Botones: 6 - Iluminado: Sí - Longitud del cable: 5,2 pies, trenzado",nan,XTM-610,8.2,19.0,nan,Physical,,,,,
@@ -1257,29 +1257,29 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID014KNS52,Kensington - Mouse - Wireless - K79810,nan,K79810,22.5,5.0,nan,Physical,227685,,29995,,31974
 ,ID014KNS56,Kensington Orbit Fusion K72363WW - Mouse - USB - Wireless - Black,nan,K72363WW,55.1,4.0,nan,Physical,153330,,60848,,63054
 ,ID016KNS17,Kensington - Mouse - USB - Wired - K72369,nan,K72369,8.9,3.0,nan,Physical,39394,,7426,9650,9624
-,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9980,9990,12321
+,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9980,9990,12422
 ,ID022KNS40,Kensington - Mouse - USB - Black,nan,K75403,20.0,3.0,nan,Physical,85974,,21461,21990,24577
-,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,6990,7990,10693
+,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,6990,7990,10679
 ,ID023LOG10,Logitech M190 - Ratón - óptico - 3 botones - inalámbrico - receptor inalámbrico USB - rojo,nan,910-005904,9.8,7.0,nan,Physical,86548,,9728,,13711
-,ID023LOG52,"Logitech Signature M650 - Ratón - manos pequeñas - diestro y zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006251,29.1,20.0,nan,Physical,132346,,29792,53990,43690
-,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,38940,,39465
+,ID023LOG52,"Logitech Signature M650 - Ratón - manos pequeñas - diestro y zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006251,29.1,20.0,nan,Physical,132346,,29792,53990,42250
+,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,36490,,38240
 ,ID023LOG80,Logitech G G502 X - Ratón - óptico - 8 botones - cableado - USB - blanco,nan,910-006145,71.6,20.0,nan,Physical,153269,,62990,,85093
-,ID024LOG08,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - grafito,nan,910-006932,73.1,20.0,nan,Physical,220143,,63900,87990,84550
-,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,75392,87990,94017
-,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,16990,16990,21683
+,ID024LOG08,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - grafito,nan,910-006932,73.1,20.0,nan,Physical,220143,,63900,92990,83471
+,ID024LOG09,Logitech MX Anywhere 3S - Ratón - óptico - 6 botones - inalámbrico - Bluetooth - receptor de USB Logitech Logi Bolt - gris pálido,nan,910-006933,68.0,20.0,nan,Physical,220144,,75392,,96376
+,ID024LOG15,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Off-white - Ratón - 3 botones - inalámbrico - Bluetooth - blanco hueso",nan,910-007116,15.9,20.0,nan,Physical,220903,,16990,16990,21809
 ,ID024LOG27,Logitech - G309 - Mouse - Black,nan,910-007198,44.3,20.0,nan,Physical,254110,,39990,89990,64449
 ,ID024LOG28,Logitech - G309 - Mouse - white,nan,910-007206,57.1,11.0,nan,Physical,254109,,51990,,75226
 ,ID024LOG35,Logitech - Pro 2 - Mouse - Wireless - Gamer,nan,910-007301,105.3,8.0,nan,Physical,264873,,96470,,120481
-,ID024LOG36,Logitech - Pro 2 - Mouse - Wireless - Pink,nan,910-007308,94.4,20.0,nan,Physical,265854,,94990,94990,117845
+,ID024LOG36,Logitech - Pro 2 - Mouse - Wireless - Pink,nan,910-007308,94.4,20.0,nan,Physical,265854,,94990,94990,118240
 ,ID024LOG37,Logitech - Mouse - Wireless - Black - G Pro,nan,910-007294,105.9,12.0,nan,Physical,270837,,98890,98890,106644
 ,ID024LOG59,Logitech - Mouse - Gamer G PRO X Superlight 2C Bl,nan,910-007537,129.9,20.0,nan,Physical,362605,,115990,115990,145670
 ,ID024LOG60,Logitech - Mouse - Gamer G PRO X Superlight 2C R,nan,910-007544,129.9,20.0,nan,Physical,362604,,118686,118686,160834
 ,ID150KNS33,Kensington - Keyboard and mouse set - COMBO TECLADO INALAM ERG RECAR,nan,K75492ES,48.3,20.0,nan,Physical,384165,,49256,,55289
-,ID211KLX10,Klip Xtreme KKS-050S - Teclado - USB - español - negro azabache,nan,KKS-050S,5.4,20.0,nan,Physical,71941,,5931,8990,7890
+,ID211KLX10,Klip Xtreme KKS-050S - Teclado - USB - español - negro azabache,nan,KKS-050S,5.4,20.0,nan,Physical,71941,,5931,,7811
 ,ID211KLX28,Klip Xtreme - Keyboard and mouse set - Spanish - Wireless - 2.4 GHz - Black and gray,nan,KBK-520,19.9,20.0,nan,Physical,153354,,19990,,25425
 ,ID211KLX31,Klip Xtreme KCK-265S - Juego de teclado y ratón - inalámbrico - 2.4 GHz - impermeable,nan,KCK-265S,13.3,20.0,nan,Physical,,,,,
-,ID211KLX34,Klip Xtreme KCK-251S DeskMate - Juego de teclado y ratón - USB - español,nan,KCK-251S,8.2,20.0,nan,Physical,46882,,8958,,10865
-,ID211KLX35,Klip Xtreme - Keyboard - Wired - Spanish - USB - Black - Multimedia keys,nan,KKM-252S,8.4,20.0,nan,Physical,117253,,9322,,11002
+,ID211KLX34,Klip Xtreme KCK-251S DeskMate - Juego de teclado y ratón - USB - español,nan,KCK-251S,8.2,20.0,nan,Physical,46882,,8958,,11017
+,ID211KLX35,Klip Xtreme - Keyboard - Wired - Spanish - USB - Black - Multimedia keys,nan,KKM-252S,8.4,20.0,nan,Physical,117253,,9322,12990,11155
 ,ID211KLX36,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz - All black - Ergonomic,nan,KBK-530S,26.7,20.0,nan,Physical,210911,,,,
 ,ID211KLX38,Klip Xtreme - Keyboard - Spanish - Wireless - 2.4 GHz / Bluetooth 5.0 - Gray / Black - Dual Connection / Touchpad,nan,KCK-550S,16.5,20.0,nan,Physical,259359,,18335,,21734
 ,ID211KLX43,Klip Xtreme - Keyboard and Touchpad - Spanish - Wireless - Bluetooth 5.0 - Black - KCK-650S-BK,nan,KCK-650S-BK,27.8,20.0,nan,Physical,277786,,22091,,25039
@@ -1287,11 +1287,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID211KLX47,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth - Wireless - Trimode,nan,KMW-775,11.4,20.0,nan,Physical,387480,,13634,,15231
 ,ID222XTK03,Xtech - Keyboard - Wired - Spanish - USB - Black - XTK-160S,nan,XTK-160S,4.3,20.0,nan,Physical,45887,,4893,,6409
 ,ID222XTK33,Xtech - Keyboard - Wired - Spanish - USB - Black - Standard XTK-092S,nan,XTK-092S,4.1,20.0,nan,Physical,81786,,4739,,6059
-,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,109990,109990,131070
+,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,109990,109990,129837
 ,ID223LOG87,Logitech MX Keys Mini - eclado - Inalámbrico - Español - Bluetooth 5.0 / Bluetooth / 2.4 GHz / USB-C - Ergonomic Design - Rosa,nan,920-010478,100.2,1.0,nan,Physical,132329,,82353,95990,114459
 ,ID223XTK03,Xtech CHEVALIER XTK-505S - Teclado - retroiluminación - USB - QWERTY - español,nan,XTK-505S,9.6,8.0,nan,Physical,131737,,,,
 ,ID223XTK06,"Xtech - Keyboard, mouse and mouse pad - Wired - Spanish - USB - Black - Gaming XTK-535S",nan,XTK-535S,16.5,20.0,nan,Physical,153550,,19053,,22200
-,ID224LOG02,Logitech Master Series MX Mechanical Mini - Teclado - retroiluminación - inalámbrico - Bluetooth LE - QWERTY - español - interruptor: táctil silencioso - grafito,nan,920-010846,147.7,2.0,nan,Physical,147315,,146302,169990,162162
+,ID224LOG02,Logitech Master Series MX Mechanical Mini - Teclado - retroiluminación - inalámbrico - Bluetooth LE - QWERTY - español - interruptor: táctil silencioso - grafito,nan,920-010846,147.7,2.0,nan,Physical,147315,,146302,169990,155728
 ,ID224LOG32,"Logitech G PRO X TKL LIGHTSPEED Wireless Gaming Keyboard, Tactile Switches (GX Brown), Magenta - Teclado - retroiluminación - inalámbrico - 2.4 GHz, Bluetooth - QWERTY - EE. UU. - interruptor: GX Brown Tactile - magenta",nan,920-012154,169.0,3.0,nan,Physical,220222,,197600,257940,262796
 ,ID224LOG36,Logitech - Keyboard - Español - Graphite - 920-012278,nan,920-012278,59.3,2.0,nan,Physical,229814,,60920,,77401
 ,ID224LOG37,Logitech - Keyboard - Wave keys - Spanish - Off white,nan,920-012279,55.1,20.0,nan,Physical,231032,,57890,73990,70428
@@ -1454,13 +1454,13 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM108KLX03,Klip Xtreme - Web camera - USB - 2560 x 1440 - 2K QHD,nan,KWC-750,26.6,20.0,nan,Physical,,,,,
 ,MM108KLX04,Klip Xtreme - Web camera - USB - 3840 x 2160 - 4K IA tracking - Gesture,nan,KWC-950,140.1,20.0,nan,Physical,,,,,
 ,MM111KLX34,Klip Xtreme - KWH-750CO - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Coral color,nan,KWH-750CO,30.4,3.0,nan,Physical,187805,,33800,,38340
-,MM111KLX35,Klip Xtreme - KWH-750BL - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Blue color,nan,KWH-750BL,29.1,7.0,nan,Physical,187804,,31868,39990,36101
+,MM111KLX35,Klip Xtreme - KWH-750BL - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Blue color,nan,KWH-750BL,29.1,7.0,nan,Physical,187804,,31868,,35748
 ,MM111KLX36,Klip Xtreme - KWH-750GR - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 40Hr Gray color,nan,KWH-750GR,30.4,20.0,nan,Physical,187802,,27990,,27990
-,MM111KLX47,Klip Xtreme - KTE-500BK - Earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - TWS 108Hr Negros,nan,KTE-500BK,27.6,14.0,nan,Physical,145695,,23748,,28783
+,MM111KLX47,Klip Xtreme - KTE-500BK - Earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - TWS 108Hr Negros,nan,KTE-500BK,27.6,14.0,nan,Physical,145695,,23748,,27963
 ,MM111KLX50,Klip Xtreme - KTE-750WH - True wireless earphones - Para Home audio / Para Portable electronics / Para Tablet / Para Cellular phone - Wireless - ANC - 26hrs - Blanco,nan,KTE-750WH,17.5,20.0,nan,Physical,152014,,18995,30990,23592
-,MM111KLX69,Klip Xtreme - KCH-510 - Headset - Para Conference / Para Home audio - Wired - Stereo -console cmd.,nan,KCH-510,12.0,20.0,nan,Physical,187834,,14363,,16283
-,MM111KLX70,Klip Xtreme - KCH-905 - Headset - Para Conference / Para Home audio - Wireless - Charging Base,nan,KCH-905,32.1,20.0,nan,Physical,198923,,35732,,42498
-,MM111KLX75,Klip Xtreme - KNH-750GR - Headphones - Para Home audio - Wireless - ANC - 44Hr - Gray,nan,KNH-750GR,46.6,12.0,nan,Physical,232352,,51188,69990,58413
+,MM111KLX69,Klip Xtreme - KCH-510 - Headset - Para Conference / Para Home audio - Wired - Stereo -console cmd.,nan,KCH-510,12.0,20.0,nan,Physical,187834,,14363,,16204
+,MM111KLX70,Klip Xtreme - KCH-905 - Headset - Para Conference / Para Home audio - Wireless - Charging Base,nan,KCH-905,32.1,20.0,nan,Physical,198923,,35732,,42437
+,MM111KLX75,Klip Xtreme - KNH-750GR - Headphones - Para Home audio - Wireless - ANC - 44Hr - Gray,nan,KNH-750GR,46.6,12.0,nan,Physical,232352,,51188,,57360
 ,MM111KLX76,Klip Xtreme - KNH-750BL - Headphones - Para Home audio - Wireless - ANC - 44Hr - Blue,nan,KNH-750BL,47.9,19.0,nan,Physical,232351,,52154,69990,59888
 ,MM111KLX83,Klip Xtreme - KWH-010BK - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Black - BT,nan,KWH-010BK,10.8,20.0,nan,Physical,261033,,9990,,15715
 ,MM111KLX84,Klip Xtreme - KWH-010BL - Headphones - Para Home audio / Para Portable electronics / Para Professional audio / Para Cellular phone - Wireless - 25Hrs - Blue - BT,nan,KWH-010BL,10.9,20.0,nan,Physical,259363,,12990,,12990
@@ -1599,7 +1599,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MT027DEL20,"Dell P2725HE - 27"" - 1920 x 1080 - IPS - USB-C - 100Hz",nan,P2725HE,235.0,20.0,nan,Physical,,,,,
 ,MT027SAM69,"Samsung - LED-backlit LCD monitor - 27"" - HDMI - 180Hz 0.03Ms HDMI DP FreSync/G",nan,LS27FG500SLXZS,449.7,6.0,nan,Physical,366630,,458870,,479203
 ,MT032SAM00,"Samsung - 32"" M9 M90F UHD 144Hz Monitor",nan,LS32FM902SLXZS,1249.2,6.0,nan,Physical,318326,,1209071,,1238832
-,MT032SAM29,"Samsung LS32FM501ELXZS - 32"" - 1920 x 1080 - VA - USB / HDMI - White - 60Hz",nan,LS32FM501ELXZS,199.9,20.0,nan,Physical,379960,,197906,249990,215377
+,MT032SAM29,"Samsung LS32FM501ELXZS - 32"" - 1920 x 1080 - VA - USB / HDMI - White - 60Hz",nan,LS32FM501ELXZS,199.9,20.0,nan,Physical,379960,,197906,249990,214992
 ,MT055HIK48,"Hikvision - LED-backlit LCD monitor - 55"" - 60Hz VA Ultra HD",nan,DS-D5055U3-1V0S,520.5,2.0,nan,Physical,,,,,
 ,MT065HIK48,"Hikvision - LED-backlit LCD monitor - 65"" - 4K Interactive Display 8G+128",nan,DS-D5B65RB/FL,1005.2,13.0,nan,Physical,,,,,
 ,MT075HIK48,"Hikvision - LED-backlit LCD monitor - 75"" - Interactive Display 8G+128G",nan,DS-D5B75RB/FL,1323.4,20.0,nan,Physical,,,,,
@@ -1636,7 +1636,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,NT104ASU15,"ASUS - Notebook - 14"" - 1920 x 1200 - AMD Ryzen 5 330 / 4.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - AMD Radeon",nan,90NX0971-M00H20,805.93,20.0,nan,Physical,357479,,879296,,903499
 ,NT104ASU28,"ASUS - Notebook - 14"" - Intel Core 5 210H / 2.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics",nan,90NX0811-M087C0,762.4,20.0,nan,Physical,385683,,847900,,858541
 ,NT104ASU29,"ASUS - Notebook - 15.6"" - Intel Core 5 210H / 2.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics",nan,90NX0801-M07VY0,743.6,20.0,nan,Physical,385685,,870356,,876415
-,NT104ASU30,"ASUS - Notebook - 14"" - Intel Core 5 210H / 2.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics - P1403CVA-S61407X",nan,90NX0871-M01LL0,697.9,20.0,nan,Physical,385794,,863157,,911710
+,NT104ASU30,"ASUS - Notebook - 14"" - Intel Core 5 210H / 2.5 GHz - 16 GB - DDR5 SDRAM - 512 GB SSD - Integrated graphics - P1403CVA-S61407X",nan,90NX0871-M01LL0,697.9,20.0,nan,Physical,385794,,829920,,950026
 ,NT104ASU34,"ASUS Asus W7606WM-RJ101X - Notebook - 16"" - AMD Ryzen 9 HX 370 / 5.10 GHz - 32 GB - DDR5 SDRAM - 1 TB - NVIDIA GeForce RTX 5060 L - Windows 11 Pro",nan,90NB15L1-M006L0,2275.39,2.0,nan,Physical,385147,2749990,2591768,,2724668
 ,NW000ACT04,"ScreenBeam 960 Wireless Display Receiver with ScreenBeam CMS - Alargador de vídeo/audio inalámbrico - receptor - 802.11a, 802.11b/g/n, Wi-Fi 5",nan,SBWD960A-INT,424.6,3.0,nan,Physical,,,,,
 ,NW000ACT12,ScreenBeam USB Pro Switch - Interruptor para compartir periférico USB - 4 x SuperSpeed USB 3.0 - sobremesa,nan,SBUSBSW4,86.5,1.0,nan,Physical,,,,,
@@ -1818,7 +1818,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,TA000HOR32,"Honor - PAD X7 - 8.7"" - Android - Snapdragon 680 - Gray",nan,5504AEHH,127.4,20.0,nan,Physical,,,,,
 ,TA000XIA05,Xiaomi MI XMXHB02WC - Tableta de escritura con display LCD,nan,28505,18.4,20.0,nan,Physical,153554,,,,
 ,TA000XIA61,Xiaomi Redmi - Pad 2 - Android 15 - Helio G100 - 4GB RAM - 128GB ROM,nan,67128,248.3,20.0,nan,Physical,279876,252190,169990,,240900
-,TA105SAM76,"Samsung Galaxy - Tab S10+ - 12.4"" - AirOS - None - Gray - 12gb 256GB - Power Adapter Not Included",nan,SM-X820NZADCHO,1473.2,6.0,nan,Physical,255690,,878990,,1114767
+,TA105SAM76,"Samsung Galaxy - Tab S10+ - 12.4"" - AirOS - None - Gray - 12gb 256GB - Power Adapter Not Included",nan,SM-X820NZADCHO,1473.2,6.0,nan,Physical,255690,,878990,,1102976
 ,UI150FOR49,Forza - UPS - Línea interactiva - 600 vatios - 1000 VA - CA 220 V,nan,HT-1002LCD-C,84.6,19.0,nan,Physical,79309,,108182,,109791
 ,UI150FOR55,Forza NT Series - UPS - Line interactive - 250 Watt - 500 VA - AC 220 V - 4-Italian RJ11,nan,NT-512C,36.0,20.0,nan,Physical,180112,,33490,,42354
 ,UI231FOR24,Forza SL Series - UPS - Line interactive - 360 Watt - 600 VA - AC 220 V - 4-Italian 1-IEC RJ45,nan,SL-612UL-C,62.5,20.0,nan,Physical,180084,,65590,,66020
@@ -1828,7 +1828,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,UI714APC96,APC SRV3KIL - External battery pack - On-line - 230 Watt - 3000 VA - AC 220/240 V - Run Time (Up To): 4 hours,nan,SRV3KIL,1049.3,1.0,nan,Physical,79314,,1177600,,1177600
 ,UI774FOR16,Forza Power Technologies - SNMP Card,nan,FDC-CD610,128.6,20.0,nan,Physical,,,,,
 ,UI774FOR33,"Forza Atlas FDC-2012R-I - UPS - CA 200-240 V - 2000 vatios - 2000 VA - 9 Ah - RS-232, USB - conectores de salida: 8",nan,FDC-2012R-I,549.2,1.0,nan,Physical,66023,,,,
-,UI774FOR35,"Forza Atlas FDC-206KMR - UPS (montaje en rack / externo) - AC 110-300 V - 6000 vatios - 6000 VA - 9 Ah - RS-232, USB - 2U - negro",nan,FDC-206KMR,1631.3,15.0,nan,Physical,64584,,1398758,,1485384
+,UI774FOR35,"Forza Atlas FDC-206KMR - UPS (montaje en rack / externo) - AC 110-300 V - 6000 vatios - 6000 VA - 9 Ah - RS-232, USB - 2U - negro",nan,FDC-206KMR,1631.3,15.0,nan,Physical,64584,,1398758,,1489636
 ,UI774FOR36,"Forza Atlas FDC-210KMR - UPS (montaje en rack / externo) - AC 110-300 V - 10000 vatios - 10000 VA - 9 Ah - RS-232, USB - 2U - negro",nan,FDC-210KMR,2062.3,2.0,nan,Physical,66128,,,,
 ,UI774FOR58,Forza - UPS Rack Mounting Kit - Rail 2U 1100mm 80kg - Altura máxima 89mm  - Ancho máximo 444mm  - Profundidad máxima 1130mm - gris,nan,FDC-RK1102U,55.6,14.0,nan,Physical,,,,,
 ,UI774FOR59,Forza - UPS -  FDC-RK0903U - Rack Mounting Kit  - Profundidad ajustable de 533 a 904mm - Estructura de acero capaz de soportar unidades de protección eléctrica equipos - Para ispositivos de red de hasta 444mm de ancho y peso de 120KG como má­ximo,nan,FDC-RK0903U,69.0,4.0,nan,Physical,,,,,
@@ -1837,7 +1837,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,UI775FOR33,Forza Zeus2 Series 3-Phase Tower - UPS - On-line - 20000 Watt - AC 380/400/415 V - PF1 LCD Tower 380/400V 32-Bat,nan,FTP-320K,3516.2,2.0,nan,Physical,381970,,3460202,,3830850
 ,UI775FOR35,Forza Zeus2 Series 3-Phase Tower - UPS - On-line - 40000 Watt - AC 380/400/415 V - PF1 LCD Tower 380/400V 64-Bat,nan,FTP-340K,10647.0,2.0,nan,Physical,378380,,6634990,,8409950
 ,UI775FOR49,Forza - UPS - Line interactive - 900 Watt - 1000 VA - AC 220 V - Rack IEC,nan,FDC-1022R-I,289.0,20.0,nan,Physical,368615,,309990,,334373
-,UI775FOR55,Forza - UPS - Line interactive - 1800 Watt - 2000 VA - AC 220 V - RACK IEC,nan,FDC-2022R-I,412.7,20.0,nan,Physical,361111,,345818,,372831
+,UI775FOR55,Forza - UPS - Line interactive - 1800 Watt - 2000 VA - AC 220 V - RACK IEC,nan,FDC-2022R-I,412.7,20.0,nan,Physical,361111,,345818,,374026
 ,UI775FOR59,Forza - UPS - Line interactive - 2700 Watt - 3000 VA - AC 220 V - RACK IEC,nan,FDC-3022R-I,525.9,15.0,nan,Physical,358932,,,,
 ,UP000HIK02,Hikvision - UPS - 600 VA,nan,DS-UPS600/EU/ITA,26.2,20.0,nan,Physical,,,,,
 ,UR100FOR51,Forza - Voltage Protector - AC 220 V - 2 Tomas de Corriente - Chile Italian Out,nan,FVP-1202B-C,11.0,20.0,nan,Physical,,,,,
