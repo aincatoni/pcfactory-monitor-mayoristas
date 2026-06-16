@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56532,6397868,TUF-RTX5080-O16G-GAMING,Asus,90YV0M30-M0AA00,1632.0,4,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,False,0,0,0,Tarjeta de Video NVIDIA TUF Gaming GeForce RTX 5080 OC Edition 16GB GDDR7,0,0,True,{},,,,,,
+56848,6737879,P1403CVAS61407X 5-210H 512G 16G 14IN W11,Asus,90NX0871-M01LL0,780.84,136,Computadores Servidores y Notebooks,Notebooks,ok,False,0,0,0,"Notebook ExpertBook P1 Intel Core 5 210H 14"" 16GB RAM 512GB SSD Windows 11 Pro",0,0,True,{},,385794,,829920,,931300
