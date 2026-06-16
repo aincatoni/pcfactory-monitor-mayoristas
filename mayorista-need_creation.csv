@@ -144,7 +144,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2431352,TINTA HP 727 130-ML AMARILLO,Hp,B3P21A,96.15,27,Suministros y Medios,Suministros Inyección de Tinta,259838,,106202,,119235
 ,2431353,TINTA HP 727 130-ML MATE NEGRO,Hp,B3P22A,96.03,8,Suministros y Medios,Suministros Inyección de Tinta,259842,,106062,,116204
 ,2431354,TINTA HP 727 130-ML FOTO NEGRO,Hp,B3P23A,96.23,18,Suministros y Medios,Suministros Inyección de Tinta,259840,,102386,,112891
-,2431355,TINTA HP 727 130-ML GRIS,Hp,B3P24A,96.23,1,Suministros y Medios,Suministros Inyección de Tinta,259843,,106278,,114881
+,2431355,TINTA HP 727 130-ML GRIS,Hp,B3P24A,96.23,1,Suministros y Medios,Suministros Inyección de Tinta,259843,,106278,,113573
 ,2436589,CABLE 1M LIGHTNING USB BLANCO,Startech.Com,USBLT1MW,16.01,9,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,2436590,2m White 8-pin Lightning to USB Cable,Startech.Com,USBLT2MW,16.78,10,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,2441222,TONER 119 NEGRO,Canon,3480B001,95.47,2,Suministros y Medios,Suministros Láser,260571,,102700,,111659
@@ -179,7 +179,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2637675,TINTA PFI-107 NEGRO MATE 130ML,Canon,6704B001,67.58,32,Suministros y Medios,Suministros Inyección de Tinta,259958,,76304,,82958
 ,2637676,TINTA PFI-107 NEGRO 130ML,Canon,6705B001,68.04,11,Suministros y Medios,Suministros Inyección de Tinta,259972,,77270,,84649
 ,2637678,TINTA PFI-107 MAGENTA 130ML,Canon,6707B001,67.75,33,Suministros y Medios,Suministros Inyección de Tinta,259962,,76304,,82785
-,2637679,TINTA PFI-107 AMARILLO 130ML,Canon,6708B001,67.77,12,Suministros y Medios,Suministros Inyección de Tinta,259966,,89990,,89990
+,2637679,TINTA PFI-107 AMARILLO 130ML,Canon,6708B001,67.77,12,Suministros y Medios,Suministros Inyección de Tinta,259966,,86336,,88163
 ,2637704,TINTA C13S020563 NEGRO 480Â PAG,Epson,C13S020563,55.89,1,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,278491,,62780,,65893
 ,2637706,TINTA C13S020565 MAGENTA 430Â PAG,Epson,C13S020565,19.77,8,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,278492,,23381,,25412
 ,2637707,TINTA C13S020566 AMARILLO 430Â PAG,Epson,C13S020566,19.77,14,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,280122,,23381,,25323
@@ -485,7 +485,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4649269,KTG SMARTFIT EASY RISER 2.0 LARGE - BLK,Kensington,K50422WW,18.38,46,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,4694492,UPS Network Management Card 3,Apc,AP9640,300.18,12,Protección Eléctrica y Racks,Administración UPS,,,,,
 ,4694493,UPS Network Management Card 3 with Envir,Apc,AP9641,496.2,6,Protección Eléctrica y Racks,Administración UPS,,,,,
-,4729985,TONER HP 215A NEGRO 1050 PAG,Hp,W2310A,55.51,15,Suministros y Medios,Suministros Láser,260085,,59721,,65092
+,4729985,TONER HP 215A NEGRO 1050 PAG,Hp,W2310A,55.51,15,Suministros y Medios,Suministros Láser,260085,,59721,,65213
 ,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,59.92,23,Suministros y Medios,Suministros Láser,260215,,64470,,71191
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,45,Suministros y Medios,Suministros Láser,260107,,64340,,69303
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.46,4,Suministros y Medios,Suministros Inyección de Tinta,,,,,
@@ -620,7 +620,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,119.16,342,Suministros y Medios,Suministros Láser,260106,,114944,149990,144832
 ,5576934,HP 151X Black Original LaserJet Toner IS,Hp,W1510X,241.49,125,Suministros y Medios,Suministros Láser,260341,,259859,,282955
 ,5577005,HP 154A Black Org LaserJet Tank Rld Kit,Hp,W1540A,10.82,29,Suministros y Medios,Suministros Láser,260326,,11207,,12966
-,5577006,HP 154X HY Blk Org LaserJetTank Rld Kit,Hp,W1540X,16.24,124,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18014,,20297
+,5577006,HP 154X HY Blk Org LaserJetTank Rld Kit,Hp,W1540X,16.24,124,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18014,,20331
 ,5582999,Toner HP Samsung CLT-M603L Magenta,Hp,SV402A,111.55,7,Suministros y Medios,Suministros Láser,270629,,120665,,126193
 ,5602137,TONER HP 658A NEGRO LASERJET,Hp,W2000A,177.55,14,Suministros y Medios,Suministros Láser,260166,,191052,,201532
 ,5610354,HSE251E 21.0MM B ON W HEAT SHRINK TAPE,Brother,HSE251E,30.38,37,Suministros y Medios,Suministros Matriz de Punto,,,,,
@@ -762,13 +762,13 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,493.09,1,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.73,183,Comunicaciones,Cintillos telefónicos,256210,,20490,24990,23683
 ,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.85,40,Suministros y Medios,Suministros Inyección de Tinta,262183,,106250,,122354
-,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,100.06,8,Suministros y Medios,Suministros Inyección de Tinta,262152,,106250,,115217
+,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,100.06,8,Suministros y Medios,Suministros Inyección de Tinta,262152,,106250,,123172
 ,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,86.13,34,Suministros y Medios,Suministros Inyección de Tinta,262283,,97990,,104626
 ,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,100.06,4,Suministros y Medios,Suministros Inyección de Tinta,262151,,111990,,119312
 ,6281645,TONER CONTRACTUAL ALTA CAPACIDAD AZUL,Hp,W2151XC,105.32,42,Suministros y Medios,Suministros Láser,,,,,
 ,6281646,TONER CONTRACTUAL ALTA CAPACIDAD AMARILL,Hp,W2152XC,105.32,42,Suministros y Medios,Suministros Láser,,,,,
 ,6281648,TONER CONTRACTUAL ALTA CAPACIDAD NEGRO,Hp,W2150XC,97.94,38,Suministros y Medios,Suministros Láser,,,,,
-,6281649,KIT RECARGA TONER HP 154X NEGRO,Hp,W1540X,16.4,12,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18014,,20297
+,6281649,KIT RECARGA TONER HP 154X NEGRO,Hp,W1540X,16.4,12,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18014,,20331
 ,6281650,TONER CONTRACTUAL ALTA CAPACIDAD ROJO,Hp,W2153XC,105.32,45,Suministros y Medios,Suministros Láser,280447,,117842,,119416
 ,6291070,200 EMPRS RED WIRELESS MOUSE,Hp,2HU82AA#ABL,7.88,540,Dispositivos de Entrada,Mouse,,,,,
 ,6291138,150 WD USB-A KBD,Hp,664R5AA#ABM,12.35,4559,Dispositivos de Entrada,Teclados,,,,,
@@ -808,12 +808,12 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6513333,APPLE ADAPTADOR-CHL 20W USB C,Apple,MD3J4CI/A,16.73,232,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
 ,6520824,T08K DURABRITE YELLOW INK CARTRIDGE,Epson,T08K420,219.21,1,Suministros y Medios,Suministros Inyección de Tinta,366915,,,,
 ,6520835,T08K DURABRITE MAGENTA INK CARTRIDGE,Epson,T08K320,219.21,1,Suministros y Medios,Suministros Inyección de Tinta,366913,,,,
-,6524101,MONITOR BENQ MA320U 32INCH 3840x2160 IPS,Benq,9H.LMXLB.QBA,562.37,20,Pantallas,Monitores LCD/LED,272072,,,,
+,6524101,MONITOR BENQ MA320U 32INCH 3840x2160 IPS,Benq,9H.LMXLB.QBA,562.37,20,Pantallas,Monitores LCD/LED,272072,,668800,,668800
 ,6567828,ALLOY RISE TECLADO GAMER 75,Hp,7G7A4AA#ABM,121.78,12,Comunicaciones,Teclados área de Movilidad,,,,,
 ,6581784,HPE NW ION GTWY 5P 2.5G 64W SG2505P,Hewlett Packard Enterprise,S0G34A,452.18,2,Dispositivos de Red,Routers y Gateways inalámbricos,376347,,,,
 ,6581785,HPE NW ION GTWY 4P G SG1004,Hewlett Packard Enterprise,S0G33A,312.31,3,Dispositivos de Red,Routers y Gateways inalámbricos,369597,,358900,,358900
 ,6585367,MOCHILA PRELUDE PRO 15.6IN,Hp,4Z513AA,17.8,3,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
-,6592677,PRIME-RX9070XT-O16G,Asus,90YV0L71-M0AA00,712.12,45,Componentes de Sistema,Tarjetas Gráficas nVidia,276343,859990,760608,779900,817290
+,6592677,PRIME-RX9070XT-O16G,Asus,90YV0L71-M0AA00,712.12,45,Componentes de Sistema,Tarjetas Gráficas nVidia,276343,859990,768900,779900,817703
 ,6594812,SOPORTE DE PARED PARA BARRA BARCO CLICKS,Barco,R8788066K,75.88,2,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
 ,6603676,IMPRESORA MULTIFUNCIONAL PIXMA G3180,Canon,6708C005,164.87,140,Impresoras,Multifuncionales Inkjet,,,,,
 ,6604484,ULTRACHROME HD YELLOW CART 350 ML P6000/,Epson,T54X400,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,392173,,159630,,159630
