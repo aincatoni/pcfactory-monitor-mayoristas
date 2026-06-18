@@ -1,7 +1,7 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,1000329,RACK PDU BASIC ZERO U 16A,Apc,AP9572,84.98,3,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
 ,1004027,TINTA HP 72 CABEZAL GRIS Y FOTO NEGRO,Hp,C9380A,102.93,3,Suministros y Medios,Suministros Inyección de Tinta,260608,,113298,,118582
-,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,197.14,98,Suministros y Medios,Suministros Láser,260299,,115000,,199768
+,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,197.14,98,Suministros y Medios,Suministros Láser,260299,,115000,,203597
 ,1015806,WRISTBAND POLYPROPYLENE 1X11IN 25.4X2,Zebra,10006995K,313.53,2,Suministros y Medios,Suministros Impresora Térmica,,,,,
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,278.31,39,Suministros y Medios,Suministros Láser,260104,,194900,,287358
 ,1084313,TINTA HP 72 CABEZAL MAGENTA Y CIAN,Hp,C9383A,102.93,1,Suministros y Medios,Suministros Inyección de Tinta,260600,,113298,,122497
@@ -489,10 +489,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,59.92,23,Suministros y Medios,Suministros Láser,260215,,64255,,70746
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,45,Suministros y Medios,Suministros Láser,260107,,64126,,68780
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.46,4,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,196,Suministros y Medios,Suministros Láser,260121,,76304,,83806
+,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,196,Suministros y Medios,Suministros Láser,260121,,76304,,84533
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,89084,109990,99203
 ,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,89030,109990,98760
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,62,Suministros y Medios,Suministros Láser,260108,,89159,,98960
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,62,Suministros y Medios,Suministros Láser,260108,,89159,,98243
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,216.59,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4811047,CABEZAL DE IMPRESION PF-10,Canon,0861C003,507.89,4,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,
 ,4827711,SERVER RACK CABINET 42U,Startech.Com,RK4236BKB,2128.0,2,Protección Eléctrica y Racks,Racks,,,,,
@@ -700,7 +700,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5891818,HPE DL3X0 GEN11 1U STND HEAT SINK KIT,Hewlett Packard Enterprise,P48904-B21,136.0,5,Computadores Servidores y Notebooks,Componentes Terminales,,,,,
 ,5893153,KITDSPLY MNTPOLY STUDIO X50,Poly,875M2AA,187.04,3,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,5901282,Tinta Cyan para Discproducer PP-100II/ii,Epson,C13S020688,29.28,9,Suministros y Medios,Suministros Inyección de Tinta,391152,,34081,,34640
-,5901283,Discproducer Ink PJIC7(LC) Light Cyan (M,Epson,C13S020689,29.28,1,Suministros y Medios,Suministros Inyección de Tinta,368942,,32834,,35204
+,5901283,Discproducer Ink PJIC7(LC) Light Cyan (M,Epson,C13S020689,29.28,1,Suministros y Medios,Suministros Inyección de Tinta,368942,,32834,,35305
 ,5901485,Discproducer Ink PJIC7(Y) Yellow (MOQ=10,Epson,C13S020692,29.28,5,Suministros y Medios,Suministros Inyección de Tinta,368616,,30902,,34122
 ,5901486,Epson Disc producer Ink Cartridge Black,Epson,C13S020693,29.28,8,Suministros y Medios,Suministros Inyección de Tinta,368686,,30902,,34129
 ,5901543,Tinta Magenta para Discproducer PP-100II,Epson,C13S020691,29.28,4,Suministros y Medios,Suministros Inyección de Tinta,367089,,30902,,33478
@@ -761,7 +761,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6262636,EDA10A QUAD BATTERY CHARGER KIT,Honeywell,EDA10A-QBC-1,297.76,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
 ,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,493.09,1,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.73,183,Comunicaciones,Cintillos telefónicos,256210,,20490,,23665
-,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.85,40,Suministros y Medios,Suministros Inyección de Tinta,262183,,105284,,121224
+,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.85,40,Suministros y Medios,Suministros Inyección de Tinta,262183,,105284,,115597
 ,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,100.06,8,Suministros y Medios,Suministros Inyección de Tinta,262152,,105284,,125024
 ,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,86.13,34,Suministros y Medios,Suministros Inyección de Tinta,262283,,96990,,103610
 ,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,100.06,4,Suministros y Medios,Suministros Inyección de Tinta,262151,,109990,,117505
@@ -813,7 +813,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6581784,HPE NW ION GTWY 5P 2.5G 64W SG2505P,Hewlett Packard Enterprise,S0G34A,452.18,2,Dispositivos de Red,Routers y Gateways inalámbricos,376347,,,,
 ,6581785,HPE NW ION GTWY 4P G SG1004,Hewlett Packard Enterprise,S0G33A,312.31,3,Dispositivos de Red,Routers y Gateways inalámbricos,369597,,354900,,354900
 ,6585367,MOCHILA PRELUDE PRO 15.6IN,Hp,4Z513AA,17.8,3,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
-,6592677,PRIME-RX9070XT-O16G,Asus,90YV0L71-M0AA00,712.12,45,Componentes de Sistema,Tarjetas Gráficas nVidia,276343,859990,766080,859990,820380
+,6592677,PRIME-RX9070XT-O16G,Asus,90YV0L71-M0AA00,712.12,45,Componentes de Sistema,Tarjetas Gráficas nVidia,276343,859990,763040,859990,820275
 ,6594812,SOPORTE DE PARED PARA BARRA BARCO CLICKS,Barco,R8788066K,75.88,2,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
 ,6603676,IMPRESORA MULTIFUNCIONAL PIXMA G3180,Canon,6708C005,164.87,140,Impresoras,Multifuncionales Inkjet,,,,,
 ,6604484,ULTRACHROME HD YELLOW CART 350 ML P6000/,Epson,T54X400,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,392173,,161050,,161050
@@ -861,7 +861,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6702906,WDC15 INSTASHOW WDC15 SISTEMA PARA PRESE,Benq,9H.K0EBY.E0A,596.19,10,Dispositivos de Red,Dispositivos y Componentes para Streamin,,,,,
 ,6707696,15-FB3026LA R7-7445H 16G 512 15.6IN W11H,Hp,BV5C6LA#AKH,862.82,846,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6709675,DB SATELLITE PRO C40-K - I7 16G 512 14IN,Dynabook,PSY25U-0P800Q,721.68,20,Computadores Servidores y Notebooks,Notebooks,366596,,804668,,934549
-,6709677,DYNABOOK TECRA A40-M - U7 32GB 1TB 14IN,Dynabook,PNM11U-1WY00D,965.77,5,Computadores Servidores y Notebooks,Notebooks,366595,,1076114,,1179271
+,6709677,DYNABOOK TECRA A40-M - U7 32GB 1TB 14IN,Dynabook,PNM11U-1WY00D,965.77,5,Computadores Servidores y Notebooks,Notebooks,366595,,999990,,1141771
 ,6709678,DB SATELLITE PRO C50-K - I5 8G 512 156,Dynabook,PSY29U-4UT002,583.71,2,Computadores Servidores y Notebooks,Notebooks,366594,,651074,,719018
 ,6711084,400 QUIET PINK WIRELESS MOUSE,Hp,AZ7B5AA#ABA,16.89,1930,Dispositivos de Entrada,Mouse,,,,,
 ,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,13.29,3072,Suministros y Medios,Suministros Inyección de Tinta,384467,,15423,19990,18697
@@ -889,7 +889,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6772784,"HPE PROLIANT DL20 GEN11 1P 6325P 3.5GHZ,",Hewlett Packard Enterprise,P86721-DM5,4957.8,4,Computadores Servidores y Notebooks,Servidores en Rack,,,,,
 ,6772811,"HPE PROLIANT ML30 GEN11 1P 6325P 3.5GHZ,",Hewlett Packard Enterprise,P86723-DM5,3522.7,15,Computadores Servidores y Notebooks,Servidores Tower,,,,,
 ,6773559,MOUSE WL SILENCIOSO COLOR ARCE 400,Hp,AZ7B6AA#ABA,17.96,501,Dispositivos de Entrada,Mouse,,,,,
-,6777969,ADATA DRAM DDR4 U-DIMM 16GB 3200,Adata Technology,AD4U320016G22-SBK,176.84,198,Componentes de Sistema,Memoria Genérica,386772,,182400,,195551
+,6777969,ADATA DRAM DDR4 U-DIMM 16GB 3200,Adata Technology,AD4U320016G22-SBK,176.84,198,Componentes de Sistema,Memoria Genérica,386772,,165984,,193205
 ,6782248,HP 400 QUIET BLUE WIRELESS MOUSE US,Hp,AZ7B4AA#ABA,16.89,554,Dispositivos de Entrada,Mouse,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,107.4,394,Pantallas,Monitores LCD/LED,,,,,
 ,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,173.73,34,Pantallas,Monitores LCD/LED,379960,,199960,249990,218180
