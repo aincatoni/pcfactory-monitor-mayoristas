@@ -1,18 +1,18 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,1000329,RACK PDU BASIC ZERO U 16A,Apc,AP9572,84.98,3,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
-,1004027,TINTA HP 72 CABEZAL GRIS Y FOTO NEGRO,Hp,C9380A,102.93,3,Suministros y Medios,Suministros Inyección de Tinta,260608,,113677,,118781
-,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,197.14,98,Suministros y Medios,Suministros Láser,260299,,115000,,204887
+,1004027,TINTA HP 72 CABEZAL GRIS Y FOTO NEGRO,Hp,C9380A,102.93,3,Suministros y Medios,Suministros Inyección de Tinta,260608,,113298,,118582
+,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,197.14,98,Suministros y Medios,Suministros Láser,260299,,115000,,199768
 ,1015806,WRISTBAND POLYPROPYLENE 1X11IN 25.4X2,Zebra,10006995K,313.53,2,Suministros y Medios,Suministros Impresora Térmica,,,,,
-,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,278.31,39,Suministros y Medios,Suministros Láser,260104,,194900,,287670
-,1084313,TINTA HP 72 CABEZAL MAGENTA Y CIAN,Hp,C9383A,102.93,1,Suministros y Medios,Suministros Inyección de Tinta,260600,,113677,,122980
+,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,278.31,39,Suministros y Medios,Suministros Láser,260104,,194900,,287358
+,1084313,TINTA HP 72 CABEZAL MAGENTA Y CIAN,Hp,C9383A,102.93,1,Suministros y Medios,Suministros Inyección de Tinta,260600,,113298,,122497
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,95,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,
-,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,86.2,811,Suministros y Medios,Suministros Láser,260019,,14990,,95208
+,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,86.2,811,Suministros y Medios,Suministros Láser,260019,,14990,,94904
 ,1188579,CARTUCHO DE TINTA LC1100 NEGRO,Brother,LC-1100BK,20.47,9,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,1188584,ETIQUETA DK1201,Brother,DK1201,8.07,144,Componentes de Sistema,Componentes de Gabinete,,,,,
 ,1188585,ETIQUETA DK1202,Brother,DK-1202,13.89,193,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,1188586,ETIQUETA DK1204,Brother,DK-1204,7.69,49,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,1188603,ETIQUETA DK2212,Brother,DK-2212,33.23,2,Suministros y Medios,Etiquetas y Aplicadores,,,,,
-,1188609,TONER TN670,Brother,TN-670,94.59,2,Suministros y Medios,Suministros Láser,270630,,102665,,114140
+,1188609,TONER TN670,Brother,TN-670,94.59,2,Suministros y Medios,Suministros Láser,270630,,102776,,114141
 ,1188627,TONER TN360,Brother,TN-360,58.05,2,Suministros y Medios,Suministros Láser,,,,,
 ,1188655,ETIQUETA DK2205,Brother,DK-2205,14.01,122,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,1188657,CINTA M731,Brother,M-731,7.2,4,Suministros y Medios,Etiquetas y Aplicadores,,,,,
@@ -36,7 +36,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,1586371,Adaptador USB a PS/2 M a H,Startech.Com,GC46MF,3.05,5,Cables,Cables Seriales y Adaptadores,,,,,
 ,1587829,6 ft VGA Monitor Cable - HD15 M/M,Startech.Com,MXT101MM,7.03,2,Cables,Cables y Adaptadores de Audio,,,,,
 ,1589965,Fan Silencioso Caja PC TX3,Startech.Com,FAN8X25TX3L,6.89,2,Componentes de Sistema,Componentes de Tarjetas Madre,132369,,14900,,14900
-,1590236,TINTA PFI-102 AMARILLO - 130 ML,Canon,0898B001,72.19,13,Suministros y Medios,Suministros Inyección de Tinta,260176,,85490,,88346
+,1590236,TINTA PFI-102 AMARILLO - 130 ML,Canon,0898B001,72.19,13,Suministros y Medios,Suministros Inyección de Tinta,260176,,85095,,88290
 ,1594313,5.25in Trayless Mobile Rack for 3.5in HD,Startech.Com,HSB100SATBK,31.16,10,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
 ,1597583,"Adaptador Disco SATA 2,5 a 3,5",Startech.Com,BRACKET25SAT,8.54,4,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
 ,1598622,6 ft DisplayPort Cable w/ Latches,Startech.Com,DISPLPORT6L,13.49,23,Cables,Cables y Adaptadores de Video,,,,,
@@ -111,11 +111,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2086069,2U 22 Vented Fixed Rack Mount Shelf,Startech.Com,CABSHELF22V,50.89,1,Protección Eléctrica y Racks,Racks,,,,,
 ,2086100,15m Blue Snagless Cat6 UTP Patch Cable,Startech.Com,N6PATC15MBL,22.36,5,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,2086112,3m Black Snagless Cat6 UTP Patch Cable,Startech.Com,N6PATC3MBK,4.99,156,Cables,Cables y Adaptadores Fibra Optica,,,,,
-,2137578,TINTA HP 711 29 ML X 3 CIAN MULTIPACK,Hp,CZ134A,68.02,29,Suministros y Medios,Suministros Inyección de Tinta,260151,,79109,,82128
-,2137579,TINTA HP 711 29 ML X 3 MAGENTA MULTIPACK,Hp,CZ135A,68.08,28,Suministros y Medios,Suministros Inyección de Tinta,260150,,77900,81990,81535
-,2137580,TINTA HP 711 29 ML X 3 AMARILLO PACK,Hp,CZ136A,68.43,28,Suministros y Medios,Suministros Inyección de Tinta,355981,,78838,,80615
+,2137578,TINTA HP 711 29 ML X 3 CIAN MULTIPACK,Hp,CZ134A,68.02,29,Suministros y Medios,Suministros Inyección de Tinta,260151,,78530,80990,81708
+,2137579,TINTA HP 711 29 ML X 3 MAGENTA MULTIPACK,Hp,CZ135A,68.08,28,Suministros y Medios,Suministros Inyección de Tinta,260150,,77900,81990,81351
+,2137580,TINTA HP 711 29 ML X 3 AMARILLO PACK,Hp,CZ136A,68.43,28,Suministros y Medios,Suministros Inyección de Tinta,355981,,78558,,80577
 ,2149737,"Cable 1,8m Extension USB 3.0 A",Startech.Com,USB3SEXT6BK,8.8,5,Cables,Cables y Adaptadores USB,,,,,
-,2301803,USB 3.0 to Gigabit Ethernet Adapter RJ45,Startech.Com,USB31000S,27.81,2,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,382317,,32500,,58024
+,2301803,USB 3.0 to Gigabit Ethernet Adapter RJ45,Startech.Com,USB31000S,27.81,2,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,382317,,31900,,57899
 ,2325419,HDMI to DVI-D Adapter - F/M,Startech.Com,HDDVIFM8IN,11.19,7,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,2325420,0.5m High Speed HDMI Cable,Startech.Com,HDMM50CM,7.78,20,Cables,Cables y Adaptadores de Video,,,,,
 ,2325437,Cable 50cm Extension DB9 Serie,Startech.Com,MXT10050CMBK,4.44,4,Cables,Cables Seriales y Adaptadores,,,,,
@@ -125,7 +125,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2334859,Cable Adaptador MOLEX a SATA,Startech.Com,SATAPOWADPL,4.35,1,Cables,Cables de Poder,,,,,
 ,2358711,CINTA TZES141,Brother,TZE-S141,14.13,6,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,2372313,Cable Divisor SATA a 2x SATA,Startech.Com,PYO2LSATA,4.45,6,Cables,Cables de Poder,,,,,
-,2374377,USB 3.0 to Ethernet Adapter - White,Startech.Com,USB31000SW,25.95,1,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,382419,,31990,,32201
+,2374377,USB 3.0 to Ethernet Adapter - White,Startech.Com,USB31000SW,25.95,1,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,382419,,31990,,32192
 ,2388722,CINTA TZES241,Brother,TZE-S241,14.13,49,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,2410879,Cable 20m Activo USB A a B,Startech.Com,USB2HAB65AC,55.68,1,Cables,Cables y Adaptadores USB,,,,,
 ,2430228,CARTUCHO DE TINTA LC103BK NEGRO,Brother,LC-103BK,19.31,2,Suministros y Medios,Etiquetas y Aplicadores,,,,,
@@ -139,62 +139,62 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2430241,TONER TN225M MAGENTA,Brother,TN-225M,69.69,3,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,2430242,TONER TN225Y AMARILLO,Brother,TN-225Y,69.69,5,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,2431324,727 CABEZAL PARA PLOTTER,Hp,B3P06A,356.66,18,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,2431350,TINTA HP 727 130-ML CIAN,Hp,B3P19A,96.23,11,Suministros y Medios,Suministros Inyección de Tinta,259841,,106278,,117254
-,2431351,TINTA HP 727 130-ML MAGENTA,Hp,B3P20A,96.23,11,Suministros y Medios,Suministros Inyección de Tinta,259839,,106278,,116902
-,2431352,TINTA HP 727 130-ML AMARILLO,Hp,B3P21A,96.15,27,Suministros y Medios,Suministros Inyección de Tinta,259838,,106202,,118857
-,2431353,TINTA HP 727 130-ML MATE NEGRO,Hp,B3P22A,96.03,8,Suministros y Medios,Suministros Inyección de Tinta,259842,,106062,,115454
-,2431354,TINTA HP 727 130-ML FOTO NEGRO,Hp,B3P23A,96.23,18,Suministros y Medios,Suministros Inyección de Tinta,259840,,102386,,112398
-,2431355,TINTA HP 727 130-ML GRIS,Hp,B3P24A,96.23,1,Suministros y Medios,Suministros Inyección de Tinta,259843,,109148,,113065
+,2431350,TINTA HP 727 130-ML CIAN,Hp,B3P19A,96.23,11,Suministros y Medios,Suministros Inyección de Tinta,259841,,105924,,116924
+,2431351,TINTA HP 727 130-ML MAGENTA,Hp,B3P20A,96.23,11,Suministros y Medios,Suministros Inyección de Tinta,259839,,105924,,116549
+,2431352,TINTA HP 727 130-ML AMARILLO,Hp,B3P21A,96.15,27,Suministros y Medios,Suministros Inyección de Tinta,259838,,105848,,118652
+,2431353,TINTA HP 727 130-ML MATE NEGRO,Hp,B3P22A,96.03,8,Suministros y Medios,Suministros Inyección de Tinta,259842,,105697,,115199
+,2431354,TINTA HP 727 130-ML FOTO NEGRO,Hp,B3P23A,96.23,18,Suministros y Medios,Suministros Inyección de Tinta,259840,,102386,,111219
+,2431355,TINTA HP 727 130-ML GRIS,Hp,B3P24A,96.23,1,Suministros y Medios,Suministros Inyección de Tinta,259843,,,,
 ,2436589,CABLE 1M LIGHTNING USB BLANCO,Startech.Com,USBLT1MW,16.01,9,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,2436590,2m White 8-pin Lightning to USB Cable,Startech.Com,USBLT2MW,16.78,10,Cables,Cables y Adaptadores de Audio + Video,,,,,
-,2441222,TONER 119 NEGRO,Canon,3480B001,95.47,2,Suministros y Medios,Suministros Láser,260571,,102700,,111724
-,2446084,TINTA HP 771 775 ML MATE NEGRO,Hp,B6Y15A,305.68,1,Suministros y Medios,Suministros Inyección de Tinta,260022,,337623,,356092
+,2441222,TONER 119 NEGRO,Canon,3480B001,95.47,2,Suministros y Medios,Suministros Láser,260571,,102700,,111749
+,2446084,TINTA HP 771 775 ML MATE NEGRO,Hp,B6Y15A,305.68,1,Suministros y Medios,Suministros Inyección de Tinta,260022,,336498,,353608
 ,2465239,3ft Mini DisplayPort DP to DVI,Startech.Com,MDP2DVIMM3B,15.41,8,Cables,Cables y Adaptadores USB,,,,,
 ,2465246,2 Port PCIe USB 3.0 Card w/ SATA Power,Startech.Com,PEXUSB3S23,16.84,7,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
-,2470848,CARTUCHO TINTA HP 970XL NEGRO 9200 PÃG,Hp,CN625AM,147.67,9,Suministros y Medios,Suministros Inyección de Tinta,260141,,154990,,170580
+,2470848,CARTUCHO TINTA HP 970XL NEGRO 9200 PÃG,Hp,CN625AM,147.67,9,Suministros y Medios,Suministros Inyección de Tinta,260141,,154990,,169825
 ,2475274,1M White USB 2.0 EXTENSION CABLE - M/F,Startech.Com,USBEXTPAA1MW,7.31,6,Cables,Cables y Adaptadores USB,,,,,
 ,2482477,3ft DisplayPort DP to VGA Adapter,Startech.Com,DP2VGAMM3B,24.23,5,Cables,Cables y Adaptadores USB,,,,,
 ,2482516,Cable 2m USB A a Mini B Abajo,Startech.Com,USBAMB2MD,3.79,7,Cables,Cables y Adaptadores USB,,,,,
-,2484085,TINTA HP 727 300-ML MATE NEGRO,Hp,C1Q12A,171.1,13,Suministros y Medios,Suministros Inyección de Tinta,259836,,188986,,204880
+,2484085,TINTA HP 727 300-ML MATE NEGRO,Hp,C1Q12A,171.1,13,Suministros y Medios,Suministros Inyección de Tinta,259836,,188356,,204257
 ,2485502,Cable 50cm USB A MicroB Blanco,Startech.Com,USBPAUB50CMW,5.24,1,Cables,Cables y Adaptadores USB,,,,,
 ,2492254,Bobina 304m Cable Cat6 Azul,Startech.Com,WIR6CMRBL,241.19,2,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,2514069,2 Port USB HDMI Cable KVM Switch,Startech.Com,SV211HDUA,114.95,3,Dispositivos de Entrada/Salida,KVMs y Componentes,,,,,
 ,2514070,2m USB 2.0 A to Right Angle B Cable M/M,Startech.Com,USBAB2MR,7.2,10,Cables,Cables y Adaptadores USB,,,,,
 ,2518407,Dual 2.5 SATA HDD to 3.5 Mount Bracket,Startech.Com,BRACKET25X2,8.19,3,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
 ,2518414,0.5m 1.5ft Black USB 3.0 Micro B Cable,Startech.Com,USB3AUB50CMB,8.39,10,Cables,Cables y Adaptadores USB,,,,,
-,2519438,CARTUCHO DE TINTA PGI-150 XL NEGRO,Canon,6435B001,11.81,100,Suministros y Medios,Suministros Inyección de Tinta,271031,,13283,,15278
-,2519439,CARTUCHO DE TINTA CLI-151 XL NEGRO,Canon,6477B001,12.14,150,Suministros y Medios,Suministros Inyección de Tinta,260815,,13900,,15576
-,2519440,CARTUCHO DE TINTA CLI-151 XL CIAN,Canon,6478B001,12.59,261,Suministros y Medios,Suministros Inyección de Tinta,260930,,13900,,16115
-,2519441,CARTUCHO DE TINTA CLI-151 XL MAGENTA,Canon,6479B001,12.51,163,Suministros y Medios,Suministros Inyección de Tinta,260221,,13900,,15975
-,2519442,CARTUCHO DE TINTA CLI-151 XL AMARILLO,Canon,6480B001,12.62,294,Suministros y Medios,Suministros Inyección de Tinta,260214,,13900,,16074
+,2519438,CARTUCHO DE TINTA PGI-150 XL NEGRO,Canon,6435B001,11.81,100,Suministros y Medios,Suministros Inyección de Tinta,271031,,13232,,15278
+,2519439,CARTUCHO DE TINTA CLI-151 XL NEGRO,Canon,6477B001,12.14,150,Suministros y Medios,Suministros Inyección de Tinta,260815,,13900,,15521
+,2519440,CARTUCHO DE TINTA CLI-151 XL CIAN,Canon,6478B001,12.59,261,Suministros y Medios,Suministros Inyección de Tinta,260930,,13900,,16118
+,2519441,CARTUCHO DE TINTA CLI-151 XL MAGENTA,Canon,6479B001,12.51,163,Suministros y Medios,Suministros Inyección de Tinta,260221,,13900,,15968
+,2519442,CARTUCHO DE TINTA CLI-151 XL AMARILLO,Canon,6480B001,12.62,294,Suministros y Medios,Suministros Inyección de Tinta,260214,,13900,,16077
 ,2520041,TONER TN1060,Brother,TN-1060,26.41,2000,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,2528546,Cable Adaptador USB a Serial,Startech.Com,ICUSB232V2,25.19,20,Computadores Servidores y Notebooks,Componentes Terminales,,,,,
 ,2528604,TINTA PFI-102 CIAN 130ML,Canon,0896B001.,72.24,12,Suministros y Medios,Suministros para Plotters,,,,,
 ,2536925,Cable MiniJack 4p a 2x H 3 pin,Startech.Com,MUYHSMFFADW,1.64,9,Cables,Cables y Adaptadores de Video,,,,,
-,2536928,Dual Port PCIe Gigabit Network Card,Startech.Com,ST2000SPEXI,190.05,3,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,387825,,213476,,221932
+,2536928,Dual Port PCIe Gigabit Network Card,Startech.Com,ST2000SPEXI,190.05,3,Dispositivos de Entrada/Salida,Dispositivos de Conectividad Firewire,387825,,212510,,221604
 ,2552835,Conversor Mini DisplayPort a VGA,Startech.Com,MDP2VGA2,18.39,4,Cables,Cables y Adaptadores USB,,,,,
 ,2590168,M.2 NGFF SSD to SATA Adapter Converter,Startech.Com,SAT32M225,21.46,1,Dispositivos de Almacenamiento,Hardware de montaje de Discos,,,,,
 ,2634114,Acoplador Keystone Cat6 RJ45,Startech.Com,C6KEYCOUPLWH,8.24,6,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,2634459,Cable 3m Cat6 Snagless Naranja,Startech.Com,N6PATC3MOR,5.56,5,Cables,Cables y Adaptadores Fibra Optica,,,,,
-,2637675,TINTA PFI-107 NEGRO MATE 130ML,Canon,6704B001,67.58,32,Suministros y Medios,Suministros Inyección de Tinta,259958,,76304,,84155
-,2637676,TINTA PFI-107 NEGRO 130ML,Canon,6705B001,68.04,11,Suministros y Medios,Suministros Inyección de Tinta,259972,,77270,,84518
-,2637678,TINTA PFI-107 MAGENTA 130ML,Canon,6707B001,67.75,33,Suministros y Medios,Suministros Inyección de Tinta,259962,,76304,,82699
-,2637679,TINTA PFI-107 AMARILLO 130ML,Canon,6708B001,67.77,12,Suministros y Medios,Suministros Inyección de Tinta,259966,,81732,,87568
-,2637704,TINTA C13S020563 NEGRO 480Â PAG,Epson,C13S020563,55.89,1,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,278491,,62780,,65895
-,2637706,TINTA C13S020565 MAGENTA 430Â PAG,Epson,C13S020565,19.77,8,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,278492,,23397,,25412
-,2637707,TINTA C13S020566 AMARILLO 430Â PAG,Epson,C13S020566,19.77,14,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,280122,,23398,,25333
+,2637675,TINTA PFI-107 NEGRO MATE 130ML,Canon,6704B001,67.58,32,Suministros y Medios,Suministros Inyección de Tinta,259958,,76304,,84128
+,2637676,TINTA PFI-107 NEGRO 130ML,Canon,6705B001,68.04,11,Suministros y Medios,Suministros Inyección de Tinta,259972,,77270,,84508
+,2637678,TINTA PFI-107 MAGENTA 130ML,Canon,6707B001,67.75,33,Suministros y Medios,Suministros Inyección de Tinta,259962,,76304,,82700
+,2637679,TINTA PFI-107 AMARILLO 130ML,Canon,6708B001,67.77,12,Suministros y Medios,Suministros Inyección de Tinta,259966,,76304,81690,84778
+,2637704,TINTA C13S020563 NEGRO 480Â PAG,Epson,C13S020563,55.89,1,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,278491,,62780,,65960
+,2637706,TINTA C13S020565 MAGENTA 430Â PAG,Epson,C13S020565,19.77,8,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,278492,,23283,,25393
+,2637707,TINTA C13S020566 AMARILLO 430Â PAG,Epson,C13S020566,19.77,14,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,280122,,23283,,25338
 ,2650642,Acoplador HDMI Hembra a Hembra,Startech.Com,GCHDMIFF,9.03,3,Cables,Cables y Adaptadores de Video,,,,,
 ,2653592,VGA to HDMI Adapter with USB Audio Power,Startech.Com,VGA2HDU,52.8,1,Cables,Cables y Adaptadores de Video,,,,,
 ,2682287,0.3m Short High Speed HDMI Cable MM,Startech.Com,HDMM30CM,7.45,25,Cables,Cables y Adaptadores de Video,,,,,
-,2683725,TINTA HP 764 300-ML CIAN,Hp,C1Q13A,136.43,8,Suministros y Medios,Suministros Inyección de Tinta,260566,,150693,,162656
-,2683726,TINTA HP764 300ML T3500 MAGENTA- NEGRO,Hp,C1Q14A,140.28,6,Suministros y Medios,Suministros Inyección de Tinta,260164,,154933,,166632
-,2683727,TINTA HP 764 300-ML AMARILLO,Hp,C1Q15A,139.35,7,Suministros y Medios,Suministros Inyección de Tinta,260835,,159990,,168179
-,2683728,TINTA HP 764 300-ML MATE NEGRO,Hp,C1Q16A,140.28,4,Suministros y Medios,Suministros Inyección de Tinta,260833,,154933,,170525
-,2683729,TINTA HP 764 300-ML FOTO NEGRO,Hp,C1Q17A,140.43,7,Suministros y Medios,Suministros Inyección de Tinta,260026,,155106,,167813
+,2683725,TINTA HP 764 300-ML CIAN,Hp,C1Q13A,136.43,8,Suministros y Medios,Suministros Inyección de Tinta,260566,,150191,,162076
+,2683726,TINTA HP764 300ML T3500 MAGENTA- NEGRO,Hp,C1Q14A,140.28,6,Suministros y Medios,Suministros Inyección de Tinta,260164,,154417,,166126
+,2683727,TINTA HP 764 300-ML AMARILLO,Hp,C1Q15A,139.35,7,Suministros y Medios,Suministros Inyección de Tinta,260835,,158990,,167594
+,2683728,TINTA HP 764 300-ML MATE NEGRO,Hp,C1Q16A,140.28,4,Suministros y Medios,Suministros Inyección de Tinta,260833,,154417,,169498
+,2683729,TINTA HP 764 300-ML FOTO NEGRO,Hp,C1Q17A,140.43,7,Suministros y Medios,Suministros Inyección de Tinta,260026,,154589,,167139
 ,2684965,USB 3.0 Dual SATA HDD/SSD Dock w/ UASP,Startech.Com,SDOCK2U33,97.01,1,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
 ,2687755,Cable micro USB 3.0 delgado de 2m,Startech.Com,USB3AUB2MS,14.37,7,Cables,Cables y Adaptadores USB,,,,,
 ,2701099,2m Gray Snagless UTP Cat6 Patch Cable,Startech.Com,N6PATC2MGR,4.54,9,Cables,Cables y Adaptadores Fibra Optica,,,,,
-,2723990,TONER HP 81A NEGRA 10500 PAG,Hp,CF281A,200.48,28,Suministros y Medios,Suministros Láser,260932,,172550,,228244
+,2723990,TONER HP 81A NEGRA 10500 PAG,Hp,CF281A,200.48,28,Suministros y Medios,Suministros Láser,260932,,172550,,227671
 ,2723991,TONER HP 81X NEGRO 25000 PAG,Hp,CF281X,347.33,20,Suministros y Medios,Suministros Láser,260347,,376990,,376990
 ,2734504,Mochila Kamet Nylon 15 6 IN,Kensington,K62599,24.32,12,Computadores Servidores y Notebooks,Accesorios para Tablet PCs,,,,,
 ,2736717,Portable USB 3.0 Hub w/ Gigabit Ethernet,Startech.Com,ST3300GU3B,45.55,7,Dispositivos de Entrada/Salida,Conmutadores para dispositivos USB,,,,,
@@ -202,7 +202,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2764175,CASE PSC-LA ll,Canon,2142V398,0.0,12,Cámaras y Escáners,Bolsos y Fundas de Cámaras,,,,,
 ,2771218,Soporte Articulado 2 Monitores,Startech.Com,ARMDUAL,164.19,1,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,2775780,CINTA TZE161,Brother,TZE-161,19.71,1,Suministros y Medios,Etiquetas y Aplicadores,,,,,
-,2797132,CLI-8 BK,Canon,0620B035,7.75,1,Suministros y Medios,Suministros Inyección de Tinta,260201,,7950,,9890
+,2797132,CLI-8 BK,Canon,0620B035,7.75,1,Suministros y Medios,Suministros Inyección de Tinta,260201,,7950,,9887
 ,2838815,CAJA MANTENIMIENTO C12C890501,Epson,C12C890501,39.3,2,Impresoras,Upgrades de Impresora,,,,,
 ,2851973,M.2 NGFF SSD to 2.5in SATA III Adapter,Startech.Com,SAT2M2NGFF25,26.41,1,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
 ,2858424,Hub 4 puertos Seriales a USB Ind,Startech.Com,ICUSB2324,101.55,9,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
@@ -210,10 +210,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2869960,6ft HDMI to VGA active converter cable,Startech.Com,HD2VGAMM6,37.61,1,Cables,Cables y Adaptadores de Video,,,,,
 ,2869988,Dual Port USB Wall Charger 17W 3.4A,Startech.Com,USB2PACBK,26.23,5,Cables,Cables de Poder,,,,,
 ,2879315,External USB 3.0 SATA M.2 SSD Enclosure,Startech.Com,SM2NGFFMBU33,32.35,9,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
-,2888316,TONER HP 201A NEGRO,Hp,CF400A,82.74,13,Suministros y Medios,Suministros Láser,259869,,89025,,96711
-,2888318,TONER HP 201A CYAN,Hp,CF401A,97.6,17,Suministros y Medios,Suministros Láser,259867,,105023,,112894
-,2888320,201A YELLOW LJ TONER CART-CF402A,Hp,CF402A,97.35,17,Suministros y Medios,Suministros Láser,259866,,104753,,112959
-,2888322,201A MAGENTA LJ TONER CART-CF403A,Hp,CF403A,97.39,17,Suministros y Medios,Suministros Láser,259868,,104796,,114338
+,2888316,TONER HP 201A NEGRO,Hp,CF400A,82.74,13,Suministros y Medios,Suministros Láser,259869,,88728,,96581
+,2888318,TONER HP 201A CYAN,Hp,CF401A,97.6,17,Suministros y Medios,Suministros Láser,259867,,104673,,112416
+,2888320,201A YELLOW LJ TONER CART-CF402A,Hp,CF402A,97.35,17,Suministros y Medios,Suministros Láser,259866,,104404,,112792
+,2888322,201A MAGENTA LJ TONER CART-CF403A,Hp,CF403A,97.39,17,Suministros y Medios,Suministros Láser,259868,,104447,,114040
 ,2901891,USB 3.o to VGA video adapter - 1920x1200,Startech.Com,USB32VGAV,31.74,5,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,2903143,CINTA TZE135,Brother,TZE-135,12.27,3,Suministros y Medios,Suministros Matriz de Punto,,,,,
 ,2908370,Desktop monitor stand with cable hook,Startech.Com,ARMPIVSTND,107.16,7,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
@@ -232,7 +232,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2980740,DisplayPort to VGA Adapter with Audio,Startech.Com,DP2VGAA,28.45,2,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,3002944,USB-C to VGA Adapter - White,Startech.Com,CDP2VGAW,30.96,10,Cables,Cables y Adaptadores USB,,,,,
 ,3003578,30ft Active USB 3.0 USB-A to USB-B Cable,Startech.Com,USB3SAB10M,118.7,5,Cables,Cables y Adaptadores USB,,,,,
-,3005684,TONER 131 MAGENTA REND 1500 PAGINAS,Canon,6270B001,54.67,3,Suministros y Medios,Suministros Láser,259928,,61814,,66805
+,3005684,TONER 131 MAGENTA REND 1500 PAGINAS,Canon,6270B001,54.67,3,Suministros y Medios,Suministros Láser,259928,,61814,,66807
 ,3017125,Cable de 1m Micro USB Acodado a Derecha,Startech.Com,USB2AUB2RA1M,5.98,4,Cables,Cables y Adaptadores USB,,,,,
 ,3029891,INFOCASE HOLSTER FZ-M1,Panasonic,TBCM1HSTR-P,68.68,6,Computadores Servidores y Notebooks,Accesorios para Tablet PCs,,,,,
 ,3051996,Cable USB 1m USB-A USB-C,Startech.Com,USB2AC1M,9.48,14,Cables,Cables y Adaptadores USB,,,,,
@@ -240,21 +240,21 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3051998,"Cable 0,5m MicroUSB3 acodado izquierdo",Startech.Com,USB3AU50CMLS,8.13,7,Cables,Cables y Adaptadores USB,,,,,
 ,3052000,Cable de 1m Micro USB Acodado Izquierdo,Startech.Com,USBAUB1MLA,4.85,3,Cables,Cables y Adaptadores USB,,,,,
 ,3052001,Cable de 1m Micro USB Acodado a Derecha,Startech.Com,USBAUB1MRA,4.94,8,Cables,Cables y Adaptadores USB,,,,,
-,3053753,CARTUCHO DE TINTA PGI-2100 XL MAGENTA,Canon,9281B001,17.91,9,Suministros y Medios,Suministros Inyección de Tinta,260223,,20990,,23177
-,3053754,CARTUCHO DE TINTA PGI-2100 XL AMARILLO,Canon,9282B001,17.59,30,Suministros y Medios,Suministros Inyección de Tinta,260222,,20800,,22900
-,3062300,TONER GPR-48 NEGRO REND 15200 PAGINAS,Canon,2788B003,71.06,22,Suministros y Medios,Suministros Láser,260931,,77000,,87224
+,3053753,CARTUCHO DE TINTA PGI-2100 XL MAGENTA,Canon,9281B001,17.91,9,Suministros y Medios,Suministros Inyección de Tinta,260223,,20990,,23174
+,3053754,CARTUCHO DE TINTA PGI-2100 XL AMARILLO,Canon,9282B001,17.59,30,Suministros y Medios,Suministros Inyección de Tinta,260222,,20792,,23003
+,3062300,TONER GPR-48 NEGRO REND 15200 PAGINAS,Canon,2788B003,71.06,22,Suministros y Medios,Suministros Láser,260931,,77000,,87328
 ,3066482,Hub USB 3.0 USB-C a 1x USB-C 3x USB-A,Startech.Com,HB30C3A1CFB,34.96,8,Dispositivos de Red,ROMs de Inicio y Brackets,,,,,
 ,3066483,Conversor HDMI a DisplayPort - 4K,Startech.Com,HD2DP,50.33,1,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,3069187,GABINETE PARA SERIE M5XX,Hp,F2A73A,295.69,2,Impresoras,Muebles para Impresora/Plotter,,,,,
 ,3072736,LAPTOP TO SERVER KVM CONSOLE,Startech.Com,NOTECONS02X,687.14,3,Dispositivos de Entrada/Salida,KVMs y Componentes,,,,,
 ,3081006,APC Smart-UPS SRT 72V 2.2kVA Battery Pac,Apc,SRT72BP,876.09,1,Protección Eléctrica y Racks,Baterías UPS,,,,,
 ,3084113,HP LTO7 ULTRIUM 6TB/15TB RW DATA CART,Hewlett Packard Enterprise,C7977A,73.4,63,Suministros y Medios,Cintas de Almacenamiento,,,,,
-,3084177,TINTA HP 728 130 ML AMARILLO,Hp,F9J65A,95.54,31,Suministros y Medios,Suministros Inyección de Tinta,259849,,105521,,119753
-,3084178,TINTA HP 728 130 ML MAGENTA,Hp,F9J66A,95.73,32,Suministros y Medios,Suministros Inyección de Tinta,259847,,105737,,119789
-,3084180,TINTA HP 728 300 ML MATE NEGRO,Hp,F9J68A,179.72,15,Suministros y Medios,Suministros Inyección de Tinta,259850,,198505,,216921
-,3084181,TINTA HP 727 300 ML CIAN,Hp,F9J76A,184.55,10,Suministros y Medios,Suministros Inyección de Tinta,260805,,219555,,229117
-,3084183,TINTA HP 727 300 ML AMARILLO,Hp,F9J78A,184.54,5,Suministros y Medios,Suministros Inyección de Tinta,261553,,210990,,221440
-,3084185,TINTA HP 727 300 ML GRIS,Hp,F9J80A,184.55,2,Suministros y Medios,Suministros Inyección de Tinta,260804,,203827,,220004
+,3084177,TINTA HP 728 130 ML AMARILLO,Hp,F9J65A,95.54,31,Suministros y Medios,Suministros Inyección de Tinta,259849,,105169,,119277
+,3084178,TINTA HP 728 130 ML MAGENTA,Hp,F9J66A,95.73,32,Suministros y Medios,Suministros Inyección de Tinta,259847,,105385,,119438
+,3084180,TINTA HP 728 300 ML MATE NEGRO,Hp,F9J68A,179.72,15,Suministros y Medios,Suministros Inyección de Tinta,259850,,197843,219990,216175
+,3084181,TINTA HP 727 300 ML CIAN,Hp,F9J76A,184.55,10,Suministros y Medios,Suministros Inyección de Tinta,260805,,217814,,227715
+,3084183,TINTA HP 727 300 ML AMARILLO,Hp,F9J78A,184.54,5,Suministros y Medios,Suministros Inyección de Tinta,261553,,209422,,220649
+,3084185,TINTA HP 727 300 ML GRIS,Hp,F9J80A,184.55,2,Suministros y Medios,Suministros Inyección de Tinta,260804,,203147,,219261
 ,3084186,TINTA HP 729 CABEZAL PARA PLOTTER,Hp,F9J81A,453.95,14,Suministros y Medios,Suministros Impresora Térmica,,,,,
 ,3084261,HPE LTO-7 Ultrium RW Bar Code Label Pack,Hewlett Packard Enterprise,Q2014A,63.2,2,Suministros y Medios,Cintas de Almacenamiento,,,,,
 ,3094989,Concentrador USB 3.0 7 Puertos Hub,Startech.Com,ST73007UA,57.91,1,Dispositivos de Red,ROMs de Inicio y Brackets,,,,,
@@ -264,21 +264,21 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3129201,HPE StoreEver MSL FC Drive Upgrade Kit,Hewlett Packard Enterprise,N7P36A,6032.6,1,Dispositivos de Almacenamiento,Unidades de Cinta y Arreglos,,,,,
 ,3129932,HPE LTO-7 Ultrium 15000 Ext Tape Drive,Hewlett Packard Enterprise,BB874A,4896.6,2,Suministros y Medios,Cintas de Almacenamiento,,,,,
 ,3141120,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,114.0,1,Cables,Cables para Transferencia de Archivos,,,,,
-,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.1,84,Suministros y Medios,Suministros Inyección de Tinta,259846,,198916,,219628
-,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,179.72,21,Suministros y Medios,Suministros Inyección de Tinta,259844,,198505,,221951
+,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.1,84,Suministros y Medios,Suministros Inyección de Tinta,259846,,198253,,219108
+,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,179.72,21,Suministros y Medios,Suministros Inyección de Tinta,259844,,197875,,221621
 ,3237739,Soporte de Dos Monitores,Startech.Com,ARMDUAL30,337.71,2,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
-,3237741,Adaptador Red Gigabit USB-C Plateado,Startech.Com,US1GC30A,35.26,4,Cables,Cables y Adaptadores USB,392711,,41630,,41630
-,3254166,CARTUCHO DE TINTA HP981Y PAGEWIDE NEGRO,Hp,L0R16A,169.34,1,Suministros y Medios,Suministros Inyección de Tinta,260515,,183177,,199416
+,3237741,Adaptador Red Gigabit USB-C Plateado,Startech.Com,US1GC30A,35.26,4,Cables,Cables y Adaptadores USB,392711,,41710,,41710
+,3254166,CARTUCHO DE TINTA HP981Y PAGEWIDE NEGRO,Hp,L0R16A,169.34,1,Suministros y Medios,Suministros Inyección de Tinta,260515,,182566,,198399
 ,3271322,TINTA C33S020636 CIAN,Epson,C33S020636,132.63,2,Suministros y Medios,Suministros Fax/Fotocopiadoras,270610,,,,
-,3271323,TINTA C33S020637 MAGENTA,Epson,C33S020637,132.63,2,Suministros y Medios,Suministros Fax/Fotocopiadoras,273246,,146822,,149410
+,3271323,TINTA C33S020637 MAGENTA,Epson,C33S020637,132.63,2,Suministros y Medios,Suministros Fax/Fotocopiadoras,273246,,146822,,149623
 ,3271324,TINTA C33S020638 AMARILLO,Epson,C33S020638,132.63,3,Suministros y Medios,Suministros Fax/Fotocopiadoras,270615,,150500,,150500
 ,3285175,Cable USB-C a DisplayPort 1m 4K 60Hz,Startech.Com,CDP2DPMM1MB,40.88,10,Cables,Cables y Adaptadores de Audio + Video,,,,,
-,3292311,MOUSE INALAMBRICO FOR LIFE K72392,Kensington,K72392,9.16,53,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",28866,11990,10320,13514,12337
-,3294098,TINTA HP 745 130 ML AMARILLO,Hp,F9J96A,103.35,3,Suministros y Medios,Suministros Inyección de Tinta,260027,,114153,,128864
-,3294100,TINTA HP 745 130 ML FOTO NEGRO,Hp,F9J98A,103.49,1,Suministros y Medios,Suministros Inyección de Tinta,260023,,114304,,128605
+,3292311,MOUSE INALAMBRICO FOR LIFE K72392,Kensington,K72392,9.16,53,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",28866,11990,10328,13514,11881
+,3294098,TINTA HP 745 130 ML AMARILLO,Hp,F9J96A,103.35,3,Suministros y Medios,Suministros Inyección de Tinta,260027,,113772,,128288
+,3294100,TINTA HP 745 130 ML FOTO NEGRO,Hp,F9J98A,103.49,1,Suministros y Medios,Suministros Inyección de Tinta,260023,,113923,,128107
 ,3300951,Amplificador de Senal HDMI 35m 1080,Startech.Com,HDBOOST,30.59,16,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,3303093,TINTA PFI-1300 CROMO - 330 ML,Canon,0821C001,140.96,1,Suministros y Medios,Suministros Inyección de Tinta,263600,,162990,,162990
-,3303104,TINTA PFI-1100 AZUL - 160 ML,Canon,0859C001,91.73,1,Suministros y Medios,Suministros Inyección de Tinta,260492,,108592,,112002
+,3303104,TINTA PFI-1100 AZUL - 160 ML,Canon,0859C001,91.73,1,Suministros y Medios,Suministros Inyección de Tinta,260492,,112900,,124800
 ,3303108,KIT DE MANTENIMIENTO MC-30,Canon,1156C002,70.46,2,Impresoras,Upgrades de Impresora,,,,,
 ,3310084,Soporte de 1 Monitor/Notebook,Startech.Com,ARMUNONB,202.18,1,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,3310235,Adaptador USB-C a VGA DVI HDMI miniDP 4K,Startech.Com,CDPVGDVHDMDP,81.0,10,Cables,Cables y Adaptadores de Audio + Video,,,,,
@@ -286,7 +286,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3310238,Cable 5m DisplayPort a HDMI DP,Startech.Com,DP2HDMM5MB,27.79,2,Cables,Cables y Adaptadores de Audio,,,,,
 ,3310261,Adaptador PCI Express x4 a M.2 para SSD,Startech.Com,PEX4M2E1,26.64,2,Dispositivos de Entrada/Salida,Tarjetas Seriales,,,,,
 ,3310270,"Cable USB 3.1 10Gb para DD SATA 2,5 3,5",Startech.Com,USB312SAT3,51.99,5,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
-,3334716,Mouse Pro Fit USB Full-Size,Kensington,K72369,8.53,28,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",39394,,7500,9650,9720
+,3334716,Mouse Pro Fit USB Full-Size,Kensington,K72369,8.53,28,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",39394,,7500,9650,9861
 ,3337627,Adaptador USB-C a HDMI - 4K 60Hz,Startech.Com,CDP2HD4K60,47.3,5,Cables,Cables y Adaptadores de Audio,,,,,
 ,3341519,RACK UNIT LABELS - UP TO 49U - 2-PACK,Startech.Com,RKUNITAPE,24.41,4,Protección Eléctrica y Racks,Estructuras de Rack,,,,,
 ,3343843,Micro SD 128GB Class 10 UHS I w Adapter,Toshiba,THN-M302R1280U2,0.0,1,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,,,,,
@@ -294,14 +294,14 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3352858,BOLSA TR12X420-AL AMARILLO 20K PAG,Epson,TR12X420-AL,141.42,2,Suministros y Medios,Suministros Inyección de Tinta,260472,,159900,,170690
 ,3352862,BOLSA TR14X420-AL AMARILLO 50K PAG,Epson,TR14X420-AL,318.2,1,Suministros y Medios,Suministros Inyección de Tinta,260475,,,,
 ,3360988,Tarjeta PCI Express 3 Puertos M.2,Startech.Com,PEXM2SAT32N1,37.04,4,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
-,3385422,TAMBOR DE CREACION DE IMAGENES HP 19A,Hp,CF219A,83.82,49,Suministros y Medios,Suministros Fax/Fotocopiadoras,261294,,86900,,93513
-,3385490,TONER GPR 52 CIAN REND 11500 PAG,Canon,9107B003,124.81,1,Suministros y Medios,Suministros Láser,260296,,135000,,149041
+,3385422,TAMBOR DE CREACION DE IMAGENES HP 19A,Hp,CF219A,83.82,49,Suministros y Medios,Suministros Fax/Fotocopiadoras,261294,,86900,,93441
+,3385490,TONER GPR 52 CIAN REND 11500 PAG,Canon,9107B003,124.81,1,Suministros y Medios,Suministros Láser,260296,,135000,,148940
 ,3387264,PTP900W ETIQUETADORA ELECTRICA,Brother,PT-P900W,278.33,1,Impresoras,Impresoras de Etiquetas Hogar/Oficina,,,,,
 ,3389647,Cable 5m de red snagless Azul,Startech.Com,45PAT5MBL,5.18,3,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,3389648,Cable 5m de red Cat5e snagless Gris,Startech.Com,45PAT5MGR,5.25,2,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,3389649,Soporte de Pared para Monitor,Startech.Com,ARMPIVWALL,148.94,5,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,3389659,2M 6FT USB C CABLE - M/M - USB 2.0,Startech.Com,USB2CC2M,12.49,4,Cables,Cables y Adaptadores USB,,,,,
-,3406408,TONER HP 30X NEGRO,Hp,CF230X,114.26,40,Suministros y Medios,Suministros Láser,260116,,119774,,133832
+,3406408,TONER HP 30X NEGRO,Hp,CF230X,114.26,40,Suministros y Medios,Suministros Láser,260116,,119774,131990,133453
 ,3407649,8 Port USB to Serial RS232 Adapter Hub,Startech.Com,ICUSB23208FD,293.43,5,Dispositivos de Red,ROMs de Inicio y Brackets,,,,,
 ,3410814,Cable 2m Adaptador USB-C a HDMI 4K 30Hz,Startech.Com,CDP2HDMM2MB,37.49,5,Cables,Cables y Adaptadores de Video,,,,,
 ,3417086,APC Smart-UPS SRT 192V 5kVA and 6kVA Bat,Apc,SRT192BP,1896.6,2,Protección Eléctrica y Racks,Baterías UPS,,,,,
@@ -310,7 +310,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3431678,AP-220-MNT-W1W White AP Basic Flat Surf,Hewlett Packard Enterprise,JW047A,12.64,6,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
 ,3432175,Mouse Pad Comfort Gel Negro,Kensington,K62386,11.79,48,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,3440544,"Cable 1,8m de Red at6 UTP RJ45 ETL Negro",Startech.Com,C6PATCH6BK,4.47,4,Cables,Cables y Adaptadores Twisted Pair,,,,,
-,3519262,TONER GPR 53 MAGENTA REND 19000 PAG,Canon,8526B003,92.87,4,Suministros y Medios,Suministros Láser,259877,,105284,,115624
+,3519262,TONER GPR 53 MAGENTA REND 19000 PAG,Canon,8526B003,92.87,4,Suministros y Medios,Suministros Láser,259877,,105284,,115631
 ,3536176,4 Port USB C Hub - USB 3.0 Laptop Hub,Startech.Com,HB30C4AB,33.3,20,Dispositivos de Red,ROMs de Inicio y Brackets,,,,,
 ,3536177,Cable de Red 10m purpura Cat6 sin Enganc,Startech.Com,N6PATC10MPL,11.51,4,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,3536179,Cable de Red 3m purpura Cat6 sin Enganch,Startech.Com,N6PATC3MPL,5.21,35,Cables,Cables y Adaptadores Fibra Optica,,,,,
@@ -320,7 +320,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3550361,PC AC IT IT AC Power Cord,Hewlett Packard Enterprise,JW121A,5.0,6,Cables,Cables de Poder,,,,,
 ,3566573,BANDEJA LATERAL 2000HJ A3 SERIE E8XX,Hp,Y1G21A,540.46,1,Impresoras,"Bandejas, Cajones y Alimentadores Sobre",,,,,
 ,3566588,LASERJET IMAGE TRANSFER-E778,Hp,Z7Y79A,132.12,9,Suministros y Medios,Suministros Láser,,,,,
-,3570189,CARTUCHO DE TINTA HP 62XL NEGRO 600 PÃG,Hp,C2P05AL,52.08,233,Suministros y Medios,Suministros Láser,260030,,56335,,62704
+,3570189,CARTUCHO DE TINTA HP 62XL NEGRO 600 PÃG,Hp,C2P05AL,52.08,233,Suministros y Medios,Suministros Láser,260030,,56148,,62572
 ,3575219,PISTOL GRIP KIT CK3,Intermec,203-879-003,87.76,19,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
 ,3578215,"Cable de Red 0,5m Negro Cat5e Ethernet",Startech.Com,45PAT50CMBK,2.85,3,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,3578218,"Cable de Red de 0,5m Gris Cat5e Ethernet",Startech.Com,45PAT50CMGR,2.83,11,Cables,Cables y Adaptadores Fibra Optica,,,,,
@@ -337,15 +337,15 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3612495,Base VESA de Techo de 37 a 75IN,Startech.Com,FPCEILPTBSP,127.6,3,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,3612496,Hub USBC 3.0 a 4x USBA Blanco,Startech.Com,HB30C4ABW,34.58,6,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
 ,3612497,Base de Altura Ajustable,Startech.Com,MONSTADJDL,39.15,14,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
-,3613967,TONER HP 37A NEGRO 11000 PAG,Hp,CF237A,210.69,13,Suministros y Medios,Suministros Láser,261134,,233762,,255542
+,3613967,TONER HP 37A NEGRO 11000 PAG,Hp,CF237A,210.69,13,Suministros y Medios,Suministros Láser,261134,,232796,,254852
 ,3614349,Cable 0.5m USB-C a USB-A,Startech.Com,USB2AC50CM,8.75,5,Cables,Cables y Adaptadores USB,,,,,
 ,3614351,"Cable 0,5m USB-C Macho a Macho USB 2.0",Startech.Com,USB2CC50CM,9.7,5,Cables,Cables y Adaptadores USB,,,,,
 ,3614353,Cable 1m USB-C 3.1 Entrega Potencia 5A,Startech.Com,USB31C5C1M,27.48,2,Cables,Cables y Adaptadores USB,,,,,
-,3617890,TONER HP 37X NEGRO 25000 PAG,Hp,CF237X,327.84,15,Suministros y Medios,Suministros Láser,260926,,352778,,385364
-,3617893,TONER HP 655A NEGRO 12500 PAG,Hp,CF450A,244.49,8,Suministros y Medios,Suministros Láser,260601,,263083,,283428
-,3617894,TONER HP 655A CIAN 10500 PAG,Hp,CF451A,276.2,10,Suministros y Medios,Suministros Láser,264503,,311669,,331745
-,3617895,TONER HP 655A AMARILLO 10500 PAG,Hp,CF452A,276.14,7,Suministros y Medios,Suministros Láser,266117,,312564,,322156
-,3617896,TONER HP 655A MAGENTA 10500 PAG,Hp,CF453A,278.57,14,Suministros y Medios,Suministros Láser,270368,,311019,,333048
+,3617890,TONER HP 37X NEGRO 25000 PAG,Hp,CF237X,327.84,15,Suministros y Medios,Suministros Láser,260926,,351602,,384654
+,3617893,TONER HP 655A NEGRO 12500 PAG,Hp,CF450A,244.49,8,Suministros y Medios,Suministros Láser,260601,,262206,,282766
+,3617894,TONER HP 655A CIAN 10500 PAG,Hp,CF451A,276.2,10,Suministros y Medios,Suministros Láser,264503,,310181,,331274
+,3617895,TONER HP 655A AMARILLO 10500 PAG,Hp,CF452A,276.14,7,Suministros y Medios,Suministros Láser,266117,,310072,,321429
+,3617896,TONER HP 655A MAGENTA 10500 PAG,Hp,CF453A,278.57,14,Suministros y Medios,Suministros Láser,270368,,309669,,332214
 ,3640762,Lector USB 3.0 de Tarjetas Flash CFast,Startech.Com,CFASTRWU3,37.16,2,Dispositivos de Almacenamiento,Bundles Lector/Memoria Flash,,,,,
 ,3648446,Cable de Red de 10m Negro Cat5e Ethernet,Startech.Com,45PAT10MBK,8.96,1,Cables,Cables y Adaptadores Fibra Optica,,,,,
 ,3648447,Cable de Red de 10m Azul Cat5e,Startech.Com,45PAT10MBL,8.99,1,Cables,Cables y Adaptadores Fibra Optica,,,,,
@@ -363,49 +363,49 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3698449,Rack Pared 6U 14.8IN Profundo,Startech.Com,RK616WALM,294.36,5,Protección Eléctrica y Racks,Estructuras de Rack,,,,,
 ,3707870,BANDEJA ADICIONAL 550 HOJAS X3 PARA M63X,Hp,J8J93A,1012.7,5,Impresoras,"Bandejas, Cajones y Alimentadores Sobre",,,,,
 ,3709970,HPE 500W FS PLAT HOT PLUG POWER SUPPLY K,Hewlett Packard Enterprise,865408-B21,564.5,11,Servicios y Garantías,Servicios de Soporte,,,,,
-,3713079,TONER TN416C CIAN,Brother,TN416C,145.77,4,Suministros y Medios,Suministros Láser,259716,,158406,,173681
-,3713080,TONER TN416M MAGENTA,Brother,TN416M,145.77,4,Suministros y Medios,Suministros Láser,259717,,162278,179990,174833
-,3713081,TONER TN416Y AMARILLO,Brother,TN416Y,145.77,5,Suministros y Medios,Suministros Láser,259718,,158406,,174181
-,3713085,TONER TN419Y AMARILLO,Brother,TN419Y,161.95,175,Suministros y Medios,Suministros Láser,259703,,164900,,190622
+,3713079,TONER TN416C CIAN,Brother,TN416C,145.77,4,Suministros y Medios,Suministros Láser,259716,,158417,,173761
+,3713080,TONER TN416M MAGENTA,Brother,TN416M,145.77,4,Suministros y Medios,Suministros Láser,259717,,162278,179990,174945
+,3713081,TONER TN416Y AMARILLO,Brother,TN416Y,145.77,5,Suministros y Medios,Suministros Láser,259718,,158417,,174275
+,3713085,TONER TN419Y AMARILLO,Brother,TN419Y,161.95,175,Suministros y Medios,Suministros Láser,259703,,164900,,190757
 ,3724469,"POWER ADAPTER,12V 7A, WITHOUT POWER CORD",Honeywell,50121667-001,70.0,9,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
 ,3726821,"PC43 THERMAL TRANSFER LCD,LATIN FONT,RTC",Honeywell,PC43TB01100201,501.2,1,Impresoras,Impresoras de Etiquetas Código de Barras,,,,,
-,3746324,TINTA PFI-007 NEGRO MATE - 90 ML,Canon,2142C001,48.05,5,Suministros y Medios,Suministros Inyección de Tinta,260305,,56702,,58676
-,3746335,TINTA PFI-007 NEGRO - 90 ML,Canon,2143C001,51.17,4,Suministros y Medios,Suministros Inyección de Tinta,260301,,60394,,63127
-,3746336,TINTA PFI-007 CIAN - 90 ML,Canon,2144C001,47.94,3,Suministros y Medios,Suministros Inyección de Tinta,260303,,56608,,58811
-,3746337,TINTA PFI-007 MAGENTA - 90 ML,Canon,2145C001,48.61,6,Suministros y Medios,Suministros Inyección de Tinta,260304,,57384,,59896
-,3746338,TINTA PFI-007 AMARILLO - 90 ML,Canon,2146C001,50.72,6,Suministros y Medios,Suministros Inyección de Tinta,260302,,59990,,61508
+,3746324,TINTA PFI-007 NEGRO MATE - 90 ML,Canon,2142C001,48.05,5,Suministros y Medios,Suministros Inyección de Tinta,260305,,56627,,58667
+,3746335,TINTA PFI-007 NEGRO - 90 ML,Canon,2143C001,51.17,4,Suministros y Medios,Suministros Inyección de Tinta,260301,,60313,,63158
+,3746336,TINTA PFI-007 CIAN - 90 ML,Canon,2144C001,47.94,3,Suministros y Medios,Suministros Inyección de Tinta,260303,,56537,,58809
+,3746337,TINTA PFI-007 MAGENTA - 90 ML,Canon,2145C001,48.61,6,Suministros y Medios,Suministros Inyección de Tinta,260304,,57326,,60070
+,3746338,TINTA PFI-007 AMARILLO - 90 ML,Canon,2146C001,50.72,6,Suministros y Medios,Suministros Inyección de Tinta,260302,,59720,,61486
 ,3962947,Cable 1m USB-C a DisplayPort 4K60 Blanco,Startech.Com,CDP2DPMM1MW,23.98,1,Cables,Cables y Adaptadores USB,,,,,
-,3980133,TINTA PFI-102 NEGRO - 130 ML,Canon,0895B001,72.33,1,Suministros y Medios,Suministros Inyección de Tinta,259946,,85490,,88459
+,3980133,TINTA PFI-102 NEGRO - 130 ML,Canon,0895B001,72.33,1,Suministros y Medios,Suministros Inyección de Tinta,259946,,85194,,88417
 ,4007402,Triple Monitor Stand - Steel & Aluminum,Startech.Com,ARMBARTRIO2,253.33,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4012539,DRUM GPR 51 CIAN,Canon,8521B003,193.9,1,Suministros y Medios,Suministros Láser,,,,,
 ,4012540,DRUM GPR 51 MAGENTA,Canon,8522B003,193.9,1,Suministros y Medios,Suministros Láser,,,,,
 ,4012541,DRUM GPR 51 AMARILLO,Canon,8523B003,193.9,1,Suministros y Medios,Suministros Láser,,,,,
-,4023334,T973 STDCAP DBUPRO BLK INK SUPPLY UNIT,Epson,T973120,73.51,4,Suministros y Medios,Suministros Inyección de Tinta,260211,,38700,,80013
-,4023398,BOLSA T974120 86K PAG,Epson,T974120,241.44,3,Suministros y Medios,Suministros Inyección de Tinta,260209,,269990,,279464
-,4023400,BOLSA T974320 MAGENTA 84K PAG,Epson,T974320,356.38,3,Suministros y Medios,Suministros Inyección de Tinta,260206,,399990,,416577
-,4023401,BOLSA T974420 84K PAG,Epson,T974420,374.2,3,Suministros y Medios,Suministros Inyección de Tinta,260208,,399990,,431920
+,4023334,T973 STDCAP DBUPRO BLK INK SUPPLY UNIT,Epson,T973120,73.51,4,Suministros y Medios,Suministros Inyección de Tinta,260211,,81967,,86362
+,4023398,BOLSA T974120 86K PAG,Epson,T974120,241.44,3,Suministros y Medios,Suministros Inyección de Tinta,260209,,269990,,279624
+,4023400,BOLSA T974320 MAGENTA 84K PAG,Epson,T974320,356.38,3,Suministros y Medios,Suministros Inyección de Tinta,260206,,399990,,416753
+,4023401,BOLSA T974420 84K PAG,Epson,T974420,374.2,3,Suministros y Medios,Suministros Inyección de Tinta,260208,,399990,,432123
 ,4031777,HPE LTO-8 Ultrium 30TB RW,Hewlett Packard Enterprise,Q2078A,73.1,79,Suministros y Medios,Cintas de Almacenamiento,,,,,
 ,4031922,Paper support kit w near paper end senrÂ,Custom,974DW010000001,25.54,5,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
 ,4043152,HPE 96W SMART STORAGE BATTERY 145MM CBL,Hewlett Packard Enterprise,P01366-B21,213.0,3,Suministros y Medios,Baterías de Uso General,,,,,
 ,4049098,CUELGUE ELECTRONICO EHS CABLE APC-43 (CI,Poly,38350-13,50.88,2,Cables,Cables y Adaptadores p/Líneas Telefónica,,,,,
 ,4050450,TINTA HP 731 CABEZAL,Hp,P2V27A,110.0,1,Productos POS/AIDC/Código de Barras,Suministros Impresoras Códigos de Barra,,,,,
-,4050451,TINTA HP 730 130 ML CIAN,Hp,P2V62A,80.8,11,Suministros y Medios,Suministros Inyección de Tinta,260025,,89252,,101263
-,4050452,TINTA HP 730 130 ML MAGENTA,Hp,P2V63A,81.0,6,Suministros y Medios,Suministros Inyección de Tinta,260799,,94500,,100179
-,4050453,TINTA HP 730 130 ML AMARILLO,Hp,P2V64A,81.0,5,Suministros y Medios,Suministros Inyección de Tinta,263739,,94500,,103308
-,4050454,TINTA HP 730 130 ML MATE NEGRO,Hp,P2V65A,80.99,7,Suministros y Medios,Suministros Inyección de Tinta,261556,,94500,95990,99465
-,4050455,TINTA HP 730 130 ML GRIS,Hp,P2V66A,81.0,1,Suministros y Medios,Suministros Inyección de Tinta,264504,,89468,,98103
+,4050451,TINTA HP 730 130 ML CIAN,Hp,P2V62A,80.8,11,Suministros y Medios,Suministros Inyección de Tinta,260025,,88954,94990,100961
+,4050452,TINTA HP 730 130 ML MAGENTA,Hp,P2V63A,81.0,6,Suministros y Medios,Suministros Inyección de Tinta,260799,,94500,,99933
+,4050453,TINTA HP 730 130 ML AMARILLO,Hp,P2V64A,81.0,5,Suministros y Medios,Suministros Inyección de Tinta,263739,,92500,,103919
+,4050454,TINTA HP 730 130 ML MATE NEGRO,Hp,P2V65A,80.99,7,Suministros y Medios,Suministros Inyección de Tinta,261556,,94500,94990,99048
+,4050455,TINTA HP 730 130 ML GRIS,Hp,P2V66A,81.0,1,Suministros y Medios,Suministros Inyección de Tinta,264504,,89170,,97619
 ,4064633,ENCOREPRO HW540,Poly,88828-01,68.3,1,Dispositivos Audio/Video,Cintillos y Audífonos para PCs,48934,,176990,,176990
 ,4085812,Cable 1m USB-C a HDMI 4K60 Negro,Startech.Com,CDP2HD1MBNL,33.63,6,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,4085814,2m USB C to HDMI Cable Adapter USBC HDMI,Startech.Com,CDP2HD2MBNL,35.89,1,Cables,Cables y Adaptadores de Audio + Video,,,,,
-,4139061,1.2TB 10K RPM SAS 12GBPS 512N,Dell,400-ATJM,227.23,4,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),74709,,285926,,286755
+,4139061,1.2TB 10K RPM SAS 12GBPS 512N,Dell,400-ATJM,227.23,4,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),74709,,285926,,286147
 ,4150753,Bandeja Papel WF C5XX0 / M5X99 /WF-C5000,Epson,C12C932871,92.44,32,Impresoras,"Bandejas, Cajones y Alimentadores Sobre",,,,,
 ,4156183,HPE StoreEver LTO-8 Ultrium 30750 Extern,Hewlett Packard Enterprise,BC023A,5270.4,2,Dispositivos de Almacenamiento,Unidades de Cinta y Arreglos,,,,,
-,4172135,TONER HP SAMSUNG MLT-D303E NEGRO,Hp,SV026A,192.31,1,Suministros y Medios,Suministros Láser,270636,,164508,,229587
-,4172136,TONER HP SAMSUNG MLT-D358S NEGRO,Hp,SV112A,97.38,30,Suministros y Medios,Suministros Láser,273726,,109148,,125974
+,4172135,TONER HP SAMSUNG MLT-D303E NEGRO,Hp,SV026A,192.31,1,Suministros y Medios,Suministros Láser,270636,,164508,,229197
+,4172136,TONER HP SAMSUNG MLT-D358S NEGRO,Hp,SV112A,97.38,30,Suministros y Medios,Suministros Láser,273726,,142800,,142800
 ,4181188,COJIN LUMBAR MEMORY L82025,Kensington,L82025,19.69,1,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,4181210,WMK-047-2 Wall Mount Support for 48â#-9,Viewsonic,WMK-047-2,37.79,103,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4196372,TINTA HP 746 CABEZAL,Hp,P2V25A,117.04,44,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4196379,TINTA HP 747 300 ML CHROMATIC VERDE,Hp,P2V84A,146.97,2,Suministros y Medios,Suministros Inyección de Tinta,260802,,162321,,184652
+,4196379,TINTA HP 747 300 ML CHROMATIC VERDE,Hp,P2V84A,146.97,2,Suministros y Medios,Suministros Inyección de Tinta,260802,,161780,,183796
 ,4205713,CINTA ERC-43B,Epson,ERC-43B,2.58,223,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,
 ,4209991,"Cable 7,5m Cat5e RJ45 Gris Sin Enganches",Startech.Com,45PATCH25GR,7.04,3,Cables,Cables y Adaptadores Twisted Pair,,,,,
 ,4209992,Cable 90cm Cat5e RJ45 Gris Sin Enganches,Startech.Com,45PATCH3GR,3.36,7,Cables,Cables y Adaptadores Twisted Pair,,,,,
@@ -421,27 +421,27 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4210015,Cable de Red 30cm Amarillo Cat6 RJ45,Startech.Com,N6PATCH1YL,3.69,16,Cables,Cables y Adaptadores Twisted Pair,,,,,
 ,4210019,Cable de Red 15cm Naranja Cat6 Snagless,Startech.Com,N6PATCH6INOR,3.49,14,Cables,Cables y Adaptadores Twisted Pair,,,,,
 ,4210020,"Cable de Red 2,1m Cat6 UTP RJ45 ETL Azul",Startech.Com,N6PATCH7BL,4.65,1,Cables,Cables y Adaptadores Twisted Pair,,,,,
-,4215478,TINTA HP 747 300 ML CAPA BRILLO,Hp,P2V87A,142.57,2,Suministros y Medios,Suministros Inyección de Tinta,260801,,157465,,170158
+,4215478,TINTA HP 747 300 ML CAPA BRILLO,Hp,P2V87A,142.57,2,Suministros y Medios,Suministros Inyección de Tinta,260801,,156940,,169703
 ,4293590,HP Acc BLE/NFC/inalambrico Jdirect 3100,Hp,3JN69A,81.1,1,Impresoras,Servidores de Impresión Int/Ext,,,,,
 ,4294754,4-bay smart batt charger RP2/4,Honeywell,220540-000,450.0,13,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
 ,4296807,HUB PORTABLE USB 2.0 K39120EU,Kensington,K39120EU,8.49,8,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
 ,4296812,COJIN ASIENTO MEMORY FOAM K55805WW,Kensington,K55805WW,25.63,7,Equipamiento de Oficina,Descansa pies y espalda,,,,,
-,4306810,HP x1000 WIRED,Hp,4QM14AA,4.6,2131,Dispositivos de Entrada,Mouse,64348,9990,5990,,7990
+,4306810,HP x1000 WIRED,Hp,4QM14AA,4.6,2131,Dispositivos de Entrada,Mouse,64348,9990,5990,,7450
 ,4329047,Maintenance Cassette MC-31,Canon,1156C005,69.91,3,Impresoras,Upgrades de Impresora,,,,,
-,4329048,TINTA PFI-120 NEGRO MATE - 130 ML,Canon,2884C001,66.53,10,Suministros y Medios,Suministros Inyección de Tinta,259806,,78236,,88312
-,4329049,TINTA PFI-120 NEGRO - 130 ML,Canon,2885C001,68.42,8,Suministros y Medios,Suministros Inyección de Tinta,260163,,79990,,84187
-,4329051,TINTA PFI-120 MAGENTA - 130 ML,Canon,2887C001,67.49,21,Suministros y Medios,Suministros Inyección de Tinta,260158,,78980,,83251
-,4329052,TINTA PFI-120 AMARILLO - 130 ML,Canon,2888C001,67.45,28,Suministros y Medios,Suministros Inyección de Tinta,260159,,78990,,83183
-,4329054,TINTA PFI-320 NEGRO - 300 ML,Canon,2890C001,113.84,10,Suministros y Medios,Suministros Inyección de Tinta,259800,,127502,,141330
-,4329065,TINTA PFI-320 CIAN - 300 ML,Canon,2891C001,113.56,2,Suministros y Medios,Suministros Inyección de Tinta,259803,,127502,,144408
-,4329066,TINTA PFI-320 MAGENTA - 300 ML,Canon,2892C001,114.03,10,Suministros y Medios,Suministros Inyección de Tinta,259805,,128468,,143427
-,4329067,TINTA PFI-320 AMARILLO - 300 ML,Canon,2893C001,112.45,12,Suministros y Medios,Suministros Inyección de Tinta,259804,,126536,,139266
+,4329048,TINTA PFI-120 NEGRO MATE - 130 ML,Canon,2884C001,66.53,10,Suministros y Medios,Suministros Inyección de Tinta,259806,,78236,,88297
+,4329049,TINTA PFI-120 NEGRO - 130 ML,Canon,2885C001,68.42,8,Suministros y Medios,Suministros Inyección de Tinta,260163,,79990,,84086
+,4329051,TINTA PFI-120 MAGENTA - 130 ML,Canon,2887C001,67.49,21,Suministros y Medios,Suministros Inyección de Tinta,260158,,78980,,82756
+,4329052,TINTA PFI-120 AMARILLO - 130 ML,Canon,2888C001,67.45,28,Suministros y Medios,Suministros Inyección de Tinta,260159,,78990,,82727
+,4329054,TINTA PFI-320 NEGRO - 300 ML,Canon,2890C001,113.84,10,Suministros y Medios,Suministros Inyección de Tinta,259800,,127502,,141299
+,4329065,TINTA PFI-320 CIAN - 300 ML,Canon,2891C001,113.56,2,Suministros y Medios,Suministros Inyección de Tinta,259803,,127502,,144347
+,4329066,TINTA PFI-320 MAGENTA - 300 ML,Canon,2892C001,114.03,10,Suministros y Medios,Suministros Inyección de Tinta,259805,,127502,131990,143202
+,4329067,TINTA PFI-320 AMARILLO - 300 ML,Canon,2893C001,112.45,12,Suministros y Medios,Suministros Inyección de Tinta,259804,,126536,,139267
 ,4349232,SD 16GB CLASS 10,Canon,2983V919,0.0,5,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,,,,,
 ,4355804,USB to Lightning Cable Charging cable,Startech.Com,RUSBLTMM1M,18.88,6,Cables,Cables y Adaptadores Firewire,,,,,
 ,4355895,Cable USB a Lightning 1m Negro,Startech.Com,RUSBLTMM1MB,15.19,5,Cables,Cables y Adaptadores USB,,,,,
 ,4355896,Cable 2m USB a Lightning MFi Blanco,Startech.Com,RUSBLTMM2M,18.39,8,Cables,Cables y Adaptadores USB,,,,,
 ,4360475,USB C TO USB A COMM&CHARGE CBL,Zebra,CBL-TC5X-USBC2A-01,9.66,59,Cables,Cables Seriales y Adaptadores,,,,,
-,4373229,TONER TN213BK NEGRO,Brother,TN213BK,55.14,35,Suministros y Medios,Suministros Láser,259712,,59927,,66585
+,4373229,TONER TN213BK NEGRO,Brother,TN213BK,55.14,35,Suministros y Medios,Suministros Láser,259712,,59921,,66878
 ,4373780,ETIQUETA DK1247,Brother,DK1247,24.05,4,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,4400774,Soporte de Pared para TV - Fijo,Startech.Com,FPWFXB1,86.89,2,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4409146,Privacy Screen for 14in Laptops (16:9),Kensington,K52793WW,24.97,8,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
@@ -449,11 +449,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4424730,PTH200 Handheld Label Printer,Brother,PTH200,33.85,24,Impresoras,Impresoras de Etiquetas Hogar/Oficina,,,,,
 ,4478080,HDMI over CAT6 Extender Kit CAT5/6,Startech.Com,ST121HD20V,167.13,4,Dispositivos de Entrada/Salida,Conmutadores y Extensores Serial/Paralel,,,,,
 ,4489570,Thrustmaster T3PA 3 Pedals add-on,Thrustmaster,4060056,165.62,106,Video Juegos y Consolas,Volantes,,,,,
-,4489656,TONER HP 89A NEGRO LJET,Hp,CF289A,167.34,192,Suministros y Medios,Suministros Láser,260110,,179666,,193229
-,4489657,TONER HP 89X NEGRO 10000 PAG,Hp,CF289X,256.49,15,Suministros y Medios,Suministros Láser,261133,,275998,,306380
-,4490166,LASERJET MNG E50145DW B/N 45PPM A4,Hp,1PU51A,556.16,24,Impresoras,Impresoras Láser/LED color,62353,,530964,,559435
-,4490175,LASERJET MNG E60165DN B/N 65PPM A4,Hp,3GY10A,815.15,9,Impresoras,Impresoras Láser/LED monocromáticas,70153,,881756,,929718
-,4490837,TONER HP 658A MAGENTA 6000 PAG,Hp,W2003A,267.49,13,Suministros y Medios,Suministros Láser,260565,,298615,,309650
+,4489656,TONER HP 89A NEGRO LJET,Hp,CF289A,167.34,192,Suministros y Medios,Suministros Láser,260110,,178700,,192368
+,4489657,TONER HP 89X NEGRO 10000 PAG,Hp,CF289X,256.49,15,Suministros y Medios,Suministros Láser,261133,,275078,,304898
+,4490166,LASERJET MNG E50145DW B/N 45PPM A4,Hp,1PU51A,556.16,24,Impresoras,Impresoras Láser/LED color,62353,,533660,,558899
+,4490175,LASERJET MNG E60165DN B/N 65PPM A4,Hp,3GY10A,815.15,9,Impresoras,Impresoras Láser/LED monocromáticas,70153,,878817,,927280
+,4490837,TONER HP 658A MAGENTA 6000 PAG,Hp,W2003A,267.49,13,Suministros y Medios,Suministros Láser,260565,,297330,,308930
 ,4490840,660A ORIGINAL LASERJET IMAGING DRUM,Hp,W2004A,237.68,1,Suministros y Medios,Suministros Fax/Fotocopiadoras,87205,,,,
 ,4504206,MOUNTING SOLUTION F/ EAGLEEYEIV,Poly,2215-68675-001,122.96,9,Comunicaciones,Soportes y Kits de Montaje p/celulares,,,,,
 ,4505145,Card - 1 Port RS232 Serial Adapter PCIe,Startech.Com,PEX1S953LP,51.3,1,Dispositivos de Entrada/Salida,Tarjetas Seriales,,,,,
@@ -468,39 +468,39 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4564158,BATTERY Li-Ion CK65 One 1,Honeywell,318-063-001,56.86,11,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
 ,4591487,Vertiv Liebert GXT5 external battery cab,Vertiv,GXT5-EBC36VRT2U,343.9,8,Protección Eléctrica y Racks,Baterías UPS,,,,,
 ,4602375,MAINTENANCE BOX C12C934461 FOR L3560 L55,Epson,C12C934461,9.16,117,Impresoras,Upgrades de Impresora,,,,,
-,4621747,TINTA T41P220 CIAN 350ML,Epson,T41P220,176.96,9,Suministros y Medios,Suministros Inyección de Tinta,260934,,199500,,207111
-,4621748,TINTA T41P320 MAGENTA 350ML,Epson,T41P320,176.96,7,Suministros y Medios,Suministros Inyección de Tinta,259937,,194156,,203393
-,4621749,TINTA T41P420 AMARILLO 350ML,Epson,T41P420,176.96,6,Suministros y Medios,Suministros Inyección de Tinta,259939,,194156,,203339
-,4621750,TINTA T41P520 NEGRO 350ML,Epson,T41P520,176.96,8,Suministros y Medios,Suministros Inyección de Tinta,259938,,200990,,209230
-,4632869,TONER HP 659A NEGRO LASERJET,Hp,W2010A,164.13,12,Suministros y Medios,Suministros Láser,261529,,176611,,192860
-,4632870,TONER HP 659A CYAN,Hp,W2011A,369.66,12,Suministros y Medios,Suministros Láser,260590,,397777,,433066
-,4632871,HP 659A Yellow LaserJet Toner Cartridge,Hp,W2012A,369.27,9,Suministros y Medios,Suministros Láser,260591,,397355,,432526
-,4632872,HP 659A Magenta LaserJet Toner Cartridge,Hp,W2013A,368.91,12,Suministros y Medios,Suministros Láser,260596,,396955,,432553
+,4621747,TINTA T41P220 CIAN 350ML,Epson,T41P220,176.96,9,Suministros y Medios,Suministros Inyección de Tinta,260934,,199500,,206971
+,4621748,TINTA T41P320 MAGENTA 350ML,Epson,T41P320,176.96,7,Suministros y Medios,Suministros Inyección de Tinta,259937,,194156,,203403
+,4621749,TINTA T41P420 AMARILLO 350ML,Epson,T41P420,176.96,6,Suministros y Medios,Suministros Inyección de Tinta,259939,,194156,,203376
+,4621750,TINTA T41P520 NEGRO 350ML,Epson,T41P520,176.96,8,Suministros y Medios,Suministros Inyección de Tinta,259938,,200990,,209167
+,4632869,TONER HP 659A NEGRO LASERJET,Hp,W2010A,164.13,12,Suministros y Medios,Suministros Láser,261529,,176022,,194852
+,4632870,TONER HP 659A CYAN,Hp,W2011A,369.66,12,Suministros y Medios,Suministros Láser,260590,,396451,,432026
+,4632871,HP 659A Yellow LaserJet Toner Cartridge,Hp,W2012A,369.27,9,Suministros y Medios,Suministros Láser,260591,,396031,,431762
+,4632872,HP 659A Magenta LaserJet Toner Cartridge,Hp,W2013A,368.91,12,Suministros y Medios,Suministros Láser,260596,,395632,,431315
 ,4633033,NA-LA USB kit: Omni-directional 1D PDF,Honeywell,1470G2D-2USB-1-N,118.52,30,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
 ,4634002,SFP+ - HP J9151E Compatible,Startech.Com,J9151E-ST,181.04,17,Dispositivos de Red,Transceivers,,,,,
 ,4634847,Lenovo 15.6-inch Laptop Casual Backpack,Lenovo,4X40T84058,9.58,5,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
-,4637480,Aruba 6300M 24SFP+ 4SFP56 Swch,Hewlett Packard Enterprise,JL658A,19637.0,2,Dispositivos de Red,Switches Estaqueables,389546,,21469900,,22952424
-,4638874,TINTA PFI-030 CIAN- 55 ML,Canon,3490C001,37.89,9,Suministros y Medios,Suministros para Plotters,260315,,44741,,49583
-,4638905,TINTA PFI-030 MAGENTA- 55 ML,Canon,3491C001,38.89,9,Suministros y Medios,Suministros para Plotters,260316,,40991,,50372
+,4637480,Aruba 6300M 24SFP+ 4SFP56 Swch,Hewlett Packard Enterprise,JL658A,19637.0,2,Dispositivos de Red,Switches Estaqueables,389546,,21373900,,22872058
+,4638874,TINTA PFI-030 CIAN- 55 ML,Canon,3490C001,37.89,9,Suministros y Medios,Suministros para Plotters,260315,,44885,,49605
+,4638905,TINTA PFI-030 MAGENTA- 55 ML,Canon,3491C001,38.89,9,Suministros y Medios,Suministros para Plotters,260316,,40991,,50373
 ,4649269,KTG SMARTFIT EASY RISER 2.0 LARGE - BLK,Kensington,K50422WW,18.38,46,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,4694492,UPS Network Management Card 3,Apc,AP9640,300.18,12,Protección Eléctrica y Racks,Administración UPS,,,,,
 ,4694493,UPS Network Management Card 3 with Envir,Apc,AP9641,496.2,6,Protección Eléctrica y Racks,Administración UPS,,,,,
-,4729985,TONER HP 215A NEGRO 1050 PAG,Hp,W2310A,55.51,15,Suministros y Medios,Suministros Láser,260085,,61814,,66410
-,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,59.92,23,Suministros y Medios,Suministros Láser,260215,,64470,,70935
-,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,45,Suministros y Medios,Suministros Láser,260107,,64340,,69087
+,4729985,TONER HP 215A NEGRO 1050 PAG,Hp,W2310A,55.51,15,Suministros y Medios,Suministros Láser,260085,,62780,,69273
+,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,59.92,23,Suministros y Medios,Suministros Láser,260215,,64255,,70746
+,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,45,Suministros y Medios,Suministros Láser,260107,,64126,,68780
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.46,4,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,196,Suministros y Medios,Suministros Láser,260121,,77270,,84162
-,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,89382,109990,99514
-,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,89328,,98166
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,62,Suministros y Medios,Suministros Láser,260108,,89457,,99176
+,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,196,Suministros y Medios,Suministros Láser,260121,,76304,,83806
+,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,89084,109990,99203
+,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,89030,109990,98760
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,62,Suministros y Medios,Suministros Láser,260108,,89159,,98960
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,216.59,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4811047,CABEZAL DE IMPRESION PF-10,Canon,0861C003,507.89,4,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,
 ,4827711,SERVER RACK CABINET 42U,Startech.Com,RK4236BKB,2128.0,2,Protección Eléctrica y Racks,Racks,,,,,
 ,4834958,WF-78xx / ET-58xx /ET-166xx / L65xx / L1,Epson,C12C934591,19.46,139,Suministros y Medios,Suministros Láser,,,,,
 ,4844000,RIPS3 PRINTER STAND,Epson,C12C934321,300.81,2,Impresoras,Muebles para Impresora/Plotter,,,,,
 ,4844094,Tambor HP 332A Blk Laser Imaging,Hp,W1332A,143.79,51,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4844096,TONER HP 147A NEGRO,Hp,W1470A,188.2,12,Suministros y Medios,Suministros Láser,260134,,196439,,220412
-,4844097,TONER HP 147X NEGRO,Hp,W1470X,321.47,39,Suministros y Medios,Suministros Láser,262216,,148990,,327786
+,4844096,TONER HP 147A NEGRO,Hp,W1470A,188.2,12,Suministros y Medios,Suministros Láser,260134,,195784,,218916
+,4844097,TONER HP 147X NEGRO,Hp,W1470X,321.47,39,Suministros y Medios,Suministros Láser,262216,,148990,,325981
 ,4861965,CABLE DE PODER TIPO TREBOL,Hp,213352-001,0.0,79,Cables,Cables de Poder,,,,,
 ,4866298,CABLE ADAPTER POWER SUPPLY,Custom,26900000000005,18.02,31,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
 ,4866300,PAPER SUPPORT KIT W NEAR PAPER END SENRÂ,Custom,974DW010000001,25.55,4,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
@@ -512,54 +512,54 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4881794,HPE SYNERGY 6820C 25 50GB CNA,Hewlett Packard Enterprise,P02054-B21,354.13,5,Dispositivos de Red,Tarjetas de Red Ethernet,,,,,
 ,4883333,EASY PDU METERED 0U 22KW (18)C13 (6)C19,Apc,EPDU1232M,906.7,2,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
 ,4889830,Enclosure - M.2 NVMe PCIe SSD - USB-C,Startech.Com,M2E1BRU31C,103.82,5,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
-,4934763,M2170 ECOTANK B/N A4 39 PPM,Epson,C11CH43303,359.35,1,Impresoras,Multifuncionales Inkjet,82666,,380859,,407258
+,4934763,M2170 ECOTANK B/N A4 39 PPM,Epson,C11CH43303,359.35,1,Impresoras,Multifuncionales Inkjet,82666,,380862,,407351
 ,4936512,10ft 14AWG Computer Power Cord NEMA 5-15,Startech.Com,PXT515191410,25.21,7,Cables,Cables de Poder,,,,,
 ,4936537,USB Secure Charge Cable 1m (USB-C to USB,Startech.Com,USBSCHAC1M,8.6,8,Cables,Cables y Adaptadores USB,,,,,
 ,4936591,"CK65, 4GB/32GB MEMORY, ALPHA, 6803",Honeywell,CK65-L0N-B8C214F,821.0,16,Productos POS/AIDC/Código de Barras,Terminales de Datos Portátiles,,,,,
-,4964318,Instant On AP22 RW Access Point,Aruba,R4W02A,106.87,42,Dispositivos de Red,Access Points (AP) inalámbricos,382508,,119774,,136583
+,4964318,Instant On AP22 RW Access Point,Aruba,R4W02A,106.87,42,Dispositivos de Red,Access Points (AP) inalámbricos,382508,,118900,,137917
 ,4970942,Bluetooth Silent Mouse w/o battery,Lenovo,4Y50X88823,27.87,1,Dispositivos de Entrada,Mouse,116333,,,,
 ,4985291,PEDANT WALL MOUNT ADAPTER,Avigilon,IRPTZ-MNT-WALL1,81.18,1,Seguridad de Redes,Accesorios y Cmpnts de Seguridad de Red,,,,,
 ,5003511,Security Slot Adapt Kit Ultrabook K64995,Kensington,K64995,9.82,44,Seguridad Física,Dispositivos Anti-Robo,,,,,
-,5012008,HP 728 Cartucho Matte Black 130-ml,Hp,3WX25A,95.74,3,Suministros y Medios,Suministros Inyección de Tinta,259851,,105748,,131827
-,5012066,TONER HP 212A CYAN LASERJET,Hp,W2121A,226.88,25,Suministros y Medios,Suministros Láser,260130,,225990,,258298
-,5012069,Toner HP 212A Amarillo LaserJet,Hp,W2122A,225.78,16,Suministros y Medios,Suministros Láser,260168,,242952,,263922
-,5012072,Toner HP 212A Magenta LaserJet,Hp,W2123A,226.87,28,Suministros y Medios,Suministros Láser,260133,,242990,,263188
+,5012008,HP 728 Cartucho Matte Black 130-ml,Hp,3WX25A,95.74,3,Suministros y Medios,Suministros Inyección de Tinta,259851,,112046,,147680
+,5012066,TONER HP 212A CYAN LASERJET,Hp,W2121A,226.88,25,Suministros y Medios,Suministros Láser,260130,,225990,,257415
+,5012069,Toner HP 212A Amarillo LaserJet,Hp,W2122A,225.78,16,Suministros y Medios,Suministros Láser,260168,,242142,,263036
+,5012072,Toner HP 212A Magenta LaserJet,Hp,W2123A,226.87,28,Suministros y Medios,Suministros Láser,260133,,241990,,262352
 ,5012609,Streaming 12 LED Ring Light,Vivitar,VIVRL1263KIT-NOC-STK-4,14.48,148,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
 ,5012610,8 inch ring light,Vivitar,VIVRL8KIT-NOC-STK-12,6.88,480,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
 ,5012611,TRIPOD W/PHONE ADAPTER,Vivitar,VIVTR124-NOC-STK-48,2.76,5,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
-,5017192,SanDisk Ultra microSDHC 32 GB UHS-I,Sandisk,SDSQUNR-032G-GN3MA,10.39,2715,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,91369,,8990,12990,12268
-,5017795,HPE MSA 14.4T SAS 10K SFF M2 6PK HDD BDL,Hewlett Packard Enterprise,R0Q67A,6126.4,1,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),121619,,6919448,,7045124
-,5035725,DISCO EXTERNO ADVANCE BLANCO 1TB,Toshiba,HDTCA10XW3AA,68.14,18,Dispositivos de Almacenamiento,Discos Duros USB,92128,,76304,99990,84608
-,5035727,DISCO EXTERNO ADVANCE ROJO 2TB,Toshiba,HDTCA20XR3AA,89.18,20,Dispositivos de Almacenamiento,Discos Duros USB,92133,,89984,105990,105308
-,5035731,DISCO EXTERNO ADVANCE BLANCO 4TB,Toshiba,HDTCA40XW3CA,134.17,17,Dispositivos de Almacenamiento,Discos Duros USB,92127,,150686,,159711
-,5035732,DISCO EXTERNO CANVIO GAMING 1TB,Toshiba,HDTX110XK3AA,69.09,59,Dispositivos de Almacenamiento,Discos Duros USB,92134,,78140,,84374
-,5035733,DISCO EXTERNO CANVIO FLEX 1TB,Toshiba,HDTX110XSCAA,69.09,15,Dispositivos de Almacenamiento,Discos Duros USB,92675,,78236,,93639
-,5038427,TONER GPR 58 BLACK REND 23000 PAG,Canon,2182C003,57.41,1,Suministros y Medios,Suministros Láser,259876,,62990,,73426
-,5038428,TONER GPR 58 CIAN REND 18000 PAG,Canon,2183C003,138.62,4,Suministros y Medios,Suministros Láser,259874,,151500,,171393
-,5038429,TONER GPR 58 MAGENTA REND 18000 PAG,Canon,2184C003,136.57,6,Suministros y Medios,Suministros Láser,259873,,151500,,167795
-,5038430,TONER GPR 58 YELLOW REND 18000 PAG,Canon,2185C003,138.62,4,Suministros y Medios,Suministros Láser,259875,,174902,,178024
+,5017192,SanDisk Ultra microSDHC 32 GB UHS-I,Sandisk,SDSQUNR-032G-GN3MA,10.39,2715,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,91369,,8990,12990,12371
+,5017795,HPE MSA 14.4T SAS 10K SFF M2 6PK HDD BDL,Hewlett Packard Enterprise,R0Q67A,6126.4,1,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),121619,,6891434,,7035127
+,5035725,DISCO EXTERNO ADVANCE BLANCO 1TB,Toshiba,HDTCA10XW3AA,68.14,18,Dispositivos de Almacenamiento,Discos Duros USB,92128,,79995,99990,91231
+,5035727,DISCO EXTERNO ADVANCE ROJO 2TB,Toshiba,HDTCA20XR3AA,89.18,20,Dispositivos de Almacenamiento,Discos Duros USB,92133,,89984,,106471
+,5035731,DISCO EXTERNO ADVANCE BLANCO 4TB,Toshiba,HDTCA40XW3CA,134.17,17,Dispositivos de Almacenamiento,Discos Duros USB,92127,,159990,,169990
+,5035732,DISCO EXTERNO CANVIO GAMING 1TB,Toshiba,HDTX110XK3AA,69.09,59,Dispositivos de Almacenamiento,Discos Duros USB,92134,,77195,81990,83889
+,5035733,DISCO EXTERNO CANVIO FLEX 1TB,Toshiba,HDTX110XSCAA,69.09,15,Dispositivos de Almacenamiento,Discos Duros USB,92675,,99990,,112490
+,5038427,TONER GPR 58 BLACK REND 23000 PAG,Canon,2182C003,57.41,1,Suministros y Medios,Suministros Láser,259876,,62990,,73446
+,5038428,TONER GPR 58 CIAN REND 18000 PAG,Canon,2183C003,138.62,4,Suministros y Medios,Suministros Láser,259874,,151500,,171446
+,5038429,TONER GPR 58 MAGENTA REND 18000 PAG,Canon,2184C003,136.57,6,Suministros y Medios,Suministros Láser,259873,,151500,,170223
+,5038430,TONER GPR 58 YELLOW REND 18000 PAG,Canon,2185C003,138.62,4,Suministros y Medios,Suministros Láser,259875,,175116,,178095
 ,5056609,TINTA SJIC35P(K) NEGRO INK CART C6000,Epson,C13T44B120,38.47,1,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,261673,,43460,,43460
 ,5059548,STOK BCM 57414 10/25GbE 2p SFP28 Adptr,Hewlett Packard Enterprise,P26262-B21,1177.8,1,Dispositivos de Red,Tarjetas de Red Ethernet Gigabit,,,,,
-,5075027,LEVEL UP MOBILE GAMING KIT,Vivitar,LU745-NOC-ESP-6,14.58,38,Video Juegos y Consolas,Otros Accesorios para Videojuegos,122332,,15771,,18358
-,5080962,TONER HP 658A CYAN,Hp,W2001A,270.07,6,Suministros y Medios,Suministros Láser,260053,,290612,,306561
-,5080963,HP 658A Yellow LaserJet Toner Cartridge,Hp,W2002A,267.49,13,Suministros y Medios,Suministros Láser,266251,,297990,,307020
+,5075027,LEVEL UP MOBILE GAMING KIT,Vivitar,LU745-NOC-ESP-6,14.58,38,Video Juegos y Consolas,Otros Accesorios para Videojuegos,122332,,15719,,18307
+,5080962,TONER HP 658A CYAN,Hp,W2001A,270.07,6,Suministros y Medios,Suministros Láser,260053,,289644,,305051
+,5080963,HP 658A Yellow LaserJet Toner Cartridge,Hp,W2002A,267.49,13,Suministros y Medios,Suministros Láser,266251,,296990,,305520
 ,5083009,ROUND LED LIGHT 10-INCH,Vivitar,VIVRL10KITN-NOC-STK-12,8.81,16,Iluminación,Iluminación Interior LED,,,,,
 ,5083115,Kids Wired Headphone (6-9),Vivitar,MZX4200-BLUBESP-6,7.33,368,Comunicaciones,Cintillos telefónicos,,,,,
-,5088022,GPR-55 TONER Yellow,Canon,0484C003,233.71,1,Suministros y Medios,Suministros Láser,260268,,294874,,307432
-,5091592,330X HIGH-CAPACITY CARTRIDGE,Hp,W1330X,145.72,5,Suministros y Medios,Suministros Láser,264078,,162990,,165913
+,5088022,GPR-55 TONER Yellow,Canon,0484C003,233.71,1,Suministros y Medios,Suministros Láser,260268,,295217,,307603
+,5091592,330X HIGH-CAPACITY CARTRIDGE,Hp,W1330X,145.72,5,Suministros y Medios,Suministros Láser,264078,,161990,,165646
 ,5092293,Polycom Studio replacement wall mounting,Poly,2200-85898-001,39.41,1,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,5112619,USB MINI LAVALIER STREAMING MICROPHONE,Vivitar,VIVMIC101-NOCSA-12,4.07,765,Dispositivos Audio/Video,Micrófonos Entretención/Pro,,,,,
-,5116169,Aruba 6100 48G CL4 4SFP+ Swch,Hewlett Packard Enterprise,JL675A,2031.9,4,Dispositivos de Red,Switches Estaqueables,380796,,2295206,,2799904
-,5116173,Aruba 6100 12G PoE+ 2SFP+ 139W Switch,Hewlett Packard Enterprise,JL679A,797.16,10,Dispositivos de Red,Switches Estaqueables,380804,,879900,,886237
-,5129758,Toner HP 414X Cyan,Hp,W2021X,239.83,1,Suministros y Medios,Suministros Láser,260014,,278533,299900,292777
-,5134922,TONER T03 Negro,Canon,2725C001,219.4,19,Suministros y Medios,Suministros Láser,260490,,243990,,270578
+,5116169,Aruba 6100 48G CL4 4SFP+ Swch,Hewlett Packard Enterprise,JL675A,2031.9,4,Dispositivos de Red,Switches Estaqueables,380796,,2285546,,2790309
+,5116173,Aruba 6100 12G PoE+ 2SFP+ 139W Switch,Hewlett Packard Enterprise,JL679A,797.16,10,Dispositivos de Red,Switches Estaqueables,380804,,873900,,881305
+,5129758,Toner HP 414X Cyan,Hp,W2021X,239.83,1,Suministros y Medios,Suministros Láser,260014,,277232,299900,292344
+,5134922,TONER T03 Negro,Canon,2725C001,219.4,19,Suministros y Medios,Suministros Láser,260490,,243990,,270664
 ,5135728,DIGITALPERSONA UAREU 4500 READER,Digital Persona,50013-001-104,56.49,945,Seguridad Física,Disp de Seguridad Biométricos y Comp,,,,,
-,5137457,LJ Managed MFP E42540f Printer,Hp,3PZ75A,391.1,192,Impresoras,Multifuncionales Inkjet,112825,,414619,,439150
-,5137459,HP Color LaserJet Managed E45028dn,Hp,3QA35A,434.61,30,Impresoras,Impresoras Láser/LED color,168925,,488374,,490677
-,5138866,HP Multifuncional Mono Laserjet M236SDW,Hp,9YG09A,147.92,63,Impresoras,Multifuncionales Láser Mono,220514,,167990,359990,204995
+,5137457,LJ Managed MFP E42540f Printer,Hp,3PZ75A,391.1,192,Impresoras,Multifuncionales Inkjet,112825,,413237,,437676
+,5137459,HP Color LaserJet Managed E45028dn,Hp,3QA35A,434.61,30,Impresoras,Impresoras Láser/LED color,168925,,490752,,492136
+,5138866,HP Multifuncional Mono Laserjet M236SDW,Hp,9YG09A,147.92,63,Impresoras,Multifuncionales Láser Mono,220514,,167262,359990,204617
 ,5142545,4 Port USB C Hub 5Gbps 3A/1C- 11in Cable,Startech.Com,HB30CM3A1CB,32.41,10,Cables,Cables y Adaptadores USB,,,,,
-,5163607,Toner HP 136A Negro Original,Hp,W1360A,51.52,61,Suministros y Medios,Suministros Láser,260056,,55438,,62816
-,5163608,Toner HP 136X Negro Original,Hp,W1360X,88.85,40,Suministros y Medios,Suministros Láser,263406,,95612,,103136
+,5163607,Toner HP 136A Negro Original,Hp,W1360A,51.52,61,Suministros y Medios,Suministros Láser,260056,,55253,,62285
+,5163608,Toner HP 136X Negro Original,Hp,W1360X,88.85,40,Suministros y Medios,Suministros Láser,263406,,95294,,102879
 ,5175783,Universal 3-in-1 Combination Lock - Rese,Kensington,K62316WW,32.87,45,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5175840,PCIe Card with Serial and Parallel Port,Startech.Com,PEX1S1P950,44.1,5,Dispositivos de Red,ROMs de Inicio y Brackets,,,,,
 ,5176588,ZOWIE CAMADE II ORGANIZADOR DE CABLES,Benq,9H.N1DGB.A2E,20.28,24,Cables,Administración para Cables,,,,,
@@ -567,20 +567,20 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5177612,PRIMO MOUSEPAD SUM-YELLOW,Trust,22760,2.2,53,Video Juegos y Consolas,Otros Accesorios para Videojuegos,73286,,,,
 ,5179400,4 Port USB 3.0 Hub 5Gbps 4A - 28cm Cable,Startech.Com,HB30AM4AB,33.94,4,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
 ,5186060,32 inch Monitor Privacy Screen Filter,Startech.Com,PRIVSCNMON32,159.53,5,Pantallas,Filtros Anti-reflejo para Monitores,,,,,
-,5217789,HPE 2.4TB SAS 10K SFF BC 512e MV HDD,Hewlett Packard Enterprise,P28352-B21,688.6,8,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),150694,,770858,,814162
-,5217792,HPE 1.2TB SAS 10K SFF BC MV HDD,Hewlett Packard Enterprise,P28586-B21,459.8,18,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),149787,,359990,,488818
+,5217789,HPE 2.4TB SAS 10K SFF BC 512e MV HDD,Hewlett Packard Enterprise,P28352-B21,688.6,8,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),150694,,767960,,811539
+,5217792,HPE 1.2TB SAS 10K SFF BC MV HDD,Hewlett Packard Enterprise,P28586-B21,459.8,18,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),149787,,358990,,486968
 ,5217837,HPE DL36X Gen10+ Stnd Fan Kit,Hewlett Packard Enterprise,P37861-B21,114.5,1,Componentes de Sistema,Componentes de Gabinete,,,,,
 ,5224313,AEXXO FOLIO CASE 10.1 BLACK,Trust,21068,7.17,389,Computadores Servidores y Notebooks,Accesorios para Tablet PCs,,,,,
 ,5232105,6ft USB C to HDMI Cable 4K 60Hz HDR10,Startech.Com,CDP2HDMM2MH,29.13,1,Cables,Cables y Adaptadores de Video,,,,,
-,5232301,CARTUCHO TINTA PRO12 PH BLK 700ML,Epson,T44H120,249.63,2,Suministros y Medios,Suministros Inyección de Tinta,270772,,270027,,275841
-,5232304,CARTUCHO TINTA PRO12 YELLOW 700ML,Epson,T44H420,249.63,2,Suministros y Medios,Suministros Inyección de Tinta,270731,,270936,,276022
+,5232301,CARTUCHO TINTA PRO12 PH BLK 700ML,Epson,T44H120,249.63,2,Suministros y Medios,Suministros Inyección de Tinta,270772,,271251,,276401
+,5232304,CARTUCHO TINTA PRO12 YELLOW 700ML,Epson,T44H420,249.63,2,Suministros y Medios,Suministros Inyección de Tinta,270731,,271251,,276401
 ,5232437,LEVEL UP MOBILE MOUSE GAMING GRIP,Vivitar,LU738-NOC-SA-6,4.2,5227,Dispositivos de Entrada,Mouse,,,,,
 ,5232447,Clip on RGB Phone Mini Ring Light,Vivitar,VIVRLRGBMINI-NOC-SA,3.46,184,Video Juegos y Consolas,Otros Accesorios para Videojuegos,,,,,
 ,5232448,LED Sunset Lamp,Vivitar,VIVSL5VG-BLK-SA-4,6.99,15,Video Juegos y Consolas,Otros Accesorios para Videojuegos,,,,,
-,5232490,CARTUCHO TINTA PRO12 ORANGE 700ML,Epson,T44HA20,249.63,2,Suministros y Medios,Suministros Inyección de Tinta,270770,,270936,,276022
+,5232490,CARTUCHO TINTA PRO12 ORANGE 700ML,Epson,T44HA20,249.63,2,Suministros y Medios,Suministros Inyección de Tinta,270770,,271251,,276401
 ,5267449,Cleaning Card Kit Improved ZC100/300 2,Zebra,105999-310-01,13.66,379,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,
 ,5267678,"Network Card, DP 10G-SFP+ NVR4 Standard",Hanwha Techwin,HD-NVR4X-STD-10GBE,595.28,1,Seguridad Física,Componentes de Videovigilancia,,,,,
-,5274438,MONITOR VA2715-2K 27IN,Viewsonic,VA2715-2K-MHD,109.18,735,Pantallas,Monitores LCD/LED,385649,,121706,,129520
+,5274438,MONITOR VA2715-2K 27IN,Viewsonic,VA2715-2K-MHD,109.18,735,Pantallas,Monitores LCD/LED,385649,,121706,,129462
 ,5275980,USB C Dock Triple 4K - 100W PD 6x USB,Startech.Com,DK31C2DHSPDUE,356.01,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,5315800,Scan handle for ScanPal EDA52. Compatibl,Honeywell,EDA52-SH-R,53.64,8,Productos POS/AIDC/Código de Barras,Accesorios Terminales POS,,,,,
 ,5315826,EDA52 ACC Battery (3.8V 4500mAh),Honeywell,50172021-001,45.78,22,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
@@ -588,41 +588,41 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5323328,3ft Certified DisplayPort 1.4 Cable 8K,Startech.Com,DP14VMM1M,17.06,4,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,5325684,USB 3.0 to 4 HDMI Adapter - Quad Monitor,Startech.Com,USB32HD4,121.28,9,Cables,Cables y Adaptadores de Audio,,,,,
 ,5348498,HP Black GT Printhead,Hp,M0H51AL,21.15,35,Suministros y Medios,Suministros Láser,,,,,
-,5349704,Toner HP 330A Negro W1330A,Hp,W1330A,99.01,58,Suministros y Medios,Suministros Láser,264067,,106538,,115342
-,5352562,ARUBA 6000 48G CL4 4SFP SWCH,Hewlett Packard Enterprise,R8N85A,1652.0,9,Dispositivos de Red,Switches Estaqueables,379762,,1815900,,1915199
+,5349704,Toner HP 330A Negro W1330A,Hp,W1330A,99.01,58,Suministros y Medios,Suministros Láser,264067,,106182,,115012
+,5352562,ARUBA 6000 48G CL4 4SFP SWCH,Hewlett Packard Enterprise,R8N85A,1652.0,9,Dispositivos de Red,Switches Estaqueables,379762,,1801900,,1908636
 ,5365160,Teclado DELL Modelo Alienware Perfil Baj,Dell,AW510K,153.73,6,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,168859,,139990,,159062
-,5365909,960GB SSD SATA RI 6GBPS W/ 3.5 S4520,Dell,345-BDQM,570.8,3,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),191696,,647990,,880840
+,5365909,960GB SSD SATA RI 6GBPS W/ 3.5 S4520,Dell,345-BDQM,570.8,3,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),191696,,645990,,878147
 ,5374862,Desk Mount Dual Monitor Arm - 32in VESA,Startech.Com,ARMDUALPIVOT,263.66,2,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,5386083,Combo HP Teclado + Mouse alambrico 150,Hp,240J7AA#ABM,10.14,5118,Dispositivos de Entrada,Mouse,,,,,
 ,5386999,SATA PCIe Card Controller Card 10 Ports,Startech.Com,10P6G-PCIE-SATA-CARD,108.05,5,Dispositivos de Almacenamiento,Controladoras de Discos SATA,,,,,
-,5445653,USB to Ethernet Adapter - USB 3.0/3.2,Startech.Com,USB31000S2,28.21,1,Dispositivos de Almacenamiento,Adaptadores iSCSI,382317,,32500,,58024
+,5445653,USB to Ethernet Adapter - USB 3.0/3.2,Startech.Com,USB31000S2,28.21,1,Dispositivos de Almacenamiento,Adaptadores iSCSI,382317,,31900,,57899
 ,5445654,Dual TV Cart - 37-60in TVs - Height Ajs,Startech.Com,STNDMTVDUO,790.24,2,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,5452498,HPE SN1610E 32Gb 2p FC HBA,Hewlett Packard Enterprise,R2J63A,2338.9,2,Dispositivos de Almacenamiento,Adaptadores Bus de Fibra (HBAs),382424,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,141.51,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.38,159,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25726
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.38,159,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25681
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,30.24,7,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,19.23,31,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5494499,HP ScanJet B Roller Unit,Hp,618J9A,60.95,50,Suministros y Medios,Suministros Láser,,,,,
 ,5500060,Laptop Stand for Desk - Stand for Laptop,Startech.Com,LAPTOP-STAND-SILVER,64.94,9,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5505635,USB C Charging Cable - 50cm (20in) Coil,Startech.Com,R2CCC-50C-USB-CABLE,11.36,7,Cables,Cables y Adaptadores USB,,,,,
-,5508286,4TB Hard Drive SATA 6Gbps 7.2K 512n 3.5,Dell,400-BLLF,246.93,16,Dispositivos de Almacenamiento,Discos Duros SATA,248495,,276266,,315517
+,5508286,4TB Hard Drive SATA 6Gbps 7.2K 512n 3.5,Dell,400-BLLF,246.93,16,Dispositivos de Almacenamiento,Discos Duros SATA,248495,,275300,,314254
 ,5509330,3ft USB to Serial Cable/RS232 Adapter,Startech.Com,1P3FPC-USB-SERIAL,31.69,3,Cables,Cables Seriales y Adaptadores,,,,,
 ,5509925,HyperX ChargePlay Duo for PS5,Hp,51P68AA,19.28,107,Comunicaciones,Componentes VOIP,,,,,
 ,5515204,SanDisk Extreme microSDXC 512 GB UHS-I,Sandisk,SDSQXAV-512G-GN6MA,98.02,1,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,195292,,176990,,176990
-,5527171,INSTANT ON AP25 RW 4X4 WI-FI 6 AP,Hewlett Packard Enterprise,R9B28A,164.88,4,Dispositivos de Red,Access Points (AP) inalámbricos,380968,,178500,,197221
-,5527631,2TB HDD SATA 6ps 7.2K 512n 3.5in Hot-Plu,Dell,161-BBRC,198.8,1,Dispositivos de Almacenamiento,Discos Duros SATA,280418,,184496,,194154
+,5527171,INSTANT ON AP25 RW 4X4 WI-FI 6 AP,Hewlett Packard Enterprise,R9B28A,164.88,4,Dispositivos de Red,Access Points (AP) inalámbricos,380968,,177734,,195161
+,5527631,2TB HDD SATA 6ps 7.2K 512n 3.5in Hot-Plu,Dell,161-BBRC,198.8,1,Dispositivos de Almacenamiento,Discos Duros SATA,280418,,184496,,191381
 ,5535014,"Barcode Label Printer, Star, PM45A,",Honeywell,PM45A10000000201,937.42,9,Impresoras,Impresoras de Etiquetas Código de Barras,,,,,
 ,5544108,DP to Dual HDMI MST HUB 4K 60Hz DP 1.4,Startech.Com,MST14DP122HD,56.29,5,Cables,Cables y Adaptadores de Video,,,,,
 ,5546225,ARUBA 1G SFP LC SX 500M MMF XCVR REPLACE,Hewlett Packard Enterprise,J4858D,132.91,37,Dispositivos de Red,Transceivers,,,,,
 ,5554928,23 in. Monitor Privacy Screen - Universa,Startech.Com,PRIVACY-SCREEN-23M,78.55,1,Pantallas,Filtros Anti-reflejo para Monitores,,,,,
 ,5560702,Cable Management Sleeve Wire Wraps,Startech.Com,WKSTNCMFLX,17.63,6,Cables,Herramientas y Kits,,,,,
-,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,119.16,342,Suministros y Medios,Suministros Láser,260106,,114944,149990,144284
-,5576934,HP 151X Black Original LaserJet Toner IS,Hp,W1510X,241.49,125,Suministros y Medios,Suministros Láser,260341,,259859,276900,281749
-,5577005,HP 154A Black Org LaserJet Tank Rld Kit,Hp,W1540A,10.82,29,Suministros y Medios,Suministros Láser,260326,,11207,,12923
-,5577006,HP 154X HY Blk Org LaserJetTank Rld Kit,Hp,W1540X,16.24,124,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18014,,20292
-,5582999,Toner HP Samsung CLT-M603L Magenta,Hp,SV402A,111.55,7,Suministros y Medios,Suministros Láser,270629,,120665,,125625
-,5602137,TONER HP 658A NEGRO LASERJET,Hp,W2000A,177.55,14,Suministros y Medios,Suministros Láser,260166,,191052,,200467
+,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,119.16,342,Suministros y Medios,Suministros Láser,260106,,114944,149990,144056
+,5576934,HP 151X Black Original LaserJet Toner IS,Hp,W1510X,241.49,125,Suministros y Medios,Suministros Láser,260341,,258993,,280514
+,5577005,HP 154A Black Org LaserJet Tank Rld Kit,Hp,W1540A,10.82,29,Suministros y Medios,Suministros Láser,260326,,11169,,12915
+,5577006,HP 154X HY Blk Org LaserJetTank Rld Kit,Hp,W1540X,16.24,124,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,17900,,20033
+,5582999,Toner HP Samsung CLT-M603L Magenta,Hp,SV402A,111.55,7,Suministros y Medios,Suministros Láser,270629,,127320,,127320
+,5602137,TONER HP 658A NEGRO LASERJET,Hp,W2000A,177.55,14,Suministros y Medios,Suministros Láser,260166,,190415,,199552
 ,5610354,HSE251E 21.0MM B ON W HEAT SHRINK TAPE,Brother,HSE251E,30.38,37,Suministros y Medios,Suministros Matriz de Punto,,,,,
 ,5610383,HSE261E 31.0MM B ON W HEAT SHRINK TAPE,Brother,HSE261E,34.35,2,Suministros y Medios,Suministros Matriz de Punto,,,,,
 ,5610384,HSE231E 11.2MM B ON W HEAT SHRINK TAPE,Brother,HSE231E,26.54,4,Suministros y Medios,Suministros Matriz de Punto,,,,,
@@ -630,21 +630,21 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5610432,ERGONOMIC SOLUTIONS PARA X12,Lenovo,40CGPOSUF1,125.59,11,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5611218,HPE ANW UXI T BAR AND CEILING MOUNTING K,Hewlett Packard Enterprise,R3T84A,52.88,1,Cables,Administración para Cables,,,,,
 ,5611603,T800100 CARTUCHO NG FOTO 700 ML P10000,Epson,T800100,190.78,1,Suministros y Medios,Suministros para Plotters,271367,,,,
-,5611604,T800200 CARTUCHO CYAN 700 ML P10000,Epson,T800200,190.78,1,Suministros y Medios,Suministros para Plotters,271366,,207061,,207061
+,5611604,T800200 CARTUCHO CYAN 700 ML P10000,Epson,T800200,190.78,1,Suministros y Medios,Suministros para Plotters,271366,,207287,,207287
 ,5611665,T800300 CARTUCHO MAGENTA INTENSA 700 ML,Epson,T800300,190.78,1,Suministros y Medios,Suministros Inyección de Tinta,278029,,,,
 ,5611666,T800400 CARTUCHO AMARILLO 700 ML P10000,Epson,T800400,190.78,1,Suministros y Medios,Suministros para Plotters,,,,,
 ,5611667,T800500 CARTUCHO CYAN CLARA 700 ML P1000,Epson,T800500,190.78,1,Suministros y Medios,Suministros para Plotters,271369,,,,
 ,5611668,T800600 CARTUCHO MAGENTA CLARA INTENSA 7,Epson,T800600,190.78,1,Suministros y Medios,Suministros para Plotters,271364,,,,
-,5611669,T800700 CARTUCHO GRIS OSCURO 700 ML P100,Epson,T800700,190.78,1,Suministros y Medios,Suministros para Plotters,271363,,207061,,207061
+,5611669,T800700 CARTUCHO GRIS OSCURO 700 ML P100,Epson,T800700,190.78,1,Suministros y Medios,Suministros para Plotters,271363,,207287,,207287
 ,5611671,T800900 CARTUCHO GRIS 700 ML P10000,Epson,T800900,190.78,1,Suministros y Medios,Suministros para Plotters,271368,,,,
 ,5617653,ADAPTER SSD EXTERNAL CRUCIAL,Crucial,CTUSBCFUSBAMAD,4.38,10,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),,,,,
 ,5619260,HDMI to DisplayPort Adapter HDMI 4K60Hz,Startech.Com,128-HDMI-DISPLAYPORT,53.9,4,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,5620592,CV5000DP USB-C TO DISPLAYPORT1.4 ADAPTER,Kensington,K34680WW,17.91,46,Cables,Cables y Adaptadores de Video,,,,,
-,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,138,Suministros y Medios,Suministros Láser,260006,,71450,,81383
-,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,112.44,145,Suministros y Medios,Suministros Láser,260322,,119900,130990,130718
-,5629797,TONER T04 Amarillo,Canon,2977C001,359.02,2,Suministros y Medios,Suministros Láser,355986,,408990,,408990
-,5629798,TONER T04 Magenta,Canon,2978C001,359.02,2,Suministros y Medios,Suministros Láser,355985,,408990,,408990
-,5629799,TONER T04 Cyan,Canon,2979C001,359.02,2,Suministros y Medios,Suministros Láser,355987,,408990,,408990
+,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,138,Suministros y Medios,Suministros Láser,260006,,71530,,81122
+,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,112.44,145,Suministros y Medios,Suministros Láser,260322,,119900,,130212
+,5629797,TONER T04 Amarillo,Canon,2977C001,359.02,2,Suministros y Medios,Suministros Láser,355986,,409990,,409990
+,5629798,TONER T04 Magenta,Canon,2978C001,359.02,2,Suministros y Medios,Suministros Láser,355985,,409990,,409990
+,5629799,TONER T04 Cyan,Canon,2979C001,359.02,2,Suministros y Medios,Suministros Láser,355987,,409990,,409990
 ,5629800,TONER T04 Negro,Canon,2980C001,197.78,2,Suministros y Medios,Suministros Láser,,,,,
 ,5634074,LA ZC100 SIN LA ZC100 SINGLE SIDED USB W,Zebra,ZC11-0000Q00LA00,769.84,6,Impresoras,Impresoras de Tarjetas de Identificación,,,,,
 ,5634453,Foldable Laptop Riser stand Portable,Startech.Com,LAPTOP-RISER-BAR,47.96,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
@@ -652,7 +652,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5641072,PTD410,Brother,PTD410,54.64,2,Impresoras,Impresoras de Etiquetas Hogar/Oficina,,,,,
 ,5645511,HP LASERJET DEPARTMENT STAND,Hp,6GW53A,213.54,21,Impresoras,Muebles para Impresora/Plotter,,,,,
 ,5666055,Network Management Card for Easy UPS,Apc,AP9544,130.1,7,Protección Eléctrica y Racks,Administración UPS,,,,,
-,5686037,PFI 050 C,Canon,5699C001,54.54,39,Suministros y Medios,Suministros para Plotters,259979,,64366,64990,68735
+,5686037,PFI 050 C,Canon,5699C001,54.54,39,Suministros y Medios,Suministros para Plotters,259979,,64285,64990,68313
 ,5686040,MAINTENANCE CARTRIDGE MC-32,Canon,1156C009,51.28,13,Suministros y Medios,Suministros para Plotters,,,,,
 ,5690099,HPE DL36X G10+ 2SFF SAS/SATA TM CBL KIT,Hewlett Packard Enterprise,P55883-B21,152.1,5,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5690925,6in Hook and Loop Cable Ties 50pk,Startech.Com,B506I-HOOK-LOOP-TIES,12.88,3,Cables,Administración para Cables,,,,,
@@ -666,70 +666,70 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5721770,HPE DL360 Gen11 Stg Cntrl Enable Cbl Kit,Hewlett Packard Enterprise,P48918-B21,40.1,4,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5721772,HPE DL360 GEN11 NS204I-U FRONT CBL KIT,Hewlett Packard Enterprise,P48920-B21,91.5,2,Cables,Cables Seriales y Adaptadores,,,,,
 ,5721785,HPE DL380 G11 NS204i-u Internal Cbl Kit,Hewlett Packard Enterprise,P52152-B21,163.1,2,Cables,Cables y Adaptadores para Modem,,,,,
-,5723328,HP 230A Blk LaserJet Toner Cartridge,Hp,W2300A,90.25,132,Suministros y Medios,Suministros Láser,260217,,97116,,107710
-,5723329,HP 230X Blk LaserJet Toner Cartridge,Hp,W2300X,171.82,53,Suministros y Medios,Suministros Láser,260152,,177900,,197265
-,5723330,HP 230A Cyn LaserJet Toner Cartridge,Hp,W2301A,108.8,53,Suministros y Medios,Suministros Láser,260912,,115910,,124373
-,5723331,HP 230X Cyn LaserJet Toner Cartridge,Hp,W2301X,210.68,73,Suministros y Medios,Suministros Láser,260132,,226705,,242211
-,5723332,HP 230A Ylw LaserJet Toner Cartridge,Hp,W2302A,109.55,59,Suministros y Medios,Suministros Láser,260216,,117874,,134628
-,5723333,HP 230X Ylw LaserJet Toner Cartridge,Hp,W2302X,210.95,51,Suministros y Medios,Suministros Láser,260131,,224102,,237012
-,5723334,HP 230A Mgn LaserJet Toner Cartridge,Hp,W2303A,109.55,32,Suministros y Medios,Suministros Láser,260079,,99990,,127735
-,5723355,HP 230X Mgn LaserJet Toner Cartridge,Hp,W2303X,210.75,93,Suministros y Medios,Suministros Láser,260156,,221026,,235573
+,5723328,HP 230A Blk LaserJet Toner Cartridge,Hp,W2300A,90.25,132,Suministros y Medios,Suministros Láser,260217,,96792,,107326
+,5723329,HP 230X Blk LaserJet Toner Cartridge,Hp,W2300X,171.82,53,Suministros y Medios,Suministros Láser,260152,,177900,,196636
+,5723330,HP 230A Cyn LaserJet Toner Cartridge,Hp,W2301A,108.8,53,Suministros y Medios,Suministros Láser,260912,,114944,,123859
+,5723331,HP 230X Cyn LaserJet Toner Cartridge,Hp,W2301X,210.68,73,Suministros y Medios,Suministros Láser,260132,,225949,,241271
+,5723332,HP 230A Ylw LaserJet Toner Cartridge,Hp,W2302A,109.55,59,Suministros y Medios,Suministros Láser,260216,,117481,,132636
+,5723333,HP 230X Ylw LaserJet Toner Cartridge,Hp,W2302X,210.95,51,Suministros y Medios,Suministros Láser,260131,,223136,,236192
+,5723334,HP 230A Mgn LaserJet Toner Cartridge,Hp,W2303A,109.55,32,Suministros y Medios,Suministros Láser,260079,,99990,,127512
+,5723355,HP 230X Mgn LaserJet Toner Cartridge,Hp,W2303X,210.75,93,Suministros y Medios,Suministros Láser,260156,,220289,,234591
 ,5735143,CABEZAL DE IMPRESION PF-08,Canon,5706C003,199.53,3,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,5735558,Slot in WiFi 6 0 BlueTooth 5 0 module,Viewsonic,VB-WIFI-004,26.05,77,Dispositivos de Red,Tarjetas de Red inalámbricas,,,,,
-,5737439,Toner HP 213A Original LaserJet Cyan,Hp,W2131A,173.14,25,Suministros y Medios,Suministros Láser,260277,,186303,,198861
-,5737442,Toner HP 213A Original LaserJet Amarillo,Hp,W2132A,173.13,31,Suministros y Medios,Suministros Láser,260274,,186292,,201319
-,5737444,Toner HP 213A Original LJet Magenta,Hp,W2133A,173.11,29,Suministros y Medios,Suministros Láser,260275,,12350,,182161
-,5737466,Toner HP 213A Original LaserJet Negro,Hp,W2130A,121.95,19,Suministros y Medios,Suministros Láser,260276,,120740,,132120
+,5737439,Toner HP 213A Original LaserJet Cyan,Hp,W2131A,173.14,25,Suministros y Medios,Suministros Láser,260277,,185682,,199204
+,5737442,Toner HP 213A Original LaserJet Amarillo,Hp,W2132A,173.13,31,Suministros y Medios,Suministros Láser,260274,,185671,,200552
+,5737444,Toner HP 213A Original LJet Magenta,Hp,W2133A,173.11,29,Suministros y Medios,Suministros Láser,260275,,12350,,181549
+,5737466,Toner HP 213A Original LaserJet Negro,Hp,W2130A,121.95,19,Suministros y Medios,Suministros Láser,260276,,120740,,131648
 ,5744337,Imp Multifuncional HP Smart Tank 520,Hp,1F3W2A#AKH,111.46,2,Impresoras,Multifuncionales Inkjet,,,,,
 ,5744338,Imp Multifuncional HP Smart Tank 580,Hp,1F3Y2A#AKH,130.32,16,Impresoras,Multifuncionales Inkjet,,,,,
 ,5744342,Imp Multifuncional HP Smart Tank 750,Hp,6UU47A#AKH,187.2,12,Impresoras,Multifuncionales Inkjet,,,,,
 ,5749921,TC27 WWAN 5G WIFI 6 SE4710 6IN DISPLAY B,Zebra,WCMTB-T27B6ABC2-A6,628.23,39,Productos POS/AIDC/Código de Barras,Terminales de Datos Portátiles,,,,,
 ,5749934,TC22/TC27 TEMPERED GLASS SCREEN PROTECTO,Zebra,SG-TC2L-SCRNPT1-01,17.21,90,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
-,5750493,ULTRACHROME XD3 PHOTO BLACK CART 700ML,Epson,T50L120,240.48,3,Suministros y Medios,Suministros Inyección de Tinta,259952,,263522,,279286
-,5750494,ULTRACHROME XD3 CYAN CART 700ML,Epson,T50L220,240.48,3,Suministros y Medios,Suministros Inyección de Tinta,259956,,263522,,279286
-,5750916,ULTRACHROME XD3 YELLOW CART 700ML,Epson,T50L420,240.48,3,Suministros y Medios,Suministros Inyección de Tinta,259954,,263522,,279286
+,5750493,ULTRACHROME XD3 PHOTO BLACK CART 700ML,Epson,T50L120,240.48,3,Suministros y Medios,Suministros Inyección de Tinta,259952,,263522,,279543
+,5750494,ULTRACHROME XD3 CYAN CART 700ML,Epson,T50L220,240.48,3,Suministros y Medios,Suministros Inyección de Tinta,259956,,263522,,279543
+,5750916,ULTRACHROME XD3 YELLOW CART 700ML,Epson,T50L420,240.48,3,Suministros y Medios,Suministros Inyección de Tinta,259954,,263522,,279543
 ,5753871,4K 60Hz HDMI over Fiber Extender Kit,Startech.Com,ST121HD20FXA2,743.48,1,Dispositivos de Entrada/Salida,Conmutadores y Extensores Serial/Paralel,,,,,
 ,5753872,16-Port Industrial USB 3.0 Hub/Switch,Startech.Com,5G16AINDS-USB-A-HUB,357.5,2,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
-,5785893,POWERLITE L210SF PROJECTOR,Epson,V11HA75020,1937.1,3,Dispositivos Audio/Video,Proyectores LCD,271090,,2116117,,2231956
+,5785893,POWERLITE L210SF PROJECTOR,Epson,V11HA75020,1937.1,3,Dispositivos Audio/Video,Proyectores LCD,271090,,2116157,,2235424
 ,5825211,LA CX 50 GEN2 SET,Poly,R9861622NAB2,2776.1,1,Comunicaciones,Teléfonos IP Inalámbricos,,,,,
-,5862228,DRAM DDR4 U-DIMM 16GB 3200 SINGLE TRAY C,Adata Technology,AD4U320016G22-SGN,168.84,200,Componentes de Sistema,Memoria Genérica,109547,,125570,,173164
+,5862228,DRAM DDR4 U-DIMM 16GB 3200 SINGLE TRAY C,Adata Technology,AD4U320016G22-SGN,168.84,200,Componentes de Sistema,Memoria Genérica,109547,,125570,,172707
 ,5862576,EDA52 EDA56 Wi-Fi 6 EDA57 Quad battery c,Honeywell,EDA52-QBC-1,156.01,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
-,5862817,HPE ANW 6200F 24G CL4 4SFP+370W Switch,Hewlett Packard Enterprise,JL725B,2913.6,9,Dispositivos de Red,Switches Estaqueables,389931,,3212900,,3260445
+,5862817,HPE ANW 6200F 24G CL4 4SFP+370W Switch,Hewlett Packard Enterprise,JL725B,2913.6,9,Dispositivos de Red,Switches Estaqueables,389931,,3198900,,3247945
 ,5874490,HP KIT PRELUDE 15 BOOM MIC MOUSE 200,Hp,7S4S5LA,31.51,4,Dispositivos de Entrada,Mouse,,,,,
 ,5881463,ADAPTADOR SSD 25 A 35,Crucial,CTSSDBRKT35R,7.83,71,Suministros y Medios,Etiquetas Código de Barra para Cartuchos,,,,,
 ,5891818,HPE DL3X0 GEN11 1U STND HEAT SINK KIT,Hewlett Packard Enterprise,P48904-B21,136.0,5,Computadores Servidores y Notebooks,Componentes Terminales,,,,,
 ,5893153,KITDSPLY MNTPOLY STUDIO X50,Poly,875M2AA,187.04,3,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,5901282,Tinta Cyan para Discproducer PP-100II/ii,Epson,C13S020688,29.28,9,Suministros y Medios,Suministros Inyección de Tinta,391152,,34081,,34640
-,5901283,Discproducer Ink PJIC7(LC) Light Cyan (M,Epson,C13S020689,29.28,1,Suministros y Medios,Suministros Inyección de Tinta,368942,,32834,,35305
-,5901485,Discproducer Ink PJIC7(Y) Yellow (MOQ=10,Epson,C13S020692,29.28,5,Suministros y Medios,Suministros Inyección de Tinta,368616,,31868,,34617
-,5901486,Epson Disc producer Ink Cartridge Black,Epson,C13S020693,29.28,8,Suministros y Medios,Suministros Inyección de Tinta,368686,,31868,,34703
-,5901543,Tinta Magenta para Discproducer PP-100II,Epson,C13S020691,29.28,4,Suministros y Medios,Suministros Inyección de Tinta,367089,,31868,,34055
+,5901283,Discproducer Ink PJIC7(LC) Light Cyan (M,Epson,C13S020689,29.28,1,Suministros y Medios,Suministros Inyección de Tinta,368942,,32834,,35204
+,5901485,Discproducer Ink PJIC7(Y) Yellow (MOQ=10,Epson,C13S020692,29.28,5,Suministros y Medios,Suministros Inyección de Tinta,368616,,30902,,34122
+,5901486,Epson Disc producer Ink Cartridge Black,Epson,C13S020693,29.28,8,Suministros y Medios,Suministros Inyección de Tinta,368686,,30902,,34129
+,5901543,Tinta Magenta para Discproducer PP-100II,Epson,C13S020691,29.28,4,Suministros y Medios,Suministros Inyección de Tinta,367089,,30902,,33478
 ,5909123,SCANNER KIT HH492 WIRELESS 2D BLK,Honeywell,HH492-R1-1USB-5,102.84,30,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
-,5909613,Ink Tank 130 ml PFI-121 Magenta,Canon,6267C001,67.31,5,Suministros y Medios,Suministros para Plotters,260348,,78990,,84642
+,5909613,Ink Tank 130 ml PFI-121 Magenta,Canon,6267C001,67.31,5,Suministros y Medios,Suministros para Plotters,260348,,78990,,84673
 ,5909615,Tanque de tinta 300 ml PFI-321 Magenta,Canon,6269C001,114.59,4,Suministros y Medios,Suministros para Plotters,278672,,139990,,139990
-,5915079,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,156.25,19,Suministros y Medios,Suministros Inyección de Tinta,259861,,172576,,196671
-,5915080,Tinta HP DesignJet Plotter 300-ml Magent,Hp,676M7A,156.35,5,Suministros y Medios,Suministros Inyección de Tinta,262912,,172684,,198586
-,5915081,Tinta HP DesignJet Plotter 300-ml Amaril,Hp,676M8A,156.43,73,Suministros y Medios,Suministros Inyección de Tinta,259860,,172782,,199606
+,5915079,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,156.25,19,Suministros y Medios,Suministros Inyección de Tinta,259861,,172001,,196153
+,5915080,Tinta HP DesignJet Plotter 300-ml Magent,Hp,676M7A,156.35,5,Suministros y Medios,Suministros Inyección de Tinta,262912,,172109,,198114
+,5915081,Tinta HP DesignJet Plotter 300-ml Amaril,Hp,676M8A,156.43,73,Suministros y Medios,Suministros Inyección de Tinta,259860,,172206,,199146
 ,5916676,AC POWER SUPPLY 12V 30W 1 35 X 3 5MM VI,Honeywell,3011-8248-001,56.84,11,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
 ,5923756,POLY STUDIO X70 OPTIONAL TABLE STAND,Poly,875L3AA,107.0,4,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,5931566,CLUTCH GLADIATE RGB GAMING CONTROLLER,Hp,7D6H2AA,34.88,236,Video Juegos y Consolas,Gamepads,,,,,
 ,5937830,PC42E-T USB Ethernet 200dpi Black 1 and,Honeywell,PC42E-TB02200,170.0,15,Impresoras,Impresoras de Etiquetas Código de Barras,,,,,
 ,5943025,HPE ML110 GEN11 LFF PCIE CBL KIT,Hewlett Packard Enterprise,P53484-B21,77.6,1,Computadores Servidores y Notebooks,Componentes Blade,,,,,
-,6076847,2.5IN 2.4TB 10K SAS 12GB HS 512E HDD V2,Lenovo,4XB7A83970,904.0,1,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),249456,,996900,,1011945
-,6113513,Digital Colour Printer,Brother,HLL3280CDW,338.43,4,Impresoras,Impresoras Láser/LED color,227830,,364331,381900,385445
+,6076847,2.5IN 2.4TB 10K SAS 12GB HS 512E HDD V2,Lenovo,4XB7A83970,904.0,1,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),249456,,989900,,1006445
+,6113513,Digital Colour Printer,Brother,HLL3280CDW,338.43,4,Impresoras,Impresoras Láser/LED color,227830,,363116,381900,385003
 ,6119109,GPR 58 DRUM UNIT MAGENTA,Canon,2188C003,241.86,7,Suministros y Medios,Suministros Láser,,,,,
 ,6119110,GPR 58 DRUM UNIT YELLOW,Canon,2189C003,233.95,2,Suministros y Medios,Suministros Láser,,,,,
 ,6119453,High Performance Fan 16G,Dell,121-BBBS,31.17,1,Componentes de Sistema,Componentes de Gabinete,,,,,
 ,6123823,T01D200 CYAN WF-C579R 20.000 PAG,Epson,T01D200,133.64,1,Suministros y Medios,Suministros Inyección de Tinta,259967,,149990,,156590
 ,6123824,T01D300 MAGENTA WF-C579R 20.000 PAG,Epson,T01D300,133.64,1,Suministros y Medios,Suministros Inyección de Tinta,259969,,137990,,151940
 ,6123845,T01D400 AMARILLO WF-C579R 20.000 PAG,Epson,T01D400,133.64,1,Suministros y Medios,Suministros Inyección de Tinta,259968,,138230,,152000
-,6123846,T02Q HIGH-CAP BLACK INK CARTRIDGE,Epson,T02Q120,207.89,6,Suministros y Medios,Suministros Inyección de Tinta,263300,,235500,,238160
-,6123847,T02Q HIGH-CAP CYAN INK CARTRIDGE,Epson,T02Q220,337.08,5,Suministros y Medios,Suministros Inyección de Tinta,263301,,367771,,375880
-,6123848,T02Q HIGH-CAP MAGENTA INK CARTRIDGE,Epson,T02Q320,337.08,6,Suministros y Medios,Suministros Inyección de Tinta,263298,,367771,,381662
-,6123849,T02Q HIGH-CAP YELLOW INK CARTRIDGE,Epson,T02Q420,337.08,5,Suministros y Medios,Suministros Inyección de Tinta,263299,,367771,,378753
+,6123846,T02Q HIGH-CAP BLACK INK CARTRIDGE,Epson,T02Q120,207.89,6,Suministros y Medios,Suministros Inyección de Tinta,263300,,235500,,238493
+,6123847,T02Q HIGH-CAP CYAN INK CARTRIDGE,Epson,T02Q220,337.08,5,Suministros y Medios,Suministros Inyección de Tinta,263301,,368194,,376592
+,6123848,T02Q HIGH-CAP MAGENTA INK CARTRIDGE,Epson,T02Q320,337.08,6,Suministros y Medios,Suministros Inyección de Tinta,263298,,368194,,382018
+,6123849,T02Q HIGH-CAP YELLOW INK CARTRIDGE,Epson,T02Q420,337.08,5,Suministros y Medios,Suministros Inyección de Tinta,263299,,368194,,378361
 ,6128461,SD4842P USB-C ECO TRIPLE VIDEO DOCK,Kensington,K32810EU,164.05,5,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,6136773,DS-C330,Epson,B11B272201,292.73,3,Cámaras y Escáners,Escáners para el Hogar/Oficina,,,,,
-,6143433,HPE Networking Instant ON AP32 (RW),Hewlett Packard Enterprise,S1T23A,244.09,7,Dispositivos de Red,Access Points (AP) inalámbricos,383314,,277990,,278930
+,6143433,HPE Networking Instant ON AP32 (RW),Hewlett Packard Enterprise,S1T23A,244.09,7,Dispositivos de Red,Access Points (AP) inalámbricos,383314,,278900,,278900
 ,6150080,POLY STUDIO USB VESA MOUNT,Poly,875R9AA,129.43,10,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,6157213,HPE DL20 GEN11 2LFF/4SFF PCIE CBL KIT,Hewlett Packard Enterprise,P65413-B21,60.1,2,Cables,Cables Seriales y Adaptadores,,,,,
 ,6157215,HPE DL20 Gen11 2LFF/4SFF OCP Cbl Kit,Hewlett Packard Enterprise,P65412-B21,57.7,2,Cables,Cables Seriales y Adaptadores,,,,,
@@ -743,9 +743,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6205170,USB KIT 1D BLACK SCANNER 1250G-2 FLEX,Honeywell,1250G-2USB-1-N,82.41,46,Productos POS/AIDC/Código de Barras,Accesorios para Escáners Código de Barra,,,,,
 ,6213296,SINGLE CLICKSHARE TRAY,Barco,R9861500T01,64.11,4,Comunicaciones,Componentes de Audio Conferencia,,,,,
 ,6218458,HPE ULTRIUM UNIVERSAL CLEANING CARTRIDGE,Hewlett Packard Enterprise,C7978A,40.2,8,Suministros y Medios,Cintas de Almacenamiento,,,,,
-,6219531,T12C120-AL TINTA EPSON WF-M5399,Epson,T12C120-AL,133.95,40,Suministros y Medios,Suministros Inyección de Tinta,270675,,143990,,151085
+,6219531,T12C120-AL TINTA EPSON WF-M5399,Epson,T12C120-AL,133.95,40,Suministros y Medios,Suministros Inyección de Tinta,270675,,143990,,151259
 ,6221089,CR1100CKA-GJ0250 N4500 64G 4G 11 CHROME,Asus,90NX03V1-M008J0,287.11,1,Computadores Servidores y Notebooks,Chromebooks & Netbooks,359933,,325900,,325900
-,6224614,HP Clr LaserJtPro Multifuncional 3303fdw,Hp,499M8A,345.22,24,Impresoras,Multifuncionales Láser Color,252301,,383964,582990,453079
+,6224614,HP Clr LaserJtPro Multifuncional 3303fdw,Hp,499M8A,345.22,24,Impresoras,Multifuncionales Láser Color,252301,,381034,582990,436870
 ,6227909,ULTRACHROME HD FOTO NG CART INK 700 ML,Epson,T55K100,203.21,4,Suministros y Medios,Suministros Inyección de Tinta,259919,,,,
 ,6227946,ULTRACHROME HDX NARANJA CART INK 700 ML,Epson,T55KA00,203.21,1,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,6227947,ULTRACHROME HDX VIOLETA CART INK 700 ML,Epson,T55KD00,203.21,1,Suministros y Medios,Suministros Inyección de Tinta,266745,,218870,,218870
@@ -760,15 +760,15 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6260920,CLICKSHARE CONFERENCE CX-30 SET GEN II,Barco,R9861613NAB2,1950.0,1,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,6262636,EDA10A QUAD BATTERY CHARGER KIT,Honeywell,EDA10A-QBC-1,297.76,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
 ,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,493.09,1,Computadores Servidores y Notebooks,Notebooks,,,,,
-,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.73,183,Comunicaciones,Cintillos telefónicos,256210,,20490,,23422
-,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.85,40,Suministros y Medios,Suministros Inyección de Tinta,262183,,106250,,121859
-,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,100.06,8,Suministros y Medios,Suministros Inyección de Tinta,262152,,106250,,129397
-,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,86.13,34,Suministros y Medios,Suministros Inyección de Tinta,262283,,96990,,104017
-,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,100.06,4,Suministros y Medios,Suministros Inyección de Tinta,262151,,109990,,123437
+,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.73,183,Comunicaciones,Cintillos telefónicos,256210,,20490,,23665
+,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.85,40,Suministros y Medios,Suministros Inyección de Tinta,262183,,105284,,121224
+,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,100.06,8,Suministros y Medios,Suministros Inyección de Tinta,262152,,105284,,125024
+,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,86.13,34,Suministros y Medios,Suministros Inyección de Tinta,262283,,96990,,103610
+,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,100.06,4,Suministros y Medios,Suministros Inyección de Tinta,262151,,109990,,117505
 ,6281645,TONER CONTRACTUAL ALTA CAPACIDAD AZUL,Hp,W2151XC,105.32,42,Suministros y Medios,Suministros Láser,,,,,
 ,6281646,TONER CONTRACTUAL ALTA CAPACIDAD AMARILL,Hp,W2152XC,105.32,42,Suministros y Medios,Suministros Láser,,,,,
 ,6281648,TONER CONTRACTUAL ALTA CAPACIDAD NEGRO,Hp,W2150XC,97.94,38,Suministros y Medios,Suministros Láser,,,,,
-,6281649,KIT RECARGA TONER HP 154X NEGRO,Hp,W1540X,16.4,12,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18014,,20292
+,6281649,KIT RECARGA TONER HP 154X NEGRO,Hp,W1540X,16.4,12,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,17900,,20033
 ,6281650,TONER CONTRACTUAL ALTA CAPACIDAD ROJO,Hp,W2153XC,105.32,45,Suministros y Medios,Suministros Láser,280447,,117842,,118916
 ,6291070,200 EMPRS RED WIRELESS MOUSE,Hp,2HU82AA#ABL,7.88,540,Dispositivos de Entrada,Mouse,,,,,
 ,6291138,150 WD USB-A KBD,Hp,664R5AA#ABM,12.35,4559,Dispositivos de Entrada,Teclados,,,,,
@@ -776,16 +776,16 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6326868,HP MULTIFUNCIONAL OFFICEJT PRO9730 FRTA3,Hp,537P5C#AKY,273.09,35,Impresoras,Impresoras de Inyección de Tinta,,,,,
 ,6328556,QUAD BATTERY CHARGER CK3 AC20 CK65,Honeywell,871-230-401,255.81,4,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
 ,6338784,CARGADOR DE BATERIA DUAL HERO13 NEGRO,Gopro,AEDBD-201-AS,59.07,4,Cámaras y Escáners,Kits de Accesorios para Cámaras,,,,,
-,6340674,MONITOR QHD S5 PRO 27IN 527PQ,Hp,9D9S0UT,235.01,74,Pantallas,Monitores LCD/LED,385011,,254213,349990,292392
+,6340674,MONITOR QHD S5 PRO 27IN 527PQ,Hp,9D9S0UT,235.01,74,Pantallas,Monitores LCD/LED,385011,,231135,349990,283206
 ,6341646,PRIME Z890-P WIFI,Asus,90MB1I70-M0EAY0,242.49,19,Componentes de Sistema,Tarjetas Madre Intel,,,,,
-,6343103,285K CORE ULTRA 9 PROCESSOR,Intel,BX80768285K,559.27,8,Componentes de Sistema,Procesadores Intel,260864,,604990,,677074
-,6343160,HP 938 Yellow Original Ink Cartridge,Hp,4S6X7PL,23.05,180,Suministros y Medios,Suministros Inyección de Tinta,260018,,24933,,28642
+,6343103,285K CORE ULTRA 9 PROCESSOR,Intel,BX80768285K,559.27,8,Componentes de Sistema,Procesadores Intel,260864,,604990,,668795
+,6343160,HP 938 Yellow Original Ink Cartridge,Hp,4S6X7PL,23.05,180,Suministros y Medios,Suministros Inyección de Tinta,260018,,24850,,28616
 ,6343161,HP 938 Cyan Original Ink Cartridge,Hp,4S6X5PL,23.05,151,Suministros y Medios,Suministros Inyección de Tinta,385273,,148087,,148087
 ,6343162,HP 938 Magenta Original Ink Cartridge,Hp,4S6X6PL,23.05,78,Suministros y Medios,Suministros Inyección de Tinta,385273,,148087,,148087
 ,6343163,HP 938 Black Original Ink Cartridge,Hp,4S6X8PL,35.84,125,Suministros y Medios,Suministros Inyección de Tinta,385273,,148087,,148087
 ,6359565,BAHIA DE INTERCAMBIO EN CALIENTE PARA DI,Startech.Com,HSB1SATSASBA,36.56,10,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
-,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,72.07,16,Dispositivos de Entrada,Mouse,263737,,76990,,82639
-,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,143.28,37,Dispositivos de Entrada,Teclados,269661,,156361,,162462
+,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,72.07,16,Dispositivos de Entrada,Mouse,263737,,76990,,82834
+,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,143.28,37,Dispositivos de Entrada,Teclados,269661,,156361,,163203
 ,6370905,KIT USB SR HONEYWELL XENON ULTRA 1960G 1,Honeywell,1960GSR-2USB-N,195.29,2,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
 ,6379941,WINDOWS SVR STD 2025 64BIT SPANISH 1PK D,Microsoft,EP2-25197,894.67,11,Software,SW Sistemas Operativos Windows,,,,,
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,273.56,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
@@ -797,41 +797,41 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6450669,MS WS25 16C Std ROK AMS SW,Hewlett Packard Enterprise,P77100-DN1,1042.0,1,Software,SW Sistemas Operativos Windows,,,,,
 ,6450671,MS WS25 10C Ess ROK AMS SW,Hewlett Packard Enterprise,P77103-DN1,404.6,1,Software,SW Sistemas Operativos Windows,,,,,
 ,6450672,MS WS25 5Usr CAL WW LTU,Hewlett Packard Enterprise,P77112-B21,292.3,3,Software,SW Sistemas Operativos Windows,,,,,
-,6456330,PULSEFIRE FUSE WIRELESS,Hp,A1KY6AA,24.46,1062,Dispositivos de Entrada,Mouse,393425,,26459,,30583
+,6456330,PULSEFIRE FUSE WIRELESS,Hp,A1KY6AA,24.46,1062,Dispositivos de Entrada,Mouse,393425,,26370,,29926
 ,6486417,LG XBOOM CJ45 SOUND BAR,Lg,CJ45.DCHLLLX,150.79,276,Dispositivos Audio/Video,Parlantes y Subwoofers Entretención/Pro,,,,,
 ,6494718,AM-C400 / 550 Optional Single cassette,Epson,C12C937441,212.53,1,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,6500312,HDD 2TB 7200 RPM SATA 3.5in Cabled Hard,Dell,400-BRCT,195.8,2,Dispositivos de Almacenamiento,Discos Duros SATA,274157,,211500,,228950
-,6501033,MAGIC KEYBOARD WITH NUMERIC KEYPAD-SPA,Apple,MXCJ3E/A,121.62,48,Dispositivos de Entrada,Teclados,279942,,134713,,141034
+,6500312,HDD 2TB 7200 RPM SATA 3.5in Cabled Hard,Dell,400-BRCT,195.8,2,Dispositivos de Almacenamiento,Discos Duros SATA,274157,,254780,,254780
+,6501033,MAGIC KEYBOARD WITH NUMERIC KEYPAD-SPA,Apple,MXCJ3E/A,121.62,48,Dispositivos de Entrada,Teclados,279942,,134713,,140842
 ,6501041,60W USB-C CHARGE CABLE (1M)-AME,Apple,MW493AM/A,16.73,194,Cables,Cables de Poder,,,,,
-,6511006,IPAD AIR 13 WIFI 128GB STL-CHL,Apple,MCNK4CI/A,851.54,4,Computadores Servidores y Notebooks,Tablets y Tablet PCs,267179,,799990,,947508
-,6512210,TONER NEGRO T06,Canon,3526C001,150.43,39,Suministros y Medios,Suministros Láser,260491,,165000,,192576
+,6511006,IPAD AIR 13 WIFI 128GB STL-CHL,Apple,MCNK4CI/A,851.54,4,Computadores Servidores y Notebooks,Tablets y Tablet PCs,267179,,799990,,946806
+,6512210,TONER NEGRO T06,Canon,3526C001,150.43,39,Suministros y Medios,Suministros Láser,260491,,160000,,191576
 ,6513333,APPLE ADAPTADOR-CHL 20W USB C,Apple,MD3J4CI/A,16.73,232,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
 ,6520824,T08K DURABRITE YELLOW INK CARTRIDGE,Epson,T08K420,219.21,1,Suministros y Medios,Suministros Inyección de Tinta,366915,,,,
 ,6520835,T08K DURABRITE MAGENTA INK CARTRIDGE,Epson,T08K320,219.21,1,Suministros y Medios,Suministros Inyección de Tinta,366913,,,,
-,6524101,MONITOR BENQ MA320U 32INCH 3840x2160 IPS,Benq,9H.LMXLB.QBA,562.37,20,Pantallas,Monitores LCD/LED,272072,,629822,,645060
+,6524101,MONITOR BENQ MA320U 32INCH 3840x2160 IPS,Benq,9H.LMXLB.QBA,562.37,20,Pantallas,Monitores LCD/LED,272072,,626924,,642414
 ,6567828,ALLOY RISE TECLADO GAMER 75,Hp,7G7A4AA#ABM,121.78,12,Comunicaciones,Teclados área de Movilidad,,,,,
 ,6581784,HPE NW ION GTWY 5P 2.5G 64W SG2505P,Hewlett Packard Enterprise,S0G34A,452.18,2,Dispositivos de Red,Routers y Gateways inalámbricos,376347,,,,
 ,6581785,HPE NW ION GTWY 4P G SG1004,Hewlett Packard Enterprise,S0G33A,312.31,3,Dispositivos de Red,Routers y Gateways inalámbricos,369597,,354900,,354900
 ,6585367,MOCHILA PRELUDE PRO 15.6IN,Hp,4Z513AA,17.8,3,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
-,6592677,PRIME-RX9070XT-O16G,Asus,90YV0L71-M0AA00,712.12,45,Componentes de Sistema,Tarjetas Gráficas nVidia,276343,859990,768900,779900,820635
+,6592677,PRIME-RX9070XT-O16G,Asus,90YV0L71-M0AA00,712.12,45,Componentes de Sistema,Tarjetas Gráficas nVidia,276343,859990,766080,859990,820380
 ,6594812,SOPORTE DE PARED PARA BARRA BARCO CLICKS,Barco,R8788066K,75.88,2,Cámaras y Escáners,Trípodes y Monopiés para Cámaras,,,,,
 ,6603676,IMPRESORA MULTIFUNCIONAL PIXMA G3180,Canon,6708C005,164.87,140,Impresoras,Multifuncionales Inkjet,,,,,
-,6604484,ULTRACHROME HD YELLOW CART 350 ML P6000/,Epson,T54X400,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,392173,,160160,,160160
+,6604484,ULTRACHROME HD YELLOW CART 350 ML P6000/,Epson,T54X400,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,392173,,161050,,161050
 ,6604485,ULTRACHROME HD CYAN CART 350 ML P6000/70,Epson,T54X200,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373653,,,,
 ,6604486,ULTRACHROME HD MATTE BLK CART 350 ML P60,Epson,T54X800,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373685,,,,
 ,6604487,ULTRACHROME HD PHOTO BK CART 350 ML P600,Epson,T54X100,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373656,,,,
-,6604488,ULTRACHROME HD VVD LT MAG CART 350ML P60,Epson,T54X600,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373684,,138128,,140364
+,6604488,ULTRACHROME HD VVD LT MAG CART 350ML P60,Epson,T54X600,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373684,,137162,,139961
 ,6604489,ULTRACHROME HDX ORANGE CART 350 ML P6000,Epson,T54XA00,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373647,,,,
 ,6604490,ULTRACHROME HD LT CYAN CART 350 ML P6000,Epson,T54X500,130.1,2,Suministros y Medios,Suministros Inyección de Tinta,367069,,,,
 ,6604491,ULTRACHROME HD VIVID MAG CART 350 ML P60,Epson,T54X300,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,272414,,149073,,149073
 ,6604492,ULTRACHROME HD LIGHT BLK CART 350 ML P60,Epson,T54X700,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373679,,,,
 ,6604493,ULTRACHROME HD LT LT BLK CART 350 ML P60,Epson,T54X900,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373681,,,,
 ,6604494,ULTRACHROME HDX GREEN CART 350 ML P6000/,Epson,T54XB00,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373687,,,,
-,6604495,ULTRACHROME HDX VIOLET CART 350 ML P6000,Epson,T54XD00,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373673,,142958,,145719
+,6604495,ULTRACHROME HDX VIOLET CART 350 ML P6000,Epson,T54XD00,130.1,1,Suministros y Medios,Suministros Inyección de Tinta,373673,,142958,,146139
 ,6605514,CABLE SEGURIDAD SLIM MICROSAVER K60600WW,Kensington,K60600WW,18.06,58,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
-,6607415,HPE ARUBA AP-725 RW - REQUIRES CENTRAL,Hewlett Packard Enterprise,S4A22A,375.94,29,Dispositivos de Red,Access Points (AP) inalámbricos,387908,,421166,,423533
+,6607415,HPE ARUBA AP-725 RW - REQUIRES CENTRAL,Hewlett Packard Enterprise,S4A22A,375.94,29,Dispositivos de Red,Access Points (AP) inalámbricos,387908,,425900,,425900
 ,6607824,PDU FACIL MEDIDA 1U 16A 230V (8)C13,Apc,EPDU2016M,327.73,2,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
-,6617420,WorkForce Pro EM-C800,Epson,C11CK19301,577.16,1,Impresoras,Multifuncionales Inkjet,280296,,619900,,673816
+,6617420,WorkForce Pro EM-C800,Epson,C11CK19301,577.16,1,Impresoras,Multifuncionales Inkjet,280296,,618153,,664307
 ,6620437,MOTOROLA G56 5G AZUL MARINO 8 PLUS 256 F,Motorola,PB800049CL,206.39,1,Comunicaciones,Smart Phones,,,,,
 ,6620441,MOTO WATCH FIT TREKKING GREEN,Motorola,PG38C07181,50.2,157,Comunicaciones,Relojes Inteligentes,,,,,
 ,6620443,MOTO BUDS LOOP VERDE,Motorola,PG38C07164,52.72,14,Comunicaciones,Auriculares Bluetooth,253450,,59500,,63190
@@ -839,19 +839,19 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6630891,LG SMART TV NANO CELL AI NANO80 75IN,Lg,75NANO80ASA.AWH,881.72,1,Pantallas,TV LCD/LED,,,,,
 ,6630922,LG SMART TV NANO CELL AI NANO80 43IN,Lg,43NANO80ASA.AWH,342.11,1,Pantallas,TV LCD/LED,,,,,
 ,6631747,D501SER-514500146X I514500 256GB 16G W11,Asus,90PF05M1-M011K0,610.21,2,Computadores Servidores y Notebooks,Computadores Desktop,,,,,
-,6642882,MOTO BUDS LOOP ICE MELT,Motorola,PG38C07760,70.41,29,Comunicaciones,Auriculares Bluetooth,361257,,78979,,96565
+,6642882,MOTO BUDS LOOP ICE MELT,Motorola,PG38C07760,70.41,29,Comunicaciones,Auriculares Bluetooth,361257,,78979,,96971
 ,6648381,CISCO CATALYST 9200L STACK MODULE,Cisco,C9200L-STACK-KIT=,1100.3,1,Dispositivos de Red,Switches Estaqueables,,,,,
 ,6662176,KIT CABEZALES DE IMPRESION CH-11R + CH-1,Canon,4650C004,47.25,24,Suministros y Medios,Cartuchos de Limpieza,270654,,56990,,58490
 ,6662177,IMPRESORA MULTIFUNCIONAL DE O DE TINTA P,Canon,2313C005,115.43,124,Impresoras,Multifuncionales Inkjet,,,,,
 ,6665124,CHROMEBOOK 500E G4 N100 8GB 64GB CRM,Lenovo,82W5S01J00,444.25,2,Computadores Servidores y Notebooks,Chromebooks & Netbooks,,,,,
-,6670260,PROYECTOR POWERLITE L790U,Epson,V11HB28021,3948.2,2,Dispositivos Audio/Video,Proyectores LCD,384652,,4160000,,4369625
+,6670260,PROYECTOR POWERLITE L790U,Epson,V11HB28021,3948.2,2,Dispositivos Audio/Video,Proyectores LCD,384652,,4160000,,4382505
 ,6671012,R9-7900 5.40GHZ 12 CORE SKT AM5 76MB 65W,Amd,100-100000590WOF,348.03,18,Componentes de Sistema,Procesadores AMD,,,,,
-,6671131,IDEATAB PLUS 12.1IN 2K MTK D6400 8G 256G,Lenovo,ZAG70652CL,321.36,5,Computadores Servidores y Notebooks,Tablets y Tablet PCs,375091,,348776,,359192
+,6671131,IDEATAB PLUS 12.1IN 2K MTK D6400 8G 256G,Lenovo,ZAG70652CL,321.36,5,Computadores Servidores y Notebooks,Tablets y Tablet PCs,375091,,349187,,359081
 ,6674886,CINTA LAMINADA NEGRO SOBRE PLATA 24MM,Brother,TZESM951,18.35,12,Suministros y Medios,Etiquetas y Aplicadores,,,,,
-,6675645,A-DATA XPG Mars 980 Pro 2 TB (SMAR-980P-,Adata Technology,SMAR-980P-2TCI,476.13,3,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),278331,,503521,,519426
+,6675645,A-DATA XPG Mars 980 Pro 2 TB (SMAR-980P-,Adata Technology,SMAR-980P-2TCI,476.13,3,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),278331,,505225,,518561
 ,6677791,48PORT POE+4 X 1G DNA E 3YR,Cisco,C9200L-48P-4G-E + C9200L-DNA-E-48-3Y,5667.0,7,Dispositivos de Red,Switches Estaqueables,,,,,
 ,6677792,24PORT POE+ 4 X 1G DNA E 3YR,Cisco,C9200L-24P-4G-E + C9200L-DNA-E-24-3Y,2805.0,1,Comunicaciones,Dispositivos de Línea Compartida,,,,,
-,6681126,IPAD MINI WI-FI Y CELLULAR 128GB,Apple,MXPN3CI/A,707.14,3,Computadores Servidores y Notebooks,Tablets y Tablet PCs,256249,,791144,,800708
+,6681126,IPAD MINI WI-FI Y CELLULAR 128GB,Apple,MXPN3CI/A,707.14,3,Computadores Servidores y Notebooks,Tablets y Tablet PCs,256249,,804990,,805990
 ,6685188,ALLOY RISE TECLADO GAMER,Hp,7G7A3AA#ABM,141.94,49,Comunicaciones,Teclados área de Movilidad,,,,,
 ,6685190,ALLOY RISE TECLADO GAMER 75,Hp,7G7A4AA#ABM,121.63,18,Comunicaciones,Teclados área de Movilidad,,,,,
 ,6686037,MAGSAFE CHARGER (1 M),Apple,MGD74AM/A,36.26,20,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
@@ -860,68 +860,68 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6698860,PRESENTER EXPERT W/ GREEN LASER,Kensington,K72426AMA,27.6,8,Dispositivos Audio/Video,Adaptadores Red y Software p/Proyectores,,,,,
 ,6702906,WDC15 INSTASHOW WDC15 SISTEMA PARA PRESE,Benq,9H.K0EBY.E0A,596.19,10,Dispositivos de Red,Dispositivos y Componentes para Streamin,,,,,
 ,6707696,15-FB3026LA R7-7445H 16G 512 15.6IN W11H,Hp,BV5C6LA#AKH,862.82,846,Computadores Servidores y Notebooks,Notebooks,,,,,
-,6709675,DB SATELLITE PRO C40-K - I7 16G 512 14IN,Dynabook,PSY25U-0P800Q,721.68,20,Computadores Servidores y Notebooks,Notebooks,366596,,807566,,936515
-,6709677,DYNABOOK TECRA A40-M - U7 32GB 1TB 14IN,Dynabook,PNM11U-1WY00D,965.77,5,Computadores Servidores y Notebooks,Notebooks,366595,,1080944,,1181478
-,6709678,DB SATELLITE PRO C50-K - I5 8G 512 156,Dynabook,PSY29U-4UT002,583.71,2,Computadores Servidores y Notebooks,Notebooks,366594,,653006,,720328
+,6709675,DB SATELLITE PRO C40-K - I7 16G 512 14IN,Dynabook,PSY25U-0P800Q,721.68,20,Computadores Servidores y Notebooks,Notebooks,366596,,804668,,934549
+,6709677,DYNABOOK TECRA A40-M - U7 32GB 1TB 14IN,Dynabook,PNM11U-1WY00D,965.77,5,Computadores Servidores y Notebooks,Notebooks,366595,,1076114,,1179271
+,6709678,DB SATELLITE PRO C50-K - I5 8G 512 156,Dynabook,PSY29U-4UT002,583.71,2,Computadores Servidores y Notebooks,Notebooks,366594,,651074,,719018
 ,6711084,400 QUIET PINK WIRELESS MOUSE,Hp,AZ7B5AA#ABA,16.89,1930,Dispositivos de Entrada,Mouse,,,,,
-,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,13.29,3072,Suministros y Medios,Suministros Inyección de Tinta,384467,,15556,19990,18716
-,6711403,HP 668 NEGRO ORIGINAL INK ADVANTAGE CART,Hp,7FP37VL,14.66,2760,Suministros y Medios,Suministros Inyección de Tinta,384466,,17115,21990,20359
+,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,13.29,3072,Suministros y Medios,Suministros Inyección de Tinta,384467,,15423,19990,18697
+,6711403,HP 668 NEGRO ORIGINAL INK ADVANTAGE CART,Hp,7FP37VL,14.66,2760,Suministros y Medios,Suministros Inyección de Tinta,384466,,17008,21990,20346
 ,6711944,400 QUIET BLACK WIRELESS MOUSE US,Hp,AZ7B2AA#ABA,16.79,1960,Dispositivos de Entrada,Mouse,,,,,
 ,6711945,400 QUIET MAPLE WIRELESS MOUSE US,Hp,AZ7B6AA#ABA,16.89,785,Dispositivos de Entrada,Mouse,,,,,
 ,6711946,400 QUIET PUP WRLS MSE,Hp,AZ7B7AA#ABA,16.85,1948,Dispositivos de Entrada,Mouse,,,,,
 ,6713817,TRITURADORA AUTOFEED 300X P4 2020300XEU,Kensington,2020300XEU,439.88,5,Equipamiento de Oficina,Trituradoras de Papel y CD/DVD,,,,,
 ,6718975,SMART TV LG UHD 55IN OLED 55C5PSA,Lg,OLED55C5PSA.AWH,1146.2,1,Pantallas,TV LCD/LED,,,,,
-,6720109,T27QD-40 C25270QT0 27 MONITOR-HDMI,Lenovo,64AAGAR2CL,223.59,60,Pantallas,Monitores LCD/LED,391722,,252590,,257152
-,6737875,B1403CVAS66825X 5-210H 14IN 512G 16G W11,Asus,90NX0811-M087C0,772.44,72,Computadores Servidores y Notebooks,Notebooks,385683,,838900,,847772
-,6737880,PM3406CKALY0433X R5330 512G 16G 14IN W11,Asus,90NX0971-M00H20,862.3,90,Computadores Servidores y Notebooks,Notebooks,357479,,861117,,907575
+,6720109,T27QD-40 C25270QT0 27 MONITOR-HDMI,Lenovo,64AAGAR2CL,223.59,60,Pantallas,Monitores LCD/LED,391722,,251748,,255682
+,6737875,B1403CVAS66825X 5-210H 14IN 512G 16G W11,Asus,90NX0811-M087C0,772.44,72,Computadores Servidores y Notebooks,Notebooks,385683,,832900,,843516
+,6737880,PM3406CKALY0433X R5330 512G 16G 14IN W11,Asus,90NX0971-M00H20,862.3,90,Computadores Servidores y Notebooks,Notebooks,357479,,860381,,902660
 ,6737881,P500SV05210H011X 5-210H 512G 8G 9L W11P,Asus,90PF05A1-M00MU0,648.25,26,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim,,,,,
-,6738878,LOQE R7 16GB 512GB 15.6IN FHD RTX4050,Lenovo,83S00001CL,1021.9,774,Computadores Servidores y Notebooks,Notebooks,388285,,949990,,1051759
+,6738878,LOQE R7 16GB 512GB 15.6IN FHD RTX4050,Lenovo,83S00001CL,1021.9,774,Computadores Servidores y Notebooks,Notebooks,388285,,949990,,1049617
 ,6751444,LG XBOOM BOUNCE SONIDO IA,Lg,BOUNCE.AMEXLBK,94.68,141,Comunicaciones,Parlantes y Parlantes-Docking,,,,,
 ,6751452,TM-T20IVL-001:USB+Serial,Epson,C31CL45001,98.74,135,Impresoras,Impresoras POS Portátiles,,,,,
 ,6752196,RT-AC1200-V,Asus,90IG0550-BA1400,28.63,9,Dispositivos de Red,Routers y Gateways inalámbricos,,,,,
 ,6753134,HPE PROLIANT MICROSERVER GEN11 1P 6325P,Hewlett Packard Enterprise,P86708-DM5,2922.3,24,Computadores Servidores y Notebooks,Servidores Tower,,,,,
 ,6756030,DELL MOBILE WIRELESS MOUSE MS3320W,Dell,MS3320W-MGN-R,20.0,98,Dispositivos de Entrada,Mouse,,,,,
-,6763955,SR630 V4 2.5IN 1.2TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01770,305.0,6,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),393541,,329922,,338456
-,6763957,SR630 V4 2.5IN 2.4TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01771,547.0,6,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),389808,,591695,,606342
-,6764212,SSD Wd Green SN3000 500 GB NVMe,Sandisk,WDS500G4G0E,174.17,244,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),362977,99990,99990,,155528
-,6764224,SSD WD Blue SN5100 1 TB NVMe,Sandisk,WDS100T5B0E,333.14,90,Dispositivos de Almacenamiento,Discos de Estado Sólido M.2 (SSD),382017,179990,179612,,204568
-,6769834,Monitor 24 1080p Ergonomic 120Hz HDMI VG,Viewsonic,VA2448-MHJ,95.67,21,Pantallas,Monitores LCD/LED,385660,,107216,,193468
+,6763955,SR630 V4 2.5IN 1.2TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01770,305.0,6,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),393541,,328822,,337406
+,6763957,SR630 V4 2.5IN 2.4TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01771,547.0,6,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),389808,,589723,,604356
+,6764212,SSD Wd Green SN3000 500 GB NVMe,Sandisk,WDS500G4G0E,174.17,244,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),362977,99990,99990,,155296
+,6764224,SSD WD Blue SN5100 1 TB NVMe,Sandisk,WDS100T5B0E,333.14,90,Dispositivos de Almacenamiento,Discos de Estado Sólido M.2 (SSD),382017,179990,179570,,204207
+,6769834,Monitor 24 1080p Ergonomic 120Hz HDMI VG,Viewsonic,VA2448-MHJ,95.67,21,Pantallas,Monitores LCD/LED,385660,,107216,,193008
 ,6772784,"HPE PROLIANT DL20 GEN11 1P 6325P 3.5GHZ,",Hewlett Packard Enterprise,P86721-DM5,4957.8,4,Computadores Servidores y Notebooks,Servidores en Rack,,,,,
 ,6772811,"HPE PROLIANT ML30 GEN11 1P 6325P 3.5GHZ,",Hewlett Packard Enterprise,P86723-DM5,3522.7,15,Computadores Servidores y Notebooks,Servidores Tower,,,,,
 ,6773559,MOUSE WL SILENCIOSO COLOR ARCE 400,Hp,AZ7B6AA#ABA,17.96,501,Dispositivos de Entrada,Mouse,,,,,
-,6777969,ADATA DRAM DDR4 U-DIMM 16GB 3200,Adata Technology,AD4U320016G22-SBK,176.84,198,Componentes de Sistema,Memoria Genérica,386772,,183008,,196123
+,6777969,ADATA DRAM DDR4 U-DIMM 16GB 3200,Adata Technology,AD4U320016G22-SBK,176.84,198,Componentes de Sistema,Memoria Genérica,386772,,182400,,195551
 ,6782248,HP 400 QUIET BLUE WIRELESS MOUSE US,Hp,AZ7B4AA#ABA,16.89,554,Dispositivos de Entrada,Mouse,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,107.4,394,Pantallas,Monitores LCD/LED,,,,,
-,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,173.73,34,Pantallas,Monitores LCD/LED,379960,,199952,249990,215658
-,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1054.3,8,Pantallas,Monitores LCD/LED,318326,,1210990,,1242122
+,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,173.73,34,Pantallas,Monitores LCD/LED,379960,,199960,249990,218180
+,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1054.3,8,Pantallas,Monitores LCD/LED,318326,,1209920,,1239892
 ,6784033,ANW 6000 24G CL4 4F 370W -STOCK,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,,,,,
 ,6784291,PRIME X870-P WIFI,Asus,90MB1IS0-MVAAY0,235.98,30,Componentes de Sistema,Tarjetas Madre AMD,,,,,
-,6785165,B850M AYW GAMING WIFI,Asus,90MB1LW0-M0EAY0,149.01,44,Componentes de Sistema,Tarjetas Madre AMD,385180,,165650,,176808
-,6785174,ROG Ryujin III 360 ARGB Extreme BK,Asus,90RC0131-M0AAY0,340.15,36,Componentes de Sistema,Componentes de Tarjetas Madre,265633,,369988,,390878
-,6789262,THINKPAD USB 3.0 TO ETHERNET ADAPTER,Lenovo,4X90S91830,12.77,89,Cables,Cables y Adaptadores USB,392114,,16220,,16220
+,6785165,B850M AYW GAMING WIFI,Asus,90MB1LW0-M0EAY0,149.01,44,Componentes de Sistema,Tarjetas Madre AMD,385180,,164775,,177021
+,6785174,ROG Ryujin III 360 ARGB Extreme BK,Asus,90RC0131-M0AAY0,340.15,36,Componentes de Sistema,Componentes de Tarjetas Madre,265633,,368755,409990,388424
+,6789262,THINKPAD USB 3.0 TO ETHERNET ADAPTER,Lenovo,4X90S91830,12.77,89,Cables,Cables y Adaptadores USB,392114,,16150,,16150
 ,6789835,P500SV03100U0030 3-100U 256G 8G 9L W11P,Asus,90PF05A1-M00MV0,434.87,55,Computadores Servidores y Notebooks,Computadores Desktop,,,,,
-,6795440,IPAD AIR 11 WF CL 128GB GRIS ESPACIAL,Apple,MH784CI/A,816.94,4,Computadores Servidores y Notebooks,Tablets y Tablet PCs,383371,,914792,929990,1663073
-,6796956,MBA 15.3 SLV/10C GPU/16GB/1TB - PLATA,Apple,MDVA4CI/A,1590.4,20,Computadores Servidores y Notebooks,Notebooks,384486,,1699990,,1773852
-,6796958,MBA 15.3 SLV/10C GPU/24GB/1TB - PLATA,Apple,MDVC4CI/A,1836.7,3,Computadores Servidores y Notebooks,Notebooks,383716,,1999990,,2043870
-,6796978,MBA 13.6 SKY/8C GPU/16GB/512GB-SKY BLUE,Apple,MDHH4CI/A,1148.0,20,Computadores Servidores y Notebooks,Notebooks,383705,,1249990,,1284546
-,6796980,MBP 16 SB/18C/20C GPU/24GB/1T-NEGRO ESPA,Apple,MGEA4CI/A,2755.1,3,Computadores Servidores y Notebooks,Notebooks,383721,,2949990,,3051872
-,6797727,MBN 13 SLV/8GB/256GB-SILVER,Apple,MHFA4CI/A,596.93,1,Computadores Servidores y Notebooks,Notebooks,383742,,599990,649990,642812
-,6801387,MONITOR GAMER MOBIUZ EX271 27IN LED IPS,Benq,9H.LNALA.TBA,206.21,15,Pantallas,Monitores LCD/LED,365377,,204896,,230766
+,6795440,IPAD AIR 11 WF CL 128GB GRIS ESPACIAL,Apple,MH784CI/A,816.94,4,Computadores Servidores y Notebooks,Tablets y Tablet PCs,383371,,913826,929990,1663180
+,6796956,MBA 15.3 SLV/10C GPU/16GB/1TB - PLATA,Apple,MDVA4CI/A,1590.4,20,Computadores Servidores y Notebooks,Notebooks,384486,,1699990,,1773860
+,6796958,MBA 15.3 SLV/10C GPU/24GB/1TB - PLATA,Apple,MDVC4CI/A,1836.7,3,Computadores Servidores y Notebooks,Notebooks,383716,,1999990,,2050116
+,6796978,MBA 13.6 SKY/8C GPU/16GB/512GB-SKY BLUE,Apple,MDHH4CI/A,1148.0,20,Computadores Servidores y Notebooks,Notebooks,383705,,1249990,,1284552
+,6796980,MBP 16 SB/18C/20C GPU/24GB/1T-NEGRO ESPA,Apple,MGEA4CI/A,2755.1,3,Computadores Servidores y Notebooks,Notebooks,383721,,2949990,,3057570
+,6797727,MBN 13 SLV/8GB/256GB-SILVER,Apple,MHFA4CI/A,596.93,1,Computadores Servidores y Notebooks,Notebooks,383742,,599990,649990,643481
+,6801387,MONITOR GAMER MOBIUZ EX271 27IN LED IPS,Benq,9H.LNALA.TBA,206.21,15,Pantallas,Monitores LCD/LED,365377,,204896,,230554
 ,6801389,MONITOR BENQ 31.5IN PD3205U 4K,Benq,9H.LKGLA.RBA,632.48,7,Pantallas,Monitores LCD/LED,,,,,
 ,6804946,BENQ RE6504 Panel Interactivo 65in Andr,Benq,9H.F9ETK.DE8,858.12,3,Dispositivos Audio/Video,Dispositivos Interactivos de Presentació,,,,,
-,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,406.76,32,Pantallas,Monitores LCD/LED,366630,,458870,,478157
+,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,406.76,32,Pantallas,Monitores LCD/LED,366630,,458870,,478822
 ,6804966,BENQ BOARD ESSENTIAL RE7504,Benq,9H.F9FTK.DE8,1081.0,15,Pantallas,Pantallas Comerciales LCD/LED,,,,,
 ,6805753,Desktop TC M75q Gen 5 A38300GE 16G 512G,Lenovo,12RRS66000,789.06,3,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim,,,,,
 ,6805833,DYNABOOK Tecra A60 INTEL CU5 W11PRO,Dynabook,PNL21U-3JG005,1084.1,47,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6805834,CEDAR10 - PORTEGE X45W-M (CED1) AMD RYZE,Dynabook,CED11U-04R00T,1067.7,80,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6805835,TECRA A40-M (PNM2) W11P ULTRA 7 255U 16,Dynabook,PNM21U-4SV00C,1187.6,50,Computadores Servidores y Notebooks,Notebooks,,,,,
 ,6805836,TECRA A40-M (PNM2) W11P ULTRA 5 225U 16,Dynabook,PNM21U-4SS00C,996.9,50,Computadores Servidores y Notebooks,Notebooks,,,,,
-,6810601,MONITOR 22IN FULL HD 120HZ MONITOR WITH,Viewsonic,VA220A-H,57.65,517,Pantallas,Monitores LCD/LED,393325,,64712,,66848
+,6810601,MONITOR 22IN FULL HD 120HZ MONITOR WITH,Viewsonic,VA220A-H,57.65,517,Pantallas,Monitores LCD/LED,393325,,64712,,66858
 ,6811015,AirTag (1 Pack),Apple,MFE94BE/A,26.3,10,Comunicaciones,Dispositivos de Navegación/GPS,,,,,
 ,6811027,Monitor IPS de 24IN 1080p 120 Hz con HDM,Viewsonic,VA240A-H,68.66,1107,Pantallas,Monitores LCD/LED,,,,,
 ,6814648,MB PRIME B550M-A,Asus,90MB15K0-MVAAY0,92.15,229,Componentes de Sistema,Tarjetas Madre Intel,,,,,
 ,6814649,ROG STRIX X870E-E GAMING WIFI,Asus,90MB1IB0-MVAAY0,483.18,1,Componentes de Sistema,Tarjetas Madre Intel,,,,,
 ,6815600,MONITOR BENQ MA270U 27IN MAC FRIENDLY,Benq,9H.LMWLB.QBA,449.68,40,Pantallas,Monitores LCD/LED,,,,,
-,6817881,ZOTAC GAMING GEFORCE RTX 3050 Twin Edge,Zotac,ZT-A30510H-10A,200.7,62,Componentes de Sistema,Tarjetas Gráficas nVidia,394909,,225500,,229873
-,6822116,PULSEFIRE FUSE WIRELESS,Hp,A1KY6AA,32.54,28,Dispositivos de Entrada,Mouse,393425,,26459,,30583
+,6817881,ZOTAC GAMING GEFORCE RTX 3050 Twin Edge,Zotac,ZT-A30510H-10A,200.7,62,Componentes de Sistema,Tarjetas Gráficas nVidia,394909,,224500,,229021
+,6822116,PULSEFIRE FUSE WIRELESS,Hp,A1KY6AA,32.54,28,Dispositivos de Entrada,Mouse,393425,,26370,,29926
 ,6822118,CLUTCH GLADIATE RGB GAMING CONTROLLER,Hp,7D6H2AA,46.34,30,Video Juegos y Consolas,Gamepads,,,,,
