@@ -492,7 +492,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,196,Suministros y Medios,Suministros Láser,260121,,76304,,84766
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,89828,,98755
 ,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,88862,,98099
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,62,Suministros y Medios,Suministros Láser,260108,,88862,,99236
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,62,Suministros y Medios,Suministros Láser,260108,,88862,,98539
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,216.59,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4811047,CABEZAL DE IMPRESION PF-10,Canon,0861C003,507.89,4,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,
 ,4827711,SERVER RACK CABINET 42U,Startech.Com,RK4236BKB,2128.0,2,Protección Eléctrica y Racks,Racks,,,,,
@@ -640,7 +640,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5617653,ADAPTER SSD EXTERNAL CRUCIAL,Crucial,CTUSBCFUSBAMAD,4.38,10,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),,,,,
 ,5619260,HDMI to DisplayPort Adapter HDMI 4K60Hz,Startech.Com,128-HDMI-DISPLAYPORT,53.9,4,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,5620592,CV5000DP USB-C TO DISPLAYPORT1.4 ADAPTER,Kensington,K34680WW,17.91,46,Cables,Cables y Adaptadores de Video,,,,,
-,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,138,Suministros y Medios,Suministros Láser,260006,,72973,,82730
+,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,138,Suministros y Medios,Suministros Láser,260006,,72973,,82419
 ,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,112.44,145,Suministros y Medios,Suministros Láser,260322,,119900,,131027
 ,5629797,TONER T04 Amarillo,Canon,2977C001,359.02,2,Suministros y Medios,Suministros Láser,355986,,409990,,409990
 ,5629798,TONER T04 Magenta,Canon,2978C001,359.02,2,Suministros y Medios,Suministros Láser,355985,,409990,,409990
@@ -652,7 +652,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5641072,PTD410,Brother,PTD410,54.64,2,Impresoras,Impresoras de Etiquetas Hogar/Oficina,,,,,
 ,5645511,HP LASERJET DEPARTMENT STAND,Hp,6GW53A,213.54,21,Impresoras,Muebles para Impresora/Plotter,,,,,
 ,5666055,Network Management Card for Easy UPS,Apc,AP9544,130.1,7,Protección Eléctrica y Racks,Administración UPS,,,,,
-,5686037,PFI 050 C,Canon,5699C001,54.54,39,Suministros y Medios,Suministros para Plotters,259979,,64680,64990,68886
+,5686037,PFI 050 C,Canon,5699C001,54.54,39,Suministros y Medios,Suministros para Plotters,259979,,64680,64990,67775
 ,5686040,MAINTENANCE CARTRIDGE MC-32,Canon,1156C009,51.28,13,Suministros y Medios,Suministros para Plotters,,,,,
 ,5690099,HPE DL36X G10+ 2SFF SAS/SATA TM CBL KIT,Hewlett Packard Enterprise,P55883-B21,152.1,5,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5690925,6in Hook and Loop Cable Ties 50pk,Startech.Com,B506I-HOOK-LOOP-TIES,12.88,3,Cables,Administración para Cables,,,,,
@@ -903,13 +903,13 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6795440,IPAD AIR 11 WF CL 128GB GRIS ESPACIAL,Apple,MH784CI/A,816.94,4,Computadores Servidores y Notebooks,Tablets y Tablet PCs,383371,,924100,929990,1673180
 ,6796956,MBA 15.3 SLV/10C GPU/16GB/1TB - PLATA,Apple,MDVA4CI/A,1590.4,20,Computadores Servidores y Notebooks,Notebooks,384486,,1699990,,1780897
 ,6796958,MBA 15.3 SLV/10C GPU/24GB/1TB - PLATA,Apple,MDVC4CI/A,1836.7,3,Computadores Servidores y Notebooks,Notebooks,383716,,1999990,,2046940
-,6796978,MBA 13.6 SKY/8C GPU/16GB/512GB-SKY BLUE,Apple,MDHH4CI/A,1148.0,20,Computadores Servidores y Notebooks,Notebooks,383705,,1249990,,1286323
+,6796978,MBA 13.6 SKY/8C GPU/16GB/512GB-SKY BLUE,Apple,MDHH4CI/A,1148.0,20,Computadores Servidores y Notebooks,Notebooks,383705,,1249990,,1284740
 ,6796980,MBP 16 SB/18C/20C GPU/24GB/1T-NEGRO ESPA,Apple,MGEA4CI/A,2755.1,3,Computadores Servidores y Notebooks,Notebooks,383721,,2949990,,3051796
 ,6797727,MBN 13 SLV/8GB/256GB-SILVER,Apple,MHFA4CI/A,596.93,1,Computadores Servidores y Notebooks,Notebooks,383742,,599990,649990,643879
 ,6801387,MONITOR GAMER MOBIUZ EX271 27IN LED IPS,Benq,9H.LNALA.TBA,206.21,15,Pantallas,Monitores LCD/LED,365377,,204896,,232121
 ,6801389,MONITOR BENQ 31.5IN PD3205U 4K,Benq,9H.LKGLA.RBA,632.48,7,Pantallas,Monitores LCD/LED,,,,,
 ,6804946,BENQ RE6504 Panel Interactivo 65in Andr,Benq,9H.F9ETK.DE8,858.12,3,Dispositivos Audio/Video,Dispositivos Interactivos de Presentació,,,,,
-,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,406.76,32,Pantallas,Monitores LCD/LED,366630,,458870,,481135
+,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,406.76,32,Pantallas,Monitores LCD/LED,366630,,458870,,481047
 ,6804966,BENQ BOARD ESSENTIAL RE7504,Benq,9H.F9FTK.DE8,1081.0,15,Pantallas,Pantallas Comerciales LCD/LED,,,,,
 ,6805753,Desktop TC M75q Gen 5 A38300GE 16G 512G,Lenovo,12RRS66000,789.06,3,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim,,,,,
 ,6805833,DYNABOOK Tecra A60 INTEL CU5 W11PRO,Dynabook,PNL21U-3JG005,1084.1,47,Computadores Servidores y Notebooks,Notebooks,,,,,
