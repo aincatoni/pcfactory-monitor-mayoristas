@@ -12,7 +12,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100017171,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,58.6,3.0,nan,Physical,155925,,69990,,77025
 ,100017173,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - blanco",nan,939-001986,209.0,3.0,nan,Physical,157245,,219990,219990,252970
 ,100017174,"ASTRO Gaming A30 - Auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - blanco",nan,939-001993,170.0,3.0,nan,Physical,157247,,203620,,220108
-,100017175,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - marino",nan,939-002000,209.0,2.0,nan,Physical,157248,,233702,,259686
+,100017175,"ASTRO Gaming A30 - For Xbox - auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - USB-A a través de adaptador Bluetooth, conector de 3,5 mm - marino",nan,939-002000,209.0,2.0,nan,Physical,157248,,233702,,262346
 ,100017225,Kingston Fury - DDR4 SDRAM - Unbuffered - Non-ECC,nan,KF432C16BB/32GB,288.5,20.0,nan,Physical,,,,,
 ,100017407,Zebra - Portable Barcode Printer - Direct thermal - Wi-Fi / Bluetooth 4.0 - ZQ630 Plus English fonts Dual,nan,ZQ63-AUWAL04-00,1432.3,8.0,nan,Physical,,,,,
 ,100017420,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",nan,ET45CA-101D1B0-A6,819.5,5.0,nan,Physical,393830,,946048,,946048
@@ -570,7 +570,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AS102EPS55,"Epson T05A - Gran capacidad - negro - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A100,68.6,15.0,nan,Physical,259993,,75080,,82126
 ,AS102EPS56,"Epson T05A - Gran capacidad - cián - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A200,118.8,5.0,nan,Physical,259986,,121910,,136686
 ,AS102EPS57,"Epson T05A3 - Gran capacidad - magenta - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A300,118.8,2.0,nan,Physical,259984,,129900,,139843
-,AS102EPS58,"Epson T05A4 - Gran capacidad - amarillo - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A400,118.8,5.0,nan,Physical,259987,,121910,,137942
+,AS102EPS58,"Epson T05A4 - Gran capacidad - amarillo - original - paquete de tinta - para WorkForce Pro RIPS WF-C879, WF-C878, WF-C879",nan,T05A400,118.8,5.0,nan,Physical,259987,,121910,,136938
 ,AS102EPS82,Epson - C9345 - Ink maintenance box,nan,C12C934591,19.6,14.0,nan,Physical,,,,,
 ,AS103EPS09,"Epson T664 - Paquete de 3 - 70 ml - amarillo, cián, magenta - original - recarga de tinta - para Epson L120, L1300, L310, L380, L395, L495; EcoTank L310, L575",nan,T664520-3P,20.2,20.0,nan,Physical,259808,,19990,26990,25240
 ,AS103EPS11,Epson - T544120-2 - Ink tank - Black - Pack  L1110 L3110 L3,nan,T544120-2P,14.0,20.0,nan,Physical,259693,,15590,19990,18523
@@ -616,7 +616,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,AT222HEW01,"HP 230A - Negro - original - LaserJet - cartucho de tóner (W2300A) - para Color LaserJet Pro 4201, 4203, MFP 4301, MFP 4303",nan,W2300A,96.7,1.0,nan,Physical,260217,,98292,,108709
 ,AT222HEW76,"HP 206A - Cián - original - LaserJet - cartucho de tóner (W2111A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2111A,91.3,1.0,nan,Physical,260122,,90474,109990,100134
 ,AT222HEW77,"HP 206A - Amarillo - original - LaserJet - cartucho de tóner (W2112A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2112A,90.6,20.0,nan,Physical,260080,,89900,109990,99309
-,AT222HEW78,"HP 206A - Magenta - original - LaserJet - cartucho de tóner (W2113A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2113A,90.8,20.0,nan,Physical,260108,,89900,,99636
+,AT222HEW78,"HP 206A - Magenta - original - LaserJet - cartucho de tóner (W2113A) - para Color LaserJet Pro M255, M283, MFP M282, MFP M283",nan,W2113A,90.8,20.0,nan,Physical,260108,,89900,,98968
 ,AT222HEW83,"HP 215A - Negro - original - LaserJet - cartucho de tóner (W2310A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2310A,59.4,10.0,nan,Physical,260085,,63500,,67491
 ,AT222HEW84,"HP 215A - Cián - original - LaserJet - cartucho de tóner (W2311A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2311A,64.4,13.0,nan,Physical,260215,,65258,,71434
 ,AT222HEW86,"HP 215A - Magenta - original - LaserJet - cartucho de tóner (W2313A) - para Color LaserJet Pro M155a, M155nw, MFP M182n, MFP M182nw, MFP M183fw",nan,W2313A,85.5,10.0,nan,Physical,260107,,65126,,69576
@@ -1204,7 +1204,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID003RZR42,Razer DeathAdder - Mouse - Wireless - V4 Pro - Gaming,nan,RZ01-05330100-R3U1,145.1,20.0,nan,Physical,,,,,
 ,ID003RZR43,Razer DeathAdder - Mouse - Wireless - White - V4 Pro,nan,RZ01-05330200-R3U1,145.1,20.0,nan,Physical,,,,,
 ,ID003RZR54,Razer Viper - Mouse - Wireless - RZ01-05120400-R3M1,nan,RZ01-05120400-R3M1,154.0,20.0,nan,Physical,290002,,149990,149990,164567
-,ID003RZR56,Razer Cobra - Mouse - Wired - Pokemon Edition,nan,RZ01-04650400-R3M1,52.3,20.0,nan,Physical,362998,,44990,49990,55171
+,ID003RZR56,Razer Cobra - Mouse - Wired - Pokemon Edition,nan,RZ01-04650400-R3M1,52.3,20.0,nan,Physical,362998,,44990,49990,57081
 ,ID003RZR68,Razer - Keyboard - Wired - Huntsman V3 Pro Tenkeyless,nan,RZ03-04982100-R3M1,230.4,9.0,nan,Physical,387591,,235900,239990,258820
 ,ID003WAC30,"Wacom - Cintiq 16"" -  Brazil /Argentin",nan,DTK168K0A1,764.4,3.0,nan,Physical,,,,,
 ,ID010KLX61,Klip Xtreme Klever KMW-340 - Ratón - óptico - 6 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - negro,nan,KMW-340BK,5.8,20.0,nan,Physical,28986,,5089,5990,5899
@@ -1257,7 +1257,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID016KNS17,Kensington - Mouse - USB - Wired - K72369,nan,K72369,8.9,3.0,nan,Physical,39394,,7500,9650,9630
 ,ID021LOG15,Logitech M280 - Ratón - diestro - óptico - 3 botones - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004286,10.5,20.0,nan,Physical,28952,,9974,11990,12414
 ,ID022KNS40,Kensington - Mouse - USB - Black,nan,K75403,20.0,3.0,nan,Physical,85974,,21465,21990,24721
-,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,6990,7990,10203
+,ID022LOG21,Logitech M170 - Ratón - diestro y zurdo - inalámbrico - 2.4 GHz - receptor inalámbrico USB - rojo,nan,910-004941,8.3,20.0,nan,Physical,28998,,6990,7990,10334
 ,ID023LOG10,Logitech M190 - Ratón - óptico - 3 botones - inalámbrico - receptor inalámbrico USB - rojo,nan,910-005904,9.8,7.0,nan,Physical,86548,,10980,12900,13677
 ,ID023LOG52,"Logitech Signature M650 - Ratón - manos pequeñas - diestro y zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006251,29.1,20.0,nan,Physical,132346,,29790,53990,40765
 ,ID023LOG57,"Logitech Signature M650 L LEFT - Ratón - tamaño completo - zurdo - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - grafito",nan,910-006234,33.4,4.0,nan,Physical,139910,,36490,,38473
@@ -1283,7 +1283,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID211KLX43,Klip Xtreme - Keyboard and Touchpad - Spanish - Wireless - Bluetooth 5.0 - Black - KCK-650S-BK,nan,KCK-650S-BK,27.8,20.0,nan,Physical,277786,,21802,,24973
 ,ID211KLX46,Klip Xtreme - Mouse - 2.4 GHz - Wireless - Dual Dongle,nan,KMW-550,9.7,20.0,nan,Physical,387476,,11589,,12945
 ,ID211KLX47,Klip Xtreme - Mouse - 2.4 GHz / Bluetooth - Wireless - Trimode,nan,KMW-775,11.4,20.0,nan,Physical,387480,,13589,,14920
-,ID222XTK03,Xtech - Keyboard - Wired - Spanish - USB - Black - XTK-160S,nan,XTK-160S,4.3,20.0,nan,Physical,45887,,4688,,6030
+,ID222XTK03,Xtech - Keyboard - Wired - Spanish - USB - Black - XTK-160S,nan,XTK-160S,4.3,20.0,nan,Physical,45887,,4688,,6170
 ,ID222XTK33,Xtech - Keyboard - Wired - Spanish - USB - Black - Standard XTK-092S,nan,XTK-092S,4.1,20.0,nan,Physical,81786,,4677,,5880
 ,ID223LOG86,Logitech MX Keys Mini - Teclado - Inalámbrico - Español - USB / Bluetooth 5.0 / Bluetooth - Ergonomic Design - Gris pálido,nan,920-010477,105.1,20.0,nan,Physical,132328,,92990,109990,124728
 ,ID223LOG87,Logitech MX Keys Mini - eclado - Inalámbrico - Español - Bluetooth 5.0 / Bluetooth / 2.4 GHz / USB-C - Ergonomic Design - Rosa,nan,920-010478,100.2,1.0,nan,Physical,132329,,82353,114990,116649
@@ -1302,7 +1302,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,ID224LOG55,Logitech G515 TKL - Keyboard - White  ,nan,920-012869,97.4,11.0,nan,Physical,263772,,87900,,116728
 ,ID224LOG56,Logitech PRO X TKL RAPID - Keyboard - Wired - USB-C - Black,nan,920-013131,169.0,2.0,nan,Physical,268566,,166990,199990,195622
 ,ID224LOG61,Logitech - Keypad - POWERPLAY 2 MousePad Wireless,nan,947-000002,131.0,3.0,nan,Physical,,,,,
-,ID224LOG65,Logitech - MK250 Compact Bluetooth Wireless Combo - Spanish - Graphite,nan,920-013513,25.7,20.0,nan,Physical,358403,,19990,29990,27727
+,ID224LOG65,Logitech - MK250 Compact Bluetooth Wireless Combo - Spanish - Graphite,nan,920-013513,25.7,20.0,nan,Physical,358403,,19990,29990,28213
 ,ID225XTK22,"Xtech - MM Keyboard wls, mouse wls, mouse pad XL and USB 3.0 Hub Kit - Spanish - Wireless / Wired - 2.4 GHz / USB - Black - XTK-320S",nan,XTK-320S,23.2,20.0,nan,Physical,358936,,19990,,21582
 ,ID225XTK24,Xtech - Keyboard and mouse set - Wired - Spanish - USB - Black - Multimedia XTK-302S,nan,XTK-302S,7.6,20.0,nan,Physical,388114,,9640,,10737
 ,ID225XTK25,Xtech - Keyboard and mouse set - Wireless - Spanish - USB - Black - 2.4 GHz - Black XTK-311S,nan,XTK-311S,10.7,20.0,nan,Physical,384507,,12230,,14650
@@ -1480,7 +1480,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM112KLX06,Klip Xtreme - True wireless earphones - Para Phone / Para Portable electronics / Para Tablet - Wireless - 15Hrs Display Black,nan,KTE-800BK,17.6,20.0,nan,Physical,384651,,20880,,22491
 ,MM120LEN16,Lenovo - Headphones - Wired - VoIP Headset (Teams),nan,4XD1M45626,52.1,20.0,nan,Physical,264238,,53120,,55183
 ,MM121LOG30,"Logitech G PRO X 2 LIGHTSPEED Wireless Gaming Headset, Magenta - Auricular - tamaño completo - Bluetooth / LIGHTSPEED - inalámbrico, cableado - conector de 3,5 mm - aislamiento de ruido",nan,981-001274,280.9,1.0,nan,Physical,220007,,229824,239990,260879
-,MM121LOG32,Logitech Astro A50 X- Headset - Wireless - White,nan,939-002132,378.0,3.0,nan,Physical,245555,,387124,,463887
+,MM121LOG32,Logitech Astro A50 X- Headset - Wireless - White,nan,939-002132,378.0,3.0,nan,Physical,245555,,387124,,464225
 ,MM121LOG36,Logitech ASTRO Gaming - A50 - Headset - Para Computer / Para Game console - Wireless - Blanco,nan,939-002229,303.5,5.0,nan,Physical,268572,,319990,,372704
 ,MM121LOG41,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Graphite Limited,nan,981-001504,149.1,20.0,nan,Physical,383165,,189980,189990,215093
 ,MM121LOG42,Logitech Zone Wireless - Headphones - Wireless - Bluetooth - Off-White Limited,nan,981-001596,149.0,20.0,nan,Physical,384947,,189980,189990,217204
@@ -1493,7 +1493,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MM221PGL42,Primus Gaming - True wireless earphones - Para Cellular phone / Para Home audio / Para Portable electronics / Para Tablet - Wireless,nan,PWH-S240STW,14.8,20.0,nan,Physical,273969,,17380,,18914
 ,MM221PGL54,Primus Gaming - True wireless earphones - Para Cellular phone / Para Computer / Para Game console / Para Portable electronics - Wireless - Includes 2.4 Dongle,nan,PWH-300,22.1,20.0,nan,Physical,277377,,23980,,27301
 ,MM221PGL55,Primus Gaming - Microphone set - Cellular phone / Phone / Tablet - Wireless,nan,PMI-L10BT,19.0,20.0,nan,Physical,,,,,
-,MM221PGL56,Primus gaming headset - PBH-360BK - Wireless headset system - Para Cellular phone / Para Computer / Para Portable electronics / Para Tablet - Wireless,nan,PBH-360BK,30.5,20.0,nan,Physical,277951,,33182,,35496
+,MM221PGL56,Primus gaming headset - PBH-360BK - Wireless headset system - Para Cellular phone / Para Computer / Para Portable electronics / Para Tablet - Wireless,nan,PBH-360BK,30.5,20.0,nan,Physical,277951,,33182,,35946
 ,MM221PGL57,Primus gaming headset - PBH-360W - Wireless headset system - Para Cellular phone / Para Computer / Para Portable electronics / Para Tablet - Wireless,nan,PBH-360W,30.6,20.0,nan,Physical,277379,,31980,,35875
 ,MM221PGL61,Primus Gaming - Microphone set - Computer - Wired - Includes arm stand,nan,PMI-150KT,48.6,20.0,nan,Physical,,,,,
 ,MM221PGL63,Primus Gaming - Includes remote,nan,PLI-100ML,28.3,20.0,nan,Physical,,,,,
@@ -1593,7 +1593,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,MT001HIK64,"Hikvision - 26"" - Wall-mount and modular bracket",nan,DS-D2046TL-2B,855.1,4.0,nan,Physical,391060,,967922,,1016934
 ,MT021HIK04,"Hikvision DS-D5022F2-1V2 - 21.5"" - 1920 x 1080 - VA - HDMI / VGA - 100Hz",nan,DS-D5022F2-1V2,66.5,15.0,nan,Physical,,,,,
 ,MT023DEL92,"Dell P2425HE - LCD monitor - 23.8"" - 1920 x 1080 - IPS - HDMI / DisplayPort / USB - Height adjustment - Black ",nan,P2425HE,178.2,20.0,nan,Physical,,,,,
-,MT024SAM12,"Samsung LS22F320GALXZS - 24"" - 1920 x 1080 - IPS - HDMI - 120HZ",nan,LS22F320GALXZS,80.0,20.0,nan,Physical,276502,,76374,,82056
+,MT024SAM12,"Samsung LS22F320GALXZS - 24"" - 1920 x 1080 - IPS - HDMI - 120HZ",nan,LS22F320GALXZS,80.0,20.0,nan,Physical,276502,,76374,79990,81597
 ,MT027DEL20,"Dell P2725HE - 27"" - 1920 x 1080 - IPS - USB-C - 100Hz",nan,P2725HE,235.0,20.0,nan,Physical,,,,,
 ,MT027SAM69,"Samsung - LED-backlit LCD monitor - 27"" - HDMI - 180Hz 0.03Ms HDMI DP FreSync/G",nan,LS27FG500SLXZS,449.7,6.0,nan,Physical,366630,,458870,,480513
 ,MT032SAM00,"Samsung - 32"" M9 M90F UHD 144Hz Monitor",nan,LS32FM902SLXZS,1249.2,6.0,nan,Physical,318326,,1088990,,1223477
