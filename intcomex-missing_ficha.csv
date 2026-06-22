@@ -6,12 +6,12 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 55621,nan,Motorola - Battery charger - Lithium ion - Para Motorola,nan,PG38C06720,49.0,20,nan,Physical,ok,False,0,0,0,Cargador Turbo Power 125W Negro Motorola,0,0,True,{},,,,,,
 51290,nan,Kensington Slim NanoSaver 2.0 Dual Headed Lock - Bloqueo de cable de seguridad,nan,K65023WW,31.2,5,nan,Physical,ok,False,0,0,0,Cable de Seguridad NanoSaver™ TWIN portátil para Ultrabook 2.0,0,0,True,{},,,,,,
 56608,nan,Kensington Wrist Pillow - Reposamuñecas de teclado - negro,nan,L22801A,6.8,20,nan,Physical,ok,False,0,0,0,Apoya muñecas Wrist Pillow - Negro,0,0,True,{},,,,,,
-56611,nan,Kensington - Keyboard - TECLADO INALAMB KB270 EQ RECAR,nan,K75558ES,20.4,20,nan,Physical,ok,False,0,0,0,Teclado Inalámbrico KB270 con Tecla Copilot - Negro,0,0,True,{},,385882,,22704,,25704
 56591,nan,Kensington - Keyboard - COMBO TECLADO INAL KM680 EQ R,nan,K72486ES,47.5,20,nan,Physical,ok,False,0,0,0,Combo Teclado + Mouse Inalámbrico Pro Fit Ergo KM680 - Negro,0,0,True,{},,385860,,47497,,54396
+56611,nan,Kensington - Keyboard - TECLADO INALAMB KB270 EQ RECAR,nan,K75558ES,20.4,20,nan,Physical,ok,False,0,0,0,Teclado Inalámbrico KB270 con Tecla Copilot - Negro,0,0,True,{},,385882,,22704,,25704
 47099,nan,QNAP RAIL-B02 - Juego de rieles para rack,nan,RAIL-B02,128.2,20,nan,Physical,ok,False,0,0,0,QNAP Rail Kit for 2U Rackmount Models,0,0,True,{},,,,,,
 56612,nan,Kensington - Keyboard - TECLADO INALA KB680 ERGO EQ RE,nan,K72485ES,34.0,20,nan,Physical,ok,False,0,0,0,Teclado Inalámbrico Ergonómico Pro Fit - Negro,0,0,True,{},,385837,,35651,,39323
-56498,nan,ASUS - Carrying backpack - AP2600 Bag - Premium,nan,90XB08T0-BBP000,35.6,20,nan,Physical,ok,False,0,0,0,"Mochila para Notebook Vigour 16"" - Negro",0,0,True,{},,,,,,
 53595,nan,Lenovo Security Cable Lock - Bloqueo de cable de seguridad - 1.6 m,nan,57Y4303,12.1,20,nan,Physical,ok,False,0,0,0,Cable de seguridad Lenovo 1.6 mts con llave,0,0,True,{},,,,,,
+56498,nan,ASUS - Carrying backpack - AP2600 Bag - Premium,nan,90XB08T0-BBP000,35.6,20,nan,Physical,ok,False,0,0,0,"Mochila para Notebook Vigour 16"" - Negro",0,0,True,{},,,,,,
 56589,nan,"Kensington SP40 Classic - Funda de transporte para portátil - 15.4"" - negro",nan,K62563US,21.3,7,nan,Physical,ok,False,0,0,0,Maletín para Notebook SP40 Classic Case 15.6″ - Negro,0,0,True,{},,,,,,
 54754,nan,"Lenovo ThinkPad Thunderbolt 4 WorkStation Dock - Estación de conexión - Thunderbolt 4 - 2 x DP, HDMI, Thunderbolt - 1GbE - 300 vatios - Italia, Chile",nan,40B00300IT,268.3,19,nan,Physical,ok,False,0,0,0,"Docking Station Lenovo Thinkpad Thunderbolt 4, 230W, HDMI, DP, Ethernet, USB-C",0,0,True,{},,,,,,
 56596,nan,"Kensington SmartFit Easy Riser 2.0 - Soporte para ordenador portátil - 17"" - gris",nan,K50420WW,19.0,20,nan,Physical,ok,False,0,0,0,"Base para Notebook SmartFit Easy Riser hasta 17"" - Plata",0,0,True,{},,,,,,
@@ -27,16 +27,16 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 56892,nan,"Razer DeathAdder V2 X HyperSpeed - Ratón - ergonómico - diestro - óptico - 7 botones - inalámbrico - 2.4 GHz, Bluetooth - receptor inalámbrico USB",nan,RZ01-04130100-R3U1,50.2,20,nan,Physical,ok,False,0,0,0,Mouse Gamer Inalámbrico DEATHADDER V2 X HYPERSPEED - Negro,0,0,True,{},,,,,,
 56893,nan,Razer - Keyboard - Wired - Ornata V3 X Low Prof,nan,RZ03-04471100-R311,35.7,20,nan,Physical,ok,False,0,0,0,Teclado Gamer Alámbrico Ornata V3 X - Negro,0,0,True,{},,187108,,34990,,40408
 53541,nan,Wacom STU-430 - Terminal de firma con display LCD - 9.6 x 6 cm - electromagnético - cableado - USB,nan,STU430,267.3,5,nan,Physical,ok,False,0,0,0,Tableta Digitalizadora para Firma Wacom STU-430,0,0,True,{},,,,,,
-56598,nan,Kensington MY430 EQ - Mouse - USB / USB-A - Wireless - Black,nan,K75507WW,21.3,8,nan,Physical,ok,False,0,0,0,Mouse Inalámbrico MY430 - Negro,0,0,True,{},,244433,25990,22460,,26549
 56600,nan,Kensington EQ - Mouse - USB-A - Wired - Black,nan,K72480WW,5.7,20,nan,Physical,ok,False,0,0,0,Mouse Inalábrico in-a-Box EQ - Negro,0,0,True,{},,266817,,5100,8590,8090
 56599,nan,Kensington - Mouse - Wireless - Ergonomic Vertical mouse,nan,K75575,11.5,20,nan,Physical,ok,False,0,0,0,Mouse Vertical Ergonómico Inalámbrico Pro Fit  - Gris,0,0,True,{},,126956,,13690,,15041
+56598,nan,Kensington MY430 EQ - Mouse - USB / USB-A - Wireless - Black,nan,K75507WW,21.3,8,nan,Physical,ok,False,0,0,0,Mouse Inalámbrico MY430 - Negro,0,0,True,{},,244433,25990,22460,,26549
 52790,nan,"Logitech Lift Vertical Ergonomic Mouse - Ratón vertical - ergonómico - 6 botones - inalámbrico - 2.4 GHz, Bluetooth - receptor de USB Logitech Logi Bolt - rosa",nan,910-006472,73.7,14,nan,Physical,ok,False,0,0,0,Mouse Logitech Lift Vertical Ergonomic Rosa,0,0,True,{},,147120,,69880,69990,79234
 52787,nan,"Logitech M240 Silent Bluetooth Mouse, Compact, Portable, Smooth Tracking, Rose - Ratón - 3 botones - inalámbrico - Bluetooth - rosa",nan,910-007117,19.4,20,nan,Physical,ok,False,0,0,0,Mouse Inalámbrico M240 - Rosa,0,0,True,{},,220902,,16890,21990,20917
-56592,nan,Kensington - Keyboard and mouse set - Wireless - Rechargeable,nan,K75560ES,25.0,2,nan,Physical,ok,False,0,0,0,Combo Teclado + Mouse Inalámbrico KM270 - Negro,0,0,True,{},,361360,,28970,,33334
 56593,nan,Kensington - Keyboard and mouse set - Wired - KM100 EQ,nan,K75452ES,15.6,20,nan,Physical,ok,False,0,0,0,Combo Teclado + Mouse Inalámbrico KM100 Antiderrame - Negro,0,0,True,{},,361359,,17300,,19953
+56592,nan,Kensington - Keyboard and mouse set - Wireless - Rechargeable,nan,K75560ES,25.0,2,nan,Physical,ok,False,0,0,0,Combo Teclado + Mouse Inalámbrico KM270 - Negro,0,0,True,{},,361360,,28970,,33334
 55817,nan,Lenovo - Webcam - USB-C - 1980 x 1080,nan,4XC1S15018,25.0,20,nan,Physical,ok,True,0,0,0,Webcam Essential FHD Webcam Gen2,0,0,True,{},,,,,,
-46592,nan,"Xiaomi MI Basic - Auriculares internos con micro - en oreja - cableado - conector de 3,5 mm - negro",nan,14273,6.4,2,nan,Physical,ok,False,0,0,0,Audífono In Ear Basico Negro,0,0,True,{},,78786,,5513,,9707
 46594,nan,Xiaomi - Mi Portable Bluetooth Speaker 16W - Negro,nan,29690,50.1,2,nan,Physical,ok,False,0,0,0,Parlante Portátil  Bluetooth Speaker Negro,0,0,True,{},,,,,,
+46592,nan,"Xiaomi MI Basic - Auriculares internos con micro - en oreja - cableado - conector de 3,5 mm - negro",nan,14273,6.4,2,nan,Physical,ok,False,0,0,0,Audífono In Ear Basico Negro,0,0,True,{},,78786,,5513,,9707
 46595,nan,Xiaomi - Mi Portable Bluetooth Speaker 16W - Azul,nan,29692,50.1,3,nan,Physical,ok,False,0,0,0,Parlante Portatil Bluetooth  Speaker Azul,0,0,True,{},,,,,,
 53397,nan,Logitech - Microphone - Yeti GX,nan,988-000568,168.3,12,nan,Physical,ok,False,0,0,0,Micrófono YETI GX,0,0,True,{},,,,,,
 56629,nan,Logitech Astro A50 X - Headset - Wireless - Black,nan,939-002126,450.7,5,nan,Physical,ok,False,0,0,0,Audífonos Gamer Logitech Astro A50 X Negro,0,0,True,{},,245554,,377480,,456054
