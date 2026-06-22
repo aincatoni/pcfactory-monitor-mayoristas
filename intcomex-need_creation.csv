@@ -9,8 +9,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100016684.0,Newland - 4-Slot Charger for M,nan,NLS-CD6550-4C,126.0,1,nan,Physical,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,nan,KT-TC15-ROLATAM,510.8,20,nan,Physical,,,,,
 ,100016892.0,ZEBRA ZD411 Direct Thermal Printer 203 dpi USB USB Host Modular Connectivity Slot BTLE5 US Cord Swiss Font EZPL,nan,ZD4A022-D01M00EZ,252.3,20,nan,Physical,,,,,
-,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,,48990,55600,74102
-,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,70.0,8,nan,Physical,155925,,69990,,77160
+,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,,48990,55600,74670
+,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,70.0,8,nan,Physical,155925,,69990,,78265
 ,100017225.0,Kingston Fury - DDR4 SDRAM - Unbuffered - Non-ECC,nan,KF432C16BB/32GB,278.3,20,nan,Physical,,,,,
 ,100017407.0,Zebra - Portable Barcode Printer - Direct thermal - Wi-Fi / Bluetooth 4.0 - ZQ630 Plus English fonts Dual,nan,ZQ63-AUWAL04-00,1432.3,8,nan,Physical,,,,,
 ,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",nan,ET45CA-101D1B0-A6,819.5,5,nan,Physical,393830,,950304,,950304
@@ -35,7 +35,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018341.0,POLY - Video Conf Collab - Studio X52 4K Wireless Pres Sy,nan,8D8K2AA#ABM,2797.7,6,nan,Physical,,,,,
 ,100018387.0,HyperX Clutch - Gaming Controller,nan,7D6H2AA,38.6,20,nan,Physical,,,,,
 ,100018522.0,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,nan,KF560C32RS-48,633.8,10,nan,Physical,238358,,690866,726900,730309
-,100018690.0,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,38.26,20,nan,Physical,255320,,40128,,43145
+,100018690.0,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,38.26,20,nan,Physical,255320,,41621,,44118
 ,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,747.0,20,nan,Physical,245321,,699900,,847325
 ,100018958.0,POLY - Headphones - Blackwire 3325 Stereo Microso,nan,8X222AA,58.42,9,nan,Physical,,,,,
 ,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,nan,8R2E7AA,36.4,20,nan,Physical,270375,,29990,,41947
@@ -45,17 +45,17 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100019299.0,Logitech - Meetup 2 - 960-001693,nan,960-001693,1140.0,5,nan,Physical,,,,,
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,nan,952-000195,146.1,3,nan,Physical,,,,,
 ,100019594.0,POLY - Headset - Voyager Focus 2 Microsoft,nan,9T9J6AA#AC3,188.42,1,nan,Physical,,,,,
-,100019598.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black EXPO DDR5 CL30,nan,KF560C30BBE-32,413.9,7,nan,Physical,272325,,451180,468500,482951
+,100019598.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black EXPO DDR5 CL30,nan,KF560C30BBE-32,413.9,7,nan,Physical,272325,,451180,468500,482672
 ,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,nan,KF564C32BBEA-16,255.1,20,nan,Physical,354697,,254990,282900,285875
 ,100019601.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - FURY Beast RGB EXPO,nan,KF564C32BBEA-32,455.3,20,nan,Physical,385468,,490543,,533167
 ,100019615.0,HyperX - Microphone - QuadCast S 2 Black,nan,9A273AA,120.3,20,nan,Physical,,,,,
 ,100019637.0,Jabra - Headphones - Evolve2 50 USB C/A MS Stereo,nan,25089-999-799,148.2,6,nan,Physical,270981,,157448,,170861
 ,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,nan,4999-823-169,32.7,20,nan,Physical,269060,,35636,,39719
-,100019641.0,Jabra - Headphones - Evolve2 30 SE MS Stereo USB C,nan,23189-999-779,94.1,10,nan,Physical,269490,,100990,,108694
-,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,nan,5399-823-369,67.9,8,nan,Physical,268574,,77270,,81967
+,100019641.0,Jabra - Headphones - Evolve2 30 SE MS Stereo USB C,nan,23189-999-779,94.1,10,nan,Physical,269490,,100990,,107934
+,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,nan,5399-823-369,67.9,8,nan,Physical,268574,,77270,,81359
 ,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,nan,4999-823-369,52.1,20,nan,Physical,277308,,53120,,57664
 ,100019914.0,Poly - Video conferencing device - Studio V12 USB Video Bar,nan,A9DD8AA#ABA,921.48,8,nan,Physical,,,,,
-,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,nan,KF560C30BBEA-32,426.9,3,nan,Physical,377909,,481790,481790,498343
+,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,nan,KF560C30BBEA-32,426.9,3,nan,Physical,377909,,481790,481790,496224
 ,100020155.0,JBL 104SET-BT-US JBL 104-BT Monitores Compactos de 4.5 pulg. con Bluetooth Negro - Venta en pares,nan,104SET-BT-US,181.32,20,nan,Physical,,,,,
 ,100020162.0,"JBL Pro 308P MkII - Powered 8"" Two-Way Studio Monitor - Bi-amplified - Matte black",nan,308PMKII,299.58,17,nan,Physical,,,,,
 ,100020172.0,"JBL Pro Control 25-1 Parlante de Superficie Compacto 5.25"" - Negro - venta en pares",nan,CONTROL 25-1,189.21,6,nan,Physical,,,,,
