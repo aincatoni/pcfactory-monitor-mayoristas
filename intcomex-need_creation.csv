@@ -2,15 +2,15 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100002215.0,"Zebra - Color (cián, magenta, amarillo, negro, superpuesto) - 58 mm x 99 m - cinta de impresión - para Zebra ZC300",nan,800300-350LA,33.0,4,nan,Physical,,,,,
 ,100002342.0,"Zebra - Cable USB - 24 pines USB-C (M) a USB (M) - 1 m - para Zebra EC50, EC55, MC2200, MC27, TC21, TC26",nan,CBL-TC5X-USBC2A-01,9.7,20,nan,Physical,,,,,
 ,100015865.0,Kingston FURY Impact - DDR4 - módulo - 32 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL20 - 1.2 V - sin búfer - no ECC - negro,nan,KF432S20IB/32,277.4,20,nan,Physical,125634,,219900,,284113
-,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C18BB/32,315.6,18,nan,Physical,126356,,342028,,356564
-,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,nan,KF556C40BB-8,132.2,20,nan,Physical,140024,,144990,,159299
+,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C18BB/32,315.6,18,nan,Physical,126356,,342028,,356190
+,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,nan,KF556C40BB-8,132.2,20,nan,Physical,140024,,144990,,159626
 ,100016408.0,HyperX - Keyboard - Alloy Core RGB MERCO,nan,4P4F5AI#AC8,39.9,20,nan,Physical,,,,,
 ,100016410.0,HyperX - Keyboard - ABS HX Red MERCO,nan,4P4F6AI#AC8,116.3,20,nan,Physical,,,,,
 ,100016684.0,Newland - 4-Slot Charger for M,nan,NLS-CD6550-4C,126.0,1,nan,Physical,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,nan,KT-TC15-ROLATAM,510.8,20,nan,Physical,,,,,
 ,100016892.0,ZEBRA ZD411 Direct Thermal Printer 203 dpi USB USB Host Modular Connectivity Slot BTLE5 US Cord Swiss Font EZPL,nan,ZD4A022-D01M00EZ,252.3,20,nan,Physical,,,,,
 ,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,,48990,79202,74057
-,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,70.0,8,nan,Physical,155925,,69990,,77606
+,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,70.0,8,nan,Physical,155925,,69990,,77045
 ,100017225.0,Kingston Fury - DDR4 SDRAM - Unbuffered - Non-ECC,nan,KF432C16BB/32GB,278.3,20,nan,Physical,,,,,
 ,100017407.0,Zebra - Portable Barcode Printer - Direct thermal - Wi-Fi / Bluetooth 4.0 - ZQ630 Plus English fonts Dual,nan,ZQ63-AUWAL04-00,1432.3,8,nan,Physical,,,,,
 ,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",nan,ET45CA-101D1B0-A6,819.5,5,nan,Physical,393830,,955168,,955168
@@ -27,8 +27,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018124.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/8,80.9,20,nan,Physical,223068,,87634,,93717
 ,100018181.0,Kingston FURY Beast - DDR5 - módulo - 16 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-16,235.3,20,nan,Physical,206512,,229990,,267545
 ,100018182.0,Kingston FURY Beast - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-32,469.0,18,nan,Physical,206513,,459900,,518954
-,100018183.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-8,130.1,20,nan,Physical,202125,,141236,,166219
-,100018186.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 3000 MT/s / PC5-48000 - CL36 - 1.35 V - sin búfer - on-die ECC - negro,nan,KF560C36BBE-8,142.7,20,nan,Physical,255261,,155038,,164112
+,100018183.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-8,130.1,20,nan,Physical,202125,,141236,,166734
+,100018186.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 3000 MT/s / PC5-48000 - CL36 - 1.35 V - sin búfer - on-die ECC - negro,nan,KF560C36BBE-8,142.7,20,nan,Physical,255261,,155038,,164444
 ,100018190.0,Kingston FURY Beast RGB - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC,nan,KF556C36BBEA-32,453.0,20,nan,Physical,276769,,472900,,522679
 ,100018191.0,Kingston FURY Beast RGB - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBEA-8,137.0,18,nan,Physical,257310,,148316,,171951
 ,100018322.0,Poly - Kit de montaje (montaje VESA) - para sistema de videoconferencia - para Poly Studio X52,nan,875L9AA,198.9,3,nan,Physical,,,,,
