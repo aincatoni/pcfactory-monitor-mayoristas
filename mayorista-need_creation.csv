@@ -1,7 +1,7 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,1000329,RACK PDU BASIC ZERO U 16A,Apc,AP9572,84.98,3,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
 ,1004027,TINTA HP 72 CABEZAL GRIS Y FOTO NEGRO,Hp,C9380A,102.93,3,Suministros y Medios,Suministros Inyección de Tinta,260608,,116835,,121807
-,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,197.14,98,Suministros y Medios,Suministros Láser,260299,,115000,,207763
+,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,197.14,98,Suministros y Medios,Suministros Láser,260299,,115000,,203637
 ,1015806,WRISTBAND POLYPROPYLENE 1X11IN 25.4X2,Zebra,10006995K,313.53,2,Suministros y Medios,Suministros Impresora Térmica,,,,,
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,278.31,39,Suministros y Medios,Suministros Láser,260104,,194900,,289575
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,179,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,
@@ -471,8 +471,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.3,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,192,Suministros y Medios,Suministros Láser,260121,,78236,,86078
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,91386,109990,100924
-,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,91331,96990,99409
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,32,Suministros y Medios,Suministros Láser,260108,,91464,96990,100483
+,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,91331,109990,100070
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,32,Suministros y Medios,Suministros Láser,260108,,91464,96990,99875
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,213.95,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4798868,DS640 ESCANER PORTATIL,Brother,DS640,135.73,41,Cámaras y Escáners,Escáners para el Hogar/Oficina,,,,,
 ,4827711,SERVER RACK CABINET 42U,Startech.Com,RK4236BKB,2102.2,2,Protección Eléctrica y Racks,Racks,,,,,
@@ -690,7 +690,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5943025,HPE ML110 GEN11 LFF PCIE CBL KIT,Hewlett Packard Enterprise,P53484-B21,77.6,1,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,6076847,2.5IN 2.4TB 10K SAS 12GB HS 512E HDD V2,Lenovo,4XB7A83970,904.0,1,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),249456,,1025900,,1042945
 ,6113512,TAMBOR DR219CL,Brother,DR219CL4PK,115.73,31,Suministros y Medios,Suministros Láser,,,,,
-,6113513,Digital Colour Printer,Brother,HLL3280CDW,334.32,8,Impresoras,Impresoras Láser/LED color,227830,,367329,,388490
+,6113513,Digital Colour Printer,Brother,HLL3280CDW,334.32,8,Impresoras,Impresoras Láser/LED color,227830,419990,367329,,389990
 ,6113898,TONER CYAN XL TN219XLC 2300PG,Brother,TN219XLC,74.7,11,Suministros y Medios,Suministros Láser,259724,,84900,,92866
 ,6113900,TONER AMARILLO XL TN219XLY 2300PG,Brother,TN219XLY,74.7,59,Suministros y Medios,Suministros Láser,259727,,84998,,91913
 ,6119109,GPR 58 DRUM UNIT MAGENTA,Canon,2188C003,238.92,7,Suministros y Medios,Suministros Láser,,,,,
@@ -758,8 +758,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,71.2,15,Dispositivos de Entrada,Mouse,263737,,76990,,82523
 ,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,141.55,37,Dispositivos de Entrada,Teclados,269661,,156361,,162887
 ,6370905,KIT USB SR HONEYWELL XENON ULTRA 1960G 1,Honeywell,1960GSR-2USB-N,190.9,2,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,166990,189990,184526
-,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,119900,139990,146720
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,166990,189990,183454
+,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,119900,134990,145053
 ,6379941,WINDOWS SVR STD 2025 64BIT SPANISH 1PK D,Microsoft,EP2-25197,894.67,10,Software,SW Sistemas Operativos Windows,,,,,
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,270.24,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,6398211,USB-C TO MAGSAFE 3 CABLE (2M)-AME,Apple,MW613AM/A,49.75,35,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
@@ -860,7 +860,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6777969,ADATA DRAM DDR4 U-DIMM 16GB 3200,Adata Technology,AD4U320016G22-SBK,156.04,198,Componentes de Sistema,Memoria Genérica,386772,,167900,,182626
 ,6782248,HP 400 QUIET BLUE WIRELESS MOUSE US,Hp,AZ7B4AA#ABA,16.89,514,Dispositivos de Entrada,Mouse,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,106.1,390,Pantallas,Monitores LCD/LED,,,,,
-,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,171.62,26,Pantallas,Monitores LCD/LED,379960,,199990,249990,215344
+,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,171.62,26,Pantallas,Monitores LCD/LED,379960,,199990,199990,209045
 ,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1041.5,8,Pantallas,Monitores LCD/LED,318326,,1088990,,1226129
 ,6784033,ANW 6000 24G CL4 4F 370W -STOCK,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,,,,,
 ,6784291,PRIME X870-P WIFI,Asus,90MB1IS0-MVAAY0,235.98,15,Componentes de Sistema,Tarjetas Madre AMD,,,,,
