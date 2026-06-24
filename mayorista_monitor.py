@@ -14,7 +14,7 @@ import argparse
 import concurrent.futures as cf
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 from zoneinfo import ZoneInfo
 
 import pandas as pd
@@ -474,6 +474,28 @@ def enrich_with_pcf_catalog(df_no_pcf: pd.DataFrame, catalog_df: pd.DataFrame) -
     return all_matched, still_unmatched
 
 
+def collect_eligible_pcf_ids(df: pd.DataFrame, catalog_df: Optional[pd.DataFrame]) -> Set[int]:
+    """Retorna los PCF ID elegibles del sheet, incluyendo IDs resueltos por catálogo."""
+    xlsx_stats = apply_xlsx_filters(df)
+    frames = [xlsx_stats["has_pcf_id"]]
+
+    if len(xlsx_stats["no_pcf_id"]) > 0 and catalog_df is not None:
+        matched_df, _ = enrich_with_pcf_catalog(xlsx_stats["no_pcf_id"], catalog_df)
+        frames.append(matched_df)
+
+    ids: Set[int] = set()
+    for frame in frames:
+        if COL_PCF_ID not in frame.columns:
+            continue
+        for value in frame[COL_PCF_ID].dropna():
+            try:
+                ids.add(int(float(value)))
+            except (ValueError, TypeError):
+                continue
+
+    return ids
+
+
 def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     total = len(df)
 
@@ -703,9 +725,11 @@ def classify_products(
     seguimiento: Dict = None,
     current_mayorista: str = "ingram",
     provider_lookup: Optional[Dict[int, str]] = None,
+    exclusive_published_ids: Optional[Set[int]] = None,
 ) -> Dict[str, Any]:
     seg = seguimiento or {}
     supplier_lookup = provider_lookup or {}
+    exclusive_ids = exclusive_published_ids
     # Con ficha listos para publicar (PCF ID + mayorista=false + stock_pcf=0 + tiene ficha)
     publish_ready = []
     # Ficha vacía pero ya solicitada en seguimiento (esperando que eCommerce la publique)
@@ -716,6 +740,8 @@ def classify_products(
     missing_ficha = []
     # Publicados - ya mayorista en lista 1
     already_mayorista = []
+    # Publicados pero compartidos con el otro sheet; no cuentan para este dashboard
+    shared_published = []
     # Con stock PCF (excluidos)
     has_pcf_stock = []
     # Requieren creacion (API 404 - id no existe en PCFactory)
@@ -732,8 +758,12 @@ def classify_products(
             continue
         item_provider = supplier_lookup.get(item.get("pcf_id"))
         item["catalog_provider"] = item_provider
-        if item["mayorista"] is True and item.get("lista") == "1" and item_provider == current_mayorista:
-            already_mayorista.append(item)
+        if item["mayorista"] is True and item.get("lista") == "1":
+            is_exclusive = exclusive_ids is None or item.get("pcf_id") in exclusive_ids
+            if is_exclusive:
+                already_mayorista.append(item)
+            else:
+                shared_published.append(item)
             continue
         if item["stock_pcf"] is not None and item["stock_pcf"] > 0:
             has_pcf_stock.append(item)
@@ -771,6 +801,7 @@ def classify_products(
         "missing_ficha": missing_ficha,
         "need_creation": need_creation,
         "already_mayorista": already_mayorista,
+        "shared_published": shared_published,
         "has_pcf_stock": has_pcf_stock,
         "api_errors": api_errors,
     }
@@ -964,6 +995,7 @@ def generate_html_dashboard(
     missing_ficha = classification.get("missing_ficha", [])
     need_creation = classification["need_creation"]
     already_mayorista = classification["already_mayorista"]
+    shared_published = classification.get("shared_published", [])
     has_pcf_stock = classification["has_pcf_stock"]
     api_errors = classification["api_errors"]
 
@@ -995,6 +1027,7 @@ def generate_html_dashboard(
     # Verificación de coherencia del funnel
     with_stock_check = (
         len(already_mayorista) +
+        len(shared_published) +
         total_potencial +
         len(has_pcf_stock) +
         no_eligible +
@@ -2702,6 +2735,23 @@ def main():
 
     provider_lookup = build_catalog_provider_lookup(catalog_df)
 
+    comparison_mayorista = "intcomex" if args.mayorista == "ingram" else "ingram"
+    comparison_gid = INTCOMEX_SHEET_GID if comparison_mayorista == "intcomex" else GOOGLE_SHEET_GID
+    exclusive_published_ids: Optional[Set[int]] = None
+    try:
+        print(f"[*] Cargando referencia de {comparison_mayorista} para excluir publicados compartidos...")
+        comparison_df = read_google_sheet(args.sheet_id, comparison_gid)
+        current_ids = collect_eligible_pcf_ids(df, catalog_df)
+        comparison_ids = collect_eligible_pcf_ids(comparison_df, catalog_df)
+        exclusive_published_ids = current_ids - comparison_ids
+        print(
+            f"[+] IDs exclusivos para {args.mayorista}: {len(exclusive_published_ids)} "
+            f"(compartidos con {comparison_mayorista}: {len(current_ids & comparison_ids)})"
+        )
+    except Exception as e:
+        print(f"[!] No se pudo cargar referencia de {comparison_mayorista}: {e}")
+        print("    Se mantiene el conteo de publicados sin exclusión por cruce de sheets")
+
     # 4. Cargar seguimiento (necesario antes de clasificar para separar pending_ficha)
     seguimiento = read_seguimiento_sheet(mayorista=args.mayorista)
 
@@ -2712,6 +2762,7 @@ def main():
         "missing_ficha": [],
         "need_creation": [],
         "already_mayorista": [],
+        "shared_published": [],
         "has_pcf_stock": [],
         "api_errors": [],
     }
@@ -2725,6 +2776,7 @@ def main():
             seguimiento,
             current_mayorista=args.mayorista,
             provider_lookup=provider_lookup,
+            exclusive_published_ids=exclusive_published_ids,
         )
     else:
         if args.skip_api:
