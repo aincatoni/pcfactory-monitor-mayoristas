@@ -61,6 +61,9 @@ COL_CATEGORY = "CATEGORIA"
 COL_SUBCATEGORY = "TIPO"
 COL_EAN = "EAN/UPC CODE"
 
+CATALOG_COL_PCF_ID = "CODIGO"
+CATALOG_COL_MAYORISTA = "MAYORISTA"
+
 # ==============================================================================
 # FUNCIONES DE FECHA/HORA CHILE
 # ==============================================================================
@@ -377,6 +380,42 @@ def load_pcf_catalog(filepath: str) -> pd.DataFrame:
     return df
 
 
+def normalize_catalog_mayorista(mayorista: Any) -> Optional[str]:
+    if mayorista is None:
+        return None
+    mayorista_text = str(mayorista).strip().upper()
+    if not mayorista_text or mayorista_text == "NAN":
+        return None
+    if "INTCOMEX" in mayorista_text:
+        return "intcomex"
+    if "INGRAM" in mayorista_text:
+        return "ingram"
+    return None
+
+
+def build_catalog_provider_lookup(catalog_df: pd.DataFrame) -> Dict[int, str]:
+    """Mapea PCF ID -> mayorista origen según el campo MAYORISTA del catálogo interno."""
+    if catalog_df is None or catalog_df.empty:
+        return {}
+
+    if CATALOG_COL_PCF_ID not in catalog_df.columns or CATALOG_COL_MAYORISTA not in catalog_df.columns:
+        print("[!] Catalogo PCF sin columnas CODIGO/MAYORISTA; no se podra distinguir origen mayorista")
+        return {}
+
+    provider_lookup: Dict[int, str] = {}
+    for _, row in catalog_df[[CATALOG_COL_PCF_ID, CATALOG_COL_MAYORISTA]].dropna(subset=[CATALOG_COL_PCF_ID]).iterrows():
+        try:
+            pcf_id = int(float(row[CATALOG_COL_PCF_ID]))
+        except (ValueError, TypeError):
+            continue
+        provider = normalize_catalog_mayorista(row[CATALOG_COL_MAYORISTA])
+        if provider:
+            provider_lookup[pcf_id] = provider
+
+    print(f"[+] Lookup de origen mayorista cargado: {len(provider_lookup)} productos identificados")
+    return provider_lookup
+
+
 def enrich_with_pcf_catalog(df_no_pcf: pd.DataFrame, catalog_df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Busca IDs PCF para los productos sin mapear usando PARTNO y EAN/UPC CODE.
@@ -658,8 +697,15 @@ def check_products_batch(session: requests.Session, df_with_ids: pd.DataFrame, m
 # CLASIFICACION FINAL
 # ==============================================================================
 
-def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame, seguimiento: Dict = None) -> Dict[str, Any]:
+def classify_products(
+    api_results: List[Dict],
+    df_no_pcf_id: pd.DataFrame,
+    seguimiento: Dict = None,
+    current_mayorista: str = "ingram",
+    provider_lookup: Optional[Dict[int, str]] = None,
+) -> Dict[str, Any]:
     seg = seguimiento or {}
+    supplier_lookup = provider_lookup or {}
     # Con ficha listos para publicar (PCF ID + mayorista=false + stock_pcf=0 + tiene ficha)
     publish_ready = []
     # Ficha vacía pero ya solicitada en seguimiento (esperando que eCommerce la publique)
@@ -684,7 +730,9 @@ def classify_products(api_results: List[Dict], df_no_pcf_id: pd.DataFrame, segui
         if item["api_status"] == "not_found":
             need_creation.append(item)
             continue
-        if item["mayorista"] is True and item.get("lista") == "1":
+        item_provider = supplier_lookup.get(item.get("pcf_id"))
+        item["catalog_provider"] = item_provider
+        if item["mayorista"] is True and item.get("lista") == "1" and item_provider == current_mayorista:
             already_mayorista.append(item)
             continue
         if item["stock_pcf"] is not None and item["stock_pcf"] > 0:
@@ -2637,17 +2685,22 @@ def main():
     print(f"    Sin PCF ID: {len(xlsx_stats['no_pcf_id'])}")
 
     # 3b. Enriquecer con catálogo PCF (local vía --pcf-catalog o desde Google Sheets)
-    if len(xlsx_stats["no_pcf_id"]) > 0:
+    catalog_df = None
+    if len(xlsx_stats["no_pcf_id"]) > 0 or not args.skip_api:
         if args.pcf_catalog:
             print(f"\n[*] Cruzando con catálogo PCF (local): {args.pcf_catalog}")
             catalog_df = load_pcf_catalog(args.pcf_catalog)
         else:
             catalog_df = read_pcf_catalog_sheet()
+
+    if len(xlsx_stats["no_pcf_id"]) > 0 and catalog_df is not None:
         new_matched, still_no_pcf = enrich_with_pcf_catalog(xlsx_stats["no_pcf_id"], catalog_df)
         xlsx_stats["has_pcf_id"] = pd.concat([xlsx_stats["has_pcf_id"], new_matched], ignore_index=True)
         xlsx_stats["no_pcf_id"] = still_no_pcf
         print(f"    Con PCF ID (actualizado): {len(xlsx_stats['has_pcf_id'])}")
         print(f"    Sin PCF ID (actualizado): {len(xlsx_stats['no_pcf_id'])}")
+
+    provider_lookup = build_catalog_provider_lookup(catalog_df)
 
     # 4. Cargar seguimiento (necesario antes de clasificar para separar pending_ficha)
     seguimiento = read_seguimiento_sheet(mayorista=args.mayorista)
@@ -2666,7 +2719,13 @@ def main():
     if not args.skip_api and len(xlsx_stats["has_pcf_id"]) > 0:
         session = create_session()
         api_results = check_products_batch(session, xlsx_stats["has_pcf_id"], args.workers)
-        classification = classify_products(api_results, xlsx_stats["no_pcf_id"], seguimiento)
+        classification = classify_products(
+            api_results,
+            xlsx_stats["no_pcf_id"],
+            seguimiento,
+            current_mayorista=args.mayorista,
+            provider_lookup=provider_lookup,
+        )
     else:
         if args.skip_api:
             print("\n[*] API omitida (--skip-api)")
