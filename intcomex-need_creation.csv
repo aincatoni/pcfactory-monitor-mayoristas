@@ -1,7 +1,7 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,100002215.0,"Zebra - Color (cián, magenta, amarillo, negro, superpuesto) - 58 mm x 99 m - cinta de impresión - para Zebra ZC300",nan,800300-350LA,33.0,4,nan,Physical,,,,,
 ,100002342.0,"Zebra - Cable USB - 24 pines USB-C (M) a USB (M) - 1 m - para Zebra EC50, EC55, MC2200, MC27, TC21, TC26",nan,CBL-TC5X-USBC2A-01,9.7,20,nan,Physical,,,,,
-,100015865.0,Kingston FURY Impact - DDR4 - módulo - 32 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL20 - 1.2 V - sin búfer - no ECC - negro,nan,KF432S20IB/32,277.4,20,nan,Physical,125634,,219900,,285413
+,100015865.0,Kingston FURY Impact - DDR4 - módulo - 32 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL20 - 1.2 V - sin búfer - no ECC - negro,nan,KF432S20IB/32,277.4,20,nan,Physical,125634,,219900,,286170
 ,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C18BB/32,315.6,18,nan,Physical,126356,,340138,,352923
 ,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,nan,KF556C40BB-8,132.2,20,nan,Physical,140024,,146870,,160121
 ,100016408.0,HyperX - Keyboard - Alloy Core RGB MERCO,nan,4P4F5AI#AC8,39.9,20,nan,Physical,,,,,
@@ -9,7 +9,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100016684.0,Newland - 4-Slot Charger for M,nan,NLS-CD6550-4C,126.0,1,nan,Physical,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,nan,KT-TC15-ROLATAM,510.8,20,nan,Physical,,,,,
 ,100016892.0,ZEBRA ZD411 Direct Thermal Printer 203 dpi USB USB Host Modular Connectivity Slot BTLE5 US Cord Swiss Font EZPL,nan,ZD4A022-D01M00EZ,252.3,20,nan,Physical,,,,,
-,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,99990,48990,81134,75893
+,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,99990,48990,56750,75890
 ,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,70.0,8,nan,Physical,155925,,64990,,76946
 ,100017225.0,Kingston Fury - DDR4 SDRAM - Unbuffered - Non-ECC,nan,KF432C16BB/32GB,278.3,20,nan,Physical,,,,,
 ,100017407.0,Zebra - Portable Barcode Printer - Direct thermal - Wi-Fi / Bluetooth 4.0 - ZQ630 Plus English fonts Dual,nan,ZQ63-AUWAL04-00,1432.3,8,nan,Physical,,,,,
@@ -17,7 +17,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100017715.0,"Poly Voyager 4320-M - Auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-A a través de adaptador Bluetooth - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",nan,77Y98AA,146.0,20,nan,Physical,134238,,119990,,141656
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",nan,WCMTB-T27B6ABC2-A6,615.9,20,nan,Physical,,,,,
 ,100017860.0,Kingston FURY Beast RGB - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.35 V - sin búfer - no ECC - negro,nan,KF432C16BB2A/32,283.7,20,nan,Physical,219778,,305900,,359161
-,100017861.0,Kingston FURY Beast RGB - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL17 - 1.35 V - sin búfer - no ECC,nan,KF436C17BB2A/8,89.2,20,nan,Physical,219779,,94848,,99625
+,100017861.0,Kingston FURY Beast RGB - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL17 - 1.35 V - sin búfer - no ECC,nan,KF436C17BB2A/8,89.2,20,nan,Physical,219779,,94848,,99594
 ,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",nan,77Z30AA,123.7,20,nan,Physical,367034,,137733,,149316
 ,100017964.0,"Zebra - Empuñadura tipo pistola - para Zebra TC22, TC27",nan,TRG-TC2L-SNP1-01,86.8,20,nan,Physical,,,,,
 ,100018026.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL16 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C16RB2/8,88.1,20,nan,Physical,224563,,94535,,100692
@@ -29,7 +29,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018182.0,Kingston FURY Beast - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-32,469.0,18,nan,Physical,206513,,459850,,518610
 ,100018183.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-8,130.1,20,nan,Physical,202125,,141141,,164657
 ,100018186.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 3000 MT/s / PC5-48000 - CL36 - 1.35 V - sin búfer - on-die ECC - negro,nan,KF560C36BBE-8,142.7,20,nan,Physical,255261,,147002,,155896
-,100018190.0,Kingston FURY Beast RGB - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC,nan,KF556C36BBEA-32,453.0,20,nan,Physical,276769,,472900,,524149
+,100018190.0,Kingston FURY Beast RGB - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC,nan,KF556C36BBEA-32,453.0,20,nan,Physical,276769,,472900,,524351
 ,100018191.0,Kingston FURY Beast RGB - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBEA-8,137.0,18,nan,Physical,257310,,149460,,170975
 ,100018322.0,Poly - Kit de montaje (montaje VESA) - para sistema de videoconferencia - para Poly Studio X52,nan,875L9AA,198.9,3,nan,Physical,,,,,
 ,100018341.0,POLY - Video Conf Collab - Studio X52 4K Wireless Pres Sy,nan,8D8K2AA#ABM,2797.7,6,nan,Physical,,,,,
@@ -38,7 +38,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018690.0,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,38.26,20,nan,Physical,255320,,42539,,44905
 ,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,747.0,20,nan,Physical,245321,,699900,,866001
 ,100018958.0,POLY - Headphones - Blackwire 3325 Stereo Microso,nan,8X222AA,58.42,9,nan,Physical,396785,,68576,,68576
-,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,nan,8R2E7AA,36.4,20,nan,Physical,270375,,29990,,41560
+,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,nan,8R2E7AA,36.4,20,nan,Physical,270375,,29990,,42178
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,nan,SBP-120HMW,32.4,9,nan,Physical,,,,,
 ,100019199.0,Jabra Evolve 65 TE - Wireless Stereo Headset (Microsoft Teams) - USB-A Bluetooth adapter,nan,6699-833-309,96.9,8,nan,Physical,258188,,113990,,142091
 ,100019219.0,Kingston Fury - DDR5 SDRAM - DIMM 288-pin - 6400 MHz - CL32 - Generic - ECC - Dimm,nan,KF564C32BBE-16,250.3,20,nan,Physical,255262,,253990,,311296
@@ -53,7 +53,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,nan,4999-823-169,32.7,20,nan,Physical,269060,,36422,,40442
 ,100019641.0,Jabra - Headphones - Evolve2 30 SE MS Stereo USB C,nan,23189-999-779,94.1,10,nan,Physical,269490,,99990,,106728
 ,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,nan,5399-823-369,67.9,8,nan,Physical,268574,,78190,,82411
-,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,nan,4999-823-369,52.1,20,nan,Physical,277308,,54086,,61259
+,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,nan,4999-823-369,52.1,20,nan,Physical,277308,,59190,,62611
 ,100019914.0,Poly - Video conferencing device - Studio V12 USB Video Bar,nan,A9DD8AA#ABA,921.48,8,nan,Physical,,,,,
 ,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,nan,KF560C30BBEA-32,426.9,3,nan,Physical,377909,,481790,481790,487710
 ,100020155.0,JBL 104SET-BT-US JBL 104-BT Monitores Compactos de 4.5 pulg. con Bluetooth Negro - Venta en pares,nan,104SET-BT-US,181.32,20,nan,Physical,,,,,
@@ -75,7 +75,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020287.0,AKG D5C - Microfono Dinamico Vocal,nan,D5C,102.48,10,nan,Physical,267341,,799990,,867490
 ,100020288.0,AKG - K240 MKII - Headphones - Wired,nan,K240 MKII,141.9,20,nan,Physical,70849,,162278,,172541
 ,100020289.0,AKG P170 - Microphone - small-diaphragm condenser microphone,nan,P170,102.48,20,nan,Physical,,,,,
-,100020290.0,AKG P220 - Microphone - large-diaphragm true condenser microphone,nan,P220,189.21,10,nan,Physical,260934,,199900,,207950
+,100020290.0,AKG P220 - Microphone - large-diaphragm true condenser microphone,nan,P220,189.21,10,nan,Physical,260934,,197500,,207231
 ,100020291.0,AKG P5 S - Microphone - high-performance dynamic vocal microphone,nan,P5S,67.01,20,nan,Physical,104905,,,,
 ,100020292.0,AKG - Perception Wireless 45 Instrumental Set Band-A - Microphone,nan,PERCEP WL 45 INST BDA,236.51,4,nan,Physical,,,,,
 ,100020293.0,AKG - Perception Wireless 45 Presenter Set Band-A,nan,PERCEP WL 45 PRES BDA,236.51,2,nan,Physical,,,,,
@@ -134,7 +134,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020875.0,JBL Pro - Speaker - EON715-EK,nan,JBL EON715-EK,670.13,20,nan,Physical,,,,,
 ,100021006.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast Black,nan,KF556C36BBE-64,919.1,8,nan,Physical,383064,,1035357,,1085932
 ,100021007.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast RGB,nan,KF556C36BBEA-64,918.9,6,nan,Physical,354683,,1022990,,1073243
-,100021028.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - 16GB CL32 DIMM Beast RGB EXPO,nan,KF564C32BBE-32,438.6,20,nan,Physical,382008,,476228,,503583
+,100021028.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - 16GB CL32 DIMM Beast RGB EXPO,nan,KF564C32BBE-32,438.6,20,nan,Physical,382008,,476228,,501575
 ,100021032.0,Kingston Fury - DDR5 SDRAM - 16GB 6400MT/s DDR5 CL38 SODIM,nan,KF564S38IB-16,252.1,20,nan,Physical,382105,,214900,,273349
 ,100021236.0,HyperX - Mouse - Pulsefire Fuse Wireless,nan,A1KY6AA,27.1,20,nan,Physical,393425,,27399,,31968
 ,100021254.0,Poly Blackwire - 3220 - Headset - Wired,nan,8X228AA,30.85,20,nan,Physical,385537,,32990,,36140
