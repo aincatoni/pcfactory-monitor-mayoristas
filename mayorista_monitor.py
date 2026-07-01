@@ -762,8 +762,20 @@ def classify_products(
             is_exclusive = exclusive_ids is None or item.get("pcf_id") in exclusive_ids
             if is_exclusive:
                 already_mayorista.append(item)
+            elif item_provider:
+                # Los publicados compartidos deben contarse en un solo dashboard,
+                # usando el origen mayorista real definido en el catalogo PCF.
+                if item_provider == current_mayorista:
+                    already_mayorista.append(item)
+                else:
+                    shared_published.append(item)
             else:
-                shared_published.append(item)
+                # Fallback deterministico cuando el catalogo no informa origen.
+                # Se asigna a Ingram para evitar perder el publicado en ambos tabs.
+                if current_mayorista == "ingram":
+                    already_mayorista.append(item)
+                else:
+                    shared_published.append(item)
             continue
         if item["stock_pcf"] is not None and item["stock_pcf"] > 0:
             has_pcf_stock.append(item)
