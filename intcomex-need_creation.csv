@@ -24,7 +24,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018028.0,Kingston FURY Renegade RGB - DDR4 - módulo - 32 GB: 1 x 32 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL18 - 1.2 V - sin búfer - no ECC - negro,nan,KF436C18RB2A/32,313.3,20,nan,Physical,227668,,339872,,361919
 ,100018032.0,"HP - Kit de montaje (montaje VESA, soporte para montaje en pared) - para sistema de videoconferencia - para Poly Studio X30",nan,875L6AA,75.18,1,nan,Physical,,,,,
 ,100018123.0,Kingston FURY Renegade - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/32,289.0,8,nan,Physical,223067,,310000,,325377
-,100018124.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/8,80.9,20,nan,Physical,223068,,88296,,93124
+,100018124.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/8,80.9,20,nan,Physical,223068,,88296,,92891
 ,100018181.0,Kingston FURY Beast - DDR5 - módulo - 16 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-16,235.3,20,nan,Physical,206512,,229990,,271703
 ,100018182.0,Kingston FURY Beast - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-32,469.0,18,nan,Physical,206513,,459850,,499984
 ,100018183.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-8,130.1,20,nan,Physical,202125,,142086,,166054
@@ -35,7 +35,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018341.0,POLY - Video Conf Collab - Studio X52 4K Wireless Pres Sy,nan,8D8K2AA#ABM,2797.7,6,nan,Physical,,,,,
 ,100018387.0,HyperX Clutch - Gaming Controller,nan,7D6H2AA,38.6,20,nan,Physical,,,,,
 ,100018522.0,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,nan,KF560C32RS-48,633.8,10,nan,Physical,238358,,709908,,741320
-,100018690.0,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,38.26,20,nan,Physical,255320,,44840,,45274
+,100018690.0,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,38.26,20,nan,Physical,255320,,44500,,45080
 ,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,747.0,20,nan,Physical,245321,,866492,,940042
 ,100018958.0,POLY - Headphones - Blackwire 3325 Stereo Microso,nan,8X222AA,58.42,9,nan,Physical,396785,,68576,,68576
 ,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,nan,8R2E7AA,36.4,20,nan,Physical,270375,,29990,,42249
@@ -46,7 +46,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,nan,952-000195,146.1,3,nan,Physical,,,,,
 ,100019594.0,POLY - Headset - Voyager Focus 2 Microsoft,nan,9T9J6AA#AC3,188.42,1,nan,Physical,,,,,
 ,100019598.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black EXPO DDR5 CL30,nan,KF560C30BBE-32,413.9,7,nan,Physical,272325,,479990,,479990
-,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,nan,KF564C32BBEA-16,255.1,20,nan,Physical,354697,,260730,,288936
+,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,nan,KF564C32BBEA-16,255.1,20,nan,Physical,354697,,260730,,289158
 ,100019601.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - FURY Beast RGB EXPO,nan,KF564C32BBEA-32,455.3,20,nan,Physical,385468,,506421,,538648
 ,100019615.0,HyperX - Microphone - QuadCast S 2 Black,nan,9A273AA,120.3,20,nan,Physical,,,,,
 ,100019637.0,Jabra - Headphones - Evolve2 50 USB C/A MS Stereo,nan,25089-999-799,148.2,6,nan,Physical,270981,,161312,,174963
@@ -124,7 +124,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020406.0,Epson - TM-T20IV-L impresora de ticket,nan,C31CL45001,120.1,20,nan,Physical,,,,,
 ,100020460.0,JBL Pro - Speaker - IRX ONE,nan,JBL-IRXONE-EK,985.49,20,nan,Physical,,,,,
 ,100020461.0,JBL Pro - Mixer - 8 input,nan,NVMA260-34-EU,614.94,5,nan,Physical,,,,,
-,100020558.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black,nan,KF560C36BBE2-32,432.1,20,nan,Physical,375308,,484572,,518993
+,100020558.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black,nan,KF560C36BBE2-32,432.1,20,nan,Physical,375308,,484572,,519233
 ,100020577.0,Epson - Receipt printer - Monochrome - Thermal line / dot-matrix - USB / USB host - OmniLink TM-H6000VI,nan,C31CL25032,576.8,6,nan,Physical,,,,,
 ,100020581.0,Kingston Fury - DDR5 SDRAM - 48GB 8400MT/s CL40 CUDIMM (Kit,nan,KF584CU40RSAK2-48,649.1,2,nan,Physical,358116,,705416,,779667
 ,100020715.0,"JBL EON718S 18"" POWERED SUBWOOFER",nan,JBL-EON718SD-EK,1340.3,5,nan,Physical,,,,,
@@ -135,7 +135,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100021006.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast Black,nan,KF556C36BBE-64,919.1,8,nan,Physical,383064,,1040941,,1092458
 ,100021007.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast RGB,nan,KF556C36BBEA-64,918.9,6,nan,Physical,354683,,1022990,,1069587
 ,100021028.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - 16GB CL32 DIMM Beast RGB EXPO,nan,KF564C32BBE-32,438.6,20,nan,Physical,382008,,476228,,487888
-,100021032.0,Kingston Fury - DDR5 SDRAM - 16GB 6400MT/s DDR5 CL38 SODIM,nan,KF564S38IB-16,252.1,20,nan,Physical,382105,,214900,,274144
+,100021032.0,Kingston Fury - DDR5 SDRAM - 16GB 6400MT/s DDR5 CL38 SODIM,nan,KF564S38IB-16,252.1,20,nan,Physical,382105,,214900,,274366
 ,100021236.0,HyperX - Mouse - Pulsefire Fuse Wireless,nan,A1KY6AA,27.1,20,nan,Physical,393425,,27399,,31973
 ,100021254.0,Poly Blackwire - 3220 - Headset - Wired,nan,8X228AA,30.85,20,nan,Physical,385537,,32990,,36236
 ,100021369.0,Jabra Evolve3 - Headphones - Wireless - Evolve3 85 MS Link390c Black,nan,38599-999-899,457.7,6,nan,Physical,389579,,531290,,557626
