@@ -9,8 +9,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100016684.0,Newland - 4-Slot Charger for M,nan,NLS-CD6550-4C,126.0,1,nan,Physical,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,nan,KT-TC15-ROLATAM,510.8,20,nan,Physical,,,,,
 ,100016892.0,ZEBRA ZD411 Direct Thermal Printer 203 dpi USB USB Host Modular Connectivity Slot BTLE5 US Cord Swiss Font EZPL,nan,ZD4A022-D01M00EZ,252.3,20,nan,Physical,,,,,
-,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,,54720,,75624
-,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,70.0,8,nan,Physical,155925,,59990,,77492
+,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,,48990,,73575
+,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,70.0,8,nan,Physical,155925,,59990,,76742
 ,100017225.0,Kingston Fury - DDR4 SDRAM - Unbuffered - Non-ECC,nan,KF432C16BB/32GB,278.3,20,nan,Physical,,,,,
 ,100017407.0,Zebra - Portable Barcode Printer - Direct thermal - Wi-Fi / Bluetooth 4.0 - ZQ630 Plus English fonts Dual,nan,ZQ63-AUWAL04-00,1432.3,8,nan,Physical,,,,,
 ,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",nan,ET45CA-101D1B0-A6,819.5,5,nan,Physical,393830,,1021440,,1021440
@@ -37,7 +37,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018522.0,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,nan,KF560C32RS-48,633.8,10,nan,Physical,238358,,732500,,775721
 ,100018690.0,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,38.26,20,nan,Physical,255320,,42990,,44423
 ,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,747.0,20,nan,Physical,245321,,949700,,962689
-,100018958.0,POLY - Headphones - Blackwire 3325 Stereo Microso,nan,8X222AA,58.42,9,nan,Physical,396785,,68576,,68576
+,100018958.0,POLY - Headphones - Blackwire 3325 Stereo Microso,nan,8X222AA,58.42,9,nan,Physical,396785,,68576,,71376
 ,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,nan,8R2E7AA,36.4,20,nan,Physical,270375,,29990,,41920
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,nan,SBP-120HMW,32.4,9,nan,Physical,,,,,
 ,100019199.0,Jabra Evolve 65 TE - Wireless Stereo Headset (Microsoft Teams) - USB-A Bluetooth adapter,nan,6699-833-309,96.9,8,nan,Physical,258188,,114990,,142875
@@ -137,6 +137,6 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100021028.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - 16GB CL32 DIMM Beast RGB EXPO,nan,KF564C32BBE-32,438.6,20,nan,Physical,382008,,476228,,476228
 ,100021032.0,Kingston Fury - DDR5 SDRAM - 16GB 6400MT/s DDR5 CL38 SODIM,nan,KF564S38IB-16,252.1,20,nan,Physical,382105,,214900,,271894
 ,100021236.0,HyperX - Mouse - Pulsefire Fuse Wireless,nan,A1KY6AA,27.1,20,nan,Physical,393425,,27546,,31654
-,100021254.0,Poly Blackwire - 3220 - Headset - Wired,nan,8X228AA,30.85,20,nan,Physical,385537,,32990,,35586
+,100021254.0,Poly Blackwire - 3220 - Headset - Wired,nan,8X228AA,30.85,20,nan,Physical,385537,,32990,,36140
 ,100021369.0,Jabra Evolve3 - Headphones - Wireless - Evolve3 85 MS Link390c Black,nan,38599-999-899,457.7,6,nan,Physical,389579,,531290,,560041
 ,100021562.0,Zebra - National Adapter for Printers,nan,ADAPT-ZEBRA,0.0,20,nan,Physical,,,,,
