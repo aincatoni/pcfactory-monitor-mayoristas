@@ -575,7 +575,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5452498,HPE SN1610E 32Gb 2p FC HBA,Hewlett Packard Enterprise,R2J63A,2338.9,2,Dispositivos de Almacenamiento,Adaptadores Bus de Fibra (HBAs),382424,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,139.79,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.13,159,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25445
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.13,159,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,24992
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,29.87,6,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.99,31,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5494499,HP ScanJet B Roller Unit,Hp,618J9A,60.95,50,Suministros y Medios,Suministros Láser,,,,,
@@ -614,7 +614,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5617653,ADAPTER SSD EXTERNAL CRUCIAL,Crucial,CTUSBCFUSBAMAD,4.38,10,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),,,,,
 ,5619260,HDMI to DisplayPort Adapter HDMI 4K60Hz,Startech.Com,128-HDMI-DISPLAYPORT,53.24,4,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,5620592,CV5000DP USB-C TO DISPLAYPORT1.4 ADAPTER,Kensington,K34680WW,17.69,46,Cables,Cables y Adaptadores de Video,,,,,
-,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,144,Suministros y Medios,Suministros Láser,260006,,75119,,84037
+,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,144,Suministros y Medios,Suministros Láser,260006,,75119,,83616
 ,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,112.44,150,Suministros y Medios,Suministros Láser,260322,,119900,,132878
 ,5629797,TONER T04 Amarillo,Canon,2977C001,354.66,2,Suministros y Medios,Suministros Láser,355986,,,,
 ,5629798,TONER T04 Magenta,Canon,2978C001,354.66,2,Suministros y Medios,Suministros Láser,355985,,,,
@@ -732,8 +732,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6255596,XENON ULTRA STAND GRAY 22CM 9PULG HEIGHT,Honeywell,STND-22F00-016-6,16.23,3,Productos POS/AIDC/Código de Barras,Accesorios para Escáners Código de Barra,,,,,
 ,6260920,CLICKSHARE CONFERENCE CX-30 SET GEN II,Barco,R9861613NAB2,1950.0,1,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,
 ,6262636,EDA10A QUAD BATTERY CHARGER KIT,Honeywell,EDA10A-QBC-1,297.76,1,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC,,,,,
-,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.92,51,Suministros y Medios,Suministros Inyección de Tinta,259799,,34900,41990,41018
-,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,487.11,1,Computadores Servidores y Notebooks,Notebooks,217167,,499990,,530990
+,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.92,51,Suministros y Medios,Suministros Inyección de Tinta,259799,,34900,41990,41122
+,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,487.11,1,Computadores Servidores y Notebooks,Notebooks,217167,,479990,,520990
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.52,153,Comunicaciones,Cintillos telefónicos,256210,,20490,24990,23886
 ,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.85,40,Suministros y Medios,Suministros Inyección de Tinta,262183,,110500,,121890
 ,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,100.06,8,Suministros y Medios,Suministros Inyección de Tinta,262152,,110900,,126095
@@ -758,8 +758,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,71.2,15,Dispositivos de Entrada,Mouse,263737,,76990,,82707
 ,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,141.55,37,Dispositivos de Entrada,Teclados,269661,,156361,,162365
 ,6370905,KIT USB SR HONEYWELL XENON ULTRA 1960G 1,Honeywell,1960GSR-2USB-N,190.9,2,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,159990,169990,180515
-,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,119990,139990,140931
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,159990,169990,179774
+,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,119990,134990,140431
 ,6379941,WINDOWS SVR STD 2025 64BIT SPANISH 1PK D,Microsoft,EP2-25197,894.67,10,Software,SW Sistemas Operativos Windows,,,,,
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,270.24,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,6398211,USB-C TO MAGSAFE 3 CABLE (2M)-AME,Apple,MW613AM/A,49.75,35,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
@@ -816,7 +816,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6662176,KIT CABEZALES DE IMPRESION CH-11R + CH-1,Canon,4650C004,46.67,24,Suministros y Medios,Cartuchos de Limpieza,270654,,58990,,59490
 ,6662177,IMPRESORA MULTIFUNCIONAL DE O DE TINTA P,Canon,2313C005,114.03,116,Impresoras,Multifuncionales Inkjet,,,,,
 ,6665124,CHROMEBOOK 500E G4 N100 8GB 64GB CRM,Lenovo,82W5S01J00,444.25,2,Computadores Servidores y Notebooks,Chromebooks & Netbooks,397033,,526990,,526990
-,6670260,PROYECTOR POWERLITE L790U,Epson,V11HB28021,3900.3,2,Dispositivos Audio/Video,Proyectores LCD,384652,4364990,4160000,,4340993
+,6670260,PROYECTOR POWERLITE L790U,Epson,V11HB28021,3900.3,2,Dispositivos Audio/Video,Proyectores LCD,384652,4499990,4160000,,4385993
 ,6671131,IDEATAB PLUS 12.1IN 2K MTK D6400 8G 256G,Lenovo,ZAG70652CL,317.46,5,Computadores Servidores y Notebooks,Tablets y Tablet PCs,375091,,359990,,359990
 ,6674886,CINTA LAMINADA NEGRO SOBRE PLATA 24MM,Brother,TZESM951,18.13,2,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,6675645,A-DATA XPG Mars 980 Pro 2 TB (SMAR-980P-,Adata Technology,SMAR-980P-2TCI,420.12,3,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),278331,,452500,,477915
