@@ -469,7 +469,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,59.92,17,Suministros y Medios,Suministros Láser,260215,,66415,,72515
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,45,Suministros y Medios,Suministros Láser,260107,,66281,70990,70330
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.3,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,192,Suministros y Medios,Suministros Láser,260121,,80168,,85754
+,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,192,Suministros y Medios,Suministros Láser,260121,,80168,,85120
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,92078,109990,100429
 ,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,92011,109990,99541
 ,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,32,Suministros y Medios,Suministros Láser,260108,,92156,,99888
@@ -626,7 +626,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5641072,PTD410,Brother,PTD410,53.98,2,Impresoras,Impresoras de Etiquetas Hogar/Oficina,,,,,
 ,5645511,HP LASERJET DEPARTMENT STAND,Hp,6GW53A,213.54,21,Impresoras,Muebles para Impresora/Plotter,,,,,
 ,5666055,Network Management Card for Easy UPS,Apc,AP9544,130.12,22,Protección Eléctrica y Racks,Administración UPS,,,,,
-,5686037,PFI 050 C,Canon,5699C001,53.87,37,Suministros y Medios,Suministros para Plotters,259979,,63776,,67563
+,5686037,PFI 050 C,Canon,5699C001,53.87,37,Suministros y Medios,Suministros para Plotters,259979,,63776,,68693
 ,5686040,MAINTENANCE CARTRIDGE MC-32,Canon,1156C009,50.66,13,Suministros y Medios,Suministros para Plotters,,,,,
 ,5690099,HPE DL36X G10+ 2SFF SAS/SATA TM CBL KIT,Hewlett Packard Enterprise,P55883-B21,152.1,5,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5690925,6in Hook and Loop Cable Ties 50pk,Startech.Com,B506I-HOOK-LOOP-TIES,12.73,3,Cables,Administración para Cables,,,,,
@@ -758,7 +758,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,71.2,15,Dispositivos de Entrada,Mouse,263737,,76990,,82753
 ,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,141.55,37,Dispositivos de Entrada,Teclados,269661,,156361,,163481
 ,6370905,KIT USB SR HONEYWELL XENON ULTRA 1960G 1,Honeywell,1960GSR-2USB-N,190.9,2,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,159990,169990,179861
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,159990,169990,180232
 ,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,119990,134990,139709
 ,6379941,WINDOWS SVR STD 2025 64BIT SPANISH 1PK D,Microsoft,EP2-25197,894.67,10,Software,SW Sistemas Operativos Windows,,,,,
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,270.24,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
@@ -804,7 +804,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6607824,PDU FACIL MEDIDA 1U 16A 230V (8)C13,Apc,EPDU2016M,327.73,2,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
 ,6607828,PDU facil medida cero U 32A 230V (20)C13,Apc,EPDU2132M,436.91,3,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
 ,6607860,PDU facil con medidor ZeroU 16 A 230 V (,Apc,EPDU2116M,343.85,3,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
-,6617420,WorkForce Pro EM-C800,Epson,C11CK19301,570.15,3,Impresoras,Multifuncionales Inkjet,280296,,618021,,657588
+,6617420,WorkForce Pro EM-C800,Epson,C11CK19301,570.15,3,Impresoras,Multifuncionales Inkjet,280296,,618021,,654327
 ,6620441,MOTO WATCH FIT TREKKING GREEN,Motorola,PG38C07181,49.59,157,Comunicaciones,Relojes Inteligentes,,,,,
 ,6620443,MOTO BUDS LOOP VERDE,Motorola,PG38C07164,52.07,14,Comunicaciones,Auriculares Bluetooth,253450,,59500,,63190
 ,6626636,HYPERX CHARGEPLAY DUO PS5,Hp,51P68AA,26.17,12,Comunicaciones,Componentes VOIP,,,,,
@@ -860,7 +860,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6777969,ADATA DRAM DDR4 U-DIMM 16GB 3200,Adata Technology,AD4U320016G22-SBK,156.04,198,Componentes de Sistema,Memoria Genérica,386772,,167900,,186743
 ,6782248,HP 400 QUIET BLUE WIRELESS MOUSE US,Hp,AZ7B4AA#ABA,16.89,514,Dispositivos de Entrada,Mouse,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,106.1,390,Pantallas,Monitores LCD/LED,,,,,
-,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,171.62,26,Pantallas,Monitores LCD/LED,379960,,199990,,213539
+,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,171.62,26,Pantallas,Monitores LCD/LED,379960,,199990,249990,216577
 ,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1041.5,8,Pantallas,Monitores LCD/LED,318326,,1298581,,1337722
 ,6784033,ANW 6000 24G CL4 4F 370W -STOCK,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,397026,,1159990,,1159990
 ,6784291,PRIME X870-P WIFI,Asus,90MB1IS0-MVAAY0,235.98,15,Componentes de Sistema,Tarjetas Madre AMD,,,,,
@@ -872,7 +872,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6796956,MBA 15.3 SLV/10C GPU/16GB/1TB - PLATA,Apple,MDVA4CI/A,1571.1,20,Computadores Servidores y Notebooks,Notebooks,384486,,1699990,,1799990
 ,6796958,MBA 15.3 SLV/10C GPU/24GB/1TB - PLATA,Apple,MDVC4CI/A,1814.4,11,Computadores Servidores y Notebooks,Notebooks,383716,,1999990,,1999990
 ,6796980,MBP 16 SB/18C/20C GPU/24GB/1T-NEGRO ESPA,Apple,MGEA4CI/A,2721.6,1,Computadores Servidores y Notebooks,Notebooks,383721,,3039900,,3230479
-,6797727,MBN 13 SLV/8GB/256GB-SILVER,Apple,MHFA4CI/A,566.03,1,Computadores Servidores y Notebooks,Notebooks,383742,,599990,,679504
+,6797727,MBN 13 SLV/8GB/256GB-SILVER,Apple,MHFA4CI/A,566.03,1,Computadores Servidores y Notebooks,Notebooks,383742,,599990,,683720
 ,6801387,MONITOR GAMER MOBIUZ EX271 27IN LED IPS,Benq,9H.LNALA.TBA,206.21,15,Pantallas,Monitores LCD/LED,365377,,198816,,243394
 ,6801389,MONITOR BENQ 31.5IN PD3205U 4K,Benq,9H.LKGLA.RBA,632.48,7,Pantallas,Monitores LCD/LED,265458,,712900,,735587
 ,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,424.23,32,Pantallas,Monitores LCD/LED,366630,,455990,479990,493361
