@@ -469,10 +469,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,59.92,17,Suministros y Medios,Suministros Láser,260215,,66490,73990,71960
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,45,Suministros y Medios,Suministros Láser,260107,,66565,70990,70337
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.3,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,192,Suministros y Medios,Suministros Láser,260121,,80168,,85240
-,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,92473,109990,100522
+,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,192,Suministros y Medios,Suministros Láser,260121,,80168,,85865
+,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,92473,,99890
 ,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,92406,109990,99578
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,32,Suministros y Medios,Suministros Láser,260108,,92552,,99923
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,32,Suministros y Medios,Suministros Láser,260108,,92552,,99276
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,213.95,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4798868,DS640 ESCANER PORTATIL,Brother,DS640,135.73,41,Cámaras y Escáners,Escáners para el Hogar/Oficina,,,,,
 ,4827711,SERVER RACK CABINET 42U,Startech.Com,RK4236BKB,2102.2,2,Protección Eléctrica y Racks,Racks,,,,,
@@ -614,7 +614,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5617653,ADAPTER SSD EXTERNAL CRUCIAL,Crucial,CTUSBCFUSBAMAD,4.38,10,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),,,,,
 ,5619260,HDMI to DisplayPort Adapter HDMI 4K60Hz,Startech.Com,128-HDMI-DISPLAYPORT,53.24,4,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,5620592,CV5000DP USB-C TO DISPLAYPORT1.4 ADAPTER,Kensington,K34680WW,17.69,46,Cables,Cables y Adaptadores de Video,,,,,
-,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,144,Suministros y Medios,Suministros Láser,260006,,75441,,83201
+,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,144,Suministros y Medios,Suministros Láser,260006,,75441,,83551
 ,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,112.44,150,Suministros y Medios,Suministros Láser,260322,,119900,,133414
 ,5629797,TONER T04 Amarillo,Canon,2977C001,354.66,2,Suministros y Medios,Suministros Láser,355986,,,,
 ,5629798,TONER T04 Magenta,Canon,2978C001,354.66,2,Suministros y Medios,Suministros Láser,355985,,,,
@@ -626,7 +626,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5641072,PTD410,Brother,PTD410,53.98,2,Impresoras,Impresoras de Etiquetas Hogar/Oficina,,,,,
 ,5645511,HP LASERJET DEPARTMENT STAND,Hp,6GW53A,213.54,21,Impresoras,Muebles para Impresora/Plotter,,,,,
 ,5666055,Network Management Card for Easy UPS,Apc,AP9544,130.12,22,Protección Eléctrica y Racks,Administración UPS,,,,,
-,5686037,PFI 050 C,Canon,5699C001,53.87,37,Suministros y Medios,Suministros para Plotters,259979,,63990,,68792
+,5686037,PFI 050 C,Canon,5699C001,53.87,37,Suministros y Medios,Suministros para Plotters,259979,,63990,,67672
 ,5686040,MAINTENANCE CARTRIDGE MC-32,Canon,1156C009,50.66,13,Suministros y Medios,Suministros para Plotters,,,,,
 ,5690099,HPE DL36X G10+ 2SFF SAS/SATA TM CBL KIT,Hewlett Packard Enterprise,P55883-B21,152.1,5,Computadores Servidores y Notebooks,Componentes Blade,,,,,
 ,5690925,6in Hook and Loop Cable Ties 50pk,Startech.Com,B506I-HOOK-LOOP-TIES,12.73,3,Cables,Administración para Cables,,,,,
@@ -758,13 +758,13 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,71.2,15,Dispositivos de Entrada,Mouse,263737,,76990,,82734
 ,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,141.55,37,Dispositivos de Entrada,Teclados,269661,,156361,,162587
 ,6370905,KIT USB SR HONEYWELL XENON ULTRA 1960G 1,Honeywell,1960GSR-2USB-N,190.9,2,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,159990,169990,180172
-,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,119990,139990,139719
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,159990,169990,180542
+,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,119990,139990,139504
 ,6379941,WINDOWS SVR STD 2025 64BIT SPANISH 1PK D,Microsoft,EP2-25197,894.67,10,Software,SW Sistemas Operativos Windows,,,,,
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,270.24,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,6398211,USB-C TO MAGSAFE 3 CABLE (2M)-AME,Apple,MW613AM/A,49.75,35,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
 ,6402893,D501SER-514500027X I5-14500 512G SSD 8G,Asus,90PF05M1-M00CA0,679.0,1,Computadores Servidores y Notebooks,Computadores Desktop,,,,,
-,6416908,IMPRESORA MULTIFUNCIONAL 3 EN 1 DE TINTA,Brother,DCPT536DW,162.05,15,Impresoras,Multifuncionales Inkjet,261096,,165900,165990,180701
+,6416908,IMPRESORA MULTIFUNCIONAL 3 EN 1 DE TINTA,Brother,DCPT536DW,162.05,15,Impresoras,Multifuncionales Inkjet,261096,,165900,169990,180407
 ,6435887,32UR550K 31.5 VA UltraFine 4K Pivot HDMI,Lg,32UR550K-B,299.68,6,Pantallas,Monitores LCD/LED,,,,,
 ,6442886,MS WS25 4C Std Add Lic WW SW,Hewlett Packard Enterprise,P77105-B21,290.1,4,Software,SW Sistemas Operativos Windows,,,,,
 ,6450669,MS WS25 16C Std ROK AMS SW,Hewlett Packard Enterprise,P77100-DN1,1042.0,1,Software,SW Sistemas Operativos Windows,,,,,
@@ -861,7 +861,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6782248,HP 400 QUIET BLUE WIRELESS MOUSE US,Hp,AZ7B4AA#ABA,16.89,514,Dispositivos de Entrada,Mouse,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,106.1,390,Pantallas,Monitores LCD/LED,,,,,
 ,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,171.62,26,Pantallas,Monitores LCD/LED,379960,,199990,249990,219226
-,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1041.5,8,Pantallas,Monitores LCD/LED,318326,,1299990,,1351682
+,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1041.5,8,Pantallas,Monitores LCD/LED,318326,,1299990,1299990,1345939
 ,6784033,ANW 6000 24G CL4 4F 370W -STOCK,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,397026,,1165990,,1165990
 ,6784291,PRIME X870-P WIFI,Asus,90MB1IS0-MVAAY0,235.98,15,Componentes de Sistema,Tarjetas Madre AMD,,,,,
 ,6785165,B850M AYW GAMING WIFI,Asus,90MB1LW0-M0EAY0,149.01,44,Componentes de Sistema,Tarjetas Madre AMD,385180,,169114,,180419
