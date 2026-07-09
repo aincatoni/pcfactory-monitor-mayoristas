@@ -2,14 +2,14 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100002215.0,"Zebra - Color (cián, magenta, amarillo, negro, superpuesto) - 58 mm x 99 m - cinta de impresión - para Zebra ZC300",nan,800300-350LA,33.0,4,nan,Physical,,,,,
 ,100002342.0,"Zebra - Cable USB - 24 pines USB-C (M) a USB (M) - 1 m - para Zebra EC50, EC55, MC2200, MC27, TC21, TC26",nan,CBL-TC5X-USBC2A-01,9.7,20,nan,Physical,,,,,
 ,100015865.0,Kingston FURY Impact - DDR4 - módulo - 32 GB - SO-DIMM de 260 contactos - 3200 MT/s / PC4-25600 - CL20 - 1.2 V - sin búfer - no ECC - negro,nan,KF432S20IB/32,277.4,20,nan,Physical,125634,,229898,,280936
-,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C18BB/32,315.6,18,nan,Physical,126356,,343919,,356402
+,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C18BB/32,315.6,18,nan,Physical,126356,,343919,,356674
 ,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,nan,KF556C40BB-8,132.2,20,nan,Physical,140024,,155990,,155990
 ,100016408.0,HyperX - Keyboard - Alloy Core RGB MERCO,nan,4P4F5AI#AC8,39.9,20,nan,Physical,,,,,
 ,100016410.0,HyperX - Keyboard - ABS HX Red MERCO,nan,4P4F6AI#AC8,116.3,20,nan,Physical,,,,,
 ,100016684.0,Newland - 4-Slot Charger for M,nan,NLS-CD6550-4C,126.0,1,nan,Physical,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,nan,KT-TC15-ROLATAM,510.8,20,nan,Physical,,,,,
 ,100016892.0,ZEBRA ZD411 Direct Thermal Printer 203 dpi USB USB Host Modular Connectivity Slot BTLE5 US Cord Swiss Font EZPL,nan,ZD4A022-D01M00EZ,252.3,20,nan,Physical,,,,,
-,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,,48990,59990,71973
+,100017011.0,"ASTRO Gaming A10 Gen 2 - For Xbox - auricular - tamaño completo - cableado - conector de 3,5 mm - negro",nan,939-002046,70.4,2,nan,Physical,153261,,48990,59990,72022
 ,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",nan,939-002077,70.0,8,nan,Physical,155925,,42990,,70038
 ,100017225.0,Kingston Fury - DDR4 SDRAM - Unbuffered - Non-ECC,nan,KF432C16BB/32GB,278.3,20,nan,Physical,,,,,
 ,100017407.0,Zebra - Portable Barcode Printer - Direct thermal - Wi-Fi / Bluetooth 4.0 - ZQ630 Plus English fonts Dual,nan,ZQ63-AUWAL04-00,1432.3,8,nan,Physical,,,,,
@@ -23,7 +23,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018026.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL16 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C16RB2/8,88.1,20,nan,Physical,224563,,95859,,102154
 ,100018028.0,Kingston FURY Renegade RGB - DDR4 - módulo - 32 GB: 1 x 32 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL18 - 1.2 V - sin búfer - no ECC - negro,nan,KF436C18RB2A/32,313.3,20,nan,Physical,227668,,339872,,364787
 ,100018032.0,"HP - Kit de montaje (montaje VESA, soporte para montaje en pared) - para sistema de videoconferencia - para Poly Studio X30",nan,875L6AA,75.18,1,nan,Physical,,,,,
-,100018123.0,Kingston FURY Renegade - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/32,289.0,8,nan,Physical,223067,,310000,,329694
+,100018123.0,Kingston FURY Renegade - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/32,289.0,8,nan,Physical,223067,,310000,,329966
 ,100018124.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,nan,KF432C16RB2/8,80.9,20,nan,Physical,223068,,89376,,93679
 ,100018181.0,Kingston FURY Beast - DDR5 - módulo - 16 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-16,235.3,20,nan,Physical,206512,,229000,,271862
 ,100018182.0,Kingston FURY Beast - DDR5 - módulo - 32 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,nan,KF556C36BBE-32,469.0,18,nan,Physical,206513,,447990,,475934
@@ -36,7 +36,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018387.0,HyperX Clutch - Gaming Controller,nan,7D6H2AA,38.6,20,nan,Physical,,,,,
 ,100018522.0,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,nan,KF560C32RS-48,633.8,10,nan,Physical,238358,,759990,,770679
 ,100018690.0,Poly BW 3320 Stereo -M USB-C HS +USB-C/A,nan,8X220AA,38.26,20,nan,Physical,255320,,44992,,45480
-,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,747.0,20,nan,Physical,245321,,949990,,969358
+,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,nan,KF556R28RBE2-32,747.0,20,nan,Physical,245321,,949990,,970591
 ,100018958.0,POLY - Headphones - Blackwire 3325 Stereo Microso,nan,8X222AA,58.42,9,nan,Physical,396785,,,,
 ,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,nan,8R2E7AA,36.4,20,nan,Physical,270375,,39990,39990,43805
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,nan,SBP-120HMW,32.4,9,nan,Physical,,,,,
@@ -75,7 +75,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020287.0,AKG D5C - Microfono Dinamico Vocal,nan,D5C,102.48,10,nan,Physical,267341,,799990,,867490
 ,100020288.0,AKG - K240 MKII - Headphones - Wired,nan,K240 MKII,141.9,20,nan,Physical,70849,,151652,,165245
 ,100020289.0,AKG P170 - Microphone - small-diaphragm condenser microphone,nan,P170,102.48,20,nan,Physical,,,,,
-,100020290.0,AKG P220 - Microphone - large-diaphragm true condenser microphone,nan,P220,189.21,10,nan,Physical,260934,,201200,,212106
+,100020290.0,AKG P220 - Microphone - large-diaphragm true condenser microphone,nan,P220,189.21,10,nan,Physical,260934,,201200,,212085
 ,100020291.0,AKG P5 S - Microphone - high-performance dynamic vocal microphone,nan,P5S,67.01,20,nan,Physical,104905,,,,
 ,100020292.0,AKG - Perception Wireless 45 Instrumental Set Band-A - Microphone,nan,PERCEP WL 45 INST BDA,236.51,4,nan,Physical,,,,,
 ,100020293.0,AKG - Perception Wireless 45 Presenter Set Band-A,nan,PERCEP WL 45 PRES BDA,236.51,2,nan,Physical,,,,,
