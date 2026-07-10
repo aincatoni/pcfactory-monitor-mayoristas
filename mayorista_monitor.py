@@ -45,6 +45,10 @@ SEGUIMIENTO_SHEET_NAMES = {
     "ingram": "Ingram",
     "intcomex": "Intcomex",
 }
+SEGUIMIENTO_SKU_COLUMNS = {
+    "ingram": ("SKU Ingram",),
+    "intcomex": ("SKU Intcomex", "SKU Intcome"),
+}
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6_1) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
@@ -308,7 +312,7 @@ def read_seguimiento_sheet(
 ) -> Dict[str, str]:
     """
     Lee el sheet de seguimiento de Fichas/OC y devuelve un dict de lookup.
-    Claves: str(pcf_id) y str(ingram_sku) → valor: status (OK, Pendiente, etc.)
+    Claves: pcf:{id} y sku:{sku} -> valor: status (OK, Pendiente, etc.)
     """
     import io
     worksheet_name = SEGUIMIENTO_SHEET_NAMES.get(mayorista, SEGUIMIENTO_SHEET_NAMES["ingram"])
@@ -321,6 +325,9 @@ def read_seguimiento_sheet(
         resp.raise_for_status()
         df = pd.read_csv(io.StringIO(resp.text))
         lookup: Dict[str, str] = {}
+        sku_columns = SEGUIMIENTO_SKU_COLUMNS.get(mayorista, SEGUIMIENTO_SKU_COLUMNS["ingram"])
+        sku_column = next((col for col in sku_columns if col in df.columns), None)
+
         for _, row in df.iterrows():
             status = str(row.get("Status", "")).strip()
             if not status or status == "nan":
@@ -332,21 +339,32 @@ def read_seguimiento_sheet(
                     lookup[f"pcf:{int(float(pcf_id_raw))}"] = status
                 except (ValueError, TypeError):
                     pass
-            # Indexar por SKU Ingram (prefijo "sku:" para evitar colisiones con PCF ID)
-            sku_raw = row.get("SKU Ingram", "")
-            if pd.notna(sku_raw):
-                try:
-                    lookup[f"sku:{int(float(sku_raw))}"] = status
-                except (ValueError, TypeError):
-                    pass
+            # Indexar por SKU proveedor (prefijo "sku:" para evitar colisiones con PCF ID)
+            if sku_column:
+                sku_key = normalize_sku_key(row.get(sku_column, ""))
+                if sku_key:
+                    lookup[f"sku:{sku_key}"] = status
         print(f"[+] Seguimiento cargado: {len(df)} entradas, {len(lookup)} claves indexadas")
         return lookup
     except Exception as e:
         print(f"[!] No se pudo cargar el sheet de seguimiento: {e}")
         return {}
 
+def normalize_sku_key(value) -> str:
+    """Normaliza SKU numericos y alfanumericos para cruzar mayoristas."""
+    if value is None or pd.isna(value):
+        return ""
+    raw = str(value).strip()
+    if not raw or raw.lower() == "nan":
+        return ""
+    try:
+        return str(int(float(raw)))
+    except (ValueError, TypeError):
+        return raw.upper()
+
+
 def get_seguimiento_status(lookup: Dict[str, str], pcf_id, ingram_part) -> str:
-    """Busca el status de seguimiento por PCF ID primero, luego por SKU Ingram."""
+    """Busca el status de seguimiento por PCF ID primero, luego por SKU proveedor."""
     if pcf_id is not None:
         try:
             key = f"pcf:{int(float(pcf_id))}"
@@ -355,12 +373,9 @@ def get_seguimiento_status(lookup: Dict[str, str], pcf_id, ingram_part) -> str:
         except (ValueError, TypeError):
             pass
     if ingram_part:
-        try:
-            key = f"sku:{int(float(str(ingram_part)))}"
-            if key in lookup:
-                return lookup[key]
-        except (ValueError, TypeError):
-            pass
+        key = f"sku:{normalize_sku_key(ingram_part)}"
+        if key in lookup:
+            return lookup[key]
     return ""
 
 # ==============================================================================
@@ -780,13 +795,15 @@ def classify_products(
         if item["stock_pcf"] is not None and item["stock_pcf"] > 0:
             has_pcf_stock.append(item)
             continue
-        # Aquí solo llegan productos potenciales: lista "0", sin stock PCF
-        if item.get("ficha_vacia", False):
-            status = get_seguimiento_status(seg, item.get("pcf_id"), item.get("ingram_part"))
+        # Aquí solo llegan productos potenciales: lista "0", sin stock PCF.
+        # Si seguimiento indica que la ficha sigue en proceso, ese estado manda
+        # aunque la API ya muestre contenido parcial.
+        status = get_seguimiento_status(seg, item.get("pcf_id"), item.get("ingram_part"))
+        if status and status.upper() != "OK":
+            pending_ficha.append(item)  # Pendiente / Ficha Básica / Ficha Antigua
+        elif item.get("ficha_vacia", False):
             if status and status.upper() == "OK":
                 ficha_ok.append(item)       # OK en seguimiento pero API aún la muestra vacía
-            elif status:
-                pending_ficha.append(item)  # Pendiente / Ficha Básica / Ficha Antigua
             else:
                 missing_ficha.append(item)  # Sin registro en seguimiento
         else:
