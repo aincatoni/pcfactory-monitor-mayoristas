@@ -466,12 +466,12 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4649269,KTG SMARTFIT EASY RISER 2.0 LARGE - BLK,Kensington,K50422WW,18.16,43,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,4694492,UPS Network Management Card 3,Apc,AP9640,300.25,31,Protección Eléctrica y Racks,Administración UPS,,,,,
 ,4694493,UPS Network Management Card 3 with Envir,Apc,AP9641,496.2,6,Protección Eléctrica y Racks,Administración UPS,,,,,
-,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,59.92,17,Suministros y Medios,Suministros Láser,260215,,66490,,71617
+,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,59.92,17,Suministros y Medios,Suministros Láser,260215,,66490,70990,71565
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,59.79,45,Suministros y Medios,Suministros Láser,260107,,66778,,70828
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,13.3,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
-,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,192,Suministros y Medios,Suministros Láser,260121,,80168,,86416
-,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,92770,,100811
-,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,92713,109990,100609
+,4783958,TONER HP 206A NEGRO,Hp,W2110A,71.04,192,Suministros y Medios,Suministros Láser,260121,,80168,,85785
+,4783959,TONER HP 206A CYAN,Hp,W2111A,83.06,147,Suministros y Medios,Suministros Láser,260122,,92770,,100046
+,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,83.01,146,Suministros y Medios,Suministros Láser,260080,,92713,,99887
 ,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,83.14,32,Suministros y Medios,Suministros Láser,260108,,93692,,101886
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,213.95,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4798868,DS640 ESCANER PORTATIL,Brother,DS640,135.73,41,Cámaras y Escáners,Escáners para el Hogar/Oficina,,,,,
@@ -492,7 +492,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4881794,HPE SYNERGY 6820C 25 50GB CNA,Hewlett Packard Enterprise,P02054-B21,349.82,5,Dispositivos de Red,Tarjetas de Red Ethernet,,,,,
 ,4883333,EASY PDU METERED 0U 22KW (18)C13 (6)C19,Apc,EPDU1232M,906.7,2,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
 ,4889830,Enclosure - M.2 NVMe PCIe SSD - USB-C,Startech.Com,M2E1BRU31C,102.56,5,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
-,4934763,M2170 ECOTANK B/N A4 39 PPM,Epson,C11CH43303,354.99,1,Impresoras,Multifuncionales Inkjet,82666,,380773,,408216
+,4934763,M2170 ECOTANK B/N A4 39 PPM,Epson,C11CH43303,354.99,1,Impresoras,Multifuncionales Inkjet,82666,,380773,,410531
 ,4936512,10ft 14AWG Computer Power Cord NEMA 5-15,Startech.Com,PXT515191410,24.9,7,Cables,Cables de Poder,,,,,
 ,4936537,USB Secure Charge Cable 1m (USB-C to USB,Startech.Com,USBSCHAC1M,8.5,1,Cables,Cables y Adaptadores USB,,,,,
 ,4936591,"CK65, 4GB/32GB MEMORY, ALPHA, 6803",Honeywell,CK65-L0N-B8C214F,821.0,13,Productos POS/AIDC/Código de Barras,Terminales de Datos Portátiles,,,,,
@@ -575,7 +575,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5452498,HPE SN1610E 32Gb 2p FC HBA,Hewlett Packard Enterprise,R2J63A,2338.9,2,Dispositivos de Almacenamiento,Adaptadores Bus de Fibra (HBAs),382424,,2756954,,2756954
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,139.79,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.13,159,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25622
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,20.13,159,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,25219
 ,5475370,Kensington Slim N17 2.0 Dual Kd NB Lock,Kensington,K60508WW,29.87,6,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.99,31,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
 ,5494499,HP ScanJet B Roller Unit,Hp,618J9A,60.95,50,Suministros y Medios,Suministros Láser,,,,,
@@ -614,7 +614,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5617653,ADAPTER SSD EXTERNAL CRUCIAL,Crucial,CTUSBCFUSBAMAD,4.38,10,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),,,,,
 ,5619260,HDMI to DisplayPort Adapter HDMI 4K60Hz,Startech.Com,128-HDMI-DISPLAYPORT,53.24,4,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,5620592,CV5000DP USB-C TO DISPLAYPORT1.4 ADAPTER,Kensington,K34680WW,17.69,46,Cables,Cables y Adaptadores de Video,,,,,
-,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,144,Suministros y Medios,Suministros Láser,260006,,75514,,82389
+,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,67.29,144,Suministros y Medios,Suministros Láser,260006,,75514,,82698
 ,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,112.44,150,Suministros y Medios,Suministros Láser,260322,,119900,,133196
 ,5629797,TONER T04 Amarillo,Canon,2977C001,354.66,2,Suministros y Medios,Suministros Láser,355986,,,,
 ,5629798,TONER T04 Magenta,Canon,2978C001,354.66,2,Suministros y Medios,Suministros Láser,355985,,,,
@@ -735,7 +735,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.92,51,Suministros y Medios,Suministros Inyección de Tinta,259799,,34900,41990,41516
 ,6265608,NOTEBOOK ASUS E1504FA-NJ695W R5 8 512 15,Asus,90NB0ZR2-M02880,487.11,1,Computadores Servidores y Notebooks,Notebooks,217167,,449990,,565140
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,16.52,153,Comunicaciones,Cintillos telefónicos,256210,,20490,24990,23988
-,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.85,40,Suministros y Medios,Suministros Inyección de Tinta,262183,,110114,,123822
+,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,99.85,40,Suministros y Medios,Suministros Inyección de Tinta,262183,,110114,,119926
 ,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,100.06,8,Suministros y Medios,Suministros Inyección de Tinta,262152,,111080,,121054
 ,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,86.13,19,Suministros y Medios,Suministros Inyección de Tinta,262283,,107216,,114642
 ,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,100.06,4,Suministros y Medios,Suministros Inyección de Tinta,262151,,113500,,124186
@@ -749,7 +749,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6328556,QUAD BATTERY CHARGER CK3 AC20 CK65,Honeywell,871-230-401,250.07,3,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
 ,6340674,MONITOR QHD S5 PRO 27IN 527PQ,Hp,9D9S0UT,214.39,71,Pantallas,Monitores LCD/LED,385011,,254990,276990,284420
 ,6341646,PRIME Z890-P WIFI,Asus,90MB1I70-M0EAY0,242.49,19,Componentes de Sistema,Tarjetas Madre Intel,,,,,
-,6343103,285K CORE ULTRA 9 PROCESSOR,Intel,BX80768285K,559.27,3,Componentes de Sistema,Procesadores Intel,260864,,604990,,729292
+,6343103,285K CORE ULTRA 9 PROCESSOR,Intel,BX80768285K,559.27,3,Componentes de Sistema,Procesadores Intel,260864,,619990,,730230
 ,6343160,HP 938 Yellow Original Ink Cartridge,Hp,4S6X7PL,23.05,80,Suministros y Medios,Suministros Inyección de Tinta,260018,,25653,,28829
 ,6343161,HP 938 Cyan Original Ink Cartridge,Hp,4S6X5PL,23.05,126,Suministros y Medios,Suministros Inyección de Tinta,385273,,,,
 ,6343162,HP 938 Magenta Original Ink Cartridge,Hp,4S6X6PL,23.05,51,Suministros y Medios,Suministros Inyección de Tinta,385273,,,,
@@ -758,8 +758,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,71.2,15,Dispositivos de Entrada,Mouse,263737,,76990,,82252
 ,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,141.55,37,Dispositivos de Entrada,Teclados,269661,,156361,,162451
 ,6370905,KIT USB SR HONEYWELL XENON ULTRA 1960G 1,Honeywell,1960GSR-2USB-N,190.9,2,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,168990,179990,177144
-,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,119990,139990,140676
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,162.05,20,Impresoras,Multifuncionales Inkjet,258026,,159990,179990,176477
+,6379939,IMPRESORA MULTIFUNCIONAL TINTA CONTINUA,Brother,DCPT230,131.13,20,Impresoras,Multifuncionales Inkjet,259353,,125990,139990,141415
 ,6379941,WINDOWS SVR STD 2025 64BIT SPANISH 1PK D,Microsoft,EP2-25197,894.67,10,Software,SW Sistemas Operativos Windows,,,,,
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,270.24,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,6398211,USB-C TO MAGSAFE 3 CABLE (2M)-AME,Apple,MW613AM/A,49.75,35,Comunicaciones,Cables y Adapt p/celulares (NO ENERGÍA),,,,,
@@ -860,7 +860,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6777969,ADATA DRAM DDR4 U-DIMM 16GB 3200,Adata Technology,AD4U320016G22-SBK,156.04,198,Componentes de Sistema,Memoria Genérica,386772,,153487,,157881
 ,6782248,HP 400 QUIET BLUE WIRELESS MOUSE US,Hp,AZ7B4AA#ABA,16.89,514,Dispositivos de Entrada,Mouse,,,,,
 ,6782254,HP SERIES 5 23.8IN WHITE MONITOR 524SW,Hp,94C21AA#AKH,106.1,390,Pantallas,Monitores LCD/LED,,,,,
-,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,171.62,26,Pantallas,Monitores LCD/LED,379960,,189990,,200137
+,6783815,Monitor Samsung Smart M5 32IN VA FHD,Samsung,LS32FM501ELXZS,171.62,26,Pantallas,Monitores LCD/LED,379960,,191816,199990,201137
 ,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1041.5,8,Pantallas,Monitores LCD/LED,318326,,1137005,1299990,1274568
 ,6784033,ANW 6000 24G CL4 4F 370W -STOCK,Hewlett Packard Enterprise,R8N87B,983.01,15,Dispositivos de Red,Switches Standalone,397026,,1147598,,1173388
 ,6784291,PRIME X870-P WIFI,Asus,90MB1IS0-MVAAY0,235.98,15,Componentes de Sistema,Tarjetas Madre AMD,,,,,
