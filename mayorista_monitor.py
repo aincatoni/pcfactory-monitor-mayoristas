@@ -67,6 +67,8 @@ COL_EAN = "EAN/UPC CODE"
 
 CATALOG_COL_PCF_ID = "CODIGO"
 CATALOG_COL_MAYORISTA = "MAYORISTA"
+CATALOG_COL_COST = "COSTO_COMPRA"
+CATALOG_COL_STOCK = "STOCK_EMPRESA"
 
 # ==============================================================================
 # FUNCIONES DE FECHA/HORA CHILE
@@ -511,6 +513,86 @@ def collect_eligible_pcf_ids(df: pd.DataFrame, catalog_df: Optional[pd.DataFrame
     return ids
 
 
+def collect_eligible_products(df: pd.DataFrame, catalog_df: Optional[pd.DataFrame]) -> pd.DataFrame:
+    """Retorna productos elegibles con stock e ID PCF, incluidos matches de catálogo."""
+    xlsx_stats = apply_xlsx_filters(df)
+    frames = [xlsx_stats["has_pcf_id"]]
+    if len(xlsx_stats["no_pcf_id"]) > 0 and catalog_df is not None:
+        matched_df, _ = enrich_with_pcf_catalog(xlsx_stats["no_pcf_id"], catalog_df)
+        frames.append(matched_df)
+    return pd.concat(frames, ignore_index=True)
+
+
+def build_duplicate_ids(
+    ingram_df: pd.DataFrame,
+    intcomex_df: pd.DataFrame,
+    catalog_df: Optional[pd.DataFrame],
+) -> List[Dict[str, Any]]:
+    """Construye una fila por ID con stock en ambos mayoristas y la alternativa más barata."""
+    provider_frames = {
+        "ingram": collect_eligible_products(ingram_df, catalog_df),
+        "intcomex": collect_eligible_products(intcomex_df, catalog_df),
+    }
+    selected: Dict[str, Dict[int, Dict[str, Any]]] = {}
+    for provider, frame in provider_frames.items():
+        alternatives: Dict[int, Dict[str, Any]] = {}
+        for _, row in frame.iterrows():
+            try:
+                pcf_id = int(float(row[COL_PCF_ID]))
+            except (ValueError, TypeError):
+                continue
+            cost = pd.to_numeric(row.get(COL_CUSTOMER_PRICE), errors="coerce")
+            stock = pd.to_numeric(row.get(COL_AVAILABLE_QTY), errors="coerce")
+            supplier_id = row.get(COL_INGRAM_PART, "")
+            if pd.isna(supplier_id) or not str(supplier_id).strip():
+                supplier_id = row.get(COL_VENDOR_PART, "")
+            candidate = {
+                "id": supplier_id,
+                "cost": None if pd.isna(cost) else float(cost),
+                "stock": None if pd.isna(stock) else float(stock),
+            }
+            current = alternatives.get(pcf_id)
+            candidate_cost = candidate["cost"] if candidate["cost"] is not None else float("inf")
+            current_cost = current["cost"] if current and current["cost"] is not None else float("inf")
+            if current is None or candidate_cost < current_cost:
+                alternatives[pcf_id] = candidate
+        selected[provider] = alternatives
+
+    pcf_lookup: Dict[int, Dict[str, Any]] = {}
+    catalog_cols = [CATALOG_COL_PCF_ID, CATALOG_COL_COST, CATALOG_COL_STOCK]
+    if catalog_df is not None and set(catalog_cols).issubset(catalog_df.columns):
+        for _, row in catalog_df[catalog_cols].iterrows():
+            try:
+                pcf_id = int(float(row[CATALOG_COL_PCF_ID]))
+            except (ValueError, TypeError):
+                continue
+            raw_cost = row[CATALOG_COL_COST]
+            if isinstance(raw_cost, str):
+                raw_cost = raw_cost.strip().replace("$", "").replace(" ", "").replace(".", "")
+            cost = pd.to_numeric(raw_cost, errors="coerce")
+            stock = pd.to_numeric(row[CATALOG_COL_STOCK], errors="coerce")
+            pcf_lookup[pcf_id] = {
+                "pcf_cost": None if pd.isna(cost) else float(cost),
+                "pcf_stock": None if pd.isna(stock) else float(stock),
+            }
+
+    duplicate_ids = []
+    for pcf_id in sorted(set(selected["ingram"]) & set(selected["intcomex"])):
+        ingram = selected["ingram"][pcf_id]
+        intcomex = selected["intcomex"][pcf_id]
+        duplicate_ids.append({
+            "pcf_id": pcf_id,
+            **pcf_lookup.get(pcf_id, {"pcf_cost": None, "pcf_stock": None}),
+            "ingram_id": ingram["id"],
+            "ingram_cost": ingram["cost"],
+            "ingram_stock": ingram["stock"],
+            "intcomex_id": intcomex["id"],
+            "intcomex_cost": intcomex["cost"],
+            "intcomex_stock": intcomex["stock"],
+        })
+    return duplicate_ids
+
+
 def apply_xlsx_filters(df: pd.DataFrame) -> Dict[str, Any]:
     total = len(df)
 
@@ -925,10 +1007,12 @@ def generate_html_dashboard(
     price_file_url: str = None,
     mayorista_name: str = "Ingram",
     mayorista_prefix: str = "mayorista",
+    duplicate_ids: Optional[List[Dict[str, Any]]] = None,
 ) -> str:
     if df_original is None:
         df_original = pd.DataFrame()
     timestamp_display = format_chile_timestamp(timestamp)
+    duplicate_ids = duplicate_ids or []
 
     # Construir el nombre a mostrar con URL si está disponible
     if price_file_url:
@@ -991,6 +1075,15 @@ def generate_html_dashboard(
         except (ValueError, TypeError):
             return '<span style="color: var(--text-muted);">—</span>'
 
+    def fmt_number(value) -> str:
+        if value is None:
+            return '<span style="color: var(--text-muted);">—</span>'
+        try:
+            numeric = float(value)
+            return f"{numeric:,.2f}" if not numeric.is_integer() else f"{int(numeric):,}"
+        except (ValueError, TypeError):
+            return str(value)
+
     def fmt_pcf_price_colored(pcf_price, mode_price) -> str:
         if pcf_price is None:
             return '<span style="color: var(--text-muted);">—</span>'
@@ -1027,6 +1120,22 @@ def generate_html_dashboard(
     shared_published = classification.get("shared_published", [])
     has_pcf_stock = classification["has_pcf_stock"]
     api_errors = classification["api_errors"]
+
+    duplicate_rows = ""
+    for item in duplicate_ids:
+        pcf_id = item["pcf_id"]
+        pcf_link = f'<a href="https://www.pcfactory.cl/producto/{pcf_id}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{pcf_id}</a>'
+        duplicate_rows += f'''<tr>
+            <td>{pcf_link}</td>
+            <td class="num-cell" data-sort="{item.get('pcf_cost') or 0}">{fmt_clp_price(item.get("pcf_cost"))}</td>
+            <td class="num-cell" data-sort="{item.get('pcf_stock') or 0}">{fmt_number(item.get("pcf_stock"))}</td>
+            <td><code>{item.get("ingram_id", "")}</code></td>
+            <td class="num-cell" data-sort="{item.get('ingram_cost') or 0}">{fmt_usd(item.get("ingram_cost"))}</td>
+            <td class="num-cell" data-sort="{item.get('ingram_stock') or 0}">{fmt_number(item.get("ingram_stock"))}</td>
+            <td><code>{item.get("intcomex_id", "")}</code></td>
+            <td class="num-cell" data-sort="{item.get('intcomex_cost') or 0}">{fmt_usd(item.get("intcomex_cost"))}</td>
+            <td class="num-cell" data-sort="{item.get('intcomex_stock') or 0}">{fmt_number(item.get("intcomex_stock"))}</td>
+        </tr>'''
 
     no_eligible = xlsx_stats.get("no_eligible", 0)
     no_eligible_df = xlsx_stats.get("no_eligible_df", pd.DataFrame())
@@ -1789,6 +1898,7 @@ def generate_html_dashboard(
                 <a href="{mayorista_prefix}-report.xlsx" target="_blank" class="download-btn">⬇ Descargar Excel</a>
                 <a href="{mayorista_prefix}-publish_ready.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV Publicados</a>
                 <a href="{mayorista_prefix}-need_creation.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV por Crear</a>
+                <a href="{mayorista_prefix}-duplicate_ids.csv" target="_blank" class="download-btn">CSV IDs Duplicados</a>
             </div>
         </header>
 
@@ -1858,6 +1968,10 @@ def generate_html_dashboard(
             <div class="stat-card clickable" onclick="switchTab('creation')">
                 <div class="stat-value purple">{len(need_creation)}</div>
                 <div class="stat-label">ID No Existe y Requieren Creacion</div>
+            </div>
+            <div class="stat-card clickable" onclick="switchTab('duplicates')">
+                <div class="stat-value cyan">{len(duplicate_ids)}</div>
+                <div class="stat-label">IDs Duplicados</div>
             </div>
         </div>
 
@@ -1931,6 +2045,36 @@ def generate_html_dashboard(
             <button class="tab-btn" onclick="switchTab('constock')">📊 Con Stock Ingram ({with_stock})</button>
             <button class="tab-btn" onclick="switchTab('sinstock')">🚫 Sin Stock ({sin_stock})</button>
             <button class="tab-btn" onclick="switchTab('total')">📋 Total ({total})</button>
+            <button class="tab-btn" onclick="switchTab('duplicates')">IDs Duplicados ({len(duplicate_ids)})</button>
+        </div>
+
+        <!-- Tabla: IDs presentes en Ingram e Intcomex -->
+        <div id="tab-duplicates" class="tab-content">
+            <div class="table-section">
+                <div class="table-header">
+                    <div>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">IDs Duplicados en Ingram e Intcomex</h2>
+                        <span class="table-badge badge-cyan">{len(duplicate_ids)} IDs con stock en ambos mayoristas</span>
+                    </div>
+                    <input type="text" class="search-input" placeholder="Buscar ID PCF o SKU..." oninput="filterTable('table-duplicates', this.value)">
+                </div>
+                <div class="table-container">
+                    <table id="table-duplicates">
+                        <thead><tr>
+                            <th onclick="sortTable('table-duplicates', 0, 'num')">ID PCF</th>
+                            <th onclick="sortTable('table-duplicates', 1, 'num')">Costo PCF</th>
+                            <th onclick="sortTable('table-duplicates', 2, 'num')">Stock PCF</th>
+                            <th onclick="sortTable('table-duplicates', 3, 'str')">ID Ingram</th>
+                            <th onclick="sortTable('table-duplicates', 4, 'num')">Costo Ingram</th>
+                            <th onclick="sortTable('table-duplicates', 5, 'num')">Stock Ingram</th>
+                            <th onclick="sortTable('table-duplicates', 6, 'str')">ID Intcomex</th>
+                            <th onclick="sortTable('table-duplicates', 7, 'num')">Costo Intcomex</th>
+                            <th onclick="sortTable('table-duplicates', 8, 'num')">Stock Intcomex</th>
+                        </tr></thead>
+                        <tbody>{duplicate_rows if duplicate_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin IDs duplicados</td></tr>'}</tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <!-- Tabla: Potenciales -->
@@ -2591,8 +2735,8 @@ def generate_html_dashboard(
             table.querySelectorAll('th')[colIdx].classList.add(asc ? 'sorted-asc' : 'sorted-desc');
 
             rows.sort((a, b) => {{
-                let va = a.cells[colIdx]?.textContent.trim() || '';
-                let vb = b.cells[colIdx]?.textContent.trim() || '';
+                let va = a.cells[colIdx]?.dataset.sort || a.cells[colIdx]?.textContent.trim() || '';
+                let vb = b.cells[colIdx]?.dataset.sort || b.cells[colIdx]?.textContent.trim() || '';
                 if (type === 'num') {{
                     va = parseFloat(va.replace(/[^0-9.-]/g, '')) || 0;
                     vb = parseFloat(vb.replace(/[^0-9.-]/g, '')) || 0;
@@ -2748,12 +2892,11 @@ def main():
 
     # 3b. Enriquecer con catálogo PCF (local vía --pcf-catalog o desde Google Sheets)
     catalog_df = None
-    if len(xlsx_stats["no_pcf_id"]) > 0 or not args.skip_api:
-        if args.pcf_catalog:
-            print(f"\n[*] Cruzando con catálogo PCF (local): {args.pcf_catalog}")
-            catalog_df = load_pcf_catalog(args.pcf_catalog)
-        else:
-            catalog_df = read_pcf_catalog_sheet()
+    if args.pcf_catalog:
+        print(f"\n[*] Cruzando con catálogo PCF (local): {args.pcf_catalog}")
+        catalog_df = load_pcf_catalog(args.pcf_catalog)
+    else:
+        catalog_df = read_pcf_catalog_sheet()
 
     if len(xlsx_stats["no_pcf_id"]) > 0 and catalog_df is not None:
         new_matched, still_no_pcf = enrich_with_pcf_catalog(xlsx_stats["no_pcf_id"], catalog_df)
@@ -2767,16 +2910,21 @@ def main():
     comparison_mayorista = "intcomex" if args.mayorista == "ingram" else "ingram"
     comparison_gid = INTCOMEX_SHEET_GID if comparison_mayorista == "intcomex" else GOOGLE_SHEET_GID
     exclusive_published_ids: Optional[Set[int]] = None
+    duplicate_ids: List[Dict[str, Any]] = []
     try:
         print(f"[*] Cargando referencia de {comparison_mayorista} para excluir publicados compartidos...")
         comparison_df = read_google_sheet(args.sheet_id, comparison_gid)
         current_ids = collect_eligible_pcf_ids(df, catalog_df)
         comparison_ids = collect_eligible_pcf_ids(comparison_df, catalog_df)
+        ingram_df = df if args.mayorista == "ingram" else comparison_df
+        intcomex_df = df if args.mayorista == "intcomex" else comparison_df
+        duplicate_ids = build_duplicate_ids(ingram_df, intcomex_df, catalog_df)
         exclusive_published_ids = current_ids - comparison_ids
         print(
             f"[+] IDs exclusivos para {args.mayorista}: {len(exclusive_published_ids)} "
             f"(compartidos con {comparison_mayorista}: {len(current_ids & comparison_ids)})"
         )
+        print(f"[+] IDs duplicados con stock en ambos mayoristas: {len(duplicate_ids)}")
     except Exception as e:
         print(f"[!] No se pudo cargar referencia de {comparison_mayorista}: {e}")
         print("    Se mantiene el conteo de publicados sin exclusión por cruce de sheets")
@@ -2872,7 +3020,7 @@ def main():
         print(f"[+] USD observado: ${usd_clp:,.0f} CLP")
     else:
         print("[!] No se pudo obtener el tipo de cambio, columna CLP mostrara '—'")
-    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento, price_file_url=price_file_url, mayorista_name=mayorista_display, mayorista_prefix=output_file_prefix)
+    html = generate_html_dashboard(xlsx_stats, classification, price_file_name, timestamp, df_original=df, usd_clp=usd_clp, seguimiento=seguimiento, price_file_url=price_file_url, mayorista_name=mayorista_display, mayorista_prefix=output_file_prefix, duplicate_ids=duplicate_ids)
 
     # 7. Guardar HTML
     html_path = output_dir / f"{output_file_prefix}.html"
@@ -2892,6 +3040,17 @@ def main():
                 writer.writerows(prods)
             print(f"[+] CSV guardado: {csv_path}")
 
+    duplicate_csv_path = output_dir / f"{output_file_prefix}-duplicate_ids.csv"
+    duplicate_fields = [
+        "pcf_id", "pcf_cost", "pcf_stock", "ingram_id", "ingram_cost",
+        "ingram_stock", "intcomex_id", "intcomex_cost", "intcomex_stock",
+    ]
+    with open(duplicate_csv_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=duplicate_fields)
+        writer.writeheader()
+        writer.writerows(duplicate_ids)
+    print(f"[+] CSV guardado: {duplicate_csv_path}")
+
     # 9. Guardar JSON report
     report = {
         "timestamp": timestamp,
@@ -2905,6 +3064,7 @@ def main():
             "already_mayorista": len(classification["already_mayorista"]),
             "has_pcf_stock": len(classification["has_pcf_stock"]),
             "api_errors": len(classification["api_errors"]),
+            "duplicate_ids": len(duplicate_ids),
             "total_potencial": total_potencial,
         },
         "publish_ready": classification["publish_ready"],
@@ -2913,6 +3073,7 @@ def main():
         "already_mayorista": classification["already_mayorista"],
         "has_pcf_stock": classification["has_pcf_stock"],
         "api_errors": classification["api_errors"],
+        "duplicate_ids": duplicate_ids,
     }
     json_path = output_dir / f"{output_file_prefix}-report.json"
     with open(json_path, "w", encoding="utf-8") as f:
