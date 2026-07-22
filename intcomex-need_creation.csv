@@ -18,7 +18,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",nan,WCMTB-T27B6ABC2-A6,615.9,20,nan,Physical,,,,,
 ,100017860.0,Kingston FURY Beast RGB - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.35 V - sin búfer - no ECC - negro,nan,KF432C16BB2A/32,283.7,20,nan,Physical,219778,,302348,,374628
 ,100017861.0,Kingston FURY Beast RGB - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL17 - 1.35 V - sin búfer - no ECC,nan,KF436C17BB2A/8,89.2,20,nan,Physical,219779,,94848,,102198
-,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",nan,77Z30AA,123.7,20,nan,Physical,367034,,137503,,147815
+,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",nan,77Z30AA,123.7,20,nan,Physical,367034,,137503,,142722
 ,100017964.0,"Zebra - Empuñadura tipo pistola - para Zebra TC22, TC27",nan,TRG-TC2L-SNP1-01,86.8,20,nan,Physical,,,,,
 ,100018026.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL16 - 1.35 V - sin búfer - no ECC - negro,nan,KF436C16RB2/8,88.1,20,nan,Physical,224563,,95481,,101249
 ,100018028.0,Kingston FURY Renegade RGB - DDR4 - módulo - 32 GB: 1 x 32 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL18 - 1.2 V - sin búfer - no ECC - negro,nan,KF436C18RB2A/32,313.3,20,nan,Physical,227668,,339872,,361717
@@ -45,17 +45,17 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100019299.0,Logitech - Meetup 2 - 960-001693,nan,960-001693,1140.0,5,nan,Physical,,,,,
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,nan,952-000195,146.1,3,nan,Physical,,,,,
 ,100019594.0,POLY - Headset - Voyager Focus 2 Microsoft,nan,9T9J6AA#AC3,188.42,1,nan,Physical,,,,,
-,100019598.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black EXPO DDR5 CL30,nan,KF560C30BBE-32,413.9,7,nan,Physical,272325,,497500,,497500
-,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,nan,KF564C32BBEA-16,255.1,20,nan,Physical,354697,,289990,,294990
+,100019598.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Unbuffered - Non-ECC - Beast Black EXPO DDR5 CL30,nan,KF560C30BBE-32,413.9,7,nan,Physical,272325,,497500,,528430
+,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,nan,KF564C32BBEA-16,255.1,20,nan,Physical,354697,,289990,,301236
 ,100019601.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - FURY Beast RGB EXPO,nan,KF564C32BBEA-32,455.3,20,nan,Physical,385468,,526278,,547660
 ,100019615.0,HyperX - Microphone - QuadCast S 2 Black,nan,9A273AA,120.3,20,nan,Physical,,,,,
 ,100019637.0,Jabra - Headphones - Evolve2 50 USB C/A MS Stereo,nan,25089-999-799,148.2,6,nan,Physical,270981,,172904,,185312
-,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,nan,4999-823-169,32.7,20,nan,Physical,269060,,39520,,43905
+,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,nan,4999-823-169,32.7,20,nan,Physical,269060,,48290,,48290
 ,100019641.0,Jabra - Headphones - Evolve2 30 SE MS Stereo USB C,nan,23189-999-779,94.1,10,nan,Physical,269490,,101830,,108265
 ,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,nan,5399-823-369,67.9,8,nan,Physical,268574,,76980,,83615
 ,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,nan,4999-823-369,52.1,20,nan,Physical,277308,,58960,,62789
 ,100019914.0,Poly - Video conferencing device - Studio V12 USB Video Bar,nan,A9DD8AA#ABA,921.48,8,nan,Physical,,,,,
-,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,nan,KF560C30BBEA-32,426.9,3,nan,Physical,377909,,481790,481790,490910
+,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,nan,KF560C30BBEA-32,426.9,3,nan,Physical,377909,,481790,481790,509918
 ,100020155.0,JBL 104SET-BT-US JBL 104-BT Monitores Compactos de 4.5 pulg. con Bluetooth Negro - Venta en pares,nan,104SET-BT-US,181.32,20,nan,Physical,,,,,
 ,100020162.0,"JBL Pro 308P MkII - Powered 8"" Two-Way Studio Monitor - Bi-amplified - Matte black",nan,308PMKII,299.58,17,nan,Physical,,,,,
 ,100020172.0,"JBL Pro Control 25-1 Parlante de Superficie Compacto 5.25"" - Negro - venta en pares",nan,CONTROL 25-1,189.21,6,nan,Physical,,,,,
