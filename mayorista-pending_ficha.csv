@@ -1,6 +1,3 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
 57352,3081006,APC Smart-UPS SRT 72V 2.2kVA Battery Pac,Apc,SRT72BP,847.52,1,Protección Eléctrica y Racks,Baterías UPS,ok,False,0,0,0,APC Smart-UPS SRT 72V 2.2kVA Battery Pac,0,0,True,{},,,,,,,
 50742,4509636,DESIGNJET MFP T2600DRPS TINTA COLOR 36IN,Hp,3EK15A,10311.0,1,Impresoras,Plotters color,ok,False,0,0,0,"Plotter 36"" HP DesignJet T2600dr MFP Tinta Ethernet / USB / Doble rollo",0,0,False,{},,,65441,,12452696,,13195214
-57346,6519325,MAG CORELIQUID A12 360,Msi,306-7ZWEM21-813,56.1,27,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",ok,False,0,0,0,Refrigeracion MAG CORELIQUID A12 360,0,0,True,{},,,,,,,
-57350,6784126,RTX 5070 12G WOW VOID OC,Msi,912-V532-255,808.03,5,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,False,0,0,0,Tarjeta de Video NVIDIA RTX 5070 12G WOW VOID OC,0,0,True,{},,,385563,,759990,799990,909560
-57348,6854893,ZOTAC GAMING GEFORCE RTX 5080 AMP EXTREM,Zotac,ZT-B50800B-10A,1462.3,5,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,False,0,0,0,Tarjeta de Video NVIDIA GEFORCE RTX 5080 GAMING  AMP EXTREM,0,0,True,{},,,,,,,
