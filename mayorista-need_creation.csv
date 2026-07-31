@@ -472,8 +472,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,58.56,21,Suministros y Medios,Suministros Láser,260107,,66990,,71878
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,12.72,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,4783958,TONER HP 206A NEGRO,Hp,W2110A,69.58,93,Suministros y Medios,Suministros Láser,260121,,81134,,86340
-,4783959,TONER HP 206A CYAN,Hp,W2111A,81.35,59,Suministros y Medios,Suministros Láser,260122,,93461,,100410
-,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,81.29,71,Suministros y Medios,Suministros Láser,260080,,93393,,99570
+,4783959,TONER HP 206A CYAN,Hp,W2111A,81.35,59,Suministros y Medios,Suministros Láser,260122,,93461,109990,101009
+,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,81.29,71,Suministros y Medios,Suministros Láser,260080,,93393,109990,100265
 ,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.65,30,Suministros y Medios,Suministros Láser,260108,,93802,,100528
 ,4792041,TONER 047 REND 1600 PAGINAS,Canon,2164C001,58.4,17,Suministros y Medios,Suministros Láser,260489,,67000,,74632
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,186.87,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
@@ -534,7 +534,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5116169,Aruba 6100 48G CL4 4SFP+ Swch,Hewlett Packard Enterprise,JL675A,2031.9,1,Dispositivos de Red,Switches Standalone,380796,,2412092,,2707289
 ,5116173,Aruba 6100 12G PoE+ 2SFP+ 139W Switch,Hewlett Packard Enterprise,JL679A,427.0,9,Dispositivos de Red,Switches Estaqueables,380804,,496900,,506949
 ,5135728,DIGITALPERSONA UAREU 4500 READER,Digital Persona,50013-001-104,56.43,1268,Seguridad Física,Disp de Seguridad Biométricos y Comp,,,,,
-,5137461,HP Color LaserJet Managed MFP E47528f,Hp,3QA75A,516.07,7,Impresoras,Multifuncionales Inkjet,168892,,586770,,603524
+,5137461,HP Color LaserJet Managed MFP E47528f,Hp,3QA75A,516.07,7,Impresoras,Multifuncionales Inkjet,168892,,586770,,605692
 ,5138866,HP Multifuncional Mono Laserjet M236SDW,Hp,9YG09A,147.92,55,Impresoras,Multifuncionales Láser Mono,220514,,170000,199990,195353
 ,5142545,4 Port USB C Hub 5Gbps 3A/1C- 11in Cable,Startech.Com,HB30CM3A1CB,35.52,10,Cables,Cables y Adaptadores USB,,,,,
 ,5163607,Toner HP 136A Negro Original,Hp,W1360A,50.98,73,Suministros y Medios,Suministros Láser,260056,,58335,,62862
@@ -561,7 +561,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5267449,Cleaning Card Kit Improved ZC100/300 2,Zebra,105999-310-01,13.66,145,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,
 ,5267678,"Network Card, DP 10G-SFP+ NVR4 Standard",Hanwha Techwin,HD-NVR4X-STD-10GBE,595.28,1,Seguridad Física,Componentes de Videovigilancia,,,,,
 ,5275980,USB C Dock Triple 4K - 100W PD 6x USB,Startech.Com,DK31C2DHSPDUE,296.71,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
-,5304146,CORE I7-12700K 3.60GHZ SKTLGA1700 25.00M,Intel,BX8071512700K,338.15,60,Componentes de Sistema,Procesadores Intel,125304,,369550,,406334
+,5304146,CORE I7-12700K 3.60GHZ SKTLGA1700 25.00M,Intel,BX8071512700K,338.15,60,Componentes de Sistema,Procesadores Intel,125304,,349900,,403015
 ,5315800,Scan handle for ScanPal EDA52. Compatibl,Honeywell,EDA52-SH-R,56.32,26,Productos POS/AIDC/Código de Barras,Accesorios Terminales POS,,,,,
 ,5315835,EDA52WAN4/64G2PIN+US BROW,Honeywell,EDA52-11AE64N21RK,624.61,8,Productos POS/AIDC/Código de Barras,Terminales de Datos Portátiles,,,,,
 ,5323328,3ft Certified DisplayPort 1.4 Cable 8K,Startech.Com,DP14VMM1M,18.7,4,Cables,Cables y Adaptadores de Audio + Video,,,,,
@@ -583,7 +583,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5452498,HPE SN1610E 32Gb 2p FC HBA,Hewlett Packard Enterprise,R2J63A,2338.9,2,Dispositivos de Almacenamiento,Adaptadores Bus de Fibra (HBAs),382424,,2777240,,2777240
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,122.09,3,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,5464568,ARUBAUXIG-SERIES.11AX+ETHERNETSENSOR,Hewlett Packard Enterprise,R7H75A,454.23,1,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.93,529,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,26990,24884
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.93,529,Suministros y Medios,Suministros Inyección de Tinta,259808,,19990,29990,25435
 ,5475524,Cable 10m de Red Ethernet RJ45 - Azul,Startech.Com,N6LPATCH10MBL,16.85,20,Cables,Cables y Adaptadores Ethernet Coaxiales,,,,,
 ,5475577,Cable 15m de Red Ethernet RJ45 - Azul,Startech.Com,N6LPATCH15MBL,17.41,10,Cables,Cables y Adaptadores Ethernet Coaxiales,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.79,29,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,
@@ -614,7 +614,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5619260,HDMI to DisplayPort Adapter HDMI 4K60Hz,Startech.Com,128-HDMI-DISPLAYPORT,59.06,3,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,5620592,CV5000DP USB-C TO DISPLAYPORT1.4 ADAPTER,Kensington,K34680WW,17.11,44,Cables,Cables y Adaptadores de Video,,,,,
 ,5620667,Audifonos supraaurales USB-C H1000,Kensington,K83450WW,34.54,3,Dispositivos Audio/Video,Cintillos y Audífonos para PCs,239943,,41528,,43172
-,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,66.09,1016,Suministros y Medios,Suministros Láser,260006,,75338,,82128
+,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,66.09,1016,Suministros y Medios,Suministros Láser,260006,,75338,,81904
 ,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,108.94,122,Suministros y Medios,Suministros Láser,260322,,119900,131500,135810
 ,5634453,Foldable Laptop Riser stand Portable,Startech.Com,LAPTOP-RISER-BAR,52.57,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,5634495,4-Port USB Hub 5Gbps Bus Powered,Startech.Com,5G4AB-USB-A-HUB,35.51,5,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
@@ -845,7 +845,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6709674,MBP 14 SL/10C/10C GPU/24GB/1TB-CHL,Apple,MDE64CI/A,2142.1,42,Computadores Servidores y Notebooks,Notebooks,360395,,2349990,,2581214
 ,6709678,DB SATELLITE PRO C50-K - I5 8G 512 156,Dynabook,PSY29U-4UT002,612.26,2,Computadores Servidores y Notebooks,Notebooks,366594,,733990,,733990
 ,6711084,400 QUIET PINK WIRELESS MOUSE,Hp,AZ7B5AA#ABA,16.89,1930,Dispositivos de Entrada,Mouse,,,,,
-,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,12.89,2782,Suministros y Medios,Suministros Inyección de Tinta,384467,,15994,,18362
+,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,12.89,2782,Suministros y Medios,Suministros Inyección de Tinta,384467,,15994,,17843
 ,6711403,HP 668 NEGRO ORIGINAL INK ADVANTAGE CART,Hp,7FP37VL,14.21,2240,Suministros y Medios,Suministros Inyección de Tinta,384466,,17668,21990,20311
 ,6711944,400 QUIET BLACK WIRELESS MOUSE US,Hp,AZ7B2AA#ABA,16.79,1489,Dispositivos de Entrada,Mouse,,,,,
 ,6711945,400 QUIET MAPLE WIRELESS MOUSE US,Hp,AZ7B6AA#ABA,16.89,557,Dispositivos de Entrada,Mouse,,,,,
@@ -908,7 +908,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6817093,"ThinkSystem ST45 V3, 1xAMD EPYC 4124P 4C",Lenovo,7DH5A038LA,2498.0,10,Computadores Servidores y Notebooks,Servidores Tower,,,,,
 ,6817094,"SR250 V3 2.5-in, 1x 6353P 8C",Lenovo,7DCLA061LA,3961.0,9,Computadores Servidores y Notebooks,Servidores en Rack,,,,,
 ,6817095,"ThinkSystem ST50 V3, 1xIntel Xeon 6325P",Lenovo,7DF3A03ZLA,3233.0,10,Computadores Servidores y Notebooks,Servidores Tower,,,,,
-,6818055,34U640B-B 34 WQHD 144Hz Monitor,Lg,34U640B-B,292.44,19,Pantallas,Monitores LCD/LED,395012,,345110,,348294
+,6818055,34U640B-B 34 WQHD 144Hz Monitor,Lg,34U640B-B,292.44,19,Pantallas,Monitores LCD/LED,395012,,345110,,350996
 ,6820098,BOTON EXTRA WDC15 (1 PIEZA),Benq,5J.K0E28.A2A,224.28,20,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
 ,6820099,PROYECTOR BEQN LASER (20000-30000 HRS),Benq,9H.JS677.1KL,877.94,5,Dispositivos Audio/Video,Proyectores DLP,399473,,1029513,,1038634
 ,6820105,HPE ProLiant Compute DL380 Gen12 1p 6520,Hewlett Packard Enterprise,P91077-DM5,16857.0,1,Computadores Servidores y Notebooks,Servidores en Rack,,,,,
@@ -1004,13 +1004,13 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6841937,USB-C TO ETHERNET ADAPTER GBE ADAPTER,Startech.Com,US1GC30B2,20.57,100,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
 ,6841939,USB C Multiport Adapter 4K 60Hz HDMI,Startech.Com,115B-USBC-MULTIPORT,51.63,40,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,6841940,USB C Multiport Adapter Dual 4K HDMI PD,Startech.Com,102B-USBC-MULTIPORT,116.6,30,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
-,6846053,CARTUCHO NEGRO SUPER ALTO RENDIMIENTO,Brother,LC506XXLBKS,59.7,7,Suministros y Medios,Suministros Inyección de Tinta,398668,,70508,,72649
-,6846059,CARTUCHO CIAN SUPER ALTO RENDIMIENTO,Brother,LC506XXLCS,35.07,7,Suministros y Medios,Suministros Inyección de Tinta,398672,,41528,,43660
-,6846060,CARTUCHO MAGENTA SUPER ALTO RENDIMIENTO,Brother,LC506XXLMS,35.07,7,Suministros y Medios,Suministros Inyección de Tinta,398673,,41528,,43783
-,6846061,CARTUCHO AMARILLO SUPER ALTO RENDIMIENTO,Brother,LC506XXLYS,35.07,7,Suministros y Medios,Suministros Inyección de Tinta,398665,,41528,,43660
+,6846053,CARTUCHO NEGRO SUPER ALTO RENDIMIENTO,Brother,LC506XXLBKS,59.7,7,Suministros y Medios,Suministros Inyección de Tinta,398668,,70508,,73247
+,6846059,CARTUCHO CIAN SUPER ALTO RENDIMIENTO,Brother,LC506XXLCS,35.07,7,Suministros y Medios,Suministros Inyección de Tinta,398672,,41528,,44037
+,6846060,CARTUCHO MAGENTA SUPER ALTO RENDIMIENTO,Brother,LC506XXLMS,35.07,7,Suministros y Medios,Suministros Inyección de Tinta,398673,,41528,,44061
+,6846061,CARTUCHO AMARILLO SUPER ALTO RENDIMIENTO,Brother,LC506XXLYS,35.07,7,Suministros y Medios,Suministros Inyección de Tinta,398665,,41528,,44037
 ,6853215,PRO PLUS AMD R7 PRO 350 32GB+BACKPACK,Dell,PB14255_R7KRK321TBWPS_3PSXCTO/CP5723,1296.1,104,Computadores Servidores y Notebooks,Notebooks,,,,,
-,6854006,"Monitor LED Gaming 24.5"" IPS FHD 1ms 20",Lg,25G523B-B,113.54,40,Pantallas,Monitores LCD/LED,394579,,179,129990,107213
-,6854886,MONITOR LG 27G523B B 27 VA MONITOR FHD,Lg,27G523B-B,137.87,20,Pantallas,Monitores LCD/LED,394549,,199,149990,138657
+,6854006,"Monitor LED Gaming 24.5"" IPS FHD 1ms 20",Lg,25G523B-B,113.54,40,Pantallas,Monitores LCD/LED,394579,,179,129990,110041
+,6854886,MONITOR LG 27G523B B 27 VA MONITOR FHD,Lg,27G523B-B,137.87,20,Pantallas,Monitores LCD/LED,394549,,199,149990,136240
 ,6854887,Monitor TV LG 27IN UltraWide,Lg,27U711B-B,219.8,4,Pantallas,Monitores LCD/LED,394550,,260810,,268558
 ,6854927,TECLADO INALAM ERGO RECARGAB NG K75493ES,Kensington,K75493ES,35.86,20,Dispositivos de Entrada,Teclados,385859,,35732,,38433
 ,6854928,COMBO TECLADO INALAM ERG B12RECAR K75493,Kensington,K75492,44.04,6,Dispositivos de Entrada,Combos Teclado/Mouse,384165,,42470,,49870
