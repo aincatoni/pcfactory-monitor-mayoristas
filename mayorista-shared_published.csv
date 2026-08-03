@@ -1,18 +1,18 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider
 1771,1230999,TONER HP 126A NEGRO,Hp,CE310A,61.01,8,Suministros y Medios,Suministros Láser,ok,True,1,5,5,Toner Original HP 126A Negro ,0,0,False,{},,intcomex
-17100,2686056,CARTUCHO DE TINTA LC509BK NEGRO,Brother,LC509BK,10.11,9,Suministros y Medios,Suministros Fax/Fotocopiadoras,ok,True,1,20,20,Cartucho de Tinta Original Brother  LC509 Negro,0,0,False,{},,intcomex
 17101,2686053,CARTUCHO DE TINTA LC505C CIAN,Brother,LC505C,8.91,4,Suministros y Medios,Suministros Fax/Fotocopiadoras,ok,True,1,10,10,Cartucho de Tinta Original Brother  LC505 Cyan,0,0,False,{},,intcomex
+17100,2686056,CARTUCHO DE TINTA LC509BK NEGRO,Brother,LC509BK,10.11,9,Suministros y Medios,Suministros Fax/Fotocopiadoras,ok,True,1,18,18,Cartucho de Tinta Original Brother  LC509 Negro,0,0,False,{},,intcomex
 39128,3021448,TONER HP 87X NEGRO 18000 PAG,Hp,CF287X,349.71,24,Suministros y Medios,Suministros Láser,ok,True,1,2,2,Toner Original HP 87X Negro,0,0,False,{},,intcomex
 21093,3065083,CARTUCHO TINTA HP 664XL NEGRO,Hp,F6V31AL,32.17,78,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,20,20,Cartucho de Tinta Original HP 664 XL Negro ,0,0,False,{},,intcomex
+32859,3338024,CARTUCHO DE TINTA HP 954XL NEGRO 2000 PG,Hp,L0S71AL,57.73,35,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,20,20,Cartucho de Tinta Original HP 954 XL Negro ,0,0,False,{},,intcomex
 23421,3338021,CARTUCHO DE TINTA HP 954 NEGRO 1000 PÃG,Hp,L0S59AL,36.83,53,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,1,1,Cartucho de Tinta Original HP 954 Negro ,0,0,False,{},,intcomex
 32860,3338022,CARTUCHO DE TINTA HP 954XL CIAN 1600 PÃ,Hp,L0S62AL,43.79,17,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,20,20,Cartucho de Tinta Original HP 954 XL Cyan ,0,0,False,{},,intcomex
-32859,3338024,CARTUCHO DE TINTA HP 954XL NEGRO 2000 PG,Hp,L0S71AL,57.73,35,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,20,20,Cartucho de Tinta Original HP 954 XL Negro ,0,0,False,{},,intcomex
 36101,4213422,BACK UPS BV 1000VA AVR UNIVERSAL OUT230V,Apc,BV1000I-MS,87.87,25,Protección Eléctrica y Racks,UPS,ok,True,1,19,19,UPS 1000VA/600W Easy-UPS - Interactiva,0,0,False,{},,intcomex
 31613,4373232,TONER TN213Y AMARILLO,Brother,TN213Y,53.99,31,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original Brother TN-213 Amarillo,0,0,False,{},,intcomex
 34079,4475724,CARTUCHO TINTA HP 964XL NEGRO 2000 PÃG,Hp,3JA57AL,54.19,78,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,1,1,Cartucho de Tinta Original HP 964 XL Negro ,0,0,False,{},,intcomex
 56545,4485251,APC Smart-UPS SRT 1000VA 230V,Apc,SRT1000XLI,1248.2,6,Protección Eléctrica y Racks,UPS,ok,True,1,2,2,APC Smart-UPS SRT 1000VA 230V,0,0,False,{},,intcomex
-46626,4495575,TONER HP 414A CIAN 2100 PAG,Hp,W2021A,120.59,54,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original HP 414A Cyan (W2021A),0,0,False,{},,intcomex
 47090,4495579,TONER HP 414A MAGENTA 2100 PAG,Hp,W2023A,120.62,54,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original HP 414A Magenta (W2023A),0,0,False,{},,intcomex
+46626,4495575,TONER HP 414A CIAN 2100 PAG,Hp,W2021A,120.59,54,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original HP 414A Cyan (W2021A),0,0,False,{},,intcomex
 56084,5625812,"Printer ZC300, Dual Sided, US Cord, USB",Zebra,ZC32-000CQ00LA00,1262.1,8,Impresoras,Impresoras de Tarjetas de Identificación,ok,True,1,20,20,Impresoras de tarjetas ZC300,0,0,False,{},,intcomex
 50506,5906598,CORE I5-14600KF 3.50GHZ SKTLGA1700 CACHE,Intel,BX8071514600KF,244.92,40,Componentes de Sistema,Procesadores Intel,ok,True,1,20,20,CPU Intel Core i5-14600KF (s1700),0,0,False,{},,intcomex
 51059,5939666,TONER TN3609XXL DL RENDIMIENTO HASTA 110,Brother,TN3609XXL,112.48,150,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,True,1,20,20,Toner Original Brother TN-3609XXL Negro,0,0,False,{},,intcomex
