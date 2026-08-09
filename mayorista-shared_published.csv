@@ -8,8 +8,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 36101,4213422,BACK UPS BV 1000VA AVR UNIVERSAL OUT230V,Apc,BV1000I-MS,87.87,25,Protección Eléctrica y Racks,UPS,ok,True,1,20,20,UPS 1000VA/600W Easy-UPS - Interactiva,0,0,False,{},,intcomex
 31613,4373232,TONER TN213Y AMARILLO,Brother,TN213Y,53.99,31,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original Brother TN-213 Amarillo,0,0,False,{},,intcomex
 56545,4485251,APC Smart-UPS SRT 1000VA 230V,Apc,SRT1000XLI,1248.2,6,Protección Eléctrica y Racks,UPS,ok,True,1,2,2,APC Smart-UPS SRT 1000VA 230V,0,0,False,{},,intcomex
-47090,4495579,TONER HP 414A MAGENTA 2100 PAG,Hp,W2023A,120.62,54,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original HP 414A Magenta (W2023A),0,0,False,{},,intcomex
 46626,4495575,TONER HP 414A CIAN 2100 PAG,Hp,W2021A,120.59,54,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original HP 414A Cyan (W2021A),0,0,False,{},,intcomex
+47090,4495579,TONER HP 414A MAGENTA 2100 PAG,Hp,W2023A,120.62,54,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original HP 414A Magenta (W2023A),0,0,False,{},,intcomex
 56084,5625812,"Printer ZC300, Dual Sided, US Cord, USB",Zebra,ZC32-000CQ00LA00,1262.1,8,Impresoras,Impresoras de Tarjetas de Identificación,ok,True,1,20,20,Impresoras de tarjetas ZC300,0,0,False,{},,intcomex
 50506,5906598,CORE I5-14600KF 3.50GHZ SKTLGA1700 CACHE,Intel,BX8071514600KF,244.92,40,Componentes de Sistema,Procesadores Intel,ok,True,1,20,20,CPU Intel Core i5-14600KF (s1700),0,0,False,{},,intcomex
 51059,5939666,TONER TN3609XXL DL RENDIMIENTO HASTA 110,Brother,TN3609XXL,112.48,150,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,True,1,20,20,Toner Original Brother TN-3609XXL Negro,0,0,False,{},,intcomex
