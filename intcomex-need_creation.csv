@@ -1,5 +1,5 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56892,nan,"Razer DeathAdder V2 X HyperSpeed - Ratón - ergonómico - diestro - óptico - 7 botones - inalámbrico - 2.4 GHz, Bluetooth - receptor inalámbrico USB",Razer,RZ01-04130100-R3U1,50.2,20,Ratones,Physical,not_found,False,0,0,0,,0,0,True,{},,148111,,45990,,57305
+56892,nan,"Razer DeathAdder V2 X HyperSpeed - Ratón - ergonómico - diestro - óptico - 7 botones - inalámbrico - 2.4 GHz, Bluetooth - receptor inalámbrico USB",Razer,RZ01-04130100-R3U1,50.2,20,Ratones,Physical,not_found,False,0,0,0,,0,0,True,{},,148111,,45990,,57597
 ,100015288.0,Axis - Control panel - I8016-LVE,Axis,01995-001,1428.9,3,Paneles,Physical,,,,,,,,,,,,,,,,
 ,100015470.0,Axis D2110-VE Security Radar - Sensor de movimiento - cableado - blanco,Axis,01564-001,2080.2,4,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,305.7,18,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,126356,,312980,,348444
@@ -21,7 +21,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018518.0,Kingston Fury - DDR5 SDRAM - 24GB 7200MT/s DDR5 CL38 DIMM,Kingston Fury,KF572C38RSA-24,401.5,2,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,237011,,399990,,456742
 ,100018688.0,Poly Blackwire - 5220 - Handset,Poly,8X231AA,94.4,12,Auriculares,Physical,,,,,,,,,,,,257377,,88652,,93117
 ,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,Kingston Fury,KF556R28RBE2-32,875.3,10,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,245321,,949990,,995237
-,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,HyperX,8R2E7AA,36.4,20,Ratones,Physical,,,,,,,,,,,,270375,,38790,,42929
+,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,HyperX,8R2E7AA,36.4,20,Ratones,Physical,,,,,,,,,,,,270375,,27990,,41684
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,Hanwha,SBP-120HMW,32.4,9,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,Logitech,952-000195,146.1,2,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100019531.0,Poly Blackwire - 3210 - Headset - Wired - Monaural USB-C +USB-C/A Adapte,Poly,8X214A6,37.3,5,Auriculares,Physical,,,,,,,,,,,,260536,,,,
