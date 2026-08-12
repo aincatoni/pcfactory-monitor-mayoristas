@@ -5,7 +5,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,305.7,18,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,126356,,312980,,344090
 ,100016684.0,Newland - 4-Slot Charger for M,Newland,NLS-CD6550-4C,126.0,1,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,Zebra,KT-TC15-ROLATAM,510.8,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
-,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",Astro Gaming,939-002077,70.0,8,Auriculares y Manos Libres,Physical,,,,,,,,,,,,155925,,64990,,77825
+,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",Astro Gaming,939-002077,70.0,8,Auriculares y Manos Libres,Physical,,,,,,,,,,,,155925,,69590,,79109
 ,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,,,,,,,,,,,,393830,,1006848,,1006848
 ,100017737.0,"Zebra TC22 WLAN Wifi 6 SE4710 6"" Display 6GB/64GB 16MP RFC 5MP FFC 2-Pin Back I/O Standard Battery NFC BT USB-C GMS ROW",Zebra,WLMT0-T22B6ABC2-A6,554.2,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",Zebra,WCMTB-T27B6ABC2-A6,615.9,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
@@ -78,7 +78,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020851.0,JBL Pro - Speaker - PRX912 12IN powered loudspeake,JBL Pro,JBL-PRX912-EK,1023.0,17,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020852.0,JBL Pro - Speaker - PRX915 15IN powered loudspeake,JBL Pro,JBL-PRX915-EK,1136.8,7,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020875.0,JBL Pro - Speaker - EON715-EK,JBL Pro,JBL EON715-EK,593.2,20,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
-,100021236.0,HyperX - Mouse - Pulsefire Fuse Wireless,HyperX,A1KY6AA,27.1,20,Ratones,Physical,,,,,,,,,,,,393425,,27164,,31552
+,100021236.0,HyperX - Mouse - Pulsefire Fuse Wireless,HyperX,A1KY6AA,27.1,20,Ratones,Physical,,,,,,,,,,,,393425,,27164,,31441
 ,100021295.0,Screenbeam - Receptor 1100 Plus version International kit de montaje C,Screenbeam,SBWD1100PLADMIN3Y,1323.7,2,Adaptadores y Controladoras,Physical,,,,,,,,,,,,,,,,
 ,100021362.0,Jabra Evolve3 - Headphones - Wireless - 75 MS Link390c Black,Jabra,37599-999-899,334.9,11,Auriculares y Manos Libres,Physical,,,,,,,,,,,,389578,,345818,,364989
 ,100021369.0,Jabra Evolve3 - Headphones - Wireless - Evolve3 85 MS Link390c Black,Jabra,38599-999-899,457.7,3,Auriculares y Manos Libres,Physical,,,,,,,,,,,,389579,,,,
