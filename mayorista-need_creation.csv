@@ -599,7 +599,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5544108,DP to Dual HDMI MST HUB 4K 60Hz DP 1.4,Startech.Com,MST14DP122HD,61.68,1,Cables,Cables y Adaptadores de Video,,,,,
 ,5546225,ARUBA 1G SFP LC SX 500M MMF XCVR REPLACE,Hewlett Packard Enterprise,J4858D,125.53,17,Dispositivos de Red,Transceivers,,,,,
 ,5560702,Cable Management Sleeve Wire Wraps,Startech.Com,WKSTNCMFLX,19.32,3,Cables,Herramientas y Kits,,,,,
-,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,116.92,264,Suministros y Medios,Suministros Láser,260106,,129434,149990,140706
+,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,116.92,264,Suministros y Medios,Suministros Láser,260106,,129434,129434,140125
 ,5576934,HP 151X Black Original LaserJet Toner IS,Hp,W1510X,236.52,16,Suministros y Medios,Suministros Láser,260341,,262742,,279696
 ,5577005,HP 154A Black Org LaserJet Tank Rld Kit,Hp,W1540A,10.67,27,Suministros y Medios,Suministros Láser,260326,,11548,,12914
 ,5577006,HP 154X HY Blk Org LaserJetTank Rld Kit,Hp,W1540X,16.03,172,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18014,,20228
@@ -735,10 +735,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6277375,Filtro 16:9 de 24 Anti Luz Azul,Startech.Com,2469-ANTI-BLUE-LIGHT,66.06,10,Pantallas,Filtros Anti-reflejo para Monitores,,,,,
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,15.81,37,Comunicaciones,Cintillos telefónicos,256210,,19990,24990,22871
 ,6278893,Adaptador USB Wi-Fi Bluetooth WD02AT,Benq,5A.F8Y28.DE1,40.99,6,Dispositivos de Red,Tarjetas de Red inalámbricas,398402,,49685,,50028
-,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,97.79,31,Suministros y Medios,Suministros Inyección de Tinta,262183,,108182,,122642
+,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,97.79,31,Suministros y Medios,Suministros Inyección de Tinta,262183,,108182,,119946
 ,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,97.86,27,Suministros y Medios,Suministros Inyección de Tinta,262152,,109148,,120124
 ,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,84.34,28,Suministros y Medios,Suministros Inyección de Tinta,262283,,97556,,107796
-,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,97.84,24,Suministros y Medios,Suministros Inyección de Tinta,262151,,110114,,123945
+,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,97.84,24,Suministros y Medios,Suministros Inyección de Tinta,262151,,110114,,120840
 ,6280537,TONERLASERJET NEGRO,Hp,W1030XC,120.45,190,Suministros y Medios,Suministros Láser,354484,,138128,,144409
 ,6281645,TONER CONTRACTUAL ALTA CAPACIDAD AZUL,Hp,W2151XC,109.16,32,Suministros y Medios,Suministros Láser,399734,,121637,,122813
 ,6281646,TONER CONTRACTUAL ALTA CAPACIDAD AMARILL,Hp,W2152XC,109.16,30,Suministros y Medios,Suministros Láser,399736,,121637,,122813
@@ -747,7 +747,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6291070,200 EMPRS RED WIRELESS MOUSE,Hp,2HU82AA#ABL,7.88,420,Dispositivos de Entrada,Mouse,,,,,
 ,6291138,150 WD USB-A KBD,Hp,664R5AA#ABM,12.35,3854,Dispositivos de Entrada,Teclados,,,,,
 ,6291142,Z3700 DUAL SLV WIRELESS MOUSE,Hp,758A9AA#ABA,11.99,351,Dispositivos de Entrada,Mouse,,,,,
-,6298436,CATALYST 1300 24 PORT GE POE 4X1G SFP,Cisco,C1300-24P-4G,811.88,18,Dispositivos de Red,Switches Estaqueables,380629,,931214,,1000442
+,6298436,CATALYST 1300 24 PORT GE POE 4X1G SFP,Cisco,C1300-24P-4G,811.88,18,Dispositivos de Red,Switches Estaqueables,380629,,931214,,995329
 ,6315310,480GB SSD SATA ISE RI 6Gbps 512e 2.5in w,Dell,345-BGVS,827.64,3,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),400910,,994990,,994990
 ,6324262,32GS60QC-Monitor LED Gaming 32 VA Curvo,Lg,32GS60QC-B,149.32,1,Pantallas,Monitores LCD/LED,253842,,229,,50211
 ,6328556,QUAD BATTERY CHARGER CK3 AC20 CK65,Honeywell,871-230-401,268.6,2,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
@@ -760,7 +760,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,135.42,34,Dispositivos de Entrada,Teclados,269661,,154966,,162872
 ,6376006,Color LaserJet 550-sheet Media Tray,Hp,6QN57A,331.27,1,Impresoras,"Bandejas, Cajones y Alimentadores Sobre",,,,,
 ,6379270,Filtro de Privacidad para Dell P3424WE,Startech.Com,34C29-PRIVACY-SCREEN,172.62,30,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,155.03,15,Impresoras,Multifuncionales Inkjet,258026,,149990,169990,171687
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,155.03,15,Impresoras,Multifuncionales Inkjet,258026,,149990,169990,172449
 ,6385008,Adaptador USB a Serie RS232 de 30cm,Startech.Com,1P1FFC-USB-SERIAL,41.2,9,Cables,Cables Seriales y Adaptadores,,,,,
 ,6385590,THINKSYSTEM 2.5IN VA 480GB READ INTENSIV,Lenovo,4XB7A90873,1492.0,10,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),399894,,1609900,,1725956
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,227.98,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
@@ -818,7 +818,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6630922,LG SMART TV NANO CELL AI NANO80 43IN,Lg,43NANO80ASA.AWH,323.32,1,Pantallas,TV LCD/LED,,,,,
 ,6631747,D501SER-514500146X I514500 256GB 16G W11,Asus,90PF05M1-M011K0,610.2,1,Computadores Servidores y Notebooks,Computadores Desktop,,,,,
 ,6631814,EB-760WI INTERACTIVO WXGA,Epson,V11HA80021,1836.4,5,Dispositivos Audio/Video,Proyectores LCD,271298,,2082989,,2217670
-,6642168,HP MULTIFUNCIONAL OFFICEJT PRO9730 FRTA3,Hp,537P5C,275.09,45,Impresoras,Multifuncionales Inkjet,244067,,318917,,340590
+,6642168,HP MULTIFUNCIONAL OFFICEJT PRO9730 FRTA3,Hp,537P5C,275.09,45,Impresoras,Multifuncionales Inkjet,244067,,318917,,341217
 ,6642882,MOTO BUDS LOOP ICE MELT,Motorola,PG38C07760,66.55,10,Comunicaciones,Auriculares Bluetooth,361257,,129990,,129990
 ,6647792,Caja USB4 NVMe M.2 - Caja para SSD,Startech.Com,1USB4-NVME-ENCLOSURE,122.85,10,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,
 ,6648381,CISCO CATALYST 9200L STACK MODULE,Cisco,C9200L-STACK-KIT=,1100.3,1,Dispositivos de Red,Switches Estaqueables,,,,,
