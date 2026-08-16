@@ -1,8 +1,8 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56892,nan,"Razer DeathAdder V2 X HyperSpeed - Ratón - ergonómico - diestro - óptico - 7 botones - inalámbrico - 2.4 GHz, Bluetooth - receptor inalámbrico USB",Razer,RZ01-04130100-R3U1,50.2,20,Ratones,Physical,not_found,False,0,0,0,,0,0,True,{},,148111,,45990,,56585
+56892,nan,"Razer DeathAdder V2 X HyperSpeed - Ratón - ergonómico - diestro - óptico - 7 botones - inalámbrico - 2.4 GHz, Bluetooth - receptor inalámbrico USB",Razer,RZ01-04130100-R3U1,50.2,20,Ratones,Physical,not_found,False,0,0,0,,0,0,True,{},,148111,,45990,,56465
 ,100015288.0,Axis - Control panel - I8016-LVE,Axis,01995-001,1428.9,3,Paneles,Physical,,,,,,,,,,,,,,,,
 ,100015470.0,Axis D2110-VE Security Radar - Sensor de movimiento - cableado - blanco,Axis,01564-001,2080.2,4,Accesorios,Physical,,,,,,,,,,,,,,,,
-,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,305.7,18,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,126356,,304990,,341140
+,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,305.7,18,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,126356,,304980,,340474
 ,100016684.0,Newland - 4-Slot Charger for M,Newland,NLS-CD6550-4C,126.0,1,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,Zebra,KT-TC15-ROLATAM,510.8,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
 ,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",Astro Gaming,939-002077,70.0,8,Auriculares y Manos Libres,Physical,,,,,,,,,,,,155925,,59990,59990,74916
@@ -19,9 +19,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018387.0,HyperX Clutch - Gaming Controller,HyperX,7D6H2AA,38.5,20,Controles,Physical,,,,,,,,,,,,,,,,
 ,100018483.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Registered - ECC - Renegade Pro,Kingston Fury,KF560R32RBE-32,970.2,4,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,386203,,1063715,,1115522
 ,100018518.0,Kingston Fury - DDR5 SDRAM - 24GB 7200MT/s DDR5 CL38 DIMM,Kingston Fury,KF572C38RSA-24,401.5,2,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,237011,,399990,,451477
-,100018688.0,Poly Blackwire - 5220 - Handset,Poly,8X231AA,94.4,12,Auriculares,Physical,,,,,,,,,,,,257377,,88748,,92779
+,100018688.0,Poly Blackwire - 5220 - Handset,Poly,8X231AA,94.4,12,Auriculares,Physical,,,,,,,,,,,,257377,,88748,,95594
 ,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,Kingston Fury,KF556R28RBE2-32,875.3,10,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,245321,,949990,,980524
-,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,HyperX,8R2E7AA,36.4,20,Ratones,Physical,,,,,,,,,,,,270375,,27990,,41082
+,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,HyperX,8R2E7AA,36.4,20,Ratones,Physical,,,,,,,,,,,,270375,,27990,,41117
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,Hanwha,SBP-120HMW,32.4,9,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,Logitech,952-000195,146.1,2,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100019531.0,Poly Blackwire - 3210 - Headset - Wired - Monaural USB-C +USB-C/A Adapte,Poly,8X214A6,37.3,5,Auriculares,Physical,,,,,,,,,,,,260536,,,,
@@ -31,7 +31,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.6,19,Auriculares,Physical,,,,,,,,,,,,268574,,79990,,79990
 ,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,Jabra,4999-823-369,52.1,20,Auriculares y Manos Libres,Physical,,,,,,,,,,,,277308,,57950,,58570
 ,100019761.0,Jabra Evolve - 10 - Handset - USB-A - Leatherettes - Negro - 2699-820-109,Jabra,2699-820-109,24.1,20,Auriculares y Manos Libres,Physical,,,,,,,,,,,,278051,,26850,,28198
-,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,Kingston Fury,KF560C30BBEA-32,481.7,4,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,377909,,519990,,544019
+,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,Kingston Fury,KF560C30BBEA-32,481.7,4,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,377909,,527990,,546686
 ,100020155.0,JBL 104SET-BT-US JBL 104-BT Monitores Compactos de 4.5 pulg. con Bluetooth Negro - Venta en pares,JBL Pro,104SET-BT-US,168.4,20,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020162.0,"JBL Pro 308P MkII - Powered 8"" Two-Way Studio Monitor - Bi-amplified - Matte black",JBL Pro,308PMKII,269.7,15,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020191.0,Soundcraft EPM8 - Analog Mixer - Mezcladores de alto rendimiento y bajo costo,Soundcraft,SCR-RW5735US,293.7,20,Sistemas de Audio,Physical,,,,,,,,,,,,,,,,
