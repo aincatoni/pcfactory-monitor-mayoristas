@@ -5,7 +5,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,305.7,18,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,126356,,304980,,340474
 ,100016684.0,Newland - 4-Slot Charger for M,Newland,NLS-CD6550-4C,126.0,1,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,Zebra,KT-TC15-ROLATAM,510.8,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
-,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",Astro Gaming,939-002077,70.0,8,Auriculares y Manos Libres,Physical,,,,,,,,,,,,155925,,59990,59990,74916
+,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",Astro Gaming,939-002077,70.0,8,Auriculares y Manos Libres,Physical,,,,,,,,,,,,155925,,59990,59990,75908
 ,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,,,,,,,,,,,,393830,,1005632,,1005632
 ,100017737.0,"Zebra TC22 WLAN Wifi 6 SE4710 6"" Display 6GB/64GB 16MP RFC 5MP FFC 2-Pin Back I/O Standard Battery NFC BT USB-C GMS ROW",Zebra,WLMT0-T22B6ABC2-A6,554.2,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",Zebra,WCMTB-T27B6ABC2-A6,615.9,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
@@ -40,7 +40,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020221.0,JBL Pro - Speaker - JBL PRX ONE Powered Column PA,JBL Pro,JBL-PRX ONE-EK,1701.7,18,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020223.0,JBL Pro - Speaker - EON ONE MK2 BATTERY POWERED CO,JBL Pro,JBL-EONONEMK2-EK,1257.7,20,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020235.0,"JBL Pro COL600 Altavoz de columna delgada 24"" - blanco - 1 pieza",JBL Pro,JBL-COL600-WH,278.4,2,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
-,100020288.0,AKG - K240 MKII - Headphones - Wired,AKG,K240 MKII,129.7,20,Auriculares,Physical,,,,,,,,,,,,70849,,148754,,176081
+,100020288.0,AKG - K240 MKII - Headphones - Wired,AKG,K240 MKII,129.7,20,Auriculares,Physical,,,,,,,,,,,,70849,,148754,,174778
 ,100020292.0,AKG - Perception Wireless 45 Instrumental Set Band-A - Microphone,AKG,PERCEP WL 45 INST BDA,215.7,4,Micrófonos,Physical,,,,,,,,,,,,,,,,
 ,100020293.0,AKG - Perception Wireless 45 Presenter Set Band-A,AKG,PERCEP WL 45 PRES BDA,216.2,2,Micrófonos,Physical,,,,,,,,,,,,,,,,
 ,100020294.0,AKG - Perception Wireless 45 Sports Set Band-A - Microphone,AKG,PERCEP WL 45 SP BDA,260.4,8,Micrófonos,Physical,,,,,,,,,,,,,,,,
