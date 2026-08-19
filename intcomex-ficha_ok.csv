@@ -1,5 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-57118,nan,Ubiquiti - intercom. - UA-G3-Intercom Indoor/outdoor,Ubiquiti,UA-G3-INTERCOM,391.5,6,Paneles,Physical,ok,False,0,0,0,Ubiquiti - intercom. - UA-G3-Intercom Indoor/outdoor,0,0,True,{},,,,,,,
-57099,nan,Hikvision DS-K7P07 - Push button - Exit & Emergency,Hikvision,DS-K7P07,8.7,20,Accesorios,Physical,ok,False,0,0,0,Hikvision DS-K7P07 - Push button - Exit & Emergency,0,0,True,{},,,,,,,
-57089,nan,Hikvision - Módulo de control de puerta se,Hikvision,DS-K2M061,26.6,20,Sistemas de Puerta,Physical,ok,False,0,0,0,Hikvision - Módulo de control de puerta se,0,0,True,{},,,,,,,
-57082,nan,Hikvision - Access Control - Kit WiFi,Hikvision,DS-KAS321,74.6,20,Sistemas de Puerta,Physical,ok,False,0,0,0,Hikvision - Access Control - Kit WiFi,0,0,True,{},,,,,,,
+57375,100019601.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - FURY Beast RGB EXPO,Kingston Fury,KF564C32BBEA-32,466.1,20,Módulos RAM - Genéricos,Physical,ok,False,0,0,0,Memoria RAM 32GB DDR5 6400 MHz UDIMM,0,0,True,{},,,385468,,523990,,547210
