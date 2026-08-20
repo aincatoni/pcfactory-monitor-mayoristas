@@ -5,11 +5,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,305.7,18,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,126356,,304980,,344189
 ,100016684.0,Newland - 4-Slot Charger for M,Newland,NLS-CD6550-4C,126.0,1,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,Zebra,KT-TC15-ROLATAM,510.8,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
-,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",Astro Gaming,939-002077,70.0,8,Auriculares y Manos Libres,Physical,,,,,,,,,,,,155925,,59990,59990,76367
-,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,,,,,,,,,,,,393830,,1015968,,1015968
+,100017171.0,"ASTRO Gaming A10 Gen 2 - Auricular - tamaño completo - cableado - conector de 3,5 mm - lila",Astro Gaming,939-002077,70.0,8,Auriculares y Manos Libres,Physical,,,,,,,,,,,,155925,,59990,59990,75333
+,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,,,,,,,,,,,,393830,,1013536,,1013536
 ,100017737.0,"Zebra TC22 WLAN Wifi 6 SE4710 6"" Display 6GB/64GB 16MP RFC 5MP FFC 2-Pin Back I/O Standard Battery NFC BT USB-C GMS ROW",Zebra,WLMT0-T22B6ABC2-A6,554.2,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",Zebra,WCMTB-T27B6ABC2-A6,615.9,20,Computadoras Handheld,Physical,,,,,,,,,,,,,,,,
-,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",Poly,77Z30AA,116.6,7,Auriculares,Physical,,,,,,,,,,,,367034,,99990,,159367
+,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",Poly,77Z30AA,116.6,7,Auriculares,Physical,,,,,,,,,,,,367034,,99990,,159300
 ,100018026.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3600 MT/s / PC4-28800 - CL16 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C16RB2/8,85.2,17,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,224563,,95189,,97812
 ,100018032.0,"HP - Kit de montaje (montaje VESA, soporte para montaje en pared) - para sistema de videoconferencia - para Poly Studio X30",Poly,875L6AA,75.18,6,Video Conferencia,Physical,,,,,,,,,,,,,,,,
 ,100018123.0,Kingston FURY Renegade - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,Kingston Fury,KF432C16RB2/32,279.9,4,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,223067,,310000,,328840
@@ -17,8 +17,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100018310.0,Kingston FURY Renegade RGB - DDR5 - módulo - 48 GB - DIMM de 288 contactos - 6000 MT/s / PC5-48000 - CL32 - 1.35 V - sin búfer - on-die ECC - negro y plata,Kingston Fury,KF560C32RSA-48,738.0,2,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,229844,,817043,,851625
 ,100018322.0,Poly - Kit de montaje (montaje VESA) - para sistema de videoconferencia - para Poly Studio X52,Poly,875L9AA,224.0,1,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100018387.0,HyperX Clutch - Gaming Controller,HyperX,7D6H2AA,38.5,20,Controles,Physical,,,,,,,,,,,,,,,,
-,100018483.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Registered - ECC - Renegade Pro,Kingston Fury,KF560R32RBE-32,970.2,4,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,386203,,1087364,,1137938
-,100018518.0,Kingston Fury - DDR5 SDRAM - 24GB 7200MT/s DDR5 CL38 DIMM,Kingston Fury,KF572C38RSA-24,401.5,2,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,237011,,429990,,458879
+,100018483.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Registered - ECC - Renegade Pro,Kingston Fury,KF560R32RBE-32,970.2,4,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,386203,,1087364,,1137503
+,100018518.0,Kingston Fury - DDR5 SDRAM - 24GB 7200MT/s DDR5 CL38 DIMM,Kingston Fury,KF572C38RSA-24,401.5,2,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,237011,,429990,,458811
 ,100018688.0,Poly Blackwire - 5220 - Handset,Poly,8X231AA,94.4,12,Auriculares,Physical,,,,,,,,,,,,257377,,89614,,89614
 ,100018931.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL28 - Unbuffered - Non-ECC,Kingston Fury,KF556R28RBE2-32,875.3,10,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,245321,,949990,,988952
 ,100018995.0,HyperX - Mouse - Wireless - White - Haste 2 Core,HyperX,8R2E7AA,36.4,20,Ratones,Physical,,,,,,,,,,,,270375,,27990,,41656
@@ -27,7 +27,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100019531.0,Poly Blackwire - 3210 - Headset - Wired - Monaural USB-C +USB-C/A Adapte,Poly,8X214A6,37.3,5,Auriculares,Physical,,,,,,,,,,,,260536,,,,
 ,100019594.0,POLY - Headset - Voyager Focus 2 Microsoft,Poly,9T9J6AA#AC3,188.32,4,Auriculares,Physical,,,,,,,,,,,,,,,,
 ,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,Jabra,4999-823-169,50.7,20,Auriculares,Physical,,,,,,,,,,,,269060,,37664,,46217
-,100019641.0,Jabra - Headphones - Evolve2 30 SE MS Stereo USB C,Jabra,23189-999-779,86.4,20,Auriculares,Physical,,,,,,,,,,,,269490,,90960,,98519
+,100019641.0,Jabra - Headphones - Evolve2 30 SE MS Stereo USB C,Jabra,23189-999-779,86.4,20,Auriculares,Physical,,,,,,,,,,,,269490,,90960,,98367
 ,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.6,19,Auriculares,Physical,,,,,,,,,,,,268574,,79990,,79990
 ,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,Jabra,4999-823-369,52.1,20,Auriculares y Manos Libres,Physical,,,,,,,,,,,,277308,,57950,,58570
 ,100019761.0,Jabra Evolve - 10 - Handset - USB-A - Leatherettes - Negro - 2699-820-109,Jabra,2699-820-109,24.1,20,Auriculares y Manos Libres,Physical,,,,,,,,,,,,278051,,26850,,29195
@@ -40,7 +40,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020221.0,JBL Pro - Speaker - JBL PRX ONE Powered Column PA,JBL Pro,JBL-PRX ONE-EK,1701.7,18,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020223.0,JBL Pro - Speaker - EON ONE MK2 BATTERY POWERED CO,JBL Pro,JBL-EONONEMK2-EK,1257.7,20,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020235.0,"JBL Pro COL600 Altavoz de columna delgada 24"" - blanco - 1 pieza",JBL Pro,JBL-COL600-WH,278.4,2,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
-,100020288.0,AKG - K240 MKII - Headphones - Wired,AKG,K240 MKII,129.7,20,Auriculares,Physical,,,,,,,,,,,,70849,,146110,,171238
+,100020288.0,AKG - K240 MKII - Headphones - Wired,AKG,K240 MKII,129.7,20,Auriculares,Physical,,,,,,,,,,,,70849,,146110,,171116
 ,100020292.0,AKG - Perception Wireless 45 Instrumental Set Band-A - Microphone,AKG,PERCEP WL 45 INST BDA,215.7,4,Micrófonos,Physical,,,,,,,,,,,,,,,,
 ,100020293.0,AKG - Perception Wireless 45 Presenter Set Band-A,AKG,PERCEP WL 45 PRES BDA,216.2,2,Micrófonos,Physical,,,,,,,,,,,,,,,,
 ,100020294.0,AKG - Perception Wireless 45 Sports Set Band-A - Microphone,AKG,PERCEP WL 45 SP BDA,260.4,8,Micrófonos,Physical,,,,,,,,,,,,,,,,
@@ -72,7 +72,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020357.0,JBL Pro - Speaker - EON ONE COMPACT-EK,JBL Pro,EON ONE COMPACT-EK,642.7,20,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020460.0,JBL Pro - Speaker - IRX ONE,JBL Pro,JBL-IRXONE-EK,893.3,20,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020461.0,JBL Pro - Mixer - 8 input,JBL Pro,NVMA260-34-EU,578.4,4,Sistemas de Audio,Physical,,,,,,,,,,,,,,,,
-,100020581.0,Kingston Fury - DDR5 SDRAM - 48GB 8400MT/s CL40 CUDIMM (Kit,Kingston Fury,KF584CU40RSAK2-48,828.4,3,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,358116,,997819,,1064727
+,100020581.0,Kingston Fury - DDR5 SDRAM - 48GB 8400MT/s CL40 CUDIMM (Kit,Kingston Fury,KF584CU40RSAK2-48,828.4,3,Módulos RAM - Genéricos,Physical,,,,,,,,,,,,358116,,997819,,1064379
 ,100020715.0,"JBL EON718S 18"" POWERED SUBWOOFER",JBL Pro,JBL-EON718SD-EK,1195.1,5,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020850.0,JBL Pro - Speaker - PRX908 8IN powered loudspeaker,JBL Pro,JBL-PRX908-EK,892.0,7,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100020851.0,JBL Pro - Speaker - PRX912 12IN powered loudspeake,JBL Pro,JBL-PRX912-EK,1023.0,17,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
@@ -80,7 +80,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020875.0,JBL Pro - Speaker - EON715-EK,JBL Pro,JBL EON715-EK,593.2,20,Parlantes / Bocinas / Cornetas,Physical,,,,,,,,,,,,,,,,
 ,100021236.0,HyperX - Mouse - Pulsefire Fuse Wireless,HyperX,A1KY6AA,27.1,20,Ratones,Physical,,,,,,,,,,,,393425,,26491,,31371
 ,100021295.0,Screenbeam - Receptor 1100 Plus version International kit de montaje C,Screenbeam,SBWD1100PLADMIN3Y,1323.7,2,Adaptadores y Controladoras,Physical,,,,,,,,,,,,,,,,
-,100021362.0,Jabra Evolve3 - Headphones - Wireless - 75 MS Link390c Black,Jabra,37599-999-899,334.9,11,Auriculares y Manos Libres,Physical,,,,,,,,,,,,389578,,347750,,368411
+,100021362.0,Jabra Evolve3 - Headphones - Wireless - 75 MS Link390c Black,Jabra,37599-999-899,334.9,11,Auriculares y Manos Libres,Physical,,,,,,,,,,,,389578,,347750,,368208
 ,100021369.0,Jabra Evolve3 - Headphones - Wireless - Evolve3 85 MS Link390c Black,Jabra,38599-999-899,457.7,3,Auriculares y Manos Libres,Physical,,,,,,,,,,,,389579,,,,
 ,100021562.0,Zebra - National Adapter for Printers,Zebra,ADAPT-ZEBRA,0.0,20,Accesorios,Physical,,,,,,,,,,,,,,,,
 ,100022004.0,Jabra - Video conferencing kit - PanaCast U30 VB UC NA,Jabra,8800-231,753.6,9,Video Conferencia,Physical,,,,,,,,,,,,,,,,
