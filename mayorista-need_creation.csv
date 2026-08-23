@@ -1,6 +1,6 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,1000329,RACK PDU BASIC ZERO U 16A,Apc,AP9572,82.21,1,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
-,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,193.07,97,Suministros y Medios,Suministros Láser,260299,,123344,,207294
+,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,193.07,97,Suministros y Medios,Suministros Láser,260299,,123344,,212503
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,272.57,35,Suministros y Medios,Suministros Láser,260104,,194900,,296897
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,59,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,
 ,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,88.42,722,Suministros y Medios,Suministros Láser,260019,,8990,,96152
@@ -258,7 +258,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3129932,HPE LTO-7 Ultrium 15000 Ext Tape Drive,Hewlett Packard Enterprise,BB874A,4896.6,2,Suministros y Medios,Cintas de Almacenamiento,,,,,
 ,3141120,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,124.93,1,Cables,Cables para Transferencia de Archivos,,,,,
 ,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.1,53,Suministros y Medios,Suministros Inyección de Tinta,259846,,200509,,220292
-,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,179.75,23,Suministros y Medios,Suministros Inyección de Tinta,259844,,203855,,225503
+,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,179.75,23,Suministros y Medios,Suministros Inyección de Tinta,259844,,203855,,225966
 ,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,181.2,20,Suministros y Medios,Suministros Inyección de Tinta,259845,,210500,,228733
 ,3156862,TONER GPR-54 NEGRO REND 17600 PAG,Canon,9436B003,84.91,19,Suministros y Medios,Suministros Láser,260645,,105140,,110246
 ,3212236,6ft High Speed HDMI Cable - HDMI - M/M,Startech.Com,HDMM6,10.63,75,Cables,Cables y Adaptadores de Audio + Video,,,,,
@@ -472,9 +472,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,58.56,21,Suministros y Medios,Suministros Láser,260107,,65680,,70234
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,12.72,5,Suministros y Medios,Suministros Inyección de Tinta,,,,,
 ,4783958,TONER HP 206A NEGRO,Hp,W2110A,69.58,93,Suministros y Medios,Suministros Láser,260121,,77440,,84913
-,4783959,TONER HP 206A CYAN,Hp,W2111A,81.35,59,Suministros y Medios,Suministros Láser,260122,,90657,109990,101796
+,4783959,TONER HP 206A CYAN,Hp,W2111A,81.35,59,Suministros y Medios,Suministros Láser,260122,,90657,,101284
 ,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,81.29,71,Suministros y Medios,Suministros Láser,260080,,90612,,99494
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.65,30,Suministros y Medios,Suministros Láser,260108,,90422,96990,99444
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.65,30,Suministros y Medios,Suministros Láser,260108,,90422,96990,98762
 ,4792041,TONER 047 REND 1600 PAGINAS,Canon,2164C001,58.4,17,Suministros y Medios,Suministros Láser,260489,,67000,,67000
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,186.87,6,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,
 ,4796215,Adaptador DisplayPort a HDMI VGA - 4K60,Startech.Com,DP2VGAHD20,35.67,10,Cables,Cables y Adaptadores de Audio + Video,,,,,
@@ -615,7 +615,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5620592,CV5000DP USB-C TO DISPLAYPORT1.4 ADAPTER,Kensington,K34680WW,17.11,44,Cables,Cables y Adaptadores de Video,,,,,
 ,5620667,Audifonos supraaurales USB-C H1000,Kensington,K83450WW,34.54,3,Dispositivos Audio/Video,Cintillos y Audífonos para PCs,239943,,41528,,42941
 ,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,66.09,1016,Suministros y Medios,Suministros Láser,260006,,69822,,79612
-,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,108.94,122,Suministros y Medios,Suministros Láser,260322,,121974,,134293
+,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,108.94,122,Suministros y Medios,Suministros Láser,260322,,121974,,135700
 ,5634453,Foldable Laptop Riser stand Portable,Startech.Com,LAPTOP-RISER-BAR,52.57,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
 ,5634495,4-Port USB Hub 5Gbps Bus Powered,Startech.Com,5G4AB-USB-A-HUB,35.51,5,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,
 ,5645511,HP LASERJET DEPARTMENT STAND,Hp,6GW53A,213.54,21,Impresoras,Muebles para Impresora/Plotter,,,,,
@@ -736,9 +736,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,15.81,37,Comunicaciones,Cintillos telefónicos,256210,,18990,24990,23005
 ,6278893,Adaptador USB Wi-Fi Bluetooth WD02AT,Benq,5A.F8Y28.DE1,40.99,6,Dispositivos de Red,Tarjetas de Red inalámbricas,398402,,50351,,50596
 ,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,97.79,31,Suministros y Medios,Suministros Inyección de Tinta,262183,,109980,,124518
-,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,97.86,27,Suministros y Medios,Suministros Inyección de Tinta,262152,,106919,,119770
+,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,97.86,27,Suministros y Medios,Suministros Inyección de Tinta,262152,,106919,,122286
 ,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,84.34,28,Suministros y Medios,Suministros Inyección de Tinta,262283,,101990,,110721
-,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,97.84,24,Suministros y Medios,Suministros Inyección de Tinta,262151,,113500,,124105
+,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,97.84,24,Suministros y Medios,Suministros Inyección de Tinta,262151,,113500,,127194
 ,6280537,TONERLASERJET NEGRO,Hp,W1030XC,120.45,190,Suministros y Medios,Suministros Láser,354484,,157990,,157990
 ,6281645,TONER CONTRACTUAL ALTA CAPACIDAD AZUL,Hp,W2151XC,109.16,32,Suministros y Medios,Suministros Láser,399734,,,,
 ,6281646,TONER CONTRACTUAL ALTA CAPACIDAD AMARILL,Hp,W2152XC,109.16,30,Suministros y Medios,Suministros Láser,399736,,,,
