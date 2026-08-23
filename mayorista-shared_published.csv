@@ -1,9 +1,9 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider
 1771,1230999,TONER HP 126A NEGRO,Hp,CE310A,61.01,8,Suministros y Medios,Suministros Láser,ok,True,1,1,1,Toner Original HP 126A Negro ,0,0,False,{},,intcomex
-17100,2686056,CARTUCHO DE TINTA LC509BK NEGRO,Brother,LC509BK,10.11,9,Suministros y Medios,Suministros Fax/Fotocopiadoras,ok,True,1,20,20,Cartucho de Tinta Original Brother  LC509 Negro,0,0,False,{},,intcomex
 17101,2686053,CARTUCHO DE TINTA LC505C CIAN,Brother,LC505C,8.91,4,Suministros y Medios,Suministros Fax/Fotocopiadoras,ok,True,1,10,10,Cartucho de Tinta Original Brother  LC505 Cyan,0,0,False,{},,intcomex
-21093,3065083,CARTUCHO TINTA HP 664XL NEGRO,Hp,F6V31AL,32.17,78,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,16,16,Cartucho de Tinta Original HP 664 XL Negro ,0,0,False,{},,intcomex
+17100,2686056,CARTUCHO DE TINTA LC509BK NEGRO,Brother,LC509BK,10.11,9,Suministros y Medios,Suministros Fax/Fotocopiadoras,ok,True,1,20,20,Cartucho de Tinta Original Brother  LC509 Negro,0,0,False,{},,intcomex
 32858,3021444,TONER HP 26A NEGRO,Hp,CF226A,138.06,45,Suministros y Medios,Suministros Láser,ok,True,1,20,20,Toner Original HP 26A LaserJet Negro,0,0,False,{},,intcomex
+21093,3065083,CARTUCHO TINTA HP 664XL NEGRO,Hp,F6V31AL,32.17,78,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,16,16,Cartucho de Tinta Original HP 664 XL Negro ,0,0,False,{},,intcomex
 32860,3338022,CARTUCHO DE TINTA HP 954XL CIAN 1600 PÃ,Hp,L0S62AL,43.79,17,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,19,19,Cartucho de Tinta Original HP 954 XL Cyan ,0,0,False,{},,intcomex
 23421,3338021,CARTUCHO DE TINTA HP 954 NEGRO 1000 PÃG,Hp,L0S59AL,36.83,53,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,1,1,Cartucho de Tinta Original HP 954 Negro ,0,0,False,{},,intcomex
 32859,3338024,CARTUCHO DE TINTA HP 954XL NEGRO 2000 PG,Hp,L0S71AL,57.73,35,Suministros y Medios,Suministros Inyección de Tinta,ok,True,1,19,19,Cartucho de Tinta Original HP 954 XL Negro ,0,0,False,{},,intcomex
