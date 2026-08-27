@@ -38,16 +38,25 @@ INTCOMEX_DEFAULT_FILE = "2026-04-29_Todos los Productos Mayorista.xlsx"
 GOOGLE_SHEET_ID = "1mgGjhEmcE_c1q2xfJ4wgGpkcSD7A0jVCqD43h2382gc"
 GOOGLE_SHEET_GID = "1606322296"          # pestaña: Todos los Productos Mayorista (Ingram)
 INTCOMEX_SHEET_GID = "420799319"         # pestaña: Intcomex
+ACER_SHEET_NAME = "Acer"                  # pestaña: Acer
 PCF_CATALOG_GID  = "98635074"            # pestaña: Catalogo PCF
 GOOGLE_SHEET_CSV_URL = f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}/export?format=csv&gid={GOOGLE_SHEET_GID}"
 SEGUIMIENTO_SHEET_ID = "15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM"
 SEGUIMIENTO_SHEET_NAMES = {
     "ingram": "Ingram",
     "intcomex": "Intcomex",
+    "acer": "Acer",
 }
 SEGUIMIENTO_SKU_COLUMNS = {
     "ingram": ("SKU Ingram",),
     "intcomex": ("SKU Intcomex", "SKU Intcome"),
+    "acer": ("SKU Acer",),
+}
+
+MAYORISTAS = {
+    "ingram": {"display_name": "Ingram Micro", "output_prefix": "mayorista", "gid": GOOGLE_SHEET_GID},
+    "intcomex": {"display_name": "Intcomex", "output_prefix": "intcomex", "gid": INTCOMEX_SHEET_GID},
+    "acer": {"display_name": "Acer", "output_prefix": "acer", "sheet_name": ACER_SHEET_NAME},
 }
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 15_6_1) AppleWebKit/537.36 "
@@ -60,12 +69,14 @@ COL_DESCRIPTION = "NOMBRE"
 COL_VENDOR_NAME = "MARCA"
 COL_VENDOR_PART = "PARTNO"
 COL_CUSTOMER_PRICE = "COSTO"
+COL_CURRENCY = "MONEDA"
 COL_AVAILABLE_QTY = "STOCK"
 COL_CATEGORY = "CATEGORIA"
 COL_SUBCATEGORY = "TIPO"
 COL_EAN = "EAN/UPC CODE"
 
 CATALOG_COL_PCF_ID = "CODIGO"
+# Columna BS de la hoja Sphinx. Es la fuente de verdad para el origen proveedor.
 CATALOG_COL_MAYORISTA = "MAYORISTA"
 CATALOG_COL_COST = "COSTO_COMPRA"
 CATALOG_COL_STOCK = "STOCK_EMPRESA"
@@ -169,11 +180,16 @@ def read_price_file(filepath: str, header: int = 3) -> pd.DataFrame:
 def read_intcomex_file(filepath: str) -> pd.DataFrame:
     return read_price_file(filepath, header=0)
 
-def read_google_sheet(sheet_id: str = GOOGLE_SHEET_ID, gid: str = GOOGLE_SHEET_GID) -> pd.DataFrame:
+def read_google_sheet(
+    sheet_id: str = GOOGLE_SHEET_ID,
+    gid: Optional[str] = GOOGLE_SHEET_GID,
+    sheet_name: Optional[str] = None,
+) -> pd.DataFrame:
     """Lee un Google Sheet público usando el endpoint gviz (más confiable)."""
     import io
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&gid={gid}"
-    print(f"[*] Descargando Google Sheet (gid={gid})...")
+    source = f"sheet={sheet_name}" if sheet_name else f"gid={gid}"
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&{source}"
+    print(f"[*] Descargando Google Sheet ({source})...")
     try:
         session = requests.Session()
         session.headers.update({"User-Agent": UA})
@@ -317,7 +333,10 @@ def read_seguimiento_sheet(
     Claves: pcf:{id} y sku:{sku} -> valor: status (OK, Pendiente, etc.)
     """
     import io
-    worksheet_name = SEGUIMIENTO_SHEET_NAMES.get(mayorista, SEGUIMIENTO_SHEET_NAMES["ingram"])
+    worksheet_name = SEGUIMIENTO_SHEET_NAMES.get(mayorista)
+    if not worksheet_name:
+        print(f"[*] Sin hoja de seguimiento configurada para {mayorista}")
+        return {}
     url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={worksheet_name}"
     print(f"[*] Descargando sheet de seguimiento Fichas/OC ({worksheet_name})...")
     try:
@@ -352,6 +371,43 @@ def read_seguimiento_sheet(
         print(f"[!] No se pudo cargar el sheet de seguimiento: {e}")
         return {}
 
+
+def enrich_acer_with_seguimiento_ids(df_no_pcf: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """Resuelve IDs PCF de Acer desde su hoja de seguimiento usando SKU Acer."""
+    import io
+    url = f"https://docs.google.com/spreadsheets/d/{SEGUIMIENTO_SHEET_ID}/gviz/tq?tqx=out:csv&sheet=Acer"
+    try:
+        session = requests.Session()
+        session.headers.update({"User-Agent": UA})
+        response = session.get(url, timeout=30)
+        response.raise_for_status()
+        tracking_df = pd.read_csv(io.StringIO(response.text))
+        if not {"SKU Acer", "ID"}.issubset(tracking_df.columns):
+            print("[!] Hoja de seguimiento Acer sin columnas SKU Acer/ID")
+            return pd.DataFrame(columns=df_no_pcf.columns), df_no_pcf
+
+        id_by_sku = {}
+        for _, row in tracking_df[["SKU Acer", "ID"]].dropna(subset=["ID"]).iterrows():
+            sku = normalize_sku_key(row["SKU Acer"])
+            try:
+                pcf_id = int(float(row["ID"]))
+            except (ValueError, TypeError):
+                continue
+            if sku:
+                id_by_sku[sku] = pcf_id
+
+        resolved = df_no_pcf.copy()
+        resolved[COL_PCF_ID] = resolved[COL_INGRAM_PART].map(
+            lambda sku: id_by_sku.get(normalize_sku_key(sku))
+        )
+        matched = resolved[resolved[COL_PCF_ID].notna()].copy()
+        unmatched = resolved[resolved[COL_PCF_ID].isna()].drop(columns=[COL_PCF_ID])
+        print(f"[+] Cruce seguimiento Acer: {len(matched)} IDs resueltos por SKU")
+        return matched, unmatched
+    except Exception as e:
+        print(f"[!] No se pudo cruzar IDs con seguimiento Acer: {e}")
+        return pd.DataFrame(columns=df_no_pcf.columns), df_no_pcf
+
 def normalize_sku_key(value) -> str:
     """Normaliza SKU numericos y alfanumericos para cruzar mayoristas."""
     if value is None or pd.isna(value):
@@ -363,6 +419,22 @@ def normalize_sku_key(value) -> str:
         return str(int(float(raw)))
     except (ValueError, TypeError):
         return raw.upper()
+
+
+def format_supplier_id(value) -> str:
+    """Conserva IDs alfanumericos y elimina el .0 introducido por Excel."""
+    if value is None or pd.isna(value):
+        return ""
+    raw = str(value).strip()
+    if not raw or raw.lower() == "nan":
+        return ""
+    try:
+        numeric = float(raw)
+        if numeric.is_integer():
+            return str(int(numeric))
+    except (ValueError, TypeError):
+        pass
+    return raw
 
 
 def get_seguimiento_status(lookup: Dict[str, str], pcf_id, ingram_part) -> str:
@@ -407,11 +479,13 @@ def normalize_catalog_mayorista(mayorista: Any) -> Optional[str]:
         return "intcomex"
     if "INGRAM" in mayorista_text:
         return "ingram"
+    if "ACER" in mayorista_text:
+        return "acer"
     return None
 
 
 def build_catalog_provider_lookup(catalog_df: pd.DataFrame) -> Dict[int, str]:
-    """Mapea PCF ID -> mayorista origen según el campo MAYORISTA del catálogo interno."""
+    """Mapea PCF ID -> mayorista origen según la columna BS (MAYORISTA) de Sphinx."""
     if catalog_df is None or catalog_df.empty:
         return {}
 
@@ -524,14 +598,13 @@ def collect_eligible_products(df: pd.DataFrame, catalog_df: Optional[pd.DataFram
 
 
 def build_duplicate_ids(
-    ingram_df: pd.DataFrame,
-    intcomex_df: pd.DataFrame,
+    provider_dfs: Dict[str, pd.DataFrame],
     catalog_df: Optional[pd.DataFrame],
 ) -> List[Dict[str, Any]]:
-    """Construye una fila por ID con stock en ambos mayoristas y la alternativa más barata."""
+    """Construye una fila por ID con stock en dos o más mayoristas."""
     provider_frames = {
-        "ingram": collect_eligible_products(ingram_df, catalog_df),
-        "intcomex": collect_eligible_products(intcomex_df, catalog_df),
+        provider: collect_eligible_products(frame, catalog_df)
+        for provider, frame in provider_dfs.items()
     }
     selected: Dict[str, Dict[int, Dict[str, Any]]] = {}
     for provider, frame in provider_frames.items():
@@ -543,11 +616,10 @@ def build_duplicate_ids(
                 continue
             cost = pd.to_numeric(row.get(COL_CUSTOMER_PRICE), errors="coerce")
             stock = pd.to_numeric(row.get(COL_AVAILABLE_QTY), errors="coerce")
-            supplier_id = row.get(COL_INGRAM_PART, "")
-            if pd.isna(supplier_id) or not str(supplier_id).strip():
-                supplier_id = row.get(COL_VENDOR_PART, "")
             candidate = {
-                "id": supplier_id,
+                # El ID siempre viene de la columna A (SKU PRODUCTO). PARTNO no lo reemplaza.
+                "id": format_supplier_id(row.get(COL_INGRAM_PART, "")),
+                "partnumber": format_supplier_id(row.get(COL_VENDOR_PART, "")),
                 "cost": None if pd.isna(cost) else float(cost),
                 "stock": None if pd.isna(stock) else float(stock),
             }
@@ -577,19 +649,24 @@ def build_duplicate_ids(
             }
 
     duplicate_ids = []
-    for pcf_id in sorted(set(selected["ingram"]) & set(selected["intcomex"])):
-        ingram = selected["ingram"][pcf_id]
-        intcomex = selected["intcomex"][pcf_id]
-        duplicate_ids.append({
+    all_ids = set().union(*(set(products) for products in selected.values()))
+    for pcf_id in sorted(all_ids):
+        providers_with_stock = [provider for provider, products in selected.items() if pcf_id in products]
+        if len(providers_with_stock) < 2:
+            continue
+        item = {
             "pcf_id": pcf_id,
             **pcf_lookup.get(pcf_id, {"pcf_cost": None, "pcf_stock": None}),
-            "ingram_id": ingram["id"],
-            "ingram_cost": ingram["cost"],
-            "ingram_stock": ingram["stock"],
-            "intcomex_id": intcomex["id"],
-            "intcomex_cost": intcomex["cost"],
-            "intcomex_stock": intcomex["stock"],
-        })
+        }
+        for provider in MAYORISTAS:
+            product = selected.get(provider, {}).get(pcf_id, {})
+            item.update({
+                f"{provider}_id": product.get("id", ""),
+                f"{provider}_partnumber": product.get("partnumber", ""),
+                f"{provider}_cost": product.get("cost"),
+                f"{provider}_stock": product.get("stock"),
+            })
+        duplicate_ids.append(item)
     return duplicate_ids
 
 
@@ -1013,6 +1090,10 @@ def generate_html_dashboard(
         df_original = pd.DataFrame()
     timestamp_display = format_chile_timestamp(timestamp)
     duplicate_ids = duplicate_ids or []
+    source_is_clp = (
+        COL_CURRENCY in df_original.columns
+        and df_original[COL_CURRENCY].dropna().astype(str).str.strip().str.upper().eq("CLP").all()
+    )
 
     # Construir el nombre a mostrar con URL si está disponible
     if price_file_url:
@@ -1031,12 +1112,16 @@ def generate_html_dashboard(
     }
 
     def fmt_usd(price) -> str:
+        if source_is_clp:
+            return fmt_clp_price(price)
         try:
             return f"$ {float(price):,.2f}"
         except (ValueError, TypeError):
             return "—"
 
     def fmt_clp(price) -> str:
+        if source_is_clp:
+            return fmt_clp_price(price)
         if usd_clp is None:
             return "—"
         try:
@@ -1047,7 +1132,7 @@ def generate_html_dashboard(
 
     usd_info_html = (
         f'<div class="file-info">💱 USD observado: <strong>${usd_clp:,.0f} CLP</strong> &nbsp;·&nbsp; Precio CLP = (USD observado + $5) × Costo</div>'
-        if usd_clp else ""
+        if usd_clp and not source_is_clp else ""
     )
 
     _seg = seguimiento or {}
@@ -1130,11 +1215,17 @@ def generate_html_dashboard(
             <td class="num-cell" data-sort="{item.get('pcf_cost') or 0}">{fmt_clp_price(item.get("pcf_cost"))}</td>
             <td class="num-cell" data-sort="{item.get('pcf_stock') or 0}">{fmt_number(item.get("pcf_stock"))}</td>
             <td><code>{item.get("ingram_id", "")}</code></td>
+            <td><code>{item.get("ingram_partnumber", "")}</code></td>
             <td class="num-cell" data-sort="{item.get('ingram_cost') or 0}">{fmt_usd(item.get("ingram_cost"))}</td>
             <td class="num-cell" data-sort="{item.get('ingram_stock') or 0}">{fmt_number(item.get("ingram_stock"))}</td>
             <td><code>{item.get("intcomex_id", "")}</code></td>
+            <td><code>{item.get("intcomex_partnumber", "")}</code></td>
             <td class="num-cell" data-sort="{item.get('intcomex_cost') or 0}">{fmt_usd(item.get("intcomex_cost"))}</td>
             <td class="num-cell" data-sort="{item.get('intcomex_stock') or 0}">{fmt_number(item.get("intcomex_stock"))}</td>
+            <td><code>{item.get("acer_id", "")}</code></td>
+            <td><code>{item.get("acer_partnumber", "")}</code></td>
+            <td class="num-cell" data-sort="{item.get('acer_cost') or 0}">{fmt_clp_price(item.get("acer_cost"))}</td>
+            <td class="num-cell" data-sort="{item.get('acer_stock') or 0}">{fmt_number(item.get("acer_stock"))}</td>
         </tr>'''
 
     no_eligible = xlsx_stats.get("no_eligible", 0)
@@ -1176,9 +1267,13 @@ def generate_html_dashboard(
 
     # --- Tablas ---
 
+    def sort_vendor(product: Dict[str, Any]) -> str:
+        value = product.get("vendor_name", "")
+        return "" if pd.isna(value) else str(value)
+
     # Tabla Publicacion Inmediata
     publish_rows = ""
-    for i, p in enumerate(sorted(publish_ready, key=lambda x: x.get("vendor_name", "")), 1):
+    for i, p in enumerate(sorted(publish_ready, key=sort_vendor), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
         publish_rows += f'''<tr>
             <td>{i}</td>
@@ -1200,7 +1295,7 @@ def generate_html_dashboard(
 
     # Tabla ID Existente Sin Ficha Solicitada
     ficha_rows = ""
-    for i, p in enumerate(sorted(missing_ficha, key=lambda x: x.get("vendor_name", "")), 1):
+    for i, p in enumerate(sorted(missing_ficha, key=sort_vendor), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
         ficha_rows += f'''<tr>
             <td>{i}</td>
@@ -1222,7 +1317,7 @@ def generate_html_dashboard(
 
     # Tabla Ficha necesita revisión
     fichaok_rows = ""
-    for i, p in enumerate(sorted(ficha_ok, key=lambda x: x.get("vendor_name", "")), 1):
+    for i, p in enumerate(sorted(ficha_ok, key=sort_vendor), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
         fichaok_rows += f'''<tr>
             <td>{i}</td>
@@ -1244,7 +1339,7 @@ def generate_html_dashboard(
 
     # Tabla Ficha Solicitada - Esperando que eCommerce la publique
     pending_rows = ""
-    for i, p in enumerate(sorted(pending_ficha, key=lambda x: x.get("vendor_name", "")), 1):
+    for i, p in enumerate(sorted(pending_ficha, key=sort_vendor), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
         pending_rows += f'''<tr>
             <td>{i}</td>
@@ -1266,7 +1361,7 @@ def generate_html_dashboard(
 
     # Tabla ID No Existe y Requieren Creacion
     creation_rows = ""
-    for i, p in enumerate(sorted(need_creation, key=lambda x: x.get("vendor_name", "")), 1):
+    for i, p in enumerate(sorted(need_creation, key=sort_vendor), 1):
         creation_rows += f'''<tr>
             <td>{i}</td>
             <td><code>{p["ingram_part"]}</code></td>
@@ -1282,7 +1377,7 @@ def generate_html_dashboard(
 
     # Tabla Ya Mayorista
     mayorista_rows = ""
-    for i, p in enumerate(sorted(already_mayorista, key=lambda x: x.get("vendor_name", "")), 1):
+    for i, p in enumerate(sorted(already_mayorista, key=sort_vendor), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
         stock_display = p.get("stock_raw", "0")
         mayorista_rows += f'''<tr>
@@ -1312,7 +1407,7 @@ def generate_html_dashboard(
 
     # Tabla Con Stock PCF
     pcf_stock_rows = ""
-    for i, p in enumerate(sorted(has_pcf_stock, key=lambda x: x.get("vendor_name", "")), 1):
+    for i, p in enumerate(sorted(has_pcf_stock, key=sort_vendor), 1):
         pcf_link = f'<a href="https://www.pcfactory.cl/producto/{p["pcf_id"]}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{p["pcf_id"]}</a>'
         stock_display = p.get("stock_raw", "0")
         pcf_stock_rows += f'''<tr>
@@ -1340,7 +1435,7 @@ def generate_html_dashboard(
         potenciales_all.append({**p, "_estado": "Sin Ficha Solicitada", "_estado_class": "badge-yellow"})
     for p in need_creation:
         potenciales_all.append({**p, "_estado": "ID No Existe", "_estado_class": "badge-purple"})
-    for i, p in enumerate(sorted(potenciales_all, key=lambda x: x.get("vendor_name", "")), 1):
+    for i, p in enumerate(sorted(potenciales_all, key=sort_vendor), 1):
         pcf_id_val = p.get("pcf_id", "")
         if pcf_id_val:
             id_cell = f'<a href="https://www.pcfactory.cl/producto/{pcf_id_val}" target="_blank" style="color: var(--accent-blue); text-decoration: none;">{pcf_id_val}</a>'
@@ -1914,6 +2009,7 @@ def generate_html_dashboard(
             -->
             <a href="mayorista.html" class="nav-link {'active' if mayorista_prefix == 'mayorista' else ''}">🏭 Ingram</a>
             <a href="intcomex.html" class="nav-link {'active' if mayorista_prefix == 'intcomex' else ''}">📦 Intcomex</a>
+            <a href="acer.html" class="nav-link {'active' if mayorista_prefix == 'acer' else ''}">💻 Acer</a>
         </nav>
 
         <div class="file-info">📄 Archivo: <span id="file-url">{price_file_name_display}</span></div>
@@ -1931,7 +2027,7 @@ def generate_html_dashboard(
             </div>
             <div class="stat-card clickable" onclick="switchTab('constock')">
                 <div class="stat-value cyan">{with_stock}</div>
-                <div class="stat-label">Con Stock Ingram</div>
+                <div class="stat-label">Con Stock {mayorista_name}</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('pcfstock')">
                 <div class="stat-value red">{len(has_pcf_stock)}</div>
@@ -1984,7 +2080,7 @@ def generate_html_dashboard(
                     <div class="funnel-bar" style="width: 100%; background: var(--accent-blue);">{total}</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('constock')" style="cursor:pointer;">
-                    <span class="funnel-label">Con Stock Ingram</span>
+                    <span class="funnel-label">Con Stock {mayorista_name}</span>
                     <div class="funnel-bar" style="width: {max(with_stock / total * 100, 5) if total > 0 else 5}%; background: var(--accent-cyan);">{with_stock}</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('mayorista')" style="cursor:pointer;">
@@ -2042,19 +2138,19 @@ def generate_html_dashboard(
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados ({len(already_mayorista)})</button>
             <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF ({len(has_pcf_stock)})</button>
             <button class="tab-btn" onclick="switchTab('noelegible')">🚫 No Elegibles ({no_eligible})</button>
-            <button class="tab-btn" onclick="switchTab('constock')">📊 Con Stock Ingram ({with_stock})</button>
+            <button class="tab-btn" onclick="switchTab('constock')">📊 Con Stock {mayorista_name} ({with_stock})</button>
             <button class="tab-btn" onclick="switchTab('sinstock')">🚫 Sin Stock ({sin_stock})</button>
             <button class="tab-btn" onclick="switchTab('total')">📋 Total ({total})</button>
             <button class="tab-btn" onclick="switchTab('duplicates')">IDs Duplicados ({len(duplicate_ids)})</button>
         </div>
 
-        <!-- Tabla: IDs presentes en Ingram e Intcomex -->
+        <!-- Tabla: IDs presentes en más de un mayorista -->
         <div id="tab-duplicates" class="tab-content">
             <div class="table-section">
                 <div class="table-header">
                     <div>
-                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">IDs Duplicados en Ingram e Intcomex</h2>
-                        <span class="table-badge badge-cyan">{len(duplicate_ids)} IDs con stock en ambos mayoristas</span>
+                        <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">IDs Duplicados entre Mayoristas</h2>
+                        <span class="table-badge badge-cyan">{len(duplicate_ids)} IDs con stock en dos o más mayoristas</span>
                     </div>
                     <input type="text" class="search-input" placeholder="Buscar ID PCF o SKU..." oninput="filterTable('table-duplicates', this.value)">
                 </div>
@@ -2065,13 +2161,19 @@ def generate_html_dashboard(
                             <th onclick="sortTable('table-duplicates', 1, 'num')">Costo PCF</th>
                             <th onclick="sortTable('table-duplicates', 2, 'num')">Stock PCF</th>
                             <th onclick="sortTable('table-duplicates', 3, 'str')">ID Ingram</th>
-                            <th onclick="sortTable('table-duplicates', 4, 'num')">Costo Ingram</th>
-                            <th onclick="sortTable('table-duplicates', 5, 'num')">Stock Ingram</th>
-                            <th onclick="sortTable('table-duplicates', 6, 'str')">ID Intcomex</th>
-                            <th onclick="sortTable('table-duplicates', 7, 'num')">Costo Intcomex</th>
-                            <th onclick="sortTable('table-duplicates', 8, 'num')">Stock Intcomex</th>
+                            <th onclick="sortTable('table-duplicates', 4, 'str')">Part Number Ingram</th>
+                            <th onclick="sortTable('table-duplicates', 5, 'num')">Costo Ingram</th>
+                            <th onclick="sortTable('table-duplicates', 6, 'num')">Stock Ingram</th>
+                            <th onclick="sortTable('table-duplicates', 7, 'str')">ID Intcomex</th>
+                            <th onclick="sortTable('table-duplicates', 8, 'str')">Part Number Intcomex</th>
+                            <th onclick="sortTable('table-duplicates', 9, 'num')">Costo Intcomex</th>
+                            <th onclick="sortTable('table-duplicates', 10, 'num')">Stock Intcomex</th>
+                            <th onclick="sortTable('table-duplicates', 11, 'str')">ID Acer</th>
+                            <th onclick="sortTable('table-duplicates', 12, 'str')">Part Number Acer</th>
+                            <th onclick="sortTable('table-duplicates', 13, 'num')">Costo Acer</th>
+                            <th onclick="sortTable('table-duplicates', 14, 'num')">Stock Acer</th>
                         </tr></thead>
-                        <tbody>{duplicate_rows if duplicate_rows else '<tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin IDs duplicados</td></tr>'}</tbody>
+                        <tbody>{duplicate_rows if duplicate_rows else '<tr><td colspan="15" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin IDs duplicados</td></tr>'}</tbody>
                     </table>
                 </div>
             </div>
@@ -2752,15 +2854,27 @@ def generate_html_dashboard(
 
     return html
 
+
+def generate_index_html() -> str:
+    """Genera una portada con acceso a todos los dashboards publicados."""
+    links = "".join(
+        f'<a href="{config["output_prefix"]}.html">{config["display_name"]}</a>'
+        for config in MAYORISTAS.values()
+    )
+    return f'''<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><title>Mayorista Monitor - PCFactory</title>
+<style>body{{font-family:sans-serif;background:#0a0a0f;color:#f4f4f5;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem}}nav{{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}}a{{color:#3b82f6;text-decoration:none;font-size:1.2rem;padding:1rem 2rem;border:1px solid #27272a;background:#1a1a24;border-radius:8px;transition:all .2s}}a:hover{{background:#22222e}}</style>
+</head><body><h1>pc Factory Monitor</h1><nav>{links}</nav></body></html>'''
+
 # ==============================================================================
 # MAIN
 # ==============================================================================
 
 def main():
-    parser = argparse.ArgumentParser(description="PCFactory Mayorista Monitor - Ingram Micro / Intcomex")
+    parser = argparse.ArgumentParser(description="PCFactory Mayorista Monitor")
     parser.add_argument("--mayorista", type=str, default="ingram",
-                       choices=["ingram", "intcomex"],
-                       help="Mayorista a procesar: 'ingram' o 'intcomex'")
+                       choices=list(MAYORISTAS),
+                       help="Mayorista a procesar")
     parser.add_argument("--source", type=str, default="gsheet",
                        choices=["gsheet", "local"],
                        help="Fuente de datos: 'gsheet' (Google Sheets) o 'local' (archivo XLSX)")
@@ -2789,12 +2903,13 @@ def main():
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    mayorista_display = "Ingram Micro" if args.mayorista == "ingram" else "Intcomex"
+    mayorista_config = MAYORISTAS[args.mayorista]
+    mayorista_display = mayorista_config["display_name"]
     print("=" * 60)
     print(f"PCFactory Mayorista Monitor - {mayorista_display}")
     print("=" * 60)
 
-    output_file_prefix = "mayorista" if args.mayorista == "ingram" else args.mayorista
+    output_file_prefix = mayorista_config["output_prefix"]
 
     # 1. Obtener datos segun la fuente
     price_file_url = None
@@ -2838,13 +2953,14 @@ def main():
         price_file_name = Path(args.ingram_file).name
         df = read_price_file(args.ingram_file)
     elif args.source == "gsheet":
-        gid = INTCOMEX_SHEET_GID if args.mayorista == "intcomex" else args.gid
-        sheet_name = "Intcomex" if args.mayorista == "intcomex" else "Ingram"
-        print(f"[*] Fuente: Google Sheets - {sheet_name} (ID: {args.sheet_id}, GID: {gid})")
+        gid = mayorista_config.get("gid", args.gid)
+        sheet_name = mayorista_config.get("sheet_name")
+        source_label = sheet_name or args.mayorista.title()
+        print(f"[*] Fuente: Google Sheets - {source_label} (ID: {args.sheet_id})")
         try:
-            df = read_google_sheet(args.sheet_id, gid)
-            price_file_name = f"Google Sheet ({args.sheet_id[:8]}...)"
-            price_file_url = f"https://docs.google.com/spreadsheets/d/{args.sheet_id}/export?format=xlsx"
+            df = read_google_sheet(args.sheet_id, gid=gid, sheet_name=sheet_name)
+            price_file_name = f"Google Sheet {source_label} ({args.sheet_id[:8]}...)"
+            price_file_url = f"https://docs.google.com/spreadsheets/d/{args.sheet_id}/export?format=xlsx&{'sheet=' + sheet_name if sheet_name else 'gid=' + gid}"
         except Exception:
             print(f"[!] No se pudo leer el Google Sheet")
             empty_stats = {"total": 0, "sin_stock_ingram": 0}
@@ -2885,7 +3001,7 @@ def main():
     print("\n[*] Aplicando filtros XLSX...")
     xlsx_stats = apply_xlsx_filters(df)
     print(f"    Total: {xlsx_stats['total']}")
-    print(f"    Sin stock Ingram: {xlsx_stats['sin_stock_ingram']}")
+    print(f"    Sin stock {mayorista_display}: {xlsx_stats['sin_stock_ingram']}")
     print(f"    No elegibles (BAD/OPEN BOX/CAJA DAÑADA/CAJA ABIERTA/CAJA DETERIORADA/REF/REFURBISHED/USADO/USED): {xlsx_stats['no_eligible']}")
     print(f"    Con PCF ID: {len(xlsx_stats['has_pcf_id'])}")
     print(f"    Sin PCF ID: {len(xlsx_stats['no_pcf_id'])}")
@@ -2905,28 +3021,53 @@ def main():
         print(f"    Con PCF ID (actualizado): {len(xlsx_stats['has_pcf_id'])}")
         print(f"    Sin PCF ID (actualizado): {len(xlsx_stats['no_pcf_id'])}")
 
+    if args.mayorista == "acer" and len(xlsx_stats["no_pcf_id"]) > 0:
+        tracked_matched, still_no_pcf = enrich_acer_with_seguimiento_ids(xlsx_stats["no_pcf_id"])
+        xlsx_stats["has_pcf_id"] = pd.concat([xlsx_stats["has_pcf_id"], tracked_matched], ignore_index=True)
+        xlsx_stats["no_pcf_id"] = still_no_pcf
+        print(f"    Con PCF ID (seguimiento Acer): {len(xlsx_stats['has_pcf_id'])}")
+        print(f"    Sin PCF ID (seguimiento Acer): {len(xlsx_stats['no_pcf_id'])}")
+
     provider_lookup = build_catalog_provider_lookup(catalog_df)
 
-    comparison_mayorista = "intcomex" if args.mayorista == "ingram" else "ingram"
-    comparison_gid = INTCOMEX_SHEET_GID if comparison_mayorista == "intcomex" else GOOGLE_SHEET_GID
     exclusive_published_ids: Optional[Set[int]] = None
     duplicate_ids: List[Dict[str, Any]] = []
     try:
-        print(f"[*] Cargando referencia de {comparison_mayorista} para excluir publicados compartidos...")
-        comparison_df = read_google_sheet(args.sheet_id, comparison_gid)
-        current_ids = collect_eligible_pcf_ids(df, catalog_df)
-        comparison_ids = collect_eligible_pcf_ids(comparison_df, catalog_df)
-        ingram_df = df if args.mayorista == "ingram" else comparison_df
-        intcomex_df = df if args.mayorista == "intcomex" else comparison_df
-        duplicate_ids = build_duplicate_ids(ingram_df, intcomex_df, catalog_df)
-        exclusive_published_ids = current_ids - comparison_ids
+        print("[*] Cargando referencias de los otros mayoristas para identificar productos compartidos...")
+        # Usar la fuente ya enriquecida para conservar los IDs resueltos desde
+        # seguimiento Acer al calcular compartidos y duplicados.
+        provider_dfs = {
+            args.mayorista: pd.concat(
+                [xlsx_stats["has_pcf_id"], xlsx_stats["no_pcf_id"]],
+                ignore_index=True,
+            )
+        }
+        for provider, config in MAYORISTAS.items():
+            if provider == args.mayorista:
+                continue
+            provider_dfs[provider] = read_google_sheet(
+                args.sheet_id,
+                gid=config.get("gid"),
+                sheet_name=config.get("sheet_name"),
+            )
+        current_ids = {
+            int(float(value))
+            for value in xlsx_stats["has_pcf_id"][COL_PCF_ID].dropna()
+        }
+        other_ids = set().union(*(
+            collect_eligible_pcf_ids(frame, catalog_df)
+            for provider, frame in provider_dfs.items()
+            if provider != args.mayorista
+        ))
+        duplicate_ids = build_duplicate_ids(provider_dfs, catalog_df)
+        exclusive_published_ids = current_ids - other_ids
         print(
             f"[+] IDs exclusivos para {args.mayorista}: {len(exclusive_published_ids)} "
-            f"(compartidos con {comparison_mayorista}: {len(current_ids & comparison_ids)})"
+            f"(compartidos con otros mayoristas: {len(current_ids & other_ids)})"
         )
-        print(f"[+] IDs duplicados con stock en ambos mayoristas: {len(duplicate_ids)}")
+        print(f"[+] IDs duplicados con stock en dos o más mayoristas: {len(duplicate_ids)}")
     except Exception as e:
-        print(f"[!] No se pudo cargar referencia de {comparison_mayorista}: {e}")
+        print(f"[!] No se pudieron cargar referencias de otros mayoristas: {e}")
         print("    Se mantiene el conteo de publicados sin exclusión por cruce de sheets")
 
     # 4. Cargar seguimiento (necesario antes de clasificar para separar pending_ficha)
@@ -3027,6 +3168,8 @@ def main():
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"[+] Dashboard HTML guardado: {html_path}")
+    with open(output_dir / "index.html", "w", encoding="utf-8") as f:
+        f.write(generate_index_html())
 
     # 8. Guardar CSVs por categoria para IMPORTDATA (Google Sheets)
     for cat, prods in classification.items():
@@ -3042,8 +3185,10 @@ def main():
 
     duplicate_csv_path = output_dir / f"{output_file_prefix}-duplicate_ids.csv"
     duplicate_fields = [
-        "pcf_id", "pcf_cost", "pcf_stock", "ingram_id", "ingram_cost",
-        "ingram_stock", "intcomex_id", "intcomex_cost", "intcomex_stock",
+        "pcf_id", "pcf_cost", "pcf_stock", "ingram_id", "ingram_partnumber",
+        "ingram_cost", "ingram_stock", "intcomex_id", "intcomex_partnumber",
+        "intcomex_cost", "intcomex_stock", "acer_id", "acer_partnumber",
+        "acer_cost", "acer_stock",
     ]
     with open(duplicate_csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=duplicate_fields)
