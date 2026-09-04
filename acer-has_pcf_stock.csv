@@ -1,0 +1,2 @@
+pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
+57849,PNR-1064,ANV15-41-R6HJ-1/NOTEBOOK ACER,Acer,NH.QPFAL.00D.1,799990.0,3,Equipos,Hardware,ok,True,0,1,1,"Notebook Gamer Nitro V15 AMD Ryzen 5 7535HS NVIDIA GeForce RTX 3050 15.6"" 8GB RAM 512GB SSD Windows 11 Home NH.QPFAL.00D.1",0,0,False,{},,,,,,,
