@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-57375,100019601.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - FURY Beast RGB EXPO,Kingston Fury,KF564C32BBEA-32,466.1,20,Módulos RAM - Genéricos,Physical,ok,False,0,0,0,Memoria RAM 32GB DDR5 6400 MHz UDIMM,0,0,True,{},,,385468,,523990,,547210
+56905,nan,HPE - Server - Rack-mountable - Intel Xeon 6325P - ProLiant Intel 6325P) 1 x 16GB,HPE,P86708-DM5,4584.4,20,Servidores,Physical,ok,False,0,0,0,Server HPE Proliant MICROSERVER GEN11 1P 6325P,0,0,True,{},,,,,,,
