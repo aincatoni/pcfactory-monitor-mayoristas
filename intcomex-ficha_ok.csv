@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-56905,nan,HPE - Server - Rack-mountable - Intel Xeon 6325P - ProLiant Intel 6325P) 1 x 16GB,HPE,P86708-DM5,4584.4,20,Servidores,Physical,ok,False,0,0,0,Server HPE Proliant MICROSERVER GEN11 1P 6325P,0,0,True,{},,,,,,,
+57383,100020577.0,Epson - Receipt printer - Monochrome - Thermal line / dot-matrix - USB / USB host - OmniLink TM-H6000VI,Epson,C31CL25032,551.9,1,Impresoras para Recibos,Physical,ok,False,0,0,0,Impresora POS Térmica TM-H6000VI,0,0,True,{},,,,,,,
