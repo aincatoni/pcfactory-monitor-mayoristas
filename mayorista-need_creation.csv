@@ -1,6 +1,6 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,1000329,RACK PDU BASIC ZERO U 16A,Apc,AP9572,82.21,1,Protección Eléctrica y Racks,PDUs y Componentes,,,,,
-,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,193.07,97,Suministros y Medios,Suministros Láser,260299,,115000,,211216
+,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,193.07,97,Suministros y Medios,Suministros Láser,260299,,115000,,206507
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,272.57,35,Suministros y Medios,Suministros Láser,260104,,194900,,296932
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,59,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,
 ,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,88.42,722,Suministros y Medios,Suministros Láser,260019,,8990,,96816
@@ -459,7 +459,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4634847,Lenovo 15.6-inch Laptop Casual Backpack,Lenovo,4X40T84058,9.58,1,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
 ,4637480,Aruba 6300M 24SFP+ 4SFP56 Swch,Hewlett Packard Enterprise,JL658A,7280.0,2,Dispositivos de Red,Switches Standalone,389546,,8258707,,8739664
 ,4638872,TINTA PFI-030 NEGRO MATE - 55 ML,Canon,3488C001,35.44,21,Suministros y Medios,Suministros para Plotters,260709,,46990,,55077
-,4638873,TINTA PFI-030 NEGRO - 55 ML,Canon,3489C001,35.44,19,Suministros y Medios,Suministros para Plotters,263951,,42494,,48552
+,4638873,TINTA PFI-030 NEGRO - 55 ML,Canon,3489C001,35.44,19,Suministros y Medios,Suministros para Plotters,263951,,42494,,48693
 ,4638874,TINTA PFI-030 CIAN- 55 ML,Canon,3490C001,35.45,42,Suministros y Medios,Suministros para Plotters,260315,,42494,,48561
 ,4638905,TINTA PFI-030 MAGENTA- 55 ML,Canon,3491C001,35.66,44,Suministros y Medios,Suministros para Plotters,260316,,41952,,48444
 ,4638906,TINTA PFI-030 YELLOW- 55 ML,Canon,3492C001,35.44,17,Suministros y Medios,Suministros para Plotters,260314,,42494,,50741
@@ -549,7 +549,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5179796,Cable de Red Ethernet CAT6 - Gris - 2m,Startech.Com,N6LPATCH2MGR,6.25,40,Cables,Cables y Adaptadores Ethernet Coaxiales,,,,,
 ,5182134,EASY RACK 600MM/42U/1200MM WITH ROOF SID,Apc,ER6222,1103.3,4,Protección Eléctrica y Racks,Racks,,,,,
 ,5186060,32 inch Monitor Privacy Screen Filter,Startech.Com,PRIVSCNMON32,137.63,5,Pantallas,Filtros Anti-reflejo para Monitores,,,,,
-,5217789,HPE 2.4TB SAS 10K SFF BC 512e MV HDD,Hewlett Packard Enterprise,P28352-B21,688.6,3,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),150694,,809498,,846084
+,5217789,HPE 2.4TB SAS 10K SFF BC 512e MV HDD,Hewlett Packard Enterprise,P28352-B21,688.6,3,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI),150694,,796752,,837862
 ,5217837,HPE DL36X Gen10+ Stnd Fan Kit,Hewlett Packard Enterprise,P37861-B21,114.5,1,Componentes de Sistema,Componentes de Gabinete,,,,,
 ,5224313,AEXXO FOLIO CASE 10.1 BLACK,Trust,21068,6.78,389,Computadores Servidores y Notebooks,Accesorios para Tablet PCs,,,,,
 ,5232301,CARTUCHO TINTA PRO12 PH BLK 700ML,Epson,T44H120,235.92,2,Suministros y Medios,Suministros Inyección de Tinta,270772,,271100,,281314
@@ -599,7 +599,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5544108,DP to Dual HDMI MST HUB 4K 60Hz DP 1.4,Startech.Com,MST14DP122HD,61.68,1,Cables,Cables y Adaptadores de Video,,,,,
 ,5546225,ARUBA 1G SFP LC SX 500M MMF XCVR REPLACE,Hewlett Packard Enterprise,J4858D,125.53,17,Dispositivos de Red,Transceivers,,,,,
 ,5560702,Cable Management Sleeve Wire Wraps,Startech.Com,WKSTNCMFLX,19.32,3,Cables,Herramientas y Kits,,,,,
-,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,116.92,264,Suministros y Medios,Suministros Láser,260106,,134990,,148033
+,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,116.92,264,Suministros y Medios,Suministros Láser,260106,,134990,149990,148136
 ,5576934,HP 151X Black Original LaserJet Toner IS,Hp,W1510X,236.52,16,Suministros y Medios,Suministros Láser,260341,,271508,,292703
 ,5577005,HP 154A Black Org LaserJet Tank Rld Kit,Hp,W1540A,10.67,27,Suministros y Medios,Suministros Láser,260326,,11709,,13934
 ,5577006,HP 154X HY Blk Org LaserJetTank Rld Kit,Hp,W1540X,16.03,172,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,18380,,20909
@@ -735,10 +735,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6277375,Filtro 16:9 de 24 Anti Luz Azul,Startech.Com,2469-ANTI-BLUE-LIGHT,66.06,10,Pantallas,Filtros Anti-reflejo para Monitores,,,,,
 ,6277418,EARPODS LIGHTNING CONNECTOR,Apple,MWTY3AM/A,15.81,37,Comunicaciones,Cintillos telefónicos,256210,,19530,,23179
 ,6278893,Adaptador USB Wi-Fi Bluetooth WD02AT,Benq,5A.F8Y28.DE1,40.99,6,Dispositivos de Red,Tarjetas de Red inalámbricas,398402,,49673,,50806
-,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,97.79,31,Suministros y Medios,Suministros Inyección de Tinta,262183,,103500,,121026
+,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,97.79,31,Suministros y Medios,Suministros Inyección de Tinta,262183,,103500,,118600
 ,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,97.86,27,Suministros y Medios,Suministros Inyección de Tinta,262152,,103900,,118710
 ,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,84.34,28,Suministros y Medios,Suministros Inyección de Tinta,262283,,96486,,105770
-,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,97.84,24,Suministros y Medios,Suministros Inyección de Tinta,262151,,105500,,123020
+,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,97.84,24,Suministros y Medios,Suministros Inyección de Tinta,262151,,105500,,120560
 ,6280537,TONERLASERJET NEGRO,Hp,W1030XC,120.45,190,Suministros y Medios,Suministros Láser,354484,,159990,,159990
 ,6281645,TONER CONTRACTUAL ALTA CAPACIDAD AZUL,Hp,W2151XC,109.16,32,Suministros y Medios,Suministros Láser,399734,,,,
 ,6281646,TONER CONTRACTUAL ALTA CAPACIDAD AMARILL,Hp,W2152XC,109.16,30,Suministros y Medios,Suministros Láser,399736,,,,
@@ -842,7 +842,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6703811,Cable HDMI 2.1 de 1m - 8K - Certificado,Startech.Com,HDMI21-CBL-8K60-1M,15.25,10,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,6703813,Cable HDMI 2.1 8K de 5m - Certificado,Startech.Com,HDMI21-CBL-8K60-5M,51.0,5,Cables,Cables y Adaptadores de Audio + Video,,,,,
 ,6709552,P713 ROG HARPE ACE AIM LAB EDITION/BLK,Asus,90MP02W0-BMAA02,65.34,19,Dispositivos de Entrada,Mouse,206017,,72990,,82741
-,6709674,MBP 14 SL/10C/10C GPU/24GB/1TB-CHL,Apple,MDE64CI/A,2142.1,42,Computadores Servidores y Notebooks,Notebooks,360395,,2349990,,2516656
+,6709674,MBP 14 SL/10C/10C GPU/24GB/1TB-CHL,Apple,MDE64CI/A,2142.1,42,Computadores Servidores y Notebooks,Notebooks,360395,,2343990,,2381323
 ,6709678,DB SATELLITE PRO C50-K - I5 8G 512 156,Dynabook,PSY29U-4UT002,612.26,2,Computadores Servidores y Notebooks,Notebooks,366594,,834990,,834990
 ,6711084,400 QUIET PINK WIRELESS MOUSE,Hp,AZ7B5AA#ABA,16.89,1930,Dispositivos de Entrada,Mouse,,,,,
 ,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,12.89,2782,Suministros y Medios,Suministros Inyección de Tinta,384467,,14477,19990,17585
