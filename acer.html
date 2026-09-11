@@ -468,7 +468,7 @@
                 </div>
             </div>
             <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
-                <div class="timestamp">10/09/2026 18:39:28 Chile</div>
+                <div class="timestamp">11/09/2026 14:05:45 Chile</div>
                 <a href="acer-report.xlsx" target="_blank" class="download-btn">⬇ Descargar Excel</a>
                 <a href="acer-publish_ready.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV Publicados</a>
                 <a href="acer-need_creation.csv" target="_blank" class="download-btn" style="background:#fef3c7;color:#92400e;">📊 CSV por Crear</a>
@@ -496,7 +496,7 @@
 
         <div class="status-banner warning">
             <div class="status-indicator"></div>
-            <span class="status-text">6 productos potenciales detectados</span>
+            <span class="status-text">5 productos potenciales detectados</span>
         </div>
 
         <div class="stats-grid">
@@ -509,7 +509,7 @@
                 <div class="stat-label">Con Stock Acer</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('pcfstock')">
-                <div class="stat-value red">0</div>
+                <div class="stat-value red">1</div>
                 <div class="stat-label">Con Stock PCF (de Ingram)</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('noelegible')">
@@ -521,11 +521,11 @@
                 <div class="stat-label">Publicados</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('potenciales')">
-                <div class="stat-value green">6</div>
+                <div class="stat-value green">5</div>
                 <div class="stat-label">Potenciales</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('publish')">
-                <div class="stat-value green">6</div>
+                <div class="stat-value green">5</div>
                 <div class="stat-label">Con Ficha Listos para Publicar</div>
             </div>
             <div class="stat-card clickable" onclick="switchTab('pending')">
@@ -568,11 +568,11 @@
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('potenciales')" style="cursor:pointer;">
                     <span class="funnel-label">├── Potenciales (total)</span>
-                    <div class="funnel-bar" style="width: 50.0%; background: var(--accent-green);">6</div>
+                    <div class="funnel-bar" style="width: 41.66666666666667%; background: var(--accent-green);">5</div>
                 </div>
                 <div class="funnel-step funnel-sub clickable" onclick="switchTab('publish')" style="cursor:pointer;">
                     <span class="funnel-label">│ ├── Con Ficha Listos</span>
-                    <div class="funnel-bar" style="width: 50.0%; background: #86efac; color: #000;">6</div>
+                    <div class="funnel-bar" style="width: 41.66666666666667%; background: #86efac; color: #000;">5</div>
                 </div>
                 <div class="funnel-step funnel-sub clickable" onclick="switchTab('pending')" style="cursor:pointer;">
                     <span class="funnel-label">│ ├── Ficha Solicitada</span>
@@ -592,7 +592,7 @@
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('pcfstock')" style="cursor:pointer;">
                     <span class="funnel-label">├── Con Stock PCF</span>
-                    <div class="funnel-bar" style="width: 5%; background: #fb923c; color: #000;">0</div>
+                    <div class="funnel-bar" style="width: 8.333333333333332%; background: #fb923c; color: #000;">1</div>
                 </div>
                 <div class="funnel-step clickable" onclick="switchTab('noelegible')" style="cursor:pointer;">
                     <span class="funnel-label">└── No Elegibles</span>
@@ -607,15 +607,15 @@
             <span class="tab-section-title">Selecciona una categoría</span>
         </div>
         <div class="tab-container">
-            <button class="tab-btn" onclick="switchTab('potenciales')">🎯 Potenciales (6)</button>
+            <button class="tab-btn" onclick="switchTab('potenciales')">🎯 Potenciales (5)</button>
 
-            <button class="tab-btn active" onclick="switchTab('publish')">↳ ✅ Con Ficha Listos para Publicar (6)</button>
+            <button class="tab-btn active" onclick="switchTab('publish')">↳ ✅ Con Ficha Listos para Publicar (5)</button>
             <button class="tab-btn" onclick="switchTab('pending')">↳ ⏳ Ficha Solicitada (0)</button>
             <button class="tab-btn" onclick="switchTab('fichaok')">↳ ✅ Ficha necesita revisión (0)</button>
             <button class="tab-btn" onclick="switchTab('ficha')">↳ 📝 Sin Ficha Solicitada (0)</button>
             <button class="tab-btn" onclick="switchTab('creation')">↳ 🆕 ID No Existe y Requieren Creacion (0)</button>
             <button class="tab-btn" onclick="switchTab('mayorista')">🏭 Publicados (4)</button>
-            <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF (0)</button>
+            <button class="tab-btn" onclick="switchTab('pcfstock')">📦 Con Stock PCF (1)</button>
             <button class="tab-btn" onclick="switchTab('noelegible')">🚫 No Elegibles (0)</button>
             <button class="tab-btn" onclick="switchTab('constock')">📊 Con Stock Acer (10)</button>
             <button class="tab-btn" onclick="switchTab('sinstock')">🚫 Sin Stock (2)</button>
@@ -6728,7 +6728,7 @@
                 <div class="table-header">
                     <div>
                         <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Todos los Potenciales</h2>
-                        <span class="table-badge badge-green">6 productos potenciales</span>
+                        <span class="table-badge badge-green">5 productos potenciales</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-potenciales', this.value)">
                 </div>
@@ -6756,18 +6756,18 @@
                         <tbody>
                             <tr>
             <td>1</td>
-            <td><a href="https://www.pcfactory.cl/producto/57816" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57816</a></td>
-            <td class="desc-cell" title="ACER Urban Sleeve">ACER Urban Sleeve</td>
-            <td>nan</td>
-            <td><code>GP.BAG11.02J</code></td>
-            <td class="num-cell">83</td>
-            <td class="num-cell">$ 14.990</td>
-            <td class="num-cell">$ 14.990</td>
+            <td><a href="https://www.pcfactory.cl/producto/57844" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57844</a></td>
+            <td class="desc-cell" title="NL16-71G-56Q8-1/NOTEBOOK ACER">NL16-71G-56Q8-1/NOTEBOOK ACER</td>
+            <td>Acer</td>
+            <td><code>NH.DADAL.002.1</code></td>
+            <td class="num-cell">7</td>
+            <td class="num-cell">$ 799.990</td>
+            <td class="num-cell">$ 799.990</td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell">$ 769.990</td>
+            <td class="num-cell">$ 774.990</td>
+            <td class="num-cell">$ 769.990</td>
+            <td class="num-cell"><a href="https://www.solotodo.cl/products/360843" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
             <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
             <td><span class="table-badge badge-green">Con Ficha Listo</span></td>
         </tr><tr>
@@ -6788,22 +6788,6 @@
             <td><span class="table-badge badge-green">Con Ficha Listo</span></td>
         </tr><tr>
             <td>3</td>
-            <td><a href="https://www.pcfactory.cl/producto/57844" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57844</a></td>
-            <td class="desc-cell" title="NL16-71G-56Q8-1/NOTEBOOK ACER">NL16-71G-56Q8-1/NOTEBOOK ACER</td>
-            <td>Acer</td>
-            <td><code>NH.DADAL.002.1</code></td>
-            <td class="num-cell">7</td>
-            <td class="num-cell">$ 799.990</td>
-            <td class="num-cell">$ 799.990</td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell">$ 769.990</td>
-            <td class="num-cell">$ 769.990</td>
-            <td class="num-cell">$ 769.990</td>
-            <td class="num-cell"><a href="https://www.solotodo.cl/products/360843" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
-            <td><span class="table-badge badge-green">Con Ficha Listo</span></td>
-        </tr><tr>
-            <td>4</td>
             <td><a href="https://www.pcfactory.cl/producto/57846" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57846</a></td>
             <td class="desc-cell" title="AL14-31P-3591-6/NOTEBOOK ACER">AL14-31P-3591-6/NOTEBOOK ACER</td>
             <td>Acer</td>
@@ -6811,6 +6795,22 @@
             <td class="num-cell">94</td>
             <td class="num-cell">$ 369.990</td>
             <td class="num-cell">$ 369.990</td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
+            <td><span class="table-badge badge-green">Con Ficha Listo</span></td>
+        </tr><tr>
+            <td>4</td>
+            <td><a href="https://www.pcfactory.cl/producto/57849" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57849</a></td>
+            <td class="desc-cell" title="ANV15-41-R6HJ-1/NOTEBOOK ACER">ANV15-41-R6HJ-1/NOTEBOOK ACER</td>
+            <td>Acer</td>
+            <td><code>NH.QPFAL.00D.1</code></td>
+            <td class="num-cell">3</td>
+            <td class="num-cell">$ 799.990</td>
+            <td class="num-cell">$ 799.990</td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
@@ -6834,22 +6834,6 @@
             <td class="num-cell"><a href="https://www.solotodo.cl/products/405099" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
             <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
             <td><span class="table-badge badge-green">Con Ficha Listo</span></td>
-        </tr><tr>
-            <td>6</td>
-            <td><a href="https://www.pcfactory.cl/producto/57849" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57849</a></td>
-            <td class="desc-cell" title="ANV15-41-R6HJ-1/NOTEBOOK ACER">ANV15-41-R6HJ-1/NOTEBOOK ACER</td>
-            <td>Acer</td>
-            <td><code>NH.QPFAL.00D.1</code></td>
-            <td class="num-cell">3</td>
-            <td class="num-cell">$ 799.990</td>
-            <td class="num-cell">$ 799.990</td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
-            <td><span class="table-badge badge-green">Con Ficha Listo</span></td>
         </tr>
                         </tbody>
                     </table>
@@ -6863,7 +6847,7 @@
                 <div class="table-header">
                     <div>
                         <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Con Ficha Listos para Publicar</h2>
-                        <span class="table-badge badge-green">6 productos listos</span>
+                        <span class="table-badge badge-green">5 productos listos</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar por nombre, vendor, part number..." oninput="filterTable('table-publish', this.value)">
                 </div>
@@ -6891,20 +6875,20 @@
                         <tbody>
                             <tr>
             <td>1</td>
-            <td><a href="https://www.pcfactory.cl/producto/57816" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57816</a></td>
-            <td class="desc-cell" title="ACER Urban Sleeve">ACER Urban Sleeve</td>
-            <td>nan</td>
-            <td><code>GP.BAG11.02J</code></td>
-            <td class="num-cell">83</td>
-            <td class="num-cell">$ 14.990</td>
-            <td class="num-cell">$ 14.990</td>
+            <td><a href="https://www.pcfactory.cl/producto/57844" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57844</a></td>
+            <td class="desc-cell" title="NL16-71G-56Q8-1/NOTEBOOK ACER">NL16-71G-56Q8-1/NOTEBOOK ACER</td>
+            <td>Acer</td>
+            <td><code>NH.DADAL.002.1</code></td>
+            <td class="num-cell">7</td>
+            <td class="num-cell">$ 799.990</td>
+            <td class="num-cell">$ 799.990</td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell">$ 769.990</td>
+            <td class="num-cell">$ 774.990</td>
+            <td class="num-cell">$ 769.990</td>
+            <td class="num-cell"><a href="https://www.solotodo.cl/products/360843" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
             <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
-            <td>Accesorios</td>
+            <td>Equipos</td>
         </tr><tr>
             <td>2</td>
             <td><a href="https://www.pcfactory.cl/producto/57842" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57842</a></td>
@@ -6923,22 +6907,6 @@
             <td>Equipos</td>
         </tr><tr>
             <td>3</td>
-            <td><a href="https://www.pcfactory.cl/producto/57844" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57844</a></td>
-            <td class="desc-cell" title="NL16-71G-56Q8-1/NOTEBOOK ACER">NL16-71G-56Q8-1/NOTEBOOK ACER</td>
-            <td>Acer</td>
-            <td><code>NH.DADAL.002.1</code></td>
-            <td class="num-cell">7</td>
-            <td class="num-cell">$ 799.990</td>
-            <td class="num-cell">$ 799.990</td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell">$ 769.990</td>
-            <td class="num-cell">$ 769.990</td>
-            <td class="num-cell">$ 769.990</td>
-            <td class="num-cell"><a href="https://www.solotodo.cl/products/360843" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
-            <td>Equipos</td>
-        </tr><tr>
-            <td>4</td>
             <td><a href="https://www.pcfactory.cl/producto/57846" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57846</a></td>
             <td class="desc-cell" title="AL14-31P-3591-6/NOTEBOOK ACER">AL14-31P-3591-6/NOTEBOOK ACER</td>
             <td>Acer</td>
@@ -6946,6 +6914,22 @@
             <td class="num-cell">94</td>
             <td class="num-cell">$ 369.990</td>
             <td class="num-cell">$ 369.990</td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
+            <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
+            <td>Equipos</td>
+        </tr><tr>
+            <td>4</td>
+            <td><a href="https://www.pcfactory.cl/producto/57849" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57849</a></td>
+            <td class="desc-cell" title="ANV15-41-R6HJ-1/NOTEBOOK ACER">ANV15-41-R6HJ-1/NOTEBOOK ACER</td>
+            <td>Acer</td>
+            <td><code>NH.QPFAL.00D.1</code></td>
+            <td class="num-cell">3</td>
+            <td class="num-cell">$ 799.990</td>
+            <td class="num-cell">$ 799.990</td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
@@ -6967,22 +6951,6 @@
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
             <td class="num-cell"><a href="https://www.solotodo.cl/products/405099" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
-            <td>Equipos</td>
-        </tr><tr>
-            <td>6</td>
-            <td><a href="https://www.pcfactory.cl/producto/57849" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57849</a></td>
-            <td class="desc-cell" title="ANV15-41-R6HJ-1/NOTEBOOK ACER">ANV15-41-R6HJ-1/NOTEBOOK ACER</td>
-            <td>Acer</td>
-            <td><code>NH.QPFAL.00D.1</code></td>
-            <td class="num-cell">3</td>
-            <td class="num-cell">$ 799.990</td>
-            <td class="num-cell">$ 799.990</td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
             <td><a href="https://docs.google.com/spreadsheets/d/15V28Vnz_YFDECj_JEzWWp6snMlaMUgV6PVWROHioheM" target="_blank" style="text-decoration:none;"><span class="table-badge badge-green">OK ↗</span></a></td>
             <td>Equipos</td>
         </tr>
@@ -7225,8 +7193,8 @@
             <td class="num-cell">$ 619.990</td>
             <td class="num-cell">$ 619.990</td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell">$ 579.990</td>
             <td class="num-cell">$ 589.990</td>
+            <td class="num-cell">$ 609.990</td>
             <td class="num-cell">$ 589.990</td>
             <td class="num-cell"><a href="https://www.solotodo.cl/products/391084" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
         </tr>
@@ -7242,7 +7210,7 @@
                 <div class="table-header">
                     <div>
                         <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem; font-size: 1.1rem;">Excluidos: Con Stock en PCFactory (tienen stock Ingram)</h2>
-                        <span class="table-badge badge-red">0 productos excluidos</span>
+                        <span class="table-badge badge-red">1 productos excluidos</span>
                     </div>
                     <input type="text" class="search-input" placeholder="🔍 Buscar..." oninput="filterTable('table-pcfstock', this.value)">
                 </div>
@@ -7262,7 +7230,17 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">Sin productos en esta categoria</td></tr>
+                            <tr>
+            <td>1</td>
+            <td><a href="https://www.pcfactory.cl/producto/57816" target="_blank" style="color: var(--accent-blue); text-decoration: none;">57816</a></td>
+            <td class="desc-cell" title="ACER Urban Sleeve">ACER Urban Sleeve</td>
+            <td>nan</td>
+            <td class="num-cell">83</td>
+            <td class="num-cell">1</td>
+            <td class="num-cell">$ 14.990</td>
+            <td class="num-cell">$ 14.990</td>
+            <td class="desc-cell">—</td>
+        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -7604,7 +7582,7 @@
             <td class="num-cell">$ 799.990</td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
             <td class="num-cell">$ 769.990</td>
-            <td class="num-cell">$ 769.990</td>
+            <td class="num-cell">$ 774.990</td>
             <td class="num-cell">$ 769.990</td>
             <td class="num-cell"><a href="https://www.solotodo.cl/products/360843" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
             <td>Equipos</td>
@@ -7663,8 +7641,8 @@
             <td class="num-cell">$ 619.990</td>
             <td class="num-cell">$ 619.990</td>
             <td class="num-cell"><span style="color: var(--text-muted);">—</span></td>
-            <td class="num-cell">$ 579.990</td>
             <td class="num-cell">$ 589.990</td>
+            <td class="num-cell">$ 609.990</td>
             <td class="num-cell">$ 589.990</td>
             <td class="num-cell"><a href="https://www.solotodo.cl/products/391084" target="_blank" style="color: var(--accent-cyan); text-decoration: none; font-size: 0.8rem;">Ver ↗</a></td>
             <td>Equipos</td>
