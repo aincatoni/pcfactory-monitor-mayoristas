@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-57383,100020577.0,Epson - Receipt printer - Monochrome - Thermal line / dot-matrix - USB / USB host - OmniLink TM-H6000VI,Epson,C31CL25032,551.9,1,Impresoras para Recibos,Physical,ok,False,0,0,0,Impresora POS Térmica TM-H6000VI,0,0,True,{},,,,,,,
+57393,nan,ASUS PRIME LC 360 ARGB - Fan unit,ASUS,90RC0101-B0EAY0,72.3,9,Ventiladores y Sistemas de Enfriamiento,Physical,ok,False,0,0,0,Refrigeración Líquida Prime LC360 ARGB,0,0,True,{},,,355343,,84690,,86642

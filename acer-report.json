@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-14T18:37:32.196474+00:00",
+  "timestamp": "2026-09-14T22:29:30.524557+00:00",
   "price_file": "Google Sheet Acer (1mgGjhEm...)",
   "summary": {
     "total": 12,
@@ -7,8 +7,8 @@
     "publish_ready": 4,
     "missing_ficha": 0,
     "need_creation": 0,
-    "already_mayorista": 5,
-    "has_pcf_stock": 1,
+    "already_mayorista": 6,
+    "has_pcf_stock": 0,
     "api_errors": 0,
     "duplicate_ids": 379,
     "total_potencial": 4
@@ -130,6 +130,34 @@
   "missing_ficha": [],
   "need_creation": [],
   "already_mayorista": [
+    {
+      "pcf_id": 57816,
+      "ingram_part": "ACC-0316",
+      "description": "ACER Urban Sleeve",
+      "vendor_name": NaN,
+      "vendor_part": "GP.BAG11.02J",
+      "customer_price": 14990.0,
+      "available_qty": 83,
+      "category": "Accesorios",
+      "subcategory": "Hardware",
+      "api_status": "ok",
+      "mayorista": true,
+      "lista": "1",
+      "stock_pcf": 1,
+      "stock_raw": "1",
+      "nombre_pcf": "Maletín para Notebook 15,6\" GP.BAG11.02J",
+      "precio_normal": 0,
+      "precio_oferta": 0,
+      "ficha_vacia": false,
+      "stock_detail": {},
+      "error": "",
+      "catalog_provider": null,
+      "solotodo_id": null,
+      "pcf_price": null,
+      "min_price": null,
+      "mode_price": null,
+      "mean_price": null
+    },
     {
       "pcf_id": 57842,
       "ingram_part": "PNR-1019",
@@ -271,36 +299,7 @@
       "mean_price": 577490
     }
   ],
-  "has_pcf_stock": [
-    {
-      "pcf_id": 57816,
-      "ingram_part": "ACC-0316",
-      "description": "ACER Urban Sleeve",
-      "vendor_name": NaN,
-      "vendor_part": "GP.BAG11.02J",
-      "customer_price": 14990.0,
-      "available_qty": 83,
-      "category": "Accesorios",
-      "subcategory": "Hardware",
-      "api_status": "ok",
-      "mayorista": false,
-      "lista": "1",
-      "stock_pcf": 1,
-      "stock_raw": "1",
-      "nombre_pcf": "Maletín para Notebook 15,6\" GP.BAG11.02J",
-      "precio_normal": 0,
-      "precio_oferta": 0,
-      "ficha_vacia": false,
-      "stock_detail": {},
-      "error": "",
-      "catalog_provider": null,
-      "solotodo_id": null,
-      "pcf_price": null,
-      "min_price": null,
-      "mode_price": null,
-      "mean_price": null
-    }
-  ],
+  "has_pcf_stock": [],
   "api_errors": [],
   "duplicate_ids": [
     {
