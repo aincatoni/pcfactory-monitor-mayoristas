@@ -3,7 +3,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,193.07,97,Suministros y Medios,Suministros Láser,260299,,115000,,212018
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,272.57,35,Suministros y Medios,Suministros Láser,260104,,194900,,300822
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,59,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,
-,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,88.42,722,Suministros y Medios,Suministros Láser,260019,,8990,,98000
+,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,88.42,722,Suministros y Medios,Suministros Láser,260019,,8990,,97798
 ,1188584,ETIQUETA DK1201,Brother,DK1201,7.62,32,Componentes de Sistema,Componentes de Gabinete,405679,,8221,,8221
 ,1188586,ETIQUETA DK1204,Brother,DK-1204,7.26,49,Suministros y Medios,Etiquetas y Aplicadores,,,,,
 ,1188589,ETIQUETA DK1221,Brother,DK-1221,12.19,5,Suministros y Medios,Etiquetas y Aplicadores,,,,,
@@ -258,7 +258,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3129932,HPE LTO-7 Ultrium 15000 Ext Tape Drive,Hewlett Packard Enterprise,BB874A,4896.6,2,Suministros y Medios,Cintas de Almacenamiento,,,,,
 ,3141120,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,124.93,1,Cables,Cables para Transferencia de Archivos,,,,,
 ,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.1,53,Suministros y Medios,Suministros Inyección de Tinta,259846,,209555,260990,232908
-,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,179.75,23,Suministros y Medios,Suministros Inyección de Tinta,259844,,207011,257990,230576
+,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,179.75,23,Suministros y Medios,Suministros Inyección de Tinta,259844,,207011,257990,228618
 ,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,181.2,20,Suministros y Medios,Suministros Inyección de Tinta,259845,,210815,258990,231244
 ,3156862,TONER GPR-54 NEGRO REND 17600 PAG,Canon,9436B003,84.91,19,Suministros y Medios,Suministros Láser,260645,,92300,,106432
 ,3212236,6ft High Speed HDMI Cable - HDMI - M/M,Startech.Com,HDMM6,10.63,75,Cables,Cables y Adaptadores de Audio + Video,,,,,
@@ -458,7 +458,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4634002,SFP+ - HP J9151E Compatible,Startech.Com,J9151E-ST,156.19,17,Dispositivos de Red,Transceivers,,,,,
 ,4634847,Lenovo 15.6-inch Laptop Casual Backpack,Lenovo,4X40T84058,9.58,1,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,
 ,4637480,Aruba 6300M 24SFP+ 4SFP56 Swch,Hewlett Packard Enterprise,JL658A,7280.0,2,Dispositivos de Red,Switches Standalone,389546,,,,
-,4638872,TINTA PFI-030 NEGRO MATE - 55 ML,Canon,3488C001,35.44,21,Suministros y Medios,Suministros para Plotters,260709,,44426,,51595
+,4638872,TINTA PFI-030 NEGRO MATE - 55 ML,Canon,3488C001,35.44,21,Suministros y Medios,Suministros para Plotters,260709,,44426,,52189
 ,4638873,TINTA PFI-030 NEGRO - 55 ML,Canon,3489C001,35.44,19,Suministros y Medios,Suministros para Plotters,263951,,52490,,58336
 ,4638874,TINTA PFI-030 CIAN- 55 ML,Canon,3490C001,35.45,42,Suministros y Medios,Suministros para Plotters,260315,,42494,,49119
 ,4638905,TINTA PFI-030 MAGENTA- 55 ML,Canon,3491C001,35.66,44,Suministros y Medios,Suministros para Plotters,260316,,41952,,48720
@@ -599,7 +599,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5544108,DP to Dual HDMI MST HUB 4K 60Hz DP 1.4,Startech.Com,MST14DP122HD,61.68,1,Cables,Cables y Adaptadores de Video,,,,,
 ,5546225,ARUBA 1G SFP LC SX 500M MMF XCVR REPLACE,Hewlett Packard Enterprise,J4858D,125.53,17,Dispositivos de Red,Transceivers,,,,,
 ,5560702,Cable Management Sleeve Wire Wraps,Startech.Com,WKSTNCMFLX,19.32,3,Cables,Herramientas y Kits,,,,,
-,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,116.92,264,Suministros y Medios,Suministros Láser,260106,,139117,,151236
+,5576933,HP 151A Black Original LaserJet Toner IS,Hp,W1510A,116.92,264,Suministros y Medios,Suministros Láser,260106,,139117,149990,150680
 ,5576934,HP 151X Black Original LaserJet Toner IS,Hp,W1510X,236.52,16,Suministros y Medios,Suministros Láser,260341,,279990,,295692
 ,5577005,HP 154A Black Org LaserJet Tank Rld Kit,Hp,W1540A,10.67,27,Suministros y Medios,Suministros Láser,260326,,12695,,14391
 ,5577006,HP 154X HY Blk Org LaserJetTank Rld Kit,Hp,W1540X,16.03,172,Suministros y Medios,Suministros Fax/Fotocopiadoras,260578,,19124,,20992
@@ -671,7 +671,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5909614,TINTA 55ML PFI-031 MAGENTA,Canon,6265C001,35.72,5,Suministros y Medios,Suministros para Plotters,260925,,69990,,69990
 ,5909615,Tanque de tinta 300 ml PFI-321 Magenta,Canon,6269C001,108.29,2,Suministros y Medios,Suministros para Plotters,278672,,149990,,149990
 ,5915075,Tinta HP DesignJet Plotter 300-ml Negro,Hp,498N8A,157.41,99,Suministros y Medios,Suministros Inyección de Tinta,261554,,186900,196990,203791
-,5915079,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,157.29,19,Suministros y Medios,Suministros Inyección de Tinta,259861,,186899,,208875
+,5915079,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,157.29,19,Suministros y Medios,Suministros Inyección de Tinta,259861,,186899,,208641
 ,5915080,Tinta HP DesignJet Plotter 300-ml Magent,Hp,676M7A,157.33,35,Suministros y Medios,Suministros Inyección de Tinta,262912,,176938,,200892
 ,5915081,Tinta HP DesignJet Plotter 300-ml Amaril,Hp,676M8A,156.43,33,Suministros y Medios,Suministros Inyección de Tinta,259860,,186566,,206566
 ,5916676,AC POWER SUPPLY 12V 30W 1 35 X 3 5MM VI,Honeywell,3011-8248-001,59.69,8,Componentes de Sistema,Fuentes de Poder para Computadores Espec,,,,,
@@ -737,8 +737,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6278893,Adaptador USB Wi-Fi Bluetooth WD02AT,Benq,5A.F8Y28.DE1,40.99,6,Dispositivos de Red,Tarjetas de Red inalámbricas,398402,,51121,,51917
 ,6280483,TONER LASERJET 222X CARTRIDGE AZUL,Hp,W2221X,97.79,31,Suministros y Medios,Suministros Inyección de Tinta,262183,,101517,,122182
 ,6280484,TONER LASERJET 222X CARTRIDGE MAGENTA,Hp,W2223X,97.86,27,Suministros y Medios,Suministros Inyección de Tinta,262152,,101679,,122292
-,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,84.34,28,Suministros y Medios,Suministros Inyección de Tinta,262283,,99488,,108957
-,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,97.84,24,Suministros y Medios,Suministros Inyección de Tinta,262151,,103355,,115822
+,6280535,TONER LASERJET 222X CARTRIDGE NEGRO,Hp,W2220X,84.34,28,Suministros y Medios,Suministros Inyección de Tinta,262283,,99488,,107031
+,6280536,TONER LASERJET 222X CARTRIDGE AMARILLO,Hp,W2222X,97.84,24,Suministros y Medios,Suministros Inyección de Tinta,262151,,103355,,119086
 ,6280537,TONERLASERJET NEGRO,Hp,W1030XC,120.45,190,Suministros y Medios,Suministros Láser,354484,,163990,,163990
 ,6281645,TONER CONTRACTUAL ALTA CAPACIDAD AZUL,Hp,W2151XC,109.16,32,Suministros y Medios,Suministros Láser,399734,,,,
 ,6281646,TONER CONTRACTUAL ALTA CAPACIDAD AMARILL,Hp,W2152XC,109.16,30,Suministros y Medios,Suministros Láser,399736,,,,
@@ -760,7 +760,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6363036,MAGIC KEYBOARD TOUCH ID-LAM,Apple,MXCK3LA/A,135.42,34,Dispositivos de Entrada,Teclados,269661,,157024,,164460
 ,6376006,Color LaserJet 550-sheet Media Tray,Hp,6QN57A,331.27,1,Impresoras,"Bandejas, Cajones y Alimentadores Sobre",405691,,376988,,376988
 ,6379270,Filtro de Privacidad para Dell P3424WE,Startech.Com,34C29-PRIVACY-SCREEN,172.62,30,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,
-,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,155.03,15,Impresoras,Multifuncionales Inkjet,258026,,164990,189990,187156
+,6379931,MULTIFUNCIONAL DCP-T530DW,Brother,DCPT530DW,155.03,15,Impresoras,Multifuncionales Inkjet,258026,,164990,189990,187058
 ,6385008,Adaptador USB a Serie RS232 de 30cm,Startech.Com,1P1FFC-USB-SERIAL,41.2,9,Cables,Cables Seriales y Adaptadores,,,,,
 ,6385590,THINKSYSTEM 2.5IN VA 480GB READ INTENSIV,Lenovo,4XB7A90873,1492.0,10,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),399894,,1651880,,1775451
 ,6391437,DOCK USB C - MONITOR CUADRUPLE 4K 60 HZ,Startech.Com,DK31C4DPPD,227.98,3,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,
@@ -845,8 +845,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6709674,MBP 14 SL/10C/10C GPU/24GB/1TB-CHL,Apple,MDE64CI/A,2142.1,42,Computadores Servidores y Notebooks,Notebooks,360395,,2343990,2343990,2398390
 ,6709678,DB SATELLITE PRO C50-K - I5 8G 512 156,Dynabook,PSY29U-4UT002,612.26,2,Computadores Servidores y Notebooks,Notebooks,366594,,834990,,834990
 ,6711084,400 QUIET PINK WIRELESS MOUSE,Hp,AZ7B5AA#ABA,16.89,1930,Dispositivos de Entrada,Mouse,,,,,
-,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,12.89,2782,Suministros y Medios,Suministros Inyección de Tinta,384467,,14580,19990,17333
-,6711403,HP 668 NEGRO ORIGINAL INK ADVANTAGE CART,Hp,7FP37VL,14.21,2240,Suministros y Medios,Suministros Inyección de Tinta,384466,,16199,21990,19077
+,6711400,HP 668 TRI-COLOR ORIGINAL INK ADVANTAGE,Hp,7FP36VL,12.89,2782,Suministros y Medios,Suministros Inyección de Tinta,384467,,14580,19990,17721
+,6711403,HP 668 NEGRO ORIGINAL INK ADVANTAGE CART,Hp,7FP37VL,14.21,2240,Suministros y Medios,Suministros Inyección de Tinta,384466,,16199,21990,19320
 ,6711944,400 QUIET BLACK WIRELESS MOUSE US,Hp,AZ7B2AA#ABA,16.79,1489,Dispositivos de Entrada,Mouse,,,,,
 ,6711945,400 QUIET MAPLE WIRELESS MOUSE US,Hp,AZ7B6AA#ABA,16.89,557,Dispositivos de Entrada,Mouse,,,,,
 ,6711946,400 QUIET PUP WRLS MSE,Hp,AZ7B7AA#ABA,16.85,1569,Dispositivos de Entrada,Mouse,,,,,
