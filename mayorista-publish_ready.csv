@@ -1,276 +1,992 @@
-pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-10719,1004026,TINTA HP 72 130 ML GRIS,Hp,C9374A,94.65,16,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Tintas- Cartridge C9374A Gris 72,0,0,False,{},,ingram,375345,,,,
-15787,1112657,HP BLc 10Gb SR SFP+ Opt,Hewlett Packard Enterprise,455883-B21,929.1,5,Dispositivos de Red,Transceivers,ok,True,0,0,0,HPE Módulo De Transceptor Sfp+ 10 Gige 455883-B21,0,0,False,{},,ingram,,,,,
-940,1189743,CARTUCHO DE TINTA HP 22 TRICOLOR 165 PÃ,Hp,C9352AL,30.97,3,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 22 Tricolor ,0,0,False,{},,ingram,260077,,34900,,41486
-9430,1534334,CARTUCHO DE TINTA CLI-126 NEGRO,Canon,4561B001,8.85,1,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original Canon CLI-126 Negro,0,0,False,{},,ingram,259525,,12489,,12489
-23396,1744616,CINTA TZE241,Brother,TZE-241,13.36,125,Suministros y Medios,Cartuchos Ópticos CD/DVD/Magnéticos,ok,True,0,0,0,Cinta TZe-241,0,0,False,{},,ingram,,,,,
-30709,1861257,"Cable de 4,5m EstÃ©reo Delgado de 3,5mm",Startech.Com,MU15MMS,7.07,15,Cables,Cables y Adaptadores de Video,ok,False,0,0,0,Cable Audio Estéreo 3.5mm - 4.5m,0,0,False,{},,ingram,,,,,
-32838,1861437,3m USB 2.0 A to B Cable - M/M,Startech.Com,USB2HAB3M,4.45,69,Cables,Cables y Adaptadores USB,ok,True,0,0,0,Cable para Impresora USB A Macho a USB B Macho 3 mt,0,0,False,{},,ingram,,,,,
-11934,2035404,CARTUCHO TINTA HP 662 NEGRO,Hp,CZ103AL,10.52,754,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 662 Negro ,0,0,False,{},,ingram,260087,,29990,,32653
-14028,2406550,CARTUCHO DE TINTA CLI-151 AMARILLO,Canon,6531B001,8.46,175,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Canon CLI-151 Amarillo,0,0,False,{},,ingram,259643,,9590,10990,11390
-30712,2463150,4 Port USB 3.0 Hub Laptop Expansion Hub,Startech.Com,ST4300MINU3B,21.53,3,Dispositivos de Red,ROMs de Inicio y Brackets,ok,False,0,0,0,HUB USB 3.0 Super Speed 4 Puertos,0,0,False,{},,ingram,,,,,
-17147,2470846,CARTUCHO TINTA HP 971 MAGENTA 2500 PÃG,Hp,CN623AM,84.5,3,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original HP 971 Magenta ,0,0,False,{},,ingram,259562,,94278,,104448
-14996,2485873,Imp Matriz LX 350 (reemplaza LX 300II+),Epson,C11CC24011,173.39,4,Impresoras,Impresoras de Matriz de Punto,ok,True,0,0,0,Impresora Matriz LX-350+ 9 pines c/angosto,0,0,False,{},,ingram,19914,,196299,,206970
-55242,2690207,APC SMART-UPS SRT 6000VA 230V,Apc,SRT6KXLI,2577.7,10,Protección Eléctrica y Racks,UPS,ok,True,0,0,0,UPS APC SMART-UPS SRT 6000VA 230V,0,0,False,{},,ingram,66409,,3453440,,3615669
-33822,2888310,508A YELLOW LJ TONER CART-CF362A.,Hp,CF362A,230.47,33,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original HP 508A Amarillo ,0,0,False,{},,ingram,259774,,275700,,290764
-33823,2888307,TONER HP 508A CIAN 5000 PAG,Hp,CF361A,230.48,33,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original HP 508A Cyan ,0,0,False,{},,ingram,260927,,275700,,285995
-18825,2864309,CARTUCHO TINTA HP 935XL MAGENTA 1000 PAG,Hp,C2P25AL,22.66,6,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original HP 935 XL Magenta ,0,0,False,{},,ingram,259784,,36990,,36990
-21106,3053747,CARTUCHO DE TINTA PGI-1100 XL NEGRO,Canon,9187B001,17.7,7,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Canon PGI-1100XL Negro,0,0,False,{},,ingram,259651,,22990,22990,22990
-21108,3053749,CARTUCHO DE TINTA PGI-1100 XL MAGENTA,Canon,9209B001,13.01,19,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Canon PGI-1100XL Magenta,0,0,False,{},,ingram,259650,,13990,,15797
-21107,3053748,CARTUCHO DE TINTA PGI-1100 XL CIAN,Canon,9208B001,12.97,9,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Canon PGI-1100XL Cyan,0,0,False,{},,ingram,259648,,16990,16990,16990
-21109,3053750,CARTUCHO DE TINTA PGI-1100 XL AMARILLO,Canon,9210B001,13.01,19,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Canon PGI-1100XL Amarillo,0,0,False,{},,ingram,259647,,16412,16990,16838
-21141,3065078,CARTUCHO DE TINTA HP 46 NEGRO 1500 PÃG,Hp,CZ637AL,11.27,120,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original HP 46 Negro ,0,0,False,{},,ingram,260069,,13807,,16252
-21519,3085417,TINTA T296320-AL MAGENTA 250 PAG,Epson,T296320-AL,12.26,4,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Epson T296320-AL Magenta,0,0,False,{},,ingram,259947,,,,
-24361,3286831,Impresora PortÃ¡til Epson WF-100,Epson,C11CE05302,294.09,3,Impresoras,Impresoras de Inyección de Tinta,ok,True,0,0,0,Impresora Tinta Portatil con Bateria WF100,0,0,False,{},,ingram,58099,,324927,,347601
-23418,3338018,O DE TINTA HP 954 CIAN 700 PÃG,Hp,L0S50AL,25.31,91,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original HP 954 Cyan ,0,0,False,{},,ingram,259507,,26900,,50397
-32648,3348479,TINTA T748XXL120-AL 10K PAG,Epson,T748XXL120-AL,45.2,184,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Epson T748XXL120-AL Negro,0,0,False,{},,ingram,259883,,48217,,56130
-23419,3338019,CARTUCHO DE TINTA HP 954 MAGENTA 700 PÃ,Hp,L0S53AL,25.53,48,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original HP 954 Magenta ,0,0,False,{},,ingram,259511,,28900,,31419
-23814,3403896,CARTUCHO DE TINTA HP 974A PAGEWIDE NEGRO,Hp,L0R96AL,76.26,4,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original HP 974 Negro ,0,0,False,{},,ingram,259793,,92765,,101114
-31724,3407116,HPE 1TB SATA 7.2K LFF LP HDD,Hewlett Packard Enterprise,861686-B21,316.6,1,Dispositivos de Almacenamiento,Discos Duros SATA,ok,True,0,0,0,Disco Server 1TB SATA 7.2K LFF LP DS HDD (ML110),0,0,False,{},,ingram,46471,,338900,,338900
-31799,3444377,CINTA TZEMQE31,Brother,TZEMQE31,7.51,7,Suministros y Medios,Suministros Matriz de Punto,ok,True,0,0,0,Cinta rosa pastel-Texto negro TZe-MQE31  12mm / 4m (Ancho/Largo) ,0,0,False,{},,ingram,405601,,,,
-55862,3650664,UPS SRT 3000VA 230V,Apc,SRT3000XLI,1933.1,8,Protección Eléctrica y Racks,Administración UPS,ok,True,0,0,0,UPS APC SRT3000XLI Smart-UPS Online 3000VA,0,0,False,{},,ingram,66056,,,,
-54969,3694741,HPE MSA 16GB SW FC SFP 4PK XCVR,Hewlett Packard Enterprise,C8R24B,972.6,1,Dispositivos de Red,Transceivers,ok,True,0,0,0,HPE MSA 16GB SW FC SFP 4PK XCVR,0,0,False,{},,ingram,,,,,
-55020,3962919,HP 202A Magenta LaserJet Toner Cartridge,Hp,CF503A,84.4,15,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original HP 202A Magenta,0,0,False,{},,ingram,259852,,93500,99900,104843
-54955,4097380,Aruba 10G SFP+ LC SR 300m MMF XCVR,Aruba,J9150D,696.46,2,Dispositivos de Red,Transceivers,ok,True,0,0,0,Aruba 10G SFP+ LC SR 300m MMF XCVR,0,0,False,{},,ingram,,,,,
-56544,4308743,APC Smart-UPS 2200VA LCD RM 2U 230V with,Apc,SMT2200RMI2UC,1241.6,2,Protección Eléctrica y Racks,UPS,ok,True,0,0,0,APC Smart-UPS 2200VA LCD RM 2U 230V with,0,0,False,{},,ingram,115593,,,,
-56101,4342088,MOUSE OPTICO INALAMBRICO WM126,Dell,WM126-BK,13.92,137,Dispositivos de Entrada,Mouse,ok,True,0,0,0,Mouse Inalámbrico WM126 - Negro,0,0,False,{},,ingram,,,,,
-31611,4373230,TONER TN213C CIAN,Brother,TN213C,53.99,76,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original Brother TN-213 Cyan,0,0,False,{},,ingram,259714,,62066,,69103
-31612,4373231,TONER TN213M MAGENTA,Brother,TN213M,53.99,52,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original Brother TN-213 Magenta,0,0,False,{},,ingram,259715,,63295,79990,70360
-31616,4373235,TONER TN217M MAGENTA,Brother,TN217M,71.46,20,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original Brother  TN-217 Magenta,0,0,False,{},,ingram,259533,,83498,109990,91057
-34019,4461369,BOLSA T941120-AL NEGRO 5K PAG,Epson,T941120-AL,27.08,113,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Bolsa-Tinta Negra T941,0,0,False,{},,ingram,259690,,30944,,36311
-34021,4461371,BOLSA T941320-AL MAGENTA 5K PAG,Epson,T941320-AL,41.44,106,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Bolsa-Tinta Magenta T941,0,0,False,{},,ingram,259811,,46624,52990,51832
-35078,4492534,HP 104A Blk Laser Imaging Drum,Hp,W1104A,63.34,33,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Tambor original HP 104A,0,0,False,{},,ingram,405804,,,,
-27776,4496109,SANDISK ULTRA MICRO SD HC 16GB CLASS 10,Western Digital,SDSQUNS-016G-GN3MA,9.55,1825,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,ok,True,0,0,0,Memoria 16GB microSDHC (80MB/s) UHS-I U1 Ultra v1,0,0,False,{},,ingram,43688,,12990,13990,13656
-34087,4520430,M1120 ECOTANK B/N A4 32 PPM,Epson,C11CG96303,169.81,1,Impresoras,Impresoras de Inyección de Tinta,ok,True,0,0,0,Impresora Tinta Continua Blanco y Negro EcoTank M1120 WiFi - Direct / Ethernet ,0,0,False,{},,ingram,61927,,,,
-33767,4529067,MEMORIA MICROSDXC NINTENDO SWITCH 128GB,Western Digital,SDSQXAO-128G-GNCZN,34.91,254,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,ok,True,0,0,0,Memoria 128GB MicroSDXC para Nintendo Switch™ - Mario Edition,0,0,False,{},,ingram,58892,,39990,,48588
-40240,4547037,BACK UPS PRO BR 1200VA,Apc,BR1200SI,244.2,4,Protección Eléctrica y Racks,UPS,ok,True,0,0,0,UPS 1200VA/720W Back UPS Pro Sinewave - Interactiva,0,0,False,{},,ingram,94419,,292890,,329006
-35742,4595063,DISCO EXTERNO GAMING NEGRO P10 4TB 2.5,Western Digital,WDBA3A0040BBK-WESN,168.61,23,Dispositivos de Almacenamiento,Discos Duros USB,ok,True,0,0,0,Disco Externo 4TB WD_Black P10 Game Drive,0,0,False,{},,ingram,72725,,,,
-36562,4792008,TINTA T206220-AL 200 PAG,Epson,T206220-AL,11.94,48,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Epson T206220-AL Cyan,0,0,False,{},,ingram,259574,,14084,,15516
-56632,4958281,POWER INJECTOR 802.3AT FOR AIRONET ACCES,Cisco,AIR-PWRINJ6=,137.04,1,Dispositivos de Red,Cables y Componentes inalámbricos,ok,True,0,0,0,Cisco PoE Inyector para Access Point,0,0,False,{},,ingram,,,,,
-56633,4967016,"Catalyst 9200L 48-port PoE+, 4 x 1G, Ne",Cisco,C9200L-48P-4G-E,4841.3,4,Dispositivos de Red,Switches Estaqueables,ok,True,0,0,0,Switch Cisco Catalyst C9200L 48 Puertos PoE 10/100/1000 Mbps,0,0,False,{},,ingram,381042,,,,
-56054,5140508,Laser projector WUXGA 6000 ansi lumen,Viewsonic,LS920WU,2599.3,1,Dispositivos Audio/Video,Proyectores LCD,ok,False,0,0,0,"Proyector ViewSonic LS920WU, WUXGA, 6000 Lúmenes",0,0,False,{},,ingram,280681,,,,
-56851,5137459,HP Color LaserJet Managed E45028dn,Hp,3QA35A,434.6,29,Impresoras,Impresoras Láser/LED color,ok,True,0,0,0,Impresora Láser LaserJet Managed E45028dn,0,0,False,{},,ingram,168925,,,,
-56034,5177633,GXT748 CONTROLLER SKIN PS5 -BLUE,Trust,24171,5.11,65,Video Juegos y Consolas,Joysticks,ok,False,0,0,0,GXT748 CONTROLLER SKIN PS5 -BLUE,0,0,False,{},,ingram,,,,,
-40938,5197033,ORGANIZING MONITOR STAND,Kensington,K58300WW,25.11,14,Computadores Servidores y Notebooks,Accesorios para Tablet PCs,ok,True,0,0,0,"Base para Monitor con organización Space Saving hasta 27""",0,0,False,{},,ingram,,,,,
-55239,5217947,HPE 3.84TB SATA MU SFF BC MV SSD,Hewlett Packard Enterprise,P40505-B21,22422.0,12,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),ok,True,0,0,0,Disco Server HPE 3.84TB SATA MU SFF BC MV SSD,0,0,False,{},,ingram,215427,,9893990,,21514025
-42265,5223287,DS-530 II,Epson,B11B261202,345.96,46,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,True,0,0,0,Escaner Dúplex WorkForce DS-530 II ,0,0,False,{},,ingram,,,,,
-55957,5241196,DS-770II DOCUMENT SCANNER,Epson,B11B262201,530.17,7,Cámaras y Escáners,Escáners Empresariales/Producción,ok,True,0,0,0,Escaner DS-770 II Dúplex,0,0,False,{},,ingram,,,,,
-54113,5241198,POWERLITE 118 3LCD 3800 Lumenes XGA,Epson,V11HA03020,646.81,1,Dispositivos Audio/Video,Proyectores LCD,ok,True,0,0,0,POWERLITE 118 3LCD 3800 Lumenes XGA,0,0,False,{},,ingram,271087,,,,
-56867,5274438,MONITOR VA2715-2K 27IN,Viewsonic,VA2715-2K-MHD,104.17,341,Pantallas,Monitores LCD/LED,ok,True,0,0,0,MONITOR  VA2715-2K   27IN,0,0,False,{},,ingram,385649,,129504,,129504
-52303,5332132,Kensington UH1400p USB-C Mobile Hub,Kensington,K33820WW,67.27,8,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,ok,True,0,0,0,Docking Station UH1400P USB-C 4K ,0,0,False,{},,ingram,,,,,
-55339,5344776,PIXMA G 4110 WIFI-ADF-FAX,Canon,2316C005,163.46,18,Impresoras,Multifuncionales Inkjet,ok,True,0,0,0,Multifuncional tinta Continua PIXMA G4110 WiFi / ADF,0,0,False,{},,ingram,52052,,,,
-54920,5452131,HEADPHONE MONO WITH USB MICROPONE K80100,Kensington,K80100WW,9.37,17,Dispositivos Audio/Video,Combos Micrófono+Cintillo/audífono p/PCs,ok,True,0,0,0,Audifonos Mono con micrófono Kensington USB ,0,0,False,{},,ingram,149890,,,,
-56087,5464805,Thermal Transfer Printer (74/300M) ZD421,Zebra,ZD4A042-301E00EZ,353.96,110,Impresoras,Impresoras de Etiquetas Código de Barras,ok,True,0,0,0,Impresora POS ZD421,0,0,False,{},,ingram,,,,,
-54960,5465421,C9120AX INTERNAL 802.11AX 4X4 4 MIMO IOT,Cisco,C9120AXI-A,1746.9,3,Dispositivos de Red,Access Points (AP) inalámbricos,ok,True,0,0,0,C9120AX INTERNAL 802.11AX 4X4 4 MIMO IOT,0,0,False,{},,ingram,381631,,1840000,,1840000
-56549,5480826,Ecotank L6490,Epson,C11CJ88303,348.49,47,Impresoras,Multifuncionales Inkjet,ok,True,0,0,0,Multifuncional Tinta Continua EcoTank L6490 WiFi / Ethernet / Dúplex,0,0,False,{},,ingram,133356,,395990,,442990
-52891,5500686,MERAKI MR36 WI FI 6 INDOOR AP,Cisco,MR36-HW,921.31,12,Dispositivos de Red,Access Points (AP) inalámbricos,ok,True,0,0,0,Access Point Cisco Meraki MR36,0,0,False,{},,ingram,378689,,,,
-56096,5503742,DELL ECOLOOP PRO MOCHILA 15 - CP5723,Dell,DELL-CP5723,36.99,16,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,ok,True,0,0,0,"Mochila Pro Plus EcoLoop 14""-16""",0,0,False,{},,ingram,,,,,
-44162,5505954,GI-13 GRIS,Canon,4704C001,12.31,10,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Botella de Tinta Original Canon GI-13 Gris,0,0,False,{},,ingram,259820,,15989,,15989
-56538,5528470,APC EASY UPS ON-LINE SRV 1000VA 900W 230,Apc,SRV1KI-E,352.5,38,Protección Eléctrica y Racks,UPS,ok,True,0,0,0,APC EASY UPS ON-LINE SRV 1000VA 900W 230,0,0,False,{},,ingram,368978,,399900,,421829
-45886,5548644,LC402MS REND 550 PAGS. MFCJ6740DW,Brother,LC402MS,14.85,24,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Brother LC402M Magenta,0,0,False,{},,ingram,259708,,17237,18990,19761
-45889,5549066,LC402XLCS REND 1500 PAGS. MFCJ6740DW,Brother,LC402XLCS,21.44,59,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original Brother LC402XLCS Cyan,0,0,False,{},,ingram,259333,,26990,26990,28749
-56636,5558960,1000BASE LX LH SFP TRANSCEIVER MODULE MM,Cisco,GLC-LH-SMD=,807.05,1,Dispositivos de Red,Transceivers,ok,True,0,0,0,Cisco GLC-LH-SMD SFP Transceptor Óptico,0,0,False,{},,ingram,,,,,
-54967,5558961,1000BASE T SFP TRANSCEIVER MODULE FOR CA,Cisco,GLC-TE=,362.99,16,Dispositivos de Red,Transceivers,ok,True,0,0,0,1000BASE T SFP TRANSCEIVER MODULE FOR CA,0,0,False,{},,ingram,,,,,
-55414,5626683,CRUCIAL P3 4000GB 3D NAND NVME PCIE M 2,Crucial,CT4000P3SSD8,329.73,111,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,False,0,0,0,Unidad SSD 4TB P3 M.2 2280 NVMe PCIe 3.0,0,0,False,{},,ingram,149265,,329990,,329990
-56277,5629316,ARUBA ION 1930 24G 4SFP+ 370W SW,Hewlett Packard Enterprise,JL684B,391.2,11,Dispositivos de Red,Switches Estaqueables,ok,True,0,0,0,Switch HPE Aruba Instant On 1930 24G PoE 370W | 4SFP/SFP+,0,0,False,{},,ingram,387907,,,,
-45026,5722927,PACK BT5001CMY,Brother,BT50013PKMEX,16.93,27,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,True,0,0,0,Pack 3 Botellas de Tinta Original Brother BT5001CMY (Cyan - Magenta - Amarillo),0,0,False,{},,ingram,260112,,20990,,22990
-56088,5754933,HP CLJLASERJET PRO 4203DW PRNTR,Hp,5HH48A,332.62,39,Impresoras,Multifuncionales Láser Color,ok,True,0,0,0,Impresora Láser LaserJet Pro 4203dw,0,0,False,{},,ingram,216948,,404319,,420381
-56562,5785892,"Proyector Laser L210W WXGA, 4500 lumen",Epson,V11HA70020,1548.8,1,Dispositivos Audio/Video,Proyectores LCD,ok,True,0,0,0,Proyector Láser Inalámbrico PowerLite L210W 4500 Lúmenes WXGA 3LCD,0,0,False,{},,ingram,272195,,1691344,,1812228
-56094,5890978,Poly Studio X30 All In One Video Bar wit,Poly,852R3AA#ABM,1239.7,1,Comunicaciones,Sistemas de Videoconferencia,ok,True,0,0,0,Barra de video All-In-One Poly Studio X30 ,0,0,False,{},,ingram,,,,,
-50505,5906597,CORE I5-14600K 3 50GHZ SKTLGA1700 24.00M,Intel,BX8071514600K,258.1,19,Componentes de Sistema,Procesadores Intel,ok,True,0,0,0,CPU Intel Core i5-14600K (s1700),0,0,False,{},,ingram,222319,,289990,,310820
-55381,5929932,SSD X9 PRO 2000GB 2TB EXTERNAL PORTABLE,Crucial,CT2000X9PROSSD9,287.65,33,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),ok,True,0,0,0,Unidad SSD Externa 2TB X9 PRO USB-C SSD,0,0,False,{},,ingram,227591,,289900,,289900
-56637,5934625,CATALYST 9200L 24 PORT POE 4 X 1G,Cisco,C9200L-24P-4G-E,2566.9,15,Dispositivos de Red,Switches Estaqueables,ok,True,0,0,0,Switch Cisco Catalyst C9200L 24 Puertos PoE 10/100/1000 Mbps,0,0,False,{},,ingram,380632,,2191661,,2442677
-51060,5939667,TONER TN3619 DL RENDIMIENTO HASTA 18000,Brother,TN3619,168.23,87,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,True,0,0,0,Toner Original Brother TN-3619 Negro,0,0,False,{},,ingram,259762,,193413,257990,217177
-51064,5939021,IMPRESORA LASER MONO HLL5210DN,Brother,HLL5210DN,228.7,16,Impresoras,Impresoras Láser/LED monocromáticas,ok,True,0,0,0,Impresora Láser Blanco y Negro HLL-5210DN Ethernet,0,0,False,{},,ingram,228424,,259990,280130,284453
-49672,6111380,TINTA C13T52L220 SJIC41PC C4000 CYAN,Epson,C13T52L220,23.86,5,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Origina Epson SJIC41P-C Cyan,0,0,False,{},,ingram,403643,,159990,,159990
-49673,6111381,TINTA C13T52L320 SJIC41PM C4000 MAGENTA,Epson,C13T52L320,23.86,4,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Origina Epson SJIC41P-M Magenta,0,0,False,{},,ingram,403643,,159990,,159990
-51469,6119455,SSD GAMMIX S70 1000GB Gen4 NVMe M.2,Adata Technology,AGAMMIXS70B-1T-CS,203.39,184,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,True,0,0,0,Unidad SSD 1TB PCIe NVMe Gen4 M.2 Gammix S70 Blade - PS5/PC,0,0,False,{},,ingram,127680,,209500,,219716
-53930,6119458,SSD LEGEND 710 256GB PCIe Gen3 NVMe M.2,Adata Technology,ALEG-710-256GCS,57.93,241,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,True,0,0,0,Unidad SSD 256GB LEGEND 710,0,0,False,{},,ingram,219857,,62790,,69690
-56089,6128954,LA DIRECT TH LA DIRECT THERMAL PRINTER Z,Zebra,ZD4A022-D01E00EZ,292.8,14,Impresoras,Impresoras de Etiquetas Código de Barras,ok,True,0,0,0,Impresora POS ZD411,0,0,False,{},,ingram,,,,,
-56301,6152571,QUBE 500 FLATPACK MACARON EDITION,Cooler Master,Q500-DGNN-S00,76.73,12,Servicios y Garantías,Servicios de Implementación/Soporte,ok,True,0,0,0,QUBE 500 FLATPACK MACARON EDITION,0,0,False,{},,ingram,228477,,109990,,129990
-56187,6179728,THINKSYSTEM 16GB TRUDDR5 4800MHZ 1RX8 EC,Lenovo,4X77A88511,588.0,21,Componentes de Sistema,Memoria Genérica,ok,True,0,0,0,THINKSYSTEM 16GB TRUDDR5 4800MHZ 1RX8 EC,0,0,False,{},,ingram,298252,,439584,,612958
-55847,6235416,B3404CVF-Q50063X I7-1355U 16G 1T 14 W11P,Asus,90NX06Z1-M002K0,1061.5,9,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ExpertBook B3 14"" Intel Core i7-1355U 16GB RAM 1TB SSD Windows 11 Pro B3404CVF-Q50063X ",0,0,False,{},,ingram,253259,,1099990,,1147990
-56857,6224614,HP Clr LaserJtPro Multifuncional 3303fdw,Hp,499M8A,363.43,10,Impresoras,Multifuncionales Láser Color,ok,True,0,0,0,Multifuncional Tinta Continua HP Color LaserJet Pro 3303fdw,0,0,False,{},,ingram,252301,,468990,,468990
-55216,6252450,DELL MONITOR P2425H,Dell,P2425H,149.5,100,Pantallas,Monitores LCD/LED,ok,True,0,0,0,"Monitor Dell 23.8"" FHD, IPS, 100Hz,VESA,  P2425H",0,0,False,{},,ingram,,,,,
-56098,6247006,HP Zbook Power G11-CU9-16GB-1TB-V6GB-W11,Hp,A31DRLT#ABM,2308.5,2,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook Zbook Power G11 Intel Ultra 9-185H 16GB RAM 1TB SSD 16"" RTX A1000 6GB Windows 11 Pro A31DRLT#ABM",0,0,False,{},,ingram,,,,,
-54850,6271393,SSD BX500 4000GB (4TB) NAND SATA 2.5,Crucial,CT4000BX500SSD1,357.25,57,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),ok,True,0,0,0,Unidad SSD 4TB BX500  NAND SATA 2.5,0,0,False,{},,ingram,252386,,369900,,369900
-56093,6289778,POLY TC10 TOUCH CONTROLLER BLACK,Poly,875K5AA,1222.9,1,Comunicaciones,Componentes Sistemas de Videoconferencia,ok,True,0,0,0,Control táctil Poly TC10,0,0,False,{},,ingram,,,,,
-55848,6290527,MEMORY 48GB DDR5 5600 SODIMM,Crucial,CT48G56C46S5,385.97,11,Componentes de Sistema,Memoria Genérica,ok,False,0,0,0,Memoria RAM Notebook DDR5 48GB  5600MHz SODIMM,0,0,False,{},,ingram,252451,,,,
-56639,6298435,CISCO CATALYST 9115AX SERIES,Cisco,C9115AXI-A,1090.9,7,Dispositivos de Red,Access Points (AP) inalámbricos,ok,True,0,0,0,Access Point Cisco Catalyst C9115AXI WiFi 6 Interior PoE,0,0,False,{},,ingram,381469,,,,
-52317,6328374,Dell Wireless TECLADO KB500 - ES,Dell,KB500-BK-R-LTN,22.0,51,Comunicaciones,Teclados área de Movilidad,ok,True,0,0,0,Teclado inalámbrico KB500 - Español,0,0,False,{},,ingram,,,,,
-53825,6336726,Memory 32 GB - 2Rx8 DDR5 RDIMM 5600 MT/s,Dell,AC888061,1250.0,10,Impresoras,Memoria para Impresoras,ok,True,0,0,0,Memoria Server 32GB - 2RX8 DDR5 RDIMM 5600 MT/S,0,0,False,{},,ingram,265855,,,,
-56926,6343103,285K CORE ULTRA 9 PROCESSOR,Intel,BX80768285K,619.35,14,Componentes de Sistema,Procesadores Intel,ok,True,0,0,0,CPU Intel Core Ultra 9 285K (s1851),0,0,False,{},,ingram,260864,,627990,,757172
-54998,6368103,MBP 16 SB/14C CPU/20C GPU/24GB/512G-CHL,Apple,MX2X3CI/A,2332.6,1,Computadores Servidores y Notebooks,Notebooks,ok,False,0,0,0,"Macbook Pro 16"" M4 Pro 24GB 512GB SSD Space Black macOS MX2X3CI/A",0,0,False,{},,ingram,257121,,,,
-56071,6371406,HPE PROLIANT ML350 GEN11 8SFF 1P 4410Y 1,Hewlett Packard Enterprise,P75341-DM5,10218.0,1,Computadores Servidores y Notebooks,Servidores en Rack,ok,True,0,0,0,Server HPE PROLIANT ML350 GEN11 8SFF 1P 4410Y 1,0,0,False,{},,ingram,,,,,
-53806,6375535,IDEAPAD 3 GEN 8 R5-7520U 8G 512G 15 W11,Lenovo,82XQ00LWCL,401.38,1984,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook Ideapad Slim 3 Gen 8 AMD Ryzen 5-7520U 15.6"" FHD 60Hz 8GB 512GB SSD Windows 11 Gris 82XQ00LWCL + Bolso",0,0,False,{},,ingram,267797,,489990,519990,519353
-55584,6392082,P5405CSA-NZ0130X U7 258V 32G 1TB 14 W11P,Asus,90NX0861-M008D0,1260.3,18,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ExpertBook P5 14"" Intel Ultra 7 258V 32GB RAM 1TB SSD Windows 11 Pro",0,0,False,{},,ingram,262944,,1499990,,1499990
-53725,6397867,PRIME-RTX5080-O16G,Asus,90YV0LX0-M0AA00,1531.3,20,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,True,0,0,0,Tarjeta de Video NVIDIA GeForce RTX5080 Prime O16G,0,0,False,{},,ingram,265431,,1784990,,1806892
-54842,6399138,SSD LEGEND 860 500GB 5000-3000 MBs,Adata Technology,SLEG-860-500GCS,93.86,243,Dispositivos de Almacenamiento,Discos de Estado Sólido M.2 (SSD),ok,True,0,0,0,Unidad SSD 500GB LEGEND 860 5000-3000 MBs,0,0,False,{},,ingram,266706,,97900,,109287
-54581,6397869,ROG-ASTRAL-RTX5080-O16G-GAMING,Asus,90YV0LV0-M0AA00,1794.0,6,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,True,0,0,0,Tarjeta de Video NVIDIA ROG ASTRAL RTX5080 O16G GAMING,0,0,False,{},,ingram,269748,,2439990,,2641180
-54982,6450887,70W USB-C POWER ADAPTER,Apple,MXN53CI/A,53.57,56,Comunicaciones,Opciones de Energía,ok,True,0,0,0,Cargador Apple USB C 70 W,0,0,False,{},,ingram,,,,,
-54939,6429332,PROJECTOR BENQ LW550 LED WXGA 1280x800,Benq,9H.JRT77.13L,603.43,2,Dispositivos Audio/Video,Proyectores DLP,ok,True,0,0,0,PROJECTOR BENQ LW550 LED WXGA 1280x800,0,0,False,{},,ingram,274171,,,,
-55154,6457283,THINKBOOK 14 G8 C7 240H 16GB 512GB W11P,Lenovo,21SG009GCL,1011.7,30,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ThinkBook 14 Gen 8  Intel Core 7-240H 14"" 16GB  512GB SSD  Windows 11 Pro 21SG009GCL ",0,0,False,{},,ingram,274278,,1249990,,1249990
-55236,6518304,HPE PROLIANT DL360 GEN11 4510 2.4GHZ 12C,Hewlett Packard Enterprise,P81428-DM5,11827.0,1,Computadores Servidores y Notebooks,Servidores en Rack,ok,False,0,0,0,Server HPE PROLIANT DL360 GEN11 4510 2.4GHZ 12C 1P 1X32GB R 8SFF NS204I U MR408I-O 2X800W PS LA SERVER,0,0,False,{},,ingram,,,,,
-56083,6590065,WORKFORCE PRO EM-C8100 A3 COLOR MFP LA,Epson,C11CL31301,1545.2,10,Impresoras,Multifuncionales Láser Color,ok,True,0,0,0,Multifuncional Tinta Continua WorkForce Pro EM-C8100 USB / WiFi / Ethernet,0,0,False,{},,ingram,278850,,1599900,,1829571
-55994,6581698,B5405CCA LY0210X U7 255H 1TB SSD 32G 14I,Asus,90NX08I1-M007A0,1371.2,4,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ExpertBook B5 Intel Ultra 7 255H 32GB RAM 1 TB SSD 14"" Windows 11 Pro B5405CCA-LY0210X",0,0,False,{},,ingram,318374,,1897568,,1897568
-54848,6597911,SSD MARS 980 PRO 1TB COLORBOX,Adata Technology,SMAR-980P-1TCI,235.53,4,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,False,0,0,0,Unidad SSD 1TB MARS 980 PRO COLORBOX,0,0,False,{},,ingram,278330,,289000,,301995
-56493,6597328,Dell Pro Slim QCS1250; Core i7; 16GB; 51,Dell,1N5GV,1084.6,44,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim,ok,True,0,0,0,Desktop Dell Pro Slim QCS1250 Intel Core i7-14700 16GB RAM 512GB SSD Windows 11 Pro,0,0,False,{},,ingram,,,,,
-57302,6623111,HP ZBOOK FIREFLY 14 INCH G11,Hp,B58KGLS,1084.1,2,Computadores Servidores y Notebooks,Notebooks,ok,False,0,0,0,"Notebook ZBook Firefly G11 14"" Intel Ultra 5 125H 32GB RAM 512GB SSD Windows 11 Pro",0,0,False,{},,ingram,360805,,1206990,,1344256
-54374,6606681,HERO13 Black Ultra Wide Edition,Gopro,CHDRB-133-RW,546.45,40,Cámaras y Escáners,Cámaras Fotográficas Digitales,ok,True,0,0,0,Cámara Hero 13 Black Ultra Wide Edition (-RW),0,0,False,{},,ingram,,,,,
-55815,6618622,MOUSE INALAMBRICO THINKPAD,Lenovo,4X30M56888,10.98,131,Dispositivos de Entrada,Mouse,ok,False,0,0,0,Mouse Inalámbrico compacto ThinkPad Essential - Negro,0,0,False,{},,ingram,92997,,13525,,17828
-54819,6626609,MONITOR 32U631A-B 2560X1440 IPS 31.5PULG,Lg,32U631A-B.AWHQ,154.1,13,Pantallas,Monitores LCD/LED,ok,False,0,0,0,"Monitor LG 32"" QHD IPS 100Hz HDMI USB-C VESA",0,0,False,{},,ingram,,,,,
-56783,6620439,MOTO G86 POWER 5G VERDE 8 PLUS 256,Motorola,PB8W0004CL,234.47,588,Comunicaciones,Smart Phones,ok,True,0,0,0,Celular Moto G86 Power 256GB/8GB 5G Verde Liberado,0,0,False,{},,ingram,292320,,299990,,299990
-55992,6629561,DELL PRO PLUS U7 32GB 1TBSSD W11P 3YR,Dell,PB14250_U7LNL321TBWPS_3WXCTO,1642.2,1,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook Dell Pro Plus Intel Core Ultra 7-268V 14"" 32GB 1TB SSD Windows 11 Pro PB14250 ",0,0,False,{},,ingram,354620,,2061120,,2061120
-55993,6629567,DELL PRO PLUS AMD R7 PRO 350 32GB 1TBSSD,Dell,PB14255_R7KRK321TBWPS_3PSXCTO,1268.0,104,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook Pro Plus 14"" AMD Ryzen 7 Pro 350 32GB RAM 1TB SSD Windows 11 Pro ",0,0,False,{},,ingram,388721,,1498112,,1590981
-57341,6633983,Geforce RTX 5070 TI 16G SHADOW 3X,Msi,912-V531-465,1027.4,26,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,True,0,0,0,Tarjeta de Video NVIDIA Geforce RTX 5070 TI 16G SHADOW 3X,0,0,False,{},,ingram,271704,,1222688,,1248138
-56530,6644591,ASUS DUAL RADEON RX 7600 EVO OC EDITION,Asus,90YV0LD0-M0AA00,301.67,622,Componentes de Sistema,Tarjetas Gráficas AMD,ok,True,0,0,0,Tarjeta de Video AMD DUAL RADEON RX 7600 EVO OC EDITION,0,0,False,{},,ingram,,,,,
-55099,6656335,B1503CVAS75898X 5-120U 512G 16G15.6IN W1,Asus,90NX0801-M06L10,782.3,3,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ExpertBook B1 15.6"" Intel Core Ultra 5 120U 16GB RAM 512GB SSD W11P",0,0,False,{},,ingram,354597,,813362,,813362
-54326,6656344,YOGA BOOK 9 ULTRA 9-285H 32GB 1TB 14IN,Lenovo,83KJ001CCL,1829.5,23,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook AI PC Yoga Book 9i Intel Core Ultra 9-285H 14"" OLED 120Hz  Touch 32GB 1TB Windows 11 Home Azul 83KJ001CCL",0,0,False,{},,ingram,277740,,2149990,,2247937
-57336,6665017,MSI PRO H610M-G,Msi,911-7D46-234,63.47,198,Componentes de Sistema,Tarjetas Madre Intel,ok,True,0,0,0,Placa Madre PRO H610M-G,0,0,False,{},,ingram,234319,,64900,,96420
-56252,6665020,B840M GAMING WIFI6E,Msi,911-7E76-001,102.14,88,Componentes de Sistema,Tarjetas Madre AMD,ok,True,0,0,0,Placa Madre AMD B840M GAMING WIFI6E (sAM5),0,0,False,{},,ingram,356069,,119500,119500,135068
-55785,6677818,TC NEO 50S G5 I5-14400 8GB 512GB W11P,Lenovo,12XG001XCS,787.89,29,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim,ok,True,0,0,0,Desktop ThinkCentre Neo 50s SFF Intel Core i5-14400 8GB RAM 512GB SSD Windows 11 Pro,0,0,False,{},,ingram,,,,,
-55211,6681132,Ideapad Slim 3 G10 R7-7735HS 16 512 14IN,Lenovo,83K60058CL,543.23,40,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook Ideapad Slim 3 G10 AMD Ryzen 7-7735HS 14"" 60Hz 16GB 512GB SSD Windows 11 Home Cosmic Blue 83K60058CL   ",0,0,False,{},,ingram,380390,,749990,,749990
-56050,6702910,PROYECTOR MW560C 4.000 LUM WXGA (1280X80,Benq,9H.JTD77.1NL,304.29,19,Dispositivos Audio/Video,Proyectores DLP,ok,False,0,0,0,"Proyector BenQ MW560C, DLP, 4.000 Lúmenes, 16:10, WXGA",0,0,False,{},,ingram,385789,,407900,,422124
-55202,6697204,ZOTAC GAMING GEFORCE RTX 5050 TWIN Edge,Zotac,ZT-B50500H-10M,306.06,27,Componentes de Sistema,Tarjetas Gráficas AMD,ok,False,0,0,0,Tarjeta de Video NVIDIA GEFORCE RTX 5050 GAMING TWIN Edge OC,0,0,False,{},,ingram,360891,,364400,379990,372320
-55418,6700241,Crucial 4TB T710 SSD,Crucial,CT4000T710SSD8,670.11,9,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,False,0,0,0,Unidad SSD 4TB T710 SSD,0,0,False,{},,ingram,359873,,,,
-56000,6708597,245 G10 R7 7730U 8GB 512GB 14IN W11H,Hp,AN0Y2LT#ABM,566.07,52,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook HP AMD Ryzen 7 7730U 14"" 8GB 512GB Windows 11 Home AN0Y2LT#ABM",0,0,False,{},,ingram,,,,,
-56184,6704478,ThinkSystem 32GB TruDDR5 5600MHz (2Rx8),Lenovo,4X77A99752,1490.0,5,Componentes de Sistema,Memoria Genérica,ok,True,0,0,0,Memoria Server ThinkSystem 32GB TruDDR5 5600MHz (2Rx8),0,0,False,{},,ingram,388959,,,,
-56366,6708599,240 G10 I3 100U 8GB 256GB 14IN W11H,Hp,C7GR2AT#ABM,432.15,102,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook 240 G10 Intel Core i3-100U 8GB RAM 256GB SSD 14"" Windows 11 Home C7GR2AT#ABM",0,0,False,{},,ingram,,,,,
-56166,6709548,P714 ROG KERIS II WL ACE/BLK,Asus,90MP03N0-BMAA00,85.02,14,Dispositivos de Entrada,Mouse,ok,True,0,0,0,Mouse Inalámbrico ROG Keris II Ace - Negro,0,0,False,{},,ingram,362651,,,,
-56107,6709671,MBP 14 SB/10C/10C GPU/16GB/1TB-CHL,Apple,MDE14CI/A,1946.8,40,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,MacBook Pro M5 14.2″ 16GB 1TB SSD  Negro Espacial MacOS MDE14CI/A,0,0,False,{},,ingram,360394,,1899990,2299990,2275076
-57328,6709632,MBP 14 SB/10C/10C GPU/24GB/1TB-CHL,Apple,MDE34CI/A,2138.2,36,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"MacBook Pro 14"" Chip M5 24GB 1TB SSD Negro Espacial MDE34CI/A",0,0,False,{},,ingram,360391,,2472420,,2523373
-55829,6720152,THINKVISION E24-40 23.8 INCH MONITOR,Lenovo,64BAMAR1CL,87.3,167,Pantallas,Monitores LCD/LED,ok,True,0,0,0,"Monitor Lenovo ThinkVision 23.8"" E24-40",0,0,False,{},,ingram,359304,,102990,,113838
-57300,6737877,P440VAKBPCD13X 7-240H 512G 16G 23.8 W11P,Asus,90PT03X6-M06CM0,901.73,22,Computadores Servidores y Notebooks,Computadores con Monitor integrado,ok,True,0,0,0,"All in One P440VAK 23.8"" FHD Intel Core 7 240H 16GB RAM 512GB SSD Windows 11 Pro",0,0,False,{},,ingram,384493,,1149995,,1149995
-56911,6737875,B1403CVAS66825X 5-210H 14IN 512G 16G W11,Asus,90NX0811-M087C0,772.44,17,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ExpertBook B1 Intel Core 5 210H 14"" 16GB RAM 512GB SSD Windows 11 Pro B1403CVA-S66825X",0,0,False,{},,ingram,385683,,,,
-56848,6737879,P1403CVAS61407X 5-210H 512G 16G 14IN W11,Asus,90NX0871-M01LL0,801.87,31,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ExpertBook P1 Intel Core 5 210H 14"" 16GB RAM 512GB SSD Windows 11 Pro",0,0,False,{},,ingram,385794,,949696,,1008673
-56777,6737886,P470VATBPF189X 7-240H 1TB 16G 27INT W11P,Asus,90PT03W6-M02X30,1120.0,67,Computadores Servidores y Notebooks,Computadores con Monitor integrado,ok,True,0,0,0,"All in One ExpertCenter P470VA Intel Core 7 240H 27"" Touch 16GB RAM 1TB SSD Windows 11 Pro",0,0,False,{},,ingram,383164,,1509990,1509990,1509990
-56757,6737883,P470VATBPF190X 5-210H 512G 16G 27IN W11P,Asus,90PT03W6-M02X40,1041.5,129,Computadores Servidores y Notebooks,Computadores con Monitor integrado,ok,True,0,0,0,"All in One ExpertCenter P470 Intel Core 5 210H 27"" Touch 16GB RAM 512GB SSD Windows 11 Pro",0,0,False,{},,ingram,384487,,1189856,1339990,1273235
-55806,6738877,YOGA R7 32GB 1TB 14IN OLED TOUCH,Lenovo,83JR00ACCL,1026.8,58,Computadores Servidores y Notebooks,Detachables,ok,True,0,0,0,Notebook Yoga AMD Ryzen AI 7 350 14″ OLED Touch 60Hz 32GB 1TB SSD Windows 11 Home 2-en-1 83JR00ACCL,0,0,False,{},,ingram,381913,,1259990,,1279990
-56258,6738849,MSI MAG A1000GLS PCIE5,Msi,306-7ZPIX12-CE0,85.83,111,Protección Eléctrica y Racks,Componentes UPS,ok,True,0,0,0,MSI MAG A1000GLS PCIE5,0,0,False,{},,ingram,,,,,
-56396,6738291,ELITEBOOK XG1A AI7PRO 360 32GB 1TB W11P,Hp,B8JS5AT#ABM,1500.5,1,Computadores Servidores y Notebooks,Notebooks,ok,False,0,0,0,Notebook EliteBook X G1a 14“ Touch AMD Ryzen AI 7 PRO 360 32GB RAM 1TB SSD Windows 11 Pro B8JS5AT#ABM ,0,0,False,{},,ingram,,,,,
-54319,6738880,LOQ E R7 16GB 512GB 15.6IN FHD RTX5060,Lenovo,83JG0019CL,1229.1,292,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook Gamer AI PC LOQ Gen 10 AMD Ryzen 7-250 NVIDIA GeForce RTX 5060 15.6"" FHD 144Hz 16GB RAM 512GB Windows 11 Home Luna Grey 83JG0019CL",0,0,False,{},,ingram,279354,,1329990,1329990,1418561
-55836,6739194,THINKPAD P16V G3 U9-285H 32GB 1TB W11P,Lenovo,21RS003RCL,3093.0,2,Computadores Servidores y Notebooks,nan,ok,True,0,0,0,"Notebook Thinkpad P16v G3 Intel Ultra 9-285H RTX PRO 8GB  2000 16"" 32GB 1TB SSD Windows 11 Pro 21RS003RCL",0,0,False,{},,ingram,379994,,,,
-56338,6750445,ELITE 490 White - 3x ARGB Fans,Cooler Master,E490-WHNN-S00,45.21,12,Componentes de Sistema,Componentes de Gabinete,ok,True,0,0,0,Gabinete mATX ELITE 490 White - 3x ARGB Fans,0,0,False,{},,ingram,376528,,49990,,54678
-56045,6743744,Monitor LED Gaming 27in IPS QHD 1ms GTG,Lg,27G610A-B,145.98,47,Pantallas,Monitores LCD/LED,ok,True,0,0,0,"Monitor LED Gaming 27"" IPS QHD 1ms GTG,",0,0,False,{},,ingram,,,,,
-56341,6750448,Elite 502 ARGB fan 3,Cooler Master,E502-KGNN-S00,54.73,28,Componentes de Sistema,Componentes de Gabinete,ok,True,0,0,0,Elite 502 ARGB fan 3,0,0,False,{},,ingram,360576,,72190,,72190
-56378,6750455,Elite 502 White ARGB fan 3,Cooler Master,E502-WGNN-S00,57.1,7,Componentes de Sistema,Componentes de Gabinete,ok,True,0,0,0,Elite 502 White ARGB fan 3,0,0,False,{},,ingram,360577,,64990,,69278
-56781,6761183,B1503CVAS76946X 5-210 15.6 512G 16G W11P,Asus,90NX0801-M07VY0,782.3,4,Computadores Servidores y Notebooks,Notebooks,ok,False,0,0,0,"Notebook ExpertBook B1 Intel Core 5 210H 15.6"" 16GB RAM 512GB SSD Windows 11 Pro B1503CVA-S76946X ",0,0,False,{},,ingram,385685,,,,
-56772,6761182,W7606WMRJ101X R9HX370 16IN T 1T 32G W11,Asus,90NB15L1-M006L0,2368.7,8,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook WorkStation ProArt P16 AMD Ryzen 9 HX370 16"" Touch 32GB RAM 1TB SSD RTX 5060 8GB Windows 11 Pro",0,0,False,{},,ingram,385147,,,,
-54707,6763313,DUAL-RX9060XT-16G,Asus,90YV0LG2-M0AA00,496.05,404,Componentes de Sistema,Tarjetas Gráficas AMD,ok,True,0,0,0,Tarjeta de Video AMD DUAL RX9060XT 16G,0,0,False,{},,ingram,,,,,
-55180,6764206,SSD Wd Green de 500 GB SATA3 2.5,Sandisk,WDS500G5G0A,185.16,465,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),ok,True,0,0,0,Unidad SSD 500GB Green Sata 2.5,0,0,False,{},,ingram,361283,,89900,,121945
-55187,6764182,SSD Wd Green SN3000 2 TB NVMe,Sandisk,WDS200T4G0E,645.68,48,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,True,0,0,0,Unidad SSD 2TB SN3000 NVMe SSD Green NVMe Performance,0,0,False,{},,ingram,382018,,329990,,371076
-57333,6764212,SSD Wd Green SN3000 500 GB NVMe,Sandisk,WDS500G4G0E,174.17,203,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,True,0,0,0,Unidad SSD Green SN3000 500 GB NVMe,0,0,False,{},,ingram,362977,,89990,,135834
-55179,6764216,SSD Wd Green de 250 GB SATA3 2.5,Sandisk,WDS250G5G0A,101.82,217,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),ok,True,0,0,0,Unidad SSD 250GB Green Sata 2.5,0,0,False,{},,ingram,363645,,64900,,95293
-55186,6764232,SSD Wd Green SN3000 1 TB NVMe,Sandisk,WDS100T4G0E,322.9,145,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,True,0,0,0,Unidad SSD 1TB SN3000 NVMe SSD Green NVMe Performance,0,0,False,{},,ingram,361011,,149990,199990,188291
-55904,6765562,15-FB3018LA R7-7445H 8G 512G 15.6IN W11H,Hp,BT4F5LA#ABM,648.61,33,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook Gamer Victus 15 AMD Ryzen 7 NVIDIA RTX 3050 15.6"" 144Hz 8GB RAM 512GB SSD Windows 11 Home Silver 15-fb3018la",0,0,False,{},,ingram,,,,,
-52554,6764223,SSD WD Black SN850X 2 TB NVMe,Sandisk,WDS200T2XHE,929.88,14,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,True,0,0,0,Unidad SSD 2TB PCIe NVMe Gen4 M.2 SN850X Black (w/ Heatsink),0,0,False,{},,ingram,152560,,669408,,715339
-56583,6781741,IMPRESORA PORTATIL TR 160 INALAMBRICA,Canon,4793V537,256.86,20,Impresoras,Impresoras de Inyección de Tinta,ok,True,0,0,0,"Impresora TR160 Kit Portátil Wi-Fi, Direct Wireless, USB",0,0,False,{},,ingram,367036,,299989,299989,314989
-55905,6777569,15-FB3026LA R7-7445H 16G 512 15.6IN W11H,Hp,BV5C6LA#AKH,734.09,130,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,Notebook Gamer Victus AMD Ryzen 7 7445H NVIDIA RTX 3050 4GB 16GB RAM 512GB SSD Windows 11 Home 15-fb3026la ,0,0,False,{},,ingram,,,,,
-56160,6785309,TUF Gaming 1000W Gold,Asus,90YE00S1-B0SA00,113.15,2,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi,ok,True,0,0,0,TUF Gaming 1000W Gold,0,0,False,{},,ingram,,,,,
-56194,6785315,ADATA DDR5 U-DIMM 8GB 5600 WHITE,Adata Technology,AX5U5600C468G-SLABRWH,125.33,154,Componentes de Sistema,Memoria Genérica,ok,True,0,0,0,Memoria RAM DDR5 8GB 5600 MHz UDIMM White,0,0,False,{},,ingram,382835,,129990,,134945
-56198,6785316,ADATA DDR5 U-DIMM 8GB 5600 WHITE,Adata Technology,AX5U5600C468G-SLABWH,122.74,60,Componentes de Sistema,Memoria Genérica,ok,True,0,0,0,Memoria RAM DDR5 8GB 5600 MHz UDIMM WHITE,0,0,False,{},,ingram,382834,,129500,,135326
-56716,6788479,THINKPAD E14 G7 U5 226V 16GB 512GB W11P,Lenovo,21U3000NCL,1032.8,236,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,Notebook ThinkPad E14 G7 Intel Ultra 5 226V 16GB RAM 512GB SSD Windows 11 Pro,0,0,False,{},,ingram,392453,,1347000,1347000,1347000
-57327,6786104,HP ProStudio 2 AIO G2i Ci5120U/16GB(8x2,Hp,D4QC6LT#ABM,1157.0,71,Computadores Servidores y Notebooks,Computadores con Monitor integrado,ok,True,0,0,0,"All in One ProStudio 2 G2i 24"" Intel Core 5 120U 16GB RAM 512GB SSD Windows 11 Pro",0,0,False,{},,ingram,,,,,
-56818,6788477,THINKPAD T14S G6 R7 AI PRO350 32 1 W11P,Lenovo,21TB004HCL,1703.5,30,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ThinkPad T14s Gen6 AMD Ryzen AI 7 PRO 350 14"" 32GB RAM 1TB SSD Windows 11 Pro",0,0,False,{},,ingram,392889,,2411213,,2514470
-56817,6788482,THINKPAD X13 G6 R7 AIPRO 350 32G 1T W11P,Lenovo,21RM003FCL,1762.1,3,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ThinkPad X13 G6 AMD Ryzen AI 7 PRO 350 13.3"" 32GB RAM 1TB SSD Windows 11 Pro",0,0,False,{},,ingram,396379,,2074899,,2184745
-56758,6789838,P500SV07240H006X 7-240H 512G 16G 9L W11P,Asus,90PF05A1-M00MW0,864.79,12,Computadores Servidores y Notebooks,Computadores Desktop,ok,False,0,0,0,Desktop Asus ExpertCenter P500 Intel Core 7 240H 16GB RAM 512GB SSD Windows 11 Pro,0,0,False,{},,ingram,,,,,
-56847,6789846,B900MF009285053X U9-285 1T 32G 15L W11P,Asus,90PF05F1-M00CA0,2478.9,8,Computadores Servidores y Notebooks,Computadores Desktop,ok,True,0,0,0,Desktop ExpertCenter B900 Intel Ultra 9 285 vPro 32GB RAM 1TB SSD NVIDIA RTX 5060 8GB Windows 11 Pro,0,0,False,{},,ingram,,,,,
-56268,6791898,MPG CORELIQUID P13 360,Msi,306-7ZWGA14-L80,138.47,8,Componentes de Sistema,Componentes de Tarjetas Madre,ok,True,0,0,0,Refrigeracion Liquida MPG CORELIQUID P13 360,0,0,False,{},,ingram,354526,,139900,,181981
-56523,6805742,NB TP T14 AMD G4 R5_PRO 32G 512G 11P,Lenovo,21K4S4EU00,1262.5,18,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,Lenovo ThinkPad T14 Gen 4 AMD Ryzen 5 PRO 32GB 512GB Windows 11 Pro,0,0,False,{},,ingram,391088,,,,
-56421,6805280,ThinkStation P2 TWR I714700 16G x1 W11P,Lenovo,30FS000PLM,1788.5,2,Computadores Servidores y Notebooks,Workstations,ok,True,0,0,0,Desktop ThinkStation P2 Intel Core i7-14700 16GB RAM 1TB SSD 3YOS Windows 11 Pro,0,0,False,{},,ingram,,,,,
-56388,6805751,NB WS P1 G7 ULT7 1T 11P RTX2000Ada,Lenovo,21KV003PCL,2526.0,5,Computadores Servidores y Notebooks,nan,ok,True,0,0,0,"Notebook WorkStation P1 Gen7 Intel Ultra 7 155H 16"" 32GB RAM 1TB SSD NVIDIA RTX 2000 8GB Windows 11 Pro ",0,0,False,{},,ingram,292901,,2990240,,2990240
-56662,6808659,Z1 G1IU 9-285 RTX 5060 16GB 32GB 1T W11P,Hp,D5BM4LT#ABM,2865.3,2,Computadores Servidores y Notebooks,Workstations,ok,True,0,0,0,Workstation Z1 G1I Intel Ultra 9-285 RTX 5060 Ti 16GB 32GB RAM 1TB SSG Windows 11 Pro,0,0,False,{},,ingram,,,,,
-56454,6805750,ThinkStation P5 W32425 32G x1 W11PWS,Lenovo,30G9S81000,3792.1,1,Computadores Servidores y Notebooks,Workstations,ok,True,0,0,0,Desktop Workstation ThinkStation P5 Intel Xeon W3-2425 32GB RAM 512GB SSD NVIDIA RTX 2000 Ada 16GB Windows 11 Pro ,0,0,False,{},,ingram,,,,,
-56664,6808662,Z1 G1I U7-265 RTX 5060 16GB 32GB 1T W11P,Hp,D5BL5LT#ABM,2637.7,8,Computadores Servidores y Notebooks,Workstations,ok,True,0,0,0,Workstation Z1 G1I Ultra 7-265 RTX 5060 16GB RAM 32GB 1TB W11P,0,0,False,{},,ingram,,,,,
-56869,6811027,Monitor IPS de 24IN 1080p 120 Hz con HDM,Viewsonic,VA240A-H,67.2,774,Pantallas,Monitores LCD/LED,ok,True,0,0,0,Monitor IPS de 24IN 1080p 120 Hz con HDM,0,0,False,{},,ingram,,,,,
-56987,6822522,THINKBOOK 14 G8 U9 185H 16GB 512GB W11P,Lenovo,21SJ00VHCL,1180.8,214,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ThinkBook G8 IAL Intel Ultra 9 185H 14"" 16GB RAM 512GB SSD Windows 11 Pro",0,0,False,{},,ingram,396794,,1263285,,1358037
-57338,6820450,PRIME-RX9070XT-O16G,Asus,90YV0L71-MVAA00,708.88,61,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,True,0,0,0,Tarjeta de Video AMD PRIME RX9070XT O16G,0,0,False,{},,ingram,276343,,900090,,1015306
-57294,6823345,ZBX G1I U9 285H 16IN 64GB 2TB RTXPRO2000,Hp,D2ZW8LS#ABM,2858.0,7,Computadores Servidores y Notebooks,nan,ok,True,0,0,0,"Notebook Zbook X G1i 16"" Intel Ultra 9 285H 64GB RAM 2TB SSD NVIDIA RTX Pro 2000 8 GB Windows 11 Pro",0,0,False,{},,ingram,,,,,
-56828,6823346,ZBX G1I U9 285H 16IN 32GB 2TB RTXPRO1000,Hp,D2ZW6LS#ABM,2622.5,9,Computadores Servidores y Notebooks,nan,ok,True,0,0,0,Notebook WorkStation ZBook X G1i Intel Ultra 9 285H 32GB RAM 2TB SSD NVIDIA RTX Pro 1000 8GB Windows 11 Pro,0,0,False,{},,ingram,,,,,
-1771,1230999,TONER HP 126A NEGRO,Hp,CE310A,61.01,8,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original HP 126A Negro ,0,0,False,{},,intcomex,259766,,67099,,74748
-54994,1591448,Kit Switch KVM 2 Puertos VGA,Startech.Com,SV211KUSB,46.48,1,Dispositivos de Entrada/Salida,KVMs y Componentes,ok,False,0,0,0,Kit Switch KVM 2 Puertos VGA,0,0,False,{},,,,,,,
-46623,1858357,305A CYAN LJ TONER CART CE411A,Hp,CE411A,141.33,30,Suministros y Medios,Suministros Láser,ok,False,0,0,0,Toner Original HP 305A Cyan,0,0,False,{},,,259833,,133863,,163000
-12549,2035427,CARTUCHO TINTA HP 662XL TRICOLOR,Hp,CZ106AL,28.83,175,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 662 XL Tricolor ,0,0,False,{},,,259775,,32282,,40178
-11935,2035425,CARTUCHO TINTA HP 662 TRICOLOR,Hp,CZ104AL,10.48,1107,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 662 Tricolor,0,0,False,{},,,259559,,11900,13990,14568
-46624,1858359,305A MAGENTA LJ TONER CART CE413A,Hp,CE413A,143.11,41,Suministros y Medios,Suministros Láser,ok,False,0,0,0,Toner Original HP 305A Magenta,0,0,False,{},,,259834,,133863,,168126
-21261,2454703,CARTUCHO DE TINTA CL-36 COLOR,Canon,1511B020,13.46,16,Suministros y Medios,Suministros Láser,ok,False,0,0,0,Cartucho de Tinta Original Canon CLI-36 Color,0,0,False,{},,,259677,,15900,,18098
-30710,2692206,Cable 15cm Mini Jack Hembra a RCA Macho,Startech.Com,MUFMRCA,5.23,4,Cables,Cables y Adaptadores de Video,ok,False,0,0,0,Adaptador Audio Estéreo 3.5mm hembra a 2x RCA macho,0,0,False,{},,,,,,,
-24560,2893718,FUNDA TABLET K97331WW (27058) NEGRA,Kensington,K97331WW,5.31,43,Computadores Servidores y Notebooks,Accesorios para Tablet PCs,ok,False,0,0,0,"Estuche Universal para Tablets de 7"" y 8"" Negro",0,0,False,{},,,,,,,
-39128,3021448,TONER HP 87X NEGRO 18000 PAG,Hp,CF287X,349.71,24,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original HP 87X Negro,0,0,False,{},,intcomex,260103,,298500,,407579
-32858,3021444,TONER HP 26A NEGRO,Hp,CF226A,138.06,45,Suministros y Medios,Suministros Láser,ok,True,0,0,0,Toner Original HP 26A LaserJet Negro,0,0,False,{},,intcomex,259615,,142900,,176396
-56920,3084177,TINTA HP 728 130 ML AMARILLO,Hp,F9J65A,95.53,1,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 728 Amarillo / 130ML,0,0,False,{},,,259849,,115745,,123117
-56921,3084178,TINTA HP 728 130 ML MAGENTA,Hp,F9J66A,95.76,36,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 728 Magenta / 130ML,0,0,False,{},,,259847,,119990,,130094
-48724,3098284,Adaptador Red Gigabit USB-C,Startech.Com,US1GC301AU,51.48,4,Dispositivos de Entrada/Salida,Conmutadores para dispositivos USB,ok,False,0,0,0,USB 3.1 USB-C to Gigabit Network Adapter with E,0,0,False,{},,,392112,,56220,,57893
-23420,3338020,CARTUCHO DE TINTA HP 954 AMARILLO 700 PG,Hp,L0S56AL,25.53,2,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original HP 954 Amarillo ,0,0,False,{},,intcomex,259513,,28900,,33127
-23421,3338021,CARTUCHO DE TINTA HP 954 NEGRO 1000 PÃG,Hp,L0S59AL,36.83,53,Suministros y Medios,Suministros Inyección de Tinta,ok,True,0,0,0,Cartucho de Tinta Original HP 954 Negro ,0,0,False,{},,intcomex,259514,,35990,,43918
-31801,3444376,CINTA TZEMQ531,Brother,TZEMQ531,7.51,30,Suministros y Medios,Suministros Matriz de Punto,ok,False,0,0,0,Cinta azul pastel-Texto negro TZe-MQ531  12mm / 4m (Ancho / Largo) ,0,0,False,{},,,405714,,,,
-32732,3444314,CINTA TZEMPPH31,Brother,TZEMPPH31,3.52,1,Suministros y Medios,Suministros Matriz de Punto,ok,False,0,0,0,Cinta diseño corazones TZe-MPPH31  12mm / 4m (Ancho / Largo) ,0,0,False,{},,,405721,,8106,,8106
-33029,3444382,CINTA TZERN34,Brother,TZERN34,3.76,1,Suministros y Medios,Suministros Matriz de Punto,ok,False,0,0,0,Cinta satinada de tela Azul-Texto dorado  TZe-RN34 12mm / 4m (Ancho / Largo),0,0,False,{},,,405819,,8587,,8587
-55948,3570190,CARTUCHO TINTA HP 62XL TRICOLOR 415 PÃG,Hp,C2P07AL,52.72,126,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de tinta HP 62XL Tricolor,0,0,False,{},,,260118,,61532,,66270
-55019,3962917,HP 202A Yellow LaserJet Toner Cartridge,Hp,CF502A,84.4,16,Suministros y Medios,Suministros Láser,ok,False,0,0,0,Toner Original HP 202A Amarillo,0,0,False,{},,,259853,,93500,,103541
-55017,3962863,TONER HP 202A NEGRO,Hp,CF500A,71.98,28,Suministros y Medios,Suministros Láser,ok,False,0,0,0,Toner Original HP 202A Negro ,0,0,False,{},,,259855,,82618,,89081
-32756,4039377,PTH110PK ROTULADORA ELECTRONICA,Brother,PTH110PK,27.98,12,Impresoras,Impresoras de Etiquetas Hogar/Oficina,ok,False,0,0,0,Rotuladora Etiquetadora PT-H110 Rosada ,0,0,False,{},,,,,,,
-50746,4050457,TINTA HP 730 300 ML CIAN,Hp,P2V68A,157.52,7,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 730 Cyan / 300ml,0,0,False,{},,,261555,,187500,199990,201333
-50751,4050460,TINTA HP 730 300 ML MATE NEGRO,Hp,P2V71A,156.97,30,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 730 Negro Matte/ 300ml,0,0,False,{},,,260167,,199990,,209945
-50748,4050458,TINTA HP 730 300 ML MAGENTA,Hp,P2V69A,157.52,8,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 730 Magenta / 300ml,0,0,False,{},,,260060,,189316,199990,201934
-50749,4050459,TINTA HP 730 300 ML AMARILLO,Hp,P2V70A,157.52,3,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 730 Amarillo / 300ml,0,0,False,{},,,260257,,189117,,201087
-50753,4050462,TINTA HP 730 300 ML FOTO NEGRO,Hp,P2V73A,156.89,8,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 730 Negro Fotográfico/ 300ml,0,0,False,{},,,260061,,189106,,202067
-50752,4050461,TINTA HP 730 300 ML GRIS,Hp,P2V72A,156.85,3,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 730 Gris/ 300ml,0,0,False,{},,,260062,,189106,,206107
-36101,4213422,BACK UPS BV 1000VA AVR UNIVERSAL OUT230V,Apc,BV1000I-MS,87.87,25,Protección Eléctrica y Racks,UPS,ok,True,0,0,0,UPS 1000VA/600W Easy-UPS - Interactiva,0,0,False,{},,intcomex,66342,,114490,,124417
-55864,4255929,"POWER SUPPLY-100-240 VAC, 5 V, 2.5 A WIT",Zebra,PWR-WUA5V12W0US,13.73,11,Componentes de Sistema,Fuentes de Poder para Computadores Espec,ok,False,0,0,0,Fuente de alimentación 100-240 VAC,0,0,False,{},,,,,,,
-56545,4485251,APC Smart-UPS SRT 1000VA 230V,Apc,SRT1000XLI,1248.2,6,Protección Eléctrica y Racks,UPS,ok,True,0,0,0,APC Smart-UPS SRT 1000VA 230V,0,0,False,{},,intcomex,150693,,1446561,,1507415
-46625,4495577,TONER HP 414A AMARILLO 2100 PAG,Hp,W2022A,120.57,72,Suministros y Medios,Suministros Láser,ok,False,0,0,0,Toner Original HP 414A Amarillo ,0,0,False,{},,,260012,,119900,,148782
-50742,4509636,DESIGNJET MFP T2600DRPS TINTA COLOR 36IN,Hp,3EK15A,10311.0,1,Impresoras,Plotters color,ok,False,0,0,0,"Plotter 36"" HP DesignJet T2600dr MFP Tinta Ethernet / USB / Doble rollo",0,0,False,{},,,65441,,12534900,,13216691
-36094,4735883,PTH110TB ROTULADORA ELECTRONICA,Brother,PTH110TB,27.98,18,Impresoras,Impresoras de Etiquetas Hogar/Oficina,ok,False,0,0,0,Rotuladora Etiquetadora PT-H110 Turquesa,0,0,False,{},,,,,,,
-56922,5012008,HP 728 Cartucho Matte Black 130-ml,Hp,3WX25A,96.11,31,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP 728 Negro Mate / 130ML,0,0,False,{},,,259851,,109563,,131204
-53326,5177632,GXT266 4-PACK THUMB GRIPS PS5,Trust,24170,3.37,926,Video Juegos y Consolas,Joysticks,ok,False,0,0,0,Pack de 4 Protectores de Análogo para PS5 Trust GXT 266 ,0,0,False,{},,,,,,,
-38917,5344830,SURECOLOR T3170X 24 PLOTTER ECOTANK,Epson,C11CJ15201,1903.3,1,Impresoras,Plotters color,ok,True,0,0,0,"Plotter 24"" Tinta Continua SureColor T3170X  WiFi / Ethernet ",0,0,False,{},,,87480,,1989990,,2195372
-47954,5628339,STINGER 2 CORE FOR PS WHITE,Hp,6H9B5AA,29.41,369,Comunicaciones,Cintillos telefónicos,ok,False,0,0,0,"Audífono Gamer HyperX Cloud Stinger Core 2, Sonido Estéreo, Conexión 3.5mm, PS5, Blanco",0,0,False,{},,,193775,,31990,39990,37886
-52098,5644201,HP LASERJET PRO 3003DW PRINTER,Hp,3G654A,163.43,22,Impresoras,Impresoras Láser/LED color,ok,False,0,0,0,Impresora Láser Blanco y Negro 3003dw WiFi,0,0,False,{},,,216812,,191355,,201730
-46968,5689370,EV FLEX WXGA CO-W01 PROJECTOR,Epson,V11HA86020,465.76,5,Dispositivos Audio/Video,Proyectores LCD,ok,True,0,0,0,"Proyector Epson CO-W01, WXGA, 3LCD, 3000 Lúmenes, Lámpara, HDMI",0,0,False,{},,,236814,,,,
-45028,5722928,PACK BTD60BKx2,Brother,BTD602PKMEX,12.98,50,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,False,0,0,0,Pack 2 Botellas de Tinta Original Brother BTD60BK Negro,0,0,False,{},,,259338,,19990,23900,22462
-55521,5915050,Tinta HP DesignJet Plotter 130-ml Negro,Hp,498N4A,83.1,35,Suministros y Medios,Suministros Láser,ok,False,0,0,0,Cartucho de Tinta Original HP  738 Negro / 130ml,0,0,False,{},,,259865,,95100,,109615
-55522,5915051,Tinta HP DesignJet Plotter 130-ml Cyan,Hp,498N5A,82.92,73,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP  738 Cyan/ 130ml,0,0,False,{},,,259863,,95100,,108452
-55524,5915053,Tinta HP DesignJet Plotter 130-ml Amaril,Hp,498N7A,83.16,4,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP  738 Amarillo/ 130ml,0,0,False,{},,,259862,,95100,126990,107216
-55523,5915052,Tinta HP DesignJet Plotter 130-ml Magent,Hp,498N6A,83.16,19,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Cartucho de Tinta Original HP  738 Magenta/ 130ml,0,0,False,{},,,259864,,100953,105990,110397
-51059,5939666,TONER TN3609XXL DL RENDIMIENTO HASTA 110,Brother,TN3609XXL,112.48,150,Cámaras y Escáners,Escáners para el Hogar/Oficina,ok,True,0,0,0,Toner Original Brother TN-3609XXL Negro,0,0,False,{},,intcomex,260399,,134990,158000,152438
-52801,6261606,RYZEN 7 9700X 8-CORE PROCESSOR,Amd,100-100001404WOF,329.86,17,Componentes de Sistema,Procesadores AMD,ok,False,0,0,0,CPU AMD Ryzen 7 9700X (AM5),0,0,False,{},,,252399,,319990,,390791
-57385,6293059,IMPRESORA SC-T5170,Epson,C11CF12201,1801.9,1,Impresoras,Plotters color,ok,False,0,0,0,"Plotter Inalámbrico 36"" SureColor T5170",0,0,False,{},,,196449,,2040786,,2103089
-54593,6338363,TUF GAMING X870-PLUS WIFI,Asus,90MB1IU0-M0EAY0,282.15,42,Componentes de Sistema,Tarjetas Madre Intel,ok,False,0,0,0,Placa Madre  AMD Asus TUF GAMING X870-PLUS WIFI (sAM5),0,0,False,{},,,255490,,320255,,373683
-56098,6359578,G11 ULTRA 9 185H RAM 16GB SSD 1TB 16IN,Hp,A31DRLT#ABM,2859.1,2,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook Zbook Power G11 Intel Ultra 9-185H 16GB RAM 1TB SSD 16"" RTX A1000 6GB Windows 11 Pro A31DRLT#ABM",0,0,False,{},,ingram,,,,,
-53913,6417091,LEGION SNAPDRAGON 8 G3 12GB 256GB 8.8IN,Lenovo,ZAEF0041CL,408.93,8,Computadores Servidores y Notebooks,Tablets y Tablet PCs,ok,False,0,0,0,"Tablet Gamer Legion Tab Qualcomm Snapdragon 8 Gen 3 8.8"" QHD 12GB 256GB WiFi Octa Core Android Negro + Funda",0,0,False,{},,,265288,,449990,,469990
-53199,6379938,PACK 3 BOTELLAS DE TINTA,Brother,BTD100CL3PK,16.93,212,Suministros y Medios,Suministros Inyección de Tinta,ok,False,0,0,0,Pack 3 Botellas de Tinta Original Brother BTD100CL3PK,0,0,False,{},,,259823,,20672,25990,23103
-41421,6406925,HP DUAL MODE SILVER MOUSE 300 LTNA,Hp,6CR72AA#ABM,21.57,13,Dispositivos de Entrada,Mouse,ok,False,0,0,0,HP Dual Mode Silver Mouse 300 LTNA,0,0,False,{},,,,,,,
-54487,6457285,THINKBOOK 14 G8 C5 210H 16GB 512GB W11P,Lenovo,21SG009HCL,926.29,14,Computadores Servidores y Notebooks,Notebooks,ok,True,0,0,0,"Notebook ThinkBook Gen 8 Intel Core 5-210H 14"" 16GB 512GB SSD Windows 11 Pro 21SG009HCL",0,0,False,{},,intcomex,276492,,785390,,1104822
-56507,6497729,2.5IN VA 1.92TB READ INTENSIVE SATA 6GB,Lenovo,4XB7A90875,1405.0,1,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD),ok,True,0,0,0,Disco 2.5IN VA 1.92TB READ INTENSIVE SATA 6GB,0,0,False,{},,intcomex,359014,,1677334,,1705790
-55626,6500385,GeForce RTX 5070 12G SHADOW 2X OC,Msi,912-V532-011,658.06,1,Video Juegos y Consolas,Otros Accesorios para Videojuegos,ok,False,0,0,0,Tarjeta de Video NVIDIA GeForce RTX 5070 12G SHADOW 2X OC,0,0,False,{},,,271979,,849900,,874717
-54846,6515131,SSD LEGEND 860 2000GB M.2 2280,Adata Technology,SLEG-860-2000GCS,325.14,88,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD),ok,False,0,0,0,Unidad SSD LEGEND 860 2000GB M.2 2280,0,0,False,{},,,265617,,339990,,373238
-56651,6517402,IMPRESORA MULTIFUNCION A COLOR WFE AM-C4,Epson,C11CJ93201,1883.9,4,Impresoras,Multifuncionales Inkjet,ok,False,0,0,0,Multifuncional Tinta Continua WorkForce Enterprise AM-C400,0,0,False,{},,,359903,,1941945,,2079608
-57346,6519325,MAG CORELIQUID A12 360,Msi,306-7ZWEM21-813,56.1,27,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",ok,True,0,0,0,Refrigeracion MAG CORELIQUID A12 360,0,0,False,{},,,271821,,67990,67990,68990
-54584,6598192,IDEA TAB 11IN MTK D6300 8GB 128GB,Lenovo,ZAFR0125CL,228.25,11,Computadores Servidores y Notebooks,Tablets y Tablet PCs,ok,False,0,0,0,"Tablet IdeaTab 11"" 8GB 128GB WiFi Octa Core Android Luna Grey + Folio Case + Pen ",0,0,False,{},,,354688,,219990,269990,288245
-55843,6590147,YOGA SLIM 7 10GEN CORE ULTRA7 32GB 1TB,Lenovo,83JX002VCL,1160.4,28,Computadores Servidores y Notebooks,Notebooks,ok,False,0,0,0,"Notebook Yoga Slim 7 Gen 10 Intel Core Ultra 7 14"" OLED 120Hz 32GB 1TB Windows 11 Home 83JX002VCL",0,0,False,{},,,274067,,,,
-55026,6681010,CAMARA GOPRO LIT FRACTION,Gopro,CHDHF-132-AT,261.32,56,Cámaras y Escáners,Cámaras de Video Digital,ok,False,0,0,0,Cámara GoPro LIT HERO,0,0,False,{},,,,,,,
-55286,6698108,HP 65W SMART AC CHARGER,Hp,6H459AA#ABL,14.34,376,Computadores Servidores y Notebooks,Accesorios de Energía para Notebooks,ok,False,0,0,0,Cargador de Notebook 65W 6H459AA#ABL AC Adapter,0,0,False,{},,,,,,,
-56257,6728343,MAG CORELIQUID A13 240,Msi,306-7ZWCA17-L80,50.28,103,Componentes de Sistema,Componentes de Gabinete,ok,False,0,0,0,Refrigeración Líquida MAG CORELIQUID A13 240,0,0,False,{},,,264203,,55790,,65164
-56374,6750451,MasterLiquid Core Nex 240 ARGB,Cooler Master,MLX-D24M-A18PA-R1,54.73,166,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi,ok,False,0,0,0,MasterLiquid Core Nex 240 ARGB,0,0,False,{},,,386785,,63900,,69299
-56340,6750447,MasterLiquid Core Nex 240 White,Cooler Master,MLX-D24M-A18PA-RW,54.73,100,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi,ok,False,0,0,0,MasterLiquid Core Nex 240 White,0,0,False,{},,,376505,,63322,,67909
-55286,6773564,ADAPTADOR DE CA INTELIGENTE 65W,Hp,6H459AA#ABL,14.43,40,Computadores Servidores y Notebooks,Accesorios de Energía para Notebooks,ok,False,0,0,0,Cargador de Notebook 65W 6H459AA#ABL AC Adapter,0,0,False,{},,,,,,,
-57350,6784126,RTX 5070 12G WOW VOID OC,Msi,912-V532-255,808.03,5,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,True,0,0,0,Tarjeta de Video NVIDIA RTX 5070 12G WOW VOID OC,0,0,False,{},,,385563,,979900,,989596
-54579,6784290,PRIME B650EM-A WIFI//SOCKET AM5,Asus,90MB1LM0-M0EAY0,132.21,46,Componentes de Sistema,Tarjetas Madre AMD,ok,False,0,0,0,Placa Madre AMD PRIME B650EM-A WIFI (sAM5),0,0,False,{},,,,,,,
-56269,6791899,MAG A1000GLS PCIE5,Msi,306-7ZPIX23-CE0,102.02,174,Componentes de Sistema,Fuentes de Poder Genéricas,ok,False,0,0,0,MAG A1000GLS PCIE5,0,0,False,{},,,,,,,
-57040,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,420.97,27,Pantallas,Monitores LCD/LED,ok,True,0,0,0,"Samsung - LED-backlit LCD monitor - 27"" - HDMI - 180Hz 0.03Ms HDMI DP FreSync/G",0,0,False,{},,intcomex,366630,,419990,,464743
-47954,6822115,STINGER 2 CORE FOR PS WHITE,Hp,6H9B5AA,39.14,47,Comunicaciones,Cintillos telefónicos,ok,False,0,0,0,"Audífono Gamer HyperX Cloud Stinger Core 2, Sonido Estéreo, Conexión 3.5mm, PS5, Blanco",0,0,False,{},,,193775,,31990,39990,37886
-55675,6822117,CLOUD JET WIRELESS BLACK,Hp,AJ0T1AA,48.86,18,Dispositivos Audio/Video,Cintillos y Audífonos para PCs,ok,False,0,0,0,Audífonos Gamer Hyper X Cloud Jet Wireless Negro,0,0,False,{},,,364132,,36990,89990,61513
-30703,6838970,Adaptador DisplayPort DP a HDMI Pasivo,Startech.Com,DP2HDMI2,17.66,150,Cables,Cables Seriales y Adaptadores,ok,False,0,0,0,Adaptador DisplayPort a HDMI Negro,0,0,False,{},,,,,,,
-54948,6838973,Adaptador Ethernet Gigabit USB-C USB 3.0,Startech.Com,US1GC30B,34.43,99,Dispositivos de Red,Tarjetas de Red Ethernet,ok,False,0,0,0,USB-C to Gigabit Ethernet Adapter RJ45,0,0,False,{},,,401526,,27371,,27371
-32811,6838967,Cable DisplayPort a HDMI 2m Negro 4K,Startech.Com,DP2HDMM2MB,23.35,50,Cables,Cables y Adaptadores de Audio,ok,False,0,0,0,Cable DisplayPort a HDMI de 2 m - Ultra HD 4K,0,0,False,{},,,,,,,
-54965,6838969,Adaptador de Red Ethernet USB-C 25 Gb,Startech.Com,US2GC30,44.49,19,Dispositivos de Red,Tarjetas de Red Ethernet,ok,False,0,0,0,ADAPTER - USB-C TO 2 5 GIGABIT ETHERNET,0,0,False,{},,,382431,,55293,,58087
-30704,6838982,Adaptador Conversor DisplayPort 1.2 VGA,Startech.Com,DP2VGA3,22.79,50,Cables,Cables y Adaptadores USB,ok,False,0,0,0,Adaptador DisplayPort a VGA,0,0,False,{},,,,,,,
-30713,6838983,Adaptador USB-C a HDMI - 4K 30Hz - Negro,Startech.Com,CDP2HD,28.52,14,Cables,Cables y Adaptadores de Audio + Video,ok,False,0,0,0,Adaptador de Video USB-C a HDMI,0,0,False,{},,,,,,,
-54962,6838998,Modulo SFP Compatible Cisco GLC-SX-MM,Startech.Com,SFPGLCSXMMST,41.2,10,Dispositivos de Red,Transceivers,ok,False,0,0,0,Gigabit Fiber SFP Transceiver MM LC 550m,0,0,False,{},,,,,,,
-35772,6839018,Adaptador USB-C a VGA HDMI Gris Espacial,Startech.Com,CDP2HDVGA,45.14,20,Cables,Cables y Adaptadores de Video,ok,False,0,0,0,Adaptador USB-C a VGA y HDMI - 2en1 - 4K 30Hz,0,0,False,{},,,,,,,
-54996,6841900,USB C Multiport Adapter - 4K HDMI/PD/USB,Startech.Com,DKT30CHSDPD,41.42,20,Dispositivos de Entrada/Salida,Conmutadores para dispositivos USB,ok,False,0,0,0,USB C Multiport Adapter - 4K HDMI/PD/USB,0,0,False,{},,,,,,,
-54971,6841924,SFP Module - Cisco Compatible,Startech.Com,SFP10GBTCST,228.52,10,Dispositivos de Red,Transceivers,ok,False,0,0,0,SFP Module - Cisco Compatible,0,0,False,{},,,,,,,
-56033,6850407,HYPERX CONTROL CLUTCH GLADIATE XBOX,Hp,6L366AA,36.94,11,Video Juegos y Consolas,Joysticks,ok,False,0,0,0,Control HyperX Clutch Gladiate Xbox,0,0,False,{},,,,,,,
-39163,6850410,AURICULARES INALAMBRICOS GAMING,Hp,4P5J1AA,79.33,48,Dispositivos Audio/Video,Combos Micrófono+Cintillo/audífono p/PCs,ok,True,0,0,0,"Audífono Gamer HyperX Stinger Core, Sonido Estéreo, Inalámbrico, PS4 y PS5, Blanco",0,0,False,{},,,95750,,74890,85990,81757
-57348,6854893,ZOTAC GAMING GEFORCE RTX 5080 AMP EXTREM,Zotac,ZT-B50800B-10A,1462.3,5,Componentes de Sistema,Tarjetas Gráficas nVidia,ok,True,0,0,0,Tarjeta de Video NVIDIA GEFORCE RTX 5080 GAMING  AMP EXTREM,0,0,False,{},,,265751,,1899990,,1899990
+pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory
+10715,1004022,TINTA HP 72 130 ML FOTO NEGRO,Hp,C9370A,94.44,2.0,Suministros y Medios,Suministros Inyección de Tinta
+10716,1004023,TINTA HP 72 130 ML CIAN,Hp,C9371A,94.66,6.0,Suministros y Medios,Suministros Inyección de Tinta
+10717,1004024,TINTA HP 72 130 ML MAGENTA,Hp,C9372A,94.65,8.0,Suministros y Medios,Suministros Inyección de Tinta
+10718,1004025,TINTA HP 72 130 ML AMARILLO,Hp,C9373A,94.86,2.0,Suministros y Medios,Suministros Inyección de Tinta
+1409,1004249,TONER HP 36A NEGRO 2000 PAG,Hp,CB436A,92.63,38.0,Suministros y Medios,Suministros Láser
+1416,1004262,TONER HP 35A NEGRO 1500 PAG,Hp,CB435A,81.31,55.0,Suministros y Medios,Suministros Láser
+2511,1005908,TONER HP 05A NEGRO 2300 PAG,Hp,CE505A,105.79,38.0,Suministros y Medios,Suministros Láser
+55366,1009371,LS1203 LASER SCANNER USB BLACK USB KIT S,Zebra,LS1203-7AZU0100SR,49.14,2.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+1205,1036021,12A BLACK LJ TONER CART Q2612A,Hp,Q2612A,93.54,51.0,Suministros y Medios,Suministros Láser
+54970,1075673,1000LX SFP (Mini-GBIC) MOD,D-Link,DEM-310GT,59.74,3.0,Dispositivos de Red,Transceivers
+23136,1188588,ETIQUETA DK1209,Brother,DK1209,12.71,222.0,Componentes de Sistema,Componentes de Gabinete
+34026,1188615,CARTUCHO DE TINTA LC51M MAGENTA,Brother,LC51M,10.96,23.0,Suministros y Medios,Suministros Inyección de Tinta
+33801,1188617,CARTUCHO DE TINTA LC51BK NEGRO,Brother,LC51BK,18.7,4.0,Suministros y Medios,Suministros Inyección de Tinta
+29601,1188656,CINTA DK2210,Brother,DK2210,8.93,23.0,Componentes de Sistema,Componentes de Gabinete
+6032,1189571,TINTA HP 60 NEGRO 200 PÃG,Hp,CC640WL,24.9,33.0,Suministros y Medios,Suministros Inyección de Tinta
+6033,1189573,1INTA HP 60 TRICOLOR 165 PÃG,Hp,CC643WL,30.51,25.0,Suministros y Medios,Suministros Inyección de Tinta
+54038,1189925,KENSINGTON APOYA PIES SOLESAVER (3 POSIC,Kensington,K56152US,19.62,23.0,Equipamiento de Oficina,Descansa pies y espalda
+9470,1212937,128A BLACK LJ TONER CART CE320A,Hp,CE320A,83.29,14.0,Suministros y Medios,Suministros Láser
+9471,1212938,128A CYAN LJ TONER CART CE321A,Hp,CE321A,79.45,27.0,Suministros y Medios,Suministros Láser
+9472,1212939,TONER HP 128A AMARILLO 1300 PAG,Hp,CE322A,80.02,28.0,Suministros y Medios,Suministros Láser
+9473,1212940,128A MAGENTA LJ TONER CART CE323A,Hp,CE323A,77.14,20.0,Suministros y Medios,Suministros Láser
+1772,1231000,TONER HP126A CIAN 1000 PAG,Hp,CE311A,67.76,20.0,Suministros y Medios,Suministros Láser
+1773,1231001,126A YELLOW LJ TONER CART CE312A,Hp,CE312A,67.77,37.0,Suministros y Medios,Suministros Láser
+1774,1231002,HP126A CLJ CP1025 Magenta Print,Hp,CE313A,67.91,21.0,Suministros y Medios,Suministros Láser
+9007,1252840,CARTUCHO TINTA HP 122 NEGRO,Hp,CH561HL,13.95,110.0,Suministros y Medios,Suministros Inyección de Tinta
+9008,1252841,CARTUCHO TINTA HP 122 TRICOLOR,Hp,CH562HL,16.93,246.0,Suministros y Medios,Suministros Inyección de Tinta
+9771,1403912,KENSINGTON MOCHILA SP25 / 28 L / PARA N,Kensington,K63207,14.48,21.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+11315,1442787,126A BLACK LJ IMAGING UNIT CE314A,Hp,CE314A,95.69,27.0,Suministros y Medios,Suministros Láser
+6255,1694453,KENSINGTON APOYA MUNECAS FOAM NEGRO,Kensington,K62383,6.36,20.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso"
+30708,1722030,3 ft Slim 3.5mm Stereo Audio Cable - M/M,Startech.Com,MU3MMS,3.19,10.0,Cables,Cables y Adaptadores de Video
+19297,1838800,CINTA TZEFA3,Brother,TZEFA3,17.41,10.0,Suministros y Medios,Suministros Matriz de Punto
+33829,1858355,TONER HP 305A NEGRO 2090 PAG,Hp,CE410A,100.45,63.0,Suministros y Medios,Suministros Láser
+46621,1858358,TONER HP 305A AMARILLO 2600 PAG,Hp,CE412A,142.11,55.0,Suministros y Medios,Suministros Láser
+32857,1864241,CARTUCHO TINTA HP 951XL MAGENTA 1500 PÃ,Hp,CN047AL,40.34,22.0,Suministros y Medios,Suministros Inyección de Tinta
+32856,1864242,CARTUCHO TINTA HP951XL AMARILLO 1500 PAG,Hp,CN048AL,40.31,27.0,Suministros y Medios,Suministros Inyección de Tinta
+12291,1966221,80A BLACK LJ TONER CART CF280A,Hp,CF280A,122.89,31.0,Suministros y Medios,Suministros Láser
+56100,1990079,HDMI VGA ADAPTER,Lenovo,0B47069,14.43,345.0,Cables,Cables y Adaptadores de Video
+12548,2035426,CARTUCHO TINTA HP 662XL NEGRO,Hp,CZ105AL,24.19,152.0,Suministros y Medios,Suministros Inyección de Tinta
+11936,2035428,CARTUCHO DE TINTA HP 670 NEGRO 250 PÃG,Hp,CZ113AL,11.84,57.0,Suministros y Medios,Suministros Inyección de Tinta
+11938,2035429,CARTUCHO DE TINTA HP 670 CIAN 300 PÃG,Hp,CZ114AL,11.87,18.0,Suministros y Medios,Suministros Inyección de Tinta
+11937,2035430,CARTUCHO DE TINTA HP 670 MAGENTA 300 PÃ,Hp,CZ115AL,11.24,53.0,Suministros y Medios,Suministros Inyección de Tinta
+11939,2035431,CARTUCHO TINTA HP 670 AMARILLO 300 PÃG,Hp,CZ116AL,11.88,49.0,Suministros y Medios,Suministros Inyección de Tinta
+13195,2137543,TINTA HP 711 38 ML NEGRO,Hp,CZ129A,38.16,558.0,Suministros y Medios,Suministros Inyección de Tinta
+13196,2137544,TINTA HP 711 29 ML CIAN,Hp,CZ130A,31.77,238.0,Suministros y Medios,Suministros Inyección de Tinta
+13197,2137575,TINTA HP 711 29 ML MAGENTA,Hp,CZ131A,31.77,330.0,Suministros y Medios,Suministros Inyección de Tinta
+13198,2137576,TINTA HP 711 29 ML AMARILLO,Hp,CZ132A,31.77,89.0,Suministros y Medios,Suministros Inyección de Tinta
+26179,2137577,TINTA HP 711 80 ML NEGRO,Hp,CZ133A,62.02,94.0,Suministros y Medios,Suministros Inyección de Tinta
+52079,2138405,TINTA HP 711 CABEZAL PARA PLOTTER,Hp,C1Q10A,283.54,17.0,Suministros y Medios,Suministros Impresora Térmica
+12039,2328337,TINTA T195420-AL AMARILLO 210 PAG,Epson,T195420-AL,10.06,13.0,Suministros y Medios,Suministros Inyección de Tinta
+12951,2342714,T664 CYAN BOTTLE L200,Epson,T664220-AL,6.69,818.0,Suministros y Medios,Suministros Inyección de Tinta
+12952,2342715,T664 MAGENTA BOTTLE L200,Epson,T664320-AL,6.69,454.0,Suministros y Medios,Suministros Inyección de Tinta
+12956,2342716,T664 YELLOW BOTTLE L200,Epson,T664420-AL,6.71,546.0,Suministros y Medios,Suministros Inyección de Tinta
+13207,2360614,BOTELLA T673420-AL AMARILLO 19K FOTOS,Epson,T673420-AL,10.32,134.0,Suministros y Medios,Suministros Inyección de Tinta
+13205,2360615,BOTELLA T673520-AL CIAN CLARO 19K FOTO,Epson,T673520-AL,10.32,63.0,Suministros y Medios,Suministros Inyección de Tinta
+13204,2360616,BOTELLA T673620-AL MAG CLARO 19K FOTOS,Epson,T673620-AL,10.32,9.0,Suministros y Medios,Suministros Inyección de Tinta
+55821,2374416,LA VOYAGER 1200G USB BLACK KIT PERP W/ S,Honeywell,1200G-2USB-1,68.74,30.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+8189,2396959,CARTUCHO DE TINTA PG-210 NEGRO,Canon,2974B017,15.04,197.0,Suministros y Medios,Suministros Láser
+23391,2396960,CARTUCHO DE TINTA CL-211 XL COLOR,Canon,2975B017,20.31,73.0,Suministros y Medios,Suministros Láser
+8118,2396961,CARTUCHO DE TINTA CL-211 COLOR,Canon,2976B017,18.05,402.0,Suministros y Medios,Suministros Láser
+14024,2406546,CARTUCHO DE TINTA PGI-150 NEGRO,Canon,6500B001,9.02,114.0,Suministros y Medios,Suministros Inyección de Tinta
+14025,2406547,CARTUCHO DE TINTA CLI-151 NEGRO,Canon,6528B001,8.27,168.0,Suministros y Medios,Suministros Inyección de Tinta
+14026,2406548,CARTUCHO DE TINTA CLI-151 CIAN,Canon,6529B001,8.27,201.0,Suministros y Medios,Suministros Inyección de Tinta
+14027,2406549,CARTUCHO DE TINTA CLI-151 MAGENTA,Canon,6530B001,8.27,62.0,Suministros y Medios,Suministros Inyección de Tinta
+14028,2406550,CARTUCHO DE TINTA CLI-151 AMARILLO,Canon,6531B001,8.27,141.0,Suministros y Medios,Suministros Inyección de Tinta
+20586,2427619,TINTA T693100 NEGRO FOTO 350ML,Epson,T693100,144.39,2.0,Suministros y Medios,Suministros Inyección de Tinta
+20623,2427622,TINTA T693400 AMARILLO 350ML,Epson,T693400,144.39,1.0,Suministros y Medios,Suministros Inyección de Tinta
+23393,2430763,CARTUCHO DE TINTA CL-141 XL COLOR,Canon,5202B001,22.57,139.0,Suministros y Medios,Suministros Inyección de Tinta
+16429,2470838,CARTUCHO TINTA HP 933 XL MAGENTA 825 PÃ,Hp,CN055AL,19.24,18.0,Suministros y Medios,Suministros Inyección de Tinta
+17146,2470845,CARTUCHO DE TINTA HP 971 CIAN 2500 PÃG,Hp,CN622AM,84.5,7.0,Suministros y Medios,Suministros Inyección de Tinta
+17148,2470847,CARTUCHO TINTA HP 971 AMARILLO 2500 PÃG,Hp,CN624AM,84.62,20.0,Suministros y Medios,Suministros Inyección de Tinta
+32813,2482478,6ft DisplayPort DP to VGA Adapter,Startech.Com,DP2VGAMM6B,25.47,6.0,Cables,Cables y Adaptadores USB
+16631,2489323,83A BLACK LJ TONER CART CF283A,Hp,CF283A,73.97,109.0,Suministros y Medios,Suministros Láser
+20462,2515871,TONER HP 130A CYAN,Hp,CF351A,73.07,19.0,Suministros y Medios,Suministros Láser
+20463,2515872,130A YELLOW LJ TONER CART CF352A.,Hp,CF352A,73.08,22.0,Suministros y Medios,Suministros Láser
+20465,2515873,130A MAGENTA LJ TONER CART CF353A,Hp,CF353A,73.13,15.0,Suministros y Medios,Suministros Láser
+17301,2520040,TAMBOR DR1060,Brother,DR-1060,32.88,23.0,Suministros y Medios,Etiquetas y Aplicadores
+28890,2550222,TINTA T694300 MAGENTA 700ML,Epson,T694300,217.25,2.0,Suministros y Medios,Suministros Inyección de Tinta
+17308,2584076,BOTELLA T774120-AL NEGRO 6K PAG,Epson,T774120-AL,16.71,41.0,Suministros y Medios,Suministros Inyección de Tinta
+17017,2644110,IMPRESORA PIXMA IX-6810 A3,Canon,8747B004,149.97,431.0,Impresoras,Impresoras de Inyección de Tinta
+55238,2690191,APC SMART-UPS SRT 10000VA 230V,Apc,SRT10KXLI,4985.4,6.0,Protección Eléctrica y Racks,UPS
+23395,2707204,CARTUCHO DE TINTA CL-146 XL COLOR,Canon,8276B001,22.57,189.0,Suministros y Medios,Suministros Inyección de Tinta
+18876,2758662,MFCPL2700DW MFL LASER B/N,Brother,MFCL2700DW,218.89,1.0,Impresoras,Multifuncionales Láser Mono
+19884,2839904,KENSINGTON MOCHILA CAMPUS / 28 L / PARA,Kensington,K62617WW,19.62,19.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+33824,2888313,TONER HP 508A MAGENTA 5000 PAG,Hp,CF363A,230.8,9.0,Suministros y Medios,Suministros Láser
+19959,2893716,KENSINGTON FUNDA UNIVERSAL PARA TABLETS,Kensington,K97328WW,8.36,57.0,Computadores Servidores y Notebooks,Accesorios para Tablet PCs
+26487,2903796,1TB 6G SATA 3.5in NHP MDL HDD,Hewlett Packard Enterprise,801882-B21,275.9,4.0,Dispositivos de Almacenamiento,Discos Duros SATA
+20552,3002825,BOTELLA DE TINTA BT6001BK NEGRO,Brother,BT6001BK,7.2,254.0,Suministros y Medios,Suministros Inyección de Tinta
+39127,3021447,87A BLACK LJ TONER CART CF287A,Hp,CF287A,247.28,148.0,Suministros y Medios,Suministros Láser
+33819,3021453,410A CYAN LASERJET TONER CART CF411A,Hp,CF411A,132.38,122.0,Suministros y Medios,Suministros Láser
+33858,3021456,410A YELLOW LASERJET TONER CART CF412A,Hp,CF412A,132.39,115.0,Suministros y Medios,Suministros Láser
+33821,3021459,410A MAGENTA LASERJET TONER CART,Hp,CF413A,132.21,120.0,Suministros y Medios,Suministros Láser
+21104,3053745,CARTUCHO DE TINTA PG-44 XL NEGRO,Canon,9060B001,15.8,411.0,Suministros y Medios,Suministros Inyección de Tinta
+21105,3053746,CARTUCHO DE TINTA CL-54 XL COLOR,Canon,9065B001,15.04,257.0,Suministros y Medios,Suministros Inyección de Tinta
+33816,3053751,CARTUCHO DE TINTA PGI-2100 XL NEGRO,Canon,9259B001,22.57,13.0,Suministros y Medios,Suministros Inyección de Tinta
+21140,3065079,CARTUCHO DE TINTA HP 46 TRICOLOR 750 PÃ,Hp,CZ638AL,11.22,108.0,Suministros y Medios,Suministros Inyección de Tinta
+21091,3065081,CARTUCHO TINTA HP 664 NEGRO,Hp,F6V29AL,10.52,3631.0,Suministros y Medios,Suministros Láser
+57352,3081006,APC Smart-UPS SRT 72V 2.2kVA Battery Pac,Apc,SRT72BP,803.84,1.0,Protección Eléctrica y Racks,Baterías UPS
+33820,3135116,TONER HP 410A NEGRO 2300 PAG,Hp,CF410A,102.53,117.0,Suministros y Medios,Suministros Láser
+1412,3156685,CARTUCHO DE TINTA PG-40 NEGRO,Canon,0615B050,17.04,78.0,Suministros y Medios,Suministros Inyección de Tinta
+1414,3156686,CARTUCHO DE TINTA CL-41 COLOR,Canon,0617B050,19.49,24.0,Suministros y Medios,Suministros Láser
+39126,3161084,LASERJET PRO IMP M501DN B/N 45 PPM A4,Hp,J8H61A,305.51,19.0,Impresoras,Impresoras Láser/LED monocromáticas
+22635,3255482,TONER TN3479,Brother,TN3479,109.93,371.0,Suministros y Medios,Suministros Láser
+32719,3255483,TONER TN3499,Brother,TN3499,140.34,30.0,Suministros y Medios,Suministros Láser
+47250,3331467,Aruba 2930F 24G PoE+ 4SFP Swch,Hewlett Packard Enterprise,JL261A,1180.0,22.0,Dispositivos de Red,Switches Standalone
+32860,3338022,CARTUCHO DE TINTA HP 954XL CIAN 1600 PÃ,Hp,L0S62AL,43.62,55.0,Suministros y Medios,Suministros Inyección de Tinta
+32862,3338023,CARTUCHO TINTA HP 954XL MAGENTA 1600 PÃ,Hp,L0S65AL,43.61,50.0,Suministros y Medios,Suministros Inyección de Tinta
+32649,3348480,TINTA T748XXL220-AL CIAN 7K PAG,Epson,T748XXL220-AL,55.91,62.0,Suministros y Medios,Suministros Inyección de Tinta
+25892,3384470,Toner HP 17A Negro,Hp,CF217A,73.58,70.0,Suministros y Medios,Suministros Láser
+23810,3398963,CARTUCHO DE TINTA HP 974A PAGEWIDE CIAN,Hp,L0R87AL,85.63,49.0,Suministros y Medios,Suministros Inyección de Tinta
+23811,3398964,CARTUCHO TINTA HP 974A PAGEWIDE MAGENTA,Hp,L0R90AL,85.62,47.0,Suministros y Medios,Suministros Inyección de Tinta
+23812,3403895,CARTUCHO TINTA HP 974A PAGEWIDE AMARILLO,Hp,L0R93AL,85.58,52.0,Suministros y Medios,Suministros Inyección de Tinta
+23815,3403897,CARTUCHO DE TINTA HP 974X PAGEWIDE CIAN,Hp,L0R99AL,152.33,70.0,Suministros y Medios,Suministros Inyección de Tinta
+23816,3403898,CARTUCHO TINTA HP 974X PAGEWIDE MAGENTA,Hp,L0S02AL,152.61,35.0,Suministros y Medios,Suministros Fax/Fotocopiadoras
+23817,3403899,CARTUCHO TINTA HP 974X PAGEWIDE AMARILLO,Hp,L0S05AL,152.27,46.0,Suministros y Medios,Suministros Inyección de Tinta
+23809,3403900,CARTUCHO DE TINTA HP 974X PAGEWIDE NEGRO,Hp,L0S08AL,157.33,16.0,Suministros y Medios,Suministros Inyección de Tinta
+26951,3406410,HP 32A Original LaserJet Imaging Drum,Hp,CF232A,99.76,14.0,Suministros y Medios,Suministros Láser
+25595,3406973,CARTUCHO DE TINTA HP 904XL CIAN 825 PÃG,Hp,T6M04AL,31.26,16.0,Suministros y Medios,Suministros Inyección de Tinta
+25594,3406974,CARTUCHO TINTA HP 904XL MAGENTA 825 PÃG,Hp,T6M08AL,31.26,20.0,Suministros y Medios,Suministros Inyección de Tinta
+25593,3406985,CARTUCHO TINTA HP 904XL AMARILLO 825 PÃ,Hp,T6M12AL,31.26,6.0,Suministros y Medios,Suministros Inyección de Tinta
+56906,3417086,APC Smart-UPS SRT 192V 5kVA and 6kVA Bat,Apc,SRT192BP,1751.4,3.0,Protección Eléctrica y Racks,Baterías UPS
+56188,3417087,APC Smart-UPS SRT 192V 8kVA and 10kVA Ba,Apc,SRT192BP2,1727.3,4.0,Protección Eléctrica y Racks,UPS
+37495,3418938,Replicador de Puertos USBC a HDMI Blanco,Startech.Com,CDP2HDUACPW,73.67,25.0,Dispositivos de Entrada/Salida,Conmutadores para dispositivos USB
+54937,3516265,Soporte Techo para TV 32 a 75IN,Startech.Com,FLATPNLCEIL,156.05,3.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+56097,3542833,KENSINGTON BASE PARA MONITOR SMARTFIT SP,Kensington,K52787WW,17.62,49.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+51033,3542870,KENSINGTON CABLE DE SEGURIDAD MICROSAVER,Kensington,K65048WW,22.64,14.0,Seguridad Física,Opciones de Seguridad Física y Accs
+37015,3550222,APC Smart UPS RT 2200VA 230V,Apc,SRT2200XLI,1433.7,6.0,Protección Eléctrica y Racks,UPS
+25233,3578887,CRATUCHO DE TINTA LC3017M MAGENTA,Brother,LC3017M,10.96,2.0,Suministros y Medios,Suministros Inyección de Tinta
+54972,3694742,HPE MSA 10GB SR ISCSI SFP 4PK XCVR,Hewlett Packard Enterprise,C8R25B,759.9,1.0,Dispositivos de Red,Transceivers
+33808,3713014,TONER TN411BK NEGRO,Brother,TN411BK,47.39,44.0,Suministros y Medios,Suministros Láser
+33809,3713075,TONER TN411C CIAN,Brother,TN411C,52.98,66.0,Suministros y Medios,Suministros Láser
+33810,3713076,TONER TN411M MAGENTA,Brother,TN411M,52.98,86.0,Suministros y Medios,Suministros Láser
+33811,3713077,TONER TN411Y AMARILLO,Brother,TN411Y,52.98,62.0,Suministros y Medios,Suministros Láser
+33812,3713082,TONER TN419BK NEGRO,Brother,TN419BK,86.29,60.0,Suministros y Medios,Suministros Láser
+33813,3713083,TONER TN419C CIAN,Brother,TN419C,149.58,57.0,Suministros y Medios,Suministros Láser
+33814,3713084,TONER TN419M MAGENTA,Brother,TN419M,149.58,5.0,Suministros y Medios,Suministros Láser
+55819,3741267,DS2278-SR BLACK PRESENTATION CRADLE USB,Zebra,DS2278-SR7U2100PRW,149.65,94.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+55878,3745092,ADATA DRUABLE HD650 2TB (BLACK),Adata Technology,AHD650-2TU31-CBK,96.11,276.0,Dispositivos de Almacenamiento,Discos Duros USB
+55018,3962915,TONER HP 202A CYAN,Hp,CF501A,85.22,28.0,Suministros y Medios,Suministros Láser
+28953,3962921,TONER HP 204A NEGRO 1100 PAG,Hp,CF510A,56.57,11.0,Suministros y Medios,Suministros Láser
+28954,3962922,TONER HP 204A CIAN 900 PAG,Hp,CF511A,62.02,10.0,Suministros y Medios,Suministros Láser
+28955,3962923,TONER HP 204A AMARILLO 900 PAG,Hp,CF512A,62.01,18.0,Suministros y Medios,Suministros Láser
+55802,3985146,Docking Station USB 3.0 2x HDMI VGA/DVI,Startech.Com,DK30ADD,149.51,32.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+55318,4011437,Digital Sender Flow 8500 fn2 Scanner,Hp,L2762A,2175.2,18.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+23390,4020197,CARTUCHO DE TINTA PG-210 XL NEGRO,Canon,2973B017,17.3,143.0,Suministros y Medios,Suministros Inyección de Tinta
+23392,4020198,CARTUCHO DE TINTA PG-140 XL NEGRO,Canon,5200B001,17.19,129.0,Suministros y Medios,Suministros Inyección de Tinta
+23394,4020199,CARTUCHO DE TINTA PG-145 XL NEGRO,Canon,8274B001,17.3,274.0,Suministros y Medios,Suministros Inyección de Tinta
+34754,4041375,GXT 350 Radius 7 1 Surround Headset,Trust,22052,17.4,227.0,Video Juegos y Consolas,Otros Accesorios para Videojuegos
+33864,4120264,APC SMART-UPS RV 3000VA 230V,Apc,SRV3KI,469.25,7.0,Protección Eléctrica y Racks,UPS
+54951,4124698,Aruba 1G SFP LC LX 10km SMF XCVR,Aruba,J4859D,426.0,14.0,Dispositivos de Red,Transceivers
+30033,4140250,QL1110NWB ROTULADORA,Brother,QL1110NWB,259.37,5.0,Impresoras,Impresoras de Etiquetas Hogar/Oficina
+29932,4149401,TONER HP 48A NEGRO LJ,Hp,CF248A,55.66,174.0,Suministros y Medios,Suministros Láser
+36088,4181186,KENSINGTON MOCHILA KILIMANJARO / 28 L /,Kensington,K62597CL,19.34,13.0,Computadores Servidores y Notebooks,Bahías de Expansión y Opciones p/Noteboo
+36100,4187325,APC SMART-UPS SRV 2000VA 230V,Apc,SRV2KI,326.36,17.0,Protección Eléctrica y Racks,UPS
+35992,4213423,BACK UPS BV 500VA AVR UNIVERSAL OUT 230V,Apc,BV500I-MS,58.76,43.0,Protección Eléctrica y Racks,UPS
+41378,4306290,LINKSYS VELOP WHW0101 AC3900 3PK,Linksys,WHW0103,85.73,29.0,Dispositivos de Red,Componentes para Router
+54981,4321407,Adaptador Universal USB Black,Urbano Design,UD-ACCH00,11.15,581.0,Comunicaciones,Accesorios de Energía para teléfonos
+54949,4371621,Aruba AP-515 (RW) Unified AP,Aruba,Q9H62A,374.0,37.0,Dispositivos de Red,Access Points (AP) inalámbricos
+31614,4373233,TONER TN217BK 3.000 PAGES,Brother,TN217BK,64.04,3.0,Suministros y Medios,Suministros Láser
+31617,4373236,TONER TN217Y AMARILLO,Brother,TN217Y,69.85,5.0,Suministros y Medios,Suministros Láser
+38655,4374455,STANDARD ZD510 HC WITH USB USB HOST ETH,Zebra,ZD51013-D01E00FZ,433.83,21.0,Impresoras,Impresoras de Etiquetas Código de Barras
+55336,4397826,ESCANER DR-C225,Canon,3258C002,254.91,33.0,Cámaras y Escáners,Escáners Empresariales/Producción
+54979,4417821,Wireless Charger Base Black,Urbano Design,UD-BANK32,6.0,2227.0,Comunicaciones,Otros Accesorios y Cables telefónicos
+33411,4449025,TINTA T40W120 NEGRO 80ML,Epson,T40W120,46.72,66.0,Suministros y Medios,Suministros Inyección de Tinta
+33412,4449026,TINTA T40W220 CIAN 50ML,Epson,T40W220,33.77,72.0,Suministros y Medios,Suministros Inyección de Tinta
+33413,4449027,TINTA T40W320 MAGENTA 50ML,Epson,T40W320,33.77,54.0,Suministros y Medios,Suministros Inyección de Tinta
+33414,4449028,TINTA T40W420 AMARILLO 50ML,Epson,T40W420,33.77,51.0,Suministros y Medios,Suministros Inyección de Tinta
+34020,4461370,BOLSA T941220-AL CIAN 5K PAG,Epson,T941220-AL,40.46,46.0,Suministros y Medios,Suministros Inyección de Tinta
+34022,4461372,BOLSA T941420-AL AMARILLO 5K PAG,Epson,T941420-AL,40.46,37.0,Suministros y Medios,Suministros Inyección de Tinta
+34076,4475717,CARTUCHO DE TINTA HP 964 CIAN 700 PÃG,Hp,3JA50AL,24.78,117.0,Suministros y Medios,Suministros Inyección de Tinta
+34077,4475718,CARTUCHO TINTA HP 964 MAGENTA 700 PÃG,Hp,3JA51AL,24.74,92.0,Suministros y Medios,Suministros Inyección de Tinta
+34078,4475719,CARTUCHO TINTA HP 964 AMARILLO 700 PÃG,Hp,3JA52AL,24.83,107.0,Suministros y Medios,Suministros Inyección de Tinta
+34080,4475721,CARTUCHO DE TINTA HP 964XL CIAN 1600 PÃ,Hp,3JA54AL,43.06,37.0,Suministros y Medios,Suministros Inyección de Tinta
+34081,4475722,CARTUCHO TINTA HP 964XL MAGENTA 1600 PÃ,Hp,3JA55AL,42.55,53.0,Suministros y Medios,Suministros Inyección de Tinta
+34082,4475723,CARTUCHO TINTA HP 964XL AMARILLO 1600 PG,Hp,3JA56AL,40.64,36.0,Suministros y Medios,Suministros Inyección de Tinta
+48849,4489382,DS-970 ESCANER DE DOCUMENTOS 85 PPM,Epson,B11B251201,844.96,1.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+39129,4489474,TONER HP 58A NEGRO 3000 PAG,Hp,CF258A,115.22,49.0,Suministros y Medios,Suministros Láser
+39130,4489655,TÃ#NER HP 58X NEGRO 10000 PÃG,Hp,CF258X,241.01,21.0,Suministros y Medios,Suministros Láser
+56782,4490177,LASERJET MNG MFP E62655DN B/N 55PPM A4,Hp,3GY14A,1722.3,14.0,Impresoras,Multifuncionales Láser Mono
+56085,4501413,DS-870 ESCANER DE DOCUMENTOS 65 PPM,Epson,B11B250201,561.84,2.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+33818,4512857,TONER HP 26X NEGRO 9000 PAG,Hp,CF226X,236.12,23.0,Suministros y Medios,Suministros Láser
+35661,4513655,TONER HP 105A NEGRO 1000 PAG,Hp,W1105A,49.71,711.0,Suministros y Medios,Suministros Láser
+35077,4532106,KIT RECARGA TONER HP103A NEGRO NEVERSTO,Hp,W1103A,10.72,118.0,Suministros y Medios,Suministros Láser
+34153,4558868,BOTELLA T534120-AL 6K PAG,Epson,T534120-AL,13.2,707.0,Suministros y Medios,Suministros Fax/Fotocopiadoras
+56581,4595275,M3180 B/N ECOTANK 39 PPM A4,Epson,C11CG93303,383.14,7.0,Impresoras,Impresoras de Inyección de Tinta
+45077,4600507,PRINTER ZD220 THERMAL TRANSFER PRINTER,Zebra,ZD22042-T01G00EZ,227.13,30.0,Impresoras,Impresoras de Etiquetas Código de Barras
+35180,4606625,HP LASER MFP 137fnw,Hp,4ZB84A,126.99,145.0,Impresoras,Multifuncionales Láser Mono
+55820,4608746,DS4608-SR BLACK WITH STAND USB KIT DS460,Zebra,DS4608-SR7U2100SGW,138.79,28.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+47249,4630675,ARUBA AP-505 (RW) UNIFIED AP,Aruba,R2H28A,315.0,37.0,Dispositivos de Red,Access Points (AP) inalámbricos
+55365,4632182,DS9308-SR BLACK USB KIT: DS9308-SR00004Z,Zebra,DS9308-SR4U2100AZW,134.2,77.0,Productos POS/AIDC/Código de Barras,Verificadores de Código de Barras
+52536,4633034,NA-LA USB Kit: Omni-directional 1D PDF,Honeywell,1472G2D-2USB-5-N,172.47,13.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+55251,4642340,LIEBERT GXT5 ON-LINE 2000VA 230V,Vertiv,GXT5-2000IRT2UXL,795.81,23.0,Protección Eléctrica y Racks,UPS
+56092,4643052,P020 POLY TC8 W/G7500 STUDIO,Poly,2200-30760-001,598.62,1.0,Comunicaciones,Sistemas de Conferencia multipartita y G
+53355,4649270,KENSINGTON BASE PARA NOTEBOOK & TABLET E,Kensington,K50423WW,13.98,28.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+36125,4695019,MULTIFUNCIONAL COLOR PIXMA G 6010,Canon,3113C005,175.08,60.0,Impresoras,Multifuncionales Inkjet
+55362,4797999,"PRINTER ZT411,203 DPI,US CORD,SERIAL,USB",Zebra,ZT41142-T010000Z,995.0,114.0,Impresoras,Impresoras de Etiquetas Código de Barras
+40250,4802906,Easy PDU Basic ZeroU 16A 230V (20)C13 an,Apc,EPDU1116B,151.42,1.0,Protección Eléctrica y Racks,PDUs y Componentes
+55827,4823859,TT PRINTER 74M/300 STD EZPLZD230 203 DPI,Zebra,ZD23042-301G00EZ,237.24,51.0,Impresoras,Impresoras de Recibos Térmicas
+55825,4834757,THERMAL TRANSFER PRINTER (74-300M),Zebra,ZD23042-301C00EZ,275.0,199.0,Impresoras,Impresoras de Etiquetas Código de Barras
+35344,4865924,BOTELLA DE TINTA GI-10 NEGRO,Canon,3382C001,10.81,286.0,Suministros y Medios,Suministros Inyección de Tinta
+36872,4865925,BOTELLA DE TINTA GI-10 CIAN,Canon,3391C001,9.73,231.0,Suministros y Medios,Suministros Inyección de Tinta
+36873,4865926,BOTELLA DE TINTA GI-10 MAGENTA,Canon,3392C001,9.73,230.0,Suministros y Medios,Suministros Inyección de Tinta
+36874,4865927,BOTELLA DE TINTA GI-10 AMARILLO,Canon,3393C001,9.73,225.0,Suministros y Medios,Suministros Inyección de Tinta
+40530,4888131,CARTUCHO TINTA HP 667 NEGRO,Hp,3YM79AL,10.2,3277.0,Suministros y Medios,Suministros Inyección de Tinta
+40531,4888132,CARTUCHO TINTA HP 667XL TRICOLOR,Hp,3YM80AL,30.53,137.0,Suministros y Medios,Suministros Inyección de Tinta
+37717,4944992,KENSINGTON MOUSE INALAMBRICO SURETRACK#,Kensington,K75350WW,10.39,7.0,Dispositivos de Entrada,Mouse
+56133,4967184,GT 730 ZONE Edition 4GB,Zotac,ZT-71115-20L,91.83,30.0,Componentes de Sistema,Tarjetas Gráficas nVidia
+39052,4988541,TINTA HP712 29 ML CIAN,Hp,3ED67A,24.22,48.0,Suministros y Medios,Suministros Inyección de Tinta
+39053,4988542,TINTA HP712 29ML MAGENTA,Hp,3ED68A,24.19,515.0,Suministros y Medios,Suministros Inyección de Tinta
+39054,4988543,TINTA HP712 29 ML AMARILLO,Hp,3ED69A,24.24,531.0,Suministros y Medios,Suministros Inyección de Tinta
+39051,4988544,TINTA HP712 38 ML NEGRO,Hp,3ED70A,29.1,694.0,Suministros y Medios,Suministros Inyección de Tinta
+39055,4988585,TINTA HP712 80 ML NEGRO,Hp,3ED71A,47.21,346.0,Suministros y Medios,Suministros Inyección de Tinta
+54961,5017243,AP-POE-ATSR 1P SR 802.3AT 30W MIDSPAN,Hewlett Packard Enterprise,R6P67A,74.93,1.0,Dispositivos de Red,Cables y Componentes inalámbricos
+54909,5022520,GXT160 TURE MOUSE,Trust,22332,14.46,646.0,Dispositivos de Entrada,Mouse
+39183,5035734,DISCO EXTERNO CANVIO GAMING 2TB,Toshiba,HDTX120XK3AA,116.97,6.0,Dispositivos de Almacenamiento,Discos Duros USB
+51171,5035735,DISCO EXTERNO CANVIO FLEX 2TB,Toshiba,HDTX120XSCAA,116.45,24.0,Dispositivos de Almacenamiento,Discos Duros USB
+55250,5059502,HPE NS204I-P GEN10+ BOOT CTRLR,Hewlett Packard Enterprise,P12965-B21,6216.1,4.0,Computadores Servidores y Notebooks,Componentes Blade
+40436,5063221,KIT CABEZAL NEGRO CABEZAL COLOR,Canon,0692C005,45.14,87.0,Suministros y Medios,Suministros Inyección de Tinta
+50265,5064144,KENSINGTON CABLE DE SEGURIDAD CLICKSAFE,Kensington,K68102WW,27.62,8.0,Seguridad Física,Opciones de Seguridad Física y Accs
+54980,5083024,Kids Wired Headphone (6-9),Vivitar,MZX4200-APRDESP-6,7.37,275.0,Comunicaciones,Cintillos telefónicos
+52461,5094338,Wireless Router Wifi 6 1800,Linksys,E7350,110.0,11.0,Dispositivos de Red,Routers y Gateways inalámbricos
+57710,5116169,Aruba 6100 48G CL4 4SFP+ Swch,Hewlett Packard Enterprise,JL675A,2186.5,8.0,Dispositivos de Red,Switches Standalone
+54952,5116171,ARUBA 6100 24G CL4 4SFP+ STOCK,Hewlett Packard Enterprise,JL677A,910.0,19.0,Dispositivos de Red,Switches Estaqueables
+47485,5136542,"APC BACK-UPS 2200VA, 230V, AVR, UNIVERSA",Apc,BX2200MI-MS,168.35,15.0,Protección Eléctrica y Racks,UPS
+54990,5137455,LJ Mngd E40040dn Printer,Hp,3PZ35A,211.41,118.0,Impresoras,Impresoras Láser/LED color
+40441,5148498,GI-11 Black,Canon,4525C001,9.77,407.0,Suministros y Medios,Suministros Inyección de Tinta
+40442,5148499,GI-11 Cyan,Canon,4534C001,9.02,366.0,Suministros y Medios,Suministros Inyección de Tinta
+40443,5148500,GI-11 Magenta,Canon,4535C001,9.02,431.0,Suministros y Medios,Suministros Inyección de Tinta
+40444,5148501,GI-11 Yellow,Canon,4536C001,9.02,228.0,Suministros y Medios,Suministros Inyección de Tinta
+42913,5176677,MC-G01 Maintenance Cartridge,Canon,4628C001,11.4,685.0,Suministros y Medios,Cartuchos de Limpieza
+43161,5190691,SCANNER WORKFORCE ES-400II,Epson,B11B261201,360.77,24.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+55275,5217737,HPE MR416i-a Gen10+ Controller,Hewlett Packard Enterprise,P26279-B21,2286.9,2.0,Dispositivos de Almacenamiento,Controladoras de Disco SAS RAID
+56560,5217865,HPE 800W FS Plat Ht Plg LH Pwr Sply Kit,Hewlett Packard Enterprise,P38995-B21,552.5,10.0,Componentes de Sistema,Fuentes de Poder para Computadores Espec
+55264,5217944,HPE 480GB SATA MU SFF BC MV SSD,Hewlett Packard Enterprise,P40502-B21,4300.1,3.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+55247,5217945,HPE 960GB SATA MU SFF BC MV SSD,Hewlett Packard Enterprise,P40503-B21,7120.5,4.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+55244,5217946,HPE 1.92TB SATA MU SFF BC MV SSD,Hewlett Packard Enterprise,P40504-B21,12005.0,9.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+55866,5217952,HPE 960GB SAS MU SFF BC VS MV SSD,Hewlett Packard Enterprise,P40510-B21,5745.1,7.0,Dispositivos de Almacenamiento,Discos Sólidos SAS (SSD)
+55243,5217953,HPE 1.92TB SAS MU SFF BC VS MV SSD,Hewlett Packard Enterprise,P40511-B21,11463.0,17.0,Dispositivos de Almacenamiento,Discos Sólidos SAS (SSD)
+42552,5240657,BOTELLA T554120-AL L8160/L8180 NG,Epson,T554120-AL,17.86,125.0,Suministros y Medios,Suministros Inyección de Tinta
+42553,5240658,BOTELLA T555120-AL L8160/L8180 PHOTO NG,Epson,T555120-AL,17.59,91.0,Suministros y Medios,Suministros Fax/Fotocopiadoras
+42554,5240659,BOTELLA T555220-AL L8160/L8180 CYAN,Epson,T555220-AL,17.76,167.0,Suministros y Medios,Suministros Inyección de Tinta
+42555,5240660,BOTELLA T555320-AL L8160/L8180 MAGENTA,Epson,T555320-AL,17.82,135.0,Suministros y Medios,Suministros Inyección de Tinta
+42556,5240661,BOTELLA T555420-AL L8160/L8180 YELLOW,Epson,T555420-AL,17.58,133.0,Suministros y Medios,Suministros Inyección de Tinta
+42557,5240662,BOTELLA T555520-AL L8160/L8180 GRAY,Epson,T555520-AL,17.84,113.0,Suministros y Medios,Suministros Inyección de Tinta
+55957,5241196,DS-770II DOCUMENT SCANNER,Epson,B11B262201,518.13,7.0,Cámaras y Escáners,Escáners Empresariales/Producción
+56867,5274438,MONITOR VA2715-2K 27IN,Viewsonic,VA2715-2K-MHD,107.62,2.0,Pantallas,Monitores LCD/LED
+42909,5276446,GI-16 NEGRA,Canon,4408C001,23.11,610.0,Suministros y Medios,Suministros Inyección de Tinta
+42911,5276448,GI-16 MAGENTA,Canon,4419C001,18.32,896.0,Suministros y Medios,Suministros Inyección de Tinta
+42912,5276449,GI-16 AMARILLO,Canon,4420C001,18.32,1094.0,Suministros y Medios,Suministros Inyección de Tinta
+54953,5284027,ARUBA AP-635 (RW) CAMPUS AP,Hewlett Packard Enterprise,R7J27A,494.0,17.0,Dispositivos de Red,Access Points (AP) inalámbricos
+55853,5290800,INT XEON-S 4314 CPU FOR HPE,Hewlett Packard Enterprise,P36922-B21,1071.4,3.0,Componentes de Sistema,Procesadores Intel
+56927,5304146,CORE I7-12700K 3.60GHZ SKTLGA1700 25.00M,Intel,BX8071512700K,338.37,159.0,Componentes de Sistema,Procesadores Intel
+43744,5304147,I7-12700KF 25M CACHE 3.6 GHZ BOXED,Intel,BX8071512700KF,306.83,83.0,Componentes de Sistema,Procesadores Intel
+53753,5315925,QUICKSCAN LITE 2500 2D IMAGER KIT W/ USB,Datalogic,QW2520-BKK1S,63.43,5.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+45278,5336934,CORE I3-12100F 3.3GHZ 12MB LGA1700 4C/8T,Intel,BX8071512100F,93.3,243.0,Componentes de Sistema,Procesadores Intel
+44533,5337305,I5-12400 18M CACHE 2.5 GHZ BOXED,Intel,BX8071512400,175.78,289.0,Componentes de Sistema,Procesadores Intel
+55024,5337309,I7-12700 25M CACHE 2.1 GHZ BOXED,Intel,BX8071512700,332.39,349.0,Componentes de Sistema,Procesadores Intel
+55255,5337310,CORE I7-12700F 2.1GHZ 25MB 12C/20T,Intel,BX8071512700F,300.75,220.0,Componentes de Sistema,Procesadores Intel
+57711,5352562,ARUBA 6000 48G CL4 4SFP SWCH,Hewlett Packard Enterprise,R8N85A,1190.0,9.0,Dispositivos de Red,Switches Estaqueables
+55478,5374864,Desk Mount Monitor Arm for 32in Display,Startech.Com,ARMPIVOTE2,103.74,3.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+55824,5375871,"TRIO C60,POE,CALA",Poly,2200-86610-025,688.09,1.0,Comunicaciones,Unidades de Audio Conferencia
+52816,5392259,LENOVO DOCKING USB-C USB-A ITALY CHILE,Lenovo,40AF0135IT,165.03,63.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+53222,5455010,PROYECTOR BENQ MW826STH DE TIRO CORTO,Benq,9H.JMW77.13L,612.95,13.0,Dispositivos Audio/Video,Proyectores DLP
+55364,5464806,Thermal Transfer Printer (74/300M) ZD421,Zebra,ZD4A042-301M00EZ,324.94,21.0,Impresoras,Impresoras de Etiquetas Código de Barras
+45374,5473672,T664 SET INK BOTTLE CARTON FOUR PACK,Epson,T664520-4P,25.66,567.0,Suministros y Medios,Suministros Inyección de Tinta
+54958,5475567,ARUBA ION 1G SFP LC SX 500M MMF XCVR,Hewlett Packard Enterprise,R9D16A,13.74,18.0,Dispositivos de Red,Transceivers
+40437,5505946,BH-10 + CH-10,Canon,3418C004,45.14,39.0,Suministros y Medios,Suministros Inyección de Tinta
+40439,5505947,BH-10 + GI-11 NEGRO,Canon,3418C006,45.62,33.0,Suministros y Medios,Suministros Inyección de Tinta
+44158,5505950,GI-13 CYAN,Canon,4668C001,12.03,1.0,Suministros y Medios,Suministros Inyección de Tinta
+44159,5505951,GI-13 MAGENTA,Canon,4669C001,12.03,16.0,Suministros y Medios,Suministros Inyección de Tinta
+44163,5505965,GI-13 ROJO,Canon,4713C001,12.02,15.0,Suministros y Medios,Suministros Inyección de Tinta
+56494,5505998,"Scanner ADS4900W Wifi, Velocidad 60 ppm",Brother,ADS4900W,587.24,12.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+56539,5511193,APC Easy UPS On-Line SRV 2000VA 1800W 23,Apc,SRV2KI-E,583.61,24.0,Protección Eléctrica y Racks,UPS
+56206,5513185,APC Easy UPS On-Line SRV 3000VA 2700W 23,Apc,SRV3KI-E,840.16,34.0,Protección Eléctrica y Racks,UPS
+45884,5548642,LC402BKS REND 550 PAGS. MFCJ6740DW,Brother,LC402BKS,16.33,33.0,Suministros y Medios,Suministros Inyección de Tinta
+41440,5550223,KENSINGTON TECLADO ALAMBRICO PRO FIT LAV,Kensington,K64407ES,10.31,19.0,Dispositivos de Entrada,Teclados
+55328,5551017,Scanjet Enterprise Flow N6600 fnw1 Flatb,Hp,20G08A,990.86,11.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+56577,5557785,Scanner ADS4300N Velocidad 40 ppm ciclo,Brother,ADS4300N,406.61,5.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+53752,5587431,QUICKSCAN QBT2500 2D USB KIT BT BLK,Datalogic,QBT2500-BK-BTK1,117.49,27.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+52199,5596814,KENSINGTON CABLE DE SEGURIDAD SLIM NANOS,Kensington,K65021WW,21.19,13.0,Seguridad Física,Opciones de Seguridad Física y Accs
+52200,5604390,KENSINGTON CABLE DE SEGURIDAD SLIM NANOS,Kensington,K65025WW,21.47,196.0,Seguridad Física,Opciones de Seguridad Física y Accs
+56541,5604525,APC EASY UPS ON-LINE SRV RM 3000VA 2700W,Apc,SRV3KRIRK-E,823.95,16.0,Protección Eléctrica y Racks,UPS
+46935,5609732,RYZEN 7 7700X WITHOUT COOLER,Amd,100-100000591WOF,400.43,15.0,Componentes de Sistema,Procesadores AMD
+55472,5615875,DS-790WN,Epson,B11B265201,591.59,13.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+55822,5618440,LA TT PRNT Z LA TT PRNT ZT231 4IN 203 D,Zebra,ZT23142-T01000FZ,721.0,33.0,Productos POS/AIDC/Código de Barras,Accesorios para Impresoras POS
+54957,5626952,ARUBA AP 615 RW CAMPUS AP,Hewlett Packard Enterprise,R7J49A,245.0,18.0,Dispositivos de Red,Access Points (AP) inalámbricos
+51691,5682251,ROTULADORA PTD610 USB BT,Brother,PTD610BTVP,132.21,1.0,Impresoras,Impresoras de Etiquetas Hogar/Oficina
+48765,5686037,PFI 050 C,Canon,5699C001,52.56,64.0,Suministros y Medios,Suministros Inyección de Tinta
+48764,5686038,PFI 050 BK,Canon,5698C001,46.55,107.0,Suministros y Medios,Suministros Inyección de Tinta
+48766,5686039,PFI 050 M,Canon,5700C001,52.25,58.0,Suministros y Medios,Suministros Inyección de Tinta
+48767,5686041,PFI 050 Y,Canon,5701C001,52.69,60.0,Suministros y Medios,Suministros Inyección de Tinta
+55245,5721717,HPE MR416I-P GEN11 X16 LANES 8GB CACHE,Hewlett Packard Enterprise,P47777-B21,5470.1,4.0,Dispositivos de Almacenamiento,Controladoras de Disco SAS RAID
+55273,5721720,HPE MR416I-O GEN11 SPDM STORAGE CNTLR,Hewlett Packard Enterprise,P47781-B21,5370.6,2.0,Dispositivos de Almacenamiento,Controladoras de Disco Multipuertos
+55274,5721722,HPE MR216I-O GEN11 SPDM STORAGE CNTLR,Hewlett Packard Enterprise,P47789-B21,2734.5,2.0,Dispositivos de Almacenamiento,Controladoras de Disco SAS RAID
+55252,5749300,HPE 16GB 1Rx8 PC5-4800B-R Smart Kit**GEN,Hewlett Packard Enterprise,P43322-B21,3643.2,13.0,Componentes de Sistema,Memoria Genérica
+56182,5749302,HPE 32GB 2Rx8 PC5-4800B-R Smart Kit,Hewlett Packard Enterprise,P43328-B21,6859.2,11.0,Componentes de Sistema,Memoria Genérica
+55867,5762829,INT Xeon-S 4416+ CPU for HPE,Hewlett Packard Enterprise,P49611-B21,4351.0,2.0,Componentes de Sistema,Procesadores Intel
+56510,5762939,THINKSYSTEM 2.5 5400 PRO 480GB 6GB HS SS,Lenovo,4XB7A82259,663.0,3.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+54938,5785891,"Proyector Laser L260F 1080p, 4600 lumene",Epson,V11HA69020,1719.6,2.0,Dispositivos Audio/Video,Proyectores LCD
+57702,5785897,DELL ECOLOOP PRO SLIM BACKPACK 15,Dell,DELL-CP5724S,29.01,130.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+54109,5817638,ELO 1509L 15.6IN HD CAP 10-TOUCH USB HDM,Elo,E551755,270.2,34.0,Productos POS/AIDC/Código de Barras,Pantallas Táctiles POS
+56086,5830319,WORKFORCE PRO C5810 Latin MFP,Epson,C11CK24301,361.21,20.0,Impresoras,Impresoras de Inyección de Tinta
+52648,5862194,ADATA DRAM DDR4 SO-DIMM 8GB 3200,Adata Technology,AD4S32008G22-SGN,73.4,324.0,Componentes de Sistema,Memoria Genérica
+50607,5862230,DRAM DDR4 U-DIMM 8GB 3200 SINGLE TRAY CL,Adata Technology,AD4U32008G22-SGN,75.76,324.0,Componentes de Sistema,Memoria Genérica
+34498,5862260,ADATA SSD SU650 480GB RETAIL,Adata Technology,ASU650SS-480GT-R,76.06,120.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+54588,5868763,BAG T11A220-AL CYAN WF-C5890 5K PAG,Epson,T11A220-AL,45.54,99.0,Suministros y Medios,Suministros Inyección de Tinta
+54589,5868764,BAG T11A320-AL MAGENTA WF-C5890 5K PAG,Epson,T11A320-AL,45.54,116.0,Suministros y Medios,Suministros Inyección de Tinta
+54590,5868805,BAG T11A420-AL YELLOW WF-C5890 5K PAG,Epson,T11A420-AL,45.54,121.0,Suministros y Medios,Suministros Inyección de Tinta
+54586,5868806,BAG T11B120-AL BLACK XL WF-C5890 10K PAG,Epson,T11B120-AL,44.06,113.0,Suministros y Medios,Suministros Inyección de Tinta
+49682,5891621,T574 BOTELLA CYAN - C13T09A22A,Epson,T574220-AL,7.98,182.0,Suministros y Medios,Suministros Inyección de Tinta
+49683,5891622,T574 BOTELLA MAGENTA - C13T09A32A,Epson,T574320-AL,7.98,178.0,Suministros y Medios,Suministros Inyección de Tinta
+49684,5891623,T574 BOTELLA AMARILLA - C13T09A42A,Epson,T574420-AL,7.98,132.0,Suministros y Medios,Suministros Inyección de Tinta
+49685,5891624,T574 BOTELLA LIGHT CYAN - C13T09A52A,Epson,T574520-AL,7.98,135.0,Suministros y Medios,Suministros Inyección de Tinta
+56079,5893400,WFE AM C4000 COLOR MFP PRINTER,Epson,C11CJ43201,4759.0,2.0,Impresoras,Multifuncionales Inkjet
+49677,5898461,TM-T88VII-012:SRL(S01):UIB:PSyAC:EBCK,Epson,C31CJ57012,312.18,133.0,Impresoras,Impresoras de Recibos Térmicas
+50506,5906598,CORE I5-14600KF 3.50GHZ SKTLGA1700 CACHE,Intel,BX8071514600KF,244.92,22.0,Componentes de Sistema,Procesadores Intel
+50507,5906599,CORE I7-14700K 3 40GHZ SKTLGA1700 33.00M,Intel,BX8071514700K,409.75,100.0,Componentes de Sistema,Procesadores Intel
+50508,5906600,CORE I7-14700KF 3 40GHZ SKTLGA1700 CACHE,Intel,BX8071514700KF,390.11,196.0,Componentes de Sistema,Procesadores Intel
+50509,5906601,CORE I9-14900K 3 20GHZ SKTLGA1700 36.00M,Intel,BX8071514900K,573.02,31.0,Componentes de Sistema,Procesadores Intel
+50510,5906602,CORE I9-14900KF 3 20GHZ SKTLGA1700 CACHE,Intel,BX8071514900KF,542.6,172.0,Componentes de Sistema,Procesadores Intel
+51062,5939020,DRUM DR3609 DL RENDIMIENTO HASTA 75000 P,Brother,DR3609,185.14,33.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+55471,5939024,MFCL6915DW MONO WIRELESS LASER PRINTER,Brother,MFCL6915DW,751.32,4.0,Impresoras,Impresoras Láser/LED monocromáticas
+56584,5999349,PIXMA G4170 BLACK WIFI USB ADF FAX,Canon,5807C005,163.73,72.0,Impresoras,Impresoras de Inyección de Tinta
+54906,6022598,IMPRESORA:LA DesignJet T850 36â#,Hp,2Y9H0A,2383.9,3.0,Impresoras,Impresoras de Recibos Térmicas
+56081,6022599,IMPRESORA:LA DesignJet T950 36â#,Hp,2Y9H1A,2942.4,2.0,Impresoras,Plotters color
+56077,6022600,Multifuncional DesignJet T850 36â#,Hp,2Y9H2A,5436.2,13.0,Impresoras,Plotters color
+56711,6031630,HPE ANW 6200F 48G C4 4SFP 370W SW,Hewlett Packard Enterprise,JL727B,4783.0,2.0,Dispositivos de Red,Switches Estaqueables
+52234,6107337,MEMORY 16GB DDR4 3200 UDIMM BLACK D35G,Adata Technology,AX4U320016G16A-SBKD35G,122.57,243.0,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash
+52233,6107338,MEMORY 8GB DDR4 3200 UDIMM BLACK D35G,Adata Technology,AX4U32008G16A-SBKD35G,78.0,480.0,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash
+55065,6110733,LASERPROJECTOR FULL HD (1920X1080) 4000,Viewsonic,LS711HD,924.46,39.0,Dispositivos Audio/Video,Proyectores DLP
+51417,6119329,CAMPUS XL MARBLE STONE BACKPACK 20L,Hp,7J592AA,24.0,23.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+53931,6119460,SSD LEGEND 710 512GB PCIe Gen3 NVMe M.2,Adata Technology,ALEG-710-512GCS,88.18,269.0,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD)
+54928,6145110,MONITOR 27 IN LED 4K IPS PANEL,Benq,9H.LJXLA.TBA,683.57,19.0,Pantallas,Monitores LCD/LED
+57993,6145112,MONITOR SW272Q PHOTOGRAPHER 27 IN 2K IPS,Benq,9H.LLPLB.QBA,593.41,16.0,Pantallas,Monitores LCD/LED
+54905,6149339,Impresora Todo-en-Uno OfficeJet Pro 9130,Hp,404K5C,219.55,47.0,Impresoras,Multifuncionales Inkjet
+55277,6154151,HPE 16GB 1RX8 PC5-4800B-E STND KIT,Hewlett Packard Enterprise,P64336-B21,2442.1,7.0,Componentes de Sistema,Memoria Genérica
+52034,6159735,KENSINGTON BASE PARA MONITOR DE ALUMINIO,Kensington,K58304,23.31,4.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+55869,6213455,MEMORY 8GB DDR4 3200 UDIMM WHITE D35,Adata Technology,AX4U32008G16A-SWHD35,78.59,250.0,Componentes de Sistema,Memoria Propietaria
+53037,6213549,POLY BLACKWIRE 3220 STEREO USB-C HEADSET,Poly,8X228A6,38.9,74.0,Dispositivos Audio/Video,Combos Micrófono+Cintillo/audífono p/PCs
+54943,6216520,MODULO INTERACTIVO POINTWRITE PW03,Benq,5J.JJR26.21E,270.66,2.0,Dispositivos Audio/Video,Lentes para Proyector
+56513,6218051,DISCO DURO EXTERNO HD650 - 1TB - - USB3,Adata Technology,AHD650-1TU31-CBK,75.06,525.0,Dispositivos de Almacenamiento,Discos Duros USB
+56036,6224552,MONITOR P2725H,Dell,P2725H,185.01,132.0,Pantallas,Monitores LCD/LED
+54908,6228569,APPLE PENCIL PRO-AME,Apple,MX2D3AM/A,118.65,20.0,Comunicaciones,Punteros/Stylus
+55851,6268204,RAM XPG DDR5 LANCERB RGB 16GB 6000MHZ BK,Adata Technology,AX5U6000C4816G-SLABRBK,259.69,348.0,Componentes de Sistema,Memoria Genérica
+55823,6271023,TC22/TC27 PROTECTIVE BOOT,Zebra,SG-TC2L-BOOT-01,49.16,108.0,Productos POS/AIDC/Código de Barras,Accesorios para Terminales Móviles AIDC
+52799,6278451,KENSINGTON MOCHILA SIMPLY PORTABLE HASTA,Kensington,K60397WW,8.34,35.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+57995,6297122,"PD3205U-MONITOR 31.5"" PD3205U 4K",Benq,9H.LKGLA.TBL,570.6,15.0,Pantallas,Monitores LCD/LED
+56058,6313241,Epson Multi-Mono. WorkForce Pro WF-M5899,Epson,C11CK76301,345.08,55.0,Impresoras,Multifuncionales Inkjet
+53356,6335647,GOPRO-HERO 13 BUNDLE,Gopro,CHDRB-131-RW,369.78,23.0,Cámaras y Escáners,Cámaras de Video Digital
+57933,6340674,MONITOR QHD S5 PRO 27IN 527PQ,Hp,9D9S0UT,214.38,61.0,Pantallas,Monitores LCD/LED
+50455,6340820,SSD WDS100T3X0G-00CHY0 1TB M.2,Western Digital,WDS100T3X0G-00CHY0,253.33,8.0,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD)
+57345,6343100,265KF CORE ULTRA 7 PROCESSOR,Intel,BX80768265KF,309.27,15.0,Componentes de Sistema,Procesadores Intel
+55259,6343101,245KF CORE ULTRA 5 PROCESSOR,Intel,BX80768245KF,240.41,130.0,Componentes de Sistema,Procesadores Intel
+55257,6343102,245K CORE ULTRA 5 PROCESSOR,Intel,BX80768245K,224.61,48.0,Componentes de Sistema,Procesadores Intel
+51484,6343145,I7-14700 33MB CACHE 5.40 GHZ BOXED,Intel,BX8071514700,386.0,242.0,Componentes de Sistema,Procesadores Intel
+51481,6343149,I3-14100F 12MB 4.70 GHZ BOXED,Intel,BX8071514100F,100.1,16.0,Componentes de Sistema,Procesadores Intel
+54942,6343153,WDC10 BOTONES TIPO C - DP,Benq,5J.JLD28.A20,486.7,2.0,Dispositivos Audio/Video,Punteros y Controles Remotos
+55988,6368763,MBP 14 SB/14C CPU/20C GPU/24GB/1T-CHL,Apple,MX2J3CI/A,2459.9,3.0,Computadores Servidores y Notebooks,Notebooks
+55174,6368789,IMAC 24IN SLV/10C CPU/10C GPU/16GB/512-C,Apple,MWUV3CI/A,1805.0,3.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+56082,6371125,HP DesignJet T650 36-in Printer,Hp,5HB10D,1743.6,19.0,Impresoras,Plotters color
+53200,6379934,PACK 2 BOTELLAS DE TINTA NEGRA,Brother,BTD100BK2PK,12.68,55.0,Suministros y Medios,Suministros Inyección de Tinta
+53201,6379936,PACK 4 BOTELLAS DE TINTA,Brother,BTD100CMYK,22.25,315.0,Suministros y Medios,Suministros Inyección de Tinta
+57772,6385590,THINKSYSTEM 2.5IN VA 480GB READ INTENSIV,Lenovo,4XB7A90873,1492.0,10.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+57996,6393467,MONITOR GW2490T 24INCH 1920x1080 IPS,Benq,9H.LMJLJ.LBL,112.15,76.0,Pantallas,Monitores LCD/LED
+54838,6399137,SSD LEGEND 860 1000GB 6000-4000 MBs,Adata Technology,SLEG-860-1000GCS,165.0,193.0,Dispositivos de Almacenamiento,Discos de Estado Sólido M.2 (SSD)
+55670,6399144,HP DesignJet T250 24-in Printer,Hp,5HB06D,754.43,20.0,Impresoras,Plotters color
+55040,6402886,AP4600 ASUS BACKPACK,Asus,90XB08L0-BBP050,17.51,801.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+47615,6406893,HP MOUSE 240 EMPIRE ROJO BLUETOOTH,Hp,43N05AA#ABM,9.34,88.0,Dispositivos de Entrada,Mouse
+54228,6457300,IDEAPAD SLIM 5 G10 R7 AI 7 350 14IN,Lenovo,83HX002GCL,787.79,9.0,Computadores Servidores y Notebooks,Notebooks
+55148,6500036,TP UNIVERSAL USB-C DOCK -IT,Lenovo,40AY0090IT,159.71,156.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+55072,6510990,IPAD WIFI 128GB SLV-CHL,Apple,MD3Y4CI/A,447.86,27.0,Computadores Servidores y Notebooks,Tablets y Tablet PCs
+54585,6515172,MULTIFUNCIONAL WF-C5891,Epson,C11CK27301,462.42,26.0,Impresoras,Multifuncionales Inkjet
+55805,6516246,KB MICE_BO Essencial WR,Lenovo,4X31R64424,14.91,7.0,Dispositivos de Entrada,Combos Teclado/Mouse
+55241,6518315,HPE PROLIANT DL320 GEN11 3508U 2.1GHZ 8C,Hewlett Packard Enterprise,P81425-DM5,6537.9,4.0,Computadores Servidores y Notebooks,Servidores en Rack
+55234,6518320,HPE PROLIANT DL360 GEN11 4514Y 2.0GHZ 16,Hewlett Packard Enterprise,P81430-DM5,10463.0,1.0,Computadores Servidores y Notebooks,Servidores en Rack
+56060,6518323,HPE PROLIANT DL365 GEN11 9224 2.5GHZ 24C,Hewlett Packard Enterprise,P81431-DM5,11406.0,1.0,Computadores Servidores y Notebooks,Servidores en Rack
+57755,6546287,ViewBoard 51 serie touchscreen 65 UHD An,Viewsonic,IFP6551,1145.2,75.0,Pantallas,Pantallas Comerciales LCD/LED
+54495,6588593,Dell Pro 14 PC14250-CU7-16GB-512GB-W11P,Dell,2HWN3,1330.4,142.0,Computadores Servidores y Notebooks,Notebooks
+56090,6594693,DELL PRO DOCKING WD 25,Dell,DELL-WD25,166.69,195.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+56642,6597323,Dell Pro Slim QCS1250; Core Ultra 5; 16G,Dell,GFCMC,1069.6,49.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+55346,6597490,MAG CORELIQUID A12 240,Msi,306-7ZWBM11-813,50.3,184.0,Componentes de Sistema,Componentes de Tarjetas Madre
+57347,6620438,MOTO G86 POWER 5G CEREZA 8 PLUS 256,Motorola,PB8W0003CL,265.76,558.0,Comunicaciones,Smart Phones
+56536,6629496,APC EASY UPS 2200VA,Apc,BVG2200I-MSX,115.45,1.0,Protección Eléctrica y Racks,UPS
+55997,6629568,DELL PRO U7 255U 32GB 1TBSSD 14IN W11P 3,Dell,PC14250_U7ARL321TBWPS_3WXCTO,1801.0,153.0,Computadores Servidores y Notebooks,Notebooks
+56726,6629569,DELL PRO SFF I5-14500 16GB 512SSD W11P 3,Dell,DM1CF,1019.4,15.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+54801,6630842,MONITOR ODYSSEY 27 IN GAMING,Samsung,LS27FG900XLXZS,1386.1,3.0,Pantallas,Monitores LCD/LED
+56819,6632466,D700SF-007265005X U7-265 1TB SSD 16G 9L,Asus,90PF05E1-M000J0,1087.3,2.0,Computadores Servidores y Notebooks,Computadores Tower
+56248,6632642,RTX 5050 8G SHADOW 2X OC,Msi,912-V538-008,430.56,42.0,Componentes de Sistema,Tarjetas Gráficas nVidia
+55659,6640343,NOTEBOOK DELL PRO PLUS U5 32GB 1TB W11P,Dell,PB14250_U5LNL321TBWPS_3PSXCTO,2069.9,48.0,Computadores Servidores y Notebooks,Notebooks
+54709,6643298,IMPRESORA IMAGEPROGRAF TC-21,Canon,7055C002,613.42,67.0,Impresoras,Plotters color
+56394,6643446,DELL PRO 14 PC14250 CU5 16GB 512GB WP 3Y,Dell,Y5C5C,1223.0,291.0,Computadores Servidores y Notebooks,Notebooks
+44748,6644606,HP 200 MRN BLUE WIRELESS MOUSE,Hp,2HU85AA#ABL,8.75,2311.0,Dispositivos de Entrada,Mouse
+44746,6644607,HP WIRED MOUSE 100 LTNA,Hp,6VY96AA#ABM,3.86,176.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso"
+56063,6653893,HPE ML110 G11 3508U 1X32G 4LFF HDD SVR,Hewlett Packard Enterprise,P84117-DM5,4628.0,2.0,Computadores Servidores y Notebooks,Servidores Tower
+56016,6653897,HPE DL360 G11 4510 2X32G 8SFF SSD LA SVR,Hewlett Packard Enterprise,P84099-DM5,11859.0,3.0,Computadores Servidores y Notebooks,Servidores en Rack
+56062,6653898,HPE ML110 G11 3508U 1X32G 4LFF SSD SVR,Hewlett Packard Enterprise,P84098-DM5,6331.8,5.0,Computadores Servidores y Notebooks,Servidores Tower
+56095,6674884,IPAD SMART FOLIO SKY-ZML,Apple,MDEQ4ZM/A,70.06,4.0,Computadores Servidores y Notebooks,Accesorios para Tablet PCs
+56044,6677793,MONITOR-HDMI 27 P27QD-40C25270QP0,Lenovo,64B3GAR2CL,276.82,3.0,Pantallas,Monitores LCD/LED
+55550,6677805,TP X13 G6 U7 255U 32GB 1T W11P,Lenovo,21RL000TCL,2076.2,25.0,Computadores Servidores y Notebooks,Notebooks
+55388,6677810,TP T14S G6 U7 255U 32GB 1TB W11P,Lenovo,21R20014CL,1835.0,83.0,Computadores Servidores y Notebooks,Notebooks
+55535,6677812,TP T14 G6 U5 225U 16GB 512GB W11P,Lenovo,21QD001FCL,1286.4,11.0,Computadores Servidores y Notebooks,Notebooks
+55546,6677813,TP X1 CARBON G13 U7 255U 32GB 1T W11P,Lenovo,21NY001DCL,2406.2,16.0,Computadores Servidores y Notebooks,Notebooks
+55541,6677815,TP L14 G6 RYZEN7 PRO 250 16GB 512GB W11P,Lenovo,21S9000NCL,1384.1,74.0,Computadores Servidores y Notebooks,Notebooks
+54883,6681009,CAMARA GOPRO MAX 2,Gopro,CHDHZ-311-RW,551.0,23.0,Cámaras y Escáners,Cámaras de Video Digital
+55811,6693241,COMBO TECLADO MOUSE INALAMBRICO,Lenovo,4X31S04857,36.2,20.0,Dispositivos de Entrada,Combos Teclado/Mouse
+56051,6702907,PROYECTOR MX560C 4.000 LUM XGA (1024 X76,Benq,9H.JTE77.1NL,317.21,29.0,Dispositivos Audio/Video,Proyectores DLP
+58005,6702908,MONITOR XL2546X+ 24.5IN 1920X1080 CONT.,Benq,9H.LN1LB.QBL,433.66,50.0,Pantallas,Monitores LCD/LED
+57754,6703906,Idea Tab Pro 8G+256G 1Y Depot,Lenovo,ZAE50154CL,222.82,45.0,Computadores Servidores y Notebooks,Tablets y Tablet PCs
+56272,6707129,FORGE K210 W COMBO LS,Msi,S11-43LS201-Y92,21.7,4.0,Dispositivos de Entrada,Combos Teclado/Mouse
+55596,6708604,CAMARA MAX2+ACCESSORIOS BUNDLE,Gopro,CHDFZ-311-RW,624.74,33.0,Cámaras y Escáners,Cámaras Fotográficas Digitales
+56525,6709514,SanDisk Ultra Dual Drive Go USB Type-C 6,Sandisk,SDCZ530-064G-G46,21.38,35.0,Dispositivos de Almacenamiento,Pendrives y Unidades Flash Portables
+57328,6709632,MBP 14 SB/10C/10C GPU/24GB/1TB-CHL,Apple,MDE34CI/A,2154.5,21.0,Computadores Servidores y Notebooks,Notebooks
+56185,6713811,ThinkSystem 32GB TruDDR5 6400MHz (2Rx8),Lenovo,4X77A90965,1250.0,3.0,Componentes de Sistema,Memoria Propietaria
+56713,6714889,DELL PRO QCS1250 ULTRA 7 265 16GB 512SSD,Dell,YDHJD,1232.7,87.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+55804,6720085,LG XBOOM STAGE 301,Lg,STAGE301.ACHLLBK,197.93,25.0,Dispositivos Audio/Video,"Parlantes, Subwoofers y accesorios"
+55832,6720114,S24-4E 23.8 MONITOR HDMI,Lenovo,64B5KAR1CL,74.53,247.0,Pantallas,Monitores LCD/LED
+55571,6720115,V14 G5 IRL I5-13420H 8GB 512GB W11P,Lenovo,83GU0058CL,597.3,123.0,Computadores Servidores y Notebooks,Notebooks
+55780,6720117,THINKVISION T24D-40 23.8 INCH MONITOR,Lenovo,64B9GAR1CL,181.0,14.0,Pantallas,Monitores LCD/LED
+55935,6720118,V14 G5 IRL I7-13620H 16GB 512GB W11P,Lenovo,83GU0057CL,885.7,133.0,Computadores Servidores y Notebooks,Notebooks
+55828,6720119,THINKVISION E27-40 27 INCH MONITOR,Lenovo,64BCMAR4CL,101.26,11.0,Pantallas,Monitores LCD/LED
+56256,6728342,MAG CORELIQUID A13 360,Msi,306-7ZWDA17-L80,63.81,64.0,Componentes de Sistema,Componentes de Gabinete
+56820,6737876,PM3406CKALY0432X R7350 512G 16G 14IN W11,Asus,90NX0971-M00H10,988.37,70.0,Computadores Servidores y Notebooks,Notebooks
+57591,6737878,B3405CCALY0731X U7255H 14IN 512G 16G W11,Asus,90NX08L1-M00U20,1084.6,2.0,Computadores Servidores y Notebooks,Notebooks
+57126,6737880,PM3406CKALY0433X R5330 512G 16G 14IN W11,Asus,90NX0971-M00H20,820.18,8.0,Computadores Servidores y Notebooks,Notebooks
+57258,6737881,P500SV05210H011X 5-210H 512G 8G 9L W11P,Asus,90PF05A1-M00MU0,739.05,3.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+56780,6737887,D700SF005225024X U5-225 512G 16G 9L W11P,Asus,90PF05E1-M001H0,713.87,6.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+55808,6739192,TP E16 G3 U5 225U 16GB 512GB 16 W11P,Lenovo,21SS000LCL,1139.2,21.0,Computadores Servidores y Notebooks,Notebooks
+55830,6739198,THINKVISION S27-4E 27 INCH MONITOR,Lenovo,64BEKAR1CL,95.82,66.0,Pantallas,Monitores LCD/LED
+55816,6739202,ESSENTIAL USB MOUSE,Lenovo,4Y50R20863,4.32,101.0,Dispositivos de Entrada,Mouse
+56551,6746628,DS-1730 FLATBED SCANNER w/ADF,Epson,B11B273201,340.58,3.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+56344,6749911,HP ProStudio 4 AiO G1i-CU7-24GB-51GB-W11,Hp,CL7U6LT#ABM,1512.0,120.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+56343,6749915,HP ProStudio 4 AiO G1i-CU5-24GB-512GB-W1,Hp,CL7U5LT#ABM,1396.0,28.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+56339,6750446,ELITE GOLD 650 FM A/WO cord,Cooler Master,MPX-6505-AFAG-BWO,69.72,118.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56372,6750449,ELITE GOLD 850 FM A/WO cord,Cooler Master,MPX-8505-AFAG-BWO,82.77,148.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56376,6750453,ELITE GOLD 750 FM A/WO cord,Cooler Master,MPX-7505-AFAG-BWO,76.42,230.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56377,6750454,CryoFuze 5 Cian,Cooler Master,MGY-ADSG-N03G-R1,7.13,37.0,Computadores Servidores y Notebooks,Componentes Terminales
+56380,6750457,MasterLiquid Core Nex 360 White,Cooler Master,MLX-D36M-A18PA-RW,63.06,81.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56381,6750458,MasterLiquid Core Nex 360 ARGB,Cooler Master,MLX-D36M-A18PA-R1,63.12,183.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56009,6750980,DELL Pro 14 PC14250 Ultra 5 ;16 GB;512 G,Dell,7XNFP,1245.0,131.0,Computadores Servidores y Notebooks,Notebooks
+55871,6750983,16GB DD5-6000MHZ CL48 DIMM BLACK,Adata Technology,AX5U6000C4816G-SLABBK,256.98,362.0,Componentes de Sistema,Memoria Propietaria
+57770,6752017,ThinkSystem 16GB TruDDR5 5600MHz,Lenovo,4X77A99751,2547.0,5.0,Componentes de Sistema,Opciones BTO para Workstations
+56259,6759795,PRO A620AM-B EVO,Msi,911-7E36-002,66.41,400.0,Componentes de Sistema,Tarjetas Madre AMD
+56506,6764208,SSD WD Black SN8100 1 TB NVMe,Sandisk,WDS100T1X0M,339.29,20.0,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD)
+57339,6764224,SSD WD Blue SN5100 1 TB NVMe,Sandisk,WDS100T5B0E,242.88,88.0,Dispositivos de Almacenamiento,Discos de Estado Sólido M.2 (SSD)
+55409,6765564,15-FB3032LA R5-7535HS 8G 512G 15.6 W11H,Hp,CG3N4LA#ABM,594.07,741.0,Computadores Servidores y Notebooks,Notebooks
+56495,6765567,MAXIFY GX6110,Canon,6882C004,335.12,70.0,Impresoras,Multifuncionales Inkjet
+56170,6765579,TUF Gaming LC III 360 ARGB LCD,Asus,90RC01A1-B0AAY0,136.08,5.0,Componentes de Sistema,Componentes de Gabinete
+56115,6767065,LG XBOOM BOCINA BLUETOOTH PORT 30W 20H,Lg,GRAB.AMEXLBK,92.83,156.0,Comunicaciones,Parlantes y Parlantes-Docking
+56868,6769834,Monitor 24 1080p Ergonomic 120Hz HDMI VG,Viewsonic,VA2448-MHJ,92.65,5.0,Pantallas,Monitores LCD/LED
+56903,6772784,"HPE PROLIANT DL20 GEN11 1P 6325P 3.5GHZ,",Hewlett Packard Enterprise,P86721-DM5,4957.8,3.0,Computadores Servidores y Notebooks,Servidores Tower
+56517,6783352,IDEAPAD R5 5625U 8GB 512SSD 15.6IN W11H,Lenovo,82XM010XCL,477.27,11.0,Computadores Servidores y Notebooks,Notebooks
+56205,6784253,MAXIFY GX7110,Canon,6880C005,373.2,165.0,Impresoras,Multifuncionales Inkjet
+57747,6784853,R360 + 6357P + 1x 32GB + 2x 480GB SSD +,Dell,R360271_6357P132,7202.8,5.0,Computadores Servidores y Notebooks,Servidores en Rack
+57685,6784858,T160 + 6315P + 1x 16GB + 2TB HDD + No Co,Dell,T160271_6315P116,2956.0,5.0,Computadores Servidores y Notebooks,Servidores Tower
+56915,6785174,ROG Ryujin III 360 ARGB Extreme BK,Asus,90RC0131-M0AAY0,312.22,34.0,Componentes de Sistema,Componentes de Tarjetas Madre
+56158,6785307,ROG THOR 1600W Titanium III,Asus,90YE00V1-B0SA00,670.15,13.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56161,6785310,ROG STRIX 1000W Platinum,Asus,90YE00W1-B0SA00,171.25,23.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56162,6785311,ROG Thor 1200W Platinum III,Asus,90YE00V2-B0SA00,356.14,18.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56163,6785312,TUF Gaming 850W Gold,Asus,90YE00S2-B0SA00,96.92,4.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56164,6785584,TUF-GAMING-750G 80+GOLD PSU,Asus,90YE00S3-B0SA00,86.54,5.0,Componentes de Sistema,Fuentes de Poder Genéricas
+56264,6789820,B860M GAMING PLUS WIFI,Msi,911-7E42-009,175.71,13.0,Componentes de Sistema,Tarjetas Madre Intel
+57607,6789837,PM5406CGANZ0097X R9HX470 1T 32G 14IN W11,Asus,90NX0AA1-M003J0,1774.6,13.0,Computadores Servidores y Notebooks,Notebooks
+57590,6789842,PM5406CGASF0047X R7445 512G 16G 14IN W11,Asus,90NX0AA1-M001K0,1182.7,28.0,Computadores Servidores y Notebooks,Notebooks
+57218,6789843,B9406CAATG0836X U7-356H 14IN 1T 32G W11P,Asus,90NX09J2-M00XJ0,2472.4,24.0,Computadores Servidores y Notebooks,Notebooks
+57608,6789845,B3406CCAPLY0051X U5225H 512G 16G 14INW11,Asus,90NX0AP1-M001V0,1029.0,254.0,Computadores Servidores y Notebooks,Notebooks
+56288,6796955,MBA 13.6 SLV/8C GPU/16GB/512GB - PLATA,Apple,MDH74CI/A,1208.7,26.0,Computadores Servidores y Notebooks,Notebooks
+57823,6796956,MBA 15.3 SLV/10C GPU/16GB/1TB - PLATA,Apple,MDVA4CI/A,1700.3,30.0,Computadores Servidores y Notebooks,Notebooks
+56520,6796959,MBA 13.6 SLV/10C GPU/16GB/1TB - PLATA,Apple,MDH84CI/A,1498.8,17.0,Computadores Servidores y Notebooks,Notebooks
+57683,6796962,MBA 13.6 MDN/10C GPU/24GB/1TB- MIDNIGHT,Apple,MDHG4CI/A,1692.2,214.0,Computadores Servidores y Notebooks,Notebooks
+56518,6796964,MBA 13.6 MDN/10C GPU/16GB/1TB- MIDNIGHT,Apple,MDHF4CI/A,1498.8,61.0,Computadores Servidores y Notebooks,Notebooks
+56519,6796982,MBA 13.6 MDN/8C GPU/16GB/512GB- MIDNIGHT,Apple,MDHE4CI/A,1208.7,1.0,Computadores Servidores y Notebooks,Notebooks
+57821,6796984,MBA 15.3 MDN/10C GPU/24GB/1TB - MIDNIGHT,Apple,MDVN4CI/A,1893.7,37.0,Computadores Servidores y Notebooks,Notebooks
+56151,6796990,MBP 14 SL/15C/16C GPU/24GB/1T - PLATA,Apple,MGDN4CI/A,2375.0,13.0,Computadores Servidores y Notebooks,Notebooks
+57509,6797089,HPE PROLIANT COMPUTE DL340 GEN12 6515P 1,Hewlett Packard Enterprise,P89963-DM5,11750.0,2.0,Computadores Servidores y Notebooks,Servidores en Rack
+57766,6797091,HPE PROLIANT COMPUTE DL320 GEN12 6505P 1,Hewlett Packard Enterprise,P89960-DM5,8937.6,1.0,Computadores Servidores y Notebooks,Servidores en Rack
+57763,6797093,HPE PROLIANT COMPUTE DL340 GEN12 6505P 1,Hewlett Packard Enterprise,P89961-DM5,10264.0,5.0,Computadores Servidores y Notebooks,Servidores en Rack
+57764,6797094,HPE PROLIANT COMPUTE DL320 GEN12 6505P 1,Hewlett Packard Enterprise,P89964-DM5,9875.7,2.0,Computadores Servidores y Notebooks,Servidores en Rack
+57765,6797095,HPE PROLIANT COMPUTE ML350 GEN12 6505P 1,Hewlett Packard Enterprise,P89085-DM5,9660.0,2.0,Computadores Servidores y Notebooks,Servidores en Rack
+57767,6797098,HPE PROLIANT COMPUTE DL380 GEN12 6505P 1,Hewlett Packard Enterprise,P89248-DM5,7577.7,4.0,Computadores Servidores y Notebooks,Servidores en Rack
+56521,6797723,MBN 13 CIT/8GB/512GB-CITRUS,Apple,MHFE4CI/A,717.68,25.0,Computadores Servidores y Notebooks,Notebooks
+56522,6797724,MBN 13 IND/8GB/256GB-INDIGO,Apple,MHFF4CI/A,742.86,144.0,Computadores Servidores y Notebooks,Notebooks
+56437,6797725,MBN 13 SLV/8GB/512GB-SILVER,Apple,MHFC4CI/A,717.68,9.0,Computadores Servidores y Notebooks,Notebooks
+56438,6797726,MBN 13 CIT/8GB/256GB-CITRUS,Apple,MHFD4CI/A,637.94,43.0,Computadores Servidores y Notebooks,Notebooks
+56439,6797728,MBN 13 BLS/8GB/256GB-BLUSH,Apple,MHFH4CI/A,637.94,46.0,Computadores Servidores y Notebooks,Notebooks
+56440,6797729,MBN 13 IND/8GB/512GB-INDIGO,Apple,MHFG4CI/A,717.68,21.0,Computadores Servidores y Notebooks,Notebooks
+56441,6797730,MBN 13 BLS/8GB/512GB-BLUSH,Apple,MHFJ4CI/A,717.68,16.0,Computadores Servidores y Notebooks,Notebooks
+56774,6804905,DELL PRO MICRO QCM1250 CORE U7 265T 16GB,Dell,RM6YP,1224.8,237.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+56715,6804906,PRO AIO QC24251 i5-14500T 16 512 W11P 3,Dell,8JR53,1138.0,295.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+57301,6804907,PRO AIO QC24250 U7 265 16GB 512SSD W11P,Dell,9XD88,1449.7,197.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+56779,6804908,DELL PRO MICRO QCM1250 COR U5 235T 16GB,Dell,4CFWW,1031.4,37.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+56739,6805010,15-FC0287LA R7 7730U 8G 512GB 15.6 W11H,Hp,C92PXLA#ABM,506.71,780.0,Computadores Servidores y Notebooks,Notebooks
+57695,6805011,14-ep1330la Intel i3-100U 8G 512 14I W11,Hp,D0DD8LA#ABM,395.99,1052.0,Computadores Servidores y Notebooks,Notebooks
+57749,6805012,14-hy0030la R3 30 8GB 512GB 14IN 2K W11H,Hp,D6ZG1LA#ABM,434.56,444.0,Computadores Servidores y Notebooks,Notebooks
+56667,6808526,ASUS COBBLE GRAY G AS ESDA1A,Asus,90DD02R6-M08000,23.51,48.0,Dispositivos de Almacenamiento,Racks Discos
+56663,6808660,Z1 G1I U7-265 RTX 3050 8GB 32GB 1TB W11P,Hp,D5BK2LT#ABM,2204.6,1.0,Computadores Servidores y Notebooks,Workstations
+56712,6808665,EB X G1A RYZEN AI 7 PRO 360 32GB 1T W11P,Hp,D66U4AT#ABM,2510.3,16.0,Computadores Servidores y Notebooks,Notebooks
+56666,6808668,ZBOOK 8 G1I U7 255H 4GB 32GB 1TB 14 W11P,Hp,D5HH8LT#ABM,1871.0,39.0,Computadores Servidores y Notebooks,nan
+57297,6808671,PROSTUDIO 2 AIO G2I CI5-120U 16 512 W11H,Hp,D4QC5LT#ABM,1134.9,80.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+56876,6808999,PROBOOK 4 G2I U7 256V 16GB 512SSD W11P,Hp,D9PZ1AT#ABM,1174.7,1.0,Computadores Servidores y Notebooks,Notebooks
+57330,6811323,MB PRO B650M CT CSM,Asus,90MB1EC0-M0EAYC,119.29,1141.0,Componentes de Sistema,Tarjetas Madre Intel
+56714,6813916,DELL OPTIPLEX 7040 QC24151 U5 235T W11P,Dell,4HPF7,1208.5,39.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+56925,6814648,MB PRIME B550M-A,Asus,90MB15K0-MVAAY0,81.08,32.0,Componentes de Sistema,Tarjetas Madre Intel
+57771,6817093,"ThinkSystem ST45 V3, 1xAMD EPYC 4124P 4C",Lenovo,7DH5A038LA,2498.0,7.0,Computadores Servidores y Notebooks,Servidores Tower
+57769,6817095,"ThinkSystem ST50 V3, 1xIntel Xeon 6325P",Lenovo,7DF3A03ZLA,3233.0,10.0,Computadores Servidores y Notebooks,Servidores Tower
+56909,6817881,ZOTAC GAMING GEFORCE RTX 3050 Twin Edge,Zotac,ZT-A30510H-10A,281.13,240.0,Componentes de Sistema,Tarjetas Gráficas nVidia
+57762,6820107,HPE ProLiant Compute DL380 Gen12 1p 6515,Hewlett Packard Enterprise,P92681-DM5,10375.0,2.0,Computadores Servidores y Notebooks,Servidores en Rack
+57761,6820108,HPE ProLiant Compute DL380 Gen12 1p 6520,Hewlett Packard Enterprise,P91112-DM5,12653.0,1.0,Computadores Servidores y Notebooks,Servidores en Rack
+56823,6822521,NOTEBOOK V14 G4 R5 8GB 512GB W11P,Lenovo,82YT013DCL,703.03,96.0,Computadores Servidores y Notebooks,Notebooks
+57227,6822523,THINKPAD E14 G7 U9 185H 16GB 512GB W11P,Lenovo,21SY002RCL,1334.0,4.0,Computadores Servidores y Notebooks,Notebooks
+57748,6823472,B3405CCA-LY2028X U7 255H 512 16 14 W11P,Asus,90NX08L1-M04790,1292.3,59.0,Computadores Servidores y Notebooks,Notebooks
+57662,6826046,THINKPAD E14 G7 U5 225U 16GB 512GB,Lenovo,21SY002QCL,1193.6,67.0,Computadores Servidores y Notebooks,Notebooks
+57853,6826050,THINKCENTRE NEO50S G6 U5 225 16GB 512GB,Lenovo,13DL0018CS,1043.4,20.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+56778,6826052,THINKBOOK 14 G9 IRL I5 210H 16GB 512GB,Lenovo,21UY00GKCL,1023.7,229.0,Computadores Servidores y Notebooks,Notebooks
+57299,6827185,PB4 G1I U7 255U 14 16GB 512GB,Hp,DB9N2LT#ABM,1147.7,238.0,Computadores Servidores y Notebooks,Notebooks
+56907,6827186,EB 6 G1A R7-250 14 16GB 512GB,Hp,DB9U4LT#ABM,1034.5,195.0,Computadores Servidores y Notebooks,Notebooks
+56877,6827187,PB4 G1A AI R7-250 16 16GB 512GB,Hp,D6UA1AT#ABM,1104.1,185.0,Computadores Servidores y Notebooks,Notebooks
+57298,6827188,EB6 G1AH R5-220 14 16GB 512GB,Hp,DB9T4AT#ABM,1162.0,203.0,Computadores Servidores y Notebooks,Notebooks
+57296,6827189,PB4 G1I U5 225U 14 16GB 512GB,Hp,DB9Q1LT#ABM,1079.6,134.0,Computadores Servidores y Notebooks,Notebooks
+56875,6827190,EB6 G1A AI RAI 7-350 14 32GB 512GB,Hp,DB9R2LT#ABM,1600.1,72.0,Computadores Servidores y Notebooks,Notebooks
+56874,6827193,EBX G1A AI RAI 9-HXP375 14 32GB 1TB,Hp,DB9M2LT#ABM,2123.8,20.0,Computadores Servidores y Notebooks,Notebooks
+57681,6827194,PROSTUDIO 4 AIO G1I U7-265 16GB 512GB,Hp,DE3U5LA#ABM,1230.7,55.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+57678,6827196,EBX G1A AI RAI 7 P360 14 32GB 1TB,Hp,DB9M8AT#ABM,2180.3,15.0,Computadores Servidores y Notebooks,Notebooks
+57716,6827198,PROSTUDIO 4 AIO G1I U5-225 16GB 512GB,Hp,DE3U0LA#ABM,1089.0,95.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+57752,6827199,PRODESK 2 SFF G2A R5240 16GB 512GB,Hp,DD6P7AT#ABM,953.88,30.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+56878,6827201,PRODESK 4 MINI G1I U5-225T 16GB 512GB,Hp,DE3U2LA#ABM,1067.6,64.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+57677,6827202,EB X G2I AI U7 356H 14 32GB 1TB,Hp,D8AD3AT#ABM,2278.4,21.0,Computadores Servidores y Notebooks,Notebooks
+55386,6839015,Adaptador Multipuertos con HDMI SD PD,Startech.Com,DKT30CSDHPD3,94.48,37.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+57343,6854892,ZOTAC GeForce RTX5070 Twin Edge OC,Zotac,ZT-B50700H-10A,833.18,10.0,Componentes de Sistema,Tarjetas Gráficas nVidia
+58009,6855253,Carrito con Ruedas para Pantallas de 55i,Benq,5A.FAE10.001,324.33,20.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+57998,6855339,MONITOR BENQ PD2730S 27IN 5120x2880 pan,Benq,9H.LN7LA.TBA,992.84,9.0,Pantallas,Monitores LCD/LED
+58002,6855340,MONITOR BENQ ZOWIE XL2540X+ 24.1IN,Benq,9H.E18LB.QBA,342.36,60.0,Pantallas,Monitores LCD/LED
+57897,6856447,THINKPAD X13 G5 U7 16G 512G W11P,Lenovo,21LVS5RJ00,1683.3,8.0,Computadores Servidores y Notebooks,Notebooks
+57948,6857016,15-FC0232LA R3-7320U 8G 512 15.6 FREEDOS,Hp,B9TN6LA#ABM,356.25,496.0,Computadores Servidores y Notebooks,Notebooks
+57679,6857933,EB 8 G2I U5-325 32GB 512G 14IN W11P C+PC,Hp,DK5E5AT#ABM,1489.8,46.0,Computadores Servidores y Notebooks,Notebooks
+57896,6857965,EB 8 G1I U7-255U 32GB 1TB 13IN W11P C+PC,Hp,D1MR9LS#ABM,1971.8,35.0,Computadores Servidores y Notebooks,Notebooks
+57687,6857968,PB 4 G2I U5-325 16GB 512G 14IN W11P C+PC,Hp,D9FG8AT#ABM,1137.5,101.0,Computadores Servidores y Notebooks,Notebooks
+57682,6857973,PB 4 G2I U7-355 16GB 512G 16IN W11P C+PC,Hp,DJ3A7AT#ABM,1239.7,33.0,Computadores Servidores y Notebooks,Notebooks
+57686,6857974,PB 4 G2I U5-325 16GB 512GB 16IN W11P C+P,Hp,DJ2U4AT#ABM,1108.8,202.0,Computadores Servidores y Notebooks,Notebooks
+57680,6857976,PRODESK 4 MINI G1I U7-265T 24G 512G W11P,Hp,D2TL6LT#ABM,1259.3,93.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+57751,6857977,PRO MINI 400 G9 I5-14500T 16GB 1TB W11P,Hp,A59XGLT#ABM,1090.6,73.0,Computadores Servidores y Notebooks,Computadores Desktop
+57937,6866061,S5 PRO 527PU QHD USB-C MNTR US,Hp,9E0G5AA#ABA,294.81,9.0,Pantallas,Monitores LCD/LED
+57938,6866062,S5 PRO 524PF FHD MNTR US,Hp,9D9L6UT#ABA,168.1,22.0,Pantallas,Monitores LCD/LED
+57834,6872421,MONITOR USB-C WQHD SERIE 5 PRO 34IN,Hp,9E0Z2UT#ABA,779.12,19.0,Pantallas,Monitores LCD/LED
+11321,1021817,TONER HP 55A NEGRO 6000 PAG,Hp,CE255A,175.18,43.0,Suministros y Medios,Suministros Láser
+8632,1138030,85A BLACK LJ TONER CART CE285A,Hp,CE285A,81.96,2.0,Suministros y Medios,Suministros Láser
+56799,1189941,KENSINGTON MOCHILA CONTOUR / 33 L / PAR,Kensington,K62238,36.84,8.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+1771,1230999,TONER HP 126A NEGRO,Hp,CE310A,61.02,27.0,Suministros y Medios,Suministros Láser
+56603,1403692,KENSINGTON MOUSE ALAMBRICO PRO FIT RETRA,Kensington,K72339EU,8.64,3.0,Dispositivos de Entrada,Mouse
+36630,1694448,KENSINGTON APOYA PIES SOLEMASSAGE SMARTF,Kensington,K56155US,18.46,13.0,Equipamiento de Oficina,Descansa pies y espalda
+54285,1694454,KENSINGTON MOUSE PAD FOAM NEGRO,Kensington,K62384,6.09,7.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso"
+46623,1858357,305A CYAN LJ TONER CART CE411A,Hp,CE411A,142.16,53.0,Suministros y Medios,Suministros Láser
+46624,1858359,305A MAGENTA LJ TONER CART CE413A,Hp,CE413A,143.11,38.0,Suministros y Medios,Suministros Láser
+32854,1864239,CARTUCHO TINTA HP 950XL NEGRO 2300 PÃG,Hp,CN045AL,58.01,32.0,Suministros y Medios,Suministros Inyección de Tinta
+11934,2035404,CARTUCHO TINTA HP 662 NEGRO,Hp,CZ103AL,10.52,1.0,Suministros y Medios,Suministros Inyección de Tinta
+11935,2035425,CARTUCHO TINTA HP 662 TRICOLOR,Hp,CZ104AL,10.49,677.0,Suministros y Medios,Suministros Inyección de Tinta
+12549,2035427,CARTUCHO TINTA HP 662XL TRICOLOR,Hp,CZ106AL,28.86,205.0,Suministros y Medios,Suministros Inyección de Tinta
+12949,2342713,T664 BLACK BOTTLE L200,Epson,T664120-AL,6.88,2553.0,Suministros y Medios,Suministros Inyección de Tinta
+13202,2360612,BOTELLA T673220-AL CIAN 19K FOTOS,Epson,T673220-AL,10.32,193.0,Suministros y Medios,Suministros Inyección de Tinta
+1414,2396957,CARTUCHO DE TINTA CL-41 COLOR,Canon,0617B050,19.56,48.0,Suministros y Medios,Suministros Láser
+20281,2446105,KITLI2208-SR BLACK W/STAND USB,Motorola,LI2208-SR7U2100SGW,65.12,50.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+21261,2454703,CARTUCHO DE TINTA CL-36 COLOR,Canon,1511B020,13.16,45.0,Suministros y Medios,Suministros Láser
+17145,2470844,CARTUCHO DE TINTA HP 970 NEGRO 3000 PÃG,Hp,CN621AM,80.64,20.0,Suministros y Medios,Suministros Inyección de Tinta
+33421,2481080,CAJA MANTENCION C33S020580,Epson,C33S020580,20.64,4.0,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS
+56608,2504872,KENSINGTON APOYA MUNECAS WRIST PILLOW NE,Kensington,L22801A,5.9,10.0,Dispositivos de Entrada,Teclados
+28889,2550221,TINTA T694200 CIAN 700ML,Epson,T694200,217.25,3.0,Suministros y Medios,Suministros Inyección de Tinta
+56590,2749935,KENSINGTON MOCHILA TRIPLE TREK / 22 L /,Kensington,K62591AM,20.07,20.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+19095,2851802,TONER TN2340,Brother,TN2340,37.18,136.0,Suministros y Medios,Suministros Láser
+19096,2851803,TONER TN2370,Brother,TN2370,56.2,502.0,Suministros y Medios,Suministros Láser
+21038,2895754,DCP1602 MFP LASER B/N,Brother,DCP-1602,89.62,9.0,Impresoras,Multifuncionales Láser Mono
+19839,2902291,HL1202 IMPRESORA LASER B/N,Brother,HL-1202,44.92,39.0,Impresoras,Impresoras Láser/LED monocromáticas
+20550,3002592,BOTELLA DE TINTA BT5001C CIAN,Brother,BT5001C,6.24,619.0,Suministros y Medios,Suministros Inyección de Tinta
+20551,3002593,BOTELLA DE TINTA BT5001M MAGENTA,Brother,BT5001M,6.24,730.0,Suministros y Medios,Suministros Inyección de Tinta
+20553,3002594,BOTELLA DE TINTA BT5001Y AMARILLO,Brother,BT5001Y,6.24,850.0,Suministros y Medios,Suministros Inyección de Tinta
+39128,3021448,TONER HP 87X NEGRO 18000 PAG,Hp,CF287X,349.07,45.0,Suministros y Medios,Suministros Láser
+21092,3065080,CARTUCHO TINTA HP 664 TRICOLOR,Hp,F6V28AL,10.5,2225.0,Suministros y Medios,Suministros Inyección de Tinta
+21094,3065082,CARTUCHO TINTA HP 664XL TRICOLOR,Hp,F6V30AL,30.51,545.0,Suministros y Medios,Suministros Inyección de Tinta
+21093,3065083,CARTUCHO TINTA HP 664XL NEGRO,Hp,F6V31AL,32.02,243.0,Suministros y Medios,Suministros Inyección de Tinta
+33418,3078090,TINTA C33S020582 MAGENTA 550 PAG,Epson,C33S020582,16.28,1.0,Suministros y Medios,Suministros Fax/Fotocopiadoras
+33417,3078091,TINTA C33S020583 AMARILLO 550 PAG,Epson,C33S020583,16.28,1.0,Suministros y Medios,Suministros Fax/Fotocopiadoras
+56920,3084177,TINTA HP 728 130 ML AMARILLO,Hp,F9J65A,95.62,20.0,Suministros y Medios,Suministros Inyección de Tinta
+50673,3094030,KENSINGTON COMBO INALAMBRICO TECLADO/MOU,Kensington,K72324ES,19.67,276.0,Dispositivos de Entrada,Combos Teclado/Mouse
+11934,3095787,CAJA DAÃ#ADA CARTUCHO TINTA HP 662 NEGRO,Hp,CZ103AL,10.52,3.0,Suministros y Medios,Suministros Inyección de Tinta
+48724,3098284,Adaptador Red Gigabit USB-C,Startech.Com,US1GC301AU,44.5,3.0,Servicios y Garantías,Servicios de Soporte
+22255,3241943,BOTELLA DE TINTA GI-190 NEGRO,Canon,0667C001,8.65,2931.0,Suministros y Medios,Suministros Inyección de Tinta
+22258,3241944,BOTELLA DE TINTA GI-190 CIAN,Canon,0668C001,7.93,2908.0,Suministros y Medios,Suministros Inyección de Tinta
+22257,3241945,BOTELLA DE TINTA GI-190 MAGENTA,Canon,0669C001,7.93,2841.0,Suministros y Medios,Suministros Inyección de Tinta
+22256,3241946,BOTELLA DE TINTA GI-190 AMARILLO,Canon,0670C001,7.93,3130.0,Suministros y Medios,Suministros Inyección de Tinta
+22632,3255480,TAMBOR DR3460,Brother,DR3460,124.75,11.0,Suministros y Medios,Suministros Láser
+50675,3292312,KENSINGTON COMBO ALAMBRICO TECLADO/MOUSE,Kensington,K72436ES,13.13,54.0,Dispositivos de Entrada,Combos Teclado/Mouse
+19204,3292313,KENSINGTON TECLADO ALAMBRICO FOR LIFE. A,Kensington,K72444ES,6.28,24.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso"
+37713,3292375,KENSINGTON MOUSE INALAMBRICO FOR LIFE 3,Kensington,K72464WW,8.55,52.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso"
+56172,3331242,Aruba 2930F 24G PoE+ 4SFP+ Swch,Hewlett Packard Enterprise,JL255A,1690.0,2.0,Dispositivos de Red,Switches Estaqueables
+23420,3338020,CARTUCHO DE TINTA HP 954 AMARILLO 700 PG,Hp,L0S56AL,25.45,59.0,Suministros y Medios,Suministros Inyección de Tinta
+32859,3338024,CARTUCHO DE TINTA HP 954XL NEGRO 2000 PG,Hp,L0S71AL,57.52,170.0,Suministros y Medios,Suministros Inyección de Tinta
+32651,3348482,TINTA T748XXL420-AL AMARILLO 7K PAG,Epson,T748XXL420-AL,55.91,18.0,Suministros y Medios,Suministros Inyección de Tinta
+34024,3352833,CAJA MANTENIMIENTO T671000,Epson,T671000,13.81,2.0,Suministros y Medios,Suministros Inyección de Tinta
+25592,3406986,CARTUCHO DE TINTA HP 904XL NEGRO 825 PÃ,Hp,T6M16AL,53.08,22.0,Suministros y Medios,Suministros Inyección de Tinta
+24905,3425685,BOTELLA HP GT52 CIAN,Hp,M0H54AL,7.88,1919.0,Suministros y Medios,Suministros Inyección de Tinta
+24908,3425686,BOTELLA HP GT52 MAGENTA,Hp,M0H55AL,7.87,2185.0,Suministros y Medios,Suministros Inyección de Tinta
+24909,3425687,BOTELLA HP GT52 AMARILLO,Hp,M0H56AL,7.88,1520.0,Suministros y Medios,Suministros Inyección de Tinta
+32732,3444314,CINTA TZEMPPH31,Brother,TZEMPPH31,6.87,1.0,Suministros y Medios,Suministros Matriz de Punto
+33029,3444382,CINTA TZERN34,Brother,TZERN34,7.33,1.0,Suministros y Medios,Suministros Matriz de Punto
+24826,3511521,PTH110 NEGRA ROTULADORA ELECTRONICA,Brother,PTH110BK,31.27,41.0,Impresoras,Impresoras de Etiquetas Hogar/Oficina
+56579,3519185,DS2208-SR BLACK WITH STAND USB KIT DS,Motorola,DS2208-SR7U2100SGW,69.11,148.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld)
+55948,3570190,CARTUCHO TINTA HP 62XL TRICOLOR 415 PÃG,Hp,C2P07AL,54.34,151.0,Suministros y Medios,Suministros Inyección de Tinta
+25234,3578888,CARTUCHO DE TINTA LC3017Y AMARILLO,Brother,LC3017Y,10.96,23.0,Suministros y Medios,Suministros Inyección de Tinta
+25236,3578890,CARTUCHO DE TINTA LC3019C CIAN,Brother,LC3019C,17.84,57.0,Suministros y Medios,Suministros Inyección de Tinta
+26241,3695095,ETIQUETA DK2251,Brother,DK2251,17.53,72.0,Componentes de Sistema,Componentes de Gabinete
+57188,3713085,TONER TN419Y AMARILLO,Brother,TN419Y,149.58,43.0,Suministros y Medios,Suministros Láser
+55017,3962863,TONER HP 202A NEGRO,Hp,CF500A,71.97,42.0,Suministros y Medios,Suministros Láser
+55019,3962917,HP 202A Yellow LaserJet Toner Cartridge,Hp,CF502A,84.4,3.0,Suministros y Medios,Suministros Láser
+20461,3966279,CAJA DAÃ#ADA HP 130A NEGRO LJ,Hp,CF350A,70.86,3.0,Suministros y Medios,Suministros Láser
+52972,4028462,QL820NWB ETIQUETADORA ELECTRONICA,Brother,QL-820NWB,190.46,7.0,Impresoras,Impresoras de Etiquetas Hogar/Oficina
+36487,4039375,PHT110 ROTULADORA ELECTRONICA,Brother,PTH110BW,31.27,1.0,Impresoras,Impresoras de Etiquetas Hogar/Oficina
+50746,4050457,TINTA HP 730 300 ML CIAN,Hp,P2V68A,157.0,29.0,Suministros y Medios,Suministros Inyección de Tinta
+50748,4050458,TINTA HP 730 300 ML MAGENTA,Hp,P2V69A,157.18,8.0,Suministros y Medios,Suministros Inyección de Tinta
+50749,4050459,TINTA HP 730 300 ML AMARILLO,Hp,P2V70A,157.01,2.0,Suministros y Medios,Suministros Inyección de Tinta
+50752,4050461,TINTA HP 730 300 ML GRIS,Hp,P2V72A,157.0,4.0,Suministros y Medios,Suministros Inyección de Tinta
+50753,4050462,TINTA HP 730 300 ML FOTO NEGRO,Hp,P2V73A,157.0,5.0,Suministros y Medios,Suministros Inyección de Tinta
+40840,4083824,KENSINGTON ADAPTADOR CA1100E USB-C A ET,Kensington,K33475WW,15.31,67.0,Cables,Cables y Adaptadores USB
+53595,4124289,Lenovo Security Cable Lock,Lenovo,57Y4303,12.41,248.0,Seguridad Física,Sist Alarma de Emergencias
+50648,4181132,KENSINGTON BASE PARA MONITOR EXTRA ANCHA,Kensington,K52797,19.51,21.0,Equipamiento de Oficina,Accesorios de Teclados
+36634,4181134,KENSINGTON BASE PARA MONITOR STAND PLUS,Kensington,K60089,17.93,2.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+29652,4202399,BOTELLA T504120-AL 75K PAG,Epson,T504120-AL,7.54,6214.0,Suministros y Medios,Suministros Inyección de Tinta
+29653,4202400,BOTELLA T504220-AL CIAN 6K PAG,Epson,T504220-AL,6.75,3970.0,Suministros y Medios,Suministros Inyección de Tinta
+29654,4202401,BOTELLA T504320-AL MAGENTA 6K PAG,Epson,T504320-AL,6.74,4087.0,Suministros y Medios,Suministros Inyección de Tinta
+29655,4202402,BOTELLA T504420-AL AMARILLO 6K PAG,Epson,T504420-AL,6.75,3571.0,Suministros y Medios,Suministros Inyección de Tinta
+57369,4202654,CAJA MANTENIMIENTO T671400 BOX K,Epson,T671400,22.61,16.0,Suministros y Medios,Suministros Fax/Fotocopiadoras
+31645,4354416,BOTELLA T544120-AL NEGRO 45K PAG,Epson,T544120-AL,6.85,16152.0,Suministros y Medios,Suministros Inyección de Tinta
+31646,4354417,BOTELLA T544220-AL CIAN 75K PAG,Epson,T544220-AL,6.78,6496.0,Suministros y Medios,Suministros Inyección de Tinta
+31647,4354418,BOTELLA T544320-AL MAGENTA 75K PAG,Epson,T544320-AL,6.78,5771.0,Suministros y Medios,Suministros Inyección de Tinta
+31648,4354419,BOTELLA T544420-AL AMARILLO 75K PAG,Epson,T544420-AL,6.78,6461.0,Suministros y Medios,Suministros Inyección de Tinta
+56947,4360475,USB C TO USB A COMM&CHARGE CBL,Zebra,CBL-TC5X-USBC2A-01,9.66,27.0,Cables,Cables Seriales y Adaptadores
+29932,4404631,CAJA DAÃ#ADA TONER HP 48A NEGRO 1000 PAG,Hp,CF248A,55.66,1.0,Suministros y Medios,Suministros Láser
+57964,4442631,SURECOLOR T3170 24IN PLOTTER INALAMBRICO,Epson,SCT3170SR,556.24,3.0,Impresoras,Plotters color
+56548,4443585,USB-C DOCK - TRIPLE 4K MONITOR - 100W PD,Startech.Com,DK30CH2DEP,167.67,3.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+57373,4461368,CAJA MANTENIMIENTO T671600 WF C5790,Epson,T671600,16.61,19.0,Suministros y Medios,Suministros Fax/Fotocopiadoras
+35388,4472584,KENSINGTON COMBO INALAMBRICO TECLADO/MOU,Kensington,K75235CL,21.52,280.0,Dispositivos de Entrada,Combos Teclado/Mouse
+34075,4475720,CARTUCHO DE TINTA HP 964 NEGRA 1000 PÃG,Hp,3JA53AL,35.9,124.0,Suministros y Medios,Suministros Inyección de Tinta
+56545,4485251,APC Smart-UPS SRT 1000VA 230V,Apc,SRT1000XLI,1183.9,3.0,Protección Eléctrica y Racks,UPS
+25213,4490865,DISCO EXTERNO ELEMENTS 2TB 2.5,Western Digital,WDBU6Y0020BBK-WESN,118.24,103.0,Dispositivos de Almacenamiento,Discos Duros USB
+49325,4495563,TONER HP 414A NEGRO 2400 PAG,Hp,W2020A,92.98,35.0,Suministros y Medios,Suministros Láser
+46626,4495575,TONER HP 414A CIAN 2100 PAG,Hp,W2021A,120.19,51.0,Suministros y Medios,Suministros Láser
+46625,4495577,TONER HP 414A AMARILLO 2100 PAG,Hp,W2022A,120.4,85.0,Suministros y Medios,Suministros Láser
+47090,4495579,TONER HP 414A MAGENTA 2100 PAG,Hp,W2023A,120.21,54.0,Suministros y Medios,Suministros Láser
+33973,4508676,KENSINGTON MOCHILA CONTOUR 2.0 / 19.5 L,Kensington,K60383WW,36.84,4.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+50742,4509636,DESIGNJET MFP T2600DRPS TINTA COLOR 36IN,Hp,3EK15A,10414.0,3.0,Impresoras,Plotters color
+35016,4512444,BOTELLA TINTA HP GT53 NEGRA,Hp,1VV22AL,7.92,885.0,Suministros y Medios,Suministros Inyección de Tinta
+53595,4547612,Lenovo Essential Cable Lock,Lenovo,57Y4303,13.51,13.0,Seguridad Física,Dispositivos Anti-Robo
+41594,4563682,ES-50 ESCANER PORTATIL USB,Epson,B11B252201,141.09,22.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+42266,4563683,ES-60W ESCANER PORTATIL INALAMBRICO,Epson,B11B253201,168.68,1.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+34600,4619482,WIRED MOUSE HP 1000,Hp,4QM14AA#ABL,7.63,445.0,Dispositivos de Entrada,Mouse
+55813,4635482,15.6 Casual Backpack B210 Black,Lenovo,4X40T84059,13.05,267.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+54911,4638355,KENSINGTON CABLE DE SEGURIDAD SLIM N17 C,Kensington,K68008WW,20.66,71.0,Seguridad Física,Dispositivos Anti-Robo
+56596,4649267,KENSINGTON BASE PARA NOTEBOOK EASY RISER,Kensington,K50420WW,17.16,28.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+36094,4735883,PTH110TB ROTULADORA ELECTRONICA,Brother,PTH110TB,31.27,10.0,Impresoras,Impresoras de Etiquetas Hogar/Oficina
+36085,4792973,KENSINGTON MOUSE VERTICAL INALAMBRICO PR,Kensington,K75501WW,21.47,112.0,Dispositivos de Entrada,Mouse
+36084,4799721,KENSINGTON MOUSE VERTICAL INALAMBRICO PR,Kensington,K75520WW,19.51,31.0,Dispositivos de Entrada,Mouse
+51569,4812769,DS740D ESCANER PORTATIL,Brother,DS740D,156.24,2.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+56601,4822193,KENSINGTON MOUSE ALAMBRICO PRO FIT ERGO,Kensington,K75403EU,17.78,25.0,Dispositivos de Entrada,Mouse
+32855,4829332,CARTUCHO DE TINTA HP 951XL CIAN 1500 PÃ,Hp,CN046AL,40.33,25.0,Suministros y Medios,Suministros Inyección de Tinta
+56052,4873712,PROYECTOR BRIGHTLINK 1485+,Epson,V11H919021,2980.3,1.0,Dispositivos Audio/Video,Proyectores LCD
+39130,4878389,CAJA DAÃ#ADA TÃ#NER HP 58X NEGRO 10000 P,Hp,CF258X,241.75,4.0,Suministros y Medios,Suministros Láser
+40529,4888130,CARTUCHO TINTA HP 667 TRICOLOR,Hp,3YM78AL,10.17,4443.0,Suministros y Medios,Suministros Inyección de Tinta
+57379,4934763,M2170 ECOTANK B/N A4 39 PPM,Epson,C11CH43303,325.06,2.0,Impresoras,Multifuncionales Inkjet
+37718,4944995,KENSINGTON MOUSE INALAMBRICO SURETRACK#,Kensington,K75353WW,8.36,4.0,Dispositivos de Entrada,Mouse
+37699,4947763,DCPL2540DW MFP LASER PACK,Brother,DCPL2540DWTN,209.86,7.0,Impresoras,Multifuncionales Láser Mono
+55623,4970353,PRIME A520M-K mATX +2GLN+U3.2+M2 SATA6+4,Asus,90MB1500-M0EAY0,47.21,111.0,Componentes de Sistema,Tarjetas Madre AMD
+38809,4995953,MEMORIA MICRO SD HC ULTRA 64GB CLASE 10,Sandisk,SDSQUNR-064G-CN3MA,17.0,190.0,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash
+52350,5003312,KENSINGTON TECLADO ALAMBRICO ERGONOMICO,Kensington,K75400ES,17.22,7.0,Dispositivos de Entrada,Teclados
+38247,5003313,KENSINGTON TECLADO INALAMBRICO ERGONOMIC,Kensington,K75401ES,24.14,20.0,Dispositivos de Entrada,Teclados
+56922,5012008,HP 728 Cartucho Matte Black 130-ml,Hp,3WX25A,96.41,5.0,Suministros y Medios,Suministros Inyección de Tinta
+53318,5022494,PRIMO MICROPHONE,Trust,21674,2.32,402.0,Dispositivos Audio/Video,Micrófonos para PCs
+56137,5035654,DISCO EXTERNO ADVANCE ROJO 1TB,Toshiba,HDTCA10XR3AA,83.35,47.0,Dispositivos de Almacenamiento,Discos Duros USB
+56933,5035725,DISCO EXTERNO ADVANCE BLANCO 1TB,Toshiba,HDTCA10XW3AA,82.95,35.0,Dispositivos de Almacenamiento,Discos Duros USB
+56930,5035727,DISCO EXTERNO ADVANCE ROJO 2TB,Toshiba,HDTCA20XR3AA,108.05,42.0,Dispositivos de Almacenamiento,Discos Duros USB
+56140,5035730,DISCO EXTERNO ADVANCE ROJO 4TB,Toshiba,HDTCA40XR3CA,168.37,46.0,Dispositivos de Almacenamiento,Discos Duros USB
+56929,5035731,DISCO EXTERNO ADVANCE BLANCO 4TB,Toshiba,HDTCA40XW3CA,168.34,50.0,Dispositivos de Almacenamiento,Discos Duros USB
+56931,5035732,DISCO EXTERNO CANVIO GAMING 1TB,Toshiba,HDTX110XK3AA,95.55,48.0,Dispositivos de Almacenamiento,Discos Duros USB
+56932,5035733,DISCO EXTERNO CANVIO FLEX 1TB,Toshiba,HDTX110XSCAA,95.67,16.0,Dispositivos de Almacenamiento,Discos Duros USB
+50279,5035736,DISCO EXTERNO CANVIO GAMING 4TB,Toshiba,HDTX140XK3CA,168.17,38.0,Dispositivos de Almacenamiento,Discos Duros USB
+39182,5035737,DISCO EXTERNO CANVIO FLEX 4TB,Toshiba,HDTX140XSCCA,166.37,52.0,Dispositivos de Almacenamiento,Discos Duros USB
+51032,5037945,KENSINGTON CABLE DE SEGURIDAD SLIM NANOS,Kensington,K60603WW,20.95,151.0,Seguridad Física,Opciones de Seguridad Física y Accs
+39623,5037986,MULTFUNCIONAL PIXMA G 3110 WIFI,Canon,2315C005,136.91,172.0,Impresoras,Multifuncionales Inkjet
+42143,5056898,"APC Easy Back-UPS 700VA, 230V, AVR USB C",Apc,BVX700LUI-MS,93.14,13.0,Protección Eléctrica y Racks,UPS
+20462,5061735,CAJA DAÃ#ADA TÃ#NER HP 130A CIAN 1000 PÃ,Hp,CF351A,73.07,1.0,Suministros y Medios,Suministros Láser
+56597,5064167,KENSINGTON MOUSE VERTICAL INALAMBRICO PR,Kensington,K79810WW,24.53,6.0,Dispositivos de Entrada,Mouse
+58240,5133736,"APC BACK-UPS 1200VA, 230V, AVR, UNIVERSA",Apc,BX1200MI-MS,109.63,22.0,Protección Eléctrica y Racks,UPS
+40525,5137001,EPSON L14150 MFP A3 ECOTANK,Epson,C11CH96303,628.46,1.0,Impresoras,Multifuncionales Inkjet
+38998,5139873,KENSINGTON MOCHILA SP25 2.0 / 20 L / PAR,Kensington,K68402WW,14.09,81.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+57649,5176573,ULTRA-SHORT THROW WALL MOUNT (ELPMB62),Epson,V12HA06A05,98.78,6.0,Dispositivos Audio/Video,Artículos para Montaje de Proyectores
+53326,5177632,GXT266 4-PACK THUMB GRIPS PS5,Trust,24170,3.29,915.0,Video Juegos y Consolas,Joysticks
+56552,5196370,DS-730N Escaner de Documentos,Epson,B11B259201,469.8,6.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+57395,5217792,HPE 1.2TB SAS 10K SFF BC MV HDD,Hewlett Packard Enterprise,P28586-B21,459.8,1.0,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI)
+46703,5264884,HP 14 ReversP Blk/Slv Sleeve,Hp,2F2J1AA,7.46,1135.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+46704,5264886,HP 15 ReversP Blk/Slv Sleeve,Hp,2F2K5AA,8.38,803.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+42910,5276447,CANON Tinta GI-16 Cyan 4418C001,Canon,4418C001,18.32,918.0,Suministros y Medios,Suministros Inyección de Tinta
+56503,5304634,LEVEL UP MOBILE GAMING KIT WHT PINK,Vivitar,LU745-WHTPNK-ESP-6,15.03,114.0,Dispositivos de Entrada,Combos Teclado/Mouse
+44289,5330107,WINDOWS 11 PRO,Microsoft,FQC-10553,143.11,284.0,Software,SW Sistemas Operativos Windows
+56951,5336933,CORE I3-12100 3.30GHZ SKTLGA1700 12.00MB,Intel,BX8071512100,131.66,481.0,Componentes de Sistema,Procesadores Intel
+56936,5386083,Combo HP Teclado + Mouse alambrico 150,Hp,240J7AA#ABM,10.14,2050.0,Dispositivos de Entrada,Mouse
+45373,5440999,PACK 4 TINTAS CMYK SERIE T544L120 L310/3,Epson,T544520-4P,25.26,3087.0,Suministros y Medios,Suministros Inyección de Tinta
+54280,5446406,MONITOR S22e-20 21 PULGADAS HDMI,Lenovo,62C6KAR1CL,77.98,2.0,Pantallas,Monitores LCD/LED
+49625,5458692,KENSINGTON CABLE DE SEGURIDAD SLIM N17 2,Kensington,K60500WW,21.9,1093.0,Seguridad Física,Dispositivos Anti-Robo
+51095,5475221,KENSINGTON WEBCAM AUTO ENFOQUE W2050 PRO,Kensington,K81176WW,61.44,9.0,Cámaras y Escáners,Cámaras Web
+57138,5475370,KENSINGTON CABLE DE SEGURIDAD SLIM N17 2,Kensington,K60508WW,22.64,2.0,Seguridad Física,Opciones de Seguridad Física y Accs
+56279,5475568,ARUBA ION 10G SFP+ LC SR 300M MMF XCVR,Hewlett Packard Enterprise,R9D18A,93.3,13.0,Dispositivos de Red,Transceivers
+46284,5497072,RYZEN 5 5500 SKT AM4 35M,Amd,100-100000457BOX,152.45,210.0,Componentes de Sistema,Procesadores AMD
+44160,5505952,GI-13 AMARILLO,Canon,4686C001,12.03,8.0,Suministros y Medios,Suministros Inyección de Tinta
+51129,5515219,EXTREME PRO MICROSDXC 512GB+SD ADAPTER A,Sandisk,SDSQXCD-512G-GN6MA,160.31,35.0,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash
+45888,5549065,LC402XLBKS REND 3000 PAGS. MFCJ6740DW,Brother,LC402XLBKS,33.63,124.0,Suministros y Medios,Suministros Inyección de Tinta
+45887,5549069,LC402YS REND 550 PAGS. MFCJ6740DW,Brother,LC402YS,14.51,20.0,Suministros y Medios,Suministros Inyección de Tinta
+46317,5557774,ESCANER ADS3100,Brother,ADS3100,349.76,20.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+57706,5559201,TOUCH MODULE (LATVIA SERIES) ELPFT01,Epson,V12H007A23,206.49,5.0,Dispositivos Audio/Video,Punteros y Controles Remotos
+52927,5572549,HP LaserJet Tank MFP 1602w,Hp,2R3E8A,196.68,3.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+51290,5603804,KENSINGTON CABLE DE SEGURIDAD SLIM NANOS,Kensington,K65023WW,28.22,25.0,Seguridad Física,Opciones de Seguridad Física y Accs
+56189,5604494,APC EASY UPS ON-LINE SRV RM 2000VA 1800W,Apc,SRV2KRIRK-E,611.31,12.0,Protección Eléctrica y Racks,UPS
+47954,5628339,STINGER 2 CORE FOR PS WHITE,Hp,6H9B5AA,29.41,215.0,Comunicaciones,Cintillos telefónicos
+56275,5629317,ARUBA ION 1930 48G 4SFP+ 370W SW,Hewlett Packard Enterprise,JL686B,662.0,4.0,Dispositivos de Red,Switches Estaqueables
+52098,5644201,HP LASERJET PRO 3003DW PRINTER,Hp,3G654A,162.77,46.0,Impresoras,Impresoras Láser/LED color
+40090,5662138,SANDISK ULTRA MICROSDHC 128GB CLASS 10,Sandisk,SDSQUNR-128G-GN3MA,24.49,245.0,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash
+47616,5677899,MULTI-DEVICE WIRELESS MOUSE 430,Hp,3B4Q2AA#ABL,17.1,45.0,Dispositivos de Entrada,Mouse
+47615,5677907,MOUSE BLUETOOTH 240 RED,Hp,43N05AA#ABM,9.11,23.0,Dispositivos de Entrada,Mouse
+55219,5677923,HP USB-C 65W LAPTOP CHARGER LTNA,Hp,671R2AA#ABM,25.34,1635.0,Computadores Servidores y Notebooks,Accesorios de Energía para Notebooks
+55813,5685356,15.6IN LPT CASUAL BACKPACK B210,Lenovo,4X40T84059,10.16,428.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+49020,5701062,MONITOR LS32BG650EL SMART CURVO 2560X144,Samsung,LS32BG650ELXZS,338.22,17.0,Computadores Servidores y Notebooks,Tablets y Tablet PCs
+48283,5701380,1TB Canvio Basics USB 3.0 Black,Toshiba,HDTB510XK3AA,82.99,330.0,Dispositivos de Almacenamiento,Discos Duros USB
+48097,5701381,2TB Canvio Basics USB 3.0 Black,Toshiba,HDTB520XK3AA,104.32,13.0,Dispositivos de Almacenamiento,Discos Duros USB
+48284,5701382,4TB Canvio Basics USB 3.0 Black,Toshiba,HDTB540XK3CA,161.81,71.0,Dispositivos de Almacenamiento,Discos Duros USB
+49204,5721360,RYZEN 7 7800x3D 5.00GHZ 8 CORE SKT AM5,Amd,100-100000910WOF,453.1,7.0,Componentes de Sistema,Procesadores AMD
+56499,5722208,HP TRAVEL EXPANDABLE 18L BACKPACK GRAY,Hp,6B8U6AA,15.33,13.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+48501,5733372,HYPERX PULSEFIRE HASTE 2 GAMING MOUSE BK,Hp,6N0A7AA,35.49,146.0,Dispositivos de Entrada,Mouse
+6254,5736864,KENSINGTON MOUSE PAD WRIST PILLOW NEGRO,Kensington,L57822,4.8,44.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso"
+56310,5747988,MAINTENANCE BOX AM-C4000/5000/6000,Epson,C12C937181,36.1,8.0,Impresoras,Upgrades de Impresora
+47955,5763588,HYPERX CLOUD STINGER CORE 2,Hp,683L9AA,28.56,1420.0,Comunicaciones,Headsets Alámbricos p/celulares
+52815,5819841,LENOVO NANOSAVER ESSENTIAL SEC CABLELOCK,Lenovo,4XE1F30276,14.43,476.0,Seguridad Física,Opciones de Seguridad Física y Accs
+52649,5862192,ADATA DRAM DDR4 SO-DIMM 16GB 3200,Adata Technology,AD4S320016G22-SGN,129.17,637.0,Componentes de Sistema,Memoria Genérica
+56913,5862228,DRAM DDR4 U-DIMM 16GB 3200 SINGLE TRAY C,Adata Technology,AD4U320016G22-SGN,143.9,199.0,Componentes de Sistema,Memoria Genérica
+55422,5862258,ADATA SSD SU650 240GB RETAIL,Adata Technology,ASU650SS-240GT-R,35.73,1347.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+49681,5891620,T574 BOTELLA NEGRA - C13T09A12A,Epson,T574120-AL,8.05,220.0,Suministros y Medios,Suministros Inyección de Tinta
+55525,5915049,Cabezal Kit de reemplazo HP DesignJet,Hp,498N0A,375.44,1.0,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS
+55521,5915050,Tinta HP DesignJet Plotter 130-ml Negro,Hp,498N4A,83.14,171.0,Suministros y Medios,Suministros Láser
+55522,5915051,Tinta HP DesignJet Plotter 130-ml Cyan,Hp,498N5A,83.1,185.0,Suministros y Medios,Suministros Inyección de Tinta
+55523,5915052,Tinta HP DesignJet Plotter 130-ml Magent,Hp,498N6A,83.4,99.0,Suministros y Medios,Suministros Inyección de Tinta
+55524,5915053,Tinta HP DesignJet Plotter 130-ml Amaril,Hp,498N7A,83.4,87.0,Suministros y Medios,Suministros Inyección de Tinta
+56550,5916062,BLACK SCAN HH490-R1 USB KIT W STAND 1D P,Honeywell,HH490-R1-1USB-1-N,75.0,55.0,Cámaras y Escáners,Escáners Manuales
+49621,5917221,EPIQVISION FH02,Epson,V11HA85020,452.46,178.0,Dispositivos Audio/Video,Proyectores LCD
+57856,5931566,CLUTCH GLADIATE RGB GAMING CONTROLLER,Hp,7D6H2AA,34.99,250.0,Video Juegos y Consolas,Gamepads
+50805,5934627,KENSINGTON ALFOMBRILLA PARA ESCRITORIO (,Kensington,K54925CL,6.7,47.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso"
+51058,5939665,TONER TN3609 DL RENDIMIENTO HASTA 3000 P,Brother,TN3609,61.78,43.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+50260,5999348,PIXMA G2170 BLACK USB,Canon,5804C005,136.45,49.0,Impresoras,Impresoras de Inyección de Tinta
+55217,6031769,DELL WIRELESS KEYBOARD AND MOUSE KM3322W,Dell,KM3322W-R-LTN,20.74,165.0,Dispositivos de Entrada,Combos Teclado/Mouse
+36122,6069363,KENSINGTON POCKETHUB 4 USB-A CON 4 PUERT,Kensington,K39120,7.94,16.0,Dispositivos de Entrada/Salida,Conmutadores para dispositivos USB
+51479,6094461,I5-14400F 20M CACHE 2.5 GHZ BOXED,Intel,BX8071514400F,176.24,30.0,Componentes de Sistema,Procesadores Intel
+51135,6110314,KENSINGTON BASE PARA NOTEBOOK PLEGABLE D,Kensington,K50406WW,12.82,1.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+41441,6110755,KENSINGTON TECLADO INALAMBRICO COMPACTO,Kensington,K75502ES,18.45,12.0,Dispositivos de Entrada,Teclados
+56809,6113896,TONER MAGENTA TN219M 1200PG,Brother,TN219M,52.76,2.0,Suministros y Medios,Suministros Láser
+51489,6114116,RYZEN 5 8500G AI 5.00GHZ 6 CORE SKT AM5,Amd,100-100000931BOX,176.61,124.0,Componentes de Sistema,Procesadores AMD
+53932,6119457,SSD LEGEND 710 1000GB PCIe Gen3 NVMe M.2,Adata Technology,ALEG-710-1TCS,175.34,167.0,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD)
+56040,6128050,MONITOR OMEN 27-INCH FHD 165HZ,Hp,780F9AA#AKH,173.9,15.0,Pantallas,Monitores LCD/LED
+54906,6128082,IMPRESORA:LA DesignJet T850 36,Hp,2Y9H0A,2397.6,3.0,Impresoras,Impresoras de Recibos Térmicas
+50981,6136706,MONITOR LS34C650UA CURVO 3440 X 1440 VA,Samsung,LS34C650UALXZS,338.19,18.0,Pantallas,Pantallas Comerciales LCD/LED
+53335,6213556,14-FB0001LA U7 1TB SSD 8V RTX4060 W11H,Hp,A0DH6LA#ABM,1838.0,6.0,Computadores Servidores y Notebooks,Notebooks
+56192,6213880,MEMORY 16GB DDR4 3200 UDIMM BLACK SPECTR,Adata Technology,AX4U320016G16A-SBKD35,137.36,390.0,Componentes de Sistema,Memoria Genérica
+57332,6213881,MEMORY 8GB DDR4 3200 UDIMM BLACK D35,Adata Technology,AX4U32008G16A-SBKD35,77.99,454.0,Componentes de Sistema,Memoria Genérica
+52421,6215589,RYZEN 5 8400F 6-CORE PROCESSOR,Amd,100-100001591BOX,165.83,121.0,Componentes de Sistema,Procesadores AMD
+57384,6216523,ES-C380W WIFI SCANNER,Epson,B11B269201,305.59,4.0,Cámaras y Escáners,Escáners para el Hogar/Oficina
+56598,6221521,KENSINGTON MOUSE INALAMBRICO MY430 EQ. 6,Kensington,K75507WW,20.23,11.0,Dispositivos de Entrada,Mouse
+52208,6221522,MONITOR GAMER 24GS60F-B 24 IPS FULL HD 1,Lg,24GS60F-B,99.38,1.0,Pantallas,Monitores LCD/LED
+52218,6227879,MONITOR VX2728J-2K VA 27IN GAMER,Viewsonic,VX2728J-2K,163.58,120.0,Pantallas,Monitores LCD/LED
+56609,6235438,KENSINGTON TECLADO ALAMBRICO KB100 EQ AN,Kensington,K63727ES,7.88,50.0,Dispositivos de Entrada,Teclados
+56592,6235457,KENSINGTON COMBO INALAMBRICO TECLADO/MOU,Kensington,K75560ES,24.6,20.0,Dispositivos de Entrada,Combos Teclado/Mouse
+57957,6250906,Lenovo USB-C Dual Display Travel Dock,Lenovo,40B90000WW,63.89,68.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+52800,6261610,RYZEN 5 9600X 6-CORE PROCESSOR,Amd,100-100001405WOF,263.5,154.0,Componentes de Sistema,Procesadores AMD
+56498,6269896,ASUS VIGOUR BACKPACK,Asus,90XB08T0-BBP000,36.39,38.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+53569,6278432,KENSINGTON BASE PARA NOTEBOOK EASY RISER,Kensington,K52805WW,12.67,191.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+56588,6278446,KENSINGTON MOCHILA SIMPLY PORTABLE HASTA,Kensington,K60389WW,10.43,94.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+56587,6278447,KENSINGTON MOCHILA SIMPLY PORTABLE HASTA,Kensington,K60399WW,11.22,27.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+52796,6278448,KENSINGTON MOCHILA ECOFRIENDLY EQ PARA N,Kensington,K60391WW,18.38,2.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+52797,6278449,KENSINGTON MOCHILA ECOFRIENDLY EQ PARA N,Kensington,K60392WW,21.47,4.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+52961,6290604,GOPRO-HERO 13 BLACK,Gopro,CHDHX-131-RW,353.73,62.0,Cámaras y Escáners,Cámaras de Video Digital
+36216,6291139,200 SILVER WIRELESS MOUSE,Hp,2HU84AA#ABL,8.14,935.0,Dispositivos de Entrada,Mouse
+36215,6291140,200 WIRELESS BLACK MOUSE,Hp,X6W31AA#ABL,7.88,247.0,Dispositivos de Entrada,Mouse
+44635,6291422,LAPTOP SLV PROT REV 14 BLK/BLU,Hp,2F1X4AA,8.23,499.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+46703,6291423,14 REVERSP BLK/SLV SLEEVE,Hp,2F2J1AA,7.96,471.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+46704,6291424,15 REVERSP BLK/SLV SLEEVE,Hp,2F2K5AA,11.8,44.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+52971,6291554,VELOP MICRO-ROUTER MICRO MESH 6,Linksys,LN11011201,171.49,2.0,Dispositivos de Red,Routers y Gateways inalámbricos
+53178,6294940,MONITOR LS24D600UA 2560x1440 IPS USB-C,Samsung,LS24D600UALXZS,199.81,20.0,Pantallas,Monitores LCD/LED
+52121,6324674,GOPRO CAMARA HERO FRACTION,Gopro,CHDHF-131-AS,194.34,137.0,Cámaras y Escáners,Cámaras de Video Digital
+54618,6325277,MICROFONO QUADCAST 2 NEGRO,Hp,872V1AA,90.33,2.0,Dispositivos Audio/Video,Micrófonos para PCs
+54989,6327493,PRIME A620M-K,Asus,90MB1F40-M0EAY0,61.46,320.0,Componentes de Sistema,Tarjetas Madre AMD
+52955,6338369,MONITOR LS32D700EAL 4K 3840X2160 IPS,Samsung,LS32D700EALXZS,255.03,27.0,Pantallas,Monitores LCD/LED
+56035,6338925,SW272U PHOTOGRAPHER MONITOR UHD 4K 27IN,Benq,9H.LLFLB.QBA,912.96,23.0,Pantallas,Monitores LCD/LED
+47617,6341653,HP TECLADO INALAMBRICO COMPACTO 350,Hp,692S8AA#ABM,18.96,348.0,Dispositivos de Entrada,Teclados
+51482,6343124,I3-14100 12MB 4.70 GHZ BOXED,Intel,BX8071514100,137.17,214.0,Componentes de Sistema,Procesadores Intel
+51480,6343146,I5-14400 20MB 4.70 GHZ BOXED,Intel,BX8071514400,198.92,381.0,Componentes de Sistema,Procesadores Intel
+57691,6357706,OMEN I7 32GB SSD 1TB W11H,Hp,A14M3LA#ABM,2165.5,16.0,Computadores Servidores y Notebooks,Computadores Desktop
+52687,6359937,MONITOR LS27DG300ELXZS,Samsung,LS27DG300ELXZS,101.0,49.0,Pantallas,Monitores LCD/LED
+53197,6379930,BOTELLA DE TINTA AMARILLA BTD100Y,Brother,BTD100Y,6.34,175.0,Suministros y Medios,Suministros Inyección de Tinta
+53196,6379932,BOTELLA DE TINTA MAGENTA BTD100M,Brother,BTD100M,6.34,202.0,Suministros y Medios,Suministros Inyección de Tinta
+53195,6379933,BOTELLA DE TINTA CIAN BTD100C,Brother,BTD100C,6.34,255.0,Suministros y Medios,Suministros Inyección de Tinta
+53198,6379935,BOTELLA DE TINTA NEGRA BTD100BK,Brother,BTD100BK,6.99,501.0,Suministros y Medios,Suministros Inyección de Tinta
+53194,6379940,MULTIFUNCIONAL DCP-T930DW,Brother,MFCT930DW,271.97,21.0,Impresoras,Multifuncionales Inkjet
+53517,6384077,MONITOR SAMSUNG 27 FHD,Samsung,LS27D366GALXZS,100.14,656.0,Pantallas,Monitores LCD/LED
+53179,6384078,MONITOR GAMER SAMSUNG ODYSSEY G5 34IN,Samsung,LC34G55TWWLXZS,284.97,30.0,Pantallas,Monitores LCD/LED
+53866,6384080,MONITOR SAMSUNG 24 FHD,Samsung,LS24D366GALXZS,86.32,547.0,Pantallas,Monitores LCD/LED
+55345,6405136,MAG CORELIQUID A13 240 WHITE,Msi,306-7ZWCA21-L80,56.62,1.0,Componentes de Sistema,Componentes de Gabinete
+41421,6406925,HP DUAL MODE SILVER MOUSE 300 LTNA,Hp,6CR72AA#ABM,21.57,12.0,Dispositivos de Entrada,Mouse
+54201,6417090,YOGA SNAPDRAGON 8 G3 16GB 256GB 12.7IN,Lenovo,ZAEG0024CL,566.43,77.0,Computadores Servidores y Notebooks,Tablets y Tablet PCs
+58211,6436886,B650M GAMING WIFI,Msi,911-7E30-009,113.12,14.0,Componentes de Sistema,Tarjetas Madre AMD
+53335,6436889,OMEN 14-FB0001LA U7 8GB 1TB W11H,Hp,A0DH6LA#ABM,1595.8,2.0,Computadores Servidores y Notebooks,Notebooks
+53808,6457292,IDEAPAD 3 G8 R7 5825U 16GB 512GB 15.6IN,Lenovo,82XM00M4CL,659.93,40.0,Computadores Servidores y Notebooks,Notebooks
+53815,6457294,IDEAPAD 3 G10 I5 13420H 8GB 512GB 14IN,Lenovo,83K0002KCL,479.88,30.0,Computadores Servidores y Notebooks,Notebooks
+56365,6457295,IDEAPAD 3 G10 I5 13420H 8GB 512GB 15.3IN,Lenovo,83K1004WCL,525.79,202.0,Computadores Servidores y Notebooks,Notebooks
+57962,6494720,IMPRESORA MULTIFUNCIONAL EN COLOR WFE AM,Epson,C11CJ92201,2915.5,1.0,Impresoras,Multifuncionales Inkjet
+56507,6497729,2.5IN VA 1.92TB READ INTENSIVE SATA 6GB,Lenovo,4XB7A90875,1405.0,1.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+53700,6501044,MONITOR 34 IN ODYSSEY OLED G8,Samsung,LS34DG850SLXZS,864.89,25.0,Pantallas,Monitores LCD/LED
+54152,6509276,CAMARA MAX 360,Gopro,CHDHZ-203-RW,394.25,41.0,Cámaras y Escáners,Cámaras de Video Digital
+54846,6515131,SSD LEGEND 860 2000GB M.2 2280,Adata Technology,SLEG-860-2000GCS,314.06,24.0,Dispositivos de Almacenamiento,Discos de Estado Sólido PCIe (SSD)
+56651,6517402,IMPRESORA MULTIFUNCION A COLOR WFE AM-C4,Epson,C11CJ93201,1822.2,4.0,Impresoras,Multifuncionales Inkjet
+57243,6546275,ViewBoard 51 serie touchscreen 75 UHD An,Viewsonic,IFP7551,1417.5,19.0,Pantallas,Pantallas Comerciales LCD/LED
+49916,6567739,AURICULARES CON CABLE GAMING,Hp,519T1AA,33.22,791.0,Comunicaciones,Headsets Alámbricos VoIP
+56471,6569079,Etiquetadora industrial PTE560BTVP,Brother,PTE560BTVP,237.98,13.0,Impresoras,Impresoras de Etiquetas Hogar/Oficina
+56756,6581695,B3405CCA LY0354X U5 225H 512G SSD 16G 15,Asus,90NX08L1-M00CC0,965.79,97.0,Computadores Servidores y Notebooks,Notebooks
+52307,6583326,KENSINGTON POCKETHUB CH1200 USB-C. CON 4,Kensington,K33616WW,18.38,9.0,Dispositivos de Entrada/Salida,Conmutadores para dispositivos USB
+54834,6584751,AIO 3 G9 I7-13620H 16GB 1TB 27IN M/K WI,Lenovo,F0HM00JKCL,1062.5,2.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+56499,6585366,MOCHILA TRAVEL GRIS 15.6IN,Hp,6B8U6AA,15.89,77.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks
+56470,6589705,ROTULADORA DE ETIQUETAS TERMICA,Brother,PTE310BTVP,151.29,2.0,Impresoras,Impresoras de Etiquetas Hogar/Oficina
+54389,6589745,MONITOR GAMING ODYSSEY G7 DE 27 IN,Samsung,LS27DG700ELXZS,448.87,11.0,Pantallas,Monitores LCD/LED
+56245,6594555,GeForce RTX 5060 8G VENTUS 2X OC WHITE,Msi,912-V537-018,487.13,4.0,Componentes de Sistema,Opciones BTO para PCs
+54584,6598192,IDEA TAB 11IN MTK D6300 8GB 128GB,Lenovo,ZAFR0125CL,267.83,11.0,Computadores Servidores y Notebooks,Tablets y Tablet PCs
+57960,6603676,IMPRESORA MULTIFUNCIONAL PIXMA G3180,Canon,6708C005,159.8,131.0,Impresoras,Multifuncionales Inkjet
+54391,6604498,MONITOR SAMSUNG ESSENTIAL LS22D300GALXZS,Samsung,LS22D300GALXZS,56.57,1656.0,Pantallas,Monitores LCD/LED
+56562,6607787,POWERLITE L210W PROYECTOR PROYECTO,Epson,V11HA70020,1504.4,3.0,Dispositivos Audio/Video,Proyectores LCD
+53760,6625962,UX8406CA-PZ179W U9 32GB 1TSSD,Asus,90NB14X1-M00970,1926.6,1.0,Computadores Servidores y Notebooks,Notebooks
+57776,6626608,ULTGEAR 27GX790A-B 2560X1440 OLED 26.5PU,Lg,27GX790A-B.AWH,580.15,1.0,Pantallas,Monitores LCD/LED
+55810,6628178,Lenovo Essential Wireless Combo KB & Mou,Lenovo,4X31R64500,23.42,359.0,Dispositivos de Entrada,Combos Teclado/Mouse
+55817,6631049,ESSENTIAL FHD WEBCAM GEN2,Lenovo,4XC1S15018,24.81,51.0,Cámaras y Escáners,Cámaras Web
+57637,6631814,EB-760WI INTERACTIVO WXGA,Epson,V11HA80021,1785.4,5.0,Dispositivos Audio/Video,Proyectores LCD
+55060,6638425,MONITOR GAMING VX2429 24IN 200HZ FHD,Viewsonic,VX2429,93.36,211.0,Pantallas,Monitores LCD/LED
+40843,6642852,KENSINGTON CABLE HDMI 2.0 A HDMI 2.0 DE,Kensington,K33020WW,5.84,73.0,Cables,Cables y Adaptadores de Audio + Video
+55913,6642874,GEFORCE RTX 3050 VENTUS 2X 6G OC,Msi,912-V812-060,294.35,95.0,Componentes de Sistema,Tarjetas Gráficas nVidia
+56508,6645575,ThinkSystem 2.5 VA 960GB Read Intensive,Lenovo,4XB7A90874,2613.0,15.0,Dispositivos de Almacenamiento,Discos de Estado Sólido SATA (SSD)
+54594,6648757,PRIME-B760M-A LGA1700 MB,Asus,90MB1EK0-M1EAY0,105.03,160.0,Componentes de Sistema,Tarjetas Madre Intel
+54777,6650362,HERO13 Black Extended Power Bundle,Gopro,CHDRB-134-RW,410.93,126.0,Cámaras y Escáners,Cámaras de Video Digital
+55071,6656333,ASUS DOCKING DC300,Asus,90XB08CN-BDS0F0,124.09,103.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+57961,6662177,IMPRESORA MULTIFUNCIONAL DE O DE TINTA P,Canon,2313C005,106.62,107.0,Impresoras,Multifuncionales Inkjet
+58001,6685188,ALLOY RISE TECLADO GAMER,Hp,7G7A3AA#ABM,141.94,49.0,Comunicaciones,Teclados área de Movilidad
+58011,6685190,ALLOY RISE TECLADO GAMER 75,Hp,7G7A4AA#ABM,121.68,30.0,Comunicaciones,Teclados área de Movilidad
+49916,6685191,AURICULARES CON CABLE GAMING,Hp,519T1AA,45.09,22.0,Comunicaciones,Headsets Alámbricos VoIP
+54618,6685194,MICROFONO QUADCAST 2 NEGRO,Hp,872V1AA,90.25,49.0,Dispositivos Audio/Video,Micrófonos para PCs
+31611,6693924,CAJA DEFESTUOSA TONER TN213C HL-L3270CDW,Brother,TN213C,52.76,1.0,Suministros y Medios,Suministros Láser
+55613,6693957,MOTO G06 128GB + 4 VERDE,Motorola,PB970033CL,147.91,1.0,Comunicaciones,Smart Phones
+54806,6694378,ECOTANK L4360 IMPRESORA MULTIFUNCIONAL A,Epson,C11CL41303,216.71,546.0,Impresoras,Multifuncionales Láser Color
+55803,6694647,Lenovo Wired VoIP Headset 5000 (Teams),Lenovo,4XD1R88995,39.48,80.0,Dispositivos Audio/Video,Cintillos y Audífonos para PCs
+56391,6697234,KENSINGTON KIT DE SEGURIDAD ADAPTADOR RA,Kensington,K65029,7.34,55.0,Seguridad Física,Dispositivos Anti-Robo
+55286,6698108,HP 65W SMART AC CHARGER,Hp,6H459AA#ABL,14.34,286.0,Computadores Servidores y Notebooks,Accesorios de Energía para Notebooks
+56594,6698859,KENSINGTON ADAPTADOR CA1020 USB-A A USB-,Kensington,K33478WW,3.49,90.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks
+56001,6702890,DELL Pro 14 Copilot+PC AMD Ryzen AI 7 35,Dell,X3J54,1000.5,93.0,Computadores Servidores y Notebooks,Notebooks
+56050,6702910,PROYECTOR MW560C 4.000 LUM WXGA (1280X80,Benq,9H.JTD77.1NL,340.53,49.0,Dispositivos Audio/Video,Proyectores DLP
+58206,6713950,ROG Strix XG27ACMES Gaming Monitor,Asus,90LM0C90-B011I1,229.13,196.0,Pantallas,Monitores LCD/LED
+55093,6718537,MONITOR LG 27G411A-B 27in FHD 144Hz,Lg,27G411A-B.AWH,90.24,264.0,Pantallas,Monitores LCD/LED
+57922,6720109,T27QD-40 C25270QT0 27 MONITOR-HDMI,Lenovo,64AAGAR2CL,223.59,10.0,Pantallas,Monitores LCD/LED
+56257,6728343,MAG CORELIQUID A13 240,Msi,306-7ZWCA17-L80,55.66,84.0,Componentes de Sistema,Componentes de Gabinete
+55958,6737885,GM700TZR8700F089W R7-8700F 1T 32G W11H,Asus,90PF05T1-M00SD0,2905.5,14.0,Computadores Servidores y Notebooks,Computadores Tower
+55838,6738876,LOQE R7 16GB 512GB 15.6IN FHD RTX3050,Lenovo,83S00002CL,774.21,64.0,Computadores Servidores y Notebooks,Notebooks
+57233,6738878,LOQE R7 16GB 512GB 15.6IN FHD RTX4050,Lenovo,83S00001CL,1079.2,63.0,Computadores Servidores y Notebooks,Notebooks
+55809,6739887,DUAL-MODE WRL HEADSET 6550 USB-A TEAMS,Lenovo,4XD1S19777,95.86,3.0,Comunicaciones,Auriculares Bluetooth
+56340,6750447,MasterLiquid Core Nex 240 White,Cooler Master,MLX-D24M-A18PA-RW,54.73,98.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56374,6750451,MasterLiquid Core Nex 240 ARGB,Cooler Master,MLX-D24M-A18PA-R1,54.73,157.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+56379,6750456,MF120 Lite ARGB,Cooler Master,MFW-B2DN-17NPA-R1,7.13,98.0,Computadores Servidores y Notebooks,Componentes Terminales
+56046,6751338,Samsung ViewFinity S5,Samsung,LS32FM801ULXZS,399.18,16.0,Pantallas,Monitores LCD/LED
+55092,6751339,24G411A-B 27in FHD 144Hz Monitor,Lg,24G411A-B.AWH,80.18,101.0,Pantallas,Monitores LCD/LED
+57364,6751452,TM-T20IVL-001:USB+Serial,Epson,C31CL45001,118.46,141.0,Impresoras,Impresoras POS Portátiles
+56905,6753134,HPE PROLIANT MICROSERVER GEN11 1P 6325P,Hewlett Packard Enterprise,P86708-DM5,2922.3,8.0,Computadores Servidores y Notebooks,Servidores Tower
+58014,6763955,SR630 V4 2.5IN 1.2TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01770,610.0,2.0,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI)
+58015,6763957,SR630 V4 2.5IN 2.4TB 10K SAS 12GB HOT SW,Lenovo,4XB7B01771,547.0,1.0,Dispositivos de Almacenamiento,Discos Duros SAS (Serial Attached SCSI)
+55195,6763988,Sandisk Creator Phone SSD 1 TB,Sandisk,SDSSDE62C-1T00-G25,274.72,5.0,Dispositivos de Almacenamiento,Pendrives y Unidades Flash Portables
+56904,6772811,"HPE PROLIANT ML30 GEN11 1P 6325P 3.5GHZ,",Hewlett Packard Enterprise,P86723-DM5,3522.7,6.0,Computadores Servidores y Notebooks,Servidores Tower
+55286,6773564,ADAPTADOR DE CA INTELIGENTE 65W,Hp,6H459AA#ABL,14.1,37.0,Computadores Servidores y Notebooks,Accesorios de Energía para Notebooks
+54634,6777715,RC73XA-NH011W Z2-EXTREME 24G 1T UMA,Asus,90NV00H2-M00460,934.47,1.0,Computadores Servidores y Notebooks,Notebooks
+56912,6777969,ADATA DRAM DDR4 U-DIMM 16GB 3200,Adata Technology,AD4U320016G22-SBK,150.72,140.0,Componentes de Sistema,Memoria Genérica
+58243,6778793,THINKPAD 14 G6 R7 PRO 350 16GB 512G W11P,Lenovo,21QKS3LV00,1443.8,200.0,Computadores Servidores y Notebooks,Notebooks
+55799,6779529,SMART TV LG 65IN QNED AI 4K,Lg,65QNED73ASA.AWH,488.63,8.0,Pantallas,TV LCD/LED
+58132,6783304,MOTOROLA SIGNATURE CARBON 16+1T,Motorola,PBAB0021CL,1333.8,50.0,Comunicaciones,Smart Phones
+58130,6783309,MOTOROLA EDGE 70 BRONZE GREEN 12+512,Motorola,PBA60018CL,697.91,3978.0,Comunicaciones,Smart Phones
+57694,6783350,AIO I3 N305 8GB 512SSD 24IN W11H,Lenovo,F0JN0021CL,532.09,7.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+58086,6783372,Monitor Gaming MSI MAG 272QP QD-OLED X24,Msi,9S6-3CF89A-004,455.79,27.0,Pantallas,Monitores LCD/LED
+56195,6783814,Monitor Gamer Samsung Odyssey G5 27IN QH,Samsung,LS27FG500ELXZS,146.74,223.0,Pantallas,Monitores LCD/LED
+55306,6783816,Monitor Samsung Odyssey G5 32IN IPS QHD,Samsung,LS32FG500ELXZS,182.2,111.0,Pantallas,Monitores LCD/LED
+55305,6783817,Monitor Samsung Smart M5 27IN VA FHD,Samsung,LS27FM501ELXZS,149.74,29.0,Pantallas,Monitores LCD/LED
+57041,6783818,Monitor Samsung Smart M9 32IN QD-OLED,Samsung,LS32FM902SLXZS,1099.6,9.0,Pantallas,Monitores LCD/LED
+56196,6783819,Monitor Samsung Odyssey G6 27IN QHD,Samsung,LS27FG602ELXZS,348.86,39.0,Pantallas,Monitores LCD/LED
+54390,6783820,Monitor Samsung S8 37IN VA 4K UHD,Samsung,LS37D800UALXZS,365.91,18.0,Pantallas,Monitores LCD/LED
+57954,6784860,R470 + 6511P + 4x 32GB + 480GB SSD + H96,Dell,R470271_6511P432,13341.0,12.0,Computadores Servidores y Notebooks,Servidores en Rack
+57956,6784861,T160 + 6333P + 1x 16GB + 2TB HDD + H355,Dell,T160271_6333P116,3184.3,9.0,Computadores Servidores y Notebooks,Servidores Tower
+56159,6785308,AP-850G PSU NORTH AMERICA,Asus,90YE00U0-B0SA00,84.96,50.0,Componentes de Sistema,Fuentes de Poder para Gabinetes Específi
+57128,6789835,P500SV03100U0030 3-100U 256G 8G 9L W11P,Asus,90PF05A1-M00MV0,424.44,49.0,Computadores Servidores y Notebooks,Computadores Desktop
+57277,6797108,HPE PROLIANT COMPUTE DL380 GEN12 6505P 1,Hewlett Packard Enterprise,P89235-DM5,10773.0,4.0,Computadores Servidores y Notebooks,Servidores en Rack
+58074,6797727,MBN 13 SLV/8GB/256GB-SILVER,Apple,MHFA4CI/A,637.94,48.0,Computadores Servidores y Notebooks,Notebooks
+58006,6801387,MONITOR GAMER MOBIUZ EX271 27IN LED IPS,Benq,9H.LNALA.TBA,195.57,15.0,Pantallas,Monitores LCD/LED
+56742,6801838,15-FN0053LA AMD R5 330 16G 512G 15.6 W11,Hp,CU9S3LA#ABM,670.2,330.0,Computadores Servidores y Notebooks,Notebooks
+56743,6801839,14-HU0050LA I5 120U 8GB 512 14IN 2K W11H,Hp,D4EU0LA#ABM,458.6,147.0,Computadores Servidores y Notebooks,Notebooks
+57040,6804959,27IN Odyssey OLED G5 QHD 180Hz Panel OLE,Samsung,LS27FG500SLXZS,411.41,7.0,Pantallas,Monitores LCD/LED
+57750,6805009,24-cr0232la R3 7320U 8G 512G 23.8IN W11H,Hp,BA1V4LA#ABM,489.83,592.0,Computadores Servidores y Notebooks,Computadores con Monitor integrado
+58207,6806331,Monitor TUF Gaming 5 VG249Q5A 23.8,Asus,90LM0C60-B011I1,98.13,198.0,Pantallas,Monitores LCD/LED
+58021,6808459,Proyector laser de instalacion 1080p con,Viewsonic,LSD500HD,870.21,52.0,Dispositivos Audio/Video,Proyectores DLP
+57058,6808460,Proyector láser WXGA 6000 ANSI lúmenes,Viewsonic,LSD600W,640.56,84.0,Dispositivos Audio/Video,Proyectores DLP
+55957,6809599,ESCANER DE DOCUMENTOS DS-770II,Epson,B11B262201,350.24,2.0,Cámaras y Escáners,Escáners Empresariales/Producción
+58208,6810156,Monitor Eye Care VY229HF-J 22 IPS,Asus,90LM0960-B011Y0,72.62,26.0,Pantallas,Monitores LCD/LED
+56870,6810601,MONITOR 22IN FULL HD 120HZ MONITOR WITH,Viewsonic,VA220A-H,56.92,44.0,Pantallas,Monitores LCD/LED
+56582,6811414,IMPRESORA MULTIFINCIONAL PIXMA G2170,Canon,5804C004,118.07,95.0,Impresoras,Impresoras de Inyección de Tinta
+56610,6811853,KENSINGTON TECLADO INALAMBRICO COMPACTO,Kensington,K75409ES,17.26,4.0,Dispositivos de Entrada,Teclados
+56593,6811854,KENSINGTON COMBO ALAMBRICO TECLADO/MOUSE,Kensington,K75452ES,14.14,14.0,Dispositivos de Entrada,Combos Teclado/Mouse
+55921,6812475,PROYECTOR EPSON LIFESTUDIO EF-62N,Epson,V11HB73421,614.18,2.0,Dispositivos Audio/Video,Proyectores LCD
+53620,6812848,REXEL TRITURADORA MOMENTUM S202 / TIRA 6,Kensington,2104567EU,15.55,1.0,Equipamiento de Oficina,Trituradoras de Papel y CD/DVD
+56591,6812849,KENSINGTON COMBO INALAMBRICO TECLADO/MOU,Kensington,K72486ES,34.52,10.0,Dispositivos de Entrada,Combos Teclado/Mouse
+56612,6812850,KENSINGTON TECLADO INALAMBRICO ERGONOMIC,Kensington,K72485ES,24.66,3.0,Dispositivos de Entrada,Teclados
+56611,6812851,KENSINGTON TECLADO INALAMBRICO KB270 EQ,Kensington,K75558ES,18.45,35.0,Dispositivos de Entrada,Teclados
+56734,6814006,15-FA2009LA I5-13420H 8GB 512GB 15.6IN,Hp,BA1U1LA#ABM,594.54,302.0,Computadores Servidores y Notebooks,Notebooks
+58007,6820099,PROYECTOR BEQN LASER (20000-30000 HRS),Benq,9H.JS677.1KL,751.09,30.0,Dispositivos Audio/Video,Proyectores DLP
+58008,6820100,PROYECTOR INTELIGENTE SMART ANDROID 9.0,Benq,9H.JSP77.1NL,797.69,23.0,Dispositivos Audio/Video,Proyectores LCD
+58012,6822252,HP EliteBoard G1aNGAI/RAI5330/16GB/512GB,Hp,D72V9LT#ABM,1028.8,19.0,Comunicaciones,Teclados área de Movilidad
+56566,6822542,MONITOR ODYSSEY G4 27IN FHD 240HZ PLANO,Samsung,LS27HG400ELXZS,177.52,38.0,Pantallas,Monitores LCD/LED
+57905,6823471,B3406CCAP-LY0020X U7 255H 512 16 14 W11P,Asus,90NX0AP1-M000T0,1285.2,80.0,Computadores Servidores y Notebooks,Notebooks
+57631,6824118,IDEAPAD SLIM 3 GEN 11 CORE 5 8G 512G 14I,Lenovo,83RQ002YCL,732.1,1282.0,Computadores Servidores y Notebooks,Notebooks
+57630,6824119,IDEAPAD SLIM 3 GEN 8 R5 40 8G 512 15.6IN,Lenovo,82XQ01P7CL,619.86,764.0,Computadores Servidores y Notebooks,Notebooks
+57634,6824123,IDEAPAD 5 2EN1 GEN 11 R7 250 16 512 14IN,Lenovo,83UJ002HCL,899.57,810.0,Computadores Servidores y Notebooks,Notebooks
+56686,6824126,IDEATAB 11IN 2.5K MTK D6300 6G 128G W11H,Lenovo,ZAFR1026CL,229.89,2869.0,Computadores Servidores y Notebooks,Tablets y Tablet PCs
+56687,6824128,IDEATAB 11IN 2.5K MTK D6300 6G 256G 5G,Lenovo,ZAFM0762CL,289.08,1950.0,Computadores Servidores y Notebooks,Tablets y Tablet PCs
+58056,6826042,THINKCENTRE NEO50A 27 G6 U7256V 16G 512G,Lenovo,13QF003XCS,1171.2,20.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+58057,6826048,THINKCENTRE NEO50A 24 G6 U7256V 16G 512G,Lenovo,13QH004JCS,1118.0,50.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+58231,6827200,EB 8 G2I AI U7 355 14 32GB 1TB,Hp,DJ1J4AT#ABM,1880.3,114.0,Computadores Servidores y Notebooks,Notebooks
+56811,6828090,CARTUCHO DE TONER NEGRO,Brother,TN615BK,59.21,1.0,Suministros y Medios,Suministros Láser
+56899,6828391,CAMARA GOPRO MISSION PRO GRIP BUNDLE,Gopro,CHDRW-011-RW,729.08,73.0,Cámaras y Escáners,Cámaras de Video Digital
+56898,6828393,CAMARA GOPRO MISSION PRO,Gopro,CHDHW-011-RW,647.93,64.0,Cámaras y Escáners,Cámaras de Video Digital
+56185,6836170,32GB TruDDR5 6400MHz (2Rx8) RDIMM,Lenovo,4X77A90965,3267.0,10.0,Componentes de Sistema,Memoria Propietaria
+54926,6838808,Soporte VESA para Thin Clients,Startech.Com,ACCSMNT,37.79,40.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+32811,6838967,Cable DisplayPort a HDMI 2m Negro 4K,Startech.Com,DP2HDMM2MB,24.07,32.0,Cables,Cables y Adaptadores de Audio
+54965,6838969,Adaptador de Red Ethernet USB-C 25 Gb,Startech.Com,US2GC30,45.87,12.0,Dispositivos de Red,Tarjetas de Red Ethernet
+30703,6838970,Adaptador DisplayPort DP a HDMI Pasivo,Startech.Com,DP2HDMI2,18.21,37.0,Cables,Cables Seriales y Adaptadores
+54948,6838973,Adaptador Ethernet Gigabit USB-C USB 3.0,Startech.Com,US1GC30B,35.5,77.0,Dispositivos de Red,Tarjetas de Red Ethernet
+30704,6838982,Adaptador Conversor DisplayPort 1.2 VGA,Startech.Com,DP2VGA3,23.49,35.0,Cables,Cables y Adaptadores USB
+30713,6838983,Adaptador USB-C a HDMI - 4K 30Hz - Negro,Startech.Com,CDP2HD,29.4,2.0,Cables,Cables y Adaptadores de Audio + Video
+54995,6838985,Kit KVM 4 Puertos VGA USB 2.0 - Audio,Startech.Com,SV411KUSB,92.13,20.0,Dispositivos de Entrada/Salida,KVMs y Componentes
+54962,6838998,Modulo SFP Compatible Cisco GLC-SX-MM,Startech.Com,SFPGLCSXMMST,36.45,10.0,Dispositivos de Red,Transceivers
+35772,6839018,Adaptador USB-C a VGA HDMI Gris Espacial,Startech.Com,CDP2HDVGA,45.14,10.0,Cables,Cables y Adaptadores de Video
+58018,6840159,TARJETA VIDEO RTX5070TI 16GB FRIEREN,Msi,912-V531-682,1221.1,26.0,Componentes de Sistema,Tarjetas Gráficas nVidia
+58017,6840161,FUENTE PODER MAG A850GN PCIE5 850W,Msi,306-7ZPBX23-CE0,69.26,36.0,Protección Eléctrica y Racks,Componentes UPS
+58019,6840164,TARJETA MADRE B550M PRO VDH WIFI AM4,Msi,911-7C95-095,80.8,22.0,Componentes de Sistema,Tarjetas Madre AMD
+58020,6840205,TARJETA MADRE A520M A PRO AM4 DDR4,Msi,911-7C96-065,45.95,227.0,Componentes de Sistema,Tarjetas Madre AMD
+58212,6840209,TARJETA MADRE PRO B650M B AM5 DDR5,Msi,911-7E28-020,76.18,3.0,Componentes de Sistema,Tarjetas Madre AMD
+58234,6840440,TC NEO 50Q G6 U7-256V 16GB 512GB W11P,Lenovo,13HR001XCS,968.89,33.0,Computadores Servidores y Notebooks,Computadores Small Form/Ultra Slim
+54996,6841900,USB C Multiport Adapter - 4K HDMI/PD/USB,Startech.Com,DKT30CHSDPD,36.64,10.0,Dispositivos de Entrada/Salida,Conmutadores para dispositivos USB
+54971,6841924,SFP Module - Cisco Compatible,Startech.Com,SFP10GBTCST,235.59,9.0,Dispositivos de Red,Transceivers
+56733,6843293,Samsung G4 25in FHD IPS 240Hz,Samsung,LS25HG400ELXZS,163.3,53.0,Pantallas,Monitores LCD/LED
+56838,6846052,CARTUCHO DE TINTA CIAN DE ESTÁNDAR,Brother,LC506CS,22.67,1.0,Suministros y Medios,Suministros Inyección de Tinta
+56839,6846057,CARTUCHO DE TINTA NEGRA ESTÁNDAR,Brother,LC506BKS,29.55,1.0,Suministros y Medios,Suministros Inyección de Tinta
+56747,6849103,IMPRESORA EcoTank L3310,Epson,C11CL61302,151.69,321.0,Impresoras,Multifuncionales Inkjet
+55571,6849972,V14 G5 IRL I5-13420H 8GB 512GB W11P,Lenovo,83GU0058CL,813.98,189.0,Computadores Servidores y Notebooks,Notebooks
+58055,6850518,ROG-ASTRAL-RTX5090-O32G-WHITE HDMI DP32G,Asus,90YV0LWA-MVAA00,4230.8,12.0,Componentes de Sistema,Tarjetas Gráficas nVidia
+57295,6853227,Samsung Odyssey OLED G9 G95SD 49IN,Samsung,LS49DG950SLXZS,1083.7,11.0,Pantallas,Monitores LCD/LED
+57951,6854887,Monitor LG 27IN UltraWide,Lg,27U711B-B,214.81,8.0,Pantallas,Monitores LCD/LED
+55535,6854926,THINKPAD T14 G6 U5-225U 16GB 512GB W11P,Lenovo,21QD001FCL,1405.7,99.0,Computadores Servidores y Notebooks,Notebooks
+58003,6855378,MONITOR BENQ PD2706U 27IN 3840x2160 Pane,Benq,9H.LLJLB.QBA,422.24,13.0,Pantallas,Monitores LCD/LED
+30702,6855417,HDMI to VGA Adapter Converter 1920x1080,Startech.Com,HD2VGAE2,37.4,40.0,Cables,Cables y Adaptadores de Audio + Video
+54936,6855444,Vertical Dual Monitor Mount - Steel,Startech.Com,ARMDUALV,117.18,4.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+54924,6855473,24 in. Monitor Privacy Screen - Universa,Startech.Com,PRIVACY-SCREEN-24MB,105.52,11.0,Pantallas,Filtros Anti-reflejo para Monitores
+54935,6855507,Monitor Wall Mount - Aluminum,Startech.Com,ARMWALL,32.22,6.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+54917,6855509,7 Port USB 3.0 Hub - Desktop /Wall-Mount,Startech.Com,ST7300U3M,113.23,5.0,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB
+56055,6855512,Quad Monitor Stand - Articulating,Startech.Com,ARMQUADSS,326.99,4.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+54950,6855514,4 Port USB C Hub - C to 4x A - USB 2.0,Startech.Com,ST4200MINIC,23.2,5.0,Dispositivos de Red,ROMs de Inicio y Brackets
+54916,6855515,7 Port SuperSpeed USB 3.0 Hub w/ Adapter,Startech.Com,ST7300USB3B,72.54,2.0,Dispositivos de Red,ROMs de Inicio y Brackets
+54940,6855516,Mobile Projector and Laptop Stand/Cart,Startech.Com,ADJPROJCART,134.71,5.0,Dispositivos Audio/Video,Bolsos; Fundas y Carros para Proyectores
+54934,6855521,Mobile TV Cart/Stand 37-70in VESA Mount,Startech.Com,MBLTVSTNDEC,514.17,3.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores"
+54966,6855522,USB-C to Gigabit Network Adapter,Startech.Com,US1GC30W,35.33,5.0,Dispositivos de Red,Tarjetas de Red Ethernet Gigabit
+55411,6857017,15-FD0331LA I3-L33 8GB 512GB 15.6IN W11H,Hp,D0CJ4LA#ABM,396.72,308.0,Computadores Servidores y Notebooks,Notebooks
+57952,6857571,Smart TV UHD 4K de 50IN UA731C 3.840,Lg,50UA731C0SB.AWHQ,231.07,4.0,Pantallas,TV LCD/LED
+57261,6857934,Z2 TWR G1I U9-285K 32GB 1TB W11P,Hp,C08W7LT#ABM,2867.6,15.0,Computadores Servidores y Notebooks,Computadores Tower
+58230,6857969,Z1 G1I U7-265 32GB 1TB RTX 16GBG W11P,Hp,C88U3LT#ABM,2426.5,20.0,Computadores Servidores y Notebooks,Workstations
+58228,6857971,ZBOOK 8 G2I U7-366H 48GB 1TB 16IN W11P,Hp,DS3X2AT#ABM,2770.1,15.0,Computadores Servidores y Notebooks,Notebooks
+58229,6857972,ZBOOK 8 G2I U7-366H 48GB 1TB 14IN W11P,Hp,DS3W9AT#ABM,2747.2,28.0,Computadores Servidores y Notebooks,Notebooks
+22340,6861492,HOJAS DE ACEITE PARA DESTRUCTORAS REXEL,Kensington,2101948,6.55,10.0,Equipamiento de Oficina,Trituradoras de Papel y CD/DVD
+57240,6862747,MONITOR LG 27IN FULL HD 144HZ IPS 1MS,Lg,27U411B-B.AWH,88.05,57.0,Pantallas,Monitores LCD/LED
+55781,6863511,P14S G6 U7-255H 16GB 1TB W11P,Lenovo,21QU0009CL,1760.2,85.0,Computadores Servidores y Notebooks,nan
+57834,6866060,S5 PRO534PMWQHDUSB-CCONFMNTR US,Hp,9E0Z2UT#ABA,534.3,4.0,Pantallas,Monitores LCD/LED
+57915,6866063,S5 PRO 524PMFHDUSB-CCONFMNTR US,Hp,9E0G9UT#ABA,317.65,20.0,Pantallas,Monitores LCD/LED
+55835,6871663,P16S G4 U7 255H 32GB 1TB RTX PRO 500,Lenovo,21QV004VCL,2561.1,9.0,Computadores Servidores y Notebooks,nan
+57938,6872420,S5 PRO 524PF FHD MNTR US,Hp,9D9L6UT#ABA,243.09,61.0,Pantallas,Monitores LCD/LED
+57915,6872422,S5 PRO 524P MFH DUSB-CCONFMNTR US,Hp,9E0G9UT#ABA,459.37,27.0,Pantallas,Monitores LCD/LED
+57937,6872423,S5 PRO 527PU QHD USB-C MNTR US,Hp,9E0G5AA#ABA,426.34,18.0,Pantallas,Monitores LCD/LED
+56778,6881727,THINKBOOK 14 G9 IRL I5 210H 16GB 512GB,Lenovo,21UY00GKCL,1054.1,108.0,Computadores Servidores y Notebooks,Notebooks
