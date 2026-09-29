@@ -1,2 +1,4 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-57816,ACC-0316,ACER Urban Sleeve,nan,GP.BAG11.02J,14990.0,83,Accesorios,Hardware,ok,False,1,1,1,"Maletín para Notebook 15,6"" GP.BAG11.02J",0,0,False,{},,,,,,,
+58166,PNR-1096,ANV15-A31-R8WU-1\NOTEBOOK ACER,Acer,NH.U3PAL.008.1,1410000.0,50,Equipos,Hardware,ok,True,0,50,+50,"Notebook Gamer Nitro V 15 Intel Core i5-13420H NVIDIA GeForce RTX 3050 15.6"" 16GB RAM 512GB SSD Windows 11 Home",0,0,False,{},,acer,,,,,
+58167,PNR-1102,APRO15-41P-R562-3,Acer,NX.DK9AL.002.3,642850.0,55,Equipos,Hardware,ok,True,0,50,+50,"Notebook Aspire 5 AMD Ryzen 5 7520U AMD Radeon 610M 15.6"" 8GB RAM 512GB SSD Windows 11 Home",0,0,False,{},,acer,,,,,
+58168,PNR-1104,AG15-72P-951Q-1,Acer,NX.JPEAL.004.1,742429.0,80,Equipos,Hardware,ok,True,0,50,+50,"Notebook Spin 3 Intel Core i5-1235U Intel Iris Xe 14"" Touch 8GB RAM 512GB SSD Windows 11 Home",0,0,False,{},,acer,,,,,

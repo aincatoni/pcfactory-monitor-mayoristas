@@ -1,2 +1,2 @@
-pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory
-,PTC-0161,VZ4880G-CLi3-RENEWED,Acer,DQ.VUYAL.007.RENEWED,98312.0,72,Equipos,Hardware
+pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
+,PTC-0161,VZ4880G-CLi3-RENEWED,Acer,DQ.VUYAL.007.RENEWED,98312.0,69,Equipos,Hardware,,,,,
