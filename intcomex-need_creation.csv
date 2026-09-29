@@ -21,10 +21,10 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,Hanwha,SBP-120HMW,32.4,9,Accesorios,Physical,,,,,
 ,100019219.0,Kingston Fury - DDR5 SDRAM - DIMM 288-pin - 6400 MHz - CL32 - Generic - ECC - Dimm,Kingston Fury,KF564C32BBE-16,308.6,23,Módulos RAM - Genéricos,Physical,255262,,303990,,379079
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,Logitech,952-000195,148.3,12,Accesorios,Physical,,,,,
-,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,Kingston Fury,KF564C32BBEA-16,312.2,31,Módulos RAM - Genéricos,Physical,354697,,357990,,376064
+,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,Kingston Fury,KF564C32BBEA-16,312.2,31,Módulos RAM - Genéricos,Physical,354697,,357990,,376140
 ,100019637.0,Jabra - Headphones - Evolve2 50 USB C/A MS Stereo,Jabra,25089-999-799,148.3,21,Auriculares,Physical,270981,,173523,,186265
 ,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,Jabra,4999-823-169,51.2,50,Auriculares,Physical,269060,,57246,,64379
-,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.7,50,Auriculares,Physical,268574,,78317,,85669
+,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.7,50,Auriculares,Physical,268574,,78317,,89209
 ,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,Jabra,4999-823-369,51.9,50,Auriculares y Manos Libres,Physical,277308,,57950,,62438
 ,100019761.0,Jabra Evolve - 10 - Handset - USB-A - Leatherettes - Negro - 2699-820-109,Jabra,2699-820-109,29.9,50,Auriculares y Manos Libres,Physical,278051,,22900,,31859
 ,100020006.0,Poly - Headphones - Voyager 4320 USB-C Headset +BT,Poly,76U50AA,91.11,18,Auriculares,Physical,405539,,107280,,108702
