@@ -2,33 +2,33 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100015173.0,2N Indoor Compact - Unidad de respuesta - cableado - 10/100 Ethernet - negro,Axis,01935-001,657.3,1,Accesorios,Physical,,,,,
 ,100015288.0,Axis - Control panel - I8016-LVE,Axis,01995-001,1452.7,3,Paneles,Physical,,,,,
 ,100015470.0,Axis D2110-VE Security Radar - Sensor de movimiento - cableado - blanco,Axis,01564-001,2084.5,4,Accesorios,Physical,,,,,
-,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,299.1,1,Módulos RAM - Genéricos,Physical,126356,,349600,,362045
-,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,Kingston Fury,KF556C40BB-8,147.7,14,Módulos RAM - Genéricos,Physical,140024,,149990,,180190
+,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,299.1,1,Módulos RAM - Genéricos,Physical,126356,,349600,,362085
+,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,Kingston Fury,KF556C40BB-8,147.7,14,Módulos RAM - Genéricos,Physical,140024,,149990,,180204
 ,100016684.0,Newland - 4-Slot Charger for M,Newland,NLS-CD6550-4C,132.7,1,Accesorios,Physical,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,Zebra,KT-TC15-ROLATAM,503.0,50,Computadoras Handheld,Physical,,,,,
 ,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,393830,,963990,,988459
 ,100017737.0,"Zebra TC22 WLAN Wifi 6 SE4710 6"" Display 6GB/64GB 16MP RFC 5MP FFC 2-Pin Back I/O Standard Battery NFC BT USB-C GMS ROW",Zebra,WLMT0-T22B6ABC2-A6,554.2,50,Computadoras Handheld,Physical,,,,,
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",Zebra,WCMTB-T27B6ABC2-A6,611.5,50,Computadoras Handheld,Physical,,,,,
-,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",Poly,77Z30AA,123.7,5,Auriculares,Physical,367034,,99990,,144750
+,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",Poly,77Z30AA,123.7,5,Auriculares,Physical,367034,,99990,,144767
 ,100018032.0,"HP - Kit de montaje (montaje VESA, soporte para montaje en pared) - para sistema de videoconferencia - para Poly Studio X30",Poly,875L6AA,74.78,4,Video Conferencia,Physical,,,,,
-,100018124.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,Kingston Fury,KF432C16RB2/8,108.5,5,Módulos RAM - Genéricos,Physical,223068,,109440,,137791
-,100018191.0,Kingston FURY Beast RGB - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,Kingston Fury,KF556C36BBEA-8,156.5,17,Módulos RAM - Genéricos,Physical,257310,,173990,,192005
-,100018310.0,Kingston FURY Renegade RGB - DDR5 - módulo - 48 GB - DIMM de 288 contactos - 6000 MT/s / PC5-48000 - CL32 - 1.35 V - sin búfer - on-die ECC - negro y plata,Kingston Fury,KF560C32RSA-48,846.4,4,Módulos RAM - Genéricos,Physical,229844,,840475,,915786
+,100018124.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,Kingston Fury,KF432C16RB2/8,108.5,5,Módulos RAM - Genéricos,Physical,223068,,109440,,137803
+,100018191.0,Kingston FURY Beast RGB - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MT/s / PC5-44800 - CL36 - 1.25 V - sin búfer - on-die ECC - negro,Kingston Fury,KF556C36BBEA-8,156.5,17,Módulos RAM - Genéricos,Physical,257310,,173990,,192023
+,100018310.0,Kingston FURY Renegade RGB - DDR5 - módulo - 48 GB - DIMM de 288 contactos - 6000 MT/s / PC5-48000 - CL32 - 1.35 V - sin búfer - on-die ECC - negro y plata,Kingston Fury,KF560C32RSA-48,846.4,4,Módulos RAM - Genéricos,Physical,229844,,840475,,915891
 ,100018322.0,Poly - Kit de montaje (montaje VESA) - para sistema de videoconferencia - para Poly Studio X52,Poly,875L9AA,198.3,1,Accesorios,Physical,,,,,
-,100018483.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Registered - ECC - Renegade Pro,Kingston Fury,KF560R32RBE-32,956.3,4,Módulos RAM - Genéricos,Physical,386203,,1116900,,1194629
-,100018522.0,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,Kingston Fury,KF560C32RS-48,896.1,6,Módulos RAM - Genéricos,Physical,238358,,799990,,1065877
+,100018483.0,Kingston Fury - DDR5 SDRAM - 6000 MHz - Registered - ECC - Renegade Pro,Kingston Fury,KF560R32RBE-32,956.3,4,Módulos RAM - Genéricos,Physical,386203,,1116900,,1194865
+,100018522.0,Kingston Fury - DDR5 SDRAM - 48GB 6000MT/s DDR5 CL32 DIMM R,Kingston Fury,KF560C32RS-48,896.1,6,Módulos RAM - Genéricos,Physical,238358,,799990,,1065988
 ,100018800.0,Hanwha Wisenet A - Network surveillance camera - Indoor / Outdoor,Hanwha,ANO-L6082R,308.6,9,Cámaras de Red,Physical,,,,,
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,Hanwha,SBP-120HMW,32.4,9,Accesorios,Physical,,,,,
-,100019219.0,Kingston Fury - DDR5 SDRAM - DIMM 288-pin - 6400 MHz - CL32 - Generic - ECC - Dimm,Kingston Fury,KF564C32BBE-16,308.6,23,Módulos RAM - Genéricos,Physical,255262,,304990,,379744
+,100019219.0,Kingston Fury - DDR5 SDRAM - DIMM 288-pin - 6400 MHz - CL32 - Generic - ECC - Dimm,Kingston Fury,KF564C32BBE-16,308.6,23,Módulos RAM - Genéricos,Physical,255262,,319990,,386575
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,Logitech,952-000195,148.3,12,Accesorios,Physical,,,,,
-,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,Kingston Fury,KF564C32BBEA-16,313.0,30,Módulos RAM - Genéricos,Physical,354697,,357990,,382073
-,100019637.0,Jabra - Headphones - Evolve2 50 USB C/A MS Stereo,Jabra,25089-999-799,148.3,21,Auriculares,Physical,270981,,175607,,187220
-,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,Jabra,4999-823-169,51.2,50,Auriculares,Physical,269060,,57246,,64522
-,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.7,50,Auriculares,Physical,268574,,78317,,89926
-,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,Jabra,4999-823-369,51.9,50,Auriculares y Manos Libres,Physical,277308,,57950,,63559
-,100019761.0,Jabra Evolve - 10 - Handset - USB-A - Leatherettes - Negro - 2699-820-109,Jabra,2699-820-109,29.9,50,Auriculares y Manos Libres,Physical,278051,,22900,,31822
-,100020006.0,Poly - Headphones - Voyager 4320 USB-C Headset +BT,Poly,76U50AA,91.11,18,Auriculares,Physical,405539,,107280,,108702
-,100020064.0,Jabra - Headset - Evolve2 40 SE USB C/A MS Stere,Jabra,24189-999-799,123.1,43,Auriculares,Physical,360568,,144889,,161750
+,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,Kingston Fury,KF564C32BBEA-16,313.0,30,Módulos RAM - Genéricos,Physical,354697,,357990,,382324
+,100019637.0,Jabra - Headphones - Evolve2 50 USB C/A MS Stereo,Jabra,25089-999-799,148.3,21,Auriculares,Physical,270981,,175607,,187246
+,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,Jabra,4999-823-169,51.2,50,Auriculares,Physical,269060,,57599,,64582
+,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.7,50,Auriculares,Physical,268574,,78799,,89997
+,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,Jabra,4999-823-369,51.9,50,Auriculares y Manos Libres,Physical,277308,,57950,,63568
+,100019761.0,Jabra Evolve - 10 - Handset - USB-A - Leatherettes - Negro - 2699-820-109,Jabra,2699-820-109,29.9,50,Auriculares y Manos Libres,Physical,278051,,22900,,31827
+,100020006.0,Poly - Headphones - Voyager 4320 USB-C Headset +BT,Poly,76U50AA,91.11,18,Auriculares,Physical,405539,,107280,,108730
+,100020064.0,Jabra - Headset - Evolve2 40 SE USB C/A MS Stere,Jabra,24189-999-799,123.1,43,Auriculares,Physical,360568,,144889,,161772
 ,100020155.0,JBL 104SET-BT-US JBL 104-BT Monitores Compactos de 4.5 pulg. con Bluetooth Negro - Venta en pares,JBL Pro,104SET-BT-US,148.6,34,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020162.0,"JBL Pro 308P MkII - Powered 8"" Two-Way Studio Monitor - Bi-amplified - Matte black",JBL Pro,308PMKII,238.7,15,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020191.0,Soundcraft EPM8 - Analog Mixer - Mezcladores de alto rendimiento y bajo costo,Soundcraft,SCR-RW5735US,207.9,4,Sistemas de Audio,Physical,,,,,
@@ -77,17 +77,17 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020357.0,JBL Pro - Speaker - EON ONE COMPACT-EK,JBL Pro,EON-ONECOMPACT-EK,430.0,50,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020460.0,JBL Pro - Speaker - IRX ONE,JBL Pro,JBL-IRXONE-EK,620.2,31,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020461.0,JBL Pro - Mixer - 8 input,JBL Pro,NVMA260-34-EU,409.5,1,Sistemas de Audio,Physical,,,,,
-,100020581.0,Kingston Fury - DDR5 SDRAM - 48GB 8400MT/s CL40 CUDIMM (Kit,Kingston Fury,KF584CU40RSAK2-48,890.3,2,Módulos RAM - Genéricos,Physical,358116,,1051466,,1096570
+,100020581.0,Kingston Fury - DDR5 SDRAM - 48GB 8400MT/s CL40 CUDIMM (Kit,Kingston Fury,KF584CU40RSAK2-48,890.3,2,Módulos RAM - Genéricos,Physical,358116,,1051466,,1096728
 ,100020850.0,JBL Pro - Speaker - PRX908 8IN powered loudspeaker,JBL Pro,JBL-PRX908-EK,631.5,7,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020851.0,JBL Pro - Speaker - PRX912 12IN powered loudspeake,JBL Pro,JBL-PRX912-EK,724.2,17,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020852.0,JBL Pro - Speaker - PRX915 15IN powered loudspeake,JBL Pro,JBL-PRX915-EK,804.8,2,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020875.0,JBL Pro - Speaker - EON715-EK,JBL Pro,JBL-EON715-EK,454.6,50,Parlantes / Bocinas / Cornetas,Physical,,,,,
-,100021006.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast Black,Kingston Fury,KF556C36BBE-64,1062.5,3,Módulos RAM - Genéricos,Physical,383064,,1259113,,1317228
-,100021007.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast RGB,Kingston Fury,KF556C36BBEA-64,1051.7,9,Módulos RAM - Genéricos,Physical,354683,,1239352,,1272893
-,100021028.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - 16GB CL32 DIMM Beast RGB EXPO,Kingston Fury,KF564C32BBE-32,598.1,16,Módulos RAM - Genéricos,Physical,382008,,697990,,737061
+,100021006.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast Black,Kingston Fury,KF556C36BBE-64,1062.5,3,Módulos RAM - Genéricos,Physical,383064,,1259113,,1317360
+,100021007.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast RGB,Kingston Fury,KF556C36BBEA-64,1051.7,9,Módulos RAM - Genéricos,Physical,354683,,1239352,,1273038
+,100021028.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - 16GB CL32 DIMM Beast RGB EXPO,Kingston Fury,KF564C32BBE-32,598.1,16,Módulos RAM - Genéricos,Physical,382008,,697990,,737143
 ,100021295.0,Screenbeam - Receptor 1100 Plus version International kit de montaje C,Screenbeam,SBWD1100PLADMIN3Y,1285.2,11,Adaptadores y Controladoras,Physical,,,,,
-,100021362.0,Jabra Evolve3 - Headphones - Wireless - 75 MS Link390c Black,Jabra,37599-999-899,326.6,29,Auriculares y Manos Libres,Physical,389578,,358030,,386782
-,100021369.0,Jabra Evolve3 - Headphones - Wireless - Evolve3 85 MS Link390c Black,Jabra,38599-999-899,447.7,11,Auriculares y Manos Libres,Physical,389579,,527223,,545445
+,100021362.0,Jabra Evolve3 - Headphones - Wireless - 75 MS Link390c Black,Jabra,37599-999-899,326.6,29,Auriculares y Manos Libres,Physical,389578,,360236,,387155
+,100021369.0,Jabra Evolve3 - Headphones - Wireless - Evolve3 85 MS Link390c Black,Jabra,38599-999-899,447.7,11,Auriculares y Manos Libres,Physical,389579,,527223,,545555
 ,100021442.0,Poly - Mission 425 - Headset - Wired - Stereo,Poly,C01B6AA#AC3,43.23,50,Auriculares,Physical,,,,,
 ,100021443.0,Poly - Mission 625 - Headset - Wired - Stereo USB,Poly,C01C6AA#AC3,138.0,15,Auriculares,Physical,,,,,
 ,100021450.0,Jabra - Scheduler,Jabra,8020-239,583.0,3,Video Conferencia,Physical,,,,,
@@ -97,20 +97,20 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100022004.0,Jabra - Video conferencing kit - PanaCast U30 VB UC NA,Jabra,8800-231,826.4,3,Video Conferencia,Physical,,,,,
 ,100022115.0,Poly - 625 - Handset - C56XPAA#AC3,Poly,C56XPAA#AC3,320.0,10,Auriculares,Physical,,,,,
 ,100022142.0,Ring Battery Doorbell - B0G2D1W8YT,Ring,B0G2D1W8YT,74.1,24,Alarmas y Seguridad,Physical,,,,,
-,100022146.0,Ring - Spotlight Cam Plus Battery - B,Ring,B0BRP1XFWH,203.0,12,Cámaras,Physical,,,,,
-,100022151.0,Ring - Spotlight Cam Plus Battery - W,Ring,B0BRP2CBZK,205.4,8,Cámaras,Physical,,,,,
-,100022152.0,Ring - 2K Outdoor Cam Plus - White,Ring,B0D4RMD8D4,74.5,50,Cámaras,Physical,,,,,
-,100022153.0,Ring - 2K Outdoor Cam Plus - Black,Ring,B0D4SPCCY7,74.5,50,Cámaras,Physical,,,,,
-,100022154.0,Ring - Pan-Tilt Indoor Cam - White,Ring,B0CG2TB6H9,45.3,50,Cámaras,Physical,,,,,
-,100022155.0,Ring - Pan-Tilt Indoor Cam - Black,Ring,B0CG2WV95W,45.3,28,Cámaras,Physical,,,,,
+,100022146.0,Ring - Spotlight Cam Plus Battery - B,Ring,B0BRP1XFWH,203.0,12,Cámaras,Physical,410387,,264880,,264880
+,100022151.0,Ring - Spotlight Cam Plus Battery - W,Ring,B0BRP2CBZK,205.4,8,Cámaras,Physical,410388,,271260,,271260
+,100022152.0,Ring - 2K Outdoor Cam Plus - White,Ring,B0D4RMD8D4,74.5,50,Cámaras,Physical,410396,,98310,,98310
+,100022153.0,Ring - 2K Outdoor Cam Plus - Black,Ring,B0D4SPCCY7,74.5,50,Cámaras,Physical,410395,,98310,,98310
+,100022154.0,Ring - Pan-Tilt Indoor Cam - White,Ring,B0CG2TB6H9,45.3,50,Cámaras,Physical,410394,,59800,,59800
+,100022155.0,Ring - Pan-Tilt Indoor Cam - Black,Ring,B0CG2WV95W,45.3,28,Cámaras,Physical,410393,,59800,,59800
 ,100022156.0,Ring - Battery Doorbell Plus (2nd Gen,Ring,B0F642MFP7,131.8,50,Cámaras,Physical,,,,,
-,100022161.0,Ring Spotlight Cam Plus Battery - White - NALA,Ring,B09K1CRGN3,112.6,50,Cámaras,Physical,,,,,
+,100022161.0,Ring Spotlight Cam Plus Battery - White - NALA,Ring,B09K1CRGN3,112.6,50,Cámaras,Physical,410386,,148700,,148700
 ,100022163.0,Ring - 2K Battery Video Doorbell 2,Ring,B0FHJ8XWWL,74.3,48,Cámaras,Physical,,,,,
-,100022164.0,Ring Spotlight Cam Plus Battery - Black - NALA,Ring,B09K1HMTP3,112.6,50,Cámaras,Physical,409862,,136196,,136196
+,100022164.0,Ring Spotlight Cam Plus Battery - Black - NALA,Ring,B09K1HMTP3,112.6,50,Cámaras,Physical,409862,,136196,,142448
 ,100022170.0,Ring Battery Doorbell Plus - NALA,Ring,B09WZCHQDB,111.0,50,Cámaras,Physical,,,,,
-,100022179.0,Ring - Spotlight Cam Plus -B0FZPW4N23,Ring,B0FZPW4N23,127.1,12,Alarmas y Seguridad,Physical,,,,,
-,100022181.0,Ring - Spotlight Cam Plus -B0FZPZBYXZ,Ring,B0FZPZBYXZ,127.1,12,Alarmas y Seguridad,Physical,,,,,
-,100022183.0,Ring - Floodlight Camera 2K,Ring,B0G3626TXZ,150.6,16,Alarmas y Seguridad,Physical,,,,,
-,100022184.0,Ring - Floodlight Camera 2K B0G365R7H,Ring,B0G365R7HR,150.6,4,Alarmas y Seguridad,Physical,,,,,
+,100022179.0,Ring - Spotlight Cam Plus -B0FZPW4N23,Ring,B0FZPW4N23,127.1,12,Alarmas y Seguridad,Physical,410391,,167830,,167830
+,100022181.0,Ring - Spotlight Cam Plus -B0FZPZBYXZ,Ring,B0FZPZBYXZ,127.1,12,Alarmas y Seguridad,Physical,410390,,167830,,167830
+,100022183.0,Ring - Floodlight Camera 2K,Ring,B0G3626TXZ,150.6,16,Alarmas y Seguridad,Physical,410389,,198790,,198790
+,100022184.0,Ring - Floodlight Camera 2K B0G365R7H,Ring,B0G365R7HR,150.6,4,Alarmas y Seguridad,Physical,410392,,198790,,198790
 ,100022237.0,Jabra Evolve3 - Headset - 65 - Stereo LINK 390a MS,Jabra,36599-999-999,222.0,6,Auriculares y Manos Libres,Physical,409231,,262227,,262227
 ,100022249.0,Jabra Evolve3 - Headset - 65 Flex - MS Link390a Black,Jabra,36699-999-999,262.4,5,Auriculares y Manos Libres,Physical,409232,,309895,,309895
