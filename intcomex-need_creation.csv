@@ -3,12 +3,12 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100015288.0,Axis - Control panel - I8016-LVE,Axis,01995-001,1452.7,3,Paneles,Physical,,,,,
 ,100015470.0,Axis D2110-VE Security Radar - Sensor de movimiento - cableado - blanco,Axis,01564-001,2084.5,4,Accesorios,Physical,,,,,
 ,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,299.1,1,Módulos RAM - Genéricos,Physical,126356,,349600,,368409
-,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,Kingston Fury,KF556C40BB-8,161.7,22,Módulos RAM - Genéricos,Physical,140024,,149990,189990,187596
+,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,Kingston Fury,KF556C40BB-8,161.7,22,Módulos RAM - Genéricos,Physical,140024,,149990,189990,186848
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,Zebra,KT-TC15-ROLATAM,503.0,50,Computadoras Handheld,Physical,,,,,
 ,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,393830,,1041990,,1067720
 ,100017737.0,"Zebra TC22 WLAN Wifi 6 SE4710 6"" Display 6GB/64GB 16MP RFC 5MP FFC 2-Pin Back I/O Standard Battery NFC BT USB-C GMS ROW",Zebra,WLMT0-T22B6ABC2-A6,554.2,50,Computadoras Handheld,Physical,,,,,
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",Zebra,WCMTB-T27B6ABC2-A6,606.9,34,Computadoras Handheld,Physical,,,,,
-,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",Poly,77Z30AA,144.5,5,Auriculares,Physical,367034,,99990,,173458
+,100017868.0,"Poly Voyager 4320-M - Voyager 4300 UC series - auricular - en oreja - Bluetooth - inalámbrico, cableado - USB-C - negro - Certificado para Equipos de Microsoft, Certificado por Zoom",Poly,77Z30AA,144.5,5,Auriculares,Physical,367034,,99990,,169202
 ,100018032.0,"HP - Kit de montaje (montaje VESA, soporte para montaje en pared) - para sistema de videoconferencia - para Poly Studio X30",Poly,875L6AA,84.2,4,Video Conferencia,Physical,,,,,
 ,100018123.0,Kingston FURY Renegade - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,Kingston Fury,KF432C16RB2/32,463.9,5,Módulos RAM - Genéricos,Physical,223067,,310000,,337154
 ,100018124.0,Kingston FURY Renegade - DDR4 - módulo - 8 GB - DIMM de 288 contactos - 3200 MT/s / PC4-25600 - CL16 - 1.2 V - sin búfer - no ECC - negro,Kingston Fury,KF432C16RB2/8,108.5,6,Módulos RAM - Genéricos,Physical,223068,,109440,,133962
@@ -25,7 +25,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100019600.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - Unbuffered - Non-ECC - Beast RGB EXPO,Kingston Fury,KF564C32BBEA-16,313.8,31,Módulos RAM - Genéricos,Physical,354697,,357990,,389104
 ,100019637.0,Jabra - Headphones - Evolve2 50 USB C/A MS Stereo,Jabra,25089-999-799,147.6,21,Auriculares,Physical,270981,,177870,,190912
 ,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,Jabra,4999-823-169,50.6,50,Auriculares,Physical,269060,,58990,,65137
-,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.0,50,Auriculares,Physical,268574,,80987,,88541
+,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.0,50,Auriculares,Physical,268574,,80987,,88693
 ,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,Jabra,4999-823-369,51.8,50,Auriculares y Manos Libres,Physical,277308,,57950,67960,64677
 ,100019761.0,Jabra Evolve - 10 - Handset - USB-A - Leatherettes - Negro - 2699-820-109,Jabra,2699-820-109,24.9,50,Auriculares y Manos Libres,Physical,278051,,22900,,29585
 ,100020006.0,Poly - Headphones - Voyager 4320 USB-C Headset +BT,Poly,76U50AA,148.3,18,Auriculares,Physical,405539,,177625,,184677
@@ -82,7 +82,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020851.0,JBL Pro - Speaker - PRX912 12IN powered loudspeake,JBL Pro,JBL-PRX912-EK,724.2,17,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020852.0,JBL Pro - Speaker - PRX915 15IN powered loudspeake,JBL Pro,JBL-PRX915-EK,804.8,2,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020875.0,JBL Pro - Speaker - EON715-EK,JBL Pro,JBL-EON715-EK,454.6,50,Parlantes / Bocinas / Cornetas,Physical,,,,,
-,100021006.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast Black,Kingston Fury,KF556C36BBE-64,1065.5,4,Módulos RAM - Genéricos,Physical,383064,,1287034,,1345535
+,100021006.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast Black,Kingston Fury,KF556C36BBE-64,1065.5,4,Módulos RAM - Genéricos,Physical,383064,,1287034,,1345231
 ,100021007.0,Kingston Fury - DDR5 SDRAM - 5600 MHz - CL36 - 64GB Beast RGB,Kingston Fury,KF556C36BBEA-64,1051.7,9,Módulos RAM - Genéricos,Physical,354683,,1266838,,1302511
 ,100021028.0,Kingston Fury - DDR5 SDRAM - 6400 MHz - 16GB CL32 DIMM Beast RGB EXPO,Kingston Fury,KF564C32BBE-32,598.1,16,Módulos RAM - Genéricos,Physical,382008,,697990,,746655
 ,100021030.0,"Zebra - ET401 10"" WIFI7 Standard SE410",Zebra,ET4010B-001C1B0P-A6,978.4,13,Computadoras Handheld,Physical,,,,,
