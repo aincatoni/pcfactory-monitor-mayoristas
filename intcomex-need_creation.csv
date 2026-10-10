@@ -3,7 +3,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100015288.0,Axis - Control panel - I8016-LVE,Axis,01995-001,1452.7,3,Paneles,Physical,,,,,
 ,100015470.0,Axis D2110-VE Security Radar - Sensor de movimiento - cableado - blanco,Axis,01564-001,2084.5,4,Accesorios,Physical,,,,,
 ,100016091.0,Kingston FURY Beast - DDR4 - módulo - 32 GB - DIMM de 288 contactos - 3600 MHz / PC4-28800 - CL18 - 1.35 V - sin búfer - no ECC - negro,Kingston Fury,KF436C18BB/32,299.1,1,Módulos RAM - Genéricos,Physical,126356,,349600,,365504
-,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,Kingston Fury,KF556C40BB-8,154.4,21,Módulos RAM - Genéricos,Physical,140024,,167990,,197715
+,100016376.0,Kingston FURY Beast - DDR5 - módulo - 8 GB - DIMM de 288 contactos - 5600 MHz / PC5-44800 - CL40 - 1.25 V - sin búfer - on-die ECC,Kingston Fury,KF556C40BB-8,154.4,21,Módulos RAM - Genéricos,Physical,140024,,167990,,199327
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,Zebra,KT-TC15-ROLATAM,503.0,50,Computadoras Handheld,Physical,,,,,
 ,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,393830,,1000320,,1041314
 ,100017737.0,"Zebra TC22 WLAN Wifi 6 SE4710 6"" Display 6GB/64GB 16MP RFC 5MP FFC 2-Pin Back I/O Standard Battery NFC BT USB-C GMS ROW",Zebra,WLMT0-T22B6ABC2-A6,554.2,50,Computadoras Handheld,Physical,,,,,

@@ -1,6 +1,6 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
 28889,2550221,TINTA T694200 CIAN 700ML,Epson,T694200,213.29,3.0,Suministros y Medios,Suministros Inyección de Tinta,not_found,False,0,0,0,,0,0,True,{},,259935,,262276,,265759
-,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,188.22,97.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260299,,115000,,218955
+,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,188.22,97.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260299,,115000,,213208
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,265.72,33.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260104,,194900,,303961
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,24.0,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,,,,,,,,,,,,
 ,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,83.19,632.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260019,,8990,,98254
@@ -265,9 +265,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3129201,HPE StoreEver MSL FC Drive Upgrade Kit,Hewlett Packard Enterprise,N7P36A,6032.6,1.0,Dispositivos de Almacenamiento,Unidades de Cinta y Arreglos,,,,,,,,,,,,,,,,
 ,3129932,HPE LTO-7 Ultrium 15000 Ext Tape Drive,Hewlett Packard Enterprise,BB874A,4896.6,1.0,Suministros y Medios,Cintas de Almacenamiento,,,,,,,,,,,,,,,,
 ,3141120,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,100.85,1.0,Cables,Cables para Transferencia de Archivos,,,,,,,,,,,,,,,,
-,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,67.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,216090,260990,239455
+,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,67.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,216090,260990,237798
 ,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,68.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,213467,257990,234015
-,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,71.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,217389,258990,236288
+,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,71.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,217389,258990,234666
 ,3156862,TONER GPR-54 NEGRO REND 17600 PAG,Canon,9436B003,81.47,19.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260645,,92300,,109484
 ,3212236,6ft High Speed HDMI Cable - HDMI - M/M,Startech.Com,HDMM6,10.96,33.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
 ,3240536,Gb Fiber SFP - Cisco Compatible -10 Pack,Startech.Com,GLCLHSMD10ST,340.52,5.0,Dispositivos de Red,Transceivers,,,,,,,,,,,,,,,,
@@ -421,7 +421,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4296812,KENSINGTON COJIN ASIENTO MEMORY FOAM DE,Kensington,K55805WW,22.68,7.0,Equipamiento de Oficina,Descansa pies y espalda,,,,,,,,,,,,,,,,
 ,4296813,KENSINGTON COJIN ASIENTO PREMIUM COOL-GE,Kensington,K55807WW,29.52,17.0,Equipamiento de Oficina,Descansa pies y espalda,,,,,,,,,,,,,,,,
 ,4304395,USB C to USB C Cable - 6 ft / 1.8m - 5A,Startech.Com,USB315C5C6,36.78,20.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
-,4306810,HP x1000 WIRED,Hp,4QM14AA,4.18,1856.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,64348,,5990,,9830
+,4306810,HP x1000 WIRED,Hp,4QM14AA,4.18,1856.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,64348,,5990,7990,9600
 ,4308297,HDMI Splitter - 2 Port - 4K 60Hz,Startech.Com,ST122HD202,75.51,9.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
 ,4329053,TINTA PFI-320 NEGRO MATE - 300 ML,Canon,2889C001,105.16,14.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,260157,,132090,,150416
 ,4329067,TINTA PFI-320 AMARILLO - 300 ML,Canon,2893C001,104.69,21.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259804,,131506,,143024
@@ -486,7 +486,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,58.34,7.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260107,,70990,,81315
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,12.19,1.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,,,,,
 ,4783960,206A YELLOW ORIGINAL LJ TONER CRTG,Hp,W2112A,81.21,22.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260080,,96990,109990,104780
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.63,12.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260108,,96990,,105700
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.63,12.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260108,,96990,,104730
 ,4790192,KENSINGTON CABLE DE SEGURIDAD SLIM N17 C,Kensington,K68008EU,21.5,50.0,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,,,,,,,,,,,,
 ,4792041,TONER 047 REND 1600 PAGINAS,Canon,2164C001,59.42,7.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260489,,67000,,79010
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,184.85,6.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,,,,,,,,,,,,
@@ -818,7 +818,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6607828,PDU facil medida cero U 32A 230V (20)C13,Apc,EPDU2132M,400.88,2.0,Protección Eléctrica y Racks,PDUs y Componentes,,,,,,,,,,,,,,,,
 ,6607857,PDU facil conmutada cero U 32A 230V(20)C,Apc,EPDU2132S,712.21,2.0,Protección Eléctrica y Racks,PDUs y Componentes,,,,,,,,,,,,,,,,
 ,6607860,PDU facil con medidor ZeroU 16 A 230 V (,Apc,EPDU2116M,315.49,1.0,Protección Eléctrica y Racks,PDUs y Componentes,,,,,,,,,,,,,,,,
-,6616914,PRIME B760M-K D4,Asus,90MB1DS0-M1EAY0,81.52,189.0,Componentes de Sistema,Tarjetas Madre Intel,,,,,,,,,,,,199951,,97425,,102039
+,6616914,PRIME B760M-K D4,Asus,90MB1DS0-M1EAY0,81.52,189.0,Componentes de Sistema,Tarjetas Madre Intel,,,,,,,,,,,,199951,,97425,,102226
 ,6617402,INK BAG DURABRITE ULTRA T12N CYAN,Epson,T12N200,39.75,1.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,396660,,47858,,52138
 ,6618548,ROG STRIX B850-F GAMING WIFI,Asus,90MB1J70-M0EAY0,288.1,1.0,Componentes de Sistema,Tarjetas Madre Intel,,,,,,,,,,,,,,,,
 ,6620441,MOTO WATCH FIT TREKKING GREEN,Motorola,PG38C07181,61.13,94.0,Comunicaciones,Relojes Inteligentes,,,,,,,,,,,,,,,,
@@ -875,7 +875,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6798350,CHAIR SL400C ROG DESTRIER CORE/WH,Asus,90GC01P0-MSG060,549.85,6.0,Video Juegos y Consolas,Otros Accesorios para Videojuegos,,,,,,,,,,,,399925,,491900,,639891
 ,6801875,MOTO G67 GRIS 4+256 DS,Motorola,PBAT0018CL,337.36,19768.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391049,,199990,229990,236765
 ,6801878,MOTO G67 LIMA 4+256 DS,Motorola,PBAT0019CL,338.04,5057.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391048,,89990,218400,214848
-,6801888,MOTO G MAX GRIS 8+256 DS,Motorola,PBBR0002CL,371.4,15150.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391241,,239990,299990,290644
+,6801888,MOTO G MAX GRIS 8+256 DS,Motorola,PBBR0002CL,371.4,15150.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391241,,239990,289990,289794
 ,6801891,T32UD-40(A25315UT0) 31.5 Monitor-HDMI,Lenovo,64B0GAR1CL,383.29,20.0,Pantallas,Monitores LCD/LED,,,,,,,,,,,,381485,,466720,,482098
 ,6804946,BENQ RE6504 Panel Interactivo 65in Andr,Benq,9H.F9ETK.DE8,858.12,1.0,Dispositivos Audio/Video,Dispositivos Interactivos de Presentació,,,,,,,,,,,,399526,,1048900,,1077160
 ,6804966,BENQ BOARD ESSENTIAL RE7504,Benq,9H.F9FTK.DE8,1081.0,15.0,Pantallas,Pantallas Comerciales LCD/LED,,,,,,,,,,,,399527,,1317900,,1365727
