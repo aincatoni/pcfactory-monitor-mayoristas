@@ -415,7 +415,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4296812,KENSINGTON COJIN ASIENTO MEMORY FOAM DE,Kensington,K55805WW,22.57,5.0,Equipamiento de Oficina,Descansa pies y espalda,,,,,,,,,,,,,,,,
 ,4296813,KENSINGTON COJIN ASIENTO PREMIUM COOL-GE,Kensington,K55807WW,29.37,17.0,Equipamiento de Oficina,Descansa pies y espalda,,,,,,,,,,,,,,,,
 ,4304395,USB C to USB C Cable - 6 ft / 1.8m - 5A,Startech.Com,USB315C5C6,36.78,20.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
-,4306810,HP x1000 WIRED,Hp,4QM14AA,4.15,1856.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,64348,,5908,7990,9370
+,4306810,HP x1000 WIRED,Hp,4QM14AA,4.15,1856.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,64348,,5908,7990,9216
 ,4308297,HDMI Splitter - 2 Port - 4K 60Hz,Startech.Com,ST122HD202,75.52,8.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
 ,4329053,TINTA PFI-320 NEGRO MATE - 300 ML,Canon,2889C001,104.63,14.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,260157,,131366,,143693
 ,4329067,TINTA PFI-320 AMARILLO - 300 ML,Canon,2893C001,104.16,21.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259804,,131366,,141760
@@ -867,11 +867,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6798348,CHAIR SL400C ROG DESTRIER CORE/BK,Asus,90GC01P0-MSG010,560.93,3.0,Video Juegos y Consolas,Otros Accesorios para Videojuegos,,,,,,,,,,,,399906,,489990,645990,630030
 ,6798349,CHAIR SL302 COURSER/BK,Asus,90GC01S0-MSG010,694.56,10.0,Video Juegos y Consolas,Otros Accesorios para Videojuegos,,,,,,,,,,,,399926,,796990,796990,853899
 ,6798350,CHAIR SL400C ROG DESTRIER CORE/WH,Asus,90GC01P0-MSG060,549.85,6.0,Video Juegos y Consolas,Otros Accesorios para Videojuegos,,,,,,,,,,,,399925,,491900,,640326
-,6801861,MOTOROLA SIGNATURE MORADO 12+512 DS,Motorola,PBAB0054CL,1362.0,135.0,Comunicaciones,Smart Phones,,,,,,,,,,,,394092,,901117,,962174
+,6801861,MOTOROLA SIGNATURE MORADO 12+512 DS,Motorola,PBAB0054CL,1362.0,135.0,Comunicaciones,Smart Phones,,,,,,,,,,,,394092,,901117,999990,967576
 ,6801875,MOTO G67 GRIS 4+256 DS,Motorola,PBAT0018CL,335.66,19729.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391049,,19900,249990,245341
 ,6801878,MOTO G67 LIMA 4+256 DS,Motorola,PBAT0019CL,336.34,5006.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391048,,99990,249990,246112
 ,6801884,MOTOROLA EDGE 70 FUSION FIFA COLOR 8+25,Motorola,PBBB0054CL,393.73,30.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391148,,349990,,349990
-,6801888,MOTO G MAX GRIS 8+256 DS,Motorola,PBBR0002CL,369.53,15150.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391241,,299990,349990,345956
+,6801888,MOTO G MAX GRIS 8+256 DS,Motorola,PBBR0002CL,369.53,15150.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391241,,299990,349990,343229
 ,6801891,T32UD-40(A25315UT0) 31.5 Monitor-HDMI,Lenovo,64B0GAR1CL,383.29,20.0,Pantallas,Monitores LCD/LED,,,,,,,,,,,,381485,,464938,479900,482516
 ,6804946,BENQ RE6504 Panel Interactivo 65in Andr,Benq,9H.F9ETK.DE8,858.12,1.0,Dispositivos Audio/Video,Dispositivos Interactivos de Presentació,,,,,,,,,,,,399526,,1056900,,1081983
 ,6804966,BENQ BOARD ESSENTIAL RE7504,Benq,9H.F9FTK.DE8,1081.0,15.0,Pantallas,Pantallas Comerciales LCD/LED,,,,,,,,,,,,399527,,1326900,,1370382
@@ -1028,7 +1028,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6846058,CARTUCHO MAGENTA ALTO RENDIMIENTO,Brother,LC506XLMS,24.68,66.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,398667,,30500,,32235
 ,6854006,"Monitor LED Gaming 24.5"" IPS FHD 1ms 20",Lg,25G523B-B,100.65,176.0,Pantallas,Monitores LCD/LED,,,,,,,,,,,,394579,,179,119990,104479
 ,6854282,SanDisk Ultra SDHC SDXC UHSI C10 U1 64GB,Sandisk,SDSDUGN-032G-GN6IN,32.69,200.0,Dispositivos de Almacenamiento,Tarjetas de Memoria Flash,,,,,,,,,,,,408513,,39769,,41924
-,6854370,MOTO G MAX CELESTE 8+256,Motorola,PBBR0003CL,384.37,2765.0,Comunicaciones,Smart Phones,,,,,,,,,,,,407665,,299990,,333790
+,6854370,MOTO G MAX CELESTE 8+256,Motorola,PBBR0003CL,384.37,2765.0,Comunicaciones,Smart Phones,,,,,,,,,,,,407665,,299990,299990,327790
 ,6854927,TECLADO INALAM ERGO RECARGAB NG K75493ES,Kensington,K75493ES,34.23,19.0,Dispositivos de Entrada,Teclados,,,,,,,,,,,,385859,,42324,,44622
 ,6854929,MOUSE MY630 ERGO DUAL INAL RECA K72484WW,Kensington,K72482,32.98,9.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,,,,,,,,,,,,
 ,6854940,AUDIFONO CLASICO EQ NEGRO 3.5MM K97602,Kensington,K97602WWAB,9.0,66.0,Comunicaciones,Accesorios y Cables para Cintillos,,,,,,,,,,,,401503,,11077,,12410
