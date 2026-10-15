@@ -522,7 +522,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5056609,TINTA SJIC35P(K) NEGRO INK CART C6000,Epson,C13T44B120,34.67,9.0,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,,,,,,,,261673,,43015,,45347
 ,5056610,TINTA SJIC35P(C) CYAN INK CART C6000,Epson,C13T44B220,34.67,10.0,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,,,,,,,,261674,,43460,,44587
 ,5056612,TINTA SJIC35P(Y) AMARILLO INK CART C6000,Epson,C13T44B420,34.67,4.0,Productos POS/AIDC/Código de Barras,Suministros para Impresoras POS,,,,,,,,,,,,261675,,43015,,46828
-,5075027,LEVEL UP MOBILE GAMING KIT,Vivitar,LU745-NOC-ESP-6,20.73,26.0,Video Juegos y Consolas,Otros Accesorios para Videojuegos,,,,,,,,,,,,122332,,18855,,20442
+,5075027,LEVEL UP MOBILE GAMING KIT,Vivitar,LU745-NOC-ESP-6,20.73,26.0,Video Juegos y Consolas,Otros Accesorios para Videojuegos,,,,,,,,,,,,122332,,18855,,22266
 ,5077649,Maintenance Cartridge G SERIES MC-G02,Canon,4589C001,8.16,419.0,Suministros y Medios,Cartuchos de Limpieza,,,,,,,,,,,,,,,,
 ,5080962,TONER HP 658A CYAN,Hp,W2001A,264.49,1.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260053,,325443,,325970
 ,5080963,HP 658A Yellow LaserJet Toner Cartridge,Hp,W2002A,261.98,10.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,266251,,323600,,333260
@@ -651,11 +651,11 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5892811,Filtro de Privacidad 22 para Monitor,Startech.Com,2269-PRIVACY-SCREEN,96.01,10.0,Pantallas,Filtros Anti-reflejo para Monitores,,,,,,,,,,,,,,,,
 ,5893153,KITDSPLY MNTPOLY STUDIO X50,Poly,875M2AA,187.04,3.0,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,,,,,,,,,,,,
 ,5901282,Tinta Cyan para Discproducer PP-100II/ii,Epson,C13S020688,26.4,10.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,391152,,33792,,39194
-,5901283,Discproducer Ink PJIC7(LC) Light Cyan (M,Epson,C13S020689,26.4,10.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,368942,,32834,,35867
-,5901284,Epson Disc producer Ink Cartridge Light,Epson,C13S020690,26.4,10.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,368751,,32834,,33856
-,5901485,Discproducer Ink PJIC7(Y) Yellow (MOQ=10,Epson,C13S020692,26.4,10.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,368616,,32834,,34604
+,5901283,Discproducer Ink PJIC7(LC) Light Cyan (M,Epson,C13S020689,26.4,10.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,368942,,32834,,36111
+,5901284,Epson Disc producer Ink Cartridge Light,Epson,C13S020690,26.4,10.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,368751,,32834,,34664
+,5901485,Discproducer Ink PJIC7(Y) Yellow (MOQ=10,Epson,C13S020692,26.4,10.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,368616,,32834,,35225
 ,5901486,Epson Disc producer Ink Cartridge Black,Epson,C13S020693,26.4,10.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,368686,,32834,,34389
-,5901543,Tinta Magenta para Discproducer PP-100II,Epson,C13S020691,26.4,13.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,367089,,32834,,33967
+,5901543,Tinta Magenta para Discproducer PP-100II,Epson,C13S020691,26.4,13.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,367089,,32834,,34747
 ,5909123,SCANNER KIT HH492 WIRELESS 2D BLK,Honeywell,HH492-R1-1USB-5,191.94,2.0,Productos POS/AIDC/Código de Barras,Escáners Portátiles (handheld),,,,,,,,,,,,,,,,
 ,5915075,Tinta HP DesignJet Plotter 300-ml Negro,Hp,498N8A,156.93,138.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,261554,,194052,,208873
 ,5915079,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,157.03,63.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259861,,187018,,207636
