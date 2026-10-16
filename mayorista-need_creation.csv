@@ -1,7 +1,7 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,solotodo_id,pcf_price,min_price,mode_price,mean_price
 28889,2550221,TINTA T694200 CIAN 700ML,Epson,T694200,212.86,2.0,Suministros y Medios,Suministros Inyección de Tinta,not_found,False,0,0,0,,0,0,True,{},,259935,,262263,,264802
 ,1004028,TINTA HP 72 CABEZAL MATE NEGRO/AMARILLO,Hp,C9384A,103.65,4.0,Suministros y Medios,Suministros Impresora Térmica,,,,,,,,,,,,260599,,122672,,128852
-,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,188.22,96.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260299,,115000,,215777
+,1005909,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,188.22,96.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260299,,115000,,221259
 ,1021818,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,265.72,33.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260104,,194900,,306491
 ,1096738,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,21.0,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,,,,,,,,,,,,
 ,1138029,78A BLACK LJ TONER CART CE278A,Hp,CE278A,83.19,618.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260019,,8990,,99237
@@ -199,7 +199,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,2784146,4x4 HDMI Matrix Switch w/ PAP,Startech.Com,VS424HDPIP,766.78,5.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
 ,2797132,CLI-8 BK,Canon,0620B035,7.02,1.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,260201,,7950,,9940
 ,2838815,CAJA MANTENIMIENTO C12C890501,Epson,C12C890501,35.72,2.0,Impresoras,Upgrades de Impresora,,,,,,,,,,,,,,,,
-,2841265,DCPL2540DW MFLASER B/N,Brother,DCPL2540DW,179.4,6.0,Impresoras,Multifuncionales Láser Mono,,,,,,,,,,,,18356,,205718,229990,236760
+,2841265,DCPL2540DW MFLASER B/N,Brother,DCPL2540DW,179.4,6.0,Impresoras,Multifuncionales Láser Mono,,,,,,,,,,,,18356,,205718,229990,236745
 ,2841266,HLL2320D IMPRESORA LASER B/N,Brother,HLL2320D,116.34,10.0,Impresoras,Impresoras Láser/LED monocromáticas,,,,,,,,,,,,,,,,
 ,2858424,Hub 4 puertos Seriales a USB Ind,Startech.Com,ICUSB2324,89.66,8.0,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,,,,,,,,,,,,
 ,2859810,Primo FolioCase wSt& f 10IN tabs BL,Trust,20315,4.51,531.0,Computadores Servidores y Notebooks,Accesorios para Tablet PCs,,,,,,,,,,,,,,,,
@@ -259,8 +259,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3129201,HPE StoreEver MSL FC Drive Upgrade Kit,Hewlett Packard Enterprise,N7P36A,6032.6,1.0,Dispositivos de Almacenamiento,Unidades de Cinta y Arreglos,,,,,,,,,,,,,,,,
 ,3129932,HPE LTO-7 Ultrium 15000 Ext Tape Drive,Hewlett Packard Enterprise,BB874A,4896.6,1.0,Suministros y Medios,Cintas de Almacenamiento,,,,,,,,,,,,,,,,
 ,3141120,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,100.66,1.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
-,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,65.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,216525,260990,236300
-,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,66.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,213897,257990,234199
+,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,65.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,216525,260990,234537
+,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,66.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,213897,257990,232500
 ,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,69.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,217828,258990,236751
 ,3156862,TONER GPR-54 NEGRO REND 17600 PAG,Canon,9436B003,81.31,19.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260645,,92300,,107504
 ,3212236,6ft High Speed HDMI Cable - HDMI - M/M,Startech.Com,HDMM6,10.96,33.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
@@ -568,7 +568,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5386999,SATA PCIe Card Controller Card 10 Ports,Startech.Com,10P6G-PCIE-SATA-CARD,95.39,3.0,Dispositivos de Almacenamiento,Controladoras de Discos SATA,,,,,,,,,,,,,,,,
 ,5445654,Dual TV Cart - 37-60in TVs - Height Ajs,Startech.Com,STNDMTVDUO,650.11,2.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,,,,,,,,,,,,
 ,5464478,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,120.53,3.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
-,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.17,389.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259808,,21254,26990,26036
+,5473671,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.17,389.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259808,,21254,26990,26329
 ,5475524,Cable 10m de Red Ethernet RJ45 - Azul,Startech.Com,N6LPATCH10MBL,17.37,13.0,Cables,Cables y Adaptadores Ethernet Coaxiales,,,,,,,,,,,,,,,,
 ,5475577,Cable 15m de Red Ethernet RJ45 - Azul,Startech.Com,N6LPATCH15MBL,17.95,7.0,Cables,Cables y Adaptadores Ethernet Coaxiales,,,,,,,,,,,,,,,,
 ,5475581,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,18.55,26.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,,,,,,,,,,,,
@@ -732,7 +732,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6258779,TONER TN860 RENDIMIENTO HASTA 1200 PG,Brother,TN860,37.09,32.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260272,,45492,48990,49516
 ,6258780,"DR860 PERFORMANCE DRUM UP TO 15,000 PAGE",Brother,DR860,92.55,10.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,,,,,
 ,6260920,CLICKSHARE CONFERENCE CX-30 SET GEN II,Barco,R9861613NAB2,1948.3,1.0,Comunicaciones,Componentes Sistemas de Videoconferencia,,,,,,,,,,,,,,,,
-,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.19,5.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259799,,35158,43990,40938
+,6264398,GT53-GT52 Original Ink Bottle paquete de,Hp,9F3N4AL,30.19,5.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259799,,35158,43990,40716
 ,6266970,Filtro de Privacidad Tactil de 14in,Startech.Com,14L61-PRIVACY-SCREEN,52.5,10.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
 ,6271385,Filtro de Privacidad Tactil de 14.1in,Startech.Com,141T6-PRIVACY-SCREEN,51.42,19.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
 ,6277375,Filtro 16:9 de 24 Anti Luz Azul,Startech.Com,2469-ANTI-BLUE-LIGHT,68.1,10.0,Pantallas,Filtros Anti-reflejo para Monitores,,,,,,,,,,,,,,,,
@@ -752,7 +752,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6360138,Hub USB 2.0 de 4 Puertos - 480Mbps,Startech.Com,ST4200MINI2-USB-HUB,9.39,10.0,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,,,,,,,,,,,,
 ,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,65.22,33.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,263737,,76630,,81809
 ,6379270,Filtro de Privacidad para Dell P3424WE,Startech.Com,34C29-PRIVACY-SCREEN,177.96,26.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
-,6379937,MULTIFUNCIONAL DCP-T730DW,Brother,DCPT730DW,180.25,49.0,Impresoras,Multifuncionales Inkjet,,,,,,,,,,,,257978,,199424,219990,227877
+,6379937,MULTIFUNCIONAL DCP-T730DW,Brother,DCPT730DW,180.25,49.0,Impresoras,Multifuncionales Inkjet,,,,,,,,,,,,257978,,199424,219990,227544
 ,6385008,Adaptador USB a Serie RS232 de 30cm,Startech.Com,1P1FFC-USB-SERIAL,36.45,9.0,Cables,Cables Seriales y Adaptadores,,,,,,,,,,,,,,,,
 ,6391071,MOUSE INALAMBRICO MY230 EQ RECARG K75304,Kensington,K75304WW,11.59,18.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,,,,,
 ,6412497,Filtro de Privacidad para Portatil 14,Startech.Com,14LM-PRIVACY-SCREEN,57.26,17.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
@@ -797,7 +797,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6627585,Dell Pro 14-16 Plus EcoLoop Backpack,Dell,DELL-CP5625G,26.44,468.0,Computadores Servidores y Notebooks,Bolsos y Mochilas p/Notebooks,,,,,,,,,,,,,,,,
 ,6640467,T24MV-30(F22238FT2)23.8INCH MONITOR-HDMI,Lenovo,63D7UAR3CL,188.62,3.0,Pantallas,Monitores LCD/LED,,,,,,,,,,,,256080,,220500,,241638
 ,6640474,S22I-30(G24215FS0) 21.5INCH MONITOR HDMI,Lenovo,63FCKARBCL,77.98,8.0,Pantallas,Monitores LCD/LED,,,,,,,,,,,,405510,,91500,,100678
-,6642168,HP MULTIFUNCIONAL OFFICEJT PRO9730 FRTA3,Hp,537P5C,279.18,33.0,Impresoras,Multifuncionales Inkjet,,,,,,,,,,,,244067,,319990,,405187
+,6642168,HP MULTIFUNCIONAL OFFICEJT PRO9730 FRTA3,Hp,537P5C,279.18,33.0,Impresoras,Multifuncionales Inkjet,,,,,,,,,,,,244067,,319990,,407540
 ,6647792,Caja USB4 NVMe M.2 - Caja para SSD,Startech.Com,1USB4-NVME-ENCLOSURE,126.65,8.0,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,,,,,,,,,,,,
 ,6649483,AUDIFONOS PRO H1050 INAL NOISE CA K80182,Kensington,K80182WW,24.1,20.0,Comunicaciones,Auriculares Bluetooth,,,,,,,,,,,,401537,,29291,,32460
 ,6662176,KIT CABEZALES DE IMPRESION CH-11R + CH-1,Canon,4650C004,44.59,12.0,Suministros y Medios,Cartuchos de Limpieza,,,,,,,,,,,,270654,,58874,,59432
@@ -855,7 +855,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6801888,MOTO G MAX GRIS 8+256 DS,Motorola,PBBR0002CL,370.64,15150.0,Comunicaciones,Smart Phones,,,,,,,,,,,,391241,,279990,349990,341410
 ,6801891,T32UD-40(A25315UT0) 31.5 Monitor-HDMI,Lenovo,64B0GAR1CL,383.29,20.0,Pantallas,Monitores LCD/LED,,,,,,,,,,,,381485,,463539,479900,482522
 ,6804946,BENQ RE6504 Panel Interactivo 65in Andr,Benq,9H.F9ETK.DE8,858.12,1.0,Dispositivos Audio/Video,Dispositivos Interactivos de Presentació,,,,,,,,,,,,399526,,1056900,,1082562
-,6804966,BENQ BOARD ESSENTIAL RE7504,Benq,9H.F9FTK.DE8,1081.0,15.0,Pantallas,Pantallas Comerciales LCD/LED,,,,,,,,,,,,399527,,1326900,,1371101
+,6804966,BENQ BOARD ESSENTIAL RE7504,Benq,9H.F9FTK.DE8,1081.0,15.0,Pantallas,Pantallas Comerciales LCD/LED,,,,,,,,,,,,399527,,1326900,,1361677
 ,6806327,Monitor TUF Gaming 5 VG279Q5A 27,Asus,90LM0C30-B011I1,114.64,742.0,Pantallas,Monitores LCD/LED,,,,,,,,,,,,,,,,
 ,6807988,Unidad de correa,Brother,BU635CL,50.43,2.0,Impresoras,Upgrades de Impresora,,,,,,,,,,,,,,,,
 ,6808310,Dell 27 Monitor - P2726H,Dell,P2726H,188.1,195.0,Pantallas,Monitores LCD/LED,,,,,,,,,,,,,,,,
