@@ -1,3 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-57962,6494720,IMPRESORA MULTIFUNCIONAL EN COLOR WFE AM,Epson,C11CJ92201,2856.5,1.0,Impresoras,Multifuncionales Inkjet,ok,False,0,0,0,Multifuncional Fotográfica Tinta Continua WorkForce Enterprise AM-C550 WiFi-Direct,0,0,True,{},,,405055,,3338990,,3480386
-57952,6857571,Smart TV UHD 4K de 50IN UA731C 3.840,Lg,50UA731C0SB.AWHQ,226.4,2.0,Pantallas,TV LCD/LED,ok,False,0,0,0,"Smart TV 50UA731C 50"" 4K UHD",0,0,True,{},,,404909,,,,
+57962,6494720,IMPRESORA MULTIFUNCIONAL EN COLOR WFE AM,Epson,C11CJ92201,2862.3,1.0,Impresoras,Multifuncionales Inkjet,ok,False,0,0,0,Multifuncional Fotográfica Tinta Continua WorkForce Enterprise AM-C550 WiFi-Direct,0,0,True,{},,,405055,,3338990,,3480386
