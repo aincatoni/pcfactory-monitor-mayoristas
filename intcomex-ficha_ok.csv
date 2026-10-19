@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-58079,nan,Forza FUB-1245 - Batería - 12 V - 4.5 Ah,Forza,FUB-1245,12.6,50,UPS / Respaldo de Energía,Physical,ok,False,0,0,0,"Batería sellada 12V/4,5Ah recargable, AGM,",0,0,True,{},,,,,,,
+58136,nan,16 GB - Motorola Razr 70 Ultra - 16 GB + 1 TB - Café,Motorola,PBB20005CL,1044.2,50,Celulares Desbloqueados,Physical,ok,False,0,0,0,Celular Moto Razr 70 Ultra 1TB/16GB 5G Café Liberado,0,0,True,{},,,392965,,999990,1399990,1358708
