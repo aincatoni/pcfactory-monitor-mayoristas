@@ -246,8 +246,8 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3119989,"Cable de Red Cat6a STP de 0,9m Negro",Startech.Com,C6ASPAT3BK,7.57,2.0,Cables,Cables y Adaptadores Twisted Pair,,,,,,,,,,,,,,,,
 ,3129201,HPE StoreEver MSL FC Drive Upgrade Kit,Hewlett Packard Enterprise,N7P36A,6032.6,1.0,Dispositivos de Almacenamiento,Unidades de Cinta y Arreglos,,,,,,,,,,,,,,,,
 ,3141120,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,96.81,1.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
-,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,65.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,219240,260990,237501
-,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,66.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,218500,257990,236831
+,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,65.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,219240,260990,235695
+,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,66.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,218500,257990,235320
 ,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,69.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,219240,258990,237443
 ,3156862,TONER GPR-54 NEGRO REND 17600 PAG,Canon,9436B003,81.06,10.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260645,,92300,,106917
 ,3212236,6ft High Speed HDMI Cable - HDMI - M/M,Startech.Com,HDMM6,10.23,33.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
@@ -461,7 +461,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729988,TONER HP 215A MAGENTA 850 PAG,Hp,W2313A,58.34,3.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260107,,70990,,73721
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,12.14,1.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,,,,,
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,81.54,27.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260122,,89990,,105661
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.63,9.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260108,,89990,,104769
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.63,9.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260108,,89990,,104505
 ,4790192,KENSINGTON CABLE DE SEGURIDAD SLIM N17 C,Kensington,K68008EU,21.39,50.0,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,,,,,,,,,,,,
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,177.65,6.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,,,,,,,,,,,,
 ,4796215,Adaptador DisplayPort a HDMI VGA - 4K60,Startech.Com,DP2VGAHD20,31.72,9.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
@@ -506,7 +506,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4972548,Smart Tank 530 Wireless AIO Printer,Hp,4SB24A#AKH,149.56,11.0,Impresoras,Multifuncionales Inkjet,,,,,,,,,,,,,,,,
 ,4985291,PEDANT WALL MOUNT ADAPTER,Avigilon,IRPTZ-MNT-WALL1,81.18,1.0,Seguridad de Redes,Accesorios y Cmpnts de Seguridad de Red,,,,,,,,,,,,,,,,
 ,4988540,TINTA HP713 CABEZAL,Hp,3ED58A,203.35,4.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,,,,,
-,4988587,HP 712 3-Pack Tinta 29-ml Rojo,Hp,3ED78A,50.34,1.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259782,,58862,,64277
+,4988587,HP 712 3-Pack Tinta 29-ml Rojo,Hp,3ED78A,50.34,1.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259782,,58862,,63645
 ,4988588,HP 712 3-Pack 29-ml Yellow,Hp,3ED79A,50.1,9.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259781,,59150,,64122
 ,5003511,KENSINGTON KIT DE SEGURIDAD ADAPTADOR RA,Kensington,K64995,8.14,50.0,Seguridad Física,Dispositivos Anti-Robo,,,,,,,,,,,,,,,,
 ,5012063,TONER HP 212A NEGRO LJ,Hp,W2120A,180.09,36.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260283,,218150,,226923
@@ -585,7 +585,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5625411,Soporte Riser de Sobremesa para Portatil,Startech.Com,ADJ-LAPTOP-RISER,106.51,30.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
 ,5625774,TONER HP 145A NEGRO LASERJET,Hp,W1450A,66.09,801.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260006,,78990,84990,85026
 ,5626211,HPW1070XC BlkOrg ContractLsrJet Toner IS,Hp,W1070XC,56.11,9.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,415701,,77850,,77850
-,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,108.94,12.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260322,,130990,139990,142481
+,5626535,TONER HP 145X HY NEGRO LSRJET,Hp,W1450X,108.94,12.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260322,,130990,139990,142698
 ,5629315,ARUBA ION 1930 24G 4SFP 195W SW,Hewlett Packard Enterprise,JL683B,353.0,7.0,Dispositivos de Red,Switches Standalone,,,,,,,,,,,,385245,,433724,,450614
 ,5634453,Foldable Laptop Riser stand Portable,Startech.Com,LAPTOP-RISER-BAR,42.22,3.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,,,,,,,,,,,,
 ,5634495,4-Port USB Hub 5Gbps Bus Powered,Startech.Com,5G4AB-USB-A-HUB,28.52,4.0,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,,,,,,,,,,,,
@@ -741,7 +741,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6360138,Hub USB 2.0 de 4 Puertos - 480Mbps,Startech.Com,ST4200MINI2-USB-HUB,8.76,10.0,Dispositivos de Entrada/Salida,Dispositivos de Conectividad USB,,,,,,,,,,,,,,,,
 ,6362961,MAGIC MOUSE WH-AME,Apple,MXK53AM/A,65.02,29.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,263737,,77330,,82175
 ,6379270,Filtro de Privacidad para Dell P3424WE,Startech.Com,34C29-PRIVACY-SCREEN,171.9,26.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
-,6379937,MULTIFUNCIONAL DCP-T730DW,Brother,DCPT730DW,179.7,45.0,Impresoras,Multifuncionales Inkjet,,,,,,,,,,,,257978,,203990,229990,232424
+,6379937,MULTIFUNCIONAL DCP-T730DW,Brother,DCPT730DW,179.7,45.0,Impresoras,Multifuncionales Inkjet,,,,,,,,,,,,257978,,203990,219990,230761
 ,6385008,Adaptador USB a Serie RS232 de 30cm,Startech.Com,1P1FFC-USB-SERIAL,34.67,8.0,Cables,Cables Seriales y Adaptadores,,,,,,,,,,,,,,,,
 ,6391071,MOUSE INALAMBRICO MY230 EQ RECARG K75304,Kensington,K75304WW,11.54,18.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,,,,,
 ,6412497,Filtro de Privacidad para Portatil 14,Startech.Com,14LM-PRIVACY-SCREEN,54.46,17.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
@@ -879,7 +879,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,6836155,Kit Destornilladores PrecisiOn 7 piezas,Startech.Com,CTK100P,18.55,18.0,Protección Eléctrica y Racks,Componentes Rack,,,,,,,,,,,,,,,,
 ,6836156,Caja Disco SATA de 25 para Bahia de 35,Startech.Com,25SAT35HDD,34.28,36.0,Dispositivos de Almacenamiento,Componentes para Racks y Cajas de Discos,,,,,,,,,,,,,,,,
 ,6836157,Tubo 1.5g Pasta Termica Oxido de Metal,Startech.Com,SILVGREASE1,6.28,23.0,Componentes de Sistema,Componentes de Tarjetas Madre,,,,,,,,,,,,,,,,
-,6836159,57416 10GBASE-T 2xPCIe E Adapter,Lenovo,7ZT7A00496,483.0,5.0,Dispositivos de Red,Tarjetas de Red Ethernet,,,,,,,,,,,,385867,,590935,,592831
+,6836159,57416 10GBASE-T 2xPCIe E Adapter,Lenovo,7ZT7A00496,483.0,5.0,Dispositivos de Red,Tarjetas de Red Ethernet,,,,,,,,,,,,385867,,473990,,563121
 ,6836171,"SR630 V4 16C 32GB 1x480GB RAID 940, 1GbE",Lenovo,7DG9A03CLA,7531.0,21.0,Computadores Servidores y Notebooks,Servidores en Rack,,,,,,,,,,,,,,,,
 ,6836180,KENSINGTON MOUSE PAD WRIST PILLOW AZUL,Kensington,L57803US,4.32,39.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,,,,,,,,,,,,
 ,6838766,Docking Station USB-C 2x HDMI/DP 1x HDMI,Startech.Com,116N-USBC-DOCK,205.8,28.0,Computadores Servidores y Notebooks,Dockings y Pedestales p/Notebooks,,,,,,,,,,,,,,,,
