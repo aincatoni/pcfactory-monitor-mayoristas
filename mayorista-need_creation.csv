@@ -246,7 +246,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3119989,"Cable de Red Cat6a STP de 0,9m Negro",Startech.Com,C6ASPAT3BK,7.57,2.0,Cables,Cables y Adaptadores Twisted Pair,,,,,,,,,,,,,,,,
 ,3129201,HPE StoreEver MSL FC Drive Upgrade Kit,Hewlett Packard Enterprise,N7P36A,6032.6,1.0,Dispositivos de Almacenamiento,Unidades de Cinta y Arreglos,,,,,,,,,,,,,,,,
 ,3141120,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,96.81,1.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
-,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,65.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,219240,260990,236771
+,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,65.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,219240,260990,235041
 ,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,66.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,218500,257990,236005
 ,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,69.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,219240,258990,237009
 ,3156862,TONER GPR-54 NEGRO REND 17600 PAG,Canon,9436B003,81.06,10.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260645,,92300,,105761
@@ -397,7 +397,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4296812,KENSINGTON COJIN ASIENTO MEMORY FOAM DE,Kensington,K55805WW,22.57,4.0,Equipamiento de Oficina,Descansa pies y espalda,,,,,,,,,,,,,,,,
 ,4296813,KENSINGTON COJIN ASIENTO PREMIUM COOL-GE,Kensington,K55807WW,29.37,17.0,Equipamiento de Oficina,Descansa pies y espalda,,,,,,,,,,,,,,,,
 ,4304395,USB C to USB C Cable - 6 ft / 1.8m - 5A,Startech.Com,USB315C5C6,34.99,20.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
-,4306810,HP x1000 WIRED,Hp,4QM14AA,4.15,1849.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,64348,,5912,7990,9249
+,4306810,HP x1000 WIRED,Hp,4QM14AA,4.15,1849.0,Dispositivos de Entrada,Mouse,,,,,,,,,,,,64348,,5912,,9429
 ,4308297,HDMI Splitter - 2 Port - 4K 60Hz,Startech.Com,ST122HD202,72.85,7.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
 ,4329067,TINTA PFI-320 AMARILLO - 300 ML,Canon,2893C001,104.16,19.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259804,,131366,,141263
 ,4343697,TONER GPR 041 NEGRO REND 10000 PAG,Canon,0452C001,129.8,2.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,270668,,163244,,172918
