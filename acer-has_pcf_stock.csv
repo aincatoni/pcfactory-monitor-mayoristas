@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-57848,PNR-1063,AL16-53P-578Y-3/NOTEBOOK ACER,Acer,NX.J8AAL.001.3,484530.0,59,Equipos,Hardware,ok,True,0,50,+50,"Notebook IA Aspire Lite Intel Core Ultra 5 16"" 8GB RAM 512GB SSD Windows 11 Home",0,0,False,{},,acer,391084,,599990,,619990
+57848,PNR-1063,AL16-53P-578Y-3/NOTEBOOK ACER,Acer,NX.J8AAL.001.3,502513.0,58,Equipos,Hardware,ok,True,0,50,+50,"Notebook IA Aspire Lite Intel Core Ultra 5 16"" 8GB RAM 512GB SSD Windows 11 Home",0,0,False,{},,acer,391084,,599990,,619990
