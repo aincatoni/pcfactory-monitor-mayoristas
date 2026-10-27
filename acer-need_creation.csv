@@ -1,4 +1,4 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,ACC-0292,FUNDA ECOLÓGICA ABG132,nan,GP.BAG11.01L,18900.0,104,Accesorios,Hardware,,,,,
 ,CA1-0683,cable zinc alloy lock (for laptop with 3mmx7mm slot),nan,HD110Z,2261.0,61,Repuestos,Hardware,,,,,
-,PTC-0161,VZ4880G-CLi3-RENEWED,Acer,DQ.VUYAL.007.RENEWED,98312.0,8,Equipos,Hardware,,,,,
+,PTC-0161,VZ4880G-CLi3-RENEWED,Acer,DQ.VUYAL.007.RENEWED,98312.0,4,Equipos,Hardware,,,,,
