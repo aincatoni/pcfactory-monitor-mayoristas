@@ -3,22 +3,22 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100015288.0,Axis - Control panel - I8016-LVE,Axis,01995-001,1452.7,3,Paneles,Physical,,,,,
 ,100015470.0,Axis D2110-VE Security Radar - Sensor de movimiento - cableado - blanco,Axis,01564-001,2064.8,9,Accesorios,Physical,,,,,
 ,100016773.0,Zebra Handheld TC15 Kit for LATAM TC15,Zebra,KT-TC15-ROLATAM,503.0,50,Computadoras Handheld,Physical,,,,,
-,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,393830,,1003360,,1043340
+,100017420.0,"Zebra ET45 - Tableta - resistente - Android 11 - 64 GB UFS card - 8"" (1280 x 800) - lector de código de barras - 5G",Zebra,ET45CA-101D1B0-A6,819.5,5,Tableta,Physical,393830,,1003360,,1041922
 ,100017737.0,"Zebra TC22 WLAN Wifi 6 SE4710 6"" Display 6GB/64GB 16MP RFC 5MP FFC 2-Pin Back I/O Standard Battery NFC BT USB-C GMS ROW",Zebra,WLMT0-T22B6ABC2-A6,634.3,50,Computadoras Handheld,Physical,,,,,
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",Zebra,WCMTB-T27B6ABC2-A6,643.2,50,Computadoras Handheld,Physical,,,,,
 ,100018032.0,"HP - Kit de montaje (montaje VESA, soporte para montaje en pared) - para sistema de videoconferencia - para Poly Studio X30",Poly,875L6AA,74.38,1,Video Conferencia,Physical,,,,,
-,100018688.0,Poly Blackwire - 5220 - Handset,Poly,8X231AA,94.0,24,Auriculares,Physical,257377,,115750,,121562
+,100018688.0,Poly Blackwire - 5220 - Handset,Poly,8X231AA,94.0,24,Auriculares,Physical,257377,,115750,,121375
 ,100018800.0,Hanwha Wisenet A - Network surveillance camera - Indoor / Outdoor,Hanwha,ANO-L6082R,308.6,9,Cámaras de Red,Physical,,,,,
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,Hanwha,SBP-120HMW,32.4,9,Accesorios,Physical,,,,,
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,Logitech,952-000195,148.3,10,Accesorios,Physical,,,,,
-,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,Jabra,4999-823-169,37.1,50,Auriculares,Physical,269060,,45050,,47663
-,100019641.0,Jabra - Headphones - Evolve2 30 SE MS Stereo USB C,Jabra,23189-999-779,94.7,17,Auriculares,Physical,269490,,110114,,118601
-,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.5,50,Auriculares,Physical,268574,,82460,,87639
-,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,Jabra,4999-823-369,51.8,50,Auriculares y Manos Libres,Physical,277308,,57950,,64553
+,100019639.0,Jabra - Headphones - Evolve 20 USB C/A MS Stereo,Jabra,4999-823-169,37.1,50,Auriculares,Physical,269060,,44992,,47600
+,100019641.0,Jabra - Headphones - Evolve2 30 SE MS Stereo USB C,Jabra,23189-999-779,94.7,17,Auriculares,Physical,269490,,110114,,118499
+,100019643.0,Jabra - Headphones - Evolve 30 II USB C/A Stereo St,Jabra,5399-823-369,67.5,50,Auriculares,Physical,268574,,82460,,87661
+,100019680.0,Jabra Evolve 20 SE - Handset - Wired - USB-A / USB-C - MS Stereo,Jabra,4999-823-369,51.8,50,Auriculares y Manos Libres,Physical,277308,,57950,,64500
 ,100019761.0,Jabra Evolve - 10 - Handset - USB-A - Leatherettes - Negro - 2699-820-109,Jabra,2699-820-109,24.9,50,Auriculares y Manos Libres,Physical,278051,,29404,,31167
-,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,Kingston Fury,KF560C30BBEA-32,671.4,5,Módulos RAM - Genéricos,Physical,377909,,729990,,826618
-,100020006.0,Poly - Headphones - Voyager 4320 USB-C Headset +BT,Poly,76U50AA,91.11,5,Auriculares,Physical,405539,,110620,,116274
-,100020064.0,Jabra - Headset - Evolve2 40 SE USB C/A MS Stere,Jabra,24189-999-799,123.0,7,Auriculares,Physical,360568,,149320,,157505
+,100019921.0,Kingston Fury - DDR5 SDRAM - Non-ECC - Beast RGB EXPO,Kingston Fury,KF560C30BBEA-32,671.4,5,Módulos RAM - Genéricos,Physical,377909,,729990,,826048
+,100020006.0,Poly - Headphones - Voyager 4320 USB-C Headset +BT,Poly,76U50AA,91.11,5,Auriculares,Physical,405539,,110620,,116717
+,100020064.0,Jabra - Headset - Evolve2 40 SE USB C/A MS Stere,Jabra,24189-999-799,123.0,7,Auriculares,Physical,360568,,149320,,157388
 ,100020155.0,JBL 104SET-BT-US JBL 104-BT Monitores Compactos de 4.5 pulg. con Bluetooth Negro - Venta en pares,JBL Pro,104SET-BT-US,140.2,25,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020162.0,"JBL Pro 308P MkII - Powered 8"" Two-Way Studio Monitor - Bi-amplified - Matte black",JBL Pro,308PMKII,215.8,11,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020177.0,DBX BD12 - Active Direct Box - 3-Way 0/20/40 dB Pad Switch,DBX,DBXDB12V,103.7,9,Accesorios,Physical,,,,,
@@ -67,9 +67,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020850.0,JBL Pro - Speaker - PRX908 8IN powered loudspeaker,JBL Pro,JBL-PRX908-EK,671.1,7,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020851.0,JBL Pro - Speaker - PRX912 12IN powered loudspeake,JBL Pro,JBL-PRX912-EK,769.6,17,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020875.0,JBL Pro - Speaker - EON715-EK,JBL Pro,JBL-EON715-EK,454.6,50,Parlantes / Bocinas / Cornetas,Physical,,,,,
-,100021030.0,"Zebra - ET401 10"" WIFI7 Standard SE410",Zebra,ET4010B-001C1B0P-A6,1115.4,13,Computadoras Handheld,Physical,415602,,1381370,,1391180
-,100021254.0,Poly Blackwire - 3220 - Headset - Wired,Poly,8X228AA,41.2,50,Auriculares,Physical,385537,,34990,,50256
-,100021362.0,Jabra Evolve3 - Headphones - Wireless - 75 MS Link390c Black,Jabra,37599-999-899,326.6,13,Auriculares y Manos Libres,Physical,389578,,370934,,400438
+,100021030.0,"Zebra - ET401 10"" WIFI7 Standard SE410",Zebra,ET4010B-001C1B0P-A6,1115.4,13,Computadoras Handheld,Physical,415602,,1375574,,1388282
+,100021254.0,Poly Blackwire - 3220 - Headset - Wired,Poly,8X228AA,41.2,50,Auriculares,Physical,385537,,34990,,50271
+,100021362.0,Jabra Evolve3 - Headphones - Wireless - 75 MS Link390c Black,Jabra,37599-999-899,326.6,13,Auriculares y Manos Libres,Physical,389578,,369002,,400022
 ,100021442.0,Poly - Mission 425 - Headset - Wired - Stereo,Poly,C01B6AA#AC3,43.23,12,Auriculares,Physical,,,,,
 ,100021443.0,Poly - Mission 625 - Headset - Wired - Stereo USB,Poly,C01C6AA#AC3,112.09,15,Auriculares,Physical,,,,,
 ,100021450.0,Jabra - Scheduler,Jabra,8020-239,583.0,3,Video Conferencia,Physical,,,,,
@@ -88,19 +88,19 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100022116.0,Poly - 625 - Handset - C56XSAA#AC3,Poly,C56XSAA#AC3,335.3,7,Auriculares,Physical,,,,,
 ,100022117.0,Poly - 625 - Handset - Wireless - C56XXAA#AC3,Poly,C56XXAA#AC3,382.5,8,Auriculares,Physical,,,,,
 ,100022142.0,Ring Battery Doorbell - B0G2D1W8YT,Ring,B0G2D1W8YT,73.0,50,Alarmas y Seguridad,Physical,,,,,
-,100022146.0,Ring - Spotlight Cam Plus Battery - B,Ring,B0BRP1XFWH,202.7,37,Cámaras,Physical,410387,,251150,,256675
-,100022151.0,Ring - Spotlight Cam Plus Battery - W,Ring,B0BRP2CBZK,204.9,34,Cámaras,Physical,410388,,251150,,257979
-,100022152.0,Ring - 2K Outdoor Cam Plus - White,Ring,B0D4RMD8D4,73.7,50,Cámaras,Physical,410396,,90044,,93374
-,100022153.0,Ring - 2K Outdoor Cam Plus - Black,Ring,B0D4SPCCY7,73.7,50,Cámaras,Physical,410395,,90044,,93374
-,100022154.0,Ring - Pan-Tilt Indoor Cam - White,Ring,B0CG2TB6H9,45.9,50,Cámaras,Physical,410394,,56234,,58892
-,100022155.0,Ring - Pan-Tilt Indoor Cam - Black,Ring,B0CG2WV95W,45.9,50,Cámaras,Physical,410393,,56234,,58904
+,100022146.0,Ring - Spotlight Cam Plus Battery - B,Ring,B0BRP1XFWH,202.7,37,Cámaras,Physical,410387,,250184,,256434
+,100022151.0,Ring - Spotlight Cam Plus Battery - W,Ring,B0BRP2CBZK,204.9,34,Cámaras,Physical,410388,,250184,,257737
+,100022152.0,Ring - 2K Outdoor Cam Plus - White,Ring,B0D4RMD8D4,73.7,50,Cámaras,Physical,410396,,89828,,93133
+,100022153.0,Ring - 2K Outdoor Cam Plus - Black,Ring,B0D4SPCCY7,73.7,50,Cámaras,Physical,410395,,89828,,93133
+,100022154.0,Ring - Pan-Tilt Indoor Cam - White,Ring,B0CG2TB6H9,45.9,50,Cámaras,Physical,410394,,56018,,58650
+,100022155.0,Ring - Pan-Tilt Indoor Cam - Black,Ring,B0CG2WV95W,45.9,50,Cámaras,Physical,410393,,56018,,58663
 ,100022156.0,Ring - Battery Doorbell Plus (2nd Gen,Ring,B0F642MFP7,130.3,50,Cámaras,Physical,,,,,
 ,100022161.0,Ring Spotlight Cam Plus Battery - White - NALA,Ring,B09K1CRGN3,110.5,50,Cámaras,Physical,410386,,135230,,139600
 ,100022163.0,Ring - 2K Battery Video Doorbell 2,Ring,B0FHJ8XWWL,72.9,50,Cámaras,Physical,,,,,
-,100022164.0,Ring Spotlight Cam Plus Battery - Black - NALA,Ring,B09K1HMTP3,110.7,50,Cámaras,Physical,409862,,136196,,139919
+,100022164.0,Ring Spotlight Cam Plus Battery - Black - NALA,Ring,B09K1HMTP3,110.7,50,Cámaras,Physical,409862,,135230,,139677
 ,100022170.0,Ring Battery Doorbell Plus - NALA,Ring,B09WZCHQDB,108.8,50,Cámaras,Physical,,,,,
-,100022179.0,Ring - Spotlight Cam Plus -B0FZPW4N23,Ring,B0FZPW4N23,125.3,6,Alarmas y Seguridad,Physical,410391,,153584,,158022
-,100022181.0,Ring - Spotlight Cam Plus -B0FZPZBYXZ,Ring,B0FZPZBYXZ,125.0,14,Alarmas y Seguridad,Physical,410390,,153584,,157935
-,100022183.0,Ring - Floodlight Camera 2K,Ring,B0G3626TXZ,153.7,39,Alarmas y Seguridad,Physical,410389,,188360,,193451
-,100022184.0,Ring - Floodlight Camera 2K B0G365R7H,Ring,B0G365R7HR,154.5,30,Cámaras,Physical,410392,,189326,,194439
-,100022249.0,Jabra Evolve3 - Headset - 65 Flex - MS Link390a Black,Jabra,36699-999-999,259.6,2,Auriculares y Manos Libres,Physical,409232,,316150,,321945
+,100022179.0,Ring - Spotlight Cam Plus -B0FZPW4N23,Ring,B0FZPW4N23,125.3,6,Alarmas y Seguridad,Physical,410391,,152618,,157781
+,100022181.0,Ring - Spotlight Cam Plus -B0FZPZBYXZ,Ring,B0FZPZBYXZ,125.0,14,Alarmas y Seguridad,Physical,410390,,152618,,157693
+,100022183.0,Ring - Floodlight Camera 2K,Ring,B0G3626TXZ,153.7,39,Alarmas y Seguridad,Physical,410389,,187394,,193210
+,100022184.0,Ring - Floodlight Camera 2K B0G365R7H,Ring,B0G365R7HR,154.5,30,Cámaras,Physical,410392,,188360,,194198
+,100022249.0,Jabra Evolve3 - Headset - 65 Flex - MS Link390a Black,Jabra,36699-999-999,259.6,2,Auriculares y Manos Libres,Physical,409232,,316150,,321752
