@@ -7,7 +7,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100017737.0,"Zebra TC22 WLAN Wifi 6 SE4710 6"" Display 6GB/64GB 16MP RFC 5MP FFC 2-Pin Back I/O Standard Battery NFC BT USB-C GMS ROW",Zebra,WLMT0-T22B6ABC2-A6,634.3,50,Computadoras Handheld,Physical,,,,,
 ,100017740.0,"Zebra TC27 - Terminal de recopilación de datos - resistente - Android - 64 GB - 6"" color (1080 x 2160) - cámara posterior + cámara frontal - lector de código de barras - (creador de imágenes 2D) - Host USB - Ranura para microSD - Bluetooth, NFC, Wi-F",Zebra,WCMTB-T27B6ABC2-A6,643.2,50,Computadoras Handheld,Physical,,,,,
 ,100018032.0,"HP - Kit de montaje (montaje VESA, soporte para montaje en pared) - para sistema de videoconferencia - para Poly Studio X30",Poly,875L6AA,74.38,1,Video Conferencia,Physical,,,,,
-,100018688.0,Poly Blackwire - 5220 - Handset,Poly,8X231AA,94.0,24,Auriculares,Physical,257377,,91990,,114271
+,100018688.0,Poly Blackwire - 5220 - Handset,Poly,8X231AA,94.0,24,Auriculares,Physical,257377,,91990,,111931
 ,100018800.0,Hanwha Wisenet A - Network surveillance camera - Indoor / Outdoor,Hanwha,ANO-L6082R,308.6,9,Cámaras de Red,Physical,,,,,
 ,100019048.0,Hanwha - Camera cap adapter - SBP-120HMW,Hanwha,SBP-120HMW,32.4,9,Accesorios,Physical,,,,,
 ,100019402.0,Logitech - cable - USB Active Cable for Meetup 2,Logitech,952-000195,148.3,10,Accesorios,Physical,,,,,
@@ -68,7 +68,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,100020851.0,JBL Pro - Speaker - PRX912 12IN powered loudspeake,JBL Pro,JBL-PRX912-EK,769.6,17,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100020875.0,JBL Pro - Speaker - EON715-EK,JBL Pro,JBL-EON715-EK,454.6,50,Parlantes / Bocinas / Cornetas,Physical,,,,,
 ,100021030.0,"Zebra - ET401 10"" WIFI7 Standard SE410",Zebra,ET4010B-001C1B0P-A6,1115.4,13,Computadoras Handheld,Physical,415602,,1375574,,1396782
-,100021254.0,Poly Blackwire - 3220 - Headset - Wired,Poly,8X228AA,41.2,50,Auriculares,Physical,385537,,34990,,46633
+,100021254.0,Poly Blackwire - 3220 - Headset - Wired,Poly,8X228AA,41.2,50,Auriculares,Physical,385537,,34990,,46516
 ,100021362.0,Jabra Evolve3 - Headphones - Wireless - 75 MS Link390c Black,Jabra,37599-999-899,326.6,13,Auriculares y Manos Libres,Physical,389578,,369002,,402988
 ,100021442.0,Poly - Mission 425 - Headset - Wired - Stereo,Poly,C01B6AA#AC3,43.23,12,Auriculares,Physical,,,,,
 ,100021443.0,Poly - Mission 625 - Headset - Wired - Stereo USB,Poly,C01C6AA#AC3,112.09,15,Auriculares,Physical,,,,,
