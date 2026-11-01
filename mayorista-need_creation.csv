@@ -249,7 +249,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3141120,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,97.4,1.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
 ,3141702,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,61.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,219240,260990,238083
 ,3141703,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,65.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,219240,257990,237240
-,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,66.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,218900,258990,234289
+,3141704,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,66.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,218900,258990,235936
 ,3156862,TONER GPR-54 NEGRO REND 17600 PAG,Canon,9436B003,81.56,10.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260645,,92300,,106676
 ,3212236,6ft High Speed HDMI Cable - HDMI - M/M,Startech.Com,HDMM6,10.23,33.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
 ,3240536,Gb Fiber SFP - Cisco Compatible -10 Pack,Startech.Com,GLCLHSMD10ST,332.96,5.0,Dispositivos de Red,Transceivers,,,,,,,,,,,,,,,,
@@ -452,7 +452,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4729986,TONER HP 215A CIAN 850 PAG,Hp,W2311A,58.69,46.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260215,,69859,,74020
 ,4733045,CAJA MANTENIMIENTO T671300 BOX T3070,Epson,T671300,12.21,1.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,,,,,
 ,4783959,TONER HP 206A CYAN,Hp,W2111A,81.54,26.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260122,,89990,,100825
-,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.63,8.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260108,,89990,,105721
+,4783961,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.63,8.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260108,,89990,,105913
 ,4790192,KENSINGTON CABLE DE SEGURIDAD SLIM N17 C,Kensington,K68008EU,21.52,50.0,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,,,,,,,,,,,,
 ,4792041,TONER 047 REND 1600 PAGINAS,Canon,2164C001,61.59,41.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260489,,77293,,83907
 ,4792821,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,178.73,6.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,,,,,,,,,,,,
