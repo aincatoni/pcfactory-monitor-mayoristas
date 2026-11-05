@@ -1,2 +1,3 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-55817,6631049,ESSENTIAL FHD WEBCAM GEN2,Lenovo,4XC1S15018,24.82,6.0,Cámaras y Escáners,Cámaras Web,ok,True,0,0,0,Webcam Essential FHD Webcam Gen2,0,0,True,{},,intcomex,,,,,
+58614,6524101,MONITOR BENQ MA320U 32INCH 3840x2160 IPS,Benq,9H.LMXLB.QBA,557.13,12.0,Pantallas,Monitores LCD/LED,ok,False,0,0,0,"Monitor BenQ MA320U 32"", 4K UHD, 60Hz, IPS, Mac Friendly",0,0,True,{},,,272072,,660900,,689188
+58616,6801891,T32UD-40(A25315UT0) 31.5 Monitor-HDMI,Lenovo,64B0GAR1CL,383.29,19.0,Pantallas,Monitores LCD/LED,ok,False,0,0,0,"Monitor Lenovo ThinkVision T32ud-40 31.5"", 4K UHD, 60Hz, IPS, HDMI / DP",0,0,True,{},,,381485,,450900,,477841
