@@ -1,3 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-58141,PNR-1082,AL15-46P-R7M1-2/NOTEBOOK ACER,Acer,NX.JXLAL.002.2,348000.0,18,Equipos,Hardware,ok,True,0,18,18,"Notebook Aspire Lite AMD Ryzen 3 5400U 15.6"" 8GB RAM 256GB SSD Windows 11 Home",0,0,False,{},,acer,401541,,399990,,441365
-57840,PNR-1001,A14-52MT-59PE-1/NOTEBOOK ACER,Acer,NX.JDJAL.003.1,696000.0,46,Equipos,Hardware,ok,True,0,30,+30,"Notebook Aspire Intel Core Ultra 5 226V Intel Arc 130V 14"" 16GB RAM 512GB SSD Windows 11 Home",0,0,False,{},,acer,,,,,
+58224,TAB-0068,M10-11-82HE-1,Acer,NT.LGMAL.001.1,108228.0,210,Equipos,Hardware,ok,True,0,100,+100,"Tablet Iconia Tab M10 MediaTek MT8183 Mali-G72 MP3 10.1"" 4GB RAM 128GB Android 12 Rose Gold",0,0,False,{},,acer,,,,,
