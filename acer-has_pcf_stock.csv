@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-58190,PNR-1088,ANV15-51-51LF-2\NOTEBOOK ACER,Acer,NH.QN8AL.00T.2,1000000.0,85,Equipos,Hardware,ok,True,0,50,+50,"Notebook Gamer Nitro V15 Intel Core i5 NVIDIA GeForce RTX 4050 15.6"" 16GB RAM 512GB SSD Windows 11 Home",0,0,False,{},,,,,,,
+58165,PNR-1095,AL15-410P-R9ND-3,Acer,NX.X0RAL.007.3,541169.0,242,Equipos,Hardware,ok,True,0,100,+100,"Notebook Aspire Lite AMD Ryzen 5 3500U AMD Radeon Vega 8 15.6"" 16GB RAM 512GB SSD Windows 11 Home",0,0,False,{},,acer,404374,,649990,,669656
