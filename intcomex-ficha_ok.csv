@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-58125,nan,Honor 600 - Smartphone - Orange,Honor,5109CHBW,527.6,50,Celulares Desbloqueados,Physical,ok,False,0,0,0,Celular Honor 600 512GB/12GB 5G Naranja Liberado,0,0,True,{},,,396375,,379990,699990,652924
+58650,nan,Logitech Sight - Cámera de conferencias - color - 4K - audio - PoE Plus,Logitech,960-001510,2361.4,3,Video Conferencia,Physical,ok,False,0,0,0,Webcam Conferencia Sight 4K ,0,0,True,{},,,,,,,
