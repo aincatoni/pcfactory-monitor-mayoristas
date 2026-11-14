@@ -2,7 +2,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 28889,2550221.0,TINTA T694200 CIAN 700ML,Epson,T694200,211.15,1.0,Suministros y Medios,Suministros Inyección de Tinta,not_found,False,0,0,0,,0,0,True,{},,259935,,268399,,271717
 ,1004027.0,TINTA HP 72 CABEZAL GRIS Y FOTO NEGRO,Hp,C9380A,103.66,5.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,260608,,129712,,132747
 ,1004028.0,TINTA HP 72 CABEZAL MATE NEGRO/AMARILLO,Hp,C9384A,103.64,1.0,Suministros y Medios,Suministros Impresora Térmica,,,,,,,,,,,,260599,,143840,,143840
-,1005909.0,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,178.81,97.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260299,,115000,,216210
+,1005909.0,TONER HP 05X NEGRO 6500 PAG,Hp,CE505X,178.81,97.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260299,,115000,,211116
 ,1021818.0,TONER HP 55X NEGRO 6000 PAG,Hp,CE255X,257.76,32.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260104,,194900,,305940
 ,1096738.0,ZEBRA WHITE PVC CARDS 30 MIL 500 CARDS,Zebra,104523-111,48.47,149.0,Suministros y Medios,Tarjetas Identificación Etiq y Portadore,,,,,,,,,,,,,,,,
 ,1138029.0,78A BLACK LJ TONER CART CE278A,Hp,CE278A,73.27,541.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260019,,8990,,97941
@@ -253,9 +253,9 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,3119989.0,"Cable de Red Cat6a STP de 0,9m Negro",Startech.Com,C6ASPAT3BK,7.53,2.0,Cables,Cables y Adaptadores Twisted Pair,,,,,,,,,,,,,,,,
 ,3129201.0,HPE StoreEver MSL FC Drive Upgrade Kit,Hewlett Packard Enterprise,N7P36A,6032.6,1.0,Dispositivos de Almacenamiento,Unidades de Cinta y Arreglos,,,,,,,,,,,,,,,,
 ,3141120.0,Adaptador Thunderbolt 3 a Thunderbolt,Startech.Com,TBT3TBTADAP,96.32,1.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
-,3141702.0,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,55.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,219990,,237140
-,3141703.0,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,60.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,219990,,235355
-,3141704.0,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,61.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,219990,,235145
+,3141702.0,TINTA HP 728 300 ML AMARILLO,Hp,F9K15A,180.24,55.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259846,,219990,,236508
+,3141703.0,TINTA HP 728 300 ML MAGENTA,Hp,F9K16A,180.58,60.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259844,,219990,,234596
+,3141704.0,TINTA HP 728 300 ML CIAN,Hp,F9K17A,180.79,61.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259845,,219990,,234422
 ,3156862.0,TONER GPR-54 NEGRO REND 17600 PAG,Canon,9436B003,80.66,10.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260645,,92300,,106371
 ,3212236.0,6ft High Speed HDMI Cable - HDMI - M/M,Startech.Com,HDMM6,10.23,32.0,Cables,Cables y Adaptadores de Audio + Video,,,,,,,,,,,,,,,,
 ,3240536.0,Gb Fiber SFP - Cisco Compatible -10 Pack,Startech.Com,GLCLHSMD10ST,332.96,5.0,Dispositivos de Red,Transceivers,,,,,,,,,,,,,,,,
@@ -468,7 +468,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,4705377.0,Paquete 5 Adaptadores DisplayPort a VGA,Startech.Com,DP2VGA3X5,107.06,10.0,Cables,Cables y Adaptadores USB,,,,,,,,,,,,,,,,
 ,4729986.0,TONER HP 215A CIAN 850 PAG,Hp,W2311A,58.69,1.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260215,,70500,74990,74290
 ,4783959.0,TONER HP 206A CYAN,Hp,W2111A,81.54,14.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260122,,96990,,103430
-,4783961.0,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.63,3.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260108,,96990,,105978
+,4783961.0,206A MAGENTA ORIGINAL LJ TONER CRTG,Hp,W2113A,81.63,3.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260108,,96990,,106645
 ,4790192.0,KENSINGTON CABLE DE SEGURIDAD SLIM N17 C,Kensington,K68008EU,21.29,50.0,Seguridad Física,Opciones de Seguridad Física y Accs,,,,,,,,,,,,,,,,
 ,4792041.0,TONER 047 REND 1600 PAGINAS,Canon,2164C001,60.91,34.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,260489,,77292,,83553
 ,4792821.0,TV Wall Mount - For up to 80in Displays,Startech.Com,FPWARTS1,176.75,6.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,,,,,,,,,,,,
@@ -573,7 +573,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5445654.0,Dual TV Cart - 37-60in TVs - Height Ajs,Startech.Com,STNDMTVDUO,630.57,2.0,Pantallas,"Brazos, Pedestales, Montaje p/Monitores",,,,,,,,,,,,,,,,
 ,5464478.0,Under Desk Keyboard Tray - Adjustable,Startech.Com,KBTRAYADJ2,115.49,2.0,Computadores Servidores y Notebooks,Accesorios de Notebooks en kit,,,,,,,,,,,,,,,,
 ,5465420.0,C9120AX EXTERNAL 802.11AX 4X4 4 MIMO IOT,Cisco,C9120AXE-A,1842.4,8.0,Dispositivos de Red,Access Points (AP) inalámbricos,,,,,,,,,,,,418735,,2266900,,2298755
-,5473671.0,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.01,274.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259808,,22846,26990,26180
+,5473671.0,T664 COLOR INK BOTTLE CARTON TRI PACK,Epson,T664520-3P,19.01,274.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259808,,22846,26990,25980
 ,5475524.0,Cable 10m de Red Ethernet RJ45 - Azul,Startech.Com,N6LPATCH10MBL,16.29,12.0,Cables,Cables y Adaptadores Ethernet Coaxiales,,,,,,,,,,,,,,,,
 ,5475577.0,Cable 15m de Red Ethernet RJ45 - Azul,Startech.Com,N6LPATCH15MBL,16.83,7.0,Cables,Cables y Adaptadores Ethernet Coaxiales,,,,,,,,,,,,,,,,
 ,5475581.0,Mouse Pad with Wrist Support Non-Slip,Startech.Com,B-ERGO-MOUSE-PAD,17.25,25.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,,,,,,,,,,,,
@@ -669,7 +669,7 @@ pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_
 ,5906429.0,HP 206X Blk Original LaserJet Toner Crtg,Hp,W2110X,104.98,26.0,Suministros y Medios,Suministros Láser,,,,,,,,,,,,265122,,129900,,130945
 ,5909614.0,TINTA 55ML PFI-031 MAGENTA,Canon,6265C001,36.96,7.0,Suministros y Medios,Suministros para Plotters,,,,,,,,,,,,260925,,50990,,57571
 ,5909615.0,Tanque de tinta 300 ml PFI-321 Magenta,Canon,6269C001,108.65,3.0,Suministros y Medios,Suministros para Plotters,,,,,,,,,,,,278672,,149990,,151038
-,5915075.0,Tinta HP DesignJet Plotter 300-ml Negro,Hp,498N8A,156.93,62.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,261554,,186500,,201992
+,5915075.0,Tinta HP DesignJet Plotter 300-ml Negro,Hp,498N8A,156.93,62.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,261554,,186500,,201920
 ,5915079.0,Tinta HP DesignJet Plotter 300-ml Cyan,Hp,676M6A,157.03,51.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,259861,,183900,,203516
 ,5915080.0,Tinta HP DesignJet Plotter 300-ml Magent,Hp,676M7A,156.97,47.0,Suministros y Medios,Suministros Inyección de Tinta,,,,,,,,,,,,262912,,196436,,205842
 ,5916016.0,KENSINGTON TRACKBALL INALAMBRICO PRO FIT,Kensington,K72194WW,26.84,24.0,Equipamiento de Oficina,"Mousepads, Apoyamuñecas y Descanso",,,,,,,,,,,,237677,,33750,,37463
