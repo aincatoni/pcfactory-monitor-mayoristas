@@ -1,4 +1,7 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,solotodo_id,pcf_price,min_price,mode_price,mean_price
 ,ACC-0292,FUNDA ECOLÓGICA ABG132,nan,GP.BAG11.01L,11589.0,104,Accesorios,Hardware,,,,,
 ,CA1-0683,cable zinc alloy lock (for laptop with 3mmx7mm slot),nan,HD110Z,2312.0,61,Repuestos,Hardware,,,,,
+,PNR-1110,PT14-52T-96T3-US-1,Acer,NH.U0GAA.001.1,2000000.0,8,Equipos,Hardware,421906,,2799990,2799990,2836656
+,PNR-1122,ANV15-51-51LF-3\NOTEBOOK ACER,Acer,NH.QN8AL.00T.3,1000000.0,75,Equipos,Hardware,,,,,
 ,PTC-0161,VZ4880G-CLi3-RENEWED,Acer,DQ.VUYAL.007.RENEWED,98312.0,48,Equipos,Hardware,,,,,
+,SSD-0196,SSD 128GB TWSC TE3420F128,nan,KN.12800.002X,14522.0,95,Repuestos,Hardware,,,,,
