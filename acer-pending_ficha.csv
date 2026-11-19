@@ -1,3 +1,3 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-58898,PNR-1122,ANV15-51-51LF-3\NOTEBOOK ACER,Acer,NH.QN8AL.00T.3,1000000.0,75,Equipos,Hardware,ok,False,0,0,0,"Notebook Gamer Nitro V 15 15.6"" Intel Core i5-13420H 8GB 512GB SSD NVIDIA GeForce RTX 3050 6GB Windows 11 Home",0,0,True,{},,,,,,,
-58899,SSD-0196,SSD 128GB TWSC TE3420F128,nan,KN.12800.002X,14522.0,95,Repuestos,Hardware,ok,False,0,0,0,SSD 128GB TWSC TE3420F128,0,0,True,{},,,,,,,
+58899,SSD-0196,SSD 128GB TWSC TE3420F128,nan,KN.12800.002X,14522.0,94,Repuestos,Hardware,ok,False,0,0,0,SSD 128GB TWSC TE3420F128,0,0,True,{},,,,,,,
+58898,PNR-1122,ANV15-51-51LF-3\NOTEBOOK ACER,Acer,NH.QN8AL.00T.3,1000000.0,75,Equipos,Hardware,ok,False,0,0,0,"Notebook Gamer Nitro V 15 15.6"" Intel Core i5-13420H 8GB 512GB SSD NVIDIA GeForce RTX 3050 6GB Windows 11 Home",0,0,True,{},,,425766,,1499990,,1499990
