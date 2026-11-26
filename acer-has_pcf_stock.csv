@@ -1,2 +1,2 @@
 pcf_id,ingram_part,description,vendor_name,vendor_part,customer_price,available_qty,category,subcategory,api_status,mayorista,lista,stock_pcf,stock_raw,nombre_pcf,precio_normal,precio_oferta,ficha_vacia,stock_detail,error,catalog_provider,solotodo_id,pcf_price,min_price,mode_price,mean_price
-58899,SSD-0196,SSD 128GB TWSC TE3420F128,nan,KN.12800.002X,14522.0,88,Repuestos,Hardware,ok,True,0,50,+50,SSD 128GB TWSC TE3420F128,0,0,True,{},,,,,,,
+58899,SSD-0196,SSD 128GB TWSC TE3420F128,nan,KN.12800.002X,14522.0,85,Repuestos,Hardware,ok,True,0,50,+50,SSD 128GB TWSC TE3420F128,0,0,True,{},,acer,,,,,
